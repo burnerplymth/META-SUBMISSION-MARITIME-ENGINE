@@ -1,0 +1,258 @@
+{
+  "event": "baltimore",
+  "figures": [
+    {
+      "name": "collapse_date",
+      "value": "2024-03-26",
+      "unit": "date",
+      "source_name": "NTSB Marine Investigation Preliminary Report DCA24MM031 (14 May 2024)",
+      "source_url": "https://data.ntsb.gov/Docket/Document/docBLOB?ID=18527583&FileExtension=pdf&FileName=Hazmat%20Cargo%20Factual%20-%20Dali%20-%20FSKey%20Bridge%20DCA24MM031%20%20(Final%202-4-25)-Rel.pdf",
+      "retrieved_on": "2026-10-21",
+      "notes": "NTSB: 'On March 26, 2024, about 0129 eastern daylight time' the Dali lost power/propulsion and struck the southern pier of the Francis Scott Key Bridge. Accident no. DCA24MM031; IMO 9697428."
+    },
+    {
+      "name": "collapse_time_edt",
+      "value": "01:29",
+      "unit": "local time (EDT)",
+      "source_name": "NTSB Marine Investigation Preliminary Report DCA24MM031",
+      "source_url": "https://data.ntsb.gov/Docket/Document/docBLOB?ID=18527583&FileExtension=pdf&FileName=Hazmat%20Cargo%20Factual%20-%20Dali%20-%20FSKey%20Bridge%20DCA24MM031%20%20(Final%202-4-25)-Rel.pdf",
+      "retrieved_on": "2026-10-21",
+      "notes": "NTSB preliminary report header: 'Date and Time: March 26, 2024 0129 local time (eastern daylight time)'. CRS/USNI summary rounds to 'about 1:30 a.m.'"
+    },
+    {
+      "name": "portwatch_baltimore_baseline_portcalls_per_day",
+      "value": 5.375,
+      "unit": "vessel calls/day (mean, 2024-02-15 to 2024-03-25, n=40)",
+      "source_name": "IMF PortWatch Daily_Ports_Data (derived \u2014 see portwatch.derived)",
+      "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query",
+      "retrieved_on": "2026-10-21",
+      "notes": "Derived from portwatch_baltimore_2024.json (port103). Cross-check: MPA states ~2,000 vessels call per year (~5.5/day)."
+    },
+    {
+      "name": "portwatch_baltimore_closure_portcalls_per_day",
+      "value": 2.1467,
+      "unit": "vessel calls/day (mean, 2024-03-27 to 2024-06-09, n=75)",
+      "source_name": "IMF PortWatch Daily_Ports_Data (derived)",
+      "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query",
+      "retrieved_on": "2026-10-21",
+      "notes": "Derived. -60.06% vs baseline; non-zero because of seaward terminals + alternate channels (see derived.baltimore_closure_note)."
+    },
+    {
+      "name": "portwatch_baltimore_recovery_date",
+      "value": "2024-06-23",
+      "unit": "date (first 7-day trailing mean >= 90% of baseline, after 2024-06-10)",
+      "source_name": "IMF PortWatch Daily_Ports_Data (derived)",
+      "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query",
+      "retrieved_on": "2026-10-21",
+      "notes": "Derived per task definition. Threshold 4.8375 calls/day; trailing mean 2024-06-23 = 4.857."
+    },
+    {
+      "name": "portwatch_virginia_baseline_portcalls_per_day",
+      "value": 3.775,
+      "unit": "vessel calls/day (mean, 2024-02-15 to 2024-03-25, n=40)",
+      "source_name": "IMF PortWatch Daily_Ports_Data (derived)",
+      "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query",
+      "retrieved_on": "2026-10-21",
+      "notes": "Served portname 'Norfolk', port826 (Port of Virginia complex; graph node sea_virginia)."
+    },
+    {
+      "name": "portwatch_virginia_closure_portcalls_per_day",
+      "value": 3.8533,
+      "unit": "vessel calls/day (mean, 2024-03-27 to 2024-06-09, n=75)",
+      "source_name": "IMF PortWatch Daily_Ports_Data (derived)",
+      "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query",
+      "retrieved_on": "2026-10-21",
+      "notes": "Derived. +2.08% vs baseline \u2014 flat in calls; import tonnage +28.6% (see derived)."
+    },
+    {
+      "name": "phase_sollers_point_channel",
+      "value": "2024-04-01",
+      "unit": "date opened (11 ft controlling depth)",
+      "source_name": "Key Bridge Response Unified Command via Logistics Management / MPA statements",
+      "source_url": "https://www.logisticsmgmt.com/article/signs_of_progress_are_being_made_towards_moving_cargo_in_and_out_of_baltimore/CSX",
+      "retrieved_on": "2026-10-21",
+      "notes": "First temporary alternate channel (Sollers Point, NE side): 11 ft depth, 264 ft horizontal, 95 ft vertical clearance, daylight/COTP-discretion only. First transit 1 Apr: tug Crystal Coast pushing a DoD fuel barge. Depths corroborated by USCG MSIB 039-24 (4 Apr 2024)."
+    },
+    {
+      "name": "phase_hawkins_point_channel",
+      "value": "2024-04-02",
+      "unit": "date opened (14 ft controlling depth)",
+      "source_name": "Key Bridge Response 2024 Unified Command release of 2 Apr 2024 (via GAC Hot Port News / Manifold Times)",
+      "source_url": "https://www.manifoldtimes.com/news/second-temporary-alternate-channel-opened-around-key-bridge-wreckage/",
+      "retrieved_on": "2026-10-21",
+      "notes": "Second temporary alternate channel (Hawkins Point, SW side): 14 ft depth, 280 ft horizontal, 124 ft vertical clearance."
+    },
+    {
+      "name": "phase_fort_carroll_channel",
+      "value": "2024-04-19",
+      "unit": "date established (20 ft controlling depth)",
+      "source_name": "Key Bridge Response Unified Command via Marine Log (20 Apr 2024)",
+      "source_url": "https://www.marinelog.com/legal/safety-and-security/video-third-key-bridge-alternate-channel-is-now-open/",
+      "retrieved_on": "2026-10-21",
+      "notes": "Third channel: Fort Carroll Temporary Alternate Channel, 20 ft depth, 300 ft horizontal, 135 ft vertical clearance; USCG Capt. O'Connell estimated it facilitated ~15% of pre-collapse commercial activity. Buoy-laying video dated 19 Apr 2024; announced 19 Apr."
+    },
+    {
+      "name": "phase_limited_access_channel_35ft",
+      "value": "2024-04-25",
+      "unit": "date opened (Fort McHenry Limited Access Channel)",
+      "source_name": "USACE / Key Bridge Response via MarineLink (25 Apr 2024)",
+      "source_url": "https://www.marinelink.com/amp/news/first-ship-departs-baltimore-limited-513242",
+      "retrieved_on": "2026-10-21",
+      "notes": "Fourth channel: Fort McHenry LAC, controlling depth at least 35 ft, 300 ft horizontal, 214 ft vertical clearance. First transit: bulk carrier Balsa 94 (departing). First inbound container ship MSC Passion III arrived 28 Apr (~1,000 containers, Seagirt). LAC closed ~29 Apr-10 May for Dali wreckage work. NOTE on the '38-ft channel' figure: AP reporting via FTZine states Coast Guard officials put the channel's actual depth at 38 ft while vessels used the 35-ft draft/controlling figure \u2014 same channel, not a separate phase."
+    },
+    {
+      "name": "phase_dali_removed_channel_400x50",
+      "value": "2024-05-20",
+      "unit": "date (Dali refloated/removed; LAC widened)",
+      "source_name": "USACE Baltimore District news release",
+      "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3787297/us-army-corps-of-engineers-expands-port-of-baltimore-limited-access-channel/",
+      "retrieved_on": "2026-10-21",
+      "notes": "USACE: 'salvage crews expanded the Port of Baltimore limited access channel to a width of 400 feet and a depth of 50 feet on May 20' with the removal of M/V Dali (refloated a week after the 13 May controlled demolition of the truss section pinning it), 'allowing for the transit of all deep-draft commercial vessels'. USACE full-restoration release dates the widening's effect to 21 May ('widened the Limited Access Channel to 400 feet May 21, permitting all pre-collapse, deep-draft commercial vessels')."
+    },
+    {
+      "name": "phase_full_channel_restored",
+      "value": "2024-06-10",
+      "unit": "date (Fort McHenry Federal Channel restored, 700 ft x 50 ft)",
+      "source_name": "USACE news release (Baltimore District / North Atlantic Division)",
+      "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+      "retrieved_on": "2026-10-21",
+      "notes": "USACE: Fort McHenry Federal Channel 'restored to its original operational dimensions of 700 feet wide and 50 feet deep'; Unified Command surveyed the channel 10 Jun 2024 'certifying the riverbed as safe for transit'; two-way traffic resumed, extra safety requirements cancelled."
+    },
+    {
+      "name": "virginia_march2024_teu_and_expected_diverted",
+      "value": "291,700 TEU handled Mar 2024; +18,000 to 20,000 additional containers expected through April",
+      "unit": "TEU / containers",
+      "source_name": "Port of Virginia (Joe Harris, Sr Director of Communications) via Trucking Dive / Supply Chain Dive, 17 Apr 2024",
+      "source_url": "https://www.truckingdive.com/news/3-graphs-showing-baltimores-importance-in-imports/713545/",
+      "retrieved_on": "2026-10-21",
+      "notes": "Harris: the increase was 'an influx of cargo rather than ships' \u2014 consistent with PortWatch showing flat Virginia call counts but +28.6% import tonnage."
+    },
+    {
+      "name": "virginia_additional_containers_handled_by_may2024",
+      "value": 15000,
+      "unit": "additional container units (approx.)",
+      "source_name": "Virginia Port Authority CEO Stephen Edwards via Virginia Mercury / Cooperative Living, Jun 2024",
+      "source_url": "https://www.co-opliving.com/11190/port-of-virginia-on-track-to-have-deepest-channels-on-east-coast/",
+      "retrieved_on": "2026-10-21",
+      "notes": "Edwards (May 2024 overview): Port of Virginia 'handled about 15,000 additional container units and multiple ro-ro shipments' diverted from Baltimore; temporary measure expected to end in June as Baltimore reopened."
+    },
+    {
+      "name": "virginia_may2024_inbound_loaded_teu_yoy",
+      "value": "+19.0% (153,701 TEU May 2024 vs 129,203 TEU May 2023); Maryland -92.7% (3,201 vs 43,866)",
+      "unit": "inbound loaded TEU",
+      "source_name": "Pacific Merchant Shipping Association, U.S. Port Volumes in May 2024",
+      "source_url": "https://www.pmsaship.com/maritime-insights-blog/may2024teus",
+      "retrieved_on": "2026-10-21",
+      "notes": "Independent (PMSA/PIERS-type) tabulation quantifying the Baltimore->Virginia shift in the last full closure month."
+    },
+    {
+      "name": "virginia_share_of_redirected_containers_early_april",
+      "value": "43%",
+      "unit": "share of redirected Baltimore container traffic (early Apr 2024, largest of any East Coast port)",
+      "source_name": "Project44 via Virginia Business",
+      "source_url": "https://virginiabusiness.com/crisis-in-baltimore/",
+      "retrieved_on": "2026-10-21",
+      "notes": "'As of early April, the Port of Virginia had received about 43% of all redirected container traffic from the Port of Baltimore, more than any other East Coast port, according to supply chain tracker Project44.'"
+    },
+    {
+      "name": "virginia_fy2024_totals",
+      "value": "3,499,639 TEU (+2% YoY); 1,733 ship calls (+5% YoY); FY ends 30 Jun 2024",
+      "unit": "TEU / ship calls",
+      "source_name": "Virginia Port Authority FY2024 release (via CBT Logistics Group mirror)",
+      "source_url": "https://CBTLOGISTICSGROUP.COM/resources/news/va-port-fy24",
+      "retrieved_on": "2026-10-21",
+      "notes": "Edwards: terminals 'proved their value during the surge of cargo that came our way because of the tragic bridge collapse that closed the Port of Baltimore for nearly three months... We processed the diverted cargo without any degradation of service.'"
+    },
+    {
+      "name": "baltimore_normal_vessel_calls_published",
+      "value": "approximately 2,000 vessels per year (~5.5/day); ~38 million tons of cargo per year",
+      "unit": "vessels/year",
+      "source_name": "Maryland Port Administration \u2014 Green Port / Terminals page",
+      "source_url": "https://mpa.maryland.gov/greenport/pages/terminals.aspx",
+      "retrieved_on": "2026-10-21",
+      "notes": "Published cross-check of the PortWatch baseline (5.375 calls/day, Feb 15-Mar 25 2024): consistent. Also: 2023 set the then-record 2,137 cargo vessel visits (~5.9/day) per MPA/Governor's office 2025 releases."
+    },
+    {
+      "name": "virginia_port_authority_april2024_monthly_release",
+      "status": "NOT_SOURCED",
+      "value": null,
+      "unit": "TEU (April 2024)",
+      "source_name": "Virginia Port Authority",
+      "source_url": null,
+      "retrieved_on": "2026-10-21",
+      "notes": "No VPA monthly release for April 2024 was found. WARNING \u2014 a portofvirginia.com release headlined 'Port's Cargo Volume Up 13% in April' with 323,244 TEUs is the April *2022* release (its snapshot table is explicitly '2022 vs. 2021'); it must NOT be cited as 2024. April-2024 Virginia diversion is instead quantified via Trucking Dive (Harris), Virginia Mercury (Edwards ~15,000 units), Project44 (43% share) and PMSA May-2024 inbound TEU above."
+    },
+    {
+      "name": "baltimore_daily_vessel_calls_published_daily_rate",
+      "status": "NOT_SOURCED",
+      "value": null,
+      "unit": "vessel calls/day",
+      "source_name": null,
+      "source_url": null,
+      "retrieved_on": "2026-10-21",
+      "notes": "No published source states a Baltimore daily vessel-call rate directly; the cross-check is derived from MPA's annual figure (~2,000 vessels/year = ~5.5/day), recorded as baltimore_normal_vessel_calls_published. The daily rate used by the backtest is the PortWatch-derived 5.375/day."
+    }
+  ],
+  "portwatch": {
+    "baltimore_file": "portwatch_baltimore_2024.json",
+    "virginia_file": "portwatch_virginia_2024.json",
+    "derived": {
+      "method": "Computed from the saved verbatim PortWatch rows in this folder. Means are arithmetic means of the daily 'portcalls' field (total vessel calls, all classes incl. non-cargo) over every served row in the window; rows counted as served, including PortWatch zero-activity/imputed rows. Windows per task spec.",
+      "baltimore_portid": "port103",
+      "baltimore_portname_served": "Baltimore",
+      "virginia_portid": "port826",
+      "virginia_portname_served": "Norfolk",
+      "virginia_note": "No portname 'Virginia' exists in Daily_Ports_Data (LIKE '%Virginia%' returns zero distinct ports). The Port of Virginia complex is served as 'Norfolk' (port826); the repo join input data/graph/portwatch_join_input.json maps graph node sea_virginia -> port826 'Norfolk' (LOCODE US ORF). Filter was by portname/portid, NOT by LOCODE.",
+      "rows_pulled": {
+        "baltimore": 152,
+        "virginia_norfolk": 152,
+        "date_range": "2024-02-15 to 2024-07-15 inclusive (152 days, no gaps)"
+      },
+      "baseline_window": "2024-02-15 to 2024-03-25 (n=40 days)",
+      "closure_window": "2024-03-27 to 2024-06-09 (n=75 days)",
+      "baltimore_baseline_mean_portcalls_per_day": 5.375,
+      "baltimore_closure_mean_portcalls_per_day": 2.1467,
+      "baltimore_portcalls_pct_change_closure_vs_baseline": -60.06,
+      "baltimore_baseline_mean_by_class": {
+        "container": 1.6,
+        "dry_bulk": 1.375,
+        "general_cargo": 0.65,
+        "roro": 1.475,
+        "tanker": 0.275
+      },
+      "baltimore_closure_mean_by_class": {
+        "container": 0.2133,
+        "dry_bulk": 0.5867,
+        "general_cargo": 0.2933,
+        "roro": 0.88,
+        "tanker": 0.1733
+      },
+      "baltimore_closure_total_calls_by_class": {
+        "container": 16,
+        "dry_bulk": 44,
+        "general_cargo": 22,
+        "roro": 66,
+        "tanker": 13
+      },
+      "baltimore_closure_days_with_portcalls_gt_0": 62,
+      "baltimore_closure_note": "Closure-window mean is NOT zero: 62 of 75 days show >0 calls, totalling 161 calls, dominated by roro (66), dry_bulk (44), general_cargo (22), tanker (13); container calls nearly vanish (16 total, 0.21/day vs 1.60/day baseline). This residual is consistent with terminals seaward of the bridge (e.g. Sparrows Point/Tradepoint Atlantic) plus the phased alternate channels \u2014 the main Fort McHenry channel was blocked, the port polygon was not hermetically sealed. 2024-03-26 itself serves portcalls=0.",
+      "baltimore_recovery_threshold_90pct_of_baseline": 4.8375,
+      "baltimore_recovery_date_7d_trailing_mean_ge_90pct_baseline_first_after_2024-06-10": "2024-06-23",
+      "baltimore_recovery_note": "7-day trailing mean on 2024-06-23 = 4.857 calls/day, first date after 2024-06-10 at/above the 4.8375 threshold. Trailing means 2024-06-11..06-22 ranged 3.857-4.714 (all below threshold).",
+      "baltimore_import_tonnes_per_day_baseline": 20167.25,
+      "baltimore_import_tonnes_per_day_closure": 10769.0267,
+      "baltimore_export_tonnes_per_day_baseline": 61650.275,
+      "baltimore_export_tonnes_per_day_closure": 18348.5867,
+      "virginia_baseline_mean_portcalls_per_day": 3.775,
+      "virginia_closure_mean_portcalls_per_day": 3.8533,
+      "virginia_portcalls_pct_change_closure_vs_baseline": 2.07,
+      "virginia_april2024_mean_portcalls_per_day": 3.7667,
+      "virginia_import_tonnes_per_day_baseline": 11362.65,
+      "virginia_import_tonnes_per_day_closure": 14608.3067,
+      "virginia_import_tonnes_pct_change": 28.56,
+      "virginia_export_tonnes_per_day_baseline": 60532.175,
+      "virginia_export_tonnes_per_day_closure": 54524.9067,
+      "virginia_note_stats": "Virginia/Norfolk CALL counts are flat (+2.08%) across the closure window while PortWatch-estimated IMPORT tonnage rises +28.6% \u2014 diversion shows up as fuller/larger ships and cargo mix, not more calls, in this layer."
+    }
+  }
+}

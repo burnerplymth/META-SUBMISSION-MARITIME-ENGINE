@@ -1,0 +1,3246 @@
+{
+ "ablation": {
+  "alternatives": {
+   "aggregate": {
+    "events_mean": 6.05,
+    "events_total": 1210,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 3,
+    "places": 200,
+    "places_hit_mean": 5.145,
+    "seconds_total": 611.77,
+    "total_delay_mean_d": 38.4271,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 3.449
+    },
+    "chokepoint": {
+     "events": {
+      "max": 33,
+      "median": 12.5,
+      "min": 5,
+      "p90": 24.8
+     },
+     "max_delay_d": {
+      "max": 30.0,
+      "median": 29.97084,
+      "p90": 29.981167
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 9.5,
+     "seconds_max": 8.267
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 3.152
+    },
+    "port": {
+     "events": {
+      "max": 48,
+      "median": 4.0,
+      "min": 1,
+      "p90": 9.1
+     },
+     "max_delay_d": {
+      "max": 29.978671,
+      "median": 29.944801,
+      "p90": 29.963769
+     },
+     "never_propagate": 1,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 4.66
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": -0.025,
+    "places_hit_mean": -0.04,
+    "total_delay_mean_d": 0.002
+   },
+   "places_with_a_different_stream": 80,
+   "violations": []
+  },
+  "alternatives_conditional": {
+   "aggregate": {
+    "events_mean": 6.05,
+    "events_total": 1210,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 3,
+    "places": 200,
+    "places_hit_mean": 5.165,
+    "seconds_total": 622.71,
+    "total_delay_mean_d": 38.3528,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 3.411
+    },
+    "chokepoint": {
+     "events": {
+      "max": 31,
+      "median": 12.5,
+      "min": 5,
+      "p90": 26.6
+     },
+     "max_delay_d": {
+      "max": 30.0,
+      "median": 29.97084,
+      "p90": 29.981167
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 9.5,
+     "seconds_max": 8.118
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 3.185
+    },
+    "port": {
+     "events": {
+      "max": 48,
+      "median": 4.0,
+      "min": 1,
+      "p90": 9.1
+     },
+     "max_delay_d": {
+      "max": 29.978671,
+      "median": 29.944801,
+      "p90": 29.963769
+     },
+     "never_propagate": 1,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 5.125
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": -0.025,
+    "places_hit_mean": -0.02,
+    "total_delay_mean_d": -0.0723
+   },
+   "places_with_a_different_stream": 54,
+   "violations": []
+  },
+  "graded_choice": {
+   "aggregate": {
+    "events_mean": 6.115,
+    "events_total": 1223,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 3,
+    "places": 200,
+    "places_hit_mean": 5.225,
+    "seconds_total": 611.98,
+    "total_delay_mean_d": 38.537,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 3.288
+    },
+    "chokepoint": {
+     "events": {
+      "max": 31,
+      "median": 12.5,
+      "min": 5,
+      "p90": 25.7
+     },
+     "max_delay_d": {
+      "max": 30.0,
+      "median": 29.97084,
+      "p90": 29.981167
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 10.0,
+     "seconds_max": 7.988
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 3.223
+    },
+    "port": {
+     "events": {
+      "max": 48,
+      "median": 4.0,
+      "min": 1,
+      "p90": 10.1
+     },
+     "max_delay_d": {
+      "max": 29.978671,
+      "median": 29.944801,
+      "p90": 29.963769
+     },
+     "never_propagate": 1,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 5.064
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": 0.04,
+    "places_hit_mean": 0.04,
+    "total_delay_mean_d": 0.1119
+   },
+   "places_with_a_different_stream": 31,
+   "violations": []
+  },
+  "retime": {
+   "aggregate": {
+    "events_mean": 6.07,
+    "events_total": 1214,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 2,
+    "places": 200,
+    "places_hit_mean": 5.18,
+    "seconds_total": 629.66,
+    "total_delay_mean_d": 38.5321,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 4.145
+    },
+    "chokepoint": {
+     "events": {
+      "max": 31,
+      "median": 12.5,
+      "min": 5,
+      "p90": 26.6
+     },
+     "max_delay_d": {
+      "max": 30.0,
+      "median": 29.97084,
+      "p90": 29.981167
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 10.0,
+     "seconds_max": 8.236
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 3.405
+    },
+    "port": {
+     "events": {
+      "max": 46,
+      "median": 4.0,
+      "min": 2,
+      "p90": 10.1
+     },
+     "max_delay_d": {
+      "max": 30.018682,
+      "median": 29.944801,
+      "p90": 29.963841
+     },
+     "never_propagate": 0,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 5.428
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": -0.005,
+    "places_hit_mean": -0.005,
+    "total_delay_mean_d": 0.107
+   },
+   "places_with_a_different_stream": 178,
+   "violations": []
+  },
+  "rotation": {
+   "aggregate": {
+    "events_mean": 5.92,
+    "events_total": 1184,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 3,
+    "places": 200,
+    "places_hit_mean": 5.03,
+    "seconds_total": 135.97,
+    "total_delay_mean_d": 38.3752,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 0.732
+    },
+    "chokepoint": {
+     "events": {
+      "max": 26,
+      "median": 12.5,
+      "min": 5,
+      "p90": 21.9
+     },
+     "max_delay_d": {
+      "max": 30.0,
+      "median": 29.97084,
+      "p90": 29.981167
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 9.5,
+     "seconds_max": 1.607
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 0.788
+    },
+    "port": {
+     "events": {
+      "max": 36,
+      "median": 4.0,
+      "min": 1,
+      "p90": 10.0
+     },
+     "max_delay_d": {
+      "max": 29.978671,
+      "median": 29.944801,
+      "p90": 29.963765
+     },
+     "never_propagate": 1,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 1.657
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": -0.155,
+    "places_hit_mean": -0.155,
+    "total_delay_mean_d": -0.0499
+   },
+   "places_with_a_different_stream": 133,
+   "violations": []
+  },
+  "sourced_gates": {
+   "aggregate": {
+    "events_mean": 6.065,
+    "events_total": 1213,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 3,
+    "places": 200,
+    "places_hit_mean": 5.18,
+    "seconds_total": 624.95,
+    "total_delay_mean_d": 38.4085,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 3.526
+    },
+    "chokepoint": {
+     "events": {
+      "max": 31,
+      "median": 12.5,
+      "min": 5,
+      "p90": 24.8
+     },
+     "max_delay_d": {
+      "max": 29.981357,
+      "median": 29.97084,
+      "p90": 29.979182
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 10.0,
+     "seconds_max": 8.365
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 3.178
+    },
+    "port": {
+     "events": {
+      "max": 48,
+      "median": 4.0,
+      "min": 1,
+      "p90": 10.1
+     },
+     "max_delay_d": {
+      "max": 29.978671,
+      "median": 29.944801,
+      "p90": 29.963769
+     },
+     "never_propagate": 1,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 5.269
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": -0.01,
+    "places_hit_mean": -0.005,
+    "total_delay_mean_d": -0.0166
+   },
+   "places_with_a_different_stream": 6,
+   "violations": []
+  },
+  "spill": {
+   "aggregate": {
+    "events_mean": 6.075,
+    "events_total": 1215,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 3,
+    "places": 200,
+    "places_hit_mean": 5.185,
+    "seconds_total": 594.97,
+    "total_delay_mean_d": 38.4232,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 3.103
+    },
+    "chokepoint": {
+     "events": {
+      "max": 31,
+      "median": 12.5,
+      "min": 5,
+      "p90": 26.6
+     },
+     "max_delay_d": {
+      "max": 30.0,
+      "median": 29.97084,
+      "p90": 29.981167
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 10.0,
+     "seconds_max": 7.729
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 3.157
+    },
+    "port": {
+     "events": {
+      "max": 48,
+      "median": 4.0,
+      "min": 1,
+      "p90": 10.1
+     },
+     "max_delay_d": {
+      "max": 29.978671,
+      "median": 29.944801,
+      "p90": 29.963769
+     },
+     "never_propagate": 1,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 4.889
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": 0.0,
+    "places_hit_mean": 0.0,
+    "total_delay_mean_d": -0.0019
+   },
+   "places_with_a_different_stream": 9,
+   "violations": []
+  },
+  "substitution": {
+   "aggregate": {
+    "events_mean": 5.92,
+    "events_total": 1184,
+    "max_delay_median_d": 29.942308,
+    "never_propagate": 4,
+    "places": 200,
+    "places_hit_mean": 5.03,
+    "seconds_total": 556.44,
+    "total_delay_mean_d": 38.4298,
+    "violations": 0
+   },
+   "by_kind": {
+    "air_hub": {
+     "events": {
+      "max": 25,
+      "median": 5.0,
+      "min": 2,
+      "p90": 11.8
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 0,
+     "places": 43,
+     "places_hit_median": 5.0,
+     "seconds_max": 2.919
+    },
+    "chokepoint": {
+     "events": {
+      "max": 31,
+      "median": 12.5,
+      "min": 5,
+      "p90": 25.7
+     },
+     "max_delay_d": {
+      "max": 30.0,
+      "median": 29.97084,
+      "p90": 29.981167
+     },
+     "never_propagate": 0,
+     "places": 12,
+     "places_hit_median": 10.0,
+     "seconds_max": 7.753
+    },
+    "ground_node": {
+     "events": {
+      "max": 20,
+      "median": 3.0,
+      "min": 1,
+      "p90": 8.6
+     },
+     "max_delay_d": {
+      "max": 29.942308,
+      "median": 29.942308,
+      "p90": 29.942308
+     },
+     "never_propagate": 2,
+     "places": 45,
+     "places_hit_median": 3.0,
+     "seconds_max": 2.989
+    },
+    "port": {
+     "events": {
+      "max": 48,
+      "median": 4.0,
+      "min": 1,
+      "p90": 7.1
+     },
+     "max_delay_d": {
+      "max": 29.978671,
+      "median": 29.944801,
+      "p90": 29.963769
+     },
+     "never_propagate": 2,
+     "places": 100,
+     "places_hit_median": 4.0,
+     "seconds_max": 4.568
+    }
+   },
+   "delta_vs_full": {
+    "events_mean": -0.155,
+    "places_hit_mean": -0.155,
+    "total_delay_mean_d": 0.0047
+   },
+   "places_with_a_different_stream": 136,
+   "violations": []
+  }
+ },
+ "aggregate": {
+  "events_mean": 6.075,
+  "events_total": 1215,
+  "max_delay_median_d": 29.942308,
+  "never_propagate": 3,
+  "places": 200,
+  "places_hit_mean": 5.185,
+  "seconds_total": 604.64,
+  "total_delay_mean_d": 38.4251,
+  "violations": 0
+ },
+ "by_kind": {
+  "air_hub": {
+   "events": {
+    "max": 25,
+    "median": 5.0,
+    "min": 2,
+    "p90": 11.8
+   },
+   "max_delay_d": {
+    "max": 29.942308,
+    "median": 29.942308,
+    "p90": 29.942308
+   },
+   "never_propagate": 0,
+   "places": 43,
+   "places_hit_median": 5.0,
+   "seconds_max": 3.078
+  },
+  "chokepoint": {
+   "events": {
+    "max": 31,
+    "median": 12.5,
+    "min": 5,
+    "p90": 26.6
+   },
+   "max_delay_d": {
+    "max": 30.0,
+    "median": 29.97084,
+    "p90": 29.981167
+   },
+   "never_propagate": 0,
+   "places": 12,
+   "places_hit_median": 10.0,
+   "seconds_max": 8.028
+  },
+  "ground_node": {
+   "events": {
+    "max": 20,
+    "median": 3.0,
+    "min": 1,
+    "p90": 8.6
+   },
+   "max_delay_d": {
+    "max": 29.942308,
+    "median": 29.942308,
+    "p90": 29.942308
+   },
+   "never_propagate": 2,
+   "places": 45,
+   "places_hit_median": 3.0,
+   "seconds_max": 2.968
+  },
+  "port": {
+   "events": {
+    "max": 48,
+    "median": 4.0,
+    "min": 1,
+    "p90": 10.1
+   },
+   "max_delay_d": {
+    "max": 29.978671,
+    "median": 29.944801,
+    "p90": 29.963769
+   },
+   "never_propagate": 1,
+   "places": 100,
+   "places_hit_median": 4.0,
+   "seconds_max": 4.899
+  }
+ },
+ "configuration": "profile d + services chains",
+ "outliers": [
+  {
+   "kind": "ground_node",
+   "place_id": "gnd_citydeep",
+   "why": [
+    "never propagates (root event only)"
+   ]
+  },
+  {
+   "kind": "ground_node",
+   "place_id": "gnd_riyadh",
+   "why": [
+    "never propagates (root event only)"
+   ]
+  },
+  {
+   "kind": "port",
+   "place_id": "sea_beirut",
+   "why": [
+    "never propagates (root event only)"
+   ]
+  },
+  {
+   "kind": "port",
+   "place_id": "sea_shanghai",
+   "why": [
+    "events 48 > 10 x kind median 4"
+   ]
+  }
+ ],
+ "profile_digest": "4b0b0e79ab6a7d508ee6c9010aafefc9972432cdef8688bc894d8130073ee373",
+ "rows": [
+  {
+   "events": 4,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_addisababa",
+   "places_hit": 4,
+   "seconds": 2.755,
+   "stream_hash": "bf30fd71dcd3b069acffcd147a3f7216e3798e5a7cf13514bbcf83cc777bb7e8",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_amsterdam",
+   "places_hit": 2,
+   "seconds": 2.585,
+   "stream_hash": "93d22c072d2c2a50c434dbab5a2b6b372e4cd6c0d2a6aa3ff87093e511e42100",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 25,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_anchorage",
+   "places_hit": 18,
+   "seconds": 2.767,
+   "stream_hash": "503ec4d3e1728f636687dd3fd0568b408c04c546821a568eb6da029545a5ad4b",
+   "total_delay_d": 81.294905,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_atlanta",
+   "places_hit": 3,
+   "seconds": 2.943,
+   "stream_hash": "73a90611a6ba0c53f748db5cc749d737e42cc96dacd4504f2c09dcae4f2ef79d",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_bangkok",
+   "places_hit": 6,
+   "seconds": 2.642,
+   "stream_hash": "bcbf1104f4cbf9f35d26c7ab3323779cc09cb26ecc258aa1563e8435e9773272",
+   "total_delay_d": 33.743451,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_beijing",
+   "places_hit": 3,
+   "seconds": 2.508,
+   "stream_hash": "5bf263b63ffeb13bb1ad8e068dc15caaf386d8b91264ff3ad90042ab689541f1",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_brussels",
+   "places_hit": 3,
+   "seconds": 2.828,
+   "stream_hash": "c48d466c20b4c17eac068c2d6c4df5a48ffa7457d27621092fc8da81084e8ac3",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 11,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_chicago",
+   "places_hit": 8,
+   "seconds": 2.792,
+   "stream_hash": "406f3110c422f992e861fbf0ed7f10ffa0c73483456c551f9a85e420e82deb4c",
+   "total_delay_d": 49.727571,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_cincinnati",
+   "places_hit": 6,
+   "seconds": 2.753,
+   "stream_hash": "90edb19673f7a453293da34dedca11a0d9f11504f089b3e36262f5880b25573a",
+   "total_delay_d": 34.674626,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_cologne",
+   "places_hit": 3,
+   "seconds": 2.619,
+   "stream_hash": "21f1736c60c3bda38b1d81ecd2008332ad1a6064daa309d18543cd89ad40fdb8",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_delhi",
+   "places_hit": 5,
+   "seconds": 2.747,
+   "stream_hash": "47f3aea7842693910b1fb5517f1edf0e8f38e06b7ed179dee46c7e77db2277e0",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 9,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_doha",
+   "places_hit": 8,
+   "seconds": 2.828,
+   "stream_hash": "f8be7e31fc04d97d4dd245ac2c7d096fe3a29058b103a17bc1c4d65b7a41b5aa",
+   "total_delay_d": 36.85476,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_dubai",
+   "places_hit": 6,
+   "seconds": 2.839,
+   "stream_hash": "9057642f86be1ed3432e8c936e963bf64557971b9866bc81868161a88785bd0b",
+   "total_delay_d": 43.281995,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_dubaiworldcentral",
+   "places_hit": 2,
+   "seconds": 2.743,
+   "stream_hash": "320f3c7d47e3f0b2298ed05fce70c40832f0aff7098854d908c673a72f175406",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_ezhou",
+   "places_hit": 4,
+   "seconds": 2.748,
+   "stream_hash": "cddbfbfce10832e04362d5e3895687ee604747eee90d6cd4554f3708d4b9473e",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 11,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_frankfurt",
+   "places_hit": 11,
+   "seconds": 2.572,
+   "stream_hash": "fc05cbde22583671bd50d5dc67c4e524cdbba2196e8504b8065dc9c4e153c39f",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_guangzhou",
+   "places_hit": 4,
+   "seconds": 2.915,
+   "stream_hash": "ac0a8695298970e6fe73c9fc7daa18ed578e772e9b7ccf75864c1467f0bbebe5",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 25,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_hongkong",
+   "places_hit": 18,
+   "seconds": 2.896,
+   "stream_hash": "0e5be57cc9a20c45d1d1fca8a4079a1651e0ed209a9333594c8dac0866119d14",
+   "total_delay_d": 92.331736,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_houston",
+   "places_hit": 3,
+   "seconds": 2.746,
+   "stream_hash": "0677893d4797c4282cfbe0c119f40cef71b8b9b5f6a8e2b81a99ec52f060c42d",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 16,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_incheon",
+   "places_hit": 12,
+   "seconds": 2.835,
+   "stream_hash": "01a24cd1aea91d3011f0aff740d10723f8de9fd482efb94dbb51c875a9eeb2f3",
+   "total_delay_d": 63.656126,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_indianapolis",
+   "places_hit": 3,
+   "seconds": 2.631,
+   "stream_hash": "5dd1aa304b02f03f12cb7c67e83323507028ecd69cd3a8ccb979f9d8f8a8730f",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_istanbul",
+   "places_hit": 6,
+   "seconds": 2.761,
+   "stream_hash": "3de8aa44dbceea9389a4b269bdd4231260af66883605b37b579508d534fc038e",
+   "total_delay_d": 40.52383,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_jakarta",
+   "places_hit": 2,
+   "seconds": 2.648,
+   "stream_hash": "05da0d35ded5e309cff51f7cca91d1d54ba1c3e6da30c4122dabe78ed4a3a857",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_leipzig",
+   "places_hit": 4,
+   "seconds": 2.932,
+   "stream_hash": "be7d04ad71c3de0f953c65e31bd41219468c75f67087522e8198fd14e32ad877",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_liege",
+   "places_hit": 5,
+   "seconds": 2.737,
+   "stream_hash": "cb71c62f1213e097021c271838fe34df6498e25614a9bd34d6c4b56a2aee95b4",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_london",
+   "places_hit": 5,
+   "seconds": 2.833,
+   "stream_hash": "684f691d5f679163aba93462e43aac81a047b09e4bdd5f717871e3b63a51040b",
+   "total_delay_d": 34.71815,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_losangeles",
+   "places_hit": 4,
+   "seconds": 2.762,
+   "stream_hash": "d50bff1e5157e5467063e9b5d34d59ab916f1483a89077e1e808e6c369d62d76",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 9,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_louisville",
+   "places_hit": 7,
+   "seconds": 2.764,
+   "stream_hash": "380fec9e2c6258d06f2051063bcb9aa09d16b00391134aac518a8e0b7535abec",
+   "total_delay_d": 51.748537,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_madrid",
+   "places_hit": 3,
+   "seconds": 2.814,
+   "stream_hash": "a2c3bed0b40d81e686c56414aae7f4eb3944dc87883a35f0cabd94a673e380f2",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 11,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_memphis",
+   "places_hit": 8,
+   "seconds": 2.854,
+   "stream_hash": "f7464ea751c21b9378585619d582a9bf6d84d1636ceb8c3e167918791b4c1d21",
+   "total_delay_d": 58.161216,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_miami",
+   "places_hit": 5,
+   "seconds": 2.879,
+   "stream_hash": "ad5d673d8f9c138ab693b5289f83d014869440568829803a0c8618622678a889",
+   "total_delay_d": 36.472848,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_milan",
+   "places_hit": 2,
+   "seconds": 2.738,
+   "stream_hash": "a6192c08a7827742c82c852a2b8796841af6f54a3cc6e4ae79506e3e91f4a346",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 12,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_narita",
+   "places_hit": 10,
+   "seconds": 2.747,
+   "stream_hash": "a9d94f443ca55c3fb2c08041652579e74fdc347863e07a8a0072c26ebf3f4066",
+   "total_delay_d": 46.121123,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_newyork",
+   "places_hit": 6,
+   "seconds": 2.898,
+   "stream_hash": "67b4a990d1ab5b54c8c14c423086dff298822442f4d85ce6e6528ec0505c64d7",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_ontario",
+   "places_hit": 2,
+   "seconds": 2.68,
+   "stream_hash": "f2c9d11b44be0184503fe2ef4ed9dc0013ce604a016e393d665f990d02ee27d4",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_osaka",
+   "places_hit": 4,
+   "seconds": 2.525,
+   "stream_hash": "80ca408fed8c1fdeff882b37f5557e32f24e8a674f612e6c18f3817107d14fbe",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_paris",
+   "places_hit": 5,
+   "seconds": 2.809,
+   "stream_hash": "10d21ef851e1dd3dd58f6031c01c0c84eb1a565a395860ea7ca662095792938d",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 12,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_shanghaipudong",
+   "places_hit": 10,
+   "seconds": 3.078,
+   "stream_hash": "07852b2151fe4c47e55efd99f5c1f90d80f0659aa6cdb35fd2453ea879ab8489",
+   "total_delay_d": 38.472863,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_shenzhen",
+   "places_hit": 4,
+   "seconds": 2.795,
+   "stream_hash": "1cdf679a2333fd8d422c45f3b5401beabe9a3d820f530622432def16e572c5c1",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 8,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_singapore",
+   "places_hit": 6,
+   "seconds": 2.759,
+   "stream_hash": "2203ff905abd155dfa0275987fbfa1c030412e951515b90294f5512d60a66f8f",
+   "total_delay_d": 33.794781,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_taipei",
+   "places_hit": 5,
+   "seconds": 2.834,
+   "stream_hash": "22d24c17343c87368ba61ed90f3be72e32bb648a486112edb5021c5c0b8de2d2",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_toronto",
+   "places_hit": 3,
+   "seconds": 2.592,
+   "stream_hash": "c8a9f54f5de3ed3ae3d2beff404e87a0229ff7ee4135b13d4cc917895631a71c",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "air_hub",
+   "max_delay_d": 29.942308,
+   "mode": "air",
+   "place_id": "air_zhengzhou",
+   "places_hit": 3,
+   "seconds": 2.77,
+   "stream_hash": "d7af0d4d9584ee2460a7cdae1b5781ce2be401fbc165531ba2443bb454048105",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 31,
+   "kind": "chokepoint",
+   "max_delay_d": 29.97084,
+   "mode": "sea",
+   "place_id": "chk_babelmandeb",
+   "places_hit": 26,
+   "seconds": 3.421,
+   "stream_hash": "4138603beea0ccf78a4cea46b359c222c5a076e50143b8f54b5d73d654c98be0",
+   "total_delay_d": 122.014457,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "chokepoint",
+   "max_delay_d": 29.930969,
+   "mode": "sea",
+   "place_id": "chk_capeofgoodhope",
+   "places_hit": 4,
+   "seconds": 2.537,
+   "stream_hash": "e84c89a13c9a60d40fc049916b12e3ad862563a8c45860a05bd717c953326317",
+   "total_delay_d": 57.153645,
+   "violations": []
+  },
+  {
+   "events": 13,
+   "kind": "chokepoint",
+   "max_delay_d": 29.923386,
+   "mode": "sea",
+   "place_id": "chk_danish",
+   "places_hit": 10,
+   "seconds": 3.501,
+   "stream_hash": "8860aa27742a6aec6cf2ca0156c59e1446029a9ef2aa6f14fbb96da79ab2e5b2",
+   "total_delay_d": 105.905424,
+   "violations": []
+  },
+  {
+   "events": 10,
+   "kind": "chokepoint",
+   "max_delay_d": 29.975043,
+   "mode": "sea",
+   "place_id": "chk_dover",
+   "places_hit": 8,
+   "seconds": 5.246,
+   "stream_hash": "207d6e8aa8db88a9fb0916472ea7db77665608f05fcd5d02a29d30eba9db8aec",
+   "total_delay_d": 87.375956,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "chokepoint",
+   "max_delay_d": 29.979456,
+   "mode": "sea",
+   "place_id": "chk_gibraltar",
+   "places_hit": 4,
+   "seconds": 6.263,
+   "stream_hash": "ecd637c34705e2c8849a2adbb016d13cb217d96b5fe886cd5d581276228a120e",
+   "total_delay_d": 55.590991,
+   "violations": []
+  },
+  {
+   "events": 15,
+   "kind": "chokepoint",
+   "max_delay_d": 29.970731,
+   "mode": "sea",
+   "place_id": "chk_hormuz",
+   "places_hit": 12,
+   "seconds": 4.989,
+   "stream_hash": "08aaee26a224ae8f921954b7759344ff4963a674210282f4e592a4f061059a3f",
+   "total_delay_d": 109.084926,
+   "violations": []
+  },
+  {
+   "events": 14,
+   "kind": "chokepoint",
+   "max_delay_d": 29.981357,
+   "mode": "sea",
+   "place_id": "chk_malacca",
+   "places_hit": 10,
+   "seconds": 8.028,
+   "stream_hash": "ba9aceb4167810f43f02d4027d042a8538190a706b441ecf2d82492f36a4e8aa",
+   "total_delay_d": 70.018571,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "chokepoint",
+   "max_delay_d": 29.97084,
+   "mode": "sea",
+   "place_id": "chk_mozambique",
+   "places_hit": 5,
+   "seconds": 2.747,
+   "stream_hash": "6d420fe62a00aa78c40b7bc59471384af77726aebaaf040ae60391878f8816a9",
+   "total_delay_d": 81.776723,
+   "violations": []
+  },
+  {
+   "events": 12,
+   "kind": "chokepoint",
+   "max_delay_d": 29.976716,
+   "mode": "sea",
+   "place_id": "chk_panama",
+   "places_hit": 10,
+   "seconds": 3.212,
+   "stream_hash": "c453d796a58cb9c70c2e1175c4a13b9023b7c24318bc13ac04581ebf8d366d38",
+   "total_delay_d": 59.284111,
+   "violations": []
+  },
+  {
+   "events": 27,
+   "kind": "chokepoint",
+   "max_delay_d": 30.0,
+   "mode": "sea",
+   "place_id": "chk_suez",
+   "places_hit": 22,
+   "seconds": 4.169,
+   "stream_hash": "fc5005d51cd21680bb63b33c79b945bc03347f390edb7864da4cc88cd9db0e5f",
+   "total_delay_d": 107.827209,
+   "violations": []
+  },
+  {
+   "events": 23,
+   "kind": "chokepoint",
+   "max_delay_d": 29.948684,
+   "mode": "sea",
+   "place_id": "chk_taiwan",
+   "places_hit": 19,
+   "seconds": 4.578,
+   "stream_hash": "c15017e43ede811a5d7787ad22c228e0c4c79a6d34c165a13a3ecf4e7eeb074c",
+   "total_delay_d": 129.293647,
+   "violations": []
+  },
+  {
+   "events": 12,
+   "kind": "chokepoint",
+   "max_delay_d": 29.965647,
+   "mode": "sea",
+   "place_id": "chk_turkish",
+   "places_hit": 9,
+   "seconds": 4.594,
+   "stream_hash": "29205e655b825571251a0cd4e6e84e2bfa8177aa500b1b0372514516eedb81cf",
+   "total_delay_d": 102.053998,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_alexandriabay",
+   "places_hit": 2,
+   "seconds": 2.602,
+   "stream_hash": "b37b1aa298fb4d573937f22ffb06ecff6104a964593d72bf606d7fd1c9a51013",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_atlanta",
+   "places_hit": 3,
+   "seconds": 2.554,
+   "stream_hash": "e2724e9bad9ce56a0b3189ba47a35e9d12978bbda519a049494dedfdb6a36162",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_bettembourg",
+   "places_hit": 4,
+   "seconds": 2.755,
+   "stream_hash": "93f6b98594b52b1a4718a9e1a637b116ee2ba44e7ec38143cb4679f0cdf5e197",
+   "total_delay_d": 37.061089,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_blaine",
+   "places_hit": 3,
+   "seconds": 2.701,
+   "stream_hash": "72a83c96f34a5f469bf893eb6da2f815cec21fbbc95115d661b09ae6940f9bc9",
+   "total_delay_d": 34.418897,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_budapest",
+   "places_hit": 5,
+   "seconds": 2.81,
+   "stream_hash": "82078b7675268b550111127b90a56af80d872edae6e3c62e74f6258cf3bf9f7f",
+   "total_delay_d": 50.413245,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_buffalo",
+   "places_hit": 4,
+   "seconds": 2.679,
+   "stream_hash": "a69fcca47074623a7e8071378e6a7155025cf4a8080ae78bb2bef70db183d916",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_calexico",
+   "places_hit": 2,
+   "seconds": 2.508,
+   "stream_hash": "242e73df0b5a289fc398aeb009c5447d129c4c30f0893a7cdecf8a293e8cb57d",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_channeltunnel",
+   "places_hit": 2,
+   "seconds": 0.015,
+   "stream_hash": "fa80e5d4d6e75a4ec08d4a216344b043956a347da4f9e213ddd6e083182e1d23",
+   "total_delay_d": 45.395678,
+   "violations": []
+  },
+  {
+   "events": 20,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_chicago",
+   "places_hit": 14,
+   "seconds": 2.968,
+   "stream_hash": "efbd17ae231325dfe7a0f06bdc6c114a88ff3dce05ec62cb4c19c0e4ec4d7397",
+   "total_delay_d": 160.536063,
+   "violations": []
+  },
+  {
+   "events": 1,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_citydeep",
+   "places_hit": 1,
+   "seconds": 2.606,
+   "stream_hash": "10c6114706b2f714de2e4ca8866ca80b4a777a712caa578e4172dcef431c5e44",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_columbus",
+   "places_hit": 3,
+   "seconds": 2.631,
+   "stream_hash": "162c68def5c5785959f1ef83eb1df12467cbed4df67529c954f2e59a7409f340",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_dadri",
+   "places_hit": 2,
+   "seconds": 2.641,
+   "stream_hash": "2cd8e7929f693a3e680650a7cf8b3e6fffa2578b3da2daaa74c53fbe44e42af6",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 11,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_dallas",
+   "places_hit": 8,
+   "seconds": 2.67,
+   "stream_hash": "e64226635a2f30cddc4f8af5815179c56273564dc650e2ff6f9e1b0473b59e3f",
+   "total_delay_d": 40.837979,
+   "violations": []
+  },
+  {
+   "events": 9,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_detroit",
+   "places_hit": 6,
+   "seconds": 2.794,
+   "stream_hash": "02311ce16c6e207010ab732433b67c4e7f935d2038610f64fb9ac9c5dfe7536b",
+   "total_delay_d": 42.275045,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_dostyk",
+   "places_hit": 2,
+   "seconds": 2.623,
+   "stream_hash": "f5e522f59d3626f10d9b48b44ae3496c753510c058076b2a610dfa1d97b30d1e",
+   "total_delay_d": 35.496996,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_duisburg",
+   "places_hit": 6,
+   "seconds": 2.818,
+   "stream_hash": "fdd5228efa647ed3d9c6d5e5ee22e68c1cc5a71e19fa5412610990812b4ee152",
+   "total_delay_d": 35.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_eaglepass",
+   "places_hit": 3,
+   "seconds": 2.584,
+   "stream_hash": "13edbc4a9e9a120111b16b66f41871d816985e924f64ae8e9ad9d488300d4151",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_elpaso",
+   "places_hit": 2,
+   "seconds": 2.592,
+   "stream_hash": "a15ad1aa6e69a4fc74edf829a39fdcbaaab70df02bea56aded45c4bcbdf05467",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_erenhot",
+   "places_hit": 2,
+   "seconds": 2.608,
+   "stream_hash": "8250f4da6a3e70c079844a0baf0712e0874d5e915d5fa8a9944a0f3c15696fd8",
+   "total_delay_d": 35.496996,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_frontroyal",
+   "places_hit": 2,
+   "seconds": 2.644,
+   "stream_hash": "0f11430ffde393731604b1e122c1a9efa81847239d446fcc8730df392a06102d",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_greer",
+   "places_hit": 2,
+   "seconds": 2.784,
+   "stream_hash": "a685d0dfdc74c44fa81e22de145a566300b3f3450226713030b5b3bdd3c7cd9a",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_halkali",
+   "places_hit": 4,
+   "seconds": 2.849,
+   "stream_hash": "9ba55e430aa2a9b0609fcbdf82c0b662adfe83e697843658d61beb86808754db",
+   "total_delay_d": 38.877029,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_hidalgo",
+   "places_hit": 3,
+   "seconds": 2.494,
+   "stream_hash": "58200ced2cf559c1386fdaa47d41baa5e68b87053d87cf2f4bb70e6e55a927ee",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 10,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_inlandempire",
+   "places_hit": 8,
+   "seconds": 2.701,
+   "stream_hash": "f142c0aed5f6c9a9ee607b8e05f246059d551e5994e2abe9f41d63b37c8612a5",
+   "total_delay_d": 37.222693,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_kansascity",
+   "places_hit": 2,
+   "seconds": 2.79,
+   "stream_hash": "0e1255518dc2cf3bf64c86bee4ab5a63a77f34887f0e2c35c8d5e115194077f4",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_khorgos",
+   "places_hit": 5,
+   "seconds": 2.863,
+   "stream_hash": "26680da0003c526241530195404690c4e5844874dae7ad176323758ca69cb8d8",
+   "total_delay_d": 42.328681,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_laredo",
+   "places_hit": 5,
+   "seconds": 2.649,
+   "stream_hash": "c4c0d4ce46060d4cdb9a7f7a041b1f980df5102879212dfbada49d9eaf3f4c53",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_madrid",
+   "places_hit": 4,
+   "seconds": 2.723,
+   "stream_hash": "c82ee949f80decb5b41a005c3fcc163e686892e75a0c88523008aba99a033fb2",
+   "total_delay_d": 36.95199,
+   "violations": []
+  },
+  {
+   "events": 16,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_malaszewicze",
+   "places_hit": 10,
+   "seconds": 2.528,
+   "stream_hash": "0f02c4904691e3d384fda01bde853a891fcaf8623841ef061691f5f9d34001cf",
+   "total_delay_d": 52.89948,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_manzhouli",
+   "places_hit": 3,
+   "seconds": 2.654,
+   "stream_hash": "6e7768b8a0d014d0fcbdf90a09409d1bcb5aefda05c3b2a79de1c9f2b8161e0d",
+   "total_delay_d": 36.434496,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_memphis",
+   "places_hit": 4,
+   "seconds": 2.71,
+   "stream_hash": "968425bc6cce55eb79c1070125295b7187a4ceca1c70a4837b0888cfa9c9e265",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_milan",
+   "places_hit": 4,
+   "seconds": 2.757,
+   "stream_hash": "f1bca6c7a80d51a82170bebfa57bdb2ddef6846f169dc189f74ccc8405585acc",
+   "total_delay_d": 36.984808,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_montreal",
+   "places_hit": 5,
+   "seconds": 2.788,
+   "stream_hash": "1ef68a21fbfbab05033709ce4341a07800c51804cae02f23758be2ba5a9847ff",
+   "total_delay_d": 38.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_nogales",
+   "places_hit": 2,
+   "seconds": 2.598,
+   "stream_hash": "073c1f247619fd1f58eac25349c917e27711264b57fa8c93efd076191cd77474",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 8,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_otaymesa",
+   "places_hit": 7,
+   "seconds": 2.695,
+   "stream_hash": "9c1f2e2b7ef88760c106639d8a51771108ee065e037595d5e43ff64be185bf57",
+   "total_delay_d": 38.749003,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_paris",
+   "places_hit": 4,
+   "seconds": 2.565,
+   "stream_hash": "41fb0b16d60e661f07d7381984834fba8438e8f6aae84b2c181248b280dea860",
+   "total_delay_d": 34.839972,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_porthuron",
+   "places_hit": 2,
+   "seconds": 2.786,
+   "stream_hash": "1077a1c868bd713fa9f020647cb2810541e1171c612e3b91c2a0d811c3b7b280",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 1,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_riyadh",
+   "places_hit": 1,
+   "seconds": 2.935,
+   "stream_hash": "8bdebdcecec205ea4c70c70f33c8f87194309d0bcde128e4344f7339284d6dfc",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_saltlakecity",
+   "places_hit": 2,
+   "seconds": 2.806,
+   "stream_hash": "881f297fb49e089e4b7dfc02efaf69e7cb733363a085b9fbbff7ecb7b4ea7856",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_stlouis",
+   "places_hit": 3,
+   "seconds": 2.887,
+   "stream_hash": "f3d6a230b7dba57403b69b54131e0534d52e44a413803998a0b7a4944675254f",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_stockton",
+   "places_hit": 2,
+   "seconds": 2.724,
+   "stream_hash": "5ce975f66a433bc82405080e0340a0031cdb1209cad617295cbb60534c5d91f3",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_sweetgrass",
+   "places_hit": 2,
+   "seconds": 2.653,
+   "stream_hash": "90bd2a465c0e7fbf72e9169db21e1e47382020be8117cc4f540ff03683cc5adc",
+   "total_delay_d": 29.942308,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_toronto",
+   "places_hit": 4,
+   "seconds": 2.613,
+   "stream_hash": "64b8f3d4b0be8cd0492e31f33bdf45374d6b70acedd8ceb8a7e857a2362a69f6",
+   "total_delay_d": 32.348291,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_vancouver",
+   "places_hit": 3,
+   "seconds": 2.663,
+   "stream_hash": "7e5644b8b99da60e089f11ff28d34459eab39b1fb37290849af7ad48970e68ad",
+   "total_delay_d": 40.123521,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "ground_node",
+   "max_delay_d": 29.942308,
+   "mode": "ground",
+   "place_id": "gnd_warsaw",
+   "places_hit": 2,
+   "seconds": 2.752,
+   "stream_hash": "b9f316167f5a164e9f1bc491a16f5c1d0e36b16f5633bd6ea5d01dc2136c6711",
+   "total_delay_d": 35.567308,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.943662,
+   "mode": "sea",
+   "place_id": "sea_algeciras",
+   "places_hit": 3,
+   "seconds": 2.978,
+   "stream_hash": "cd916900cf0282d9c573b657e7d0fccdca35c53e4772db6a0e4034d297fed971",
+   "total_delay_d": 29.943662,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.946914,
+   "mode": "sea",
+   "place_id": "sea_ambarli",
+   "places_hit": 3,
+   "seconds": 2.977,
+   "stream_hash": "71f50c52ed043dad057767388f79c5afe3a0f872573a08e0075774b6bd236af3",
+   "total_delay_d": 29.946914,
+   "violations": []
+  },
+  {
+   "events": 11,
+   "kind": "port",
+   "max_delay_d": 29.965686,
+   "mode": "sea",
+   "place_id": "sea_antwerp",
+   "places_hit": 9,
+   "seconds": 3.111,
+   "stream_hash": "82e7da92acdad2c0f0341d86213a10e18fb358404dea32a67d4597742fdabe2b",
+   "total_delay_d": 35.61213,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.948718,
+   "mode": "sea",
+   "place_id": "sea_balboa",
+   "places_hit": 5,
+   "seconds": 3.002,
+   "stream_hash": "814ac93f98fea1431d4fe7a4cfd53729ca3ca91fcee3654aac5494642ce5f100",
+   "total_delay_d": 29.948718,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.953505,
+   "mode": "sea",
+   "place_id": "sea_barcelona",
+   "places_hit": 5,
+   "seconds": 3.47,
+   "stream_hash": "006afb583009bc249af465c03c06cefa2bac109f500bba1466f0b369fb7192af",
+   "total_delay_d": 31.022345,
+   "violations": []
+  },
+  {
+   "events": 1,
+   "kind": "port",
+   "max_delay_d": 29.916667,
+   "mode": "sea",
+   "place_id": "sea_beirut",
+   "places_hit": 1,
+   "seconds": 2.672,
+   "stream_hash": "d99cdccb7e2b3ffdab0d397a10a325b6726ecee635f0f707598288fefe3f9dbc",
+   "total_delay_d": 29.916667,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.961864,
+   "mode": "sea",
+   "place_id": "sea_bremerhaven",
+   "places_hit": 5,
+   "seconds": 3.086,
+   "stream_hash": "118f0278a79b3ef2a09aa57abb119020da0a163fc2f814d6f05a28c2e60c92d5",
+   "total_delay_d": 33.00738,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.948334,
+   "mode": "sea",
+   "place_id": "sea_brisbane",
+   "places_hit": 3,
+   "seconds": 2.485,
+   "stream_hash": "62ec7a2cc9e748a0d09e6a8940e9355dec8426ded1a399dd5e74b8091b6dff31",
+   "total_delay_d": 29.948334,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.934211,
+   "mode": "sea",
+   "place_id": "sea_buenosaires",
+   "places_hit": 2,
+   "seconds": 3.013,
+   "stream_hash": "d93ca4dd758e2b5744c59275a468a33a19c112c991d6d30736712a74de2f4560",
+   "total_delay_d": 29.934211,
+   "violations": []
+  },
+  {
+   "events": 13,
+   "kind": "port",
+   "max_delay_d": 29.976865,
+   "mode": "sea",
+   "place_id": "sea_busan",
+   "places_hit": 12,
+   "seconds": 4.189,
+   "stream_hash": "40c566e1afc69d597222ccbd3f590abba23e74b908da91159a5eec1f805076fc",
+   "total_delay_d": 38.237603,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.947368,
+   "mode": "sea",
+   "place_id": "sea_caimep",
+   "places_hit": 4,
+   "seconds": 2.82,
+   "stream_hash": "164184acfe256deb85f022c2ee70fca131ae92c13bb5e286f9a767802f7f0f2a",
+   "total_delay_d": 33.677458,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.933333,
+   "mode": "sea",
+   "place_id": "sea_callao",
+   "places_hit": 4,
+   "seconds": 2.673,
+   "stream_hash": "cf1a6aa8bce730ab4aafff0b32d4de8c71deb7134a75db0982f7d58939159ac8",
+   "total_delay_d": 29.933333,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.916667,
+   "mode": "sea",
+   "place_id": "sea_capetown",
+   "places_hit": 4,
+   "seconds": 2.659,
+   "stream_hash": "43655319712c150f14d98b69c8e8a06916f81874fd2fb073d4a04b1e7f8aabbf",
+   "total_delay_d": 29.916667,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.94898,
+   "mode": "sea",
+   "place_id": "sea_cartagena",
+   "places_hit": 3,
+   "seconds": 2.759,
+   "stream_hash": "2f320f4f39173a3c864e7d3a987f58bc23881735826e53e581d3651b6912fa1d",
+   "total_delay_d": 29.94898,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.942246,
+   "mode": "sea",
+   "place_id": "sea_charleston",
+   "places_hit": 3,
+   "seconds": 2.773,
+   "stream_hash": "8109861767f18b89cc230ee5625b585d6cc5e3e754c645fe9c1b9cf4dc9fb70f",
+   "total_delay_d": 29.942246,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.936278,
+   "mode": "sea",
+   "place_id": "sea_chattogram",
+   "places_hit": 4,
+   "seconds": 2.721,
+   "stream_hash": "e5bab482fdb2bdd66aa7bf47a90604d10e81bf8852c2dfe9da351782721709cd",
+   "total_delay_d": 29.936278,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.947917,
+   "mode": "sea",
+   "place_id": "sea_colombo",
+   "places_hit": 4,
+   "seconds": 4.424,
+   "stream_hash": "2142d6308a8fd8cb43c11edf4753c726526c517e389bd32da44ca00715bd6b8e",
+   "total_delay_d": 38.157117,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.943182,
+   "mode": "sea",
+   "place_id": "sea_colon",
+   "places_hit": 3,
+   "seconds": 3.108,
+   "stream_hash": "afead0eb799631077ceb9ecc6a8c59a8f671937097c96959155a0391ca722768",
+   "total_delay_d": 32.536993,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.930318,
+   "mode": "sea",
+   "place_id": "sea_constanta",
+   "places_hit": 2,
+   "seconds": 3.033,
+   "stream_hash": "b97d664b3c61d712a6353627668a9c07c473aa501a0d6293950f6c29ccb2da66",
+   "total_delay_d": 29.930318,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.936567,
+   "mode": "sea",
+   "place_id": "sea_dalian",
+   "places_hit": 4,
+   "seconds": 2.897,
+   "stream_hash": "7a26f951ef063fa1dca45ba85cd308e31d4c15b87700069d3a7525ef6345a94a",
+   "total_delay_d": 29.936567,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.888889,
+   "mode": "sea",
+   "place_id": "sea_damietta",
+   "places_hit": 2,
+   "seconds": 2.906,
+   "stream_hash": "f95075b697f423a11fc4114f5609fd0d276fb4fa8e2ba143238a02dd3fbaffa0",
+   "total_delay_d": 29.888889,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.930955,
+   "mode": "sea",
+   "place_id": "sea_dammam",
+   "places_hit": 5,
+   "seconds": 2.875,
+   "stream_hash": "a2736e4419b41734dc19127cf4a5521a92aade269b69153f4a32ab8dd6a0c0cd",
+   "total_delay_d": 29.930955,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.913793,
+   "mode": "sea",
+   "place_id": "sea_dongguan",
+   "places_hit": 4,
+   "seconds": 2.647,
+   "stream_hash": "96a7710ad9279832d835ff73c602782b3f08c8a292f23dabb7b19c9b549b215e",
+   "total_delay_d": 29.913793,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.945652,
+   "mode": "sea",
+   "place_id": "sea_dublin",
+   "places_hit": 3,
+   "seconds": 2.672,
+   "stream_hash": "3ceb6692eabf8347da0377dfd3e95bbd4607ff1a82ed7c357f112ecbacc33442",
+   "total_delay_d": 29.945652,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.939843,
+   "mode": "sea",
+   "place_id": "sea_durban",
+   "places_hit": 4,
+   "seconds": 2.767,
+   "stream_hash": "da798dde3b447f8d8d2b6f5833ff9321b1cd345224fc457b8564de6e8bc49e9f",
+   "total_delay_d": 29.939843,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.93859,
+   "mode": "sea",
+   "place_id": "sea_felixstowe",
+   "places_hit": 4,
+   "seconds": 2.872,
+   "stream_hash": "409763c6168d9646699f072de444a478c4d8ad259dc21ef7f4c3767c22f7914b",
+   "total_delay_d": 32.95281,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.943548,
+   "mode": "sea",
+   "place_id": "sea_fuzhou",
+   "places_hit": 3,
+   "seconds": 2.748,
+   "stream_hash": "accf01f72fad8e5b8cd8360693d3673388eaa4ff1a8e47f8eff80673ccb563af",
+   "total_delay_d": 29.943548,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.92091,
+   "mode": "sea",
+   "place_id": "sea_gdansk",
+   "places_hit": 4,
+   "seconds": 2.997,
+   "stream_hash": "5bd6692c218962b77dbaba6258c4cb98cf6aabbbb373312382c5d11f6303acbc",
+   "total_delay_d": 32.450774,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.925926,
+   "mode": "sea",
+   "place_id": "sea_gdynia",
+   "places_hit": 2,
+   "seconds": 3.001,
+   "stream_hash": "37c71067cadc1fd4facda4828f86c34147abf534517224cab2c1278f473f93dd",
+   "total_delay_d": 29.925926,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.952381,
+   "mode": "sea",
+   "place_id": "sea_genoa",
+   "places_hit": 6,
+   "seconds": 3.542,
+   "stream_hash": "cd49886b1b96c14b153ff227b55a724fd592c45fbcb267a4d928aaf153c1cccf",
+   "total_delay_d": 29.952381,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.942857,
+   "mode": "sea",
+   "place_id": "sea_gioiatauro",
+   "places_hit": 4,
+   "seconds": 2.855,
+   "stream_hash": "6c1c7bf8de7426199bbeb31b3e0fe9a5a03323fc159fd54e5249e4fa744f6fb9",
+   "total_delay_d": 29.942857,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.950704,
+   "mode": "sea",
+   "place_id": "sea_guangzhou",
+   "places_hit": 4,
+   "seconds": 2.487,
+   "stream_hash": "9ca18c70c366196c7863386f8b277b80980c9ec6eba74eebe48b4796b577b744",
+   "total_delay_d": 42.560805,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.958333,
+   "mode": "sea",
+   "place_id": "sea_guayaquil",
+   "places_hit": 3,
+   "seconds": 2.569,
+   "stream_hash": "5d36ce54bccbffb70cdc4e66d30a9253f4b6efc01ade5730debda82c04550db1",
+   "total_delay_d": 29.958333,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.953385,
+   "mode": "sea",
+   "place_id": "sea_gwangyang",
+   "places_hit": 3,
+   "seconds": 2.964,
+   "stream_hash": "dcc2b9f4947b293c8e86429364664adaff02baaf7f00626802c4ceb6923f0ea5",
+   "total_delay_d": 29.953385,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.963751,
+   "mode": "sea",
+   "place_id": "sea_haiphong",
+   "places_hit": 3,
+   "seconds": 2.768,
+   "stream_hash": "6e5cb9dad0c7f9595fd194235db0328185c360ebbd171a5382782b0bf064aed1",
+   "total_delay_d": 29.963751,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.9375,
+   "mode": "sea",
+   "place_id": "sea_halifax",
+   "places_hit": 2,
+   "seconds": 2.733,
+   "stream_hash": "4b635eb614b66ca6df7e5388a8af3890bed9eaffd20644169f92a4ad7d797818",
+   "total_delay_d": 29.9375,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.932692,
+   "mode": "sea",
+   "place_id": "sea_hamad",
+   "places_hit": 4,
+   "seconds": 3.423,
+   "stream_hash": "604a8198ce052b1e462d3913902172305086af7891327a056690125ead10be17",
+   "total_delay_d": 29.932692,
+   "violations": []
+  },
+  {
+   "events": 8,
+   "kind": "port",
+   "max_delay_d": 29.961039,
+   "mode": "sea",
+   "place_id": "sea_hamburg",
+   "places_hit": 8,
+   "seconds": 2.98,
+   "stream_hash": "46e436875bb96e7d3664d47e736cd63ef67d52156f2a06899b7a529101802d9a",
+   "total_delay_d": 29.961039,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "port",
+   "max_delay_d": 29.963641,
+   "mode": "sea",
+   "place_id": "sea_hochiminh",
+   "places_hit": 6,
+   "seconds": 2.78,
+   "stream_hash": "9bc62c005d1c607c070f616334c40846def5d4b32bb4639ffca3f32ad4539547",
+   "total_delay_d": 39.38895,
+   "violations": []
+  },
+  {
+   "events": 11,
+   "kind": "port",
+   "max_delay_d": 29.95807,
+   "mode": "sea",
+   "place_id": "sea_hongkong",
+   "places_hit": 8,
+   "seconds": 3.594,
+   "stream_hash": "5a7931277521d1999b9971441f92108098537d1f34f6b6e6a441f662294348ea",
+   "total_delay_d": 35.397939,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.95,
+   "mode": "sea",
+   "place_id": "sea_houston",
+   "places_hit": 2,
+   "seconds": 3.656,
+   "stream_hash": "946e5f8be55d2b143c02168e11381d0d2b610a5bd636d9db0c4eeca340e30f65",
+   "total_delay_d": 31.929307,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.957031,
+   "mode": "sea",
+   "place_id": "sea_incheon",
+   "places_hit": 4,
+   "seconds": 2.872,
+   "stream_hash": "41ae92d4ebe19166378d407baae2d29866171824e5204b3e329a34671584ae02",
+   "total_delay_d": 29.957031,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "port",
+   "max_delay_d": 29.933534,
+   "mode": "sea",
+   "place_id": "sea_jebelali",
+   "places_hit": 6,
+   "seconds": 4.651,
+   "stream_hash": "172e32707402c34172a730a311cb37ec7bdce207081b5e7530b983f17203439e",
+   "total_delay_d": 33.74756,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.920833,
+   "mode": "sea",
+   "place_id": "sea_jeddah",
+   "places_hit": 3,
+   "seconds": 4.167,
+   "stream_hash": "5c5b8d6b17117a7c01b237bc9f27ceb204672af875a934d4645df4e8909f7128",
+   "total_delay_d": 40.108485,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.949253,
+   "mode": "sea",
+   "place_id": "sea_kaohsiung",
+   "places_hit": 5,
+   "seconds": 3.517,
+   "stream_hash": "db9f5bcfa7de0d559d7ac121448ef6e5bfbd589b1a11501a03a3bf40994f3ec5",
+   "total_delay_d": 32.284719,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.91875,
+   "mode": "sea",
+   "place_id": "sea_karachi",
+   "places_hit": 4,
+   "seconds": 2.902,
+   "stream_hash": "327ae674393ec97d6b449ac5f1462f9e65c8455dc9d6e512e415e4d31ea17bc5",
+   "total_delay_d": 29.91875,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.940002,
+   "mode": "sea",
+   "place_id": "sea_keelung",
+   "places_hit": 2,
+   "seconds": 2.834,
+   "stream_hash": "f2b60b4821e4047b04ca3700b01d533ffa2129d051a2fe2bcd1527a69938a63b",
+   "total_delay_d": 29.940002,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.944763,
+   "mode": "sea",
+   "place_id": "sea_khalifa",
+   "places_hit": 3,
+   "seconds": 3.335,
+   "stream_hash": "f59bca6a08b15c85372cf5c4074654b672a9c90b94435132498786139cb8c53b",
+   "total_delay_d": 29.944763,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.941177,
+   "mode": "sea",
+   "place_id": "sea_koper",
+   "places_hit": 3,
+   "seconds": 2.751,
+   "stream_hash": "b5fbcfe17f03453454a43dca7dbec8a681961bbbd1284166a1cb1e2da48e6466",
+   "total_delay_d": 29.941177,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.962484,
+   "mode": "sea",
+   "place_id": "sea_laemchabang",
+   "places_hit": 2,
+   "seconds": 2.768,
+   "stream_hash": "fbb20f374d1ca2292857996b04afd0257fe36777fd6182df94ca0907ec3f45bb",
+   "total_delay_d": 29.962484,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.96139,
+   "mode": "sea",
+   "place_id": "sea_lehavre",
+   "places_hit": 5,
+   "seconds": 2.826,
+   "stream_hash": "e0a3f9698ca97f7e2f6f735aa82150ac535312153d9460d59125b741dc295ecc",
+   "total_delay_d": 32.364257,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.931035,
+   "mode": "sea",
+   "place_id": "sea_lianyungang",
+   "places_hit": 4,
+   "seconds": 3.116,
+   "stream_hash": "5e66c6a6fab3f7e2868124299198e80261622e85dc2b3a0670f6c7d2ba3218a9",
+   "total_delay_d": 29.931035,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.944128,
+   "mode": "sea",
+   "place_id": "sea_longbeach",
+   "places_hit": 5,
+   "seconds": 3.034,
+   "stream_hash": "2d5312fa4d3200bfc184ec38dbe29f20523d3fb116bd517b0b9952e492478fc1",
+   "total_delay_d": 29.944128,
+   "violations": []
+  },
+  {
+   "events": 10,
+   "kind": "port",
+   "max_delay_d": 29.944128,
+   "mode": "sea",
+   "place_id": "sea_losangeles",
+   "places_hit": 9,
+   "seconds": 3.498,
+   "stream_hash": "6edbda5bf7c2b75301ab3a454caf4653721524a7bc54f0b9b1223207af476059",
+   "total_delay_d": 32.18005,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.961759,
+   "mode": "sea",
+   "place_id": "sea_manila",
+   "places_hit": 3,
+   "seconds": 2.785,
+   "stream_hash": "dbc0c56a066f0c51e61f2965b77a4e0012d357d2ff2e6a8e7240a6dbc8f4dc0d",
+   "total_delay_d": 29.961759,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.943548,
+   "mode": "sea",
+   "place_id": "sea_manzanillo",
+   "places_hit": 3,
+   "seconds": 3.405,
+   "stream_hash": "a784ece8979599b3a2e2cdc0008af015a7a9a8de1ef4b7655bb0b993a281c35e",
+   "total_delay_d": 29.943548,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.948956,
+   "mode": "sea",
+   "place_id": "sea_marsaxlokk",
+   "places_hit": 3,
+   "seconds": 2.942,
+   "stream_hash": "94a2a476adec433c3a8095862ea79f0ee8c7ca78d67a56a925ceb8f4d1f34875",
+   "total_delay_d": 29.948956,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.96,
+   "mode": "sea",
+   "place_id": "sea_melbourne",
+   "places_hit": 4,
+   "seconds": 3.018,
+   "stream_hash": "bc1e27f7e8c77d61bc5bc155bb351a32d3ac16bca23770e35dbb035f4964e105",
+   "total_delay_d": 29.96,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.910256,
+   "mode": "sea",
+   "place_id": "sea_mersin",
+   "places_hit": 3,
+   "seconds": 3.024,
+   "stream_hash": "2319fde182aa5c91edd72aa012366c6cd06302a8e6e854de02ecdfbb687fce75",
+   "total_delay_d": 29.910256,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.948529,
+   "mode": "sea",
+   "place_id": "sea_mombasa",
+   "places_hit": 2,
+   "seconds": 2.77,
+   "stream_hash": "84a0c85c07c8d632dbd86a8215ae1da79c6c6e152949c2f87f8d2efa854134d3",
+   "total_delay_d": 32.484849,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.907143,
+   "mode": "sea",
+   "place_id": "sea_montreal",
+   "places_hit": 4,
+   "seconds": 2.716,
+   "stream_hash": "c908e6c47c842e4c7e03fd8ac2db8ce47eee27f61a7c243d07edc07b1a9ce8cf",
+   "total_delay_d": 42.8252,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.946154,
+   "mode": "sea",
+   "place_id": "sea_mundra",
+   "places_hit": 5,
+   "seconds": 3.117,
+   "stream_hash": "93f483eb76db985809227f57e1f3fb8b8e9e11384300381020ab8037042960b2",
+   "total_delay_d": 32.545433,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.954601,
+   "mode": "sea",
+   "place_id": "sea_nagoya",
+   "places_hit": 5,
+   "seconds": 2.942,
+   "stream_hash": "7e73d6872eabd52e215d36ee2f746445844f41e28011c5de51f72645ba0f14fc",
+   "total_delay_d": 30.835157,
+   "violations": []
+  },
+  {
+   "events": 11,
+   "kind": "port",
+   "max_delay_d": 29.96393,
+   "mode": "sea",
+   "place_id": "sea_newyork",
+   "places_hit": 10,
+   "seconds": 3.981,
+   "stream_hash": "e5d291ead05c6b57418a2a2dd23d91ea207db98cbba4d9cbcf337cadeb70af87",
+   "total_delay_d": 46.168834,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.9375,
+   "mode": "sea",
+   "place_id": "sea_nhavasheva",
+   "places_hit": 2,
+   "seconds": 2.85,
+   "stream_hash": "b1f9cfb34da4c8e3ffb0e2fb42c0bf2d7622eb3c7d6cf434db6fdf3897992978",
+   "total_delay_d": 29.9375,
+   "violations": []
+  },
+  {
+   "events": 22,
+   "kind": "port",
+   "max_delay_d": 29.929247,
+   "mode": "sea",
+   "place_id": "sea_ningbo",
+   "places_hit": 18,
+   "seconds": 4.005,
+   "stream_hash": "6c6fb41554818d0d9463da6a56dba7671b09e087b875cfb9509626fcf92b0017",
+   "total_delay_d": 54.982045,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.930099,
+   "mode": "sea",
+   "place_id": "sea_nwsa",
+   "places_hit": 4,
+   "seconds": 2.626,
+   "stream_hash": "c3fb734b3ac21df043f3c71e6acd8c706f17a92c40c3c1e25ce849dabf6cb648",
+   "total_delay_d": 29.930099,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.912152,
+   "mode": "sea",
+   "place_id": "sea_oakland",
+   "places_hit": 5,
+   "seconds": 2.646,
+   "stream_hash": "e4f2c8d306fd4493bdb1a88fa9eac2d33617bb3f2fd3e469fa7c3f7505b35c5f",
+   "total_delay_d": 29.912152,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "port",
+   "max_delay_d": 29.95319,
+   "mode": "sea",
+   "place_id": "sea_piraeus",
+   "places_hit": 6,
+   "seconds": 3.105,
+   "stream_hash": "5364dae676719f3f3d80f4ccfeb7b74eab93c3bd2fbf6378c9092b24b638c88a",
+   "total_delay_d": 34.968217,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.972678,
+   "mode": "sea",
+   "place_id": "sea_portklang",
+   "places_hit": 3,
+   "seconds": 3.67,
+   "stream_hash": "fad30d784611e0465e11ac1f18ad350d8f753bcf112f61fbcba4b543e861f01a",
+   "total_delay_d": 29.972678,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "port",
+   "max_delay_d": 29.903846,
+   "mode": "sea",
+   "place_id": "sea_portsaid",
+   "places_hit": 6,
+   "seconds": 4.325,
+   "stream_hash": "c6fe5289d36e3dbf5c7ecdd2f60d4796f42a769561c69cb453abf012be0cab5c",
+   "total_delay_d": 39.829698,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.897929,
+   "mode": "sea",
+   "place_id": "sea_princerupert",
+   "places_hit": 3,
+   "seconds": 2.67,
+   "stream_hash": "94f547320c89d3927ef3ec4bad084c2f2a4aee1d990d039467a77853e973760f",
+   "total_delay_d": 29.897929,
+   "violations": []
+  },
+  {
+   "events": 14,
+   "kind": "port",
+   "max_delay_d": 29.959664,
+   "mode": "sea",
+   "place_id": "sea_qingdao",
+   "places_hit": 11,
+   "seconds": 4.396,
+   "stream_hash": "c001cbf780312627c3cdaa76991baa83469a70382d269ce7f9c5c3498f5869cd",
+   "total_delay_d": 60.354545,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.931818,
+   "mode": "sea",
+   "place_id": "sea_qinzhou",
+   "places_hit": 4,
+   "seconds": 2.537,
+   "stream_hash": "cc6ad4977ee4374ca4c5e84bb1a87dda985671ef412c457a89658ab4a49b6390",
+   "total_delay_d": 29.931818,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.948718,
+   "mode": "sea",
+   "place_id": "sea_rizhao",
+   "places_hit": 3,
+   "seconds": 3.686,
+   "stream_hash": "806d2cec227ada7bdd14e0b33e72893320c65251d4eb00c16c585b45b49a6161",
+   "total_delay_d": 29.948718,
+   "violations": []
+  },
+  {
+   "events": 16,
+   "kind": "port",
+   "max_delay_d": 29.970179,
+   "mode": "sea",
+   "place_id": "sea_rotterdam",
+   "places_hit": 14,
+   "seconds": 4.899,
+   "stream_hash": "d4825440191d7145ed8482b9cc46fea868379195c1a91aa81194f2f566722c45",
+   "total_delay_d": 46.369005,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.942944,
+   "mode": "sea",
+   "place_id": "sea_salalah",
+   "places_hit": 4,
+   "seconds": 2.991,
+   "stream_hash": "f3c33f697ccf26e2d19ffa4b854494b5029d77ee5cc0e0c8a5d1f9a03616d50e",
+   "total_delay_d": 35.647215,
+   "violations": []
+  },
+  {
+   "events": 2,
+   "kind": "port",
+   "max_delay_d": 29.932692,
+   "mode": "sea",
+   "place_id": "sea_sanantonio",
+   "places_hit": 2,
+   "seconds": 2.714,
+   "stream_hash": "56570a70bad15a0f2b37cd5dff4f7efefb50b2fdfa3b03bc6f7db6e77640c2ed",
+   "total_delay_d": 29.932692,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.97093,
+   "mode": "sea",
+   "place_id": "sea_santos",
+   "places_hit": 5,
+   "seconds": 3.133,
+   "stream_hash": "316116f490c3d7969f5df7a37d0fcb01ac1edee0606dfbccf2038bac0c21f945",
+   "total_delay_d": 29.97093,
+   "violations": []
+  },
+  {
+   "events": 8,
+   "kind": "port",
+   "max_delay_d": 29.939189,
+   "mode": "sea",
+   "place_id": "sea_savannah",
+   "places_hit": 6,
+   "seconds": 3.183,
+   "stream_hash": "f60639530a13db7751c9360166dd5a77a7c82ba2fa99c721d8ad5e06930ef171",
+   "total_delay_d": 36.511039,
+   "violations": []
+  },
+  {
+   "events": 48,
+   "kind": "port",
+   "max_delay_d": 29.971818,
+   "mode": "sea",
+   "place_id": "sea_shanghai",
+   "places_hit": 38,
+   "seconds": 3.82,
+   "stream_hash": "9d1fa7c7bce670e2de9bd08d5847e06bda74de9f5ca7e4a644ed5d219a898f73",
+   "total_delay_d": 77.626994,
+   "violations": []
+  },
+  {
+   "events": 7,
+   "kind": "port",
+   "max_delay_d": 29.944801,
+   "mode": "sea",
+   "place_id": "sea_shenzhen",
+   "places_hit": 7,
+   "seconds": 4.204,
+   "stream_hash": "e23c526c69fed2ba23f69f9a73cea8007c5bc282fc147661fced4f9bb3dc3a28",
+   "total_delay_d": 29.944801,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.933111,
+   "mode": "sea",
+   "place_id": "sea_sines",
+   "places_hit": 3,
+   "seconds": 2.954,
+   "stream_hash": "513520e197e39657cf49115858cffe16fc2d29cc30e4422ae50005383a958747",
+   "total_delay_d": 29.933111,
+   "violations": []
+  },
+  {
+   "events": 16,
+   "kind": "port",
+   "max_delay_d": 29.978671,
+   "mode": "sea",
+   "place_id": "sea_singapore",
+   "places_hit": 11,
+   "seconds": 3.861,
+   "stream_hash": "14ef1b4cd36fb2ec32a61c16d3427bcd4da37e4b2cfd8d6a6689739523daec86",
+   "total_delay_d": 68.502745,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.952132,
+   "mode": "sea",
+   "place_id": "sea_sydney",
+   "places_hit": 3,
+   "seconds": 2.834,
+   "stream_hash": "d77c8201335ef3215554732a794a117089263e70065ef05212b70f67ea140e1d",
+   "total_delay_d": 29.952132,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.944128,
+   "mode": "sea",
+   "place_id": "sea_taicang",
+   "places_hit": 4,
+   "seconds": 3.329,
+   "stream_hash": "da7b7e9b30bd2e833644d73009cbfc2b1f69fb2ed72eb421590395579d7ee79d",
+   "total_delay_d": 29.944128,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.953436,
+   "mode": "sea",
+   "place_id": "sea_taichung",
+   "places_hit": 3,
+   "seconds": 2.815,
+   "stream_hash": "624cd6e04fd6958f155740624dc79ea83adf26a1175c327401b85142cf43c99c",
+   "total_delay_d": 29.953436,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.944801,
+   "mode": "sea",
+   "place_id": "sea_tangermed",
+   "places_hit": 4,
+   "seconds": 3.165,
+   "stream_hash": "06aa74d845b80ad2415d53d417697b68c8b8b5baf11dddf9f5b67dc8c9bbcf69",
+   "total_delay_d": 34.927339,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.968421,
+   "mode": "sea",
+   "place_id": "sea_tanjungpelepas",
+   "places_hit": 5,
+   "seconds": 3.725,
+   "stream_hash": "ac6041e4372a97e1bf7b8067af51fa83e326412fd5b140a17f4073e2de3c450f",
+   "total_delay_d": 31.461018,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.95082,
+   "mode": "sea",
+   "place_id": "sea_tanjungperak",
+   "places_hit": 4,
+   "seconds": 2.992,
+   "stream_hash": "7573240a53a924bc02373f7efbba050d965731c44f13abf5a367bbde6a3c4386",
+   "total_delay_d": 32.233747,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.969072,
+   "mode": "sea",
+   "place_id": "sea_tanjungpriok",
+   "places_hit": 4,
+   "seconds": 3.066,
+   "stream_hash": "f9bad7c14f5f1ce5b2df97edeed9e899b7a9405595797acad5c5607460054774",
+   "total_delay_d": 29.969072,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.948149,
+   "mode": "sea",
+   "place_id": "sea_tianjin",
+   "places_hit": 3,
+   "seconds": 2.574,
+   "stream_hash": "3fdedce682d3b1345b0e0760b2aba8303723b21212412e5a1a81f63d29e4a3ca",
+   "total_delay_d": 29.948149,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.96028,
+   "mode": "sea",
+   "place_id": "sea_tokyo",
+   "places_hit": 4,
+   "seconds": 2.867,
+   "stream_hash": "c59e318b913674be885fca6fed4fd41d6d72db1d702a0bd40edaf5d705739d81",
+   "total_delay_d": 31.952578,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.954545,
+   "mode": "sea",
+   "place_id": "sea_valencia",
+   "places_hit": 4,
+   "seconds": 3.167,
+   "stream_hash": "5102eaa6847f09958e5112cc724f523363593ca244a722b6986224e308580afd",
+   "total_delay_d": 29.954545,
+   "violations": []
+  },
+  {
+   "events": 5,
+   "kind": "port",
+   "max_delay_d": 29.932692,
+   "mode": "sea",
+   "place_id": "sea_vancouver",
+   "places_hit": 5,
+   "seconds": 3.488,
+   "stream_hash": "2d9564d7e33fc78dc138f66a8ca2240544a8ea9803a86cfdcc1a6a97bdda33e5",
+   "total_delay_d": 29.932692,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.933333,
+   "mode": "sea",
+   "place_id": "sea_virginia",
+   "places_hit": 4,
+   "seconds": 2.712,
+   "stream_hash": "5a1f5d5fb686f8a014211e8fc35daa18a71275492ec5a05363b51e188a60bcdf",
+   "total_delay_d": 29.933333,
+   "violations": []
+  },
+  {
+   "events": 12,
+   "kind": "port",
+   "max_delay_d": 29.948864,
+   "mode": "sea",
+   "place_id": "sea_xiamen",
+   "places_hit": 11,
+   "seconds": 3.768,
+   "stream_hash": "c7b443ed9759a7e38540c471dda776408ccc5dd151f8e51b7927fe7d14af1d15",
+   "total_delay_d": 44.672594,
+   "violations": []
+  },
+  {
+   "events": 3,
+   "kind": "port",
+   "max_delay_d": 29.94,
+   "mode": "sea",
+   "place_id": "sea_yantai",
+   "places_hit": 3,
+   "seconds": 3.032,
+   "stream_hash": "95ceede4a91720177324c61bef6fdc0790c6bcaa35e28aee32ee68c4c1205fb4",
+   "total_delay_d": 29.94,
+   "violations": []
+  },
+  {
+   "events": 4,
+   "kind": "port",
+   "max_delay_d": 29.905172,
+   "mode": "sea",
+   "place_id": "sea_yingkou",
+   "places_hit": 4,
+   "seconds": 2.973,
+   "stream_hash": "eb3893c86952c9ff7da4397351df010b5c209c70b0ce3f4964f68e9614199fbe",
+   "total_delay_d": 29.905172,
+   "violations": []
+  },
+  {
+   "events": 6,
+   "kind": "port",
+   "max_delay_d": 29.958333,
+   "mode": "sea",
+   "place_id": "sea_yokohama",
+   "places_hit": 4,
+   "seconds": 3.249,
+   "stream_hash": "39448227dfa3830194bde5c5fb802f4e39496ed200e8f558d6283e8e4d0ad3ab",
+   "total_delay_d": 35.946501,
+   "violations": []
+  }
+ ],
+ "standard_disruption": {
+  "capacity_loss": 1.0,
+  "duration_d": 30.0,
+  "kind": "closure",
+  "shape": "step",
+  "started_at": "2024-01-01T00:00:00Z"
+ }
+}

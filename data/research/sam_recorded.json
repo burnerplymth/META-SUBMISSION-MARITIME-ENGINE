@@ -1,0 +1,80 @@
+{
+ "entries": [
+  {
+   "below_floor": 0,
+   "count": 0,
+   "crop_bbox": [
+    32.31,
+    30.38,
+    32.39,
+    30.46
+   ],
+   "crop_px": [
+    768,
+    884
+   ],
+   "detector": "sam",
+   "est_cost_usd": 0.0025,
+   "images_processed": 1,
+   "model": "sam-3.1",
+   "note": "SAM found 0 on a native 10 m crop; recall at 10 m is unvalidated and a count is a floor, not the number of vessels",
+   "place": "chk_suez",
+   "prompt": "container ship",
+   "recorded_at": "2026-10-29",
+   "response_id": "resp_6ae332814d15e6cdbc6b4f44",
+   "scene_id": "S2A_MSIL2A_20210324T082611_R021_T36RVU_20210324T191936",
+   "source": "sentinel-2"
+  },
+  {
+   "below_floor": 1,
+   "count": 4,
+   "crop_bbox": [
+    -118.3,
+    33.69,
+    -118.22,
+    33.77
+   ],
+   "crop_px": [
+    741,
+    884
+   ],
+   "detector": "sam",
+   "est_cost_usd": 0.0025,
+   "images_processed": 1,
+   "model": "sam-3.1",
+   "note": "SAM found 4 on a native 10 m crop; recall at 10 m is unvalidated and a count is a floor, not the number of vessels",
+   "place": "sea_losangeles",
+   "prompt": "container ship",
+   "recorded_at": "2026-10-29",
+   "response_id": "resp_6ae3327777c452cc426f4729",
+   "scene_id": "S2A_MSIL2A_20211020T183411_R027_T11SLT_20211022T063233",
+   "source": "sentinel-2"
+  },
+  {
+   "below_floor": 0,
+   "count": 0,
+   "crop_bbox": [
+    -118.3,
+    33.69,
+    -118.22,
+    33.77
+   ],
+   "crop_px": [
+    741,
+    884
+   ],
+   "detector": "sam",
+   "est_cost_usd": 0.0025,
+   "images_processed": 1,
+   "model": "sam-3.1",
+   "note": "SAM found 0 on a native 10 m crop; recall at 10 m is unvalidated and a count is a floor, not the number of vessels",
+   "place": "sea_losangeles",
+   "prompt": "container ship",
+   "recorded_at": "2026-10-29",
+   "response_id": "resp_6ae3327bee3e784ed4aa4dd1",
+   "scene_id": "S2B_MSIL2A_20211114T183629_R027_T11SLT_20211115T061847",
+   "source": "sentinel-2"
+  }
+ ],
+ "schema": "supermap.research.sam.v1"
+}

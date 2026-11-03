@@ -1,0 +1,8093 @@
+{
+ "config": "v1",
+ "digest": {
+  "n_events": 385,
+  "places": {
+   "air_addisababa": {
+    "first_delay_d": 0.072859,
+    "first_lag_d": 267.424919,
+    "first_seq": 187,
+    "max_delay_d": 0.072859
+   },
+   "air_anchorage": {
+    "first_delay_d": 0.163401,
+    "first_lag_d": 240.337731,
+    "first_seq": 149,
+    "max_delay_d": 0.163401
+   },
+   "air_atlanta": {
+    "first_delay_d": 0.090461,
+    "first_lag_d": 266.011713,
+    "first_seq": 173,
+    "max_delay_d": 0.090461
+   },
+   "air_bangkok": {
+    "first_delay_d": 0.106573,
+    "first_lag_d": 240.080903,
+    "first_seq": 150,
+    "max_delay_d": 0.106573
+   },
+   "air_brussels": {
+    "first_delay_d": 0.135242,
+    "first_lag_d": 241.39934,
+    "first_seq": 165,
+    "max_delay_d": 0.135242
+   },
+   "air_chicago": {
+    "first_delay_d": 0.22992,
+    "first_lag_d": 240.96765,
+    "first_seq": 166,
+    "max_delay_d": 0.22992
+   },
+   "air_cincinnati": {
+    "first_delay_d": 0.057861,
+    "first_lag_d": 266.079109,
+    "first_seq": 174,
+    "max_delay_d": 0.057861
+   },
+   "air_cologne": {
+    "first_delay_d": 0.112409,
+    "first_lag_d": 241.558553,
+    "first_seq": 175,
+    "max_delay_d": 0.112409
+   },
+   "air_delhi": {
+    "first_delay_d": 0.397853,
+    "first_lag_d": 41.697847,
+    "first_seq": 13,
+    "max_delay_d": 0.397853
+   },
+   "air_doha": {
+    "first_delay_d": 0.287104,
+    "first_lag_d": 242.173264,
+    "first_seq": 176,
+    "max_delay_d": 0.287104
+   },
+   "air_dubai": {
+    "first_delay_d": 0.272062,
+    "first_lag_d": 241.686169,
+    "first_seq": 167,
+    "max_delay_d": 0.272062
+   },
+   "air_dubaiworldcentral": {
+    "first_delay_d": 0.061446,
+    "first_lag_d": 241.947616,
+    "first_seq": 177,
+    "max_delay_d": 0.061446
+   },
+   "air_ezhou": {
+    "first_delay_d": 0.141424,
+    "first_lag_d": 240.979155,
+    "first_seq": 168,
+    "max_delay_d": 0.141424
+   },
+   "air_frankfurt": {
+    "first_delay_d": 0.185789,
+    "first_lag_d": 266.65206,
+    "first_seq": 180,
+    "max_delay_d": 0.185789
+   },
+   "air_hongkong": {
+    "first_delay_d": 0.497317,
+    "first_lag_d": 239.674329,
+    "first_seq": 124,
+    "max_delay_d": 0.497317
+   },
+   "air_houston": {
+    "first_delay_d": 0.095018,
+    "first_lag_d": 266.016273,
+    "first_seq": 178,
+    "max_delay_d": 0.095018
+   },
+   "air_incheon": {
+    "first_delay_d": 0.467723,
+    "first_lag_d": 152.844734,
+    "first_seq": 125,
+    "max_delay_d": 0.467723
+   },
+   "air_jakarta": {
+    "first_delay_d": 0.103003,
+    "first_lag_d": 170.280012,
+    "first_seq": 67,
+    "max_delay_d": 0.103003
+   },
+   "air_leipzig": {
+    "first_delay_d": 0.017612,
+    "first_lag_d": 266.719676,
+    "first_seq": 183,
+    "max_delay_d": 0.017612
+   },
+   "air_liege": {
+    "first_delay_d": 0.157983,
+    "first_lag_d": 267.245613,
+    "first_seq": 188,
+    "max_delay_d": 0.157983
+   },
+   "air_london": {
+    "first_delay_d": 0.212768,
+    "first_lag_d": 243.086042,
+    "first_seq": 181,
+    "max_delay_d": 0.212768
+   },
+   "air_losangeles": {
+    "first_delay_d": 0.174559,
+    "first_lag_d": 262.251574,
+    "first_seq": 151,
+    "max_delay_d": 0.174559
+   },
+   "air_louisville": {
+    "first_delay_d": 0.208415,
+    "first_lag_d": 241.046146,
+    "first_seq": 169,
+    "max_delay_d": 0.208415
+   },
+   "air_madrid": {
+    "first_delay_d": 0.06829,
+    "first_lag_d": 266.870347,
+    "first_seq": 184,
+    "max_delay_d": 0.06829
+   },
+   "air_memphis": {
+    "first_delay_d": 0.110909,
+    "first_lag_d": 265.82125,
+    "first_seq": 170,
+    "max_delay_d": 0.110909
+   },
+   "air_milan": {
+    "first_delay_d": 0.022597,
+    "first_lag_d": 266.774653,
+    "first_seq": 185,
+    "max_delay_d": 0.022597
+   },
+   "air_narita": {
+    "first_delay_d": 0.447585,
+    "first_lag_d": 242.315231,
+    "first_seq": 171,
+    "max_delay_d": 0.447585
+   },
+   "air_newyork": {
+    "first_delay_d": 0.093998,
+    "first_lag_d": 267.096053,
+    "first_seq": 182,
+    "max_delay_d": 0.093998
+   },
+   "air_ontario": {
+    "first_delay_d": 0.176502,
+    "first_lag_d": 205.086852,
+    "first_seq": 126,
+    "max_delay_d": 0.176502
+   },
+   "air_osaka": {
+    "first_delay_d": 0.160126,
+    "first_lag_d": 240.897859,
+    "first_seq": 152,
+    "max_delay_d": 0.160126
+   },
+   "air_paris": {
+    "first_delay_d": 0.085576,
+    "first_lag_d": 267.037639,
+    "first_seq": 186,
+    "max_delay_d": 0.085576
+   },
+   "air_shanghaipudong": {
+    "first_delay_d": 0.177501,
+    "first_lag_d": 263.429074,
+    "first_seq": 153,
+    "max_delay_d": 0.177501
+   },
+   "air_singapore": {
+    "first_delay_d": 0.333202,
+    "first_lag_d": 240.714109,
+    "first_seq": 154,
+    "max_delay_d": 0.333202
+   },
+   "air_taipei": {
+    "first_delay_d": 0.420628,
+    "first_lag_d": 263.672199,
+    "first_seq": 155,
+    "max_delay_d": 0.420628
+   },
+   "air_toronto": {
+    "first_delay_d": 0.088134,
+    "first_lag_d": 241.155787,
+    "first_seq": 179,
+    "max_delay_d": 0.088134
+   },
+   "air_zhengzhou": {
+    "first_delay_d": 0.146717,
+    "first_lag_d": 240.934444,
+    "first_seq": 156,
+    "max_delay_d": 0.146717
+   },
+   "chk_babelmandeb": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 6.666667,
+    "first_seq": 0,
+    "max_delay_d": 6.666667
+   },
+   "chk_capeofgoodhope": {
+    "first_delay_d": 7.5,
+    "first_lag_d": 33.666667,
+    "first_seq": 2,
+    "max_delay_d": 7.5
+   },
+   "chk_danish": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 130.543681,
+    "first_seq": 45,
+    "max_delay_d": 6.666667
+   },
+   "chk_dover": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 118.143681,
+    "first_seq": 28,
+    "max_delay_d": 6.666667
+   },
+   "chk_gibraltar": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 131.743681,
+    "first_seq": 46,
+    "max_delay_d": 6.666667
+   },
+   "chk_hormuz": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 54.933333,
+    "first_seq": 14,
+    "max_delay_d": 6.666667
+   },
+   "chk_malacca": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 154.543681,
+    "first_seq": 47,
+    "max_delay_d": 6.666667
+   },
+   "chk_mozambique": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 33.833333,
+    "first_seq": 3,
+    "max_delay_d": 6.666667
+   },
+   "chk_panama": {
+    "first_delay_d": 13.888889,
+    "first_lag_d": 209.765903,
+    "first_seq": 68,
+    "max_delay_d": 13.888889
+   },
+   "chk_suez": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 53.177014,
+    "first_seq": 15,
+    "max_delay_d": 6.666667
+   },
+   "chk_taiwan": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 193.643681,
+    "first_seq": 95,
+    "max_delay_d": 6.666667
+   },
+   "chk_turkish": {
+    "first_delay_d": 6.666667,
+    "first_lag_d": 99.543681,
+    "first_seq": 29,
+    "max_delay_d": 6.666667
+   },
+   "gnd_alexandriabay": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 136.243681,
+    "first_seq": 69,
+    "max_delay_d": 3.333333
+   },
+   "gnd_atlanta": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 243.599236,
+    "first_seq": 96,
+    "max_delay_d": 3.333333
+   },
+   "gnd_bettembourg": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 124.377014,
+    "first_seq": 97,
+    "max_delay_d": 3.333333
+   },
+   "gnd_blaine": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 203.043681,
+    "first_seq": 127,
+    "max_delay_d": 3.333333
+   },
+   "gnd_budapest": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 108.010347,
+    "first_seq": 48,
+    "max_delay_d": 3.333333
+   },
+   "gnd_buffalo": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 253.210347,
+    "first_seq": 98,
+    "max_delay_d": 3.333333
+   },
+   "gnd_calexico": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 208.443681,
+    "first_seq": 128,
+    "max_delay_d": 3.333333
+   },
+   "gnd_channeltunnel": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 132.243681,
+    "first_seq": 157,
+    "max_delay_d": 3.333333
+   },
+   "gnd_chicago": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 261.277014,
+    "first_seq": 129,
+    "max_delay_d": 3.333333
+   },
+   "gnd_citydeep": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 60.0,
+    "first_seq": 16,
+    "max_delay_d": 3.333333
+   },
+   "gnd_columbus": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 253.410347,
+    "first_seq": 99,
+    "max_delay_d": 3.333333
+   },
+   "gnd_dadri": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 41.0,
+    "first_seq": 7,
+    "max_delay_d": 3.333333
+   },
+   "gnd_dallas": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 266.610347,
+    "first_seq": 130,
+    "max_delay_d": 3.333333
+   },
+   "gnd_detroit": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 257.243681,
+    "first_seq": 100,
+    "max_delay_d": 3.333333
+   },
+   "gnd_duisburg": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 114.710347,
+    "first_seq": 49,
+    "max_delay_d": 3.333333
+   },
+   "gnd_eaglepass": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 270.543681,
+    "first_seq": 131,
+    "max_delay_d": 3.333333
+   },
+   "gnd_elpaso": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 271.443681,
+    "first_seq": 158,
+    "max_delay_d": 3.333333
+   },
+   "gnd_frontroyal": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 274.710347,
+    "first_seq": 132,
+    "max_delay_d": 3.333333
+   },
+   "gnd_greer": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 264.410347,
+    "first_seq": 133,
+    "max_delay_d": 3.333333
+   },
+   "gnd_halkali": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 114.343681,
+    "first_seq": 70,
+    "max_delay_d": 3.333333
+   },
+   "gnd_hidalgo": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 270.643681,
+    "first_seq": 134,
+    "max_delay_d": 3.333333
+   },
+   "gnd_inlandempire": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 204.710347,
+    "first_seq": 101,
+    "max_delay_d": 3.333333
+   },
+   "gnd_kansascity": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 271.443681,
+    "first_seq": 159,
+    "max_delay_d": 3.333333
+   },
+   "gnd_khorgos": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 138.410347,
+    "first_seq": 135,
+    "max_delay_d": 3.333333
+   },
+   "gnd_laredo": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 229.799236,
+    "first_seq": 102,
+    "max_delay_d": 3.333333
+   },
+   "gnd_madrid": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 133.743681,
+    "first_seq": 172,
+    "max_delay_d": 3.333333
+   },
+   "gnd_malaszewicze": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 124.077014,
+    "first_seq": 103,
+    "max_delay_d": 3.333333
+   },
+   "gnd_memphis": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 265.610347,
+    "first_seq": 160,
+    "max_delay_d": 3.333333
+   },
+   "gnd_milan": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 119.543681,
+    "first_seq": 71,
+    "max_delay_d": 3.333333
+   },
+   "gnd_montreal": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 132.410347,
+    "first_seq": 50,
+    "max_delay_d": 3.333333
+   },
+   "gnd_nogales": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 271.943681,
+    "first_seq": 161,
+    "max_delay_d": 3.333333
+   },
+   "gnd_otaymesa": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 212.077014,
+    "first_seq": 136,
+    "max_delay_d": 3.333333
+   },
+   "gnd_paris": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 128.410347,
+    "first_seq": 137,
+    "max_delay_d": 3.333333
+   },
+   "gnd_porthuron": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 261.077014,
+    "first_seq": 162,
+    "max_delay_d": 3.333333
+   },
+   "gnd_riyadh": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 70.166667,
+    "first_seq": 30,
+    "max_delay_d": 3.333333
+   },
+   "gnd_saltlakecity": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 277.110347,
+    "first_seq": 138,
+    "max_delay_d": 3.333333
+   },
+   "gnd_stlouis": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 275.177014,
+    "first_seq": 163,
+    "max_delay_d": 3.333333
+   },
+   "gnd_stockton": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 276.510347,
+    "first_seq": 139,
+    "max_delay_d": 3.333333
+   },
+   "gnd_sweetgrass": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 141.877014,
+    "first_seq": 104,
+    "max_delay_d": 3.333333
+   },
+   "gnd_toronto": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 136.743681,
+    "first_seq": 72,
+    "max_delay_d": 3.333333
+   },
+   "gnd_vancouver": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 199.410347,
+    "first_seq": 105,
+    "max_delay_d": 3.333333
+   },
+   "gnd_warsaw": {
+    "first_delay_d": 3.333333,
+    "first_lag_d": 120.043681,
+    "first_seq": 73,
+    "max_delay_d": 3.333333
+   },
+   "sea_algeciras": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 167.377014,
+    "first_seq": 51,
+    "max_delay_d": 10.0
+   },
+   "sea_ambarli": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 109.843681,
+    "first_seq": 52,
+    "max_delay_d": 10.0
+   },
+   "sea_antwerp": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 215.877014,
+    "first_seq": 74,
+    "max_delay_d": 10.0
+   },
+   "sea_balboa": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 220.065903,
+    "first_seq": 106,
+    "max_delay_d": 10.0
+   },
+   "sea_barcelona": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 136.877014,
+    "first_seq": 53,
+    "max_delay_d": 10.0
+   },
+   "sea_beirut": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 80.377014,
+    "first_seq": 20,
+    "max_delay_d": 10.0
+   },
+   "sea_bremerhaven": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 237.377014,
+    "first_seq": 107,
+    "max_delay_d": 10.0
+   },
+   "sea_brisbane": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 194.543681,
+    "first_seq": 108,
+    "max_delay_d": 10.0
+   },
+   "sea_buenosaires": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 133.877014,
+    "first_seq": 31,
+    "max_delay_d": 10.0
+   },
+   "sea_busan": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 151.877014,
+    "first_seq": 54,
+    "max_delay_d": 10.0
+   },
+   "sea_caimep": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 226.877014,
+    "first_seq": 109,
+    "max_delay_d": 10.0
+   },
+   "sea_callao": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 233.565903,
+    "first_seq": 140,
+    "max_delay_d": 10.0
+   },
+   "sea_capetown": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 44.166667,
+    "first_seq": 8,
+    "max_delay_d": 10.0
+   },
+   "sea_cartagena": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 163.377014,
+    "first_seq": 55,
+    "max_delay_d": 10.0
+   },
+   "sea_charleston": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 260.077014,
+    "first_seq": 110,
+    "max_delay_d": 10.0
+   },
+   "sea_chattogram": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 35.666667,
+    "first_seq": 4,
+    "max_delay_d": 10.0
+   },
+   "sea_colombo": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 22.666667,
+    "first_seq": 1,
+    "max_delay_d": 10.0
+   },
+   "sea_colon": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 220.265903,
+    "first_seq": 75,
+    "max_delay_d": 10.0
+   },
+   "sea_constanta": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 110.743681,
+    "first_seq": 32,
+    "max_delay_d": 10.0
+   },
+   "sea_dalian": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 208.377014,
+    "first_seq": 111,
+    "max_delay_d": 10.0
+   },
+   "sea_damietta": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 79.677014,
+    "first_seq": 21,
+    "max_delay_d": 10.0
+   },
+   "sea_dammam": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 65.833333,
+    "first_seq": 22,
+    "max_delay_d": 10.0
+   },
+   "sea_dongguan": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 295.277014,
+    "first_seq": 141,
+    "max_delay_d": 10.0
+   },
+   "sea_dublin": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 122.377014,
+    "first_seq": 33,
+    "max_delay_d": 10.0
+   },
+   "sea_durban": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 55.666667,
+    "first_seq": 9,
+    "max_delay_d": 10.0
+   },
+   "sea_felixstowe": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 128.543681,
+    "first_seq": 34,
+    "max_delay_d": 10.0
+   },
+   "sea_fuzhou": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 186.677014,
+    "first_seq": 76,
+    "max_delay_d": 10.0
+   },
+   "sea_gdansk": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 123.077014,
+    "first_seq": 35,
+    "max_delay_d": 10.0
+   },
+   "sea_gdynia": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 141.443681,
+    "first_seq": 56,
+    "max_delay_d": 10.0
+   },
+   "sea_genoa": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 148.077014,
+    "first_seq": 57,
+    "max_delay_d": 10.0
+   },
+   "sea_gioiatauro": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 91.677014,
+    "first_seq": 36,
+    "max_delay_d": 10.0
+   },
+   "sea_guangzhou": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 305.577014,
+    "first_seq": 142,
+    "max_delay_d": 10.0
+   },
+   "sea_guayaquil": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 245.365903,
+    "first_seq": 143,
+    "max_delay_d": 10.0
+   },
+   "sea_gwangyang": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 186.377014,
+    "first_seq": 77,
+    "max_delay_d": 10.0
+   },
+   "sea_haiphong": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 250.377014,
+    "first_seq": 144,
+    "max_delay_d": 10.0
+   },
+   "sea_halifax": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 140.377014,
+    "first_seq": 58,
+    "max_delay_d": 10.0
+   },
+   "sea_hamad": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 76.833333,
+    "first_seq": 23,
+    "max_delay_d": 10.0
+   },
+   "sea_hamburg": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 226.877014,
+    "first_seq": 78,
+    "max_delay_d": 10.0
+   },
+   "sea_hochiminh": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 170.377014,
+    "first_seq": 79,
+    "max_delay_d": 10.0
+   },
+   "sea_hongkong": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 238.877014,
+    "first_seq": 112,
+    "max_delay_d": 10.0
+   },
+   "sea_houston": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 225.765903,
+    "first_seq": 80,
+    "max_delay_d": 10.0
+   },
+   "sea_incheon": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 186.077014,
+    "first_seq": 81,
+    "max_delay_d": 10.0
+   },
+   "sea_jebelali": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 65.933333,
+    "first_seq": 17,
+    "max_delay_d": 10.0
+   },
+   "sea_jeddah": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 45.010347,
+    "first_seq": 10,
+    "max_delay_d": 10.0
+   },
+   "sea_kaohsiung": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 284.877014,
+    "first_seq": 145,
+    "max_delay_d": 10.0
+   },
+   "sea_karachi": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 46.466667,
+    "first_seq": 11,
+    "max_delay_d": 10.0
+   },
+   "sea_keelung": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 186.077014,
+    "first_seq": 82,
+    "max_delay_d": 10.0
+   },
+   "sea_khalifa": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 76.533333,
+    "first_seq": 24,
+    "max_delay_d": 10.0
+   },
+   "sea_koper": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 103.677014,
+    "first_seq": 37,
+    "max_delay_d": 10.0
+   },
+   "sea_laemchabang": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 158.877014,
+    "first_seq": 59,
+    "max_delay_d": 10.0
+   },
+   "sea_lehavre": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 139.343681,
+    "first_seq": 60,
+    "max_delay_d": 10.0
+   },
+   "sea_lianyungang": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 186.077014,
+    "first_seq": 83,
+    "max_delay_d": 10.0
+   },
+   "sea_longbeach": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 200.877014,
+    "first_seq": 84,
+    "max_delay_d": 10.0
+   },
+   "sea_losangeles": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 261.877014,
+    "first_seq": 113,
+    "max_delay_d": 10.0
+   },
+   "sea_manila": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 296.377014,
+    "first_seq": 146,
+    "max_delay_d": 10.0
+   },
+   "sea_manzanillo": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 234.565903,
+    "first_seq": 114,
+    "max_delay_d": 10.0
+   },
+   "sea_marsaxlokk": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 81.177014,
+    "first_seq": 25,
+    "max_delay_d": 10.0
+   },
+   "sea_melbourne": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 182.543681,
+    "first_seq": 85,
+    "max_delay_d": 10.0
+   },
+   "sea_mersin": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 91.177014,
+    "first_seq": 38,
+    "max_delay_d": 10.0
+   },
+   "sea_mombasa": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 69.666667,
+    "first_seq": 12,
+    "max_delay_d": 10.0
+   },
+   "sea_montreal": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 128.877014,
+    "first_seq": 39,
+    "max_delay_d": 10.0
+   },
+   "sea_mundra": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 35.666667,
+    "first_seq": 5,
+    "max_delay_d": 10.0
+   },
+   "sea_nagoya": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 197.877014,
+    "first_seq": 115,
+    "max_delay_d": 10.0
+   },
+   "sea_newyork": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 248.877014,
+    "first_seq": 86,
+    "max_delay_d": 10.0
+   },
+   "sea_ningbo": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 149.877014,
+    "first_seq": 61,
+    "max_delay_d": 10.0
+   },
+   "sea_nwsa": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 171.377014,
+    "first_seq": 87,
+    "max_delay_d": 10.0
+   },
+   "sea_oakland": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 272.877014,
+    "first_seq": 116,
+    "max_delay_d": 10.0
+   },
+   "sea_piraeus": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 91.877014,
+    "first_seq": 26,
+    "max_delay_d": 10.0
+   },
+   "sea_portklang": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 49.166667,
+    "first_seq": 18,
+    "max_delay_d": 10.0
+   },
+   "sea_portsaid": {
+    "first_delay_d": 15.3,
+    "first_lag_d": 69.177014,
+    "first_seq": 19,
+    "max_delay_d": 15.3
+   },
+   "sea_princerupert": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 170.377014,
+    "first_seq": 88,
+    "max_delay_d": 10.0
+   },
+   "sea_qingdao": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 163.377014,
+    "first_seq": 62,
+    "max_delay_d": 10.0
+   },
+   "sea_qinzhou": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 316.777014,
+    "first_seq": 147,
+    "max_delay_d": 10.0
+   },
+   "sea_rizhao": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 174.077014,
+    "first_seq": 117,
+    "max_delay_d": 10.0
+   },
+   "sea_rotterdam": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 110.877014,
+    "first_seq": 27,
+    "max_delay_d": 10.0
+   },
+   "sea_salalah": {
+    "first_delay_d": 3.343683,
+    "first_lag_d": 31.010347,
+    "first_seq": 6,
+    "max_delay_d": 3.343683
+   },
+   "sea_sanantonio": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 246.565903,
+    "first_seq": 164,
+    "max_delay_d": 10.0
+   },
+   "sea_santos": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 147.377014,
+    "first_seq": 40,
+    "max_delay_d": 10.0
+   },
+   "sea_savannah": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 239.765903,
+    "first_seq": 89,
+    "max_delay_d": 10.0
+   },
+   "sea_shanghai": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 174.877014,
+    "first_seq": 63,
+    "max_delay_d": 10.0
+   },
+   "sea_shenzhen": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 284.877014,
+    "first_seq": 118,
+    "max_delay_d": 10.0
+   },
+   "sea_sines": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 124.377014,
+    "first_seq": 41,
+    "max_delay_d": 10.0
+   },
+   "sea_singapore": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 146.877014,
+    "first_seq": 42,
+    "max_delay_d": 10.0
+   },
+   "sea_sydney": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 205.543681,
+    "first_seq": 119,
+    "max_delay_d": 10.0
+   },
+   "sea_taicang": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 197.577014,
+    "first_seq": 90,
+    "max_delay_d": 10.0
+   },
+   "sea_taichung": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 296.577014,
+    "first_seq": 148,
+    "max_delay_d": 10.0
+   },
+   "sea_tangermed": {
+    "first_delay_d": 4.536501,
+    "first_lag_d": 120.413507,
+    "first_seq": 43,
+    "max_delay_d": 4.536501
+   },
+   "sea_tanjungpelepas": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 165.043681,
+    "first_seq": 64,
+    "max_delay_d": 10.0
+   },
+   "sea_tanjungperak": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 158.877014,
+    "first_seq": 65,
+    "max_delay_d": 10.0
+   },
+   "sea_tanjungpriok": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 169.877014,
+    "first_seq": 66,
+    "max_delay_d": 10.0
+   },
+   "sea_tianjin": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 186.877014,
+    "first_seq": 91,
+    "max_delay_d": 10.0
+   },
+   "sea_tokyo": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 282.877014,
+    "first_seq": 120,
+    "max_delay_d": 10.0
+   },
+   "sea_valencia": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 105.877014,
+    "first_seq": 44,
+    "max_delay_d": 10.0
+   },
+   "sea_vancouver": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 195.877014,
+    "first_seq": 92,
+    "max_delay_d": 10.0
+   },
+   "sea_virginia": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 270.877014,
+    "first_seq": 121,
+    "max_delay_d": 10.0
+   },
+   "sea_xiamen": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 285.877014,
+    "first_seq": 122,
+    "max_delay_d": 10.0
+   },
+   "sea_yantai": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 218.877014,
+    "first_seq": 123,
+    "max_delay_d": 10.0
+   },
+   "sea_yingkou": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 197.877014,
+    "first_seq": 93,
+    "max_delay_d": 10.0
+   },
+   "sea_yokohama": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 163.677014,
+    "first_seq": 94,
+    "max_delay_d": 10.0
+   }
+  },
+  "seed_first_lag_d": 6.666667,
+  "seed_wait_d": 6.666667
+ },
+ "digest_checked_against_published": true,
+ "disruption": {
+  "capacity_loss": 0.7,
+  "duration_d": 559,
+  "kind": "capacity_cut",
+  "node_id": "chk_babelmandeb",
+  "shape": "step",
+  "started_at": "2023-11-19T00:00:00Z"
+ },
+ "edges": [
+  {
+   "channel": "congestion",
+   "from_node": "chk_babelmandeb",
+   "from_seq": null,
+   "to_node": "chk_babelmandeb",
+   "to_seq": 0
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_babelmandeb",
+   "from_seq": 0,
+   "to_node": "sea_colombo",
+   "to_seq": 1
+  },
+  {
+   "channel": "reroute",
+   "from_node": "sea_colombo",
+   "from_seq": 1,
+   "to_node": "chk_capeofgoodhope",
+   "to_seq": 2
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_colombo",
+   "from_seq": 1,
+   "to_node": "chk_mozambique",
+   "to_seq": 3
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_colombo",
+   "from_seq": 1,
+   "to_node": "sea_chattogram",
+   "to_seq": 4
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_colombo",
+   "from_seq": 1,
+   "to_node": "sea_mundra",
+   "to_seq": 5
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_colombo",
+   "from_seq": 1,
+   "to_node": "sea_salalah",
+   "to_seq": 6
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_mundra",
+   "from_seq": 5,
+   "to_node": "gnd_dadri",
+   "to_seq": 7
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_capeofgoodhope",
+   "from_seq": 2,
+   "to_node": "sea_capetown",
+   "to_seq": 8
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_capetown",
+   "from_seq": 8,
+   "to_node": "sea_durban",
+   "to_seq": 9
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_salalah",
+   "from_seq": 6,
+   "to_node": "sea_jeddah",
+   "to_seq": 10
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_mundra",
+   "from_seq": 5,
+   "to_node": "sea_karachi",
+   "to_seq": 11
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_durban",
+   "from_seq": 9,
+   "to_node": "sea_mombasa",
+   "to_seq": 12
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "gnd_dadri",
+   "from_seq": 7,
+   "to_node": "air_delhi",
+   "to_seq": 13
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_karachi",
+   "from_seq": 11,
+   "to_node": "chk_hormuz",
+   "to_seq": 14
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_jeddah",
+   "from_seq": 10,
+   "to_node": "chk_suez",
+   "to_seq": 15
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_durban",
+   "from_seq": 9,
+   "to_node": "gnd_citydeep",
+   "to_seq": 16
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_hormuz",
+   "from_seq": 14,
+   "to_node": "sea_jebelali",
+   "to_seq": 17
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_chattogram",
+   "from_seq": 4,
+   "to_node": "sea_portklang",
+   "to_seq": 18
+  },
+  {
+   "channel": "reroute",
+   "from_node": "chk_suez",
+   "from_seq": 15,
+   "to_node": "sea_portsaid",
+   "to_seq": 19
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_portsaid",
+   "from_seq": 19,
+   "to_node": "sea_beirut",
+   "to_seq": 20
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_portsaid",
+   "from_seq": 19,
+   "to_node": "sea_damietta",
+   "to_seq": 21
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_hormuz",
+   "from_seq": 14,
+   "to_node": "sea_dammam",
+   "to_seq": 22
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_jebelali",
+   "from_seq": 17,
+   "to_node": "sea_hamad",
+   "to_seq": 23
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_dammam",
+   "from_seq": 22,
+   "to_node": "sea_khalifa",
+   "to_seq": 24
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_portsaid",
+   "from_seq": 19,
+   "to_node": "sea_marsaxlokk",
+   "to_seq": 25
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_beirut",
+   "from_seq": 20,
+   "to_node": "sea_piraeus",
+   "to_seq": 26
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_piraeus",
+   "from_seq": 26,
+   "to_node": "sea_rotterdam",
+   "to_seq": 27
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "chk_dover",
+   "to_seq": 28
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_piraeus",
+   "from_seq": 26,
+   "to_node": "chk_turkish",
+   "to_seq": 29
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_dammam",
+   "from_seq": 22,
+   "to_node": "gnd_riyadh",
+   "to_seq": 30
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_buenosaires",
+   "to_seq": 31
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_turkish",
+   "from_seq": 29,
+   "to_node": "sea_constanta",
+   "to_seq": 32
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_dublin",
+   "to_seq": 33
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_dover",
+   "from_seq": 28,
+   "to_node": "sea_felixstowe",
+   "to_seq": 34
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_gdansk",
+   "to_seq": 35
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_marsaxlokk",
+   "from_seq": 25,
+   "to_node": "sea_gioiatauro",
+   "to_seq": 36
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_piraeus",
+   "from_seq": 26,
+   "to_node": "sea_koper",
+   "to_seq": 37
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_beirut",
+   "from_seq": 20,
+   "to_node": "sea_mersin",
+   "to_seq": 38
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_montreal",
+   "to_seq": 39
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_buenosaires",
+   "from_seq": 31,
+   "to_node": "sea_santos",
+   "to_seq": 40
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_sines",
+   "to_seq": 41
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_singapore",
+   "to_seq": 42
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_tangermed",
+   "to_seq": 43
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_piraeus",
+   "from_seq": 26,
+   "to_node": "sea_valencia",
+   "to_seq": 44
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_gdansk",
+   "from_seq": 35,
+   "to_node": "chk_danish",
+   "to_seq": 45
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_sines",
+   "from_seq": 41,
+   "to_node": "chk_gibraltar",
+   "to_seq": 46
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_singapore",
+   "from_seq": 42,
+   "to_node": "chk_malacca",
+   "to_seq": 47
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_koper",
+   "from_seq": 37,
+   "to_node": "gnd_budapest",
+   "to_seq": 48
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "gnd_duisburg",
+   "to_seq": 49
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_montreal",
+   "from_seq": 39,
+   "to_node": "gnd_montreal",
+   "to_seq": 50
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_santos",
+   "from_seq": 40,
+   "to_node": "sea_algeciras",
+   "to_seq": 51
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_turkish",
+   "from_seq": 29,
+   "to_node": "sea_ambarli",
+   "to_seq": 52
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_sines",
+   "from_seq": 41,
+   "to_node": "sea_barcelona",
+   "to_seq": 53
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_busan",
+   "to_seq": 54
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_santos",
+   "from_seq": 40,
+   "to_node": "sea_cartagena",
+   "to_seq": 55
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_danish",
+   "from_seq": 45,
+   "to_node": "sea_gdynia",
+   "to_seq": 56
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_barcelona",
+   "from_seq": 53,
+   "to_node": "sea_genoa",
+   "to_seq": 57
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_montreal",
+   "from_seq": 39,
+   "to_node": "sea_halifax",
+   "to_seq": 58
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_singapore",
+   "from_seq": 42,
+   "to_node": "sea_laemchabang",
+   "to_seq": 59
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_felixstowe",
+   "from_seq": 34,
+   "to_node": "sea_lehavre",
+   "to_seq": 60
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_ningbo",
+   "to_seq": 61
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_busan",
+   "from_seq": 54,
+   "to_node": "sea_qingdao",
+   "to_seq": 62
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_qingdao",
+   "from_seq": 62,
+   "to_node": "sea_shanghai",
+   "to_seq": 63
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_malacca",
+   "from_seq": 47,
+   "to_node": "sea_tanjungpelepas",
+   "to_seq": 64
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_singapore",
+   "from_seq": 42,
+   "to_node": "sea_tanjungperak",
+   "to_seq": 65
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_tanjungperak",
+   "from_seq": 65,
+   "to_node": "sea_tanjungpriok",
+   "to_seq": 66
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "sea_tanjungpriok",
+   "from_seq": 66,
+   "to_node": "air_jakarta",
+   "to_seq": 67
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "chk_panama",
+   "to_seq": 68
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_montreal",
+   "from_seq": 50,
+   "to_node": "gnd_alexandriabay",
+   "to_seq": 69
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_budapest",
+   "from_seq": 48,
+   "to_node": "gnd_halkali",
+   "to_seq": 70
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_duisburg",
+   "from_seq": 49,
+   "to_node": "gnd_milan",
+   "to_seq": 71
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_montreal",
+   "from_seq": 50,
+   "to_node": "gnd_toronto",
+   "to_seq": 72
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_duisburg",
+   "from_seq": 49,
+   "to_node": "gnd_warsaw",
+   "to_seq": 73
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_antwerp",
+   "to_seq": 74
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_panama",
+   "from_seq": 68,
+   "to_node": "sea_colon",
+   "to_seq": 75
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_fuzhou",
+   "to_seq": 76
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_gwangyang",
+   "to_seq": 77
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_antwerp",
+   "from_seq": 74,
+   "to_node": "sea_hamburg",
+   "to_seq": 78
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_laemchabang",
+   "from_seq": 59,
+   "to_node": "sea_hochiminh",
+   "to_seq": 79
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_panama",
+   "from_seq": 68,
+   "to_node": "sea_houston",
+   "to_seq": 80
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_incheon",
+   "to_seq": 81
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_keelung",
+   "to_seq": 82
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_lianyungang",
+   "to_seq": 83
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_longbeach",
+   "to_seq": 84
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_tanjungpelepas",
+   "from_seq": 64,
+   "to_node": "sea_melbourne",
+   "to_seq": 85
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_hamburg",
+   "from_seq": 78,
+   "to_node": "sea_newyork",
+   "to_seq": 86
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_busan",
+   "from_seq": 54,
+   "to_node": "sea_nwsa",
+   "to_seq": 87
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_busan",
+   "from_seq": 54,
+   "to_node": "sea_princerupert",
+   "to_seq": 88
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_houston",
+   "from_seq": 80,
+   "to_node": "sea_savannah",
+   "to_seq": 89
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_lianyungang",
+   "from_seq": 83,
+   "to_node": "sea_taicang",
+   "to_seq": 90
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_tianjin",
+   "to_seq": 91
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_vancouver",
+   "to_seq": 92
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_tianjin",
+   "from_seq": 91,
+   "to_node": "sea_yingkou",
+   "to_seq": 93
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_busan",
+   "from_seq": 54,
+   "to_node": "sea_yokohama",
+   "to_seq": 94
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_fuzhou",
+   "from_seq": 76,
+   "to_node": "chk_taiwan",
+   "to_seq": 95
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_savannah",
+   "from_seq": 89,
+   "to_node": "gnd_atlanta",
+   "to_seq": 96
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_milan",
+   "from_seq": 71,
+   "to_node": "gnd_bettembourg",
+   "to_seq": 97
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "gnd_buffalo",
+   "to_seq": 98
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "gnd_columbus",
+   "to_seq": 99
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_buffalo",
+   "from_seq": 98,
+   "to_node": "gnd_detroit",
+   "to_seq": 100
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_longbeach",
+   "from_seq": 84,
+   "to_node": "gnd_inlandempire",
+   "to_seq": 101
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_houston",
+   "from_seq": 80,
+   "to_node": "gnd_laredo",
+   "to_seq": 102
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_warsaw",
+   "from_seq": 73,
+   "to_node": "gnd_malaszewicze",
+   "to_seq": 103
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_toronto",
+   "from_seq": 72,
+   "to_node": "gnd_sweetgrass",
+   "to_seq": 104
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_vancouver",
+   "from_seq": 92,
+   "to_node": "gnd_vancouver",
+   "to_seq": 105
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_panama",
+   "from_seq": 68,
+   "to_node": "sea_balboa",
+   "to_seq": 106
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_hamburg",
+   "from_seq": 78,
+   "to_node": "sea_bremerhaven",
+   "to_seq": 107
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_melbourne",
+   "from_seq": 85,
+   "to_node": "sea_brisbane",
+   "to_seq": 108
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_longbeach",
+   "from_seq": 84,
+   "to_node": "sea_caimep",
+   "to_seq": 109
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "sea_charleston",
+   "to_seq": 110
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_yingkou",
+   "from_seq": 93,
+   "to_node": "sea_dalian",
+   "to_seq": 111
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_caimep",
+   "from_seq": 109,
+   "to_node": "sea_hongkong",
+   "to_seq": 112
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_hongkong",
+   "from_seq": 112,
+   "to_node": "sea_losangeles",
+   "to_seq": 113
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_balboa",
+   "from_seq": 106,
+   "to_node": "sea_manzanillo",
+   "to_seq": 114
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_gwangyang",
+   "from_seq": 77,
+   "to_node": "sea_nagoya",
+   "to_seq": 115
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_oakland",
+   "to_seq": 116
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_qingdao",
+   "from_seq": 62,
+   "to_node": "sea_rizhao",
+   "to_seq": 117
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_shenzhen",
+   "to_seq": 118
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_brisbane",
+   "from_seq": 108,
+   "to_node": "sea_sydney",
+   "to_seq": 119
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_tokyo",
+   "to_seq": 120
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_charleston",
+   "from_seq": 110,
+   "to_node": "sea_virginia",
+   "to_seq": 121
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_xiamen",
+   "to_seq": 122
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_dalian",
+   "from_seq": 111,
+   "to_node": "sea_yantai",
+   "to_seq": 123
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "sea_hongkong",
+   "from_seq": 112,
+   "to_node": "air_hongkong",
+   "to_seq": 124
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "sea_busan",
+   "from_seq": 54,
+   "to_node": "air_incheon",
+   "to_seq": 125
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "gnd_inlandempire",
+   "from_seq": 101,
+   "to_node": "air_ontario",
+   "to_seq": 126
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_vancouver",
+   "from_seq": 105,
+   "to_node": "gnd_blaine",
+   "to_seq": 127
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_inlandempire",
+   "from_seq": 101,
+   "to_node": "gnd_calexico",
+   "to_seq": 128
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_detroit",
+   "from_seq": 100,
+   "to_node": "gnd_chicago",
+   "to_seq": 129
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_chicago",
+   "from_seq": 129,
+   "to_node": "gnd_dallas",
+   "to_seq": 130
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_eaglepass",
+   "to_seq": 131
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_virginia",
+   "from_seq": 121,
+   "to_node": "gnd_frontroyal",
+   "to_seq": 132
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_charleston",
+   "from_seq": 110,
+   "to_node": "gnd_greer",
+   "to_seq": 133
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_hidalgo",
+   "to_seq": 134
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_malaszewicze",
+   "from_seq": 103,
+   "to_node": "gnd_khorgos",
+   "to_seq": 135
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_calexico",
+   "from_seq": 128,
+   "to_node": "gnd_otaymesa",
+   "to_seq": 136
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_bettembourg",
+   "from_seq": 97,
+   "to_node": "gnd_paris",
+   "to_seq": 137
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_oakland",
+   "from_seq": 116,
+   "to_node": "gnd_saltlakecity",
+   "to_seq": 138
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_oakland",
+   "from_seq": 116,
+   "to_node": "gnd_stockton",
+   "to_seq": 139
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_balboa",
+   "from_seq": 106,
+   "to_node": "sea_callao",
+   "to_seq": 140
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_shenzhen",
+   "from_seq": 118,
+   "to_node": "sea_dongguan",
+   "to_seq": 141
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_dongguan",
+   "from_seq": 141,
+   "to_node": "sea_guangzhou",
+   "to_seq": 142
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_callao",
+   "from_seq": 140,
+   "to_node": "sea_guayaquil",
+   "to_seq": 143
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_hongkong",
+   "from_seq": 112,
+   "to_node": "sea_haiphong",
+   "to_seq": 144
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_kaohsiung",
+   "to_seq": 145
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_kaohsiung",
+   "from_seq": 145,
+   "to_node": "sea_manila",
+   "to_seq": 146
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_guangzhou",
+   "from_seq": 142,
+   "to_node": "sea_qinzhou",
+   "to_seq": 147
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_xiamen",
+   "from_seq": 122,
+   "to_node": "sea_taichung",
+   "to_seq": 148
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_hongkong",
+   "from_seq": 124,
+   "to_node": "air_anchorage",
+   "to_seq": 149
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_hongkong",
+   "from_seq": 124,
+   "to_node": "air_bangkok",
+   "to_seq": 150
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "air_losangeles",
+   "to_seq": 151
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_anchorage",
+   "from_seq": 149,
+   "to_node": "air_osaka",
+   "to_seq": 152
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_losangeles",
+   "from_seq": 151,
+   "to_node": "air_shanghaipudong",
+   "to_seq": 153
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_bangkok",
+   "from_seq": 150,
+   "to_node": "air_singapore",
+   "to_seq": 154
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_losangeles",
+   "from_seq": 151,
+   "to_node": "air_taipei",
+   "to_seq": 155
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_anchorage",
+   "from_seq": 149,
+   "to_node": "air_zhengzhou",
+   "to_seq": 156
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_paris",
+   "from_seq": 137,
+   "to_node": "gnd_channeltunnel",
+   "to_seq": 157
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_elpaso",
+   "to_seq": 158
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_kansascity",
+   "to_seq": 159
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_chicago",
+   "from_seq": 129,
+   "to_node": "gnd_memphis",
+   "to_seq": 160
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_nogales",
+   "to_seq": 161
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_detroit",
+   "from_seq": 100,
+   "to_node": "gnd_porthuron",
+   "to_seq": 162
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_kansascity",
+   "from_seq": 159,
+   "to_node": "gnd_stlouis",
+   "to_seq": 163
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_callao",
+   "from_seq": 140,
+   "to_node": "sea_sanantonio",
+   "to_seq": 164
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_singapore",
+   "from_seq": 154,
+   "to_node": "air_brussels",
+   "to_seq": 165
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_anchorage",
+   "from_seq": 149,
+   "to_node": "air_chicago",
+   "to_seq": 166
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_singapore",
+   "from_seq": 154,
+   "to_node": "air_dubai",
+   "to_seq": 167
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_anchorage",
+   "from_seq": 149,
+   "to_node": "air_ezhou",
+   "to_seq": 168
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_anchorage",
+   "from_seq": 149,
+   "to_node": "air_louisville",
+   "to_seq": 169
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "gnd_memphis",
+   "from_seq": 160,
+   "to_node": "air_memphis",
+   "to_seq": 170
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_chicago",
+   "from_seq": 166,
+   "to_node": "air_narita",
+   "to_seq": 171
+  },
+  {
+   "channel": "queue",
+   "from_node": "gnd_paris",
+   "from_seq": 137,
+   "to_node": "gnd_madrid",
+   "to_seq": 172
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_atlanta",
+   "to_seq": 173
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_cincinnati",
+   "to_seq": 174
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_louisville",
+   "from_seq": 169,
+   "to_node": "air_cologne",
+   "to_seq": 175
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_dubai",
+   "from_seq": 167,
+   "to_node": "air_doha",
+   "to_seq": 176
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_dubai",
+   "from_seq": 167,
+   "to_node": "air_dubaiworldcentral",
+   "to_seq": 177
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_houston",
+   "to_seq": 178
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_chicago",
+   "from_seq": 166,
+   "to_node": "air_toronto",
+   "to_seq": 179
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_houston",
+   "from_seq": 178,
+   "to_node": "air_frankfurt",
+   "to_seq": 180
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_doha",
+   "from_seq": 176,
+   "to_node": "air_london",
+   "to_seq": 181
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_newyork",
+   "to_seq": 182
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_leipzig",
+   "to_seq": 183
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_madrid",
+   "to_seq": 184
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_milan",
+   "to_seq": 185
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_paris",
+   "to_seq": 186
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_addisababa",
+   "to_seq": 187
+  },
+  {
+   "channel": "mode-shift",
+   "from_node": "air_paris",
+   "from_seq": 186,
+   "to_node": "air_liege",
+   "to_seq": 188
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_addisababa",
+   "to_seq": 189
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_amsterdam",
+   "to_seq": 190
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_anchorage",
+   "to_seq": 191
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_atlanta",
+   "to_seq": 192
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_singapore",
+   "from_seq": 154,
+   "to_node": "air_bangkok",
+   "to_seq": 193
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_shanghaipudong",
+   "from_seq": 153,
+   "to_node": "air_beijing",
+   "to_seq": 194
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_liege",
+   "from_seq": 188,
+   "to_node": "air_brussels",
+   "to_seq": 195
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_chicago",
+   "to_seq": 196
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_cincinnati",
+   "to_seq": 197
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_cologne",
+   "to_seq": 198
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_delhi",
+   "to_seq": 199
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_doha",
+   "to_seq": 200
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_addisababa",
+   "from_seq": 187,
+   "to_node": "air_dubai",
+   "to_seq": 201
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_dubai",
+   "from_seq": 167,
+   "to_node": "air_dubaiworldcentral",
+   "to_seq": 202
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_liege",
+   "from_seq": 188,
+   "to_node": "air_ezhou",
+   "to_seq": 203
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_addisababa",
+   "from_seq": 187,
+   "to_node": "air_frankfurt",
+   "to_seq": 204
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_shanghaipudong",
+   "from_seq": 153,
+   "to_node": "air_guangzhou",
+   "to_seq": 205
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_taipei",
+   "from_seq": 155,
+   "to_node": "air_hongkong",
+   "to_seq": 206
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_houston",
+   "to_seq": 207
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_losangeles",
+   "from_seq": 151,
+   "to_node": "air_incheon",
+   "to_seq": 208
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_indianapolis",
+   "to_seq": 209
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_istanbul",
+   "to_seq": 210
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_singapore",
+   "from_seq": 154,
+   "to_node": "air_jakarta",
+   "to_seq": 211
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_liege",
+   "from_seq": 188,
+   "to_node": "air_leipzig",
+   "to_seq": 212
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_paris",
+   "from_seq": 186,
+   "to_node": "air_liege",
+   "to_seq": 213
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_addisababa",
+   "from_seq": 187,
+   "to_node": "air_london",
+   "to_seq": 214
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_losangeles",
+   "to_seq": 215
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_cincinnati",
+   "from_seq": 174,
+   "to_node": "air_louisville",
+   "to_seq": 216
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_madrid",
+   "to_seq": 217
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_cincinnati",
+   "from_seq": 174,
+   "to_node": "air_memphis",
+   "to_seq": 218
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_losangeles",
+   "from_seq": 151,
+   "to_node": "air_miami",
+   "to_seq": 219
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_milan",
+   "to_seq": 220
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_chicago",
+   "from_seq": 166,
+   "to_node": "air_narita",
+   "to_seq": 221
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_newyork",
+   "to_seq": 222
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_memphis",
+   "from_seq": 170,
+   "to_node": "air_ontario",
+   "to_seq": 223
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_narita",
+   "from_seq": 171,
+   "to_node": "air_osaka",
+   "to_seq": 224
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_liege",
+   "from_seq": 188,
+   "to_node": "air_paris",
+   "to_seq": 225
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_losangeles",
+   "from_seq": 151,
+   "to_node": "air_shanghaipudong",
+   "to_seq": 226
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_shanghaipudong",
+   "from_seq": 153,
+   "to_node": "air_shenzhen",
+   "to_seq": 227
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_singapore",
+   "to_seq": 228
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_losangeles",
+   "from_seq": 151,
+   "to_node": "air_taipei",
+   "to_seq": 229
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_london",
+   "from_seq": 181,
+   "to_node": "air_toronto",
+   "to_seq": 230
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_frankfurt",
+   "from_seq": 180,
+   "to_node": "air_zhengzhou",
+   "to_seq": 231
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_jeddah",
+   "from_seq": 10,
+   "to_node": "chk_babelmandeb",
+   "to_seq": 232
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_capetown",
+   "from_seq": 8,
+   "to_node": "chk_capeofgoodhope",
+   "to_seq": 233
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hamburg",
+   "from_seq": 78,
+   "to_node": "chk_danish",
+   "to_seq": 234
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_lehavre",
+   "from_seq": 60,
+   "to_node": "chk_dover",
+   "to_seq": 235
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_algeciras",
+   "from_seq": 51,
+   "to_node": "chk_gibraltar",
+   "to_seq": 236
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_khalifa",
+   "from_seq": 24,
+   "to_node": "chk_hormuz",
+   "to_seq": 237
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_tanjungpelepas",
+   "from_seq": 64,
+   "to_node": "chk_malacca",
+   "to_seq": 238
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_mombasa",
+   "from_seq": 12,
+   "to_node": "chk_mozambique",
+   "to_seq": 239
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "chk_panama",
+   "to_seq": 240
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_portsaid",
+   "from_seq": 19,
+   "to_node": "chk_suez",
+   "to_seq": 241
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_xiamen",
+   "from_seq": 122,
+   "to_node": "chk_taiwan",
+   "to_seq": 242
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_constanta",
+   "from_seq": 32,
+   "to_node": "chk_turkish",
+   "to_seq": 243
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_buffalo",
+   "from_seq": 98,
+   "to_node": "gnd_alexandriabay",
+   "to_seq": 244
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_atlanta",
+   "to_seq": 245
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_paris",
+   "from_seq": 137,
+   "to_node": "gnd_bettembourg",
+   "to_seq": 246
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_chicago",
+   "from_seq": 129,
+   "to_node": "gnd_blaine",
+   "to_seq": 247
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_halkali",
+   "from_seq": 70,
+   "to_node": "gnd_budapest",
+   "to_seq": 248
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_detroit",
+   "from_seq": 100,
+   "to_node": "gnd_buffalo",
+   "to_seq": 249
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_otaymesa",
+   "from_seq": 136,
+   "to_node": "gnd_calexico",
+   "to_seq": 250
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_paris",
+   "from_seq": 137,
+   "to_node": "gnd_channeltunnel",
+   "to_seq": 251
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_saltlakecity",
+   "from_seq": 138,
+   "to_node": "gnd_chicago",
+   "to_seq": 252
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_durban",
+   "from_seq": 9,
+   "to_node": "gnd_citydeep",
+   "to_seq": 253
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_frontroyal",
+   "from_seq": 132,
+   "to_node": "gnd_columbus",
+   "to_seq": 254
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_delhi",
+   "from_seq": 13,
+   "to_node": "gnd_dadri",
+   "to_seq": 255
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_nogales",
+   "from_seq": 161,
+   "to_node": "gnd_dallas",
+   "to_seq": 256
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_chicago",
+   "from_seq": 129,
+   "to_node": "gnd_detroit",
+   "to_seq": 257
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hamburg",
+   "from_seq": 78,
+   "to_node": "gnd_duisburg",
+   "to_seq": 258
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_eaglepass",
+   "to_seq": 259
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_elpaso",
+   "to_seq": 260
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_virginia",
+   "from_seq": 121,
+   "to_node": "gnd_frontroyal",
+   "to_seq": 261
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_charleston",
+   "from_seq": 110,
+   "to_node": "gnd_greer",
+   "to_seq": 262
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_khorgos",
+   "from_seq": 135,
+   "to_node": "gnd_halkali",
+   "to_seq": 263
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_hidalgo",
+   "to_seq": 264
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_stockton",
+   "from_seq": 139,
+   "to_node": "gnd_inlandempire",
+   "to_seq": 265
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_stlouis",
+   "from_seq": 163,
+   "to_node": "gnd_kansascity",
+   "to_seq": 266
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_malaszewicze",
+   "from_seq": 103,
+   "to_node": "gnd_khorgos",
+   "to_seq": 267
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_hidalgo",
+   "from_seq": 134,
+   "to_node": "gnd_laredo",
+   "to_seq": 268
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_madrid",
+   "from_seq": 184,
+   "to_node": "gnd_madrid",
+   "to_seq": 269
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_khorgos",
+   "from_seq": 135,
+   "to_node": "gnd_malaszewicze",
+   "to_seq": 270
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_stlouis",
+   "from_seq": 163,
+   "to_node": "gnd_memphis",
+   "to_seq": 271
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_milan",
+   "from_seq": 185,
+   "to_node": "gnd_milan",
+   "to_seq": 272
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_toronto",
+   "from_seq": 72,
+   "to_node": "gnd_montreal",
+   "to_seq": 273
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_dallas",
+   "from_seq": 130,
+   "to_node": "gnd_nogales",
+   "to_seq": 274
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_calexico",
+   "from_seq": 128,
+   "to_node": "gnd_otaymesa",
+   "to_seq": 275
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_madrid",
+   "from_seq": 172,
+   "to_node": "gnd_paris",
+   "to_seq": 276
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_detroit",
+   "from_seq": 100,
+   "to_node": "gnd_porthuron",
+   "to_seq": 277
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_dammam",
+   "from_seq": 22,
+   "to_node": "gnd_riyadh",
+   "to_seq": 278
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_oakland",
+   "from_seq": 116,
+   "to_node": "gnd_saltlakecity",
+   "to_seq": 279
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_kansascity",
+   "from_seq": 159,
+   "to_node": "gnd_stlouis",
+   "to_seq": 280
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_oakland",
+   "from_seq": 116,
+   "to_node": "gnd_stockton",
+   "to_seq": 281
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_chicago",
+   "from_seq": 129,
+   "to_node": "gnd_sweetgrass",
+   "to_seq": 282
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_detroit",
+   "from_seq": 100,
+   "to_node": "gnd_toronto",
+   "to_seq": 283
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_blaine",
+   "from_seq": 127,
+   "to_node": "gnd_vancouver",
+   "to_seq": 284
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_malaszewicze",
+   "from_seq": 103,
+   "to_node": "gnd_warsaw",
+   "to_seq": 285
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_santos",
+   "from_seq": 40,
+   "to_node": "sea_algeciras",
+   "to_seq": 286
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_turkish",
+   "from_seq": 29,
+   "to_node": "sea_ambarli",
+   "to_seq": 287
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_shenzhen",
+   "from_seq": 118,
+   "to_node": "sea_antwerp",
+   "to_seq": 288
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_sanantonio",
+   "from_seq": 164,
+   "to_node": "sea_balboa",
+   "to_seq": 289
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_genoa",
+   "from_seq": 57,
+   "to_node": "sea_barcelona",
+   "to_seq": 290
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_piraeus",
+   "from_seq": 26,
+   "to_node": "sea_beirut",
+   "to_seq": 291
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hamburg",
+   "from_seq": 78,
+   "to_node": "sea_bremerhaven",
+   "to_seq": 292
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_sydney",
+   "from_seq": 119,
+   "to_node": "sea_brisbane",
+   "to_seq": 293
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_santos",
+   "from_seq": 40,
+   "to_node": "sea_buenosaires",
+   "to_seq": 294
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_tokyo",
+   "from_seq": 120,
+   "to_node": "sea_busan",
+   "to_seq": 295
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hongkong",
+   "from_seq": 112,
+   "to_node": "sea_caimep",
+   "to_seq": 296
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_sanantonio",
+   "from_seq": 164,
+   "to_node": "sea_callao",
+   "to_seq": 297
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_citydeep",
+   "from_seq": 16,
+   "to_node": "sea_capetown",
+   "to_seq": 298
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_colon",
+   "from_seq": 75,
+   "to_node": "sea_cartagena",
+   "to_seq": 299
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_virginia",
+   "from_seq": 121,
+   "to_node": "sea_charleston",
+   "to_seq": 300
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_portklang",
+   "from_seq": 18,
+   "to_node": "sea_chattogram",
+   "to_seq": 301
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_malacca",
+   "from_seq": 47,
+   "to_node": "sea_colombo",
+   "to_seq": 302
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "sea_colon",
+   "to_seq": 303
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_turkish",
+   "from_seq": 29,
+   "to_node": "sea_constanta",
+   "to_seq": 304
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_yantai",
+   "from_seq": 123,
+   "to_node": "sea_dalian",
+   "to_seq": 305
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_piraeus",
+   "from_seq": 26,
+   "to_node": "sea_damietta",
+   "to_seq": 306
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hamad",
+   "from_seq": 23,
+   "to_node": "sea_dammam",
+   "to_seq": 307
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_guangzhou",
+   "from_seq": 142,
+   "to_node": "sea_dongguan",
+   "to_seq": 308
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_lehavre",
+   "from_seq": 60,
+   "to_node": "sea_dublin",
+   "to_seq": 309
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_mombasa",
+   "from_seq": 12,
+   "to_node": "sea_durban",
+   "to_seq": 310
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hamburg",
+   "from_seq": 78,
+   "to_node": "sea_felixstowe",
+   "to_seq": 311
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_xiamen",
+   "from_seq": 122,
+   "to_node": "sea_fuzhou",
+   "to_seq": 312
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_gdynia",
+   "from_seq": 56,
+   "to_node": "sea_gdansk",
+   "to_seq": 313
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hamburg",
+   "from_seq": 78,
+   "to_node": "sea_gdynia",
+   "to_seq": 314
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_barcelona",
+   "from_seq": 53,
+   "to_node": "sea_genoa",
+   "to_seq": 315
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_genoa",
+   "from_seq": 57,
+   "to_node": "sea_gioiatauro",
+   "to_seq": 316
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_qinzhou",
+   "from_seq": 147,
+   "to_node": "sea_guangzhou",
+   "to_seq": 317
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_callao",
+   "from_seq": 140,
+   "to_node": "sea_guayaquil",
+   "to_seq": 318
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_nagoya",
+   "from_seq": 115,
+   "to_node": "sea_gwangyang",
+   "to_seq": 319
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_qinzhou",
+   "from_seq": 147,
+   "to_node": "sea_haiphong",
+   "to_seq": 320
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "sea_halifax",
+   "to_seq": 321
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_jebelali",
+   "from_seq": 17,
+   "to_node": "sea_hamad",
+   "to_seq": 322
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "sea_hamburg",
+   "to_seq": 323
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_hochiminh",
+   "to_seq": 324
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_qinzhou",
+   "from_seq": 147,
+   "to_node": "sea_hongkong",
+   "to_seq": 325
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "sea_houston",
+   "to_seq": 326
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_shanghai",
+   "from_seq": 63,
+   "to_node": "sea_incheon",
+   "to_seq": 327
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_singapore",
+   "from_seq": 42,
+   "to_node": "sea_jebelali",
+   "to_seq": 328
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_portsaid",
+   "from_seq": 19,
+   "to_node": "sea_jeddah",
+   "to_seq": 329
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_manila",
+   "from_seq": 146,
+   "to_node": "sea_kaohsiung",
+   "to_seq": 330
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_jebelali",
+   "from_seq": 17,
+   "to_node": "sea_karachi",
+   "to_seq": 331
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_taichung",
+   "from_seq": 148,
+   "to_node": "sea_keelung",
+   "to_seq": 332
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_dammam",
+   "from_seq": 22,
+   "to_node": "sea_khalifa",
+   "to_seq": 333
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_budapest",
+   "from_seq": 48,
+   "to_node": "sea_koper",
+   "to_seq": 334
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_hochiminh",
+   "from_seq": 79,
+   "to_node": "sea_laemchabang",
+   "to_seq": 335
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_antwerp",
+   "from_seq": 74,
+   "to_node": "sea_lehavre",
+   "to_seq": 336
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_taicang",
+   "from_seq": 90,
+   "to_node": "sea_lianyungang",
+   "to_seq": 337
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_shenzhen",
+   "from_seq": 118,
+   "to_node": "sea_longbeach",
+   "to_seq": 338
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_guangzhou",
+   "from_seq": 142,
+   "to_node": "sea_losangeles",
+   "to_seq": 339
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_kaohsiung",
+   "from_seq": 145,
+   "to_node": "sea_manila",
+   "to_seq": 340
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_balboa",
+   "from_seq": 106,
+   "to_node": "sea_manzanillo",
+   "to_seq": 341
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_genoa",
+   "from_seq": 57,
+   "to_node": "sea_marsaxlokk",
+   "to_seq": 342
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_sydney",
+   "from_seq": 119,
+   "to_node": "sea_melbourne",
+   "to_seq": 343
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_ambarli",
+   "from_seq": 52,
+   "to_node": "sea_mersin",
+   "to_seq": 344
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_durban",
+   "from_seq": 9,
+   "to_node": "sea_mombasa",
+   "to_seq": 345
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_halifax",
+   "from_seq": 58,
+   "to_node": "sea_montreal",
+   "to_seq": 346
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_hormuz",
+   "from_seq": 14,
+   "to_node": "sea_mundra",
+   "to_seq": 347
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_tokyo",
+   "from_seq": 120,
+   "to_node": "sea_nagoya",
+   "to_seq": 348
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_shenzhen",
+   "from_seq": 118,
+   "to_node": "sea_newyork",
+   "to_seq": 349
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_xiamen",
+   "from_seq": 122,
+   "to_node": "sea_ningbo",
+   "to_seq": 350
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_oakland",
+   "from_seq": 116,
+   "to_node": "sea_nwsa",
+   "to_seq": 351
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_saltlakecity",
+   "from_seq": 138,
+   "to_node": "sea_oakland",
+   "to_seq": 352
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_piraeus",
+   "to_seq": 353
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_tanjungperak",
+   "from_seq": 65,
+   "to_node": "sea_portklang",
+   "to_seq": 354
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_rotterdam",
+   "from_seq": 27,
+   "to_node": "sea_portsaid",
+   "to_seq": 355
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_tokyo",
+   "from_seq": 120,
+   "to_node": "sea_princerupert",
+   "to_seq": 356
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_qingdao",
+   "to_seq": 357
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_guangzhou",
+   "from_seq": 142,
+   "to_node": "sea_qinzhou",
+   "to_seq": 358
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_qingdao",
+   "from_seq": 62,
+   "to_node": "sea_rizhao",
+   "to_seq": 359
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "sea_rotterdam",
+   "to_seq": 360
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_hormuz",
+   "from_seq": 14,
+   "to_node": "sea_salalah",
+   "to_seq": 361
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_callao",
+   "from_seq": 140,
+   "to_node": "sea_sanantonio",
+   "to_seq": 362
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_newyork",
+   "from_seq": 86,
+   "to_node": "sea_santos",
+   "to_seq": 363
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_charleston",
+   "from_seq": 110,
+   "to_node": "sea_savannah",
+   "to_seq": 364
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_shanghai",
+   "to_seq": 365
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_dongguan",
+   "from_seq": 141,
+   "to_node": "sea_shenzhen",
+   "to_seq": 366
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_algeciras",
+   "from_seq": 51,
+   "to_node": "sea_sines",
+   "to_seq": 367
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_melbourne",
+   "from_seq": 85,
+   "to_node": "sea_singapore",
+   "to_seq": 368
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_brisbane",
+   "from_seq": 108,
+   "to_node": "sea_sydney",
+   "to_seq": 369
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_lianyungang",
+   "from_seq": 83,
+   "to_node": "sea_taicang",
+   "to_seq": 370
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_xiamen",
+   "from_seq": 122,
+   "to_node": "sea_taichung",
+   "to_seq": 371
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_algeciras",
+   "from_seq": 51,
+   "to_node": "sea_tangermed",
+   "to_seq": 372
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_melbourne",
+   "from_seq": 85,
+   "to_node": "sea_tanjungpelepas",
+   "to_seq": 373
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_tanjungpriok",
+   "from_seq": 66,
+   "to_node": "sea_tanjungperak",
+   "to_seq": 374
+  },
+  {
+   "channel": "cost",
+   "from_node": "air_jakarta",
+   "from_seq": 67,
+   "to_node": "sea_tanjungpriok",
+   "to_seq": 375
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_dalian",
+   "from_seq": 111,
+   "to_node": "sea_tianjin",
+   "to_seq": 376
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_losangeles",
+   "from_seq": 113,
+   "to_node": "sea_tokyo",
+   "to_seq": 377
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_algeciras",
+   "from_seq": 51,
+   "to_node": "sea_valencia",
+   "to_seq": 378
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_vancouver",
+   "from_seq": 105,
+   "to_node": "sea_vancouver",
+   "to_seq": 379
+  },
+  {
+   "channel": "cost",
+   "from_node": "gnd_frontroyal",
+   "from_seq": 132,
+   "to_node": "sea_virginia",
+   "to_seq": 380
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_taichung",
+   "from_seq": 148,
+   "to_node": "sea_xiamen",
+   "to_seq": 381
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_dalian",
+   "from_seq": 111,
+   "to_node": "sea_yantai",
+   "to_seq": 382
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_dalian",
+   "from_seq": 111,
+   "to_node": "sea_yingkou",
+   "to_seq": 383
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_tokyo",
+   "from_seq": 120,
+   "to_node": "sea_yokohama",
+   "to_seq": 384
+  }
+ ],
+ "episode": "red_sea",
+ "event_count": 385,
+ "events": [
+  {
+   "at": "2023-11-25T16:00:00Z",
+   "channel": "congestion",
+   "delay_d": 6.666667,
+   "magnitude": 0.7,
+   "mechanism": "capacity loss at source",
+   "node_id": "chk_babelmandeb",
+   "parent_id": null,
+   "seq": 0,
+   "tick": 0
+  },
+  {
+   "at": "2023-12-11T16:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 1.0,
+   "mechanism": "inventory draw",
+   "node_id": "sea_colombo",
+   "parent_id": 0,
+   "seq": 1,
+   "tick": 1
+  },
+  {
+   "at": "2023-12-22T16:00:00Z",
+   "channel": "reroute",
+   "delay_d": 7.5,
+   "magnitude": 1.0,
+   "mechanism": "reroute via bypass",
+   "node_id": "chk_capeofgoodhope",
+   "parent_id": 1,
+   "seq": 2,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-22T20:00:00Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.497504,
+   "mechanism": "queue spillback",
+   "node_id": "chk_mozambique",
+   "parent_id": 1,
+   "seq": 3,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-24T16:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.878657,
+   "mechanism": "inventory draw",
+   "node_id": "sea_chattogram",
+   "parent_id": 1,
+   "seq": 4,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-24T16:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_mundra",
+   "parent_id": 1,
+   "seq": 5,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-20T00:14:54Z",
+   "channel": "inventory",
+   "delay_d": 3.343683,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_salalah",
+   "parent_id": 1,
+   "seq": 6,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-30T00:00:00Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.279387,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_dadri",
+   "parent_id": 5,
+   "seq": 7,
+   "tick": 3
+  },
+  {
+   "at": "2024-01-02T04:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.935782,
+   "mechanism": "inventory draw",
+   "node_id": "sea_capetown",
+   "parent_id": 2,
+   "seq": 8,
+   "tick": 3
+  },
+  {
+   "at": "2024-01-13T16:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_durban",
+   "parent_id": 8,
+   "seq": 9,
+   "tick": 3
+  },
+  {
+   "at": "2024-01-03T00:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_jeddah",
+   "parent_id": 6,
+   "seq": 10,
+   "tick": 3
+  },
+  {
+   "at": "2024-01-04T11:12:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.980105,
+   "mechanism": "inventory draw",
+   "node_id": "sea_karachi",
+   "parent_id": 5,
+   "seq": 11,
+   "tick": 3
+  },
+  {
+   "at": "2024-01-27T16:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.975269,
+   "mechanism": "inventory draw",
+   "node_id": "sea_mombasa",
+   "parent_id": 9,
+   "seq": 12,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-30T16:44:54Z",
+   "channel": "mode-shift",
+   "delay_d": 0.397853,
+   "magnitude": 0.994633,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_delhi",
+   "parent_id": 7,
+   "seq": 13,
+   "tick": 4
+  },
+  {
+   "at": "2024-01-12T22:24:00Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.4924,
+   "mechanism": "queue spillback",
+   "node_id": "chk_hormuz",
+   "parent_id": 11,
+   "seq": 14,
+   "tick": 4
+  },
+  {
+   "at": "2024-01-11T04:14:54Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.497718,
+   "mechanism": "upstream queue backlog",
+   "node_id": "chk_suez",
+   "parent_id": 10,
+   "seq": 15,
+   "tick": 4
+  },
+  {
+   "at": "2024-01-18T00:00:00Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.482857,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_citydeep",
+   "parent_id": 9,
+   "seq": 16,
+   "tick": 4
+  },
+  {
+   "at": "2024-01-23T22:24:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_jebelali",
+   "parent_id": 14,
+   "seq": 17,
+   "tick": 4
+  },
+  {
+   "at": "2024-01-07T04:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.62091,
+   "mechanism": "inventory draw",
+   "node_id": "sea_portklang",
+   "parent_id": 4,
+   "seq": 18,
+   "tick": 4
+  },
+  {
+   "at": "2024-01-27T04:14:54Z",
+   "channel": "reroute",
+   "delay_d": 15.3,
+   "magnitude": 0.987478,
+   "mechanism": "reroute via bypass",
+   "node_id": "sea_portsaid",
+   "parent_id": 15,
+   "seq": 19,
+   "tick": 4
+  },
+  {
+   "at": "2024-02-07T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.712453,
+   "mechanism": "inventory draw",
+   "node_id": "sea_beirut",
+   "parent_id": 19,
+   "seq": 20,
+   "tick": 5
+  },
+  {
+   "at": "2024-02-06T16:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_damietta",
+   "parent_id": 19,
+   "seq": 21,
+   "tick": 5
+  },
+  {
+   "at": "2024-01-23T20:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_dammam",
+   "parent_id": 14,
+   "seq": 22,
+   "tick": 5
+  },
+  {
+   "at": "2024-02-03T20:00:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.898174,
+   "mechanism": "inventory draw",
+   "node_id": "sea_hamad",
+   "parent_id": 17,
+   "seq": 23,
+   "tick": 5
+  },
+  {
+   "at": "2024-02-03T12:48:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_khalifa",
+   "parent_id": 22,
+   "seq": 24,
+   "tick": 5
+  },
+  {
+   "at": "2024-02-08T04:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.703127,
+   "mechanism": "inventory draw",
+   "node_id": "sea_marsaxlokk",
+   "parent_id": 19,
+   "seq": 25,
+   "tick": 5
+  },
+  {
+   "at": "2024-02-18T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_piraeus",
+   "parent_id": 20,
+   "seq": 26,
+   "tick": 5
+  },
+  {
+   "at": "2024-03-08T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.491488,
+   "mechanism": "inventory draw",
+   "node_id": "sea_rotterdam",
+   "parent_id": 26,
+   "seq": 27,
+   "tick": 5
+  },
+  {
+   "at": "2024-03-16T03:26:54Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.409796,
+   "mechanism": "queue spillback",
+   "node_id": "chk_dover",
+   "parent_id": 27,
+   "seq": 28,
+   "tick": 6
+  },
+  {
+   "at": "2024-02-26T13:02:54Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.430813,
+   "mechanism": "upstream queue backlog",
+   "node_id": "chk_turkish",
+   "parent_id": 26,
+   "seq": 29,
+   "tick": 6
+  },
+  {
+   "at": "2024-01-28T04:00:00Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.484794,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_riyadh",
+   "parent_id": 22,
+   "seq": 30,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-31T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.696546,
+   "mechanism": "inventory draw",
+   "node_id": "sea_buenosaires",
+   "parent_id": 27,
+   "seq": 31,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-08T17:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_constanta",
+   "parent_id": 29,
+   "seq": 32,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-20T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.524369,
+   "mechanism": "inventory draw",
+   "node_id": "sea_dublin",
+   "parent_id": 27,
+   "seq": 33,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-26T13:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.787209,
+   "mechanism": "inventory draw",
+   "node_id": "sea_felixstowe",
+   "parent_id": 28,
+   "seq": 34,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-21T01:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_gdansk",
+   "parent_id": 27,
+   "seq": 35,
+   "tick": 6
+  },
+  {
+   "at": "2024-02-18T16:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.935481,
+   "mechanism": "inventory draw",
+   "node_id": "sea_gioiatauro",
+   "parent_id": 25,
+   "seq": 36,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-01T16:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.618392,
+   "mechanism": "inventory draw",
+   "node_id": "sea_koper",
+   "parent_id": 26,
+   "seq": 37,
+   "tick": 6
+  },
+  {
+   "at": "2024-02-18T04:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.911929,
+   "mechanism": "inventory draw",
+   "node_id": "sea_mersin",
+   "parent_id": 20,
+   "seq": 38,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-26T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_montreal",
+   "parent_id": 27,
+   "seq": 39,
+   "tick": 6
+  },
+  {
+   "at": "2024-04-14T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.798001,
+   "mechanism": "inventory draw",
+   "node_id": "sea_santos",
+   "parent_id": 31,
+   "seq": 40,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-22T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_sines",
+   "parent_id": 27,
+   "seq": 41,
+   "tick": 6
+  },
+  {
+   "at": "2024-04-13T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_singapore",
+   "parent_id": 27,
+   "seq": 42,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-18T09:55:27Z",
+   "channel": "inventory",
+   "delay_d": 4.536501,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_tangermed",
+   "parent_id": 27,
+   "seq": 43,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-03T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.879966,
+   "mechanism": "inventory draw",
+   "node_id": "sea_valencia",
+   "parent_id": 26,
+   "seq": 44,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-28T13:02:54Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.420435,
+   "mechanism": "upstream queue backlog",
+   "node_id": "chk_danish",
+   "parent_id": 35,
+   "seq": 45,
+   "tick": 7
+  },
+  {
+   "at": "2024-03-29T17:50:54Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.436805,
+   "mechanism": "queue spillback",
+   "node_id": "chk_gibraltar",
+   "parent_id": 41,
+   "seq": 46,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-21T13:02:54Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.430868,
+   "mechanism": "upstream queue backlog",
+   "node_id": "chk_malacca",
+   "parent_id": 42,
+   "seq": 47,
+   "tick": 7
+  },
+  {
+   "at": "2024-03-06T00:14:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.289586,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_budapest",
+   "parent_id": 37,
+   "seq": 48,
+   "tick": 7
+  },
+  {
+   "at": "2024-03-12T17:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.395262,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_duisburg",
+   "parent_id": 27,
+   "seq": 49,
+   "tick": 7
+  },
+  {
+   "at": "2024-03-30T09:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.902467,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_montreal",
+   "parent_id": 39,
+   "seq": 50,
+   "tick": 7
+  },
+  {
+   "at": "2024-05-04T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.784535,
+   "mechanism": "inventory draw",
+   "node_id": "sea_algeciras",
+   "parent_id": 40,
+   "seq": 51,
+   "tick": 7
+  },
+  {
+   "at": "2024-03-07T20:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_ambarli",
+   "parent_id": 29,
+   "seq": 52,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-03T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.835374,
+   "mechanism": "inventory draw",
+   "node_id": "sea_barcelona",
+   "parent_id": 41,
+   "seq": 53,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-18T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_busan",
+   "parent_id": 27,
+   "seq": 54,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-30T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.822481,
+   "mechanism": "inventory draw",
+   "node_id": "sea_cartagena",
+   "parent_id": 40,
+   "seq": 55,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-08T10:38:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_gdynia",
+   "parent_id": 45,
+   "seq": 56,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-15T01:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.568667,
+   "mechanism": "inventory draw",
+   "node_id": "sea_genoa",
+   "parent_id": 53,
+   "seq": 57,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-07T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.530225,
+   "mechanism": "inventory draw",
+   "node_id": "sea_halifax",
+   "parent_id": 39,
+   "seq": 58,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-25T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.60674,
+   "mechanism": "inventory draw",
+   "node_id": "sea_laemchabang",
+   "parent_id": 42,
+   "seq": 59,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-06T08:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.874585,
+   "mechanism": "inventory draw",
+   "node_id": "sea_lehavre",
+   "parent_id": 34,
+   "seq": 60,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-16T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.932227,
+   "mechanism": "inventory draw",
+   "node_id": "sea_ningbo",
+   "parent_id": 27,
+   "seq": 61,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-30T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.843053,
+   "mechanism": "inventory draw",
+   "node_id": "sea_qingdao",
+   "parent_id": 54,
+   "seq": 62,
+   "tick": 7
+  },
+  {
+   "at": "2024-05-11T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.97344,
+   "mechanism": "inventory draw",
+   "node_id": "sea_shanghai",
+   "parent_id": 62,
+   "seq": 63,
+   "tick": 7
+  },
+  {
+   "at": "2024-05-02T01:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.642997,
+   "mechanism": "inventory draw",
+   "node_id": "sea_tanjungpelepas",
+   "parent_id": 47,
+   "seq": 64,
+   "tick": 7
+  },
+  {
+   "at": "2024-04-25T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.716359,
+   "mechanism": "inventory draw",
+   "node_id": "sea_tanjungperak",
+   "parent_id": 42,
+   "seq": 65,
+   "tick": 7
+  },
+  {
+   "at": "2024-05-06T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_tanjungpriok",
+   "parent_id": 65,
+   "seq": 66,
+   "tick": 7
+  },
+  {
+   "at": "2024-05-07T06:43:13Z",
+   "channel": "mode-shift",
+   "delay_d": 0.103003,
+   "magnitude": 0.686687,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_jakarta",
+   "parent_id": 66,
+   "seq": 67,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-15T18:22:54Z",
+   "channel": "queue",
+   "delay_d": 13.888889,
+   "magnitude": 0.367258,
+   "mechanism": "upstream queue backlog",
+   "node_id": "chk_panama",
+   "parent_id": 63,
+   "seq": 68,
+   "tick": 8
+  },
+  {
+   "at": "2024-04-03T05:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.574405,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_alexandriabay",
+   "parent_id": 50,
+   "seq": 69,
+   "tick": 8
+  },
+  {
+   "at": "2024-03-12T08:14:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.056539,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_halkali",
+   "parent_id": 48,
+   "seq": 70,
+   "tick": 8
+  },
+  {
+   "at": "2024-03-17T13:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.988671,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_milan",
+   "parent_id": 49,
+   "seq": 71,
+   "tick": 8
+  },
+  {
+   "at": "2024-04-03T17:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.685274,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_toronto",
+   "parent_id": 50,
+   "seq": 72,
+   "tick": 8
+  },
+  {
+   "at": "2024-03-18T01:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.419454,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_warsaw",
+   "parent_id": 49,
+   "seq": 73,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-21T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.616334,
+   "mechanism": "inventory draw",
+   "node_id": "sea_antwerp",
+   "parent_id": 63,
+   "seq": 74,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-26T06:22:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_colon",
+   "parent_id": 68,
+   "seq": 75,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-23T16:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.647995,
+   "mechanism": "inventory draw",
+   "node_id": "sea_fuzhou",
+   "parent_id": 63,
+   "seq": 76,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-23T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.555957,
+   "mechanism": "inventory draw",
+   "node_id": "sea_gwangyang",
+   "parent_id": 63,
+   "seq": 77,
+   "tick": 8
+  },
+  {
+   "at": "2024-07-02T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.586915,
+   "mechanism": "inventory draw",
+   "node_id": "sea_hamburg",
+   "parent_id": 74,
+   "seq": 78,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-07T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.964825,
+   "mechanism": "inventory draw",
+   "node_id": "sea_hochiminh",
+   "parent_id": 59,
+   "seq": 79,
+   "tick": 8
+  },
+  {
+   "at": "2024-07-01T18:22:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.422785,
+   "mechanism": "inventory draw",
+   "node_id": "sea_houston",
+   "parent_id": 68,
+   "seq": 80,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-23T01:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.621015,
+   "mechanism": "inventory draw",
+   "node_id": "sea_incheon",
+   "parent_id": 63,
+   "seq": 81,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-23T01:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_keelung",
+   "parent_id": 63,
+   "seq": 82,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-23T01:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.730729,
+   "mechanism": "inventory draw",
+   "node_id": "sea_lianyungang",
+   "parent_id": 63,
+   "seq": 83,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-06T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.527555,
+   "mechanism": "inventory draw",
+   "node_id": "sea_longbeach",
+   "parent_id": 63,
+   "seq": 84,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-19T13:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.713425,
+   "mechanism": "inventory draw",
+   "node_id": "sea_melbourne",
+   "parent_id": 64,
+   "seq": 85,
+   "tick": 8
+  },
+  {
+   "at": "2024-07-24T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.51564,
+   "mechanism": "inventory draw",
+   "node_id": "sea_newyork",
+   "parent_id": 78,
+   "seq": 86,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-08T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_nwsa",
+   "parent_id": 54,
+   "seq": 87,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-07T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_princerupert",
+   "parent_id": 54,
+   "seq": 88,
+   "tick": 8
+  },
+  {
+   "at": "2024-07-15T18:22:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.586098,
+   "mechanism": "inventory draw",
+   "node_id": "sea_savannah",
+   "parent_id": 80,
+   "seq": 89,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-03T13:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.275191,
+   "mechanism": "inventory draw",
+   "node_id": "sea_taicang",
+   "parent_id": 83,
+   "seq": 90,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-23T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_tianjin",
+   "parent_id": 63,
+   "seq": 91,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-01T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_vancouver",
+   "parent_id": 63,
+   "seq": 92,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-03T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_yingkou",
+   "parent_id": 91,
+   "seq": 93,
+   "tick": 8
+  },
+  {
+   "at": "2024-04-30T16:14:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.617557,
+   "mechanism": "inventory draw",
+   "node_id": "sea_yokohama",
+   "parent_id": 54,
+   "seq": 94,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-30T15:26:54Z",
+   "channel": "queue",
+   "delay_d": 6.666667,
+   "magnitude": 0.307466,
+   "mechanism": "upstream queue backlog",
+   "node_id": "chk_taiwan",
+   "parent_id": 76,
+   "seq": 95,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-19T14:22:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.64878,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_atlanta",
+   "parent_id": 89,
+   "seq": 96,
+   "tick": 9
+  },
+  {
+   "at": "2024-03-22T09:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.430019,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_bettembourg",
+   "parent_id": 71,
+   "seq": 97,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-29T05:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.544265,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_buffalo",
+   "parent_id": 86,
+   "seq": 98,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-29T09:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.511524,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_columbus",
+   "parent_id": 86,
+   "seq": 99,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-02T05:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.428319,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_detroit",
+   "parent_id": 98,
+   "seq": 100,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-10T17:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.409255,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_inlandempire",
+   "parent_id": 84,
+   "seq": 101,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-05T19:10:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.991055,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_laredo",
+   "parent_id": 80,
+   "seq": 102,
+   "tick": 9
+  },
+  {
+   "at": "2024-03-22T01:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.089366,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_malaszewicze",
+   "parent_id": 73,
+   "seq": 103,
+   "tick": 9
+  },
+  {
+   "at": "2024-04-08T21:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.549848,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_sweetgrass",
+   "parent_id": 72,
+   "seq": 104,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-05T09:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.717144,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_vancouver",
+   "parent_id": 92,
+   "seq": 105,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-26T01:34:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.259828,
+   "mechanism": "inventory draw",
+   "node_id": "sea_balboa",
+   "parent_id": 68,
+   "seq": 106,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-13T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.495616,
+   "mechanism": "inventory draw",
+   "node_id": "sea_bremerhaven",
+   "parent_id": 78,
+   "seq": 107,
+   "tick": 9
+  },
+  {
+   "at": "2024-05-31T13:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.557115,
+   "mechanism": "inventory draw",
+   "node_id": "sea_brisbane",
+   "parent_id": 85,
+   "seq": 108,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-02T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.606394,
+   "mechanism": "inventory draw",
+   "node_id": "sea_caimep",
+   "parent_id": 84,
+   "seq": 109,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-05T01:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.856345,
+   "mechanism": "inventory draw",
+   "node_id": "sea_charleston",
+   "parent_id": 86,
+   "seq": 110,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-14T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.642124,
+   "mechanism": "inventory draw",
+   "node_id": "sea_dalian",
+   "parent_id": 93,
+   "seq": 111,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-14T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.494541,
+   "mechanism": "inventory draw",
+   "node_id": "sea_hongkong",
+   "parent_id": 109,
+   "seq": 112,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-06T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.440159,
+   "mechanism": "inventory draw",
+   "node_id": "sea_losangeles",
+   "parent_id": 112,
+   "seq": 113,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-10T13:34:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.489747,
+   "mechanism": "inventory draw",
+   "node_id": "sea_manzanillo",
+   "parent_id": 106,
+   "seq": 114,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-03T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.807339,
+   "mechanism": "inventory draw",
+   "node_id": "sea_nagoya",
+   "parent_id": 77,
+   "seq": 115,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-17T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.858317,
+   "mechanism": "inventory draw",
+   "node_id": "sea_oakland",
+   "parent_id": 113,
+   "seq": 116,
+   "tick": 9
+  },
+  {
+   "at": "2024-05-11T01:50:54Z",
+   "channel": "queue",
+   "delay_d": 10.0,
+   "magnitude": 0.113936,
+   "mechanism": "upstream queue backlog",
+   "node_id": "sea_rizhao",
+   "parent_id": 62,
+   "seq": 117,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-29T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_shenzhen",
+   "parent_id": 113,
+   "seq": 118,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-11T13:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.786265,
+   "mechanism": "inventory draw",
+   "node_id": "sea_sydney",
+   "parent_id": 108,
+   "seq": 119,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-27T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.632114,
+   "mechanism": "inventory draw",
+   "node_id": "sea_tokyo",
+   "parent_id": 113,
+   "seq": 120,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-15T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_virginia",
+   "parent_id": 110,
+   "seq": 121,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-30T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.550261,
+   "mechanism": "inventory draw",
+   "node_id": "sea_xiamen",
+   "parent_id": 113,
+   "seq": 122,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-24T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.506152,
+   "mechanism": "inventory draw",
+   "node_id": "sea_yantai",
+   "parent_id": 111,
+   "seq": 123,
+   "tick": 9
+  },
+  {
+   "at": "2024-07-15T16:11:02Z",
+   "channel": "mode-shift",
+   "delay_d": 0.497317,
+   "magnitude": 0.994633,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_hongkong",
+   "parent_id": 112,
+   "seq": 124,
+   "tick": 10
+  },
+  {
+   "at": "2024-04-19T20:16:25Z",
+   "channel": "mode-shift",
+   "delay_d": 0.467723,
+   "magnitude": 0.935445,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_incheon",
+   "parent_id": 54,
+   "seq": 125,
+   "tick": 10
+  },
+  {
+   "at": "2024-06-11T02:05:04Z",
+   "channel": "mode-shift",
+   "delay_d": 0.176502,
+   "magnitude": 0.882508,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_ontario",
+   "parent_id": 101,
+   "seq": 126,
+   "tick": 10
+  },
+  {
+   "at": "2024-06-09T01:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.759008,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_blaine",
+   "parent_id": 105,
+   "seq": 127,
+   "tick": 10
+  },
+  {
+   "at": "2024-06-14T10:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.321912,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_calexico",
+   "parent_id": 101,
+   "seq": 128,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-06T06:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.991055,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_chicago",
+   "parent_id": 100,
+   "seq": 129,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-11T14:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.421406,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_dallas",
+   "parent_id": 129,
+   "seq": 130,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-15T13:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.789696,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_eaglepass",
+   "parent_id": 130,
+   "seq": 131,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-19T17:02:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.518119,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_frontroyal",
+   "parent_id": 121,
+   "seq": 132,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-09T09:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.432233,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_greer",
+   "parent_id": 110,
+   "seq": 133,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-15T15:26:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.991055,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_hidalgo",
+   "parent_id": 130,
+   "seq": 134,
+   "tick": 10
+  },
+  {
+   "at": "2024-04-05T09:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.012348,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_khorgos",
+   "parent_id": 103,
+   "seq": 135,
+   "tick": 10
+  },
+  {
+   "at": "2024-06-18T01:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.076587,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_otaymesa",
+   "parent_id": 128,
+   "seq": 136,
+   "tick": 10
+  },
+  {
+   "at": "2024-03-26T09:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.19595,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_paris",
+   "parent_id": 97,
+   "seq": 137,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-22T02:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.465016,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_saltlakecity",
+   "parent_id": 116,
+   "seq": 138,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-21T12:14:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.527012,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_stockton",
+   "parent_id": 116,
+   "seq": 139,
+   "tick": 10
+  },
+  {
+   "at": "2024-07-09T13:34:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.210495,
+   "mechanism": "inventory draw",
+   "node_id": "sea_callao",
+   "parent_id": 106,
+   "seq": 140,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-09T06:38:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.690104,
+   "mechanism": "inventory draw",
+   "node_id": "sea_dongguan",
+   "parent_id": 118,
+   "seq": 141,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-19T13:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_guangzhou",
+   "parent_id": 141,
+   "seq": 142,
+   "tick": 10
+  },
+  {
+   "at": "2024-07-21T08:46:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.229926,
+   "mechanism": "inventory draw",
+   "node_id": "sea_guayaquil",
+   "parent_id": 140,
+   "seq": 143,
+   "tick": 10
+  },
+  {
+   "at": "2024-07-26T09:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.987478,
+   "mechanism": "inventory draw",
+   "node_id": "sea_haiphong",
+   "parent_id": 112,
+   "seq": 144,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-29T21:02:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.672307,
+   "mechanism": "inventory draw",
+   "node_id": "sea_kaohsiung",
+   "parent_id": 113,
+   "seq": 145,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-10T09:02:54Z",
+   "channel": "queue",
+   "delay_d": 10.0,
+   "magnitude": 0.104162,
+   "mechanism": "upstream queue backlog",
+   "node_id": "sea_manila",
+   "parent_id": 145,
+   "seq": 146,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-30T18:38:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.855708,
+   "mechanism": "inventory draw",
+   "node_id": "sea_qinzhou",
+   "parent_id": 142,
+   "seq": 147,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-10T13:50:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.367452,
+   "mechanism": "inventory draw",
+   "node_id": "sea_taichung",
+   "parent_id": 122,
+   "seq": 148,
+   "tick": 10
+  },
+  {
+   "at": "2024-07-16T08:06:20Z",
+   "channel": "mode-shift",
+   "delay_d": 0.163401,
+   "magnitude": 0.653605,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_anchorage",
+   "parent_id": 124,
+   "seq": 149,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-16T01:56:30Z",
+   "channel": "mode-shift",
+   "delay_d": 0.106573,
+   "magnitude": 0.710487,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_bangkok",
+   "parent_id": 124,
+   "seq": 150,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-07T06:02:16Z",
+   "channel": "mode-shift",
+   "delay_d": 0.174559,
+   "magnitude": 0.349119,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_losangeles",
+   "parent_id": 113,
+   "seq": 151,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-16T21:32:55Z",
+   "channel": "mode-shift",
+   "delay_d": 0.160126,
+   "magnitude": 0.80063,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_osaka",
+   "parent_id": 149,
+   "seq": 152,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-08T10:17:52Z",
+   "channel": "mode-shift",
+   "delay_d": 0.177501,
+   "magnitude": 0.355003,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_shanghaipudong",
+   "parent_id": 151,
+   "seq": 153,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-16T17:08:19Z",
+   "channel": "mode-shift",
+   "delay_d": 0.333202,
+   "magnitude": 0.666404,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_singapore",
+   "parent_id": 150,
+   "seq": 154,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-08T16:07:58Z",
+   "channel": "mode-shift",
+   "delay_d": 0.420628,
+   "magnitude": 0.841256,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_taipei",
+   "parent_id": 151,
+   "seq": 155,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-16T22:25:36Z",
+   "channel": "mode-shift",
+   "delay_d": 0.146717,
+   "magnitude": 0.58687,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_zhengzhou",
+   "parent_id": 149,
+   "seq": 156,
+   "tick": 11
+  },
+  {
+   "at": "2024-03-30T05:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.396726,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_channeltunnel",
+   "parent_id": 137,
+   "seq": 157,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-16T10:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.054266,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_elpaso",
+   "parent_id": 130,
+   "seq": 158,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-16T10:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.525487,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_kansascity",
+   "parent_id": 130,
+   "seq": 159,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-10T14:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.510684,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_memphis",
+   "parent_id": 129,
+   "seq": 160,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-16T22:38:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.043731,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_nogales",
+   "parent_id": 130,
+   "seq": 161,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-06T01:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.055303,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_porthuron",
+   "parent_id": 100,
+   "seq": 162,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-20T04:14:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.546049,
+   "mechanism": "queue spillback",
+   "node_id": "gnd_stlouis",
+   "parent_id": 159,
+   "seq": 163,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-22T13:34:54Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.141381,
+   "mechanism": "inventory draw",
+   "node_id": "sea_sanantonio",
+   "parent_id": 140,
+   "seq": 164,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-17T09:35:03Z",
+   "channel": "mode-shift",
+   "delay_d": 0.135242,
+   "magnitude": 0.491787,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_brussels",
+   "parent_id": 154,
+   "seq": 165,
+   "tick": 12
+  },
+  {
+   "at": "2024-07-16T23:13:25Z",
+   "channel": "mode-shift",
+   "delay_d": 0.22992,
+   "magnitude": 0.510933,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_chicago",
+   "parent_id": 149,
+   "seq": 166,
+   "tick": 12
+  },
+  {
+   "at": "2024-07-17T16:28:05Z",
+   "channel": "mode-shift",
+   "delay_d": 0.272062,
+   "magnitude": 0.777321,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_dubai",
+   "parent_id": 154,
+   "seq": 167,
+   "tick": 12
+  },
+  {
+   "at": "2024-07-16T23:29:59Z",
+   "channel": "mode-shift",
+   "delay_d": 0.141424,
+   "magnitude": 0.565697,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_ezhou",
+   "parent_id": 149,
+   "seq": 168,
+   "tick": 12
+  },
+  {
+   "at": "2024-07-17T01:06:27Z",
+   "channel": "mode-shift",
+   "delay_d": 0.208415,
+   "magnitude": 0.833661,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_louisville",
+   "parent_id": 149,
+   "seq": 169,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-10T19:42:36Z",
+   "channel": "mode-shift",
+   "delay_d": 0.110909,
+   "magnitude": 0.443637,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_memphis",
+   "parent_id": 160,
+   "seq": 170,
+   "tick": 12
+  },
+  {
+   "at": "2024-07-18T07:33:56Z",
+   "channel": "mode-shift",
+   "delay_d": 0.447585,
+   "magnitude": 0.994633,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_narita",
+   "parent_id": 166,
+   "seq": 171,
+   "tick": 12
+  },
+  {
+   "at": "2024-03-31T17:50:54Z",
+   "channel": "queue",
+   "delay_d": 3.333333,
+   "magnitude": 0.043211,
+   "mechanism": "upstream queue backlog",
+   "node_id": "gnd_madrid",
+   "parent_id": 137,
+   "seq": 172,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-11T00:16:52Z",
+   "channel": "mode-shift",
+   "delay_d": 0.090461,
+   "magnitude": 0.452305,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_atlanta",
+   "parent_id": 170,
+   "seq": 173,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-11T01:53:55Z",
+   "channel": "mode-shift",
+   "delay_d": 0.057861,
+   "magnitude": 0.578613,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_cincinnati",
+   "parent_id": 170,
+   "seq": 174,
+   "tick": 13
+  },
+  {
+   "at": "2024-07-17T13:24:19Z",
+   "channel": "mode-shift",
+   "delay_d": 0.112409,
+   "magnitude": 0.562045,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_cologne",
+   "parent_id": 169,
+   "seq": 175,
+   "tick": 13
+  },
+  {
+   "at": "2024-07-18T04:09:30Z",
+   "channel": "mode-shift",
+   "delay_d": 0.287104,
+   "magnitude": 0.820297,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_doha",
+   "parent_id": 167,
+   "seq": 176,
+   "tick": 13
+  },
+  {
+   "at": "2024-07-17T22:44:34Z",
+   "channel": "mode-shift",
+   "delay_d": 0.061446,
+   "magnitude": 0.614462,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_dubaiworldcentral",
+   "parent_id": 167,
+   "seq": 177,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-11T00:23:26Z",
+   "channel": "mode-shift",
+   "delay_d": 0.095018,
+   "magnitude": 0.422303,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_houston",
+   "parent_id": 170,
+   "seq": 178,
+   "tick": 13
+  },
+  {
+   "at": "2024-07-17T03:44:20Z",
+   "channel": "mode-shift",
+   "delay_d": 0.088134,
+   "magnitude": 0.503625,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_toronto",
+   "parent_id": 166,
+   "seq": 179,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-11T15:38:58Z",
+   "channel": "mode-shift",
+   "delay_d": 0.185789,
+   "magnitude": 0.371579,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_frankfurt",
+   "parent_id": 178,
+   "seq": 180,
+   "tick": 14
+  },
+  {
+   "at": "2024-07-19T02:03:54Z",
+   "channel": "mode-shift",
+   "delay_d": 0.212768,
+   "magnitude": 0.531921,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_london",
+   "parent_id": 176,
+   "seq": 181,
+   "tick": 14
+  },
+  {
+   "at": "2024-08-12T02:18:19Z",
+   "channel": "mode-shift",
+   "delay_d": 0.093998,
+   "magnitude": 0.537131,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_newyork",
+   "parent_id": 180,
+   "seq": 182,
+   "tick": 14
+  },
+  {
+   "at": "2024-08-11T17:16:20Z",
+   "channel": "mode-shift",
+   "delay_d": 0.017612,
+   "magnitude": 0.704478,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_leipzig",
+   "parent_id": 180,
+   "seq": 183,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-11T20:53:18Z",
+   "channel": "mode-shift",
+   "delay_d": 0.06829,
+   "magnitude": 0.455267,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_madrid",
+   "parent_id": 180,
+   "seq": 184,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-11T18:35:30Z",
+   "channel": "mode-shift",
+   "delay_d": 0.022597,
+   "magnitude": 0.451933,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_milan",
+   "parent_id": 180,
+   "seq": 185,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-12T00:54:12Z",
+   "channel": "mode-shift",
+   "delay_d": 0.085576,
+   "magnitude": 0.570508,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_paris",
+   "parent_id": 180,
+   "seq": 186,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-12T10:11:53Z",
+   "channel": "mode-shift",
+   "delay_d": 0.072859,
+   "magnitude": 0.182148,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_addisababa",
+   "parent_id": 180,
+   "seq": 187,
+   "tick": 16
+  },
+  {
+   "at": "2024-08-12T05:53:41Z",
+   "channel": "mode-shift",
+   "delay_d": 0.157983,
+   "magnitude": 0.63193,
+   "mechanism": "mode-shift to air",
+   "node_id": "air_liege",
+   "parent_id": 186,
+   "seq": 188,
+   "tick": 16
+  },
+  {
+   "at": "2024-08-12T08:26:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_addisababa",
+   "parent_id": 180,
+   "seq": 189,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-11T22:50:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_amsterdam",
+   "parent_id": 180,
+   "seq": 190,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-11T07:42:36Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_anchorage",
+   "parent_id": 170,
+   "seq": 191,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-12T01:14:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_atlanta",
+   "parent_id": 180,
+   "seq": 192,
+   "tick": 15
+  },
+  {
+   "at": "2024-07-17T00:20:19Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_bangkok",
+   "parent_id": 154,
+   "seq": 193,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-08T17:29:52Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_beijing",
+   "parent_id": 153,
+   "seq": 194,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-12T07:05:41Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_brussels",
+   "parent_id": 188,
+   "seq": 195,
+   "tick": 17
+  },
+  {
+   "at": "2024-08-12T10:50:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_chicago",
+   "parent_id": 180,
+   "seq": 196,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-11T00:30:36Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_cincinnati",
+   "parent_id": 170,
+   "seq": 197,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-11T16:50:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_cologne",
+   "parent_id": 180,
+   "seq": 198,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-12T10:50:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_delhi",
+   "parent_id": 180,
+   "seq": 199,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-12T06:02:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_doha",
+   "parent_id": 180,
+   "seq": 200,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-12T22:11:53Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_dubai",
+   "parent_id": 187,
+   "seq": 201,
+   "tick": 17
+  },
+  {
+   "at": "2024-07-17T21:16:05Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_dubaiworldcentral",
+   "parent_id": 167,
+   "seq": 202,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-12T17:53:41Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_ezhou",
+   "parent_id": 188,
+   "seq": 203,
+   "tick": 17
+  },
+  {
+   "at": "2024-08-13T02:59:53Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_frankfurt",
+   "parent_id": 187,
+   "seq": 204,
+   "tick": 17
+  },
+  {
+   "at": "2024-08-08T17:29:52Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_guangzhou",
+   "parent_id": 153,
+   "seq": 205,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-08T20:55:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_hongkong",
+   "parent_id": 155,
+   "seq": 206,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-12T02:26:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_houston",
+   "parent_id": 180,
+   "seq": 207,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-08T06:02:16Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_incheon",
+   "parent_id": 151,
+   "seq": 208,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-11T00:30:36Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_indianapolis",
+   "parent_id": 170,
+   "seq": 209,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-12T01:14:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_istanbul",
+   "parent_id": 180,
+   "seq": 210,
+   "tick": 15
+  },
+  {
+   "at": "2024-07-17T00:20:19Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_jakarta",
+   "parent_id": 154,
+   "seq": 211,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-12T07:05:41Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_leipzig",
+   "parent_id": 188,
+   "seq": 212,
+   "tick": 17
+  },
+  {
+   "at": "2024-08-12T02:06:12Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_liege",
+   "parent_id": 186,
+   "seq": 213,
+   "tick": 16
+  },
+  {
+   "at": "2024-08-13T05:23:53Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_london",
+   "parent_id": 187,
+   "seq": 214,
+   "tick": 17
+  },
+  {
+   "at": "2024-08-11T05:18:36Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_losangeles",
+   "parent_id": 170,
+   "seq": 215,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-11T06:41:55Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_louisville",
+   "parent_id": 174,
+   "seq": 216,
+   "tick": 14
+  },
+  {
+   "at": "2024-08-11T19:14:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_madrid",
+   "parent_id": 180,
+   "seq": 217,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-11T06:41:55Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_memphis",
+   "parent_id": 174,
+   "seq": 218,
+   "tick": 14
+  },
+  {
+   "at": "2024-08-07T18:02:16Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_miami",
+   "parent_id": 151,
+   "seq": 219,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-11T18:02:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_milan",
+   "parent_id": 180,
+   "seq": 220,
+   "tick": 15
+  },
+  {
+   "at": "2024-07-17T20:49:25Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_narita",
+   "parent_id": 166,
+   "seq": 221,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-12T00:02:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_newyork",
+   "parent_id": 180,
+   "seq": 222,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-11T05:18:36Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_ontario",
+   "parent_id": 170,
+   "seq": 223,
+   "tick": 13
+  },
+  {
+   "at": "2024-07-18T08:45:56Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_osaka",
+   "parent_id": 171,
+   "seq": 224,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-12T07:05:41Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_paris",
+   "parent_id": 188,
+   "seq": 225,
+   "tick": 17
+  },
+  {
+   "at": "2024-08-08T06:02:16Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_shanghaipudong",
+   "parent_id": 151,
+   "seq": 226,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-08T17:29:52Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_shenzhen",
+   "parent_id": 153,
+   "seq": 227,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-12T15:38:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_singapore",
+   "parent_id": 180,
+   "seq": 228,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-08T06:02:16Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_taipei",
+   "parent_id": 151,
+   "seq": 229,
+   "tick": 12
+  },
+  {
+   "at": "2024-07-19T10:27:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_toronto",
+   "parent_id": 181,
+   "seq": 230,
+   "tick": 15
+  },
+  {
+   "at": "2024-08-12T03:38:58Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "air_zhengzhou",
+   "parent_id": 180,
+   "seq": 231,
+   "tick": 15
+  },
+  {
+   "at": "2024-01-04T12:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_babelmandeb",
+   "parent_id": 10,
+   "seq": 232,
+   "tick": 4
+  },
+  {
+   "at": "2024-01-02T16:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_capeofgoodhope",
+   "parent_id": 8,
+   "seq": 233,
+   "tick": 4
+  },
+  {
+   "at": "2024-07-04T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_danish",
+   "parent_id": 78,
+   "seq": 234,
+   "tick": 9
+  },
+  {
+   "at": "2024-04-06T20:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_dover",
+   "parent_id": 60,
+   "seq": 235,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-04T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_gibraltar",
+   "parent_id": 51,
+   "seq": 236,
+   "tick": 8
+  },
+  {
+   "at": "2024-02-04T08:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_hormuz",
+   "parent_id": 24,
+   "seq": 237,
+   "tick": 6
+  },
+  {
+   "at": "2024-05-02T13:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_malacca",
+   "parent_id": 64,
+   "seq": 238,
+   "tick": 8
+  },
+  {
+   "at": "2024-01-30T04:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_mozambique",
+   "parent_id": 12,
+   "seq": 239,
+   "tick": 4
+  },
+  {
+   "at": "2024-08-15T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_panama",
+   "parent_id": 113,
+   "seq": 240,
+   "tick": 10
+  },
+  {
+   "at": "2024-01-27T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_suez",
+   "parent_id": 19,
+   "seq": 241,
+   "tick": 5
+  },
+  {
+   "at": "2024-08-31T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_taiwan",
+   "parent_id": 122,
+   "seq": 242,
+   "tick": 10
+  },
+  {
+   "at": "2024-03-09T22:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_turkish",
+   "parent_id": 32,
+   "seq": 243,
+   "tick": 7
+  },
+  {
+   "at": "2024-07-29T19:26:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_alexandriabay",
+   "parent_id": 98,
+   "seq": 244,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-13T14:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_atlanta",
+   "parent_id": 130,
+   "seq": 245,
+   "tick": 11
+  },
+  {
+   "at": "2024-03-27T02:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_bettembourg",
+   "parent_id": 137,
+   "seq": 246,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-09T06:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_blaine",
+   "parent_id": 129,
+   "seq": 247,
+   "tick": 11
+  },
+  {
+   "at": "2024-03-15T08:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_budapest",
+   "parent_id": 70,
+   "seq": 248,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-02T22:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_buffalo",
+   "parent_id": 100,
+   "seq": 249,
+   "tick": 10
+  },
+  {
+   "at": "2024-06-18T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_calexico",
+   "parent_id": 136,
+   "seq": 250,
+   "tick": 11
+  },
+  {
+   "at": "2024-03-26T21:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_channeltunnel",
+   "parent_id": 137,
+   "seq": 251,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-23T14:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_chicago",
+   "parent_id": 138,
+   "seq": 252,
+   "tick": 11
+  },
+  {
+   "at": "2024-01-14T16:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_citydeep",
+   "parent_id": 9,
+   "seq": 253,
+   "tick": 4
+  },
+  {
+   "at": "2024-08-20T09:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_columbus",
+   "parent_id": 132,
+   "seq": 254,
+   "tick": 11
+  },
+  {
+   "at": "2023-12-30T23:56:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_dadri",
+   "parent_id": 13,
+   "seq": 255,
+   "tick": 5
+  },
+  {
+   "at": "2024-08-18T22:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_dallas",
+   "parent_id": 161,
+   "seq": 256,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-06T23:26:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_detroit",
+   "parent_id": 129,
+   "seq": 257,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-03T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_duisburg",
+   "parent_id": 78,
+   "seq": 258,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-12T05:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_eaglepass",
+   "parent_id": 130,
+   "seq": 259,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-13T02:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_elpaso",
+   "parent_id": 130,
+   "seq": 260,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-16T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_frontroyal",
+   "parent_id": 121,
+   "seq": 261,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-06T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_greer",
+   "parent_id": 110,
+   "seq": 262,
+   "tick": 10
+  },
+  {
+   "at": "2024-04-17T09:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_halkali",
+   "parent_id": 135,
+   "seq": 263,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-12T07:26:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_hidalgo",
+   "parent_id": 130,
+   "seq": 264,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-22T02:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_inlandempire",
+   "parent_id": 139,
+   "seq": 265,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-20T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_kansascity",
+   "parent_id": 163,
+   "seq": 266,
+   "tick": 12
+  },
+  {
+   "at": "2024-04-02T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_khorgos",
+   "parent_id": 103,
+   "seq": 267,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-15T22:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_laredo",
+   "parent_id": 134,
+   "seq": 268,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-11T23:17:18Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_madrid",
+   "parent_id": 184,
+   "seq": 269,
+   "tick": 16
+  },
+  {
+   "at": "2024-04-16T09:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_malaszewicze",
+   "parent_id": 135,
+   "seq": 270,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-20T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_memphis",
+   "parent_id": 163,
+   "seq": 271,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-11T20:59:30Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_milan",
+   "parent_id": 185,
+   "seq": 272,
+   "tick": 16
+  },
+  {
+   "at": "2024-04-04T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_montreal",
+   "parent_id": 72,
+   "seq": 273,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-13T14:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_nogales",
+   "parent_id": 130,
+   "seq": 274,
+   "tick": 11
+  },
+  {
+   "at": "2024-06-14T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_otaymesa",
+   "parent_id": 128,
+   "seq": 275,
+   "tick": 11
+  },
+  {
+   "at": "2024-04-02T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_paris",
+   "parent_id": 172,
+   "seq": 276,
+   "tick": 13
+  },
+  {
+   "at": "2024-08-02T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_porthuron",
+   "parent_id": 100,
+   "seq": 277,
+   "tick": 10
+  },
+  {
+   "at": "2024-01-24T20:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_riyadh",
+   "parent_id": 22,
+   "seq": 278,
+   "tick": 6
+  },
+  {
+   "at": "2024-08-18T18:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_saltlakecity",
+   "parent_id": 116,
+   "seq": 279,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-16T20:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_stlouis",
+   "parent_id": 159,
+   "seq": 280,
+   "tick": 12
+  },
+  {
+   "at": "2024-08-18T04:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_stockton",
+   "parent_id": 116,
+   "seq": 281,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-07T18:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_sweetgrass",
+   "parent_id": 129,
+   "seq": 282,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-02T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_toronto",
+   "parent_id": 100,
+   "seq": 283,
+   "tick": 10
+  },
+  {
+   "at": "2024-06-09T08:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_vancouver",
+   "parent_id": 127,
+   "seq": 284,
+   "tick": 11
+  },
+  {
+   "at": "2024-03-22T18:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "gnd_warsaw",
+   "parent_id": 103,
+   "seq": 285,
+   "tick": 10
+  },
+  {
+   "at": "2024-04-24T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_algeciras",
+   "parent_id": 40,
+   "seq": 286,
+   "tick": 7
+  },
+  {
+   "at": "2024-02-26T20:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_ambarli",
+   "parent_id": 29,
+   "seq": 287,
+   "tick": 7
+  },
+  {
+   "at": "2024-09-26T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_antwerp",
+   "parent_id": 118,
+   "seq": 288,
+   "tick": 10
+  },
+  {
+   "at": "2024-07-29T01:34:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_balboa",
+   "parent_id": 164,
+   "seq": 289,
+   "tick": 12
+  },
+  {
+   "at": "2024-04-16T06:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_barcelona",
+   "parent_id": 57,
+   "seq": 290,
+   "tick": 8
+  },
+  {
+   "at": "2024-02-20T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_beirut",
+   "parent_id": 26,
+   "seq": 291,
+   "tick": 6
+  },
+  {
+   "at": "2024-07-03T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_bremerhaven",
+   "parent_id": 78,
+   "seq": 292,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-12T13:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_brisbane",
+   "parent_id": 119,
+   "seq": 293,
+   "tick": 10
+  },
+  {
+   "at": "2024-04-17T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_buenosaires",
+   "parent_id": 40,
+   "seq": 294,
+   "tick": 7
+  },
+  {
+   "at": "2024-08-29T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_busan",
+   "parent_id": 120,
+   "seq": 295,
+   "tick": 10
+  },
+  {
+   "at": "2024-07-16T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_caimep",
+   "parent_id": 112,
+   "seq": 296,
+   "tick": 10
+  },
+  {
+   "at": "2024-07-25T13:34:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_callao",
+   "parent_id": 164,
+   "seq": 297,
+   "tick": 12
+  },
+  {
+   "at": "2024-01-20T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_capetown",
+   "parent_id": 16,
+   "seq": 298,
+   "tick": 5
+  },
+  {
+   "at": "2024-06-27T01:34:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_cartagena",
+   "parent_id": 75,
+   "seq": 299,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-16T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_charleston",
+   "parent_id": 121,
+   "seq": 300,
+   "tick": 10
+  },
+  {
+   "at": "2024-01-10T16:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_chattogram",
+   "parent_id": 18,
+   "seq": 301,
+   "tick": 5
+  },
+  {
+   "at": "2024-04-26T13:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_colombo",
+   "parent_id": 47,
+   "seq": 302,
+   "tick": 8
+  },
+  {
+   "at": "2024-07-29T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_colon",
+   "parent_id": 86,
+   "seq": 303,
+   "tick": 9
+  },
+  {
+   "at": "2024-02-27T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_constanta",
+   "parent_id": 29,
+   "seq": 304,
+   "tick": 7
+  },
+  {
+   "at": "2024-06-25T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_dalian",
+   "parent_id": 123,
+   "seq": 305,
+   "tick": 10
+  },
+  {
+   "at": "2024-02-20T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_damietta",
+   "parent_id": 26,
+   "seq": 306,
+   "tick": 6
+  },
+  {
+   "at": "2024-02-04T10:24:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_dammam",
+   "parent_id": 23,
+   "seq": 307,
+   "tick": 6
+  },
+  {
+   "at": "2024-09-19T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_dongguan",
+   "parent_id": 142,
+   "seq": 308,
+   "tick": 11
+  },
+  {
+   "at": "2024-04-07T13:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_dublin",
+   "parent_id": 60,
+   "seq": 309,
+   "tick": 8
+  },
+  {
+   "at": "2024-01-31T16:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_durban",
+   "parent_id": 12,
+   "seq": 310,
+   "tick": 4
+  },
+  {
+   "at": "2024-07-03T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_felixstowe",
+   "parent_id": 78,
+   "seq": 311,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-31T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_fuzhou",
+   "parent_id": 122,
+   "seq": 312,
+   "tick": 10
+  },
+  {
+   "at": "2024-04-08T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_gdansk",
+   "parent_id": 56,
+   "seq": 313,
+   "tick": 8
+  },
+  {
+   "at": "2024-07-04T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_gdynia",
+   "parent_id": 78,
+   "seq": 314,
+   "tick": 9
+  },
+  {
+   "at": "2024-04-05T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_genoa",
+   "parent_id": 53,
+   "seq": 315,
+   "tick": 8
+  },
+  {
+   "at": "2024-04-16T06:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_gioiatauro",
+   "parent_id": 57,
+   "seq": 316,
+   "tick": 8
+  },
+  {
+   "at": "2024-10-01T23:26:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_guangzhou",
+   "parent_id": 147,
+   "seq": 317,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-11T08:46:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_guayaquil",
+   "parent_id": 140,
+   "seq": 318,
+   "tick": 11
+  },
+  {
+   "at": "2024-06-05T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_gwangyang",
+   "parent_id": 115,
+   "seq": 319,
+   "tick": 10
+  },
+  {
+   "at": "2024-10-01T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_haiphong",
+   "parent_id": 147,
+   "seq": 320,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-26T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_halifax",
+   "parent_id": 86,
+   "seq": 321,
+   "tick": 9
+  },
+  {
+   "at": "2024-01-24T20:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_hamad",
+   "parent_id": 17,
+   "seq": 322,
+   "tick": 5
+  },
+  {
+   "at": "2024-08-05T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_hamburg",
+   "parent_id": 86,
+   "seq": 323,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-22T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_hochiminh",
+   "parent_id": 113,
+   "seq": 324,
+   "tick": 10
+  },
+  {
+   "at": "2024-10-01T18:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_hongkong",
+   "parent_id": 147,
+   "seq": 325,
+   "tick": 11
+  },
+  {
+   "at": "2024-07-29T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_houston",
+   "parent_id": 86,
+   "seq": 326,
+   "tick": 9
+  },
+  {
+   "at": "2024-05-13T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_incheon",
+   "parent_id": 63,
+   "seq": 327,
+   "tick": 8
+  },
+  {
+   "at": "2024-04-20T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_jebelali",
+   "parent_id": 42,
+   "seq": 328,
+   "tick": 7
+  },
+  {
+   "at": "2024-01-30T04:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_jeddah",
+   "parent_id": 19,
+   "seq": 329,
+   "tick": 5
+  },
+  {
+   "at": "2024-09-11T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_kaohsiung",
+   "parent_id": 146,
+   "seq": 330,
+   "tick": 11
+  },
+  {
+   "at": "2024-01-25T22:24:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_karachi",
+   "parent_id": 17,
+   "seq": 331,
+   "tick": 5
+  },
+  {
+   "at": "2024-09-11T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_keelung",
+   "parent_id": 148,
+   "seq": 332,
+   "tick": 11
+  },
+  {
+   "at": "2024-01-24T12:48:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_khalifa",
+   "parent_id": 22,
+   "seq": 333,
+   "tick": 6
+  },
+  {
+   "at": "2024-03-07T00:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_koper",
+   "parent_id": 48,
+   "seq": 334,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-08T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_laemchabang",
+   "parent_id": 79,
+   "seq": 335,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-22T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_lehavre",
+   "parent_id": 74,
+   "seq": 336,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-05T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_lianyungang",
+   "parent_id": 90,
+   "seq": 337,
+   "tick": 9
+  },
+  {
+   "at": "2024-09-11T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_longbeach",
+   "parent_id": 118,
+   "seq": 338,
+   "tick": 10
+  },
+  {
+   "at": "2024-10-03T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_losangeles",
+   "parent_id": 142,
+   "seq": 339,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-31T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_manila",
+   "parent_id": 145,
+   "seq": 340,
+   "tick": 11
+  },
+  {
+   "at": "2024-06-30T13:34:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_manzanillo",
+   "parent_id": 106,
+   "seq": 341,
+   "tick": 10
+  },
+  {
+   "at": "2024-04-16T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_marsaxlokk",
+   "parent_id": 57,
+   "seq": 342,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-12T17:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_melbourne",
+   "parent_id": 119,
+   "seq": 343,
+   "tick": 10
+  },
+  {
+   "at": "2024-03-09T08:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_mersin",
+   "parent_id": 52,
+   "seq": 344,
+   "tick": 8
+  },
+  {
+   "at": "2024-01-17T16:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_mombasa",
+   "parent_id": 9,
+   "seq": 345,
+   "tick": 4
+  },
+  {
+   "at": "2024-04-08T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_montreal",
+   "parent_id": 58,
+   "seq": 346,
+   "tick": 8
+  },
+  {
+   "at": "2024-01-15T22:24:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_mundra",
+   "parent_id": 14,
+   "seq": 347,
+   "tick": 5
+  },
+  {
+   "at": "2024-08-28T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_nagoya",
+   "parent_id": 120,
+   "seq": 348,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-22T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_newyork",
+   "parent_id": 118,
+   "seq": 349,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-01T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_ningbo",
+   "parent_id": 122,
+   "seq": 350,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-19T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_nwsa",
+   "parent_id": 116,
+   "seq": 351,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-23T00:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_oakland",
+   "parent_id": 138,
+   "seq": 352,
+   "tick": 11
+  },
+  {
+   "at": "2024-03-17T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_piraeus",
+   "parent_id": 27,
+   "seq": 353,
+   "tick": 6
+  },
+  {
+   "at": "2024-04-28T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_portklang",
+   "parent_id": 65,
+   "seq": 354,
+   "tick": 8
+  },
+  {
+   "at": "2024-03-19T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_portsaid",
+   "parent_id": 27,
+   "seq": 355,
+   "tick": 6
+  },
+  {
+   "at": "2024-09-04T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_princerupert",
+   "parent_id": 120,
+   "seq": 356,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-19T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_qingdao",
+   "parent_id": 113,
+   "seq": 357,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-20T18:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_qinzhou",
+   "parent_id": 142,
+   "seq": 358,
+   "tick": 11
+  },
+  {
+   "at": "2024-05-01T01:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_rizhao",
+   "parent_id": 62,
+   "seq": 359,
+   "tick": 8
+  },
+  {
+   "at": "2024-08-04T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_rotterdam",
+   "parent_id": 86,
+   "seq": 360,
+   "tick": 9
+  },
+  {
+   "at": "2024-01-14T22:24:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_salalah",
+   "parent_id": 14,
+   "seq": 361,
+   "tick": 5
+  },
+  {
+   "at": "2024-07-12T13:34:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_sanantonio",
+   "parent_id": 140,
+   "seq": 362,
+   "tick": 11
+  },
+  {
+   "at": "2024-08-03T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_santos",
+   "parent_id": 86,
+   "seq": 363,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-05T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_savannah",
+   "parent_id": 110,
+   "seq": 364,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-22T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_shanghai",
+   "parent_id": 113,
+   "seq": 365,
+   "tick": 10
+  },
+  {
+   "at": "2024-09-09T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_shenzhen",
+   "parent_id": 141,
+   "seq": 366,
+   "tick": 11
+  },
+  {
+   "at": "2024-05-05T04:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_sines",
+   "parent_id": 51,
+   "seq": 367,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-26T13:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_singapore",
+   "parent_id": 85,
+   "seq": 368,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-01T13:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_sydney",
+   "parent_id": 108,
+   "seq": 369,
+   "tick": 10
+  },
+  {
+   "at": "2024-05-24T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_taicang",
+   "parent_id": 83,
+   "seq": 370,
+   "tick": 9
+  },
+  {
+   "at": "2024-08-31T13:50:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_taichung",
+   "parent_id": 122,
+   "seq": 371,
+   "tick": 10
+  },
+  {
+   "at": "2024-05-04T16:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_tangermed",
+   "parent_id": 51,
+   "seq": 372,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-27T01:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_tanjungpelepas",
+   "parent_id": 85,
+   "seq": 373,
+   "tick": 9
+  },
+  {
+   "at": "2024-05-07T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_tanjungperak",
+   "parent_id": 66,
+   "seq": 374,
+   "tick": 8
+  },
+  {
+   "at": "2024-05-07T13:55:13Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_tanjungpriok",
+   "parent_id": 67,
+   "seq": 375,
+   "tick": 9
+  },
+  {
+   "at": "2024-06-15T09:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_tianjin",
+   "parent_id": 111,
+   "seq": 376,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-17T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_tokyo",
+   "parent_id": 113,
+   "seq": 377,
+   "tick": 10
+  },
+  {
+   "at": "2024-05-05T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_valencia",
+   "parent_id": 51,
+   "seq": 378,
+   "tick": 8
+  },
+  {
+   "at": "2024-06-05T14:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_vancouver",
+   "parent_id": 105,
+   "seq": 379,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-20T05:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_virginia",
+   "parent_id": 132,
+   "seq": 380,
+   "tick": 11
+  },
+  {
+   "at": "2024-09-11T06:38:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_xiamen",
+   "parent_id": 148,
+   "seq": 381,
+   "tick": 11
+  },
+  {
+   "at": "2024-06-14T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_yantai",
+   "parent_id": 111,
+   "seq": 382,
+   "tick": 10
+  },
+  {
+   "at": "2024-06-14T21:02:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_yingkou",
+   "parent_id": 111,
+   "seq": 383,
+   "tick": 10
+  },
+  {
+   "at": "2024-08-28T04:14:54Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_yokohama",
+   "parent_id": 120,
+   "seq": 384,
+   "tick": 10
+  }
+ ],
+ "run_id": "replay_red_sea_v1",
+ "schema": "supermap.replay.chain/1",
+ "status": "complete",
+ "stream_hash": "dfbee3a7c07c2a95b76b24a138d79beb7e844f83264375fe1571e78be3c9fa5f"
+}

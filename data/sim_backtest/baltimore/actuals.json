@@ -1,0 +1,327 @@
+{
+ "event": "baltimore",
+ "figures": [
+  {
+   "name": "collapse_datetime",
+   "value": "2024-03-26 about 01:29 EDT",
+   "unit": "datetime (local, EDT)",
+   "source_name": "National Transportation Safety Board (NTSB), DCA24MM031 factual report",
+   "source_url": "https://data.ntsb.gov/Docket/Document/docBLOB?ID=18527583&FileExtension=pdf&FileName=Hazmat%20Cargo%20Factual%20-%20Dali%20-%20FSKey%20Bridge%20DCA24MM031%20%20(Final%202-4-25)-Rel.pdf",
+   "retrieved_on": "2026-10-21",
+   "notes": "NTSB: 'On March 26, 2024, about 0129 eastern daylight time, the 947-foot-long Singapore-flagged cargo vessel (containership) Dali was transiting out of Baltimore Harbor ... when it experienced a loss of electrical power and propulsion and struck the southern pier supporting the central truss spans of the Francis Scott Key Bridge.' A portion of the bridge then collapsed into the river and onto the vessel. Six construction workers were killed."
+  },
+  {
+   "name": "port_closure_start",
+   "value": "2024-03-26",
+   "unit": "date",
+   "source_name": "Maryland Port Administration statement, reported by CNS Maryland",
+   "source_url": "https://cnsmaryland.org/2024/03/26/vessel-traffic-through-the-port-of-baltimore-has-been-suspended-indefinitely/",
+   "retrieved_on": "2026-10-21",
+   "notes": "MPA stated on 26 Mar 2024 that vessel traffic into and out of the Port of Baltimore was suspended indefinitely after the collapse; the port itself was not closed \u2014 trucks continued to be processed at the marine terminals. US EPA's archived disruption page states the same: port 'has suspended inbound and outbound vessel traffic until further notice' (https://www.epa.gov/waterutilityresponse/suspension-vessel-traffic-port-baltimore-current-status-and-potential-impact). Exact clock time of the suspension order was not sourced (see NOT_SOURCED entry)."
+  },
+  {
+   "name": "baltimore_portcalls_on_collapse_day",
+   "value": 0,
+   "unit": "portcalls (PortWatch 'portcalls', all vessel classes, 2024-03-26)",
+   "source_name": "IMF PortWatch Daily_Ports_Data (port103 'Baltimore')",
+   "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Ports_Data/FeatureServer/0/query",
+   "retrieved_on": "2026-10-21",
+   "notes": "PortWatch records 0 total portcalls for Baltimore on 2024-03-26 and 1 on 2024-03-27 (see portwatch_baltimore_2024.json, rows verbatim)."
+  },
+  {
+   "name": "phase_wreckage_removal_starts",
+   "value": "2024-03-30",
+   "unit": "date",
+   "source_name": "U.S. Army Corps of Engineers, Baltimore District \u2014 full restoration release (milestone list)",
+   "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+   "retrieved_on": "2026-10-21",
+   "notes": "Milestone as listed by USACE: 'March 30: Removal of bridge wreckage commences'."
+  },
+  {
+   "name": "phase_first_temporary_alternate_channel_sollers_point",
+   "value": "2024-04-01 / 2024-04-02 (see notes)",
+   "unit": "date",
+   "source_name": "Maryland Port Administration, reported by Supply Chain 24/7; milestone list in USACE full-restoration release",
+   "source_url": "https://www.supplychain247.com/article/signs_of_progress_are_being_made_towards_moving_cargo_in_and_out_of_baltimore/dsc_logistics",
+   "retrieved_on": "2026-10-21",
+   "notes": "MPA reported that on Monday April 1 the tug Crystal Coast pushing a fuel barge was the first vessel to transit the Sollers Point Temporary Alternate Channel (northeast side of the main channel, near the bridge), established by the Captain of the Port for commercially-essential vessels, daylight/COTP-discretion only, controlling depth 11 feet, 264-foot horizontal clearance, 95-foot vertical clearance. USACE's June 10 milestone list dates 'the first of three Temporary Alternate Channels opens' to April 2. The 1-day difference (establishment/first transit reported Apr 1 vs USACE milestone Apr 2) is recorded, not resolved."
+  },
+  {
+   "name": "phase_second_temporary_alternate_channel_hawkins_point",
+   "value": "2024-04-02",
+   "unit": "date",
+   "source_name": "Maryland Port Administration, reported by Supply Chain 24/7; GAC Hot Port News (USCG MSIB summary)",
+   "source_url": "https://www.gac.com/hot-port-news/two-temporary-alternate-channels-established?utm_campaign=137492_HOT%20PORT%20NEWS%20from%20GAC&utm_medium=email&utm_source=GAC%20Group%20%28Holdings%29%20Limited&dm_i=7O4V,2Y38,ZGXI1,BTCI,1",
+   "retrieved_on": "2026-10-21",
+   "notes": "Second channel on the southwest side near Hawkins Point, for commercially-essential vessels: controlling depth 14 feet, 280-foot horizontal clearance, 124-foot vertical clearance (GAC/MSIB figures; one MPA-relayed report gave 214 ft vertical \u2014 the 124 ft figure from the MSIB summary is used)."
+  },
+  {
+   "name": "phase_third_temporary_alternate_channel_fort_carroll",
+   "value": "2024-04-19",
+   "unit": "date",
+   "source_name": "Key Bridge Response 2024 Unified Command, reported by Marine Log",
+   "source_url": "https://www.marinelog.com/inland-coastal/ports-terminals/video-third-key-bridge-alternate-channel-is-now-open/",
+   "retrieved_on": "2026-10-21",
+   "notes": "Fort Carroll Temporary Alternate Channel (northeast side), established by the Captain of the Port on April 19 (announced April 19-20): controlling depth 20 feet, 300-foot horizontal clearance, 135-foot vertical clearance, commercially-essential vessels at COTP discretion. Unified Command estimated it would facilitate approximately 15% of pre-collapse commercial activity."
+  },
+  {
+   "name": "phase_limited_access_channel_opens",
+   "value": "2024-04-25",
+   "unit": "date",
+   "source_name": "U.S. Army Corps of Engineers, Baltimore District \u2014 full restoration release (milestone list)",
+   "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+   "retrieved_on": "2026-10-21",
+   "notes": "USACE milestone: 'April 25: The opening of Limited Access Channel to a width of 300 feet and depth of 35 feet'. Note the April 4 USACE plan had specified 280 feet wide x 35 feet deep (https://www.nab.usace.army.mil/Media/News-Releases/Article/3731790/us-army-corps-of-engineers-develops-tentative-timeline-to-reopen-fort-mchenry-c); the channel as opened was 300 feet wide."
+  },
+  {
+   "name": "limited_access_channel_first_window_and_limits",
+   "value": "2024-04-25 to 2024-04-29 06:00 ET (first window)",
+   "unit": "date range / channel limits",
+   "source_name": "Argus Media, citing US Coast Guard Marine Safety Information Bulletin",
+   "source_url": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2561767-baltimore-to-temporarily-open-4th-shipping-channel",
+   "retrieved_on": "2026-10-21",
+   "notes": "Fort McHenry Limited Access Channel: 35-ft deep, 300-ft horizontal clearance, 214-ft vertical clearance; scheduled open to commercially essential vessels from 25 April until 06:00 ET 29 April (or 30 April if weather affected transits), then closed again until ~10 May. Argus/USCG: the channel should allow passage of about 75% of the types of vessels that typically move through the waterway; vessels over 60,000 long tons displacement likely unable, 50,000-60,000 closely evaluated. Vehicle carrier Carmen transited on April 25."
+  },
+  {
+   "name": "phase_limited_access_channel_closed_for_dali_removal",
+   "value": "2024-04-29",
+   "unit": "date",
+   "source_name": "GAC Hot Port News, source: Port of Baltimore release dated 29 April 2024",
+   "source_url": "https://www.gac.com/hot-port-news/channel-update?utm_campaign=155725_HOT+PORT+NEWS+from+GAC&utm_medium=email&utm_source=GAC+Group+%28Holdings%29+Limited&dm_i=7O4V%2C3C5P%2CZGXI1%2CDOBW%2C1",
+   "retrieved_on": "2026-10-21",
+   "notes": "'The 35-foot-deep Fort McHenry Limited Access Channel was closed on April 29 by the U.S. Coast Guard at 6 am after being open since April 25. This channel is not expected to be reopened again until approximately May 10. The focus is on recovery, salvage, and removal of the Dali.' The three shallower temporary channels (20, 14, 11 ft) remained open."
+  },
+  {
+   "name": "phase_limited_access_channel_reopening_announced_45ft",
+   "value": "on or about 2024-05-10 (announced 2024-04-30)",
+   "unit": "date (announced plan)",
+   "source_name": "Maryland Port Administration (MDOT MPA) statement, 30 April 2024 (GovDelivery bulletin)",
+   "source_url": "https://content.govdelivery.com/accounts/MDMPA/bulletins/399a7d8",
+   "retrieved_on": "2026-10-21",
+   "notes": "MPA statement of April 30: 'the Fort McHenry Limited Access Channel will be reopened to a depth of 45-feet on or about May 10 following the expected removal of the Dali vessel. The channel will be open to commercially essential vessels from 8 pm until 7 am and have a 300-foot horizontal clearance and a vertical clearance of 214 feet... Deep draft vessels using this channel will require a Maryland Pilot and a two tug escort.' Recorded as an announced plan dated Apr 30; the Dali was in fact not removed until May 20, so treat the May 10 date as the announced target, not a verified transit date."
+  },
+  {
+   "name": "phase_controlled_demolition_section_4",
+   "value": "2024-05-13",
+   "unit": "date",
+   "source_name": "U.S. Army Corps of Engineers, Baltimore District \u2014 full restoration release (milestone list)",
+   "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+   "retrieved_on": "2026-10-21",
+   "notes": "Milestone: 'May 13: Controlled demolition of Section 4, which had pinned the M/V Dali under a 10-million-pound segment of Key Bridge wreckage'."
+  },
+  {
+   "name": "phase_dali_refloated_and_moved",
+   "value": "2024-05-20",
+   "unit": "date",
+   "source_name": "U.S. Army Corps of Engineers, Baltimore District \u2014 full restoration release",
+   "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+   "retrieved_on": "2026-10-21",
+   "notes": "USACE: 'The Unified Command safely moved the M/V Dali on May 20'; milestone list: 'May 20: M/V Dali refloated and moved, Federal Channel cleared to a width of 400 feet and depth of 50 feet'. The release body text dates the widening of the Limited Access Channel to 400 feet to May 21, 'permitting all pre-collapse, deep-draft commercial vessels to transit through the Port of Baltimore'. Contemporaneous reporting (USACE via Supply Chain Brain) puts the refloat at about 06:40 EDT on May 20, towed 2.5 miles to a local marine terminal."
+  },
+  {
+   "name": "phase_last_major_truss_removed",
+   "value": "2024-06-04",
+   "unit": "date",
+   "source_name": "U.S. Army Corps of Engineers, Baltimore District \u2014 full restoration release (milestone list)",
+   "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+   "retrieved_on": "2026-10-21",
+   "notes": "Milestone: 'June 4: The last major piece of steel truss was removed from Federal Channel'."
+  },
+  {
+   "name": "phase_full_fort_mchenry_channel_reopened",
+   "value": "2024-06-10",
+   "unit": "date",
+   "source_name": "U.S. Army Corps of Engineers, Baltimore District \u2014 'U.S. Army Corps of Engineers announces full restoration of Baltimore's Fort McHenry Federal Channel' (published June 10, 2024)",
+   "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+   "retrieved_on": "2026-10-21",
+   "notes": "USACE and U.S. Navy Supervisor of Salvage and Diving 'restored the Fort McHenry Federal Channel to its original operational dimensions of 700 feet wide and 50 feet deep for commercial maritime transit through the Port of Baltimore'; on June 10 the Unified Command surveyed the channel and certified the riverbed as safe for transit. Full restoration enabled two-way traffic and cancellation of the additional safety requirements imposed for the reduced channel width. About 50,000 tons of bridge wreckage were removed in total."
+  },
+  {
+   "name": "wreckage_removed_total",
+   "value": 50000,
+   "unit": "tons (approximate, 'about 50,000 tons')",
+   "source_name": "U.S. Army Corps of Engineers, Baltimore District \u2014 full restoration release",
+   "source_url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/",
+   "retrieved_on": "2026-10-21",
+   "notes": "'Fully restoring the Federal Channel to its original width and depth involved the removal of about 50,000 tons of bridge wreckage from the Patapsco River.'"
+  },
+  {
+   "name": "diversion_project44_port_of_virginia_share",
+   "value": 43,
+   "unit": "% of containers initially destined for the Port of Baltimore rerouted",
+   "source_name": "Project44 supply-chain data, reported by AJOT (American Journal of Transportation), 22 April 2024",
+   "source_url": "https://www.ajot.com/premium/ajot-key-bridge-collapse-closes-port-of-baltimore-and-raises-questions-about-whats-next",
+   "retrieved_on": "2026-10-21",
+   "notes": "AJOT, citing Project44: '43% of containers initially destined for the Port of Baltimore were rerouted to the Port of Virginia, 26% went to New York/Jersey, 13% to Wilmington, Delaware, and Newark-Elizabeth, New Jersey, received 10%. Another 8% went to other ports.' Container shares only (not vessel calls or tonnage); the article's separate listing of 'New York/Jersey' (26%) and 'Newark-Elizabeth' (10%) is reproduced verbatim \u2014 Newark-Elizabeth is ordinarily part of the Port of New York and New Jersey complex, so the two lines may overlap in port-complex terms."
+  },
+  {
+   "name": "diversion_project44_new_york_jersey_share",
+   "value": 26,
+   "unit": "% of containers initially destined for Baltimore rerouted",
+   "source_name": "Project44 supply-chain data, reported by AJOT, 22 April 2024",
+   "source_url": "https://www.ajot.com/premium/ajot-key-bridge-collapse-closes-port-of-baltimore-and-raises-questions-about-whats-next",
+   "retrieved_on": "2026-10-21",
+   "notes": "See diversion_project44_port_of_virginia_share notes for the full Project44 split and the Newark-Elizabeth caveat."
+  },
+  {
+   "name": "diversion_project44_wilmington_delaware_share",
+   "value": 13,
+   "unit": "% of containers initially destined for Baltimore rerouted",
+   "source_name": "Project44 supply-chain data, reported by AJOT, 22 April 2024",
+   "source_url": "https://www.ajot.com/premium/ajot-key-bridge-collapse-closes-port-of-baltimore-and-raises-questions-about-whats-next",
+   "retrieved_on": "2026-10-21",
+   "notes": "Wilmington, DELAWARE (not Wilmington, North Carolina \u2014 see the separate NC Ports entry). Container share only; no TEU or call count for Wilmington DE was sourced."
+  },
+  {
+   "name": "diversion_project44_newark_elizabeth_share",
+   "value": 10,
+   "unit": "% of containers initially destined for Baltimore rerouted",
+   "source_name": "Project44 supply-chain data, reported by AJOT, 22 April 2024",
+   "source_url": "https://www.ajot.com/premium/ajot-key-bridge-collapse-closes-port-of-baltimore-and-raises-questions-about-whats-next",
+   "retrieved_on": "2026-10-21",
+   "notes": "As reported by AJOT/Project44; see overlap caveat in the Virginia-share entry. Remaining 8% went to 'other ports'."
+  },
+  {
+   "name": "diversion_primary_ports_qualitative",
+   "value": "Port of Virginia and Port of New York and New Jersey (primary)",
+   "unit": "ports",
+   "source_name": "Virginia Business, 26 March 2024",
+   "source_url": "https://virginiabusiness.com/baltimore-bridge-collapse-will-drive-ships-to-port-of-va/",
+   "retrieved_on": "2026-10-21",
+   "notes": "'ships bound for the Port of Baltimore will be diverted to other ports, primarily the Port of Virginia and the Port of New York and New Jersey.' Virginia Port Authority spokesman Joe Harris, same day: the operating team was 'already working with ocean carriers whose vessels were due to call Baltimore and offering the capability of our port to discharge cargoes as requested'."
+  },
+  {
+   "name": "diversion_virginia_first_diverted_cargo_same_day",
+   "value": "2024-03-26",
+   "unit": "date",
+   "source_name": "Virginia Business \u2014 'Port of Va. is already handling cargo diverted from Baltimore'",
+   "source_url": "http://virginiabusiness.com/port-of-va-is-already-handling-cargo-diverted-from-baltimore/",
+   "retrieved_on": "2026-10-21",
+   "notes": "On Tuesday afternoon (Mar 26), workers at the Port of Virginia's Virginia International Gateway facility in Portsmouth unloaded Baltimore-bound cargo from a vessel that had made a normally scheduled Virginia call and was headed to Baltimore next; the Baltimore cargo was offloaded in Virginia after the accident. The Dali itself had left Virginia International Gateway on March 22 for Baltimore (Virginia Port Authority statement via Virginia Business)."
+  },
+  {
+   "name": "diversion_virginia_extended_hours",
+   "value": "2024-04-10",
+   "unit": "date",
+   "source_name": "Journal of Commerce (JOC) \u2014 'Norfolk expands hours to handle cargo volumes shifted from Baltimore'",
+   "source_url": "https://www.prod.int.joc.com/article/norfolk-expands-hours-handle-cargo-volumes-shifted-baltimore_20240410.html",
+   "retrieved_on": "2026-10-21",
+   "notes": "The Port of Virginia expanded operating hours because of additional volumes from rerouted vessels originally due to call Baltimore (headline/summary; full article paywalled). Bloomberg reporting (via Claims Journal, April 1) adds the Port of Virginia opened a gate an hour earlier than usual (05:00) to accommodate truckers, and the Port of New York and New Jersey expected additional cargo including autos: https://www.claimsjournal.com/news/national/2024/04/01/322768.htm"
+  },
+  {
+   "name": "diversion_virginia_april2024_inbound_loaded_teu",
+   "value": 146779,
+   "unit": "inbound loaded TEU, April 2024 (Virginia)",
+   "source_name": "Pacific Merchant Shipping Association (PMSA) \u2014 U.S. Port Volumes in April 2024",
+   "source_url": "https://www.pmsaship.com/maritime-insights-blog/april2024teus",
+   "retrieved_on": "2026-10-21",
+   "notes": "PMSA April 2024 table, inbound loaded TEU: Virginia 146,779 vs 118,964 in April 2023 (+23.4%); Maryland 102 vs 49,338 in April 2023 (-99.8%); Philadelphia 37,198 vs 26,203 (+42.0%); NYNJ 349,792 vs 320,948 (+9.0%). These are port-wide inbound loaded TEUs, NOT a Baltimore-diversion-only count \u2014 the year-on-year increases are consistent with diversion plus general 2024 volume growth and must not be read as diverted TEU totals."
+  },
+  {
+   "name": "diversion_maryland_april2024_inbound_loaded_teu",
+   "value": 102,
+   "unit": "inbound loaded TEU, April 2024 (Maryland/Baltimore)",
+   "source_name": "Pacific Merchant Shipping Association (PMSA) \u2014 U.S. Port Volumes in April 2024",
+   "source_url": "https://www.pmsaship.com/maritime-insights-blog/april2024teus",
+   "retrieved_on": "2026-10-21",
+   "notes": "Maryland inbound loaded TEU collapsed from 49,338 (April 2023) to 102 (April 2024), -99.8%, per PMSA \u2014 the containerised inbound trade through Baltimore effectively stopped in April 2024."
+  },
+  {
+   "name": "diversion_philadelphia_qualitative",
+   "value": "Philadelphia (PhilaPort) \u2014 documented qualitatively, no sourced quantity",
+   "unit": "port",
+   "source_name": "S&P Global Market Intelligence, reported by Hellenic Shipping News; Everstream Analytics via Logistics Management",
+   "source_url": "https://www.hellenicshippingnews.com/find-another-way-baltimore-port-restrictions-impact-on-autos-commodity-supply-chains/",
+   "retrieved_on": "2026-10-21",
+   "notes": "S&P Global Market Intelligence (Chris Rogers): container lines including Maersk and MSC \u2014 53% of Baltimore imports between them \u2014 were rerouting services, both being 'major users of Philadelphia, Norfolk and Newark'. Everstream Analytics (via Logistics Management) likewise named Philadelphia and Norfolk as diversion ports expected to see strain. PMSA's April table shows Philadelphia inbound loaded TEU +42.0% year-on-year (37,198 vs 26,203), but no source attributes a specific share or count of Baltimore cargo to Philadelphia \u2014 see NOT_SOURCED entry."
+  },
+  {
+   "name": "diversion_wilmington_nc_qualitative",
+   "value": "Port of Wilmington, North Carolina \u2014 at least one existing customer rerouted Baltimore cargo, first vessel expected mid-April 2024",
+   "unit": "port",
+   "source_name": "WilmingtonBiz (N.C. State Ports Authority statements), 8 April 2024",
+   "source_url": "https://www.wilmingtonbiz.com/maritime/2024/04/08/port_of_wilmington_to_receive_diverted_cargo_from_baltimore/25485",
+   "retrieved_on": "2026-10-21",
+   "notes": "N.C. Ports Executive Director Brian Clark: an existing customer of both Wilmington (NC) and Baltimore planned to use Wilmington NC as a contingent port until Baltimore was available again, with the first vessel carrying the diverted cargo expected in mid-April. Customer not named; no quantity given. This is a DIFFERENT port from the Wilmington, Delaware in the Project44 shares."
+  },
+  {
+   "name": "baltimore_coal_share_and_eia_forecast_cuts",
+   "value": "Baltimore = 28% of U.S. coal exports in 2023; EIA cut its U.S. coal-export forecast by 33% for April 2024 and 20% for May 2024 because of the closure",
+   "unit": "% / forecast revision",
+   "source_name": "U.S. Energy Information Administration (EIA), reported by AJOT, 22 April 2024",
+   "source_url": "https://www.ajot.com/premium/ajot-key-bridge-collapse-closes-port-of-baltimore-and-raises-questions-about-whats-next",
+   "retrieved_on": "2026-10-21",
+   "notes": "AJOT citing EIA: Baltimore accounted for 28% of U.S. coal exports in 2023 and is the nation's second-largest coal-export hub; EIA reduced forecast U.S. coal exports for April by 33% and May by 20% from previous forecasts, and reported coal shipments diverted to other East Coast ports including Norfolk, Virginia, and to Great Lakes ports."
+  },
+  {
+   "name": "diversion_philadelphia_quantified_share",
+   "status": "NOT_SOURCED",
+   "value": null,
+   "unit": "% or TEU/calls attributable to Baltimore diversion",
+   "source_name": null,
+   "source_url": null,
+   "retrieved_on": "2026-10-21",
+   "notes": "No source found in this research that quantifies Philadelphia/PhilaPort's share (%, TEU, or vessel calls) of Baltimore's diverted traffic. Philadelphia is documented only qualitatively (carrier rerouting by Maersk/MSC as major Philadelphia users; Everstream naming Philadelphia a diversion port) and via PMSA's port-wide April inbound loaded TEU growth (+42.0% YoY), which is not a diversion attribution."
+  },
+  {
+   "name": "port_of_virginia_april2024_total_teu_from_port_release",
+   "status": "NOT_SOURCED",
+   "value": null,
+   "unit": "total TEU, April 2024",
+   "source_name": "Port of Virginia (portofvirginia.com)",
+   "source_url": "https://www.portofvirginia.com/news/ports-cargo-volume-up-13-in-april-more-ocean-carriers-shifting-services-to-virginia/",
+   "retrieved_on": "2026-10-21",
+   "notes": "REJECTED SOURCE: this Port of Virginia release ('more than 323,000 TEUs in April, up ~13%') surfaced in search results in a 2024 context, but the release's own April Cargo Snapshot is explicitly labelled 2022 vs 2021 (323,244 TEU, up 12.9% vs April 2021). It is a 2022 release and was NOT used for any 2024 figure. The 2024 Virginia volume evidence used instead is PMSA's April 2024 inbound loaded TEU table."
+  },
+  {
+   "name": "closure_suspension_exact_clock_time",
+   "status": "NOT_SOURCED",
+   "value": null,
+   "unit": "time of day, 2024-03-26",
+   "source_name": null,
+   "source_url": null,
+   "retrieved_on": "2026-10-21",
+   "notes": "The DATE of the vessel-traffic suspension (26 Mar 2024) is sourced from the MPA statement; the exact clock time at which the Captain of the Port / MPA formally suspended traffic was not found in the sources consulted and is not guessed."
+  }
+ ],
+ "portwatch": {
+  "baltimore_file": "portwatch_baltimore_2024.json",
+  "virginia_file": "portwatch_virginia_2024.json",
+  "service": "IMF PortWatch Daily_Ports_Data (port103 'Baltimore'; port826 'Norfolk' = Port of Virginia)",
+  "retrieved_on": "2026-10-21",
+  "derived": {
+   "baltimore_baseline_mean_daily_portcalls_2024-02-15_to_2024-03-25": {
+    "value": 5.375,
+    "days": 40,
+    "derivation": "Mean of daily 'portcalls' (all classes) over the 40 stored rows 2024-02-15..2024-03-25."
+   },
+   "baltimore_closure_mean_daily_portcalls_2024-03-27_to_2024-06-09": {
+    "value": 2.147,
+    "days": 75,
+    "derivation": "Mean of daily 'portcalls' over the 75 stored rows 2024-03-27..2024-06-09. Non-zero because (a) Tradepoint Atlantic / Sparrows Point terminals sit outside the Key Bridge and stayed reachable, and (b) the phased temporary channels carried real cargo traffic from late April (see the channel-phase timeline in preregistration_v2.md); daily values in May reach 3-7. portcalls_cargo tracks portcalls closely on these rows (the trickle is cargo, not government traffic)."
+   },
+   "baltimore_portcalls_drop_pct": {
+    "value": -60.06,
+    "derivation": "100 x (2.147 - 5.375) / 5.375."
+   },
+   "baltimore_recovery_date": {
+    "value": "2024-06-23",
+    "derivation": "First date after 2024-06-10 whose 7-day trailing mean of daily portcalls >= 90% of the baseline mean (4.84/day). Recovery lag after full reopening = 13 days."
+   },
+   "virginia_baseline_mean_daily_portcalls": {
+    "value": 3.775,
+    "days": 40,
+    "derivation": "Mean of daily 'portcalls', port826 'Norfolk', 2024-02-15..2024-03-25."
+   },
+   "virginia_closure_mean_daily_portcalls": {
+    "value": 3.853,
+    "days": 75,
+    "derivation": "Same, 2024-03-27..2024-06-09."
+   },
+   "virginia_portcalls_change_pct": {
+    "value": 2.07,
+    "derivation": "100 x (3.853 - 3.775) / 3.775. Call COUNTS at Virginia were essentially flat; the documented diversion uplift appears in cargo volumes/TEU (see the Project44 shares and PMSA April TEU figures), not in call counts. BA-2 grades the call-count figure, like-for-like with what the sim counts."
+   }
+  }
+ }
+}

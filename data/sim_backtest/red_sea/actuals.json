@@ -1,0 +1,409 @@
+{
+ "event": "red_sea",
+ "window": "2023-12 to 2024-02 (PortWatch pull 2023-11-01 to 2024-03-15)",
+ "retrieved_on": "2026-10-21",
+ "portwatch_service": {
+  "name": "IMF PortWatch Daily_Chokepoints_Data",
+  "url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query",
+  "method": "POST form-encoded query (per server/adapters/portwatch_daily.py)",
+  "fields": "date, portid, portname, n_container, n_dry_bulk, n_general_cargo, n_roro, n_tanker, n_cargo, n_total, capacity_*",
+  "status": "SUCCESS \u2014 136 rows returned for each chokepoint, one per day, no gaps in 2023-11-01 to 2024-03-15"
+ },
+ "figures": [
+  {
+   "id": "galaxy_leader_seizure",
+   "label": "Incident involving car carrier Galaxy Leader (start of the series of incidents)",
+   "value": "2023-11-19",
+   "unit": "date",
+   "reference_period": "2023-11-19",
+   "source_name": "Wilson Center \u2014 Houthis in the Red Sea",
+   "source_url": "http://www.wilsoncenter.org/article/houthis-red-sea",
+   "retrieved_on": "2026-10-21",
+   "note": "Corroborated by Maritime Executive: boarding on November 19, 2023, crew of 25 held. https://maritime-executive.com/article/yemen-s-houthi-rebels-signal-plan-to-release-seized-car-carrier"
+  },
+  {
+   "id": "maersk_pause_red_sea",
+   "label": "Maersk pauses all container shipments through the Red Sea",
+   "value": "2023-12-15",
+   "unit": "date",
+   "reference_period": "announced 2023-12-15",
+   "source_name": "Reuters, reported 2023-12-18, via TM Duch\u00e9 reproduction",
+   "source_url": "https://www.tmduche.com/markets/urgent-update-on-the-red-sea-shipping-16th-dec/",
+   "retrieved_on": "2026-10-21",
+   "note": "Following a near-miss incident involving Maersk Gibraltar a day earlier. Underlying Reuters article: https://www.reuters.com/world/middle-east/shipping-firms-avoid-red-sea-houthi-attacks-increase-2023-12-18/"
+  },
+  {
+   "id": "msc_no_suez_transit",
+   "label": "MSC announces its ships will not transit the Suez Canal (eastbound and westbound), some services rerouted via Cape of Good Hope",
+   "value": "2023-12-16",
+   "unit": "date",
+   "reference_period": "announced 2023-12-16",
+   "source_name": "Reuters, reported 2023-12-18, via TM Duch\u00e9 reproduction",
+   "source_url": "https://www.tmduche.com/markets/urgent-update-on-the-red-sea-shipping-16th-dec/",
+   "retrieved_on": "2026-10-21",
+   "note": "A day after MSC Palatium III was struck on 2023-12-15."
+  },
+  {
+   "id": "cma_cgm_pause_dec2023",
+   "label": "CMA CGM pauses all container shipments through the Red Sea / instructs containerships scheduled to pass through the Red Sea to reach safe areas and pause",
+   "value": "2023-12-16",
+   "unit": "date",
+   "reference_period": "announced 2023-12-16",
+   "source_name": "Reuters, reported 2023-12-18, via TM Duch\u00e9 reproduction; carrier statement via Shipping Telegraph",
+   "source_url": "https://www.tmduche.com/markets/urgent-update-on-the-red-sea-shipping-16th-dec/",
+   "retrieved_on": "2026-10-21",
+   "note": "CMA CGM nevertheless continued some escorted transits after December; see cma_cgm_full_cape_routing_2024-02-01. Shipping Telegraph reproduction: https://shippingtelegraph.com/container-news/msc-and-cma-cgm-pause-all-red-sea-and-suez-voyages-confirmed/"
+  },
+  {
+   "id": "hapag_lloyd_initial_pause",
+   "label": "Hapag-Lloyd pauses all container ship traffic through the Red Sea until Monday 18 December (initial pause)",
+   "value": "2023-12-15",
+   "unit": "date",
+   "reference_period": "announced mid-Dec 2023, pause to 2023-12-18",
+   "source_name": "Ships & Ports (reporting carrier announcements)",
+   "source_url": "https://shipsandports.com.ng/major-shipping-lines-dump-suez-canal-over-red-sea-passage/",
+   "retrieved_on": "2026-10-21",
+   "note": "Secondary reporting only; no primary Hapag-Lloyd advisory URL was retrieved. Al Jasrah was struck by a projectile on 2023-12-15 (Reuters)."
+  },
+  {
+   "id": "hapag_lloyd_reroute_decision",
+   "label": "Hapag-Lloyd says it will re-route several ships via the Cape of Good Hope until safety of passage through Suez/Red Sea can be guaranteed",
+   "value": "2023-12-18",
+   "unit": "date",
+   "reference_period": "announced 2023-12-18",
+   "source_name": "Reuters, reported 2023-12-18, via TM Duch\u00e9 reproduction",
+   "source_url": "https://www.tmduche.com/markets/urgent-update-on-the-red-sea-shipping-16th-dec/",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "operation_prosperity_guardian_announced",
+   "label": "United States announces Operation Prosperity Guardian",
+   "value": "2023-12-18",
+   "unit": "date",
+   "reference_period": "2023-12-18",
+   "source_name": "AI Timeline compilation / Wilson Center context (secondary)",
+   "source_url": "https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+   "retrieved_on": "2026-10-21",
+   "note": "Context only; not a transit figure."
+  },
+  {
+   "id": "cma_cgm_full_cape_routing_2024_02_01",
+   "label": "CMA CGM: as from 1 February 2024, until further notice, all services initially routed via the Red Sea passage will follow Cape of Good Hope routing",
+   "value": "2024-02-01",
+   "unit": "effective date",
+   "reference_period": "effective 2024-02-01; customer advisory dated 2024-02-07",
+   "source_name": "CMA CGM (carrier customer advisory)",
+   "source_url": "https://www.cma-cgm.com/local/india/news/4053/cma-cgm-operations-in-the-red-sea-update",
+   "retrieved_on": "2026-10-21",
+   "note": "Reuters reported the suspension decision on 2024-02-02: https://gcaptain.com/cma-cgm-suspends-red-sea-transits-sources-say/?mod=djemlogistics_h"
+  },
+  {
+   "id": "unctad_suez_ships_change_jan2024_briefing",
+   "label": "Ships transiting the Suez Canal \u2014 change vs start of December 2023 (UNCTAD briefing, late Jan 2024)",
+   "value": -39,
+   "unit": "percent",
+   "reference_period": "two months since the incidents began; briefing late Jan 2024, reported 2024-01-26",
+   "source_name": "UNCTAD, via Reuters reporting in MarineLink",
+   "source_url": "https://www.marinelink.com/amp/news/freight-suez-canal-down-amid-houthi-511106",
+   "retrieved_on": "2026-10-21",
+   "note": "Exact published wording: '39% fewer ships than at the start of December transited the canal'."
+  },
+  {
+   "id": "unctad_suez_freight_tonnage_change_jan2024_briefing",
+   "label": "Freight tonnage through the Suez Canal \u2014 change (UNCTAD briefing, late Jan 2024)",
+   "value": -45,
+   "unit": "percent",
+   "reference_period": "two months since the incidents began; reported 2024-01-26",
+   "source_name": "UNCTAD, via Reuters reporting in MarineLink",
+   "source_url": "https://www.marinelink.com/amp/news/freight-suez-canal-down-amid-houthi-511106",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "unctad_suez_container_shipments_week_to_2024_01_19",
+   "label": "Container shipments through the Suez Canal \u2014 change, week to 19 Jan 2024 vs early December 2023",
+   "value": -82,
+   "unit": "percent",
+   "reference_period": "week to 2024-01-19 vs early December 2023",
+   "source_name": "UNCTAD, via Reuters reporting in MarineLink",
+   "source_url": "https://www.marinelink.com/amp/news/freight-suez-canal-down-amid-houthi-511106",
+   "retrieved_on": "2026-10-21",
+   "note": "UNCTAD added LNG decline was even greater, dry bulk drop smaller, crude tanker traffic slightly higher."
+  },
+  {
+   "id": "unctad_suez_monthly_transits_jan2024_yoy",
+   "label": "Monthly transits through the Suez Canal \u2014 year-on-year change, January 2024",
+   "value": -37,
+   "unit": "percent_year_on_year",
+   "reference_period": "January 2024 vs January 2023",
+   "source_name": "UNCTAD, via Economist Intelligence Unit (EIU)",
+   "source_url": "https://www.eiu.com/n/red-sea-crisis-affects-african-ports",
+   "retrieved_on": "2026-10-21",
+   "note": "EIU: 'monthly transits through the Suez Canal were down by 37% year on year in January 2024' (attributed to UNCTAD)."
+  },
+  {
+   "id": "unctad_suez_transits_vs_peak_feb2024",
+   "label": "Transits passing the Suez Canal \u2014 change compared to its peak (UNCTAD 'Navigating Troubled Waters' rapid assessment, Feb 2024)",
+   "value": -42,
+   "unit": "percent_vs_peak",
+   "reference_period": "as published Feb 2024; peak = 2023 peak as stated in the source",
+   "source_name": "UNCTAD \u2014 Navigating Troubled Waters (Feb 2024), press summary via Assafina Online",
+   "source_url": "https://www.assafinaonline.com/en/article/UNCTAD-unprecedented-challenges-for-global-trade-affecting-millions-of-people-in-every-region",
+   "retrieved_on": "2026-10-21",
+   "note": "Corroborated in UNCTAD Transport and Trade Facilitation Newsletter N\u00b0101 (Q1 2024): 'fall of 42% compared with the peak in 2023'."
+  },
+  {
+   "id": "unctad_suez_weekly_container_transits_feb2024",
+   "label": "Weekly container ship transits through the Suez Canal \u2014 change (UNCTAD rapid assessment, Feb 2024)",
+   "value": -67,
+   "unit": "percent",
+   "reference_period": "as published Feb 2024",
+   "source_name": "UNCTAD \u2014 Navigating Troubled Waters (Feb 2024), press summary via Assafina Online",
+   "source_url": "https://www.assafinaonline.com/en/article/UNCTAD-unprecedented-challenges-for-global-trade-affecting-millions-of-people-in-every-region",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "unctad_gulf_of_aden_tonnage_change_dec_to_feb",
+   "label": "Gross tonnage of ships entering the Gulf of Aden \u2014 change, 1st half Dec 2023 to 1st half Feb 2024",
+   "value": "more than -70",
+   "unit": "percent",
+   "reference_period": "2023-12-01/15 vs 2024-02-01/15 (first halves)",
+   "source_name": "UNCTAD Transport and Trade Facilitation Newsletter N\u00b0101 (Q1 2024), via Africa Ports",
+   "source_url": "https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+   "retrieved_on": "2026-10-21",
+   "note": "Published wording: 'fell by more than 70%'. This is the sourced basis for the chain replay's capacity_loss 0.7 in red_sea_2024.json."
+  },
+  {
+   "id": "unctad_suez_transits_fall_42pct_newsletter",
+   "label": "Suez Canal vessel transits \u2014 fall vs 2023 peak (UNCTAD newsletter formulation)",
+   "value": -42,
+   "unit": "percent_vs_2023_peak",
+   "reference_period": "as published Q1 2024 newsletter",
+   "source_name": "UNCTAD Transport and Trade Facilitation Newsletter N\u00b0101 (Q1 2024), via Africa Ports",
+   "source_url": "https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+   "retrieved_on": "2026-10-21",
+   "note": "Same -42% figure as unctad_suez_transits_vs_peak_feb2024, in the newsletter's own wording."
+  },
+  {
+   "id": "unctad_cape_arrivals_gross_tonnage_mar2024",
+   "label": "Gross tonnage of vessels arriving at the Cape of Good Hope \u2014 change, first week of Mar 2024 (7-day moving average) vs first half of Dec 2023",
+   "value": 85,
+   "unit": "percent",
+   "reference_period": "first week of March 2024 vs 2023-12-01/15",
+   "source_name": "UNCTAD (based on Clarksons Research), via Africa Ports",
+   "source_url": "https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "unctad_cape_containership_arrivals_mar2024",
+   "label": "Containership arrivals at the Cape of Good Hope, by gross tonnage \u2014 change, first week of Mar 2024 vs first half of Dec 2023",
+   "value": 328,
+   "unit": "percent",
+   "reference_period": "first week of March 2024 vs 2023-12-01/15",
+   "source_name": "UNCTAD (based on Clarksons Research), via Africa Ports",
+   "source_url": "https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "unctad_shanghai_spot_rates_dec_to_feb",
+   "label": "Average container spot rates from Shanghai \u2014 change, early Dec 2023 to early Feb 2024",
+   "value": 122,
+   "unit": "percent",
+   "reference_period": "early December 2023 to early February 2024",
+   "source_name": "UNCTAD \u2014 Navigating Troubled Waters (Feb 2024), via Engineering News summary",
+   "source_url": "https://www.engineeringnews.co.za/article/global-unrest-fuelling-shipping-costs-consumers-to-feel-it-within-a-year-unctad-2024-02-23",
+   "retrieved_on": "2026-10-21",
+   "note": "Same release: Shanghai\u2013Europe +256%, Shanghai\u2013US West Coast +162% (above-average formulation in source). Africa Ports/UNCTAD newsletter separately: Shanghai\u2013Rotterdam shipping cost doubled and Shanghai\u2013Genoa +350% between 1 Dec and 1 Feb."
+  },
+  {
+   "id": "imf_suez_trade_volume_janfeb2024_yoy",
+   "label": "Suez Canal trade volume \u2014 year-on-year change, first two months of 2024 (IMF PortWatch-based)",
+   "value": -50,
+   "unit": "percent_year_on_year",
+   "reference_period": "2024-01-01 to 2024-02-29 vs same period 2023",
+   "source_name": "IMF Blog \u2014 Red Sea Attacks Disrupt Global Trade (Kamali et al., 2024-03-07)",
+   "source_url": "https://www.imf.org/en/blogs/articles/2024/03/07/red-sea-attacks-disrupt-global-trade",
+   "retrieved_on": "2026-10-21",
+   "note": "IMF wording: 'volume of trade that passed through the Suez Canal dropped by 50 percent year-over-year in the first two months of the year'. Trade VOLUME (PortWatch transit estimates), not transit count."
+  },
+  {
+   "id": "imf_cape_trade_volume_janfeb2024_yoy",
+   "label": "Trade volume transiting around the Cape of Good Hope \u2014 year-on-year change, first two months of 2024",
+   "value": 74,
+   "unit": "percent_year_on_year",
+   "reference_period": "2024-01-01 to 2024-02-29 vs same period 2023",
+   "source_name": "IMF Blog \u2014 Red Sea Attacks Disrupt Global Trade (2024-03-07)",
+   "source_url": "https://www.imf.org/en/blogs/articles/2024/03/07/red-sea-attacks-disrupt-global-trade",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "imf_suez_transit_volume_2024_01_01_to_16_yoy",
+   "label": "Suez Canal transit volume \u2014 year-on-year change, 1\u201316 Jan 2024 (IMF PortWatch)",
+   "value": -37,
+   "unit": "percent_year_on_year",
+   "reference_period": "2024-01-01 to 2024-01-16 vs same period 2023",
+   "source_name": "IMF PortWatch, via AFP reporting in Archyde",
+   "source_url": "https://www.archyde.com/red-sea-maritime-trade-disruptions-impact-and-implications-for-global-shipping/",
+   "retrieved_on": "2026-10-21",
+   "note": "Reported 2024-01-31: 'volume of transit through the Suez Canal fell by 37% from January 1 to 16, 2024 compared to the same period of the previous year'. Secondary (AFP) rendering of an IMF PortWatch statement."
+  },
+  {
+   "id": "imf_delivery_time_increase_cape",
+   "label": "Increase in delivery times from diversions around the Cape of Good Hope (IMF)",
+   "value": "10 or more",
+   "unit": "days_average",
+   "reference_period": "first two months of 2024 (as published 2024-03-07)",
+   "source_name": "IMF Blog \u2014 Red Sea Attacks Disrupt Global Trade (2024-03-07)",
+   "source_url": "https://www.imf.org/en/blogs/articles/2024/03/07/red-sea-attacks-disrupt-global-trade",
+   "retrieved_on": "2026-10-21",
+   "note": "IMF wording: diversions 'increased delivery times by 10 days or more on average'."
+  },
+  {
+   "id": "worldbank_cape_added_distance",
+   "label": "Added distance, Cape of Good Hope rerouting, typical Europe\u2013Asia trip (World Bank)",
+   "value": "3000-3500",
+   "unit": "nautical_miles",
+   "reference_period": "as published 2024-01-19",
+   "source_name": "World Bank Blog \u2014 Will a prolonged rerouting of ships from Suez trigger a new supply chain crisis?",
+   "source_url": "https://blogs.worldbank.org/trade/will-prolonged-rerouting-ships-suez-trigger-new-supply-chain-crisis",
+   "retrieved_on": "2026-10-21",
+   "note": "5,500 to 6,500 km in the source."
+  },
+  {
+   "id": "worldbank_cape_added_time",
+   "label": "Added time, Cape of Good Hope rerouting, typical Europe\u2013Asia trip (World Bank)",
+   "value": "7-10",
+   "unit": "days",
+   "reference_period": "as published 2024-01-19",
+   "source_name": "World Bank Blog \u2014 Will a prolonged rerouting of ships from Suez trigger a new supply chain crisis?",
+   "source_url": "https://blogs.worldbank.org/trade/will-prolonged-rerouting-ships-suez-trigger-new-supply-chain-crisis",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "unctad_cape_added_time_shanghai_rotterdam",
+   "label": "Additional sailing time, Shanghai to Rotterdam via Cape of Good Hope (UNCTAD newsletter)",
+   "value": 12,
+   "unit": "days",
+   "reference_period": "as published Q1 2024 newsletter (footnote: Seadistance.net)",
+   "source_name": "UNCTAD Transport and Trade Facilitation Newsletter N\u00b0101 (Q1 2024), via Africa Ports",
+   "source_url": "https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+   "retrieved_on": "2026-10-21",
+   "note": "Newsletter also: rerouting around Africa 'add about 12 days to the ship journey on a route from Asia to Europe' and 'roughly 30% increase in transit times'."
+  },
+  {
+   "id": "published_babelmandeb_transit_decline_janfeb2024",
+   "status": "NOT_SOURCED",
+   "label": "Published (non-PortWatch-derived) headline % decline for Bab el-Mandeb transits alone, Jan\u2013Feb 2024",
+   "reason": "No UNCTAD or IMF public statement retrieved isolates a Bab el-Mandeb-only % decline for Jan\u2013Feb 2024. Published statements retrieved isolate Suez (IMF/UNCTAD) and Gulf of Aden gross tonnage (UNCTAD, >-70%). The Bab el-Mandeb change therefore rests on the PortWatch daily series derived below, not on a published headline figure.",
+   "retrieved_on": "2026-10-21"
+  },
+  {
+   "id": "hapag_lloyd_primary_advisory_dec2023",
+   "status": "NOT_SOURCED",
+   "label": "Primary Hapag-Lloyd customer advisory URL for the mid-Dec 2023 pause",
+   "reason": "Only secondary reporting (Reuters via TM Duch\u00e9; Ships & Ports) was retrieved for Hapag-Lloyd's December dates. The dates are pinned to those secondary sources in the figures above; a primary carrier advisory was not retrieved.",
+   "retrieved_on": "2026-10-21"
+  }
+ ],
+ "portwatch": {
+  "suez": {
+   "graph_id": "chk_suez",
+   "portwatch_portname": "Suez Canal",
+   "portwatch_portid": "chokepoint1",
+   "file": "portwatch_suez_redsea.json",
+   "rows": 136,
+   "date_range": [
+    "2023-11-01",
+    "2024-03-15"
+   ],
+   "derived": {
+    "baseline_2023_11_01_to_2023_11_30": {
+     "mean_daily_n_total": 76.5667,
+     "days": 30,
+     "sum_n_total": 2297
+    },
+    "december_2023_2023_12_01_to_2023_12_31": {
+     "mean_daily_n_total": 71.4194,
+     "days": 31,
+     "sum_n_total": 2214
+    },
+    "jan_feb_2024_2024_01_01_to_2024_02_29": {
+     "mean_daily_n_total": 45.3,
+     "days": 60,
+     "sum_n_total": 2718
+    },
+    "pct_change_dec2023_vs_baseline_nov2023": -6.72,
+    "pct_change_jan_feb2024_vs_baseline_nov2023": -40.84,
+    "supplementary_by_class": {
+     "n_cargo": {
+      "baseline_nov2023_mean": 51.7333,
+      "dec2023_mean": 46.7742,
+      "jan_feb2024_mean": 30.65,
+      "pct_change_jan_feb2024_vs_baseline": -40.75
+     },
+     "n_container": {
+      "baseline_nov2023_mean": 19.4667,
+      "dec2023_mean": 14.4516,
+      "jan_feb2024_mean": 9.0,
+      "pct_change_jan_feb2024_vs_baseline": -53.77
+     }
+    }
+   }
+  },
+  "bab_el_mandeb": {
+   "graph_id": "chk_babelmandeb",
+   "portwatch_portname": "Bab el-Mandeb Strait",
+   "portwatch_portid": "chokepoint4",
+   "file": "portwatch_babelmandeb_redsea.json",
+   "rows": 136,
+   "date_range": [
+    "2023-11-01",
+    "2024-03-15"
+   ],
+   "derived": {
+    "baseline_2023_11_01_to_2023_11_30": {
+     "mean_daily_n_total": 77.3333,
+     "days": 30,
+     "sum_n_total": 2320
+    },
+    "december_2023_2023_12_01_to_2023_12_31": {
+     "mean_daily_n_total": 65.1935,
+     "days": 31,
+     "sum_n_total": 2021
+    },
+    "jan_feb_2024_2024_01_01_to_2024_02_29": {
+     "mean_daily_n_total": 37.25,
+     "days": 60,
+     "sum_n_total": 2235
+    },
+    "pct_change_dec2023_vs_baseline_nov2023": -15.7,
+    "pct_change_jan_feb2024_vs_baseline_nov2023": -51.83,
+    "supplementary_by_class": {
+     "n_cargo": {
+      "baseline_nov2023_mean": 51.0333,
+      "dec2023_mean": 40.0323,
+      "jan_feb2024_mean": 24.2833,
+      "pct_change_jan_feb2024_vs_baseline": -52.42
+     },
+     "n_container": {
+      "baseline_nov2023_mean": 18.7333,
+      "dec2023_mean": 10.0968,
+      "jan_feb2024_mean": 4.2667,
+      "pct_change_jan_feb2024_vs_baseline": -77.22
+     }
+    }
+   }
+  },
+  "babelmandeb": {
+   "graph_id": "chk_babelmandeb",
+   "file": "portwatch_babelmandeb_redsea.json",
+   "rows": 136,
+   "derived": {
+    "baseline_2023_11_mean_daily_n_total": 77.33,
+    "dec_2023_mean_daily_n_total": 65.19,
+    "jan_feb_2024_mean_daily_n_total": 37.25,
+    "pct_change_jan_feb2024_vs_baseline_nov2023": -51.83,
+    "derivation": "Computed from the stored raw rows. Means are over 30 / 31 / 60 daily n_total values."
+   }
+  }
+ }
+}

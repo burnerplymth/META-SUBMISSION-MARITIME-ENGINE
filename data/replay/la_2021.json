@@ -1,0 +1,118 @@
+{
+  "disruption": {
+    "capacity_loss": 0.78,
+    "capacity_loss_basis": {
+      "derivation": "MODELED assumption - not a sourced figure and never to be presented as one. No sourced capacity-loss fraction exists for LA 2021: the source record quantifies queues and waits, not capacity loss, and berth throughput did not collapse (the Port of Los Angeles was on track for a record ~10.7M TEU in 2021, Port of Los Angeles release, 20 Dec 2021), so no throughput-drop derivation is defensible. Model: at the 10 Nov 2021 MESocal snapshot the complex held 109 container ships waiting and 30 at berth; capacity_loss is set to the waiting share of container ships present, 109 / (109 + 30) = 0.78 (rounded to 2 dp) - a stock-share proxy for the share of container-ship flow the berth/landside system was not serving at the peak snapshot, NOT a measured throughput drop. The binding constraint was landside (dwell/driver channel), not berth capacity. Any scorecard printing LA results must print this modeled assumption alongside them. (An earlier version carried capacity_loss as null; the engine then silently substituted its 0.5 default for congestion-kind specs.)",
+      "kind": "modeled",
+      "source": "Marine Exchange of Southern California (MESocal) 10 Nov 2021 report, via Western Overseas: https://www.westernoverseas.com/port-congestion-update-11-12-21/ (same report already cited for the 2021-11-10 observed steps in this dataset)"
+    },
+    "expected_duration_d": 58,
+    "kind": "congestion",
+    "node_id": "sea_losangeles",
+    "severity": 4,
+    "started_at": "2021-09-19T00:00:00Z"
+  },
+  "disruption_notes": "capacity_loss 0.78 is a MODELED value (see capacity_loss_basis in the disruption spec for the full derivation): the source timeline quantifies queue counts and waits, not a capacity-loss fraction, and no sourced figure is claimed. The binding constraint was landside (dwell/driver channel), not berth capacity. expected_duration_d 58 = 2021-09-19 (first dated record in the timeline) to 2021-11-16 (offshore queuing system takes effect) - the window covered by the source timeline, not the full historical episode. Pre-pandemic baseline: the complex had never seen a backlog greater than 17 ships (MESocal).",
+  "id": "la_2021",
+  "observed_steps": [
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Record 97 vessels of all types in port (within 40 miles) as the queue builds (joint LA/LB complex figure).",
+      "evidence_date": "2021-09-19",
+      "evidence_source": "Marine Exchange of Southern California (MESocal) noon report via DredgeWire: https://dredgewire.com/vessel-congestion-outside-the-ports-of-los-angeles-and-long-beach-has-worsened-as-record-100-vessels-anchored/",
+      "node_id": "sea_losangeles",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Record 29 container ships in holding (drift) areas - anchorages full; 70+ container ships at anchor by 21 Sep, with 30+ at berth (joint LA/LB complex figures).",
+      "evidence_date": "2021-09-20",
+      "evidence_source": "MESocal via Seatrade Maritime: https://www.seatrade-maritime.com/ports-logistics/vessels-waiting-at-la-long-beach-ports-back-at-record-levels",
+      "node_id": "sea_longbeach",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "White House brokers shift to 24/7 gate operations at LA/LB to address the backlog.",
+      "evidence_date": "2021-10-13",
+      "evidence_source": "AP via Manufacturing.net: https://www.manufacturing.net/supply-chain/news/21808634/la-long-beach-ports-will-issue-fines-for-backlogged-cargo",
+      "node_id": "sea_losangeles",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "100 vessels at anchor (record), 157 vessels of all types in port, 97 of them container ships (joint LA/LB complex figures).",
+      "evidence_date": "2021-10-18",
+      "evidence_source": "MESocal noon report 18 Oct via DredgeWire: https://dredgewire.com/vessel-congestion-outside-the-ports-of-los-angeles-and-long-beach-has-worsened-as-record-100-vessels-anchored/",
+      "node_id": "sea_losangeles",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Record 108 container ships waiting to dock (joint LA/LB complex figure).",
+      "evidence_date": "2021-10-21",
+      "evidence_source": "MESocal via Hellenic Shipping News: https://www.hellenicshippingnews.com/a-record-111-container-ships-are-floating-off-californias-busiest-ports-despite-bidens-24-7-schedule-and-looming-fines/",
+      "node_id": "sea_longbeach",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "National truck-driver shortage quantified at 80,000 drivers (American Trucking Associations, Oct 2021) - the inland evacuation bottleneck behind terminal dwell; the source row names the dwell channel at gnd_inlandempire and gnd_chicago jointly.",
+      "evidence_date": "2021-10-25",
+      "evidence_source": "ATA via Western Overseas congestion update: https://www.westernoverseas.com/port-congestion-update-11-12-21/",
+      "node_id": "gnd_inlandempire",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Same ATA driver-shortage observation (80,000 drivers, Oct 2021) on the rail knock-on node named in the source row.",
+      "evidence_date": "2021-10-25",
+      "evidence_source": "ATA via Western Overseas congestion update: https://www.westernoverseas.com/port-congestion-update-11-12-21/",
+      "node_id": "gnd_chicago",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Harbor commissions vote the container dwell fee: $100/container/day, escalating $100/day, for boxes dwelling 9+ days (truck) / 6+ days (rail); data collection from 1 Nov, charging from 15 Nov (joint LA/LB measure).",
+      "evidence_date": "2021-10-29",
+      "evidence_source": "AP via Manufacturing.net: https://www.manufacturing.net/supply-chain/news/21808634/la-long-beach-ports-will-issue-fines-for-backlogged-cargo",
+      "node_id": "sea_longbeach",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "New all-time record: 111 container ships waiting off the complex (joint LA/LB figure).",
+      "evidence_date": "2021-11-09",
+      "evidence_source": "MESocal via Hellenic Shipping News: https://www.hellenicshippingnews.com/a-record-111-container-ships-are-floating-off-californias-busiest-ports-despite-bidens-24-7-schedule-and-looming-fines/",
+      "node_id": "sea_losangeles",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "modeled_midpoint_of_observed_range",
+      "effect": "164 ships in the complex; 109 container ships (79 at anchorage/drift, 30 at berth); average container-ship wait 13.7-16.1 days; ~700,000 containers waiting on the water. observed_delay_d 14.9 is the midpoint of the observed wait range.",
+      "evidence_date": "2021-11-10",
+      "evidence_source": "MESocal 10 Nov report via Western Overseas: https://www.westernoverseas.com/port-congestion-update-11-12-21/",
+      "node_id": "sea_losangeles",
+      "observed_delay_d": 14.9
+    },
+    {
+      "delay_basis": "modeled_midpoint_of_observed_range",
+      "effect": "Same joint MESocal 10 Nov report for the Long Beach side of the complex: average container-ship wait 13.7-16.1 days (midpoint 14.9 used).",
+      "evidence_date": "2021-11-10",
+      "evidence_source": "MESocal 10 Nov report via Western Overseas: https://www.westernoverseas.com/port-congestion-update-11-12-21/",
+      "node_id": "sea_longbeach",
+      "observed_delay_d": 14.9
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "New offshore queuing system takes effect: arriving container ships queue ~150 miles offshore in sailing-time order instead of anchoring in San Pedro Bay (queue count methodology changes from this date).",
+      "evidence_date": "2021-11-16",
+      "evidence_source": "PMA/PMSA/MESocal announcement via Riviera Maritime: https://www.rivieramm.com/news-content-hub/news-content-hub/ports-of-los-angeles-and-long-beach-introduce-new-queuing-process-to-ease-bottleneck-68472",
+      "node_id": "sea_losangeles",
+      "observed_delay_d": 0.0
+    }
+  ],
+  "source_document": "curated timeline, section 3 (retrieved 2026-10-20)",
+  "title": "Los Angeles / Long Beach congestion, 2021",
+  "unresolved_timeline_nodes": "air_losangeles is named as the mode-shift scenario node in the curated timeline but has no dated observed effect in the source table; no step was fabricated for it. All other named timeline nodes resolve to graph nodes."
+}

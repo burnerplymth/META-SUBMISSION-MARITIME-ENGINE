@@ -1,0 +1,383 @@
+{
+ "config": "rev2_calibrated",
+ "digest": {
+  "n_events": 18,
+  "places": {
+   "chk_babelmandeb": {
+    "first_delay_d": 77.53238,
+    "first_lag_d": 0.0,
+    "first_seq": 0,
+    "max_delay_d": 77.53238
+   },
+   "chk_capeofgoodhope": {
+    "first_delay_d": 17.90096,
+    "first_lag_d": 14.0,
+    "first_seq": 6,
+    "max_delay_d": 17.90096
+   },
+   "chk_suez": {
+    "first_delay_d": 247.523766,
+    "first_lag_d": 4.0,
+    "first_seq": 1,
+    "max_delay_d": 247.523766
+   },
+   "sea_jeddah": {
+    "first_delay_d": 313.816248,
+    "first_lag_d": 15.0,
+    "first_seq": 7,
+    "max_delay_d": 313.816248
+   },
+   "sea_portsaid": {
+    "first_delay_d": 21.143647,
+    "first_lag_d": 21.5,
+    "first_seq": 9,
+    "max_delay_d": 21.143647
+   }
+  },
+  "seed_first_lag_d": 0.0,
+  "seed_wait_d": 77.53238
+ },
+ "digest_checked_against_published": true,
+ "disruption": {
+  "capacity_loss": 0.7,
+  "duration_d": 559,
+  "kind": "capacity_cut",
+  "node_id": "chk_babelmandeb",
+  "shape": "step",
+  "started_at": "2023-11-19T00:00:00Z"
+ },
+ "edges": [
+  {
+   "channel": "congestion",
+   "from_node": "chk_babelmandeb",
+   "from_seq": null,
+   "to_node": "chk_babelmandeb",
+   "to_seq": 0
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_babelmandeb",
+   "from_seq": 0,
+   "to_node": "chk_suez",
+   "to_seq": 1
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_babelmandeb",
+   "from_seq": 0,
+   "to_node": "sea_jeddah",
+   "to_seq": 2
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 1,
+   "to_node": "sea_portsaid",
+   "to_seq": 3
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 1,
+   "to_node": "sea_rotterdam",
+   "to_seq": 4
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 1,
+   "to_node": "sea_antwerp",
+   "to_seq": 5
+  },
+  {
+   "channel": "reroute",
+   "from_node": "chk_babelmandeb",
+   "from_seq": 0,
+   "to_node": "chk_capeofgoodhope",
+   "to_seq": 6
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_babelmandeb",
+   "from_seq": 0,
+   "to_node": "sea_jeddah",
+   "to_seq": 7
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 1,
+   "to_node": "sea_hamburg",
+   "to_seq": 8
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_suez",
+   "from_seq": 1,
+   "to_node": "sea_portsaid",
+   "to_seq": 9
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 1,
+   "to_node": "chk_suez",
+   "to_seq": 10
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_portsaid",
+   "from_seq": 9,
+   "to_node": "sea_damietta",
+   "to_seq": 11
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_babelmandeb",
+   "from_seq": 0,
+   "to_node": "sea_shanghai",
+   "to_seq": 12
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_portsaid",
+   "from_seq": 9,
+   "to_node": "sea_beirut",
+   "to_seq": 13
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_portsaid",
+   "from_seq": 9,
+   "to_node": "sea_marsaxlokk",
+   "to_seq": 14
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_portsaid",
+   "from_seq": 9,
+   "to_node": "sea_piraeus",
+   "to_seq": 15
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_capeofgoodhope",
+   "from_seq": 6,
+   "to_node": "sea_capetown",
+   "to_seq": 16
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_capeofgoodhope",
+   "from_seq": 6,
+   "to_node": "chk_capeofgoodhope",
+   "to_seq": 17
+  }
+ ],
+ "episode": "red_sea",
+ "event_count": 18,
+ "events": [
+  {
+   "at": "2023-11-19T00:00:00Z",
+   "channel": "congestion",
+   "delay_d": 77.53238,
+   "magnitude": 0.7,
+   "mechanism": "capacity loss at source: service rate = mu_max x (1 - loss)",
+   "node_id": "chk_babelmandeb",
+   "parent_id": null,
+   "seq": 0,
+   "tick": 0
+  },
+  {
+   "at": "2023-11-23T00:00:00Z",
+   "channel": "inventory",
+   "delay_d": 247.523766,
+   "magnitude": 0.448394,
+   "mechanism": "inventory: arrivals below baseline draw the cover down, at stockout onward flow equals arrivals (cover days / shortfall rate)",
+   "node_id": "chk_suez",
+   "parent_id": 0,
+   "seq": 1,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-23T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_jeddah",
+   "parent_id": 0,
+   "seq": 2,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-25T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_portsaid",
+   "parent_id": 1,
+   "seq": 3,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-01T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_rotterdam",
+   "parent_id": 1,
+   "seq": 4,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-02T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_antwerp",
+   "parent_id": 1,
+   "seq": 5,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-03T00:00:00Z",
+   "channel": "reroute",
+   "delay_d": 17.90096,
+   "magnitude": 0.472284,
+   "mechanism": "reroute: bypass lane chk_suez->chk_capeofgoodhope:sea#routes-A[chk_babelmandeb] carries the flow of chk_suez->chk_babelmandeb:sea, forecast wait at the primary exceeds added days plus forecast wait here, capped by headroom",
+   "node_id": "chk_capeofgoodhope",
+   "parent_id": 0,
+   "seq": 6,
+   "tick": 1
+  },
+  {
+   "at": "2023-12-04T00:00:00Z",
+   "channel": "inventory",
+   "delay_d": 313.816248,
+   "magnitude": 0.565713,
+   "mechanism": "inventory: arrivals below baseline draw the cover down, at stockout onward flow equals arrivals (cover days / shortfall rate)",
+   "node_id": "sea_jeddah",
+   "parent_id": 0,
+   "seq": 7,
+   "tick": 1
+  },
+  {
+   "at": "2023-12-04T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_hamburg",
+   "parent_id": 1,
+   "seq": 8,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-10T12:00:00Z",
+   "channel": "inventory",
+   "delay_d": 21.143647,
+   "magnitude": 0.440566,
+   "mechanism": "inventory: arrivals below baseline draw the cover down, at stockout onward flow equals arrivals (cover days / shortfall rate)",
+   "node_id": "sea_portsaid",
+   "parent_id": 1,
+   "seq": 9,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-13T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.03415,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "chk_suez",
+   "parent_id": 1,
+   "seq": 10,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-13T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_damietta",
+   "parent_id": 9,
+   "seq": 11,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-13T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.129789,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_shanghai",
+   "parent_id": 0,
+   "seq": 12,
+   "tick": 1
+  },
+  {
+   "at": "2023-12-14T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_beirut",
+   "parent_id": 9,
+   "seq": 13,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-15T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_marsaxlokk",
+   "parent_id": 9,
+   "seq": 14,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-16T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_piraeus",
+   "parent_id": 9,
+   "seq": 15,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-31T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.665323,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_capetown",
+   "parent_id": 6,
+   "seq": 16,
+   "tick": 2
+  },
+  {
+   "at": "2024-01-03T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "chk_capeofgoodhope",
+   "parent_id": 6,
+   "seq": 17,
+   "tick": 2
+  }
+ ],
+ "run_id": "replay_red_sea_rev2_calibrated",
+ "schema": "supermap.replay.chain/1",
+ "status": "complete",
+ "stream_hash": "1aa558d23a350e784fea28c23c210dcb4080571294ebe1571ed15d6f03c1c29a"
+}

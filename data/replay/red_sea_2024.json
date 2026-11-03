@@ -1,0 +1,110 @@
+{
+  "disruption": {
+    "capacity_loss": 0.7,
+    "capacity_loss_basis": {
+      "derivation": "The loss figure is stated by the source: gross tonnage of ships entering the Gulf of Aden fell >70% between the 1st half of Dec 2023 and the 1st half of Feb 2024; taken as 0.7 (the stated floor). Corroborated in the same timeline by Suez transits -70% by Jun 2024 (UNCTAD Review of Maritime Transport 2024). No arithmetic conversion applied. Container-ship capacity fell further (-92% by Jun 2024); 0.7 is the conservative all-shipping figure.",
+      "kind": "sourced",
+      "source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/"
+    },
+    "expected_duration_d": 559,
+    "kind": "capacity_cut",
+    "node_id": "chk_babelmandeb",
+    "severity": 5,
+    "started_at": "2023-11-19T00:00:00Z"
+  },
+  "disruption_notes": "capacity_loss 0.7 = observed gross-tonnage fall through the Gulf of Aden (>70% by mid-Feb 2024, UNCTAD); container-ship capacity fell further (-92% by Jun 2024). expected_duration_d 559 = days from 2023-11-19 to the last timeline observation (2025-05-31, Suez tonnage still ~70% below 2023) - an observed lower bound, not a forecast; the disruption had not resolved in the source timeline.",
+  "id": "red_sea_2024",
+  "observed_steps": [
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Incident involving the car carrier Galaxy Leader in the Red Sea - first of a series of incidents that led carriers to avoid the corridor (crew held until 22 Jan 2025).",
+      "evidence_date": "2023-11-19",
+      "evidence_source": "AI Timeline compilation of the crisis chronology: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+      "node_id": "chk_babelmandeb",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Onset of sustained carrier diversions away from the Red Sea corridor (UNCTAD reference timeline).",
+      "evidence_date": "2023-12-01",
+      "evidence_source": "UNCTAD via Warconomy reference timeline: https://warconomy.com/chokepoints/red-sea-shipping/economic-impact",
+      "node_id": "chk_suez",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "By end of December 2023, traffic through the Suez Canal was down by about half vs pre-crisis levels.",
+      "evidence_date": "2023-12-31",
+      "evidence_source": "UNCTAD Review of Maritime Transport 2024, via Maritime Executive: https://maritime-executive.com/article/unctad-maritime-chokepoints-are-trade-s-biggest-vulnerability",
+      "node_id": "chk_suez",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "modeled_from_distance",
+      "effect": "Spot container rates roughly doubled on Shanghai-Rotterdam between 1 Dec 2023 and 1 Feb 2024 (window end date). observed_delay_d is the MODELED one-way transit added by the Cape reroute (census: bypass +~3,000-6,000 nm), not a figure stated by the source.",
+      "evidence_date": "2024-02-01",
+      "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+      "node_id": "sea_rotterdam",
+      "observed_delay_d": 10.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Gross tonnage of ships entering the Gulf of Aden fell >70% (1st half Dec 2023 to 1st half Feb 2024 window).",
+      "evidence_date": "2024-02-15",
+      "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+      "node_id": "chk_babelmandeb",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "modeled_from_distance",
+      "effect": "Cape of Good Hope arrivals up +85% gross tonnage (7-day moving average, first week of Mar 2024) vs first half of Dec 2023; containership arrivals at the Cape up +328%. observed_delay_d is the MODELED one-way transit added by the Cape reroute, not a figure stated by the source.",
+      "evidence_date": "2024-03-01",
+      "evidence_source": "UNCTAD based on Clarksons Research, via Africa Ports: https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+      "node_id": "chk_capeofgoodhope",
+      "observed_delay_d": 10.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Suez transits -70% vs mid-Dec 2023 (by Jun 2024). Canal revenue fell $9.4B (FY2022/23) to $7.2B (FY2023/24); transits 25,911 to 20,148.",
+      "evidence_date": "2024-06-30",
+      "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+      "node_id": "chk_suez",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "modeled_from_distance",
+      "effect": "Cape of Good Hope arrivals +89% (by Jun 2024). Median Asia-Europe round trip cost approx $1.0M via Suez vs $1.7M via the Cape. observed_delay_d is the MODELED one-way transit added by the Cape reroute, not a figure stated by the source.",
+      "evidence_date": "2024-06-30",
+      "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+      "node_id": "chk_capeofgoodhope",
+      "observed_delay_d": 10.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Container-ship capacity entering the Gulf of Aden -92% (by Jun 2024). Rerouting raised overall vessel demand by ~3% and container-ship demand by ~12% (UNCTAD via Splash247).",
+      "evidence_date": "2024-06-30",
+      "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+      "node_id": "chk_babelmandeb",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Shanghai Containerized Freight Index (SCFI) averaged 2,496 points in 2024, +149% year on year (rate channel; node is the index's home port).",
+      "evidence_date": "2024-12-31",
+      "evidence_source": "UNCTAD Review of Maritime Transport 2025, via Lift Europe: https://lift-europe.com/blog-detail/un-global-shipping-faces-weak-growth-2025-rerouting-costs-and-new-rules-reshape-trade",
+      "node_id": "sea_shanghai",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Suez tonnage still approximately 70% below its 2023 level - no full recovery 17 months in.",
+      "evidence_date": "2025-05-31",
+      "evidence_source": "UNCTAD, via Splash247: https://splash247.com/shippings-answer-to-geopolitics-go-around/",
+      "node_id": "chk_suez",
+      "observed_delay_d": 0.0
+    }
+  ],
+  "source_document": "curated timeline, section 1 (retrieved 2026-10-20)",
+  "title": "Red Sea / Bab el-Mandeb crisis, 2023-2025",
+  "unresolved_timeline_nodes": "sea_jeddah and sea_portsaid are named scenario nodes in the curated timeline but have no dated observed effect of their own in the source table; no step was fabricated for them."
+}

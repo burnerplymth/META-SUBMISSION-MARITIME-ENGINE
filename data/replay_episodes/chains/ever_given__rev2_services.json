@@ -1,0 +1,185 @@
+{
+ "config": "rev2_services",
+ "digest": {
+  "n_events": 8,
+  "places": {
+   "chk_babelmandeb": {
+    "first_delay_d": 2.647754,
+    "first_lag_d": 4.25,
+    "first_seq": 3,
+    "max_delay_d": 2.647754
+   },
+   "chk_suez": {
+    "first_delay_d": 6.442308,
+    "first_lag_d": 0.0,
+    "first_seq": 0,
+    "max_delay_d": 6.442308
+   }
+  },
+  "seed_first_lag_d": 0.0,
+  "seed_wait_d": 6.442308
+ },
+ "digest_checked_against_published": true,
+ "disruption": {
+  "capacity_loss": 1.0,
+  "duration_d": 6.3,
+  "kind": "closure",
+  "node_id": "chk_suez",
+  "shape": "step",
+  "started_at": "2021-03-23T05:40:00Z"
+ },
+ "edges": [
+  {
+   "channel": "congestion",
+   "from_node": "chk_suez",
+   "from_seq": null,
+   "to_node": "chk_suez",
+   "to_seq": 0
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "chk_babelmandeb",
+   "to_seq": 1
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "sea_portsaid",
+   "to_seq": 2
+  },
+  {
+   "channel": "queue",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "chk_babelmandeb",
+   "to_seq": 3
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "sea_jeddah",
+   "to_seq": 4
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "sea_rotterdam",
+   "to_seq": 5
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "sea_antwerp",
+   "to_seq": 6
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "sea_hamburg",
+   "to_seq": 7
+  }
+ ],
+ "episode": "ever_given",
+ "event_count": 8,
+ "events": [
+  {
+   "at": "2021-03-23T05:40:00Z",
+   "channel": "congestion",
+   "delay_d": 6.442308,
+   "magnitude": 1.0,
+   "mechanism": "capacity loss at source: service rate = mu_max x (1 - loss)",
+   "node_id": "chk_suez",
+   "parent_id": null,
+   "seq": 0,
+   "tick": 0
+  },
+  {
+   "at": "2021-03-25T23:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.442459,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "chk_babelmandeb",
+   "parent_id": 0,
+   "seq": 1,
+   "tick": 1
+  },
+  {
+   "at": "2021-03-25T23:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.088964,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_portsaid",
+   "parent_id": 0,
+   "seq": 2,
+   "tick": 1
+  },
+  {
+   "at": "2021-03-27T11:40:00Z",
+   "channel": "queue",
+   "delay_d": 2.647754,
+   "magnitude": 1.0,
+   "mechanism": "queue: spillback, receiving place above queue_cap accepts only its service rate so refused flow is held here, wait = backlog / service rate",
+   "node_id": "chk_babelmandeb",
+   "parent_id": 0,
+   "seq": 3,
+   "tick": 1
+  },
+  {
+   "at": "2021-03-30T23:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.010421,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_jeddah",
+   "parent_id": 0,
+   "seq": 4,
+   "tick": 1
+  },
+  {
+   "at": "2021-03-31T17:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.055126,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_rotterdam",
+   "parent_id": 0,
+   "seq": 5,
+   "tick": 1
+  },
+  {
+   "at": "2021-03-31T23:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.059401,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_antwerp",
+   "parent_id": 0,
+   "seq": 6,
+   "tick": 1
+  },
+  {
+   "at": "2021-04-04T11:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.013979,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_hamburg",
+   "parent_id": 0,
+   "seq": 7,
+   "tick": 1
+  }
+ ],
+ "run_id": "replay_ever_given_rev2_services",
+ "schema": "supermap.replay.chain/1",
+ "status": "complete",
+ "stream_hash": "186c163ea9f6b8fbc4edeaad6e932f08e90fc190f452f281b1bbcf9483fc1c0c"
+}

@@ -1,0 +1,728 @@
+{
+ "episodes": [
+  {
+   "categories": [
+    "accident_blockage",
+    "congestion"
+   ],
+   "events": [
+    {
+     "category": "accident_blockage",
+     "id": "ever_given_2021:grounding",
+     "place": "chk_suez",
+     "source": {
+      "date": "2021-03-23",
+      "date_basis": "event",
+      "publisher": "Sentinel Vision EVT-839, quoting BBC News",
+      "url": "https://www.sentinelvision.eu/gallery/pdf/de9441cece1c4c5f8d905f89da1d570c"
+     },
+     "t": "2021-03-23T05:40:00Z",
+     "t_end": "2021-03-29T17:00:00Z",
+     "title": "Container ship aground across the canal"
+    },
+    {
+     "category": "accident_blockage",
+     "id": "ever_given_2021:refloated",
+     "place": "chk_suez",
+     "source": {
+      "date": "2021-03-29",
+      "date_basis": "published",
+      "publisher": "Royal Boskalis Westminster N.V. press release, 29 March 2021 (republished by Gardline)",
+      "url": "https://gardline.com/about-us/news/suez-canal-unblocked-we-pulled-it-off"
+     },
+     "t": "2021-03-29T13:05:00Z",
+     "t_end": null,
+     "title": "Ship refloated"
+    },
+    {
+     "category": "accident_blockage",
+     "id": "ever_given_2021:traffic_resumed",
+     "place": "chk_suez",
+     "source": {
+      "date": "2021-03-29",
+      "date_basis": "event",
+      "publisher": "Wikipedia — 2021 Suez Canal obstruction (citing SCA reporting)",
+      "url": "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction"
+     },
+     "t": "2021-03-29T17:00:00Z",
+     "t_end": null,
+     "title": "Canal traffic resumed"
+    },
+    {
+     "category": "congestion",
+     "id": "ever_given_2021:backlog_cleared",
+     "place": "chk_suez",
+     "source": {
+      "date": "2021-04-03",
+      "date_basis": "published",
+      "publisher": "Reuters (3 April 2021), reporting Suez Canal Authority statement",
+      "url": "https://gcaptain.com/suez-canal-says-ship-backlog-cleared/"
+     },
+     "t": "2021-04-03T00:00:00Z",
+     "t_end": null,
+     "title": "Canal authority reports the ship backlog cleared"
+    }
+   ],
+   "fetch_window": {
+    "from": "2021-01-15",
+    "to": "2021-05-31"
+   },
+   "has_tracks": false,
+   "id": "ever_given_2021",
+   "notes_chip": "SNAPSHOT history; sources per event",
+   "places": [
+    "chk_suez",
+    "chk_capeofgoodhope"
+   ],
+   "scenes": {
+    "sentinel-1": 91,
+    "sentinel-2": 55
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "portwatch_transit_capacity",
+    "portwatch_transits",
+    "portwatch_transits_cargo",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [
+    "real_cdb34aec6b97ef30",
+    "real_681773f461bd055f"
+   ],
+   "title": "Ever Given grounding, Suez Canal, March 2021",
+   "window": {
+    "from": "2021-02-01",
+    "to": "2021-05-15"
+   }
+  },
+  {
+   "categories": [
+    "congestion"
+   ],
+   "events": [
+    {
+     "category": "congestion",
+     "id": "la_lb_congestion_2021:record_129_in_port",
+     "place": "sea_losangeles",
+     "source": {
+      "date": "2021-08-29",
+      "date_basis": "event",
+      "publisher": "Marine Exchange of Southern California (@MXSOCAL report of 30-31 Aug 2021), reported by Port Technology International",
+      "url": "https://www.porttechnology.org/news/southern-california-ports-operating-at-record-breaking-levels/"
+     },
+     "t": "2021-08-29T00:00:00Z",
+     "t_end": null,
+     "title": "Marine Exchange count: record 129 ships in port"
+    },
+    {
+     "category": "congestion",
+     "id": "la_lb_congestion_2021:queue_98_container",
+     "place": "sea_losangeles",
+     "source": {
+      "date": "2021-10-19",
+      "date_basis": "event",
+      "publisher": "Marine Exchange of Southern California daily report, summarised by Western Overseas Corporation, Port Congestion Update 10/22/21",
+      "url": "https://www.westernoverseas.com/port-congestion-update-10-22-21/"
+     },
+     "t": "2021-10-19T00:00:00Z",
+     "t_end": null,
+     "title": "Marine Exchange count: 98 container ships waiting or at berth"
+    },
+    {
+     "category": "congestion",
+     "id": "la_lb_congestion_2021:queue_109_container",
+     "place": "sea_losangeles",
+     "source": {
+      "date": "2021-11-10",
+      "date_basis": "event",
+      "publisher": "Marine Exchange of Southern California daily report, summarised by Western Overseas Corporation, Port Congestion Update 11/12/21",
+      "url": "https://www.westernoverseas.com/port-congestion-update-11-12-21/"
+     },
+     "t": "2021-11-10T00:00:00Z",
+     "t_end": null,
+     "title": "Marine Exchange count: 109 container ships"
+    },
+    {
+     "category": "congestion",
+     "id": "la_lb_congestion_2021:new_queue_system",
+     "place": "sea_losangeles",
+     "source": {
+      "date": "2021-11-16",
+      "date_basis": "event",
+      "publisher": "Marine Exchange of Southern California / Pacific Maritime Association / Pacific Merchant Shipping Association new queuing process, reported by Maritime Magazine and Port Technology International, Nov 2022",
+      "url": "https://maritimemag.com/en/the-huge-containership-line-ups-at-los-angeles-and-long-beach-officially-over/"
+     },
+     "t": "2021-11-16T00:00:00Z",
+     "t_end": null,
+     "title": "New offshore queuing system starts"
+    },
+    {
+     "category": "congestion",
+     "id": "la_lb_congestion_2021:peak_backup",
+     "place": "sea_losangeles",
+     "source": {
+      "date": "2022-01-09",
+      "date_basis": "event",
+      "publisher": "Marine Exchange of Southern California (Capt. Kip Louttit), reported by Maritime Executive, 22 Nov 2022; corroborated by Port Technology International and Maritime Magazine reports of the same MXSOC statement",
+      "url": "https://maritime-executive.com/article/containership-backup-is-declared-over-in-southern-california"
+     },
+     "t": "2022-01-09T00:00:00Z",
+     "t_end": null,
+     "title": "Peak backup, 109 container ships"
+    }
+   ],
+   "fetch_window": {
+    "from": "2021-01-01",
+    "to": "2022-03-31"
+   },
+   "has_tracks": true,
+   "id": "la_lb_congestion_2021",
+   "notes_chip": "SNAPSHOT history; one AIS day bundled",
+   "places": [
+    "sea_losangeles",
+    "sea_nwsa",
+    "sea_savannah",
+    "sea_newyork"
+   ],
+   "scenes": {
+    "sentinel-1": 397,
+    "sentinel-2": 485
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "portwatch_port_calls",
+    "portwatch_port_calls_cargo",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wave_height_m",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [
+    "real_04dd5a2f068b7505",
+    "real_71b6501960a4858f"
+   ],
+   "title": "Los Angeles and Long Beach container-ship queue, 2021",
+   "window": {
+    "from": "2021-08-01",
+    "to": "2022-01-31"
+   }
+  },
+  {
+   "categories": [
+    "accident_blockage",
+    "infrastructure"
+   ],
+   "events": [
+    {
+     "category": "accident_blockage",
+     "id": "baltimore_bridge_2024:bridge_collapse",
+     "place": "sea_baltimore",
+     "source": {
+      "date": "2024-03-26",
+      "date_basis": "event",
+      "publisher": "National Transportation Safety Board (NTSB), DCA24MM031 factual report",
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?ID=18527583&FileExtension=pdf&FileName=Hazmat%20Cargo%20Factual%20-%20Dali%20-%20FSKey%20Bridge%20DCA24MM031%20%20(Final%202-4-25)-Rel.pdf"
+     },
+     "t": "2024-03-26T05:29:00Z",
+     "t_end": "2024-06-10T00:00:00Z",
+     "title": "Bridge struck by a container ship and collapsed; vessel traffic suspended"
+    },
+    {
+     "category": "infrastructure",
+     "id": "baltimore_bridge_2024:alt_channel_1",
+     "place": "sea_baltimore",
+     "source": {
+      "date": "2024-04-02",
+      "date_basis": "event",
+      "publisher": "Maryland Port Administration, reported by Supply Chain 24/7; GAC Hot Port News (USCG MSIB summary)",
+      "url": "https://www.gac.com/hot-port-news/two-temporary-alternate-channels-established?utm_campaign=137492_HOT%20PORT%20NEWS%20from%20GAC&utm_medium=email&utm_source=GAC%20Group%20%28Holdings%29%20Limited&dm_i=7O4V,2Y38,ZGXI1,BTCI,1"
+     },
+     "t": "2024-04-02T00:00:00Z",
+     "t_end": null,
+     "title": "Temporary alternate channels opened for small vessels"
+    },
+    {
+     "category": "infrastructure",
+     "id": "baltimore_bridge_2024:limited_channel",
+     "place": "sea_baltimore",
+     "source": {
+      "date": "2024-04-25",
+      "date_basis": "published",
+      "publisher": "U.S. Army Corps of Engineers, Baltimore District — full restoration release (milestone list)",
+      "url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/"
+     },
+     "t": "2024-04-25T00:00:00Z",
+     "t_end": null,
+     "title": "Limited-access channel opened"
+    },
+    {
+     "category": "infrastructure",
+     "id": "baltimore_bridge_2024:ship_moved",
+     "place": "sea_baltimore",
+     "source": {
+      "date": "2024-05-20",
+      "date_basis": "published",
+      "publisher": "U.S. Army Corps of Engineers, Baltimore District — full restoration release",
+      "url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/"
+     },
+     "t": "2024-05-20T00:00:00Z",
+     "t_end": null,
+     "title": "Ship refloated and moved"
+    },
+    {
+     "category": "infrastructure",
+     "id": "baltimore_bridge_2024:channel_reopened",
+     "place": "sea_baltimore",
+     "source": {
+      "date": "2024-06-10",
+      "date_basis": "published",
+      "publisher": "U.S. Army Corps of Engineers, Baltimore District — 'U.S. Army Corps of Engineers announces full restoration of Baltimore's Fort McHenry Federal Channel' (published June 10, 2024)",
+      "url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/"
+     },
+     "t": "2024-06-10T00:00:00Z",
+     "t_end": null,
+     "title": "Full channel reopened"
+    }
+   ],
+   "fetch_window": {
+    "from": "2024-01-15",
+    "to": "2024-07-31"
+   },
+   "has_tracks": false,
+   "id": "baltimore_bridge_2024",
+   "notes_chip": "SNAPSHOT history; sources per event",
+   "places": [
+    "sea_baltimore",
+    "sea_virginia",
+    "sea_newyork"
+   ],
+   "scenes": {
+    "sentinel-1": 63,
+    "sentinel-2": 161
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "portwatch_port_calls",
+    "portwatch_port_calls_cargo",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wave_height_m",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [],
+   "title": "Baltimore Key Bridge collapse and channel closure, 2024",
+   "window": {
+    "from": "2024-02-15",
+    "to": "2024-06-30"
+   }
+  },
+  {
+   "categories": [
+    "canal_restriction"
+   ],
+   "events": [
+    {
+     "category": "canal_restriction",
+     "id": "panama_drought_2023_24:slots_cut",
+     "place": "chk_panama",
+     "source": {
+      "date": "2023-10-30",
+      "date_basis": "published",
+      "publisher": "Panama Canal Authority customer advisory (30 Oct 2023), via DB Group",
+      "url": "https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought"
+     },
+     "t": "2023-10-30T00:00:00Z",
+     "t_end": null,
+     "title": "Canal authority advisory: daily transit slots reduced stepwise"
+    },
+    {
+     "category": "canal_restriction",
+     "id": "panama_drought_2023_24:draft_44ft",
+     "place": "chk_panama",
+     "source": {
+      "date": "2023-11-30",
+      "date_basis": "event",
+      "publisher": "DB Group summary of canal authority measures",
+      "url": "https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought"
+     },
+     "t": "2023-11-30T00:00:00Z",
+     "t_end": null,
+     "title": "Neopanamax maximum draft limited to 44 ft"
+    },
+    {
+     "category": "canal_restriction",
+     "id": "panama_drought_2023_24:slots_18",
+     "place": "chk_panama",
+     "source": {
+      "date": "2024-02-01",
+      "date_basis": "event",
+      "publisher": "Panama Canal Authority schedule, via DB Group",
+      "url": "https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought"
+     },
+     "t": "2024-02-01T00:00:00Z",
+     "t_end": null,
+     "title": "Daily transit slots reach the minimum, 18 per day"
+    },
+    {
+     "category": "canal_restriction",
+     "id": "panama_drought_2023_24:slots_restored",
+     "place": "chk_panama",
+     "source": {
+      "date": "2024-06-01",
+      "date_basis": "event",
+      "publisher": "Ballast Markets compilation of canal authority and press reporting",
+      "url": "https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/"
+     },
+     "t": "2024-06-01T00:00:00Z",
+     "t_end": null,
+     "title": "Slots restored to 32 per day"
+    }
+   ],
+   "fetch_window": {
+    "from": "2023-06-01",
+    "to": "2024-08-31"
+   },
+   "has_tracks": false,
+   "id": "panama_drought_2023_24",
+   "notes_chip": "SNAPSHOT history; sources per event",
+   "places": [
+    "chk_panama"
+   ],
+   "scenes": {
+    "sentinel-1": 75,
+    "sentinel-2": 123
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "portwatch_transit_capacity",
+    "portwatch_transits",
+    "portwatch_transits_cargo",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [
+    "real_6bb28c8e18ddbd3d",
+    "real_3b7406f38290b1c9"
+   ],
+   "title": "Panama Canal drought restrictions, 2023 to 2024",
+   "window": {
+    "from": "2023-08-01",
+    "to": "2024-06-30"
+   }
+  },
+  {
+   "categories": [
+    "weather"
+   ],
+   "events": [
+    {
+     "category": "weather",
+     "id": "typhoon_saola_2023:terminal_gates_suspended",
+     "place": "sea_shenzhen",
+     "source": {
+      "date": "2023-08-31",
+      "date_basis": "published",
+      "publisher": "Container News",
+      "url": "https://container-news.com/pearl-river-delta-ports-brace-for-super-typhoon-saola"
+     },
+     "t": "2023-08-31T08:00:00Z",
+     "t_end": null,
+     "title": "Yantian terminal suspends gate services as the red typhoon signal is raised"
+    },
+    {
+     "category": "weather",
+     "id": "typhoon_saola_2023:hk_signal_10",
+     "place": null,
+     "source": {
+      "date": "2023-09-01",
+      "date_basis": "event",
+      "publisher": "Wikipedia, Typhoon Saola (2023)",
+      "url": "https://en.wikipedia.org/wiki/Typhoon_Saola_(2023)"
+     },
+     "t": "2023-09-01T12:15:00Z",
+     "t_end": null,
+     "title": "Hong Kong Observatory raises the No. 10 hurricane signal"
+    },
+    {
+     "category": "weather",
+     "id": "typhoon_saola_2023:landfall_guangdong",
+     "place": "sea_shenzhen",
+     "source": {
+      "date": "2023-09-02",
+      "date_basis": "published",
+      "publisher": "Reuters, via Inquirer",
+      "url": "https://newsinfo.inquirer.net/1825622/typhoon-saola-makes-landfall-in-guangdong-after-slamming-hong-kong-macau"
+     },
+     "t": "2023-09-02T00:00:00Z",
+     "t_end": null,
+     "title": "Typhoon makes landfall in Guangdong near Zhuhai"
+    }
+   ],
+   "fetch_window": {
+    "from": "2023-07-15",
+    "to": "2023-10-31"
+   },
+   "has_tracks": false,
+   "id": "typhoon_saola_2023",
+   "notes_chip": "SNAPSHOT history; sources per event",
+   "places": [
+    "sea_shenzhen",
+    "sea_guangzhou"
+   ],
+   "scenes": {
+    "sentinel-1": 28,
+    "sentinel-2": 72
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "portwatch_port_calls",
+    "portwatch_port_calls_cargo",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wave_height_m",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [],
+   "title": "Typhoon Saola, Pearl River Delta ports, September 2023",
+   "window": {
+    "from": "2023-08-01",
+    "to": "2023-10-15"
+   }
+  },
+  {
+   "categories": [
+    "weather"
+   ],
+   "events": [
+    {
+     "category": "weather",
+     "id": "typhoon_gaemi_2024:landfall_fujian",
+     "place": "sea_xiamen",
+     "source": {
+      "date": "2024-07-25",
+      "date_basis": "published",
+      "publisher": "ICIS",
+      "url": "https://icis.com/explore/resources/news/2024/07/26/11020427/typhoon-gaemi-makes-landfall-in-southern-china-hits-port-operations"
+     },
+     "t": "2024-07-25T00:00:00Z",
+     "t_end": null,
+     "title": "Typhoon makes landfall in Fujian on the evening of 25 July"
+    }
+   ],
+   "fetch_window": {
+    "from": "2024-06-15",
+    "to": "2024-09-15"
+   },
+   "has_tracks": false,
+   "id": "typhoon_gaemi_2024",
+   "notes_chip": "SNAPSHOT history; sources per event",
+   "places": [
+    "sea_ningbo",
+    "sea_shanghai",
+    "sea_xiamen"
+   ],
+   "scenes": {
+    "sentinel-1": 27,
+    "sentinel-2": 72
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "portwatch_port_calls",
+    "portwatch_port_calls_cargo",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wave_height_m",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [],
+   "title": "Typhoon Gaemi, East China ports, July 2024",
+   "window": {
+    "from": "2024-06-15",
+    "to": "2024-09-15"
+   }
+  },
+  {
+   "categories": [
+    "labour_action"
+   ],
+   "events": [
+    {
+     "category": "labour_action",
+     "id": "ila_strike_2024:strike_begins",
+     "place": null,
+     "source": {
+      "date": "2024-10-01",
+      "date_basis": "published",
+      "publisher": "ABC7 New York",
+      "url": "https://abc7ny.com/post/dockworkers-deal-62-pay-raise-6-years-strike-suspended-january-15/15391792/"
+     },
+     "t": "2024-10-01T04:01:00Z",
+     "t_end": "2024-10-04T12:00:00Z",
+     "title": "Strike begins at 12:01 a.m. Eastern; ports stop work"
+    },
+    {
+     "category": "labour_action",
+     "id": "ila_strike_2024:tentative_wage_deal",
+     "place": null,
+     "source": {
+      "date": "2024-10-03",
+      "date_basis": "published",
+      "publisher": "ABC7 New York",
+      "url": "https://abc7ny.com/post/dockworkers-deal-62-pay-raise-6-years-strike-suspended-january-15/15391792/"
+     },
+     "t": "2024-10-03T00:00:00Z",
+     "t_end": null,
+     "title": "Tentative wage deal; contract extended to 15 January 2025"
+    },
+    {
+     "category": "labour_action",
+     "id": "ila_strike_2024:work_resumes",
+     "place": null,
+     "source": {
+      "date": "2024-10-04",
+      "date_basis": "published",
+      "publisher": "Virginia Business",
+      "url": "https://virginiabusiness.com/ports-strike-ends-as-tentative-agreement-reached/"
+     },
+     "t": "2024-10-04T12:00:00Z",
+     "t_end": null,
+     "title": "Dockworkers return to work on 4 October"
+    }
+   ],
+   "fetch_window": {
+    "from": "2024-08-15",
+    "to": "2024-11-30"
+   },
+   "has_tracks": false,
+   "id": "ila_strike_2024",
+   "notes_chip": "SNAPSHOT history; sources per event",
+   "places": [
+    "sea_newyork",
+    "sea_savannah",
+    "sea_charleston"
+   ],
+   "scenes": {
+    "sentinel-1": 25,
+    "sentinel-2": 80
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "portwatch_port_calls",
+    "portwatch_port_calls_cargo",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wave_height_m",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [],
+   "title": "US East and Gulf Coast dockworkers' strike, October 2024",
+   "window": {
+    "from": "2024-08-15",
+    "to": "2024-11-30"
+   }
+  },
+  {
+   "categories": [
+    "labour_action"
+   ],
+   "events": [
+    {
+     "category": "labour_action",
+     "id": "bc_port_strike_2023:strike_begins",
+     "place": null,
+     "source": {
+      "date": "2023-07-01",
+      "date_basis": "event",
+      "publisher": "Wikipedia, 2023 British Columbia port strike",
+      "url": "https://en.wikipedia.org/wiki/2023_British_Columbia_port_strike"
+     },
+     "t": "2023-07-01T00:00:00Z",
+     "t_end": "2023-07-13T00:00:00Z",
+     "title": "Longshore strike begins at British Columbia ports"
+    },
+    {
+     "category": "labour_action",
+     "id": "bc_port_strike_2023:tentative_deal_ops_resume",
+     "place": null,
+     "source": {
+      "date": "2023-07-13",
+      "date_basis": "event",
+      "publisher": "CKPG Today timeline",
+      "url": "https://ckpgtoday.ca/?p=389783"
+     },
+     "t": "2023-07-13T00:00:00Z",
+     "t_end": null,
+     "title": "Tentative four-year agreement; port operations resume"
+    },
+    {
+     "category": "labour_action",
+     "id": "bc_port_strike_2023:picketing_resumes",
+     "place": null,
+     "source": {
+      "date": "2023-07-18",
+      "date_basis": "published",
+      "publisher": "Seatrade Maritime News",
+      "url": "https://www.seatrade-maritime.com/ports-logistics/canada-port-strike-back-on-as-unions-reject-tentative-agreement"
+     },
+     "t": "2023-07-18T00:00:00Z",
+     "t_end": null,
+     "title": "Picketing resumes after the union caucus rejects the terms"
+    },
+    {
+     "category": "labour_action",
+     "id": "bc_port_strike_2023:second_tentative_deal",
+     "place": null,
+     "source": {
+      "date": "2023-07-30",
+      "date_basis": "event",
+      "publisher": "CBC News",
+      "url": "https://amp.cbc.ca/news/canada/british-columbia/tentative-deal-port-strike-1.6913376"
+     },
+     "t": "2023-07-30T00:00:00Z",
+     "t_end": null,
+     "title": "Second tentative agreement reached (reported around 30 to 31 July)"
+    }
+   ],
+   "fetch_window": {
+    "from": "2023-05-15",
+    "to": "2023-09-30"
+   },
+   "has_tracks": false,
+   "id": "bc_port_strike_2023",
+   "notes_chip": "SNAPSHOT history; sources per event",
+   "places": [
+    "sea_vancouver",
+    "sea_princerupert"
+   ],
+   "scenes": {
+    "sentinel-1": 34,
+    "sentinel-2": 103
+   },
+   "series": [
+    "economic_eia_spot_brent",
+    "economic_eia_spot_wti",
+    "weather_gust_max_kmh",
+    "weather_precip_mm",
+    "weather_wave_height_m",
+    "weather_wind_max_kmh"
+   ],
+   "sim_runs": [],
+   "title": "British Columbia port strike, July 2023",
+   "window": {
+    "from": "2023-05-15",
+    "to": "2023-09-30"
+   }
+  }
+ ],
+ "schema": "supermap.research.episodes.v1"
+}

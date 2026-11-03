@@ -1,0 +1,449 @@
+{
+ "config": "v1",
+ "digest": {
+  "n_events": 20,
+  "places": {
+   "chk_panama": {
+    "first_delay_d": 13.888889,
+    "first_lag_d": 13.888889,
+    "first_seq": 0,
+    "max_delay_d": 13.888889
+   },
+   "sea_balboa": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 24.188889,
+    "first_seq": 1,
+    "max_delay_d": 10.0
+   },
+   "sea_buenosaires": {
+    "first_delay_d": 6.410045,
+    "first_lag_d": 50.798924,
+    "first_seq": 8,
+    "max_delay_d": 6.410045
+   },
+   "sea_callao": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 37.688889,
+    "first_seq": 5,
+    "max_delay_d": 10.0
+   },
+   "sea_cartagena": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 24.888889,
+    "first_seq": 2,
+    "max_delay_d": 10.0
+   },
+   "sea_colon": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 35.688889,
+    "first_seq": 3,
+    "max_delay_d": 10.0
+   },
+   "sea_guayaquil": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 49.488889,
+    "first_seq": 6,
+    "max_delay_d": 10.0
+   },
+   "sea_manzanillo": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 38.688889,
+    "first_seq": 4,
+    "max_delay_d": 10.0
+   },
+   "sea_sanantonio": {
+    "first_delay_d": 5.020366,
+    "first_lag_d": 45.709248,
+    "first_seq": 9,
+    "max_delay_d": 5.020366
+   },
+   "sea_santos": {
+    "first_delay_d": 10.0,
+    "first_lag_d": 40.888889,
+    "first_seq": 7,
+    "max_delay_d": 10.0
+   }
+  },
+  "seed_first_lag_d": 13.888889,
+  "seed_wait_d": 13.888889
+ },
+ "digest_checked_against_published": true,
+ "disruption": {
+  "capacity_loss": 0.5,
+  "duration_d": 215,
+  "kind": "capacity_cut",
+  "node_id": "chk_panama",
+  "shape": "step",
+  "started_at": "2023-10-30T00:00:00Z"
+ },
+ "edges": [
+  {
+   "channel": "congestion",
+   "from_node": "chk_panama",
+   "from_seq": null,
+   "to_node": "chk_panama",
+   "to_seq": 0
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_balboa",
+   "to_seq": 1
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_cartagena",
+   "to_seq": 2
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_cartagena",
+   "from_seq": 2,
+   "to_node": "sea_colon",
+   "to_seq": 3
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_balboa",
+   "from_seq": 1,
+   "to_node": "sea_manzanillo",
+   "to_seq": 4
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_balboa",
+   "from_seq": 1,
+   "to_node": "sea_callao",
+   "to_seq": 5
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_callao",
+   "from_seq": 5,
+   "to_node": "sea_guayaquil",
+   "to_seq": 6
+  },
+  {
+   "channel": "inventory",
+   "from_node": "sea_cartagena",
+   "from_seq": 2,
+   "to_node": "sea_santos",
+   "to_seq": 7
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_santos",
+   "from_seq": 7,
+   "to_node": "sea_buenosaires",
+   "to_seq": 8
+  },
+  {
+   "channel": "queue",
+   "from_node": "sea_callao",
+   "from_seq": 5,
+   "to_node": "sea_sanantonio",
+   "to_seq": 9
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_manzanillo",
+   "from_seq": 4,
+   "to_node": "chk_panama",
+   "to_seq": 10
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_sanantonio",
+   "from_seq": 9,
+   "to_node": "sea_balboa",
+   "to_seq": 11
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_santos",
+   "from_seq": 7,
+   "to_node": "sea_buenosaires",
+   "to_seq": 12
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_guayaquil",
+   "from_seq": 6,
+   "to_node": "sea_callao",
+   "to_seq": 13
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_santos",
+   "from_seq": 7,
+   "to_node": "sea_cartagena",
+   "to_seq": 14
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_cartagena",
+   "from_seq": 2,
+   "to_node": "sea_colon",
+   "to_seq": 15
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_callao",
+   "from_seq": 5,
+   "to_node": "sea_guayaquil",
+   "to_seq": 16
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_balboa",
+   "from_seq": 1,
+   "to_node": "sea_manzanillo",
+   "to_seq": 17
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_callao",
+   "from_seq": 5,
+   "to_node": "sea_sanantonio",
+   "to_seq": 18
+  },
+  {
+   "channel": "cost",
+   "from_node": "sea_buenosaires",
+   "from_seq": 8,
+   "to_node": "sea_santos",
+   "to_seq": 19
+  }
+ ],
+ "episode": "panama",
+ "event_count": 20,
+ "events": [
+  {
+   "at": "2023-11-12T21:20:00Z",
+   "channel": "congestion",
+   "delay_d": 13.888889,
+   "magnitude": 0.5,
+   "mechanism": "capacity loss at source",
+   "node_id": "chk_panama",
+   "parent_id": null,
+   "seq": 0,
+   "tick": 0
+  },
+  {
+   "at": "2023-11-23T04:32:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.186649,
+   "mechanism": "inventory draw",
+   "node_id": "sea_balboa",
+   "parent_id": 0,
+   "seq": 1,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-23T21:20:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.515032,
+   "mechanism": "inventory draw",
+   "node_id": "sea_cartagena",
+   "parent_id": 0,
+   "seq": 2,
+   "tick": 1
+  },
+  {
+   "at": "2023-12-04T16:32:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.967442,
+   "mechanism": "inventory draw",
+   "node_id": "sea_colon",
+   "parent_id": 2,
+   "seq": 3,
+   "tick": 1
+  },
+  {
+   "at": "2023-12-07T16:32:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.337366,
+   "mechanism": "inventory draw",
+   "node_id": "sea_manzanillo",
+   "parent_id": 1,
+   "seq": 4,
+   "tick": 1
+  },
+  {
+   "at": "2023-12-06T16:32:00Z",
+   "channel": "queue",
+   "delay_d": 10.0,
+   "magnitude": 0.088452,
+   "mechanism": "queue spillback",
+   "node_id": "sea_callao",
+   "parent_id": 1,
+   "seq": 5,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-18T11:44:00Z",
+   "channel": "queue",
+   "delay_d": 10.0,
+   "magnitude": 0.107779,
+   "mechanism": "queue spillback",
+   "node_id": "sea_guayaquil",
+   "parent_id": 5,
+   "seq": 6,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-09T21:20:00Z",
+   "channel": "inventory",
+   "delay_d": 10.0,
+   "magnitude": 0.128027,
+   "mechanism": "inventory draw",
+   "node_id": "sea_santos",
+   "parent_id": 2,
+   "seq": 7,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-19T19:10:27Z",
+   "channel": "queue",
+   "delay_d": 6.410045,
+   "magnitude": 0.040963,
+   "mechanism": "upstream queue backlog",
+   "node_id": "sea_buenosaires",
+   "parent_id": 7,
+   "seq": 8,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-14T17:01:19Z",
+   "channel": "queue",
+   "delay_d": 5.020366,
+   "magnitude": 0.03969,
+   "mechanism": "queue spillback",
+   "node_id": "sea_sanantonio",
+   "parent_id": 5,
+   "seq": 9,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-11T04:32:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "chk_panama",
+   "parent_id": 4,
+   "seq": 10,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-21T05:01:19Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_balboa",
+   "parent_id": 9,
+   "seq": 11,
+   "tick": 4
+  },
+  {
+   "at": "2023-12-13T09:20:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_buenosaires",
+   "parent_id": 7,
+   "seq": 12,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-20T06:56:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_callao",
+   "parent_id": 6,
+   "seq": 13,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-15T21:20:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_cartagena",
+   "parent_id": 7,
+   "seq": 14,
+   "tick": 3
+  },
+  {
+   "at": "2023-11-24T16:32:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.82963,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_colon",
+   "parent_id": 2,
+   "seq": 15,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-08T11:44:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_guayaquil",
+   "parent_id": 5,
+   "seq": 16,
+   "tick": 3
+  },
+  {
+   "at": "2023-11-27T16:32:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.806296,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_manzanillo",
+   "parent_id": 1,
+   "seq": 17,
+   "tick": 2
+  },
+  {
+   "at": "2023-12-09T16:32:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_sanantonio",
+   "parent_id": 5,
+   "seq": 18,
+   "tick": 3
+  },
+  {
+   "at": "2023-12-23T07:10:27Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "expedite cost pressure",
+   "node_id": "sea_santos",
+   "parent_id": 8,
+   "seq": 19,
+   "tick": 4
+  }
+ ],
+ "run_id": "replay_panama_v1",
+ "schema": "supermap.replay.chain/1",
+ "status": "complete",
+ "stream_hash": "4a55b807369eaa096ca2c806288a860da4ecf1dee1c9134bd291b5accf22312c"
+}

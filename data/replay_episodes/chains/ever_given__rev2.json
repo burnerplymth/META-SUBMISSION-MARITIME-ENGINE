@@ -1,0 +1,89 @@
+{
+ "config": "rev2",
+ "digest": {
+  "n_events": 3,
+  "places": {
+   "chk_suez": {
+    "first_delay_d": 6.442308,
+    "first_lag_d": 0.0,
+    "first_seq": 0,
+    "max_delay_d": 6.442308
+   }
+  },
+  "seed_first_lag_d": 0.0,
+  "seed_wait_d": 6.442308
+ },
+ "digest_checked_against_published": true,
+ "disruption": {
+  "capacity_loss": 1.0,
+  "duration_d": 6.3,
+  "kind": "closure",
+  "node_id": "chk_suez",
+  "shape": "step",
+  "started_at": "2021-03-23T05:40:00Z"
+ },
+ "edges": [
+  {
+   "channel": "congestion",
+   "from_node": "chk_suez",
+   "from_seq": null,
+   "to_node": "chk_suez",
+   "to_seq": 0
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "sea_portsaid",
+   "to_seq": 1
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 0,
+   "to_node": "sea_jeddah",
+   "to_seq": 2
+  }
+ ],
+ "episode": "ever_given",
+ "event_count": 3,
+ "events": [
+  {
+   "at": "2021-03-23T05:40:00Z",
+   "channel": "congestion",
+   "delay_d": 6.442308,
+   "magnitude": 1.0,
+   "mechanism": "capacity loss at source: service rate = mu_max x (1 - loss)",
+   "node_id": "chk_suez",
+   "parent_id": null,
+   "seq": 0,
+   "tick": 0
+  },
+  {
+   "at": "2021-03-25T23:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.088964,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_portsaid",
+   "parent_id": 0,
+   "seq": 1,
+   "tick": 1
+  },
+  {
+   "at": "2021-03-29T05:40:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.017052,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_jeddah",
+   "parent_id": 0,
+   "seq": 2,
+   "tick": 1
+  }
+ ],
+ "run_id": "replay_ever_given_rev2",
+ "schema": "supermap.replay.chain/1",
+ "status": "complete",
+ "stream_hash": "c7be34a9f7d33f29004f0b780c7c5da719c901160b22b3f46d7d19f6a4b57c38"
+}

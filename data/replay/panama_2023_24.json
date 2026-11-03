@@ -1,0 +1,118 @@
+{
+  "disruption": {
+    "capacity_loss": 0.5,
+    "capacity_loss_basis": {
+      "derivation": "Derived by arithmetic only on the two sourced ACP slot counts: normal schedule ~36 transits/day, crisis minimum 18/day from 1 Feb 2024; capacity_loss = 1 - 18/36 = 0.5. No conversion factor involved.",
+      "kind": "derived",
+      "source": "Panama Canal Authority (ACP) Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought"
+    },
+    "expected_duration_d": 215,
+    "kind": "capacity_cut",
+    "node_id": "chk_panama",
+    "severity": 4,
+    "started_at": "2023-10-30T00:00:00Z"
+  },
+  "disruption_notes": "capacity_loss 0.5 = ACP slot schedule 36/day normal to 18/day minimum (Feb 2024). expected_duration_d 215 = 2023-10-30 (ACP advisory) to 2024-06-01 (slots restored to 32/day, ~89% of normal). Queue/draft figures rest partly on the Ballast Markets secondary compilation of ACP/press reporting - re-verification against ACP advisories and IMF PortWatch is an open item.",
+  "id": "panama_2023_24",
+  "observed_steps": [
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "~135 ships waiting to transit (~50% above the normal 80-85).",
+      "evidence_date": "2023-10-25",
+      "evidence_source": "Ballast Markets compilation of ACP/press reporting: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "chk_panama",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "ACP advisory sets the progressive slot-reduction schedule: 24/day (7-30 Nov 2023), 22/day (Dec 2023), 20/day (Jan 2024), 18/day (from 1 Feb 2024), vs a normal ~36/day.",
+      "evidence_date": "2023-10-30",
+      "evidence_source": "ACP Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+      "node_id": "chk_panama",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Slot-auction premiums average ~$2.5M per slot (range $1.5-4M) for 2-4 auctioned slots/day (Nov-Feb peak window; cost channel).",
+      "evidence_date": "2023-11-01",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "chk_panama",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Neopanamax maximum draft limited to 44 ft (from a normal ~50 ft), forcing light-loading of the largest container ships and LNG carriers.",
+      "evidence_date": "2023-11-30",
+      "evidence_source": "DB Group summary of ACP measures: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+      "node_id": "chk_panama",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Gatun Lake at 79.5 ft - lowest January level on record, ~6 ft below normal.",
+      "evidence_date": "2024-01-01",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "chk_panama",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Daily transit slots reach the crisis minimum: 18/day (a ~50% capacity cut).",
+      "evidence_date": "2024-02-01",
+      "evidence_source": "ACP schedule via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+      "node_id": "chk_panama",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "modeled_midpoint_of_observed_range",
+      "effect": "Queues of 135-150 ships; average waits 15-20 days, some vessels 25+ days (Nov 2023-Feb 2024 peak window). observed_delay_d 17.5 is the midpoint of the observed 15-20 d wait range.",
+      "evidence_date": "2024-02-29",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "chk_panama",
+      "observed_delay_d": 17.5
+    },
+    {
+      "delay_basis": "modeled_midpoint_of_observed_range",
+      "effect": "Asia to US East Coast container services rerouted via Suez (+7-10 days) during the peak-crisis window. observed_delay_d 8.5 is the midpoint of the observed +7-10 d range.",
+      "evidence_date": "2024-02-29",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "sea_newyork",
+      "observed_delay_d": 8.5
+    },
+    {
+      "delay_basis": "modeled_midpoint_of_observed_range",
+      "effect": "Suez used as the substitute route for Asia-US East Coast services (+7-10 days) - while Suez itself was constrained by the Red Sea crisis from Dec 2023. observed_delay_d is the midpoint of the observed range.",
+      "evidence_date": "2024-02-29",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "chk_suez",
+      "observed_delay_d": 8.5
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "US West Coast + rail land bridge used as a substitute for Asia-US East Coast flows during the peak-crisis window (substitution observed; no added-delay figure stated by the source). Some bulk carriers rerouted via Cape Horn (+18-21 days) - no graph node represents that leg.",
+      "evidence_date": "2024-02-29",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "sea_losangeles",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "not_a_delay_effect",
+      "effect": "Recovery begins: slots raised to 22/day (Mar), then 24 (1 Apr), 27 (1 May).",
+      "evidence_date": "2024-03-01",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "chk_panama",
+      "observed_delay_d": 0.0
+    },
+    {
+      "delay_basis": "modeled_midpoint_of_observed_range",
+      "effect": "Slots restored to 32/day (~89% of normal); Gatun Lake back to ~85.2 ft by 15 Jun; queues near normal (~88 ships in May, waits 5-7 days). observed_delay_d 6.0 is the midpoint of the observed 5-7 d wait range.",
+      "evidence_date": "2024-06-01",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "node_id": "chk_panama",
+      "observed_delay_d": 6.0
+    }
+  ],
+  "source_document": "curated timeline, section 2 (retrieved 2026-10-20)",
+  "title": "Panama Canal drought, 2023-24",
+  "unresolved_timeline_nodes": "sea_colon, sea_savannah and sea_houston are named scenario nodes in the curated timeline; the dated rows name sea_houston only inside the joint Asia-US East Coast rerouting row, which was converted once (sea_newyork step) to avoid triple-counting one observation. No separate dated effect exists for sea_colon or sea_savannah in the source table."
+}

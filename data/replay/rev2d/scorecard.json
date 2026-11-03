@@ -1,0 +1,1730 @@
+{
+  "aggregate": {
+    "counts": {
+      "duplicate_steps": 1,
+      "genuine_misses": 2,
+      "input_steps": 12,
+      "non_seed_steps": 11,
+      "observed_steps": 23,
+      "ungradeable_steps": 0,
+      "unquantified_steps": 6
+    },
+    "coverage": {
+      "covered_count": 4,
+      "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+      "distinct_non_seed_nodes": 7,
+      "fraction": 0.571429,
+      "uncovered_count": 3
+    },
+    "delay_accuracy": {
+      "abs_error_sum_d": 11.63029,
+      "definition": "Delay accuracy is graded ONLY on non-seed steps where observed_delay_d > 0 (quantified) AND the node was predicted: HIT if the observed delay is within [0.5x, 2x] of the predicted delay for that node, else MISS. The predicted delay for a node is the FIRST-HIT delay: the delay_d of the node's first event in stream order, excluding delay-0 cost-channel leaves (the estimator the harness backtest.py uses; an legacy grading used the maximum delay_d over all events at the node, so its figures are not comparable \u2014 a legacy-grading comparison computed on the same runs is published alongside the headline). Grading is deduplicated BY NODE: one graded step per node per replay, the earliest observed step for the node (first in dataset order); later quantified steps at an already-graded node are duplicates \u2014 counted, listed, and in no denominator. mean_abs_error_d is the mean of |observed - predicted| over the graded steps only. Quantified non-seed steps at unpredicted nodes have no predicted delay to grade against: they are genuine misses, listed individually, and excluded from the mean. Steps with observed_delay_d = 0 are 'effect observed, delay unquantified': counted in node coverage, excluded from delay grading, and listed.",
+      "graded_steps": 3,
+      "hit_fraction": 0.666667,
+      "hits": 2,
+      "mean_abs_error_d": 3.876763,
+      "misses": 1
+    },
+    "false_positives": {
+      "by_replay": {
+        "panama_2023_24": [
+          "sea_colon"
+        ],
+        "red_sea_2024": [
+          "sea_jeddah",
+          "sea_portsaid"
+        ]
+      },
+      "count": 3,
+      "definition": "False positives = nodes the engine predicted (cost-only nodes excluded \u2014 see cost_leaf_exclusion) with no observed effect at all; an observed step at the seed node counts as an observed effect for this purpose. Listed by node; they are not graded as misses of observed steps."
+    },
+    "legacy_grading": {
+      "coverage_covered": 6,
+      "coverage_distinct_non_seed_nodes": 7,
+      "coverage_fraction": 0.857143,
+      "delay_graded_steps": 5,
+      "delay_hits": 3,
+      "false_positives": 29,
+      "label": "Legacy grading rules (max-over-events estimator, no node dedupe, delay-0 cost leaves counted as predictions) computed on the SAME engine runs \u2014 for continuity only; NOT comparable to the headline grading.",
+      "mean_abs_error_d": 5.172539
+    },
+    "replays": 2,
+    "statistics": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.571429,
+        "covered_count": 4,
+        "precision": 0.25,
+        "predicted_count": 16
+      },
+      "coverage_ci95_clopper_pearson": [
+        0.184052,
+        0.901012
+      ],
+      "delay_hit_rate_ci95_clopper_pearson": [
+        0.094299,
+        0.991596
+      ],
+      "engine_precision": 0.571429,
+      "engine_predicted_non_seed_nodes": 7,
+      "method": "Confidence intervals are exact Clopper-Pearson 95% intervals for a binomial proportion, computed on the pooled counts (coverage: covered / distinct non-seed observed nodes; delay hit rate: hits / graded steps). Baseline: a naive directed k-hop neighbourhood of the seed node over the graph's directed edges, expanded whole hop levels at a time until its non-seed node count first reaches the engine's predicted non-seed node count for the same replay (same events, same node budget); baseline coverage and precision (covered / predicted) are printed beside the engine's, per replay and pooled, and the scorecard states plainly when the engine does not beat the baseline on a metric.",
+      "small_sample": {
+        "distinct_non_seed_nodes": 7,
+        "graded_steps": 3,
+        "observed_steps": 23,
+        "one_graded_step_worth_hit_rate_points": 33.333333,
+        "one_node_worth_coverage_points": 14.285714
+      }
+    }
+  },
+  "artifact": "supermap-scorecard-engine-rev2-profile-d",
+  "calibration": {
+    "derived_digest": "00a286d5c4270716bb993c30c88a1daae4303ae6971cecc0cc937d8884124e38",
+    "fallback": {
+      "chokepoint": 1.132043,
+      "port": 1.28336
+    },
+    "places_with_series": 110,
+    "profile": "rev2c",
+    "registry_hash": "e3edc20d2ccd60dc97db1e7cfbdb2ff7b19b81b2ceea122f71e779783822ff2e",
+    "source_payload_sha256": "ce4822b869553b8d701b9b2331d49311b1d26afbadff0f4667590260b3fc7eb8"
+  },
+  "engine_label": "ENGINE REV 2 \u00b7 PROFILE d",
+  "engine_rev": 2,
+  "genuine_misses": [
+    {
+      "class": "genuine",
+      "delay_basis": "modeled_midpoint_of_observed_range",
+      "effect": "Asia to US East Coast container services rerouted via Suez (+7-10 days) during the peak-crisis window. observed_delay_d 8.5 is the midpoint of the observed +7-10 d range.",
+      "evidence_date": "2024-02-29",
+      "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+      "index": 7,
+      "node_id": "sea_newyork",
+      "observed_delay_d": 8.5,
+      "predicted_delay_d": null,
+      "reason": "node not predicted: genuine miss (no predicted delay to window-grade; excluded from mean_abs_error_d)",
+      "replay_id": "panama_2023_24",
+      "result": "miss"
+    },
+    {
+      "class": "genuine",
+      "delay_basis": "modeled_from_distance",
+      "delay_error_d": 5.016846,
+      "effect": "Spot container rates roughly doubled on Shanghai-Rotterdam between 1 Dec 2023 and 1 Feb 2024 (window end date). observed_delay_d is the MODELED one-way transit added by the Cape reroute (census: bypass +~3,000-6,000 nm), not a figure stated by the source.",
+      "evidence_date": "2024-02-01",
+      "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+      "index": 3,
+      "node_id": "sea_rotterdam",
+      "observed_delay_d": 10.0,
+      "predicted_delay_d": 4.983154,
+      "reason": "observed 10.0 outside window [2.491577, 9.966308]",
+      "replay_id": "red_sea_2024",
+      "result": "miss",
+      "window": [
+        2.491577,
+        9.966308
+      ]
+    }
+  ],
+  "graph": {
+    "edges": 536,
+    "hash": "49b90bcc9efd844c6a90c92ed20718220c3239eb22b4a773d944be326bce53c3",
+    "nodes": 200,
+    "version": "1.0"
+  },
+  "honesty_caveats": [
+    "Edge shares are MODELED allocations pending re-derivation from PortWatch/Comtrade/CPPI/LSCI: the graph's edge capacity_share and transit values were allocated by the dataset builders, not extracted from those sources, so every predicted delay inherits that modeling choice.",
+    "Predicted delays scale with the effective disruption duration: the duration used for each replay is the dataset's stated expected_duration_d, mapped explicitly (see each replay's section). For Red Sea 2024 that stated duration (559 d) is an observed lower bound \u2014 days from onset to the last timeline observation, with the disruption still unresolved \u2014 not a forecast.",
+    "LA 2021 capacity_loss is a MODELED assumption, not a sourced figure (see the LA section, which prints the full basis alongside the LA numbers).",
+    "This decomposed presentation refines the raw window-rule rate; it does not change the grading rule v1 used for live Ledger entries.",
+    "LA 2021 is doubly in-sample: its capacity_loss input (0.78) is derived from the same MESocal 10 Nov 2021 snapshot that supplies the LA observed steps' labels, so the LA run is partly graded against its own input source.",
+    "DEFERRED: the full 25-event protocol v2 is a roadmap item and has NOT been run. This scorecard grades the 3 shipped replay episodes only; no 25-event held-out protocol stands behind any figure printed here.",
+    "Engine model (ENGINE REV 2, server/engine2): a stock-and-flow world model. Places hold a queue stock and a cover stock and serve at mu_max x (1 - loss); legs are FIFO delay lines of base_transit_d; wait = backlog / service rate (Little) evaluated on the cumulative curves; nothing above queue_cap is dropped (spillback holds it at the sender); blocked flow is re-routed onto the authored bypass legs up to their headroom; cover days against the shortfall rate give stockout times; sea flows are in vessel-calls/day (ports: TEU/day / teu_per_call), removing engine v1's mixed-unit sum. Every non-identity number is a registered plug-in (server/engine2/plugins.py); mu_max = 1.3 x baseline load, the 7-day cover and the cross-layer equivalence are TEMPORARY placeholders.",
+    "Routes table (opt-in, graph services layer): graph sea legs that the selected service rotations serve through chokepoints are replaced by chains through those chokepoints (same attributed flow), and Suez / Bab el-Mandeb failures can reroute along the Cape with added days = route length difference. Rotations are SOURCED announcements (carrier releases and trade press, 23 pre-crisis rotations on the default selection), not proof of sailed routes; chokepoint placement beyond a printed marker and the Cape alternative's days are MODELLED. Only graph legs that a rotation serves through a chokepoint are bound; origin-destination pairs that are not graph legs carry no volume and are not modelled.",
+    "Calibration profile rev2c (server/engine2/calibration.py, registry in server/engine2/plugins_cal.py): (1) peak service rate mu_max per place = P99 / median of the 7-day mean of IMF PortWatch daily counts over 2022-07-01..2023-10-29, replacing the 1.3 x baseline guess for every sea place with a series (ground and air hubs keep 1.3, TEMPORARY); a daily call or transit count is a demonstrated rate, not a design capacity; (2) the Los Angeles / Long Beach terminal cover is 4.0 d (Port of Los Angeles dwell-time release), every other place keeps the graph's placeholder cover (TEMPORARY); (3) an inventory event's delay_d is the peak cumulative arrival deficit in days (it was the length of the shortfall). The Cape detour days, layer equivalence, mode-shift fractions, no-restock, route foresight and the cost reference remain TEMPORARY. There is no Panama alternative route in the model: a long Panama cut keeps queueing.",
+    "Profile d (server/engine2/profile_d.py, registry in server/engine2/plugins_d.py) on top of the rev2c calibration: (1) every sea leg of the graph sails at lane distance / service speed (MARNET network via searoute-py; BIMCO / DVZ speeds) where the leg has real geometry, the rest keep the graph's transit days; (2) gates: every place is a FIFO server with a bounded anchorage that also refuses exogenous through-traffic above queue_cap; Panama has fixed slots with a booked / unbooked split (ACP advisory A-04-2024), Suez has convoy windows (Kuehne+Nagel); (3) route choice is graded (logistic in the time advantage, scale TEMPORARY) and uses the lane that avoids a gate (Suez and Bab el-Mandeb unconditionally, as in rev 2; any other gate only where a selected service witnesses it, i.e. Panama -> Suez for Asia -> US East Coast) and port substitution along service rotations; (4) rotation recovery: a late arrival is carried to the vessel's next calls less a TEMPORARY absorbed fraction; (5) SHELL places route and propagate but mint no event. The logistic scale, the absorbed fraction, the speed-class boundary, the feeder limit and the ground / air mu_max ratios remain TEMPORARY. The Panama -> Suez alternative is witnessed by two Suez-sailed Asia -> US East Coast rotations; that they serve the pairs the routes table puts on Panama is MODELLED.",
+    "The replay episodes are in-sample for this engine revision: it was configured with sight of them, and one definition was adopted after viewing a run on them. No plug-in value was set or changed to move a replay number; plug-in defaults come from the published sources cited in each plug-in's registry entry or from pinned graph/PortWatch files. The adopted definition: an inventory (stockout) event reports the length of the supply gap as delay_d, because it reported 0.0 d and could never be window-graded. This is therefore an in-sample check on the same three episodes, not a held-out evaluation.",
+    "IN-SAMPLE: the two episodes (panama_2023_24, red_sea_2024) are the in-sample set every engine was checked against, and both are TRAIN in VAL-01. la_2021 is a TEST episode of VAL-01 and was not run for this card. Pre-registered configuration: see preregistration.md; the sealed TEST split was not touched by this card."
+  ],
+  "label": "BACKTEST ENGINE REV 2 \u00b7 PROFILE d",
+  "methodology": {
+    "cost_leaf_exclusion": "Cost-leaf exclusion: an event on the 'cost' channel with delay_d = 0 is a cost-pressure leaf, not a delay prediction. A node whose only predicted events are delay-0 cost leaves counts as NOT predicted: it earns no coverage credit and is not a false positive. Such nodes are listed per replay as cost-only nodes. Cost leaves never supply a node's first-hit delay.",
+    "delay_accuracy": "Delay accuracy is graded ONLY on non-seed steps where observed_delay_d > 0 (quantified) AND the node was predicted: HIT if the observed delay is within [0.5x, 2x] of the predicted delay for that node, else MISS. The predicted delay for a node is the FIRST-HIT delay: the delay_d of the node's first event in stream order, excluding delay-0 cost-channel leaves (the estimator the harness backtest.py uses; an legacy grading used the maximum delay_d over all events at the node, so its figures are not comparable \u2014 a legacy-grading comparison computed on the same runs is published alongside the headline). Grading is deduplicated BY NODE: one graded step per node per replay, the earliest observed step for the node (first in dataset order); later quantified steps at an already-graded node are duplicates \u2014 counted, listed, and in no denominator. mean_abs_error_d is the mean of |observed - predicted| over the graded steps only. Quantified non-seed steps at unpredicted nodes have no predicted delay to grade against: they are genuine misses, listed individually, and excluded from the mean. Steps with observed_delay_d = 0 are 'effect observed, delay unquantified': counted in node coverage, excluded from delay grading, and listed.",
+    "determinism": "This artifact embeds no timestamp (deliberate). Generating the scorecard twice from the same datasets and graph yields byte-identical scorecard.json and scorecard.md. Anchors: graph hash, per-dataset SHA-256 of the raw file bytes, per-replay run_id and event stream hash.",
+    "effective_spec": "Each replay is run on an effective disruption built from the dataset's stated spec: the stated capacity_loss is passed explicitly and the dataset's expected_duration_d (the disruption spec field) is mapped to the engine's duration_d. Every mapping or default substitution is recorded in the replay's disclosures and printed alongside its numbers; the duration used and the capacity_loss basis are stated for every replay. No silent defaults.",
+    "evidence_rule": "Evidence rule, enforced in this grading path: an observed step with no evidence source (no evidence_source / evidence_url / evidence provenance) is UNGRADEABLE \u2014 never a hit, never a miss, and never silently dropped. Ungradeable steps are counted and listed as their own line per replay and in the aggregate, and are excluded from node coverage, delay grading, and the false-positive comparison (an evidence-less observation is not an observed effect), so every denominator covers evidence-backed steps only.",
+    "false_positives": "False positives = nodes the engine predicted (cost-only nodes excluded \u2014 see cost_leaf_exclusion) with no observed effect at all; an observed step at the seed node counts as an observed effect for this purpose. Listed by node; they are not graded as misses of observed steps.",
+    "miss_classification": "Every observed step carries exactly one class: 'ungradeable' (no evidence source \u2014 see evidence_rule; checked first, before any other class), 'seed-input' (at the disruption node), 'unquantified' (non-seed, observed_delay_d = 0), 'duplicate' (non-seed, quantified, at a node already graded in this replay \u2014 see the dedupe rule in delay_accuracy), or 'genuine' (non-seed, quantified, first step at its node). Genuine misses \u2014 graded steps outside the [0.5x, 2x] window plus quantified steps at unpredicted nodes \u2014 are listed individually with observed vs predicted values.",
+    "node_coverage": "Node coverage = (distinct non-seed nodes with at least one observed effect that the engine predicted) / (distinct non-seed nodes with at least one observed effect). 'Predicted' means at least one event at the node that is not a delay-0 cost-channel leaf (see cost_leaf_exclusion). Covered and uncovered nodes are listed.",
+    "seed_exclusion": "Observed steps at the replay disruption's own node are the scenario input, not predictions. They are excluded from all grading and are counted and listed separately as input steps.",
+    "statistics": "Confidence intervals are exact Clopper-Pearson 95% intervals for a binomial proportion, computed on the pooled counts (coverage: covered / distinct non-seed observed nodes; delay hit rate: hits / graded steps). Baseline: a naive directed k-hop neighbourhood of the seed node over the graph's directed edges, expanded whole hop levels at a time until its non-seed node count first reaches the engine's predicted non-seed node count for the same replay (same events, same node budget); baseline coverage and precision (covered / predicted) are printed beside the engine's, per replay and pooled, and the scorecard states plainly when the engine does not beat the baseline on a metric."
+  },
+  "plugin_registry_hash": "3dd94e96c02485aa894cf24a8e23ed19de707a0a4792030e9583ff9035dc2090",
+  "previous_published": {
+    "coverage_covered": 9,
+    "coverage_distinct_non_seed_nodes": 10,
+    "delay_graded_steps": 5,
+    "delay_hits": 3,
+    "false_positives": 52,
+    "label": "As published for the original engine (original grading: max-over-events estimator, no node dedupe, delay-0 cost leaves counted as predictions)",
+    "mean_abs_error_d": 7.68
+  },
+  "profile": "rev2d",
+  "profile_digest": "4b0b0e79ab6a7d508ee6c9010aafefc9972432cdef8688bc894d8130073ee373",
+  "replays": [
+    {
+      "baseline_k_hop": {
+        "budget_nodes": 2,
+        "coverage_fraction": 0.333333,
+        "covered_count": 1,
+        "hops": 1,
+        "method": "Confidence intervals are exact Clopper-Pearson 95% intervals for a binomial proportion, computed on the pooled counts (coverage: covered / distinct non-seed observed nodes; delay hit rate: hits / graded steps). Baseline: a naive directed k-hop neighbourhood of the seed node over the graph's directed edges, expanded whole hop levels at a time until its non-seed node count first reaches the engine's predicted non-seed node count for the same replay (same events, same node budget); baseline coverage and precision (covered / predicted) are printed beside the engine's, per replay and pooled, and the scorecard states plainly when the engine does not beat the baseline on a metric.",
+        "precision": 0.166667,
+        "predicted_count": 6,
+        "predicted_nodes": [
+          "sea_balboa",
+          "sea_colon",
+          "sea_houston",
+          "sea_newyork",
+          "sea_savannah",
+          "sea_shanghai"
+        ]
+      },
+      "capacity_loss_basis": {
+        "derivation": "Derived by arithmetic only on the two sourced ACP slot counts: normal schedule ~36 transits/day, crisis minimum 18/day from 1 Feb 2024; capacity_loss = 1 - 18/36 = 0.5. No conversion factor involved.",
+        "kind": "derived",
+        "source": "Panama Canal Authority (ACP) Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought"
+      },
+      "capacity_loss_used": 0.5,
+      "cost_only_predicted_nodes": [
+        "sea_antwerp",
+        "sea_balboa",
+        "sea_cartagena",
+        "sea_houston",
+        "sea_newyork",
+        "sea_portsaid",
+        "sea_rotterdam",
+        "sea_savannah",
+        "sea_shanghai"
+      ],
+      "counts": {
+        "duplicate_steps": 0,
+        "genuine_misses": 1,
+        "genuine_steps": 2,
+        "input_steps": 9,
+        "non_seed_steps": 3,
+        "observed_steps": 12,
+        "ungradeable_steps": 0,
+        "unquantified_steps": 1
+      },
+      "coverage": {
+        "covered_count": 1,
+        "covered_nodes": [
+          "chk_suez"
+        ],
+        "definition": "Node coverage = (distinct non-seed nodes with at least one observed effect that the engine predicted) / (distinct non-seed nodes with at least one observed effect). 'Predicted' means at least one event at the node that is not a delay-0 cost-channel leaf (see cost_leaf_exclusion). Covered and uncovered nodes are listed.",
+        "distinct_non_seed_nodes": 3,
+        "fraction": 0.333333,
+        "uncovered_count": 2,
+        "uncovered_nodes": [
+          "sea_losangeles",
+          "sea_newyork"
+        ]
+      },
+      "dataset_file": "panama_2023_24.json",
+      "dataset_sha256": "9798efd698c2ed1afd40b5fe89b480f28ef1cda3432526f5a58e2cd482666a6a",
+      "delay_accuracy": {
+        "abs_error_sum_d": 0.881039,
+        "definition": "Delay accuracy is graded ONLY on non-seed steps where observed_delay_d > 0 (quantified) AND the node was predicted: HIT if the observed delay is within [0.5x, 2x] of the predicted delay for that node, else MISS. The predicted delay for a node is the FIRST-HIT delay: the delay_d of the node's first event in stream order, excluding delay-0 cost-channel leaves (the estimator the harness backtest.py uses; an legacy grading used the maximum delay_d over all events at the node, so its figures are not comparable \u2014 a legacy-grading comparison computed on the same runs is published alongside the headline). Grading is deduplicated BY NODE: one graded step per node per replay, the earliest observed step for the node (first in dataset order); later quantified steps at an already-graded node are duplicates \u2014 counted, listed, and in no denominator. mean_abs_error_d is the mean of |observed - predicted| over the graded steps only. Quantified non-seed steps at unpredicted nodes have no predicted delay to grade against: they are genuine misses, listed individually, and excluded from the mean. Steps with observed_delay_d = 0 are 'effect observed, delay unquantified': counted in node coverage, excluded from delay grading, and listed.",
+        "graded_steps": 1,
+        "hit_fraction": 1.0,
+        "hits": 1,
+        "mean_abs_error_d": 0.881039,
+        "misses": 0,
+        "predicted_delay_choice": "first-hit delay_d: the node's first event in stream order, excluding delay-0 cost leaves",
+        "quantified_unpredicted_steps": [
+          {
+            "class": "genuine",
+            "delay_basis": "modeled_midpoint_of_observed_range",
+            "effect": "Asia to US East Coast container services rerouted via Suez (+7-10 days) during the peak-crisis window. observed_delay_d 8.5 is the midpoint of the observed +7-10 d range.",
+            "evidence_date": "2024-02-29",
+            "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+            "index": 7,
+            "node_id": "sea_newyork",
+            "observed_delay_d": 8.5,
+            "predicted_delay_d": null,
+            "reason": "node not predicted: genuine miss (no predicted delay to window-grade; excluded from mean_abs_error_d)",
+            "result": "miss"
+          }
+        ],
+        "steps": [
+          {
+            "class": "genuine",
+            "delay_basis": "modeled_midpoint_of_observed_range",
+            "delay_error_d": 0.881039,
+            "effect": "Suez used as the substitute route for Asia-US East Coast services (+7-10 days) - while Suez itself was constrained by the Red Sea crisis from Dec 2023. observed_delay_d is the midpoint of the observed range.",
+            "evidence_date": "2024-02-29",
+            "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+            "index": 8,
+            "node_id": "chk_suez",
+            "observed_delay_d": 8.5,
+            "predicted_delay_d": 7.618961,
+            "reason": "observed 8.5 within window [3.8094805, 15.237922]",
+            "result": "hit",
+            "window": [
+              3.80948,
+              15.237922
+            ]
+          }
+        ]
+      },
+      "disclosures": [
+        {
+          "action": "mapped",
+          "field": "duration_d",
+          "from_field": "expected_duration_d",
+          "note": "replay specs carry the field expected_duration_d; the engine reads duration_d \u2014 mapped explicitly so the engine's silent 7.0 d default cannot fire",
+          "value": 215.0
+        },
+        {
+          "action": "default_substituted",
+          "field": "shape",
+          "note": "dataset states no shape; engine default passed explicitly",
+          "value": "step"
+        }
+      ],
+      "disruption_as_stated": {
+        "capacity_loss": 0.5,
+        "capacity_loss_basis": {
+          "derivation": "Derived by arithmetic only on the two sourced ACP slot counts: normal schedule ~36 transits/day, crisis minimum 18/day from 1 Feb 2024; capacity_loss = 1 - 18/36 = 0.5. No conversion factor involved.",
+          "kind": "derived",
+          "source": "Panama Canal Authority (ACP) Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought"
+        },
+        "expected_duration_d": 215,
+        "kind": "capacity_cut",
+        "node_id": "chk_panama",
+        "severity": 4,
+        "started_at": "2023-10-30T00:00:00Z"
+      },
+      "disruption_notes": "capacity_loss 0.5 = ACP slot schedule 36/day normal to 18/day minimum (Feb 2024). expected_duration_d 215 = 2023-10-30 (ACP advisory) to 2024-06-01 (slots restored to 32/day, ~89% of normal). Queue/draft figures rest partly on the Ballast Markets secondary compilation of ACP/press reporting - re-verification against ACP advisories and IMF PortWatch is an open item.",
+      "duplicate_steps": [],
+      "duration_source": "dataset expected_duration_d mapped to engine duration_d",
+      "duration_used_d": 215.0,
+      "effective_disruption": {
+        "capacity_loss": 0.5,
+        "duration_d": 215.0,
+        "kind": "capacity_cut",
+        "node_id": "chk_panama",
+        "shape": "step",
+        "started_at": "2023-10-30T00:00:00Z"
+      },
+      "event_count": 14,
+      "false_positives": {
+        "count": 1,
+        "definition": "False positives = nodes the engine predicted (cost-only nodes excluded \u2014 see cost_leaf_exclusion) with no observed effect at all; an observed step at the seed node counts as an observed effect for this purpose. Listed by node; they are not graded as misses of observed steps.",
+        "nodes": [
+          "sea_colon"
+        ]
+      },
+      "genuine_misses": [
+        {
+          "class": "genuine",
+          "delay_basis": "modeled_midpoint_of_observed_range",
+          "effect": "Asia to US East Coast container services rerouted via Suez (+7-10 days) during the peak-crisis window. observed_delay_d 8.5 is the midpoint of the observed +7-10 d range.",
+          "evidence_date": "2024-02-29",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 7,
+          "node_id": "sea_newyork",
+          "observed_delay_d": 8.5,
+          "predicted_delay_d": null,
+          "reason": "node not predicted: genuine miss (no predicted delay to window-grade; excluded from mean_abs_error_d)",
+          "result": "miss"
+        }
+      ],
+      "id": "panama_2023_24",
+      "input_steps": [
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "~135 ships waiting to transit (~50% above the normal 80-85).",
+          "evidence_date": "2023-10-25",
+          "evidence_source": "Ballast Markets compilation of ACP/press reporting: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 0,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "ACP advisory sets the progressive slot-reduction schedule: 24/day (7-30 Nov 2023), 22/day (Dec 2023), 20/day (Jan 2024), 18/day (from 1 Feb 2024), vs a normal ~36/day.",
+          "evidence_date": "2023-10-30",
+          "evidence_source": "ACP Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+          "index": 1,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Slot-auction premiums average ~$2.5M per slot (range $1.5-4M) for 2-4 auctioned slots/day (Nov-Feb peak window; cost channel).",
+          "evidence_date": "2023-11-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 2,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Neopanamax maximum draft limited to 44 ft (from a normal ~50 ft), forcing light-loading of the largest container ships and LNG carriers.",
+          "evidence_date": "2023-11-30",
+          "evidence_source": "DB Group summary of ACP measures: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+          "index": 3,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Gatun Lake at 79.5 ft - lowest January level on record, ~6 ft below normal.",
+          "evidence_date": "2024-01-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 4,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Daily transit slots reach the crisis minimum: 18/day (a ~50% capacity cut).",
+          "evidence_date": "2024-02-01",
+          "evidence_source": "ACP schedule via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+          "index": 5,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "modeled_midpoint_of_observed_range",
+          "effect": "Queues of 135-150 ships; average waits 15-20 days, some vessels 25+ days (Nov 2023-Feb 2024 peak window). observed_delay_d 17.5 is the midpoint of the observed 15-20 d wait range.",
+          "evidence_date": "2024-02-29",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 6,
+          "node_id": "chk_panama",
+          "observed_delay_d": 17.5,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Recovery begins: slots raised to 22/day (Mar), then 24 (1 Apr), 27 (1 May).",
+          "evidence_date": "2024-03-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 10,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "modeled_midpoint_of_observed_range",
+          "effect": "Slots restored to 32/day (~89% of normal); Gatun Lake back to ~85.2 ft by 15 Jun; queues near normal (~88 ships in May, waits 5-7 days). observed_delay_d 6.0 is the midpoint of the observed 5-7 d wait range.",
+          "evidence_date": "2024-06-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 11,
+          "node_id": "chk_panama",
+          "observed_delay_d": 6.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        }
+      ],
+      "legacy_grading": {
+        "coverage_covered": 2,
+        "coverage_distinct_non_seed_nodes": 3,
+        "coverage_fraction": 0.666667,
+        "delay_graded_steps": 2,
+        "delay_hits": 1,
+        "false_positives": 9,
+        "mean_abs_error_d": 4.69052
+      },
+      "precision": 0.5,
+      "predicted_non_seed_count": 2,
+      "predicted_unobserved": [
+        "sea_colon"
+      ],
+      "run_id": "scorecard_panama_2023_24",
+      "seed_node": "chk_panama",
+      "steps": [
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "~135 ships waiting to transit (~50% above the normal 80-85).",
+          "evidence_date": "2023-10-25",
+          "evidence_source": "Ballast Markets compilation of ACP/press reporting: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 0,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "ACP advisory sets the progressive slot-reduction schedule: 24/day (7-30 Nov 2023), 22/day (Dec 2023), 20/day (Jan 2024), 18/day (from 1 Feb 2024), vs a normal ~36/day.",
+          "evidence_date": "2023-10-30",
+          "evidence_source": "ACP Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+          "index": 1,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Slot-auction premiums average ~$2.5M per slot (range $1.5-4M) for 2-4 auctioned slots/day (Nov-Feb peak window; cost channel).",
+          "evidence_date": "2023-11-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 2,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Neopanamax maximum draft limited to 44 ft (from a normal ~50 ft), forcing light-loading of the largest container ships and LNG carriers.",
+          "evidence_date": "2023-11-30",
+          "evidence_source": "DB Group summary of ACP measures: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+          "index": 3,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Gatun Lake at 79.5 ft - lowest January level on record, ~6 ft below normal.",
+          "evidence_date": "2024-01-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 4,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Daily transit slots reach the crisis minimum: 18/day (a ~50% capacity cut).",
+          "evidence_date": "2024-02-01",
+          "evidence_source": "ACP schedule via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+          "index": 5,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "modeled_midpoint_of_observed_range",
+          "effect": "Queues of 135-150 ships; average waits 15-20 days, some vessels 25+ days (Nov 2023-Feb 2024 peak window). observed_delay_d 17.5 is the midpoint of the observed 15-20 d wait range.",
+          "evidence_date": "2024-02-29",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 6,
+          "node_id": "chk_panama",
+          "observed_delay_d": 17.5,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "genuine",
+          "delay_basis": "modeled_midpoint_of_observed_range",
+          "effect": "Asia to US East Coast container services rerouted via Suez (+7-10 days) during the peak-crisis window. observed_delay_d 8.5 is the midpoint of the observed +7-10 d range.",
+          "evidence_date": "2024-02-29",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 7,
+          "node_id": "sea_newyork",
+          "observed_delay_d": 8.5,
+          "predicted_delay_d": null,
+          "reason": "node not predicted: genuine miss (no predicted delay to window-grade; excluded from mean_abs_error_d)",
+          "result": "miss"
+        },
+        {
+          "class": "genuine",
+          "delay_basis": "modeled_midpoint_of_observed_range",
+          "delay_error_d": 0.881039,
+          "effect": "Suez used as the substitute route for Asia-US East Coast services (+7-10 days) - while Suez itself was constrained by the Red Sea crisis from Dec 2023. observed_delay_d is the midpoint of the observed range.",
+          "evidence_date": "2024-02-29",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 8,
+          "node_id": "chk_suez",
+          "observed_delay_d": 8.5,
+          "predicted_delay_d": 7.618961,
+          "reason": "observed 8.5 within window [3.8094805, 15.237922]",
+          "result": "hit",
+          "window": [
+            3.80948,
+            15.237922
+          ]
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "US West Coast + rail land bridge used as a substitute for Asia-US East Coast flows during the peak-crisis window (substitution observed; no added-delay figure stated by the source). Some bulk carriers rerouted via Cape Horn (+18-21 days) - no graph node represents that leg.",
+          "evidence_date": "2024-02-29",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 9,
+          "node_id": "sea_losangeles",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": null,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was NOT predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Recovery begins: slots raised to 22/day (Mar), then 24 (1 Apr), 27 (1 May).",
+          "evidence_date": "2024-03-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 10,
+          "node_id": "chk_panama",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "modeled_midpoint_of_observed_range",
+          "effect": "Slots restored to 32/day (~89% of normal); Gatun Lake back to ~85.2 ft by 15 Jun; queues near normal (~88 ships in May, waits 5-7 days). observed_delay_d 6.0 is the midpoint of the observed 5-7 d wait range.",
+          "evidence_date": "2024-06-01",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 11,
+          "node_id": "chk_panama",
+          "observed_delay_d": 6.0,
+          "predicted_delay_d": 203.688554,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        }
+      ],
+      "stream_hash": "cb8a65da8de4e5184ecfd495ed65746507c39fcb725e6c7e3dc181b1b458bc2d",
+      "title": "Panama Canal drought, 2023-24",
+      "ungradeable_steps": [],
+      "unquantified_steps": [
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "US West Coast + rail land bridge used as a substitute for Asia-US East Coast flows during the peak-crisis window (substitution observed; no added-delay figure stated by the source). Some bulk carriers rerouted via Cape Horn (+18-21 days) - no graph node represents that leg.",
+          "evidence_date": "2024-02-29",
+          "evidence_source": "Ballast Markets compilation: https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/",
+          "index": 9,
+          "node_id": "sea_losangeles",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": null,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was NOT predicted",
+          "result": "unquantified"
+        }
+      ]
+    },
+    {
+      "baseline_k_hop": {
+        "budget_nodes": 5,
+        "coverage_fraction": 0.75,
+        "covered_count": 3,
+        "hops": 3,
+        "method": "Confidence intervals are exact Clopper-Pearson 95% intervals for a binomial proportion, computed on the pooled counts (coverage: covered / distinct non-seed observed nodes; delay hit rate: hits / graded steps). Baseline: a naive directed k-hop neighbourhood of the seed node over the graph's directed edges, expanded whole hop levels at a time until its non-seed node count first reaches the engine's predicted non-seed node count for the same replay (same events, same node budget); baseline coverage and precision (covered / predicted) are printed beside the engine's, per replay and pooled, and the scorecard states plainly when the engine does not beat the baseline on a metric.",
+        "precision": 0.3,
+        "predicted_count": 10,
+        "predicted_nodes": [
+          "chk_capeofgoodhope",
+          "chk_suez",
+          "sea_beirut",
+          "sea_capetown",
+          "sea_damietta",
+          "sea_jeddah",
+          "sea_marsaxlokk",
+          "sea_piraeus",
+          "sea_portsaid",
+          "sea_rotterdam"
+        ]
+      },
+      "capacity_loss_basis": {
+        "derivation": "The loss figure is stated by the source: gross tonnage of ships entering the Gulf of Aden fell >70% between the 1st half of Dec 2023 and the 1st half of Feb 2024; taken as 0.7 (the stated floor). Corroborated in the same timeline by Suez transits -70% by Jun 2024 (UNCTAD Review of Maritime Transport 2024). No arithmetic conversion applied. Container-ship capacity fell further (-92% by Jun 2024); 0.7 is the conservative all-shipping figure.",
+        "kind": "sourced",
+        "source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/"
+      },
+      "capacity_loss_used": 0.7,
+      "cost_only_predicted_nodes": [
+        "gnd_duisburg",
+        "sea_antwerp",
+        "sea_beirut",
+        "sea_buenosaires",
+        "sea_busan",
+        "sea_capetown",
+        "sea_damietta",
+        "sea_dublin",
+        "sea_felixstowe",
+        "sea_hamburg",
+        "sea_marsaxlokk",
+        "sea_montreal",
+        "sea_newyork",
+        "sea_ningbo",
+        "sea_piraeus",
+        "sea_qingdao",
+        "sea_santos",
+        "sea_shanghai",
+        "sea_singapore"
+      ],
+      "counts": {
+        "duplicate_steps": 1,
+        "genuine_misses": 1,
+        "genuine_steps": 2,
+        "input_steps": 3,
+        "non_seed_steps": 8,
+        "observed_steps": 11,
+        "ungradeable_steps": 0,
+        "unquantified_steps": 5
+      },
+      "coverage": {
+        "covered_count": 3,
+        "covered_nodes": [
+          "chk_capeofgoodhope",
+          "chk_suez",
+          "sea_rotterdam"
+        ],
+        "definition": "Node coverage = (distinct non-seed nodes with at least one observed effect that the engine predicted) / (distinct non-seed nodes with at least one observed effect). 'Predicted' means at least one event at the node that is not a delay-0 cost-channel leaf (see cost_leaf_exclusion). Covered and uncovered nodes are listed.",
+        "distinct_non_seed_nodes": 4,
+        "fraction": 0.75,
+        "uncovered_count": 1,
+        "uncovered_nodes": [
+          "sea_shanghai"
+        ]
+      },
+      "dataset_file": "red_sea_2024.json",
+      "dataset_sha256": "79e86cb5945d4b9b9871c6064a12799fe2a9a8ba998f533e8f459328b50d2def",
+      "delay_accuracy": {
+        "abs_error_sum_d": 10.749251,
+        "definition": "Delay accuracy is graded ONLY on non-seed steps where observed_delay_d > 0 (quantified) AND the node was predicted: HIT if the observed delay is within [0.5x, 2x] of the predicted delay for that node, else MISS. The predicted delay for a node is the FIRST-HIT delay: the delay_d of the node's first event in stream order, excluding delay-0 cost-channel leaves (the estimator the harness backtest.py uses; an legacy grading used the maximum delay_d over all events at the node, so its figures are not comparable \u2014 a legacy-grading comparison computed on the same runs is published alongside the headline). Grading is deduplicated BY NODE: one graded step per node per replay, the earliest observed step for the node (first in dataset order); later quantified steps at an already-graded node are duplicates \u2014 counted, listed, and in no denominator. mean_abs_error_d is the mean of |observed - predicted| over the graded steps only. Quantified non-seed steps at unpredicted nodes have no predicted delay to grade against: they are genuine misses, listed individually, and excluded from the mean. Steps with observed_delay_d = 0 are 'effect observed, delay unquantified': counted in node coverage, excluded from delay grading, and listed.",
+        "graded_steps": 2,
+        "hit_fraction": 0.5,
+        "hits": 1,
+        "mean_abs_error_d": 5.374626,
+        "misses": 1,
+        "predicted_delay_choice": "first-hit delay_d: the node's first event in stream order, excluding delay-0 cost leaves",
+        "quantified_unpredicted_steps": [],
+        "steps": [
+          {
+            "class": "genuine",
+            "delay_basis": "modeled_from_distance",
+            "delay_error_d": 5.016846,
+            "effect": "Spot container rates roughly doubled on Shanghai-Rotterdam between 1 Dec 2023 and 1 Feb 2024 (window end date). observed_delay_d is the MODELED one-way transit added by the Cape reroute (census: bypass +~3,000-6,000 nm), not a figure stated by the source.",
+            "evidence_date": "2024-02-01",
+            "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+            "index": 3,
+            "node_id": "sea_rotterdam",
+            "observed_delay_d": 10.0,
+            "predicted_delay_d": 4.983154,
+            "reason": "observed 10.0 outside window [2.491577, 9.966308]",
+            "result": "miss",
+            "window": [
+              2.491577,
+              9.966308
+            ]
+          },
+          {
+            "class": "genuine",
+            "delay_basis": "modeled_from_distance",
+            "delay_error_d": 5.732405,
+            "effect": "Cape of Good Hope arrivals up +85% gross tonnage (7-day moving average, first week of Mar 2024) vs first half of Dec 2023; containership arrivals at the Cape up +328%. observed_delay_d is the MODELED one-way transit added by the Cape reroute, not a figure stated by the source.",
+            "evidence_date": "2024-03-01",
+            "evidence_source": "UNCTAD based on Clarksons Research, via Africa Ports: https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+            "index": 5,
+            "node_id": "chk_capeofgoodhope",
+            "observed_delay_d": 10.0,
+            "predicted_delay_d": 15.732405,
+            "reason": "observed 10.0 within window [7.8662025, 31.46481]",
+            "result": "hit",
+            "window": [
+              7.866202,
+              31.46481
+            ]
+          }
+        ]
+      },
+      "disclosures": [
+        {
+          "action": "mapped",
+          "field": "duration_d",
+          "from_field": "expected_duration_d",
+          "note": "replay specs carry the field expected_duration_d; the engine reads duration_d \u2014 mapped explicitly so the engine's silent 7.0 d default cannot fire",
+          "value": 559.0
+        },
+        {
+          "action": "default_substituted",
+          "field": "shape",
+          "note": "dataset states no shape; engine default passed explicitly",
+          "value": "step"
+        }
+      ],
+      "disruption_as_stated": {
+        "capacity_loss": 0.7,
+        "capacity_loss_basis": {
+          "derivation": "The loss figure is stated by the source: gross tonnage of ships entering the Gulf of Aden fell >70% between the 1st half of Dec 2023 and the 1st half of Feb 2024; taken as 0.7 (the stated floor). Corroborated in the same timeline by Suez transits -70% by Jun 2024 (UNCTAD Review of Maritime Transport 2024). No arithmetic conversion applied. Container-ship capacity fell further (-92% by Jun 2024); 0.7 is the conservative all-shipping figure.",
+          "kind": "sourced",
+          "source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/"
+        },
+        "expected_duration_d": 559,
+        "kind": "capacity_cut",
+        "node_id": "chk_babelmandeb",
+        "severity": 5,
+        "started_at": "2023-11-19T00:00:00Z"
+      },
+      "disruption_notes": "capacity_loss 0.7 = observed gross-tonnage fall through the Gulf of Aden (>70% by mid-Feb 2024, UNCTAD); container-ship capacity fell further (-92% by Jun 2024). expected_duration_d 559 = days from 2023-11-19 to the last timeline observation (2025-05-31, Suez tonnage still ~70% below 2023) - an observed lower bound, not a forecast; the disruption had not resolved in the source timeline.",
+      "duplicate_steps": [
+        {
+          "class": "duplicate",
+          "delay_basis": "modeled_from_distance",
+          "effect": "Cape of Good Hope arrivals +89% (by Jun 2024). Median Asia-Europe round trip cost approx $1.0M via Suez vs $1.7M via the Cape. observed_delay_d is the MODELED one-way transit added by the Cape reroute, not a figure stated by the source.",
+          "evidence_date": "2024-06-30",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 7,
+          "node_id": "chk_capeofgoodhope",
+          "observed_delay_d": 10.0,
+          "predicted_delay_d": 15.732405,
+          "reason": "duplicate: node already graded in this replay (one graded step per node; the earliest observed step grades) \u2014 counted and listed, in no denominator",
+          "result": "duplicate"
+        }
+      ],
+      "duration_source": "dataset expected_duration_d mapped to engine duration_d",
+      "duration_used_d": 559.0,
+      "effective_disruption": {
+        "capacity_loss": 0.7,
+        "duration_d": 559.0,
+        "kind": "capacity_cut",
+        "node_id": "chk_babelmandeb",
+        "shape": "step",
+        "started_at": "2023-11-19T00:00:00Z"
+      },
+      "event_count": 30,
+      "false_positives": {
+        "count": 2,
+        "definition": "False positives = nodes the engine predicted (cost-only nodes excluded \u2014 see cost_leaf_exclusion) with no observed effect at all; an observed step at the seed node counts as an observed effect for this purpose. Listed by node; they are not graded as misses of observed steps.",
+        "nodes": [
+          "sea_jeddah",
+          "sea_portsaid"
+        ]
+      },
+      "genuine_misses": [
+        {
+          "class": "genuine",
+          "delay_basis": "modeled_from_distance",
+          "delay_error_d": 5.016846,
+          "effect": "Spot container rates roughly doubled on Shanghai-Rotterdam between 1 Dec 2023 and 1 Feb 2024 (window end date). observed_delay_d is the MODELED one-way transit added by the Cape reroute (census: bypass +~3,000-6,000 nm), not a figure stated by the source.",
+          "evidence_date": "2024-02-01",
+          "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+          "index": 3,
+          "node_id": "sea_rotterdam",
+          "observed_delay_d": 10.0,
+          "predicted_delay_d": 4.983154,
+          "reason": "observed 10.0 outside window [2.491577, 9.966308]",
+          "result": "miss",
+          "window": [
+            2.491577,
+            9.966308
+          ]
+        }
+      ],
+      "id": "red_sea_2024",
+      "input_steps": [
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Incident involving the car carrier Galaxy Leader in the Red Sea - first of a series of incidents that led carriers to avoid the corridor (crew held until 22 Jan 2025).",
+          "evidence_date": "2023-11-19",
+          "evidence_source": "AI Timeline compilation of the crisis chronology: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 0,
+          "node_id": "chk_babelmandeb",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 73.868748,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Gross tonnage of ships entering the Gulf of Aden fell >70% (1st half Dec 2023 to 1st half Feb 2024 window).",
+          "evidence_date": "2024-02-15",
+          "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+          "index": 4,
+          "node_id": "chk_babelmandeb",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 73.868748,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Container-ship capacity entering the Gulf of Aden -92% (by Jun 2024). Rerouting raised overall vessel demand by ~3% and container-ship demand by ~12% (UNCTAD via Splash247).",
+          "evidence_date": "2024-06-30",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 8,
+          "node_id": "chk_babelmandeb",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 73.868748,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        }
+      ],
+      "legacy_grading": {
+        "coverage_covered": 4,
+        "coverage_distinct_non_seed_nodes": 4,
+        "coverage_fraction": 1.0,
+        "delay_graded_steps": 3,
+        "delay_hits": 2,
+        "false_positives": 20,
+        "mean_abs_error_d": 5.493885
+      },
+      "precision": 0.6,
+      "predicted_non_seed_count": 5,
+      "predicted_unobserved": [
+        "sea_jeddah",
+        "sea_portsaid"
+      ],
+      "run_id": "scorecard_red_sea_2024",
+      "seed_node": "chk_babelmandeb",
+      "steps": [
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Incident involving the car carrier Galaxy Leader in the Red Sea - first of a series of incidents that led carriers to avoid the corridor (crew held until 22 Jan 2025).",
+          "evidence_date": "2023-11-19",
+          "evidence_source": "AI Timeline compilation of the crisis chronology: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 0,
+          "node_id": "chk_babelmandeb",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 73.868748,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Onset of sustained carrier diversions away from the Red Sea corridor (UNCTAD reference timeline).",
+          "evidence_date": "2023-12-01",
+          "evidence_source": "UNCTAD via Warconomy reference timeline: https://warconomy.com/chokepoints/red-sea-shipping/economic-impact",
+          "index": 1,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "By end of December 2023, traffic through the Suez Canal was down by about half vs pre-crisis levels.",
+          "evidence_date": "2023-12-31",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via Maritime Executive: https://maritime-executive.com/article/unctad-maritime-chokepoints-are-trade-s-biggest-vulnerability",
+          "index": 2,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "genuine",
+          "delay_basis": "modeled_from_distance",
+          "delay_error_d": 5.016846,
+          "effect": "Spot container rates roughly doubled on Shanghai-Rotterdam between 1 Dec 2023 and 1 Feb 2024 (window end date). observed_delay_d is the MODELED one-way transit added by the Cape reroute (census: bypass +~3,000-6,000 nm), not a figure stated by the source.",
+          "evidence_date": "2024-02-01",
+          "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+          "index": 3,
+          "node_id": "sea_rotterdam",
+          "observed_delay_d": 10.0,
+          "predicted_delay_d": 4.983154,
+          "reason": "observed 10.0 outside window [2.491577, 9.966308]",
+          "result": "miss",
+          "window": [
+            2.491577,
+            9.966308
+          ]
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Gross tonnage of ships entering the Gulf of Aden fell >70% (1st half Dec 2023 to 1st half Feb 2024 window).",
+          "evidence_date": "2024-02-15",
+          "evidence_source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+          "index": 4,
+          "node_id": "chk_babelmandeb",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 73.868748,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "genuine",
+          "delay_basis": "modeled_from_distance",
+          "delay_error_d": 5.732405,
+          "effect": "Cape of Good Hope arrivals up +85% gross tonnage (7-day moving average, first week of Mar 2024) vs first half of Dec 2023; containership arrivals at the Cape up +328%. observed_delay_d is the MODELED one-way transit added by the Cape reroute, not a figure stated by the source.",
+          "evidence_date": "2024-03-01",
+          "evidence_source": "UNCTAD based on Clarksons Research, via Africa Ports: https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+          "index": 5,
+          "node_id": "chk_capeofgoodhope",
+          "observed_delay_d": 10.0,
+          "predicted_delay_d": 15.732405,
+          "reason": "observed 10.0 within window [7.8662025, 31.46481]",
+          "result": "hit",
+          "window": [
+            7.866202,
+            31.46481
+          ]
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Suez transits -70% vs mid-Dec 2023 (by Jun 2024). Canal revenue fell $9.4B (FY2022/23) to $7.2B (FY2023/24); transits 25,911 to 20,148.",
+          "evidence_date": "2024-06-30",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 6,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "duplicate",
+          "delay_basis": "modeled_from_distance",
+          "effect": "Cape of Good Hope arrivals +89% (by Jun 2024). Median Asia-Europe round trip cost approx $1.0M via Suez vs $1.7M via the Cape. observed_delay_d is the MODELED one-way transit added by the Cape reroute, not a figure stated by the source.",
+          "evidence_date": "2024-06-30",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 7,
+          "node_id": "chk_capeofgoodhope",
+          "observed_delay_d": 10.0,
+          "predicted_delay_d": 15.732405,
+          "reason": "duplicate: node already graded in this replay (one graded step per node; the earliest observed step grades) \u2014 counted and listed, in no denominator",
+          "result": "duplicate"
+        },
+        {
+          "class": "seed-input",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Container-ship capacity entering the Gulf of Aden -92% (by Jun 2024). Rerouting raised overall vessel demand by ~3% and container-ship demand by ~12% (UNCTAD via Splash247).",
+          "evidence_date": "2024-06-30",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 8,
+          "node_id": "chk_babelmandeb",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 73.868748,
+          "reason": "step at the disruption node itself: scenario input, excluded from grading",
+          "result": "input"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Shanghai Containerized Freight Index (SCFI) averaged 2,496 points in 2024, +149% year on year (rate channel; node is the index's home port).",
+          "evidence_date": "2024-12-31",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2025, via Lift Europe: https://lift-europe.com/blog-detail/un-global-shipping-faces-weak-growth-2025-rerouting-costs-and-new-rules-reshape-trade",
+          "index": 9,
+          "node_id": "sea_shanghai",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": null,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was NOT predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Suez tonnage still approximately 70% below its 2023 level - no full recovery 17 months in.",
+          "evidence_date": "2025-05-31",
+          "evidence_source": "UNCTAD, via Splash247: https://splash247.com/shippings-answer-to-geopolitics-go-around/",
+          "index": 10,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        }
+      ],
+      "stream_hash": "a315aa62d6d4f7b8ea8e546d833009dd5f8d76b760446e0a81c48760fead5037",
+      "title": "Red Sea / Bab el-Mandeb crisis, 2023-2025",
+      "ungradeable_steps": [],
+      "unquantified_steps": [
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Onset of sustained carrier diversions away from the Red Sea corridor (UNCTAD reference timeline).",
+          "evidence_date": "2023-12-01",
+          "evidence_source": "UNCTAD via Warconomy reference timeline: https://warconomy.com/chokepoints/red-sea-shipping/economic-impact",
+          "index": 1,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "By end of December 2023, traffic through the Suez Canal was down by about half vs pre-crisis levels.",
+          "evidence_date": "2023-12-31",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via Maritime Executive: https://maritime-executive.com/article/unctad-maritime-chokepoints-are-trade-s-biggest-vulnerability",
+          "index": 2,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Suez transits -70% vs mid-Dec 2023 (by Jun 2024). Canal revenue fell $9.4B (FY2022/23) to $7.2B (FY2023/24); transits 25,911 to 20,148.",
+          "evidence_date": "2024-06-30",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2024, via AI Timeline summary: https://aitimeline.in/red-sea-shipping-attacks-rerouting-costs-timeline-14731/",
+          "index": 6,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Shanghai Containerized Freight Index (SCFI) averaged 2,496 points in 2024, +149% year on year (rate channel; node is the index's home port).",
+          "evidence_date": "2024-12-31",
+          "evidence_source": "UNCTAD Review of Maritime Transport 2025, via Lift Europe: https://lift-europe.com/blog-detail/un-global-shipping-faces-weak-growth-2025-rerouting-costs-and-new-rules-reshape-trade",
+          "index": 9,
+          "node_id": "sea_shanghai",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": null,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was NOT predicted",
+          "result": "unquantified"
+        },
+        {
+          "class": "unquantified",
+          "delay_basis": "not_a_delay_effect",
+          "effect": "Suez tonnage still approximately 70% below its 2023 level - no full recovery 17 months in.",
+          "evidence_date": "2025-05-31",
+          "evidence_source": "UNCTAD, via Splash247: https://splash247.com/shippings-answer-to-geopolitics-go-around/",
+          "index": 10,
+          "node_id": "chk_suez",
+          "observed_delay_d": 0.0,
+          "predicted_delay_d": 248.430396,
+          "reason": "effect observed, delay unquantified (observed_delay_d = 0): counted in node coverage, excluded from delay grading; node was predicted",
+          "result": "unquantified"
+        }
+      ]
+    }
+  ],
+  "rev2_calibrated_reference": {
+    "aggregate_headline": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.428571,
+        "covered_count": 3,
+        "precision": 0.3,
+        "predicted_count": 10
+      },
+      "coverage": {
+        "covered_count": 3,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 7,
+        "fraction": 0.428571,
+        "uncovered_count": 4
+      },
+      "delay_accuracy": {
+        "graded_steps": 2,
+        "hit_fraction": 0.5,
+        "hits": 1,
+        "mean_abs_error_d": 22.662731,
+        "misses": 1
+      },
+      "engine_precision": 0.5,
+      "false_positives_count": 3
+    },
+    "aggregate_headline_basis": "re-run in memory on the same two episodes as this card",
+    "aggregate_headline_published_3_episodes": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.3,
+        "covered_count": 3,
+        "precision": 0.3,
+        "predicted_count": 10
+      },
+      "coverage": {
+        "covered_count": 3,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 10,
+        "fraction": 0.3,
+        "uncovered_count": 7
+      },
+      "delay_accuracy": {
+        "graded_steps": 2,
+        "hit_fraction": 0.5,
+        "hits": 1,
+        "mean_abs_error_d": 22.662731,
+        "misses": 1
+      },
+      "engine_precision": 0.5,
+      "false_positives_count": 3
+    },
+    "file": "data/replay/rev2_calibrated/scorecard.json",
+    "note": "published three-episode card, byte-untouched",
+    "sha256": "390dcf81deec88000cdcc0421d5e2e71a35e32b8e18c575f30ee505632c4c721"
+  },
+  "rev2_reference": {
+    "aggregate_headline": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.428571,
+        "covered_count": 3,
+        "precision": 0.3,
+        "predicted_count": 10
+      },
+      "coverage": {
+        "covered_count": 1,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 7,
+        "fraction": 0.142857,
+        "uncovered_count": 6
+      },
+      "delay_accuracy": {
+        "graded_steps": 1,
+        "hit_fraction": 1.0,
+        "hits": 1,
+        "mean_abs_error_d": 5.0,
+        "misses": 0
+      },
+      "engine_precision": 0.333333,
+      "false_positives_count": 2
+    },
+    "aggregate_headline_basis": "re-run in memory on the same two episodes as this card",
+    "aggregate_headline_published_3_episodes": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.3,
+        "covered_count": 3,
+        "precision": 0.3,
+        "predicted_count": 10
+      },
+      "coverage": {
+        "covered_count": 1,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 10,
+        "fraction": 0.1,
+        "uncovered_count": 9
+      },
+      "delay_accuracy": {
+        "graded_steps": 1,
+        "hit_fraction": 1.0,
+        "hits": 1,
+        "mean_abs_error_d": 5.0,
+        "misses": 0
+      },
+      "engine_precision": 0.333333,
+      "false_positives_count": 2
+    },
+    "file": "data/replay/rev2/scorecard_rev2.json",
+    "note": "published three-episode card, byte-untouched",
+    "sha256": "e413f765cd31cbc5f327f4761447c43f6ad6f56de6b05be90be597b628b096f6"
+  },
+  "rev2_services_reference": {
+    "aggregate_headline": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.428571,
+        "covered_count": 3,
+        "precision": 0.3,
+        "predicted_count": 10
+      },
+      "coverage": {
+        "covered_count": 3,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 7,
+        "fraction": 0.428571,
+        "uncovered_count": 4
+      },
+      "delay_accuracy": {
+        "graded_steps": 2,
+        "hit_fraction": 0.5,
+        "hits": 1,
+        "mean_abs_error_d": 86.382493,
+        "misses": 1
+      },
+      "engine_precision": 0.5,
+      "false_positives_count": 3
+    },
+    "aggregate_headline_basis": "re-run in memory on the same two episodes as this card",
+    "aggregate_headline_published_3_episodes": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.3,
+        "covered_count": 3,
+        "precision": 0.3,
+        "predicted_count": 10
+      },
+      "coverage": {
+        "covered_count": 3,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 10,
+        "fraction": 0.3,
+        "uncovered_count": 7
+      },
+      "delay_accuracy": {
+        "graded_steps": 2,
+        "hit_fraction": 0.5,
+        "hits": 1,
+        "mean_abs_error_d": 86.382493,
+        "misses": 1
+      },
+      "engine_precision": 0.5,
+      "false_positives_count": 3
+    },
+    "file": "data/replay/rev2_services/scorecard.json",
+    "note": "published three-episode card, byte-untouched",
+    "sha256": "e201136dfd869fb27ad79d21c8673140e09c23828e8c369d742f3dae50f66b62"
+  },
+  "routes": {
+    "alternatives": {
+      "sea_antwerp->sea_shanghai:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_suez",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_busan->sea_newyork:sea": {
+        "added_days": 6.693109,
+        "basis": "service witness (zone-level match MODELLED)",
+        "gate": "chk_panama",
+        "services": [
+          "svc_the22_ec4",
+          "svc_the22_ec5"
+        ],
+        "via": [
+          "chk_suez"
+        ]
+      },
+      "sea_busan->sea_rotterdam:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_colombo->sea_rotterdam:sea": {
+        "added_days": 10.430021,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_ningbo->sea_newyork:sea": {
+        "added_days": 4.110577,
+        "basis": "service witness (zone-level match MODELLED)",
+        "gate": "chk_panama",
+        "services": [
+          "svc_the22_ec4",
+          "svc_the22_ec5"
+        ],
+        "via": [
+          "chk_suez"
+        ]
+      },
+      "sea_ningbo->sea_rotterdam:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_qingdao->sea_rotterdam:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_rotterdam->sea_shanghai:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_suez",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_shanghai->sea_antwerp:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_shanghai->sea_hamburg:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_shanghai->sea_newyork:sea": {
+        "added_days": 4.576923,
+        "basis": "service witness (zone-level match MODELLED)",
+        "gate": "chk_panama",
+        "services": [
+          "svc_the22_ec4",
+          "svc_the22_ec5"
+        ],
+        "via": [
+          "chk_suez"
+        ]
+      },
+      "sea_shanghai->sea_rotterdam:sea": {
+        "added_days": 8.867254,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_shenzhen->sea_antwerp:sea": {
+        "added_days": 8.906517,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      },
+      "sea_singapore->sea_rotterdam:sea": {
+        "added_days": 9.316506,
+        "basis": "MODELLED (unconditional gate)",
+        "gate": "chk_babelmandeb",
+        "services": [],
+        "via": [
+          "chk_capeofgoodhope"
+        ]
+      }
+    },
+    "bound_legs": [
+      "sea_antwerp->sea_shanghai:sea",
+      "sea_busan->sea_newyork:sea",
+      "sea_busan->sea_rotterdam:sea",
+      "sea_colombo->sea_rotterdam:sea",
+      "sea_ningbo->sea_newyork:sea",
+      "sea_ningbo->sea_rotterdam:sea",
+      "sea_qingdao->sea_rotterdam:sea",
+      "sea_rotterdam->sea_shanghai:sea",
+      "sea_shanghai->sea_antwerp:sea",
+      "sea_shanghai->sea_hamburg:sea",
+      "sea_shanghai->sea_newyork:sea",
+      "sea_shanghai->sea_rotterdam:sea",
+      "sea_shenzhen->sea_antwerp:sea",
+      "sea_singapore->sea_rotterdam:sea"
+    ],
+    "eras": [
+      "pre_red_sea_crisis"
+    ],
+    "file_sha256": "dfb6796f9c7df4a8ea04773a7b40b6f9654f5f37ad94f5e3e9f76017e1c572a4",
+    "gates": {
+      "chk_babelmandeb": {
+        "gate_baseline_calls_per_day": 70.0,
+        "through_flow_calls_per_day": 54.8564
+      },
+      "chk_panama": {
+        "gate_baseline_calls_per_day": 36.0,
+        "through_flow_calls_per_day": 5.3951
+      },
+      "chk_suez": {
+        "gate_baseline_calls_per_day": 72.0,
+        "through_flow_calls_per_day": 54.8564
+      }
+    },
+    "include_unstated": false,
+    "include_unverified": false,
+    "legs_bound": 14,
+    "legs_skipped": 0,
+    "port_substitution_triples": 43,
+    "preregistration": "data/replay/rev2d/preregistration.md",
+    "preregistration_sha256": "154988617a0de68fd8a6192bb4a7bdcb1fba9e3e834a7db1111eca848670931e",
+    "rotation_services": 129,
+    "services_file": "data/graph/services.json",
+    "source": "services",
+    "table_sha256": "951f3dd3b33c3219327c38796e1e4986cdf9d7052cf981ab7610a5269485b701"
+  },
+  "sea_routes": {
+    "content_sha256": "762a12555a7f564d1c871c958208290aaf65258661e1937601c7310a6b5623d8",
+    "coverage": {
+      "by_region": {
+        "Africa": {
+          "fallback": 4,
+          "land_separated": 4,
+          "legs": 125,
+          "network": 121,
+          "off_network": 0
+        },
+        "East Asia": {
+          "fallback": 193,
+          "land_separated": 193,
+          "legs": 916,
+          "network": 723,
+          "off_network": 0
+        },
+        "Europe (North and Baltic)": {
+          "fallback": 103,
+          "land_separated": 103,
+          "legs": 660,
+          "network": 557,
+          "off_network": 0
+        },
+        "Latin America": {
+          "fallback": 38,
+          "land_separated": 30,
+          "legs": 271,
+          "network": 233,
+          "off_network": 8
+        },
+        "Mediterranean and Black Sea": {
+          "fallback": 53,
+          "land_separated": 53,
+          "legs": 540,
+          "network": 487,
+          "off_network": 0
+        },
+        "Middle East and Red Sea": {
+          "fallback": 38,
+          "land_separated": 38,
+          "legs": 225,
+          "network": 187,
+          "off_network": 0
+        },
+        "North America East": {
+          "fallback": 56,
+          "land_separated": 56,
+          "legs": 277,
+          "network": 221,
+          "off_network": 0
+        },
+        "North America West": {
+          "fallback": 4,
+          "land_separated": 4,
+          "legs": 45,
+          "network": 41,
+          "off_network": 0
+        },
+        "Oceania": {
+          "fallback": 2,
+          "land_separated": 2,
+          "legs": 93,
+          "network": 91,
+          "off_network": 0
+        },
+        "South Asia": {
+          "fallback": 10,
+          "land_separated": 10,
+          "legs": 126,
+          "network": 116,
+          "off_network": 0
+        },
+        "Southeast Asia": {
+          "fallback": 57,
+          "land_separated": 57,
+          "legs": 364,
+          "network": 307,
+          "off_network": 0
+        }
+      },
+      "total": {
+        "fallback": 558,
+        "land_separated": 550,
+        "legs": 3642,
+        "network": 3084,
+        "off_network": 8
+      }
+    },
+    "file": "data/graph/sea_routes.json",
+    "file_sha256": "075fa46835fa39eeb244c78f0005fae4e49f687efccf5f7c0c844a43a3ea656b"
+  },
+  "ungradeable_steps": [],
+  "v1_reference": {
+    "aggregate_headline": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.857143,
+        "covered_count": 6,
+        "precision": 0.029557,
+        "predicted_count": 203
+      },
+      "coverage": {
+        "covered_count": 4,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 7,
+        "fraction": 0.571429,
+        "uncovered_count": 3
+      },
+      "delay_accuracy": {
+        "graded_steps": 2,
+        "hit_fraction": 1.0,
+        "hits": 2,
+        "mean_abs_error_d": 1.25,
+        "misses": 0
+      },
+      "engine_precision": 0.020305,
+      "false_positives_count": 193
+    },
+    "aggregate_headline_basis": "re-run in memory on the same two episodes as this card",
+    "aggregate_headline_published_3_episodes": {
+      "baseline_k_hop_pooled": {
+        "coverage_fraction": 0.9,
+        "covered_count": 9,
+        "precision": 0.032143,
+        "predicted_count": 280
+      },
+      "coverage": {
+        "covered_count": 7,
+        "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+        "distinct_non_seed_nodes": 10,
+        "fraction": 0.7,
+        "uncovered_count": 3
+      },
+      "delay_accuracy": {
+        "graded_steps": 3,
+        "hit_fraction": 1.0,
+        "hits": 3,
+        "mean_abs_error_d": 2.466667,
+        "misses": 0
+      },
+      "engine_precision": 0.029661,
+      "false_positives_count": 229
+    },
+    "file": "data/replay/scorecard.json",
+    "note": "published three-episode card, byte-untouched",
+    "sha256": "d0a1c8403b14193e51d168c1920c379895d4faa95c53f1f01a933c74ce9e41bf"
+  },
+  "variants": {
+    "no_chains": {
+      "aggregate_headline": {
+        "baseline_k_hop_pooled": {
+          "coverage_fraction": 0.428571,
+          "covered_count": 3,
+          "precision": 0.3,
+          "predicted_count": 10
+        },
+        "coverage": {
+          "covered_count": 1,
+          "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+          "distinct_non_seed_nodes": 7,
+          "fraction": 0.142857,
+          "uncovered_count": 6
+        },
+        "delay_accuracy": {
+          "graded_steps": 1,
+          "hit_fraction": 1.0,
+          "hits": 1,
+          "mean_abs_error_d": 4.510463,
+          "misses": 0
+        },
+        "engine_precision": 0.333333,
+        "false_positives_count": 2
+      },
+      "label": "profile d without chokepoint chains (secondary, pre-registered)",
+      "replays": [
+        {
+          "event_count": 9,
+          "id": "panama_2023_24",
+          "stream_hash": "93f72f5f9e02a7270f6d007a0b73d61ae0a68cef85e95097e3bd6496304fdab9"
+        },
+        {
+          "event_count": 5,
+          "id": "red_sea_2024",
+          "stream_hash": "628a8e06a9fc8be6a485ffeafdeb702adf13aeb8910b398f6dca02a2ccdbd0b8"
+        }
+      ]
+    },
+    "no_conditional_alternatives": {
+      "aggregate_headline": {
+        "baseline_k_hop_pooled": {
+          "coverage_fraction": 0.571429,
+          "covered_count": 4,
+          "precision": 0.25,
+          "predicted_count": 16
+        },
+        "coverage": {
+          "covered_count": 3,
+          "definition": "Pooled node coverage: covered distinct non-seed nodes summed over replays / distinct non-seed observed nodes summed over replays. A node appearing in two replays counts once per replay (denominators are per-replay by construction).",
+          "distinct_non_seed_nodes": 7,
+          "fraction": 0.428571,
+          "uncovered_count": 4
+        },
+        "delay_accuracy": {
+          "graded_steps": 2,
+          "hit_fraction": 0.5,
+          "hits": 1,
+          "mean_abs_error_d": 5.374625,
+          "misses": 1
+        },
+        "engine_precision": 0.5,
+        "false_positives_count": 3
+      },
+      "label": "profile d + chains with witnessed alternatives off (secondary, pre-registered)",
+      "replays": [
+        {
+          "event_count": 9,
+          "id": "panama_2023_24",
+          "stream_hash": "79aa14ae7204e043a0c0cae3b281501df558b1b14c8af245f338f7929f9853a2"
+        },
+        {
+          "event_count": 30,
+          "id": "red_sea_2024",
+          "stream_hash": "a315aa62d6d4f7b8ea8e546d833009dd5f8d76b760446e0a81c48760fead5037"
+        }
+      ]
+    }
+  },
+  "version": 2
+}

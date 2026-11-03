@@ -1,0 +1,294 @@
+{
+  "event": "ever_given",
+  "figures": [
+    {
+      "name": "grounding_datetime_utc",
+      "value": "2021-03-23T05:40:00Z",
+      "unit": "datetime (UTC)",
+      "source_name": "Sentinel Vision EVT-839, quoting BBC News",
+      "source_url": "https://www.sentinelvision.eu/gallery/pdf/de9441cece1c4c5f8d905f89da1d570c",
+      "retrieved_on": "2026-10-21",
+      "notes": "BBC text quoted verbatim: Ever Given 'ran aground and became lodged sideways across the waterway at about 07:40 local time (05:40 GMT) on Tuesday' [23 March 2021]. Egypt local time (EGY) in March 2021 was UTC+2, so 07:40 EGY = 05:40 UTC. The word 'about' is in the source; the time is approximate, not to-the-minute exact."
+    },
+    {
+      "name": "grounding_datetime_utc_corroboration",
+      "value": "2021-03-23T05:40:00Z",
+      "unit": "datetime (UTC)",
+      "source_name": "Wikipedia — 2021 Suez Canal obstruction",
+      "source_url": "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction",
+      "retrieved_on": "2026-10-21",
+      "notes": "Infobox and Incident section both give '07:40 EGY (05:40 UTC)' on 23 March 2021, at the 151 km mark. Secondary source, used only as corroboration of the BBC-reported time."
+    },
+    {
+      "name": "grounding_time_alternate_report",
+      "value": "about 07:44 local time (05:44 UTC) on 2021-03-23",
+      "unit": "datetime (local / UTC)",
+      "source_name": "Stephen Li, 'Sailing Over Troubled Water' (paper reproduced on DocsLib)",
+      "source_url": "https://docslib.org/doc/4522530/suez-canal-obstructed-by-a-container-ship-egypt-25-march-2021-2d-layerstack-s5p-tropomi-acquired-on-23-march-2019-sentinel-3-olci-acquired-on-24-march-2019",
+      "retrieved_on": "2026-10-21",
+      "notes": "Alternate reported grounding moment: 'on the morning at about 0744 local time of 23 March'. Recorded separately, NOT blended with the 07:40 BBC figure. Difference is 4 minutes and both sources say 'about'."
+    },
+    {
+      "name": "refloat_datetime_utc",
+      "value": "2021-03-29T13:05:00Z",
+      "unit": "datetime (UTC)",
+      "source_name": "Royal Boskalis Westminster N.V. press release, 29 March 2021 (republished by Gardline)",
+      "source_url": "https://gardline.com/about-us/news/suez-canal-unblocked-we-pulled-it-off",
+      "retrieved_on": "2026-10-21",
+      "notes": "Boskalis CEO Peter Berdowski: the team 'successfully refloated the Ever Given on 29 March at 15:05 hrs local time'. Local = EGY = UTC+2 in March 2021, so 15:05 EGY = 13:05 UTC. Boskalis subsidiary SMIT Salvage ran the salvage with the Suez Canal Authority. Evergreen Line separately stated 'approximately 15:00 March 29 local time' — recorded here, not blended."
+    },
+    {
+      "name": "shipping_resumed_datetime_utc",
+      "value": "2021-03-29T17:00:00Z",
+      "unit": "datetime (UTC)",
+      "source_name": "Wikipedia — 2021 Suez Canal obstruction (citing SCA reporting)",
+      "source_url": "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction",
+      "retrieved_on": "2026-10-21",
+      "notes": "'The SCA allowed shipping to resume at 19:00 EGY (17:00 UTC)' on 29 March 2021, after Ever Given was towed to the Great Bitter Lake and the canal was checked and found sound. This is the canal-reopening time, distinct from the 13:05 UTC refloat."
+    },
+    {
+      "name": "blockage_duration_grounding_to_refloat",
+      "value": "6 days and 7 hours",
+      "unit": "duration (as reported)",
+      "source_name": "Wikipedia — 2021 Suez Canal obstruction",
+      "source_url": "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction",
+      "retrieved_on": "2026-10-21",
+      "notes": "Duration as stated in the article infobox. Arithmetic check: 05:40 UTC 23 Mar to 13:05 UTC 29 Mar = 6 days 7 h 25 min, consistent with the reported figure (both endpoint times are 'about'). Grounding to resumption of shipping (17:00 UTC 29 Mar) = 6 days 11 h 20 min on the same endpoints."
+    },
+    {
+      "name": "backlog_fully_cleared_date",
+      "value": "2021-04-03",
+      "unit": "date",
+      "source_name": "Reuters (3 April 2021), reporting Suez Canal Authority statement",
+      "source_url": "https://gcaptain.com/suez-canal-says-ship-backlog-cleared/",
+      "retrieved_on": "2026-10-21",
+      "notes": "'All ships stranded by the grounding ... had passed through the canal by Saturday' [3 April 2021]; 'The last 61 ships, out of 422 ships that were queuing when the vessel was dislodged on Monday, passed through ... on Saturday, the Suez Canal Authority (SCA) said.' SCA chairman Osama Rabie: 'All waiting ships crossed the shipping course today.' 85 ships in total were due through on 3 April, including 24 that arrived after the refloat."
+    },
+    {
+      "name": "peak_queue_vessels_sca_via_reuters",
+      "value": 422,
+      "unit": "vessels waiting to transit",
+      "source_name": "Reuters (3 April 2021), reporting Suez Canal Authority",
+      "source_url": "https://gcaptain.com/suez-canal-says-ship-backlog-cleared/",
+      "retrieved_on": "2026-10-21",
+      "notes": "PEAK QUEUE — headline figure. SCA via Reuters: 422 ships were queuing when Ever Given was dislodged on Monday 29 March 2021; the last 61 of them transited on Saturday 3 April 2021. This is the total queue at refloat, i.e. the maximum reported queue. Recorded exactly as reported; alternate 425 and >400 figures are separate entries below and are NOT blended with this one."
+    },
+    {
+      "name": "queue_vessels_2021-03-28_sca_chairman",
+      "value": 369,
+      "unit": "vessels waiting to transit (at least)",
+      "source_name": "Reuters (29 March 2021), reporting SCA Chairman Osama Rabie",
+      "source_url": "https://www.tbsnews.net/world/suez-canal-says-traffic-channel-resumes-after-stranded-ship-refloated-223879?amp",
+      "retrieved_on": "2026-10-21",
+      "notes": "'At least 369 vessels were waiting to transit the canal, including dozens of container ships, bulk carriers, oil tankers and LNG or LPG vessels, SCA Chairman Osama Rabie said.' Reported 29 March, describing the queue as of 28-29 March — i.e. before the final 422 total at refloat. A point-in-time queue count, not the peak."
+    },
+    {
+      "name": "queue_at_reopening_breakdown",
+      "value": ">400 vessels: approximately 200 in the Red Sea, under 200 in the Mediterranean, around 50 in the Bitter Lakes",
+      "unit": "vessels waiting (as reported, approximate)",
+      "source_name": "Wikipedia — 2021 Suez Canal obstruction",
+      "source_url": "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction",
+      "retrieved_on": "2026-10-21",
+      "notes": "Breakdown as reported for the moment shipping resumed (19:00 EGY 29 Mar): 'more than 400 ships were waiting: approximately 200 in the Red Sea, under 200 in the Mediterranean Sea; and around 50 in the Bitter Lakes.' Approximate components as in source; not reconciled to the SCA 422 total."
+    },
+    {
+      "name": "queue_vessels_alternate_425",
+      "value": 425,
+      "unit": "vessels waiting to transit",
+      "source_name": "Business Daily (AFP/Reuters reporting), 29 March 2021",
+      "source_url": "https://www.businessdailyafrica.com/bd/news/world/suez-canal-traffic-resumes-after-megaship-refloated-3340870?view=htmlamp",
+      "retrieved_on": "2026-10-21",
+      "notes": "DISAGREEMENT recorded separately: this report states 'At least 425 vessels are waiting to transit the canal' and 'the tailback of ships had reaching 425 at the two ends of the canal'. Differs from the SCA-via-Reuters 422 by 3. Never blended; the 422 SCA figure is the graded peak-queue figure because it is attributed directly to the SCA in the 3 April clearance report."
+    },
+    {
+      "name": "delay_backlog_clearance_forecast_maersk",
+      "value": "6 days or more for the complete queue to pass (forecast made 29 March 2021)",
+      "unit": "days (forecast range, lower bound only)",
+      "source_name": "Maersk customer advisory, reported 29 March 2021",
+      "source_url": "https://eblueeconomy.com/38160-2/",
+      "retrieved_on": "2026-10-21",
+      "notes": "'Assessing the current backlog of vessels, it could take 6 days or more for the complete queue to pass, conditional to safety and other operational circumstances.' This is a carrier FORECAST of total queue-clearance time made on refloat day, NOT a measured average delay per vessel. Recorded as stated — a lower-bounded range, not converted to a point estimate. Actual clearance (refloat 29 Mar to last queued transit 3 Apr) took 5 calendar days."
+    },
+    {
+      "name": "delay_backlog_clearance_forecast_hapag_lloyd",
+      "value": "backlog could be cleared within 4 days (forecast)",
+      "unit": "days (forecast)",
+      "source_name": "Hapag-Lloyd statement, as reported by Shanghai International Shipping Institute / SISI",
+      "source_url": "http://sisi.gstta.org/index.php?c=article&id=19850",
+      "retrieved_on": "2026-10-21",
+      "notes": "'Hapag-Lloyd said it expected transits to start late Tuesday, adding that the current backlog of ships waiting to move through the canal could be cleared within four days.' A forecast, recorded as such; it differs from Maersk's '6 days or more' forecast. Neither is a measured per-vessel delay."
+    },
+    {
+      "name": "average_delay_per_queued_vessel",
+      "status": "NOT_SOURCED",
+      "notes": "No published average (mean/median) extra delay per queued/transiting vessel, and no first-in-queue vs last-in-queue wait pair, was found in the sources searched on 2026-10-21 (SCA statements via Reuters, BBC-class reporting, Maersk/Hapag-Lloyd advisories, UNCTAD-affiliated backlog analysis). What IS documented: (a) the closure itself, grounding 2021-03-23 05:40 UTC to shipping resuming 2021-03-29 17:00 UTC; (b) the last queued vessels transiting 2021-04-03 — so a vessel's queue wait is bounded by where it joined the queue, which is not published per vessel; (c) carrier forecasts of total queue-clearance time (Maersk '6 days or more'; Hapag-Lloyd 'within four days'). No average was invented or derived as a point estimate. This metric should be treated as UNGRADED unless a per-vessel AIS study is sourced separately."
+    },
+    {
+      "name": "diversion_extra_voyage_time_cape_route",
+      "value": "around 10 days added to an Asia-Europe voyage",
+      "unit": "days (approximate, as reported)",
+      "source_name": "Seatrade Maritime News, 26-29 March 2021",
+      "source_url": "https://www.seatrade-maritime.com/containers/container-lines-divert-services-via-cape-as-suez-canal-remains-blocked",
+      "retrieved_on": "2026-10-21",
+      "notes": "'major container lines are diverting via the Cape of Good Hope adding around 10 days to an Asia - Europe voyage, and substantial bunker fuel costs as a result.' Approximate figure as reported, for diverted container services only."
+    },
+    {
+      "name": "diversions_maersk",
+      "value": 15,
+      "unit": "vessels redirected around the Cape of Good Hope",
+      "source_name": "A.P. Moller - Maersk, Customer Advisory 'Vessel blockage in the Suez Canal - Update 10', 29 March 2021",
+      "source_url": "http://www.olgn.org/wp-content/uploads/2021/03/20.Maersk-Vessel-blockage-in-the-Suez-Canal-Update-10.pdf",
+      "retrieved_on": "2026-10-21",
+      "notes": "'We have until now redirected 15 vessels around the Cape of Good Hope at the southern tip of Africa' (Maersk and partners, as of 29 March 2021). Maersk also reported 34 vessels at anchorage waiting in the same advisory. Carrier-specific count only — NOT a total for all operators."
+    },
+    {
+      "name": "diversions_hapag_lloyd",
+      "value": 6,
+      "unit": "vessels diverted around the Cape of Good Hope",
+      "source_name": "Hapag-Lloyd statement, as reported by Shanghai International Shipping Institute / SISI",
+      "source_url": "http://sisi.gstta.org/index.php?c=article&id=19850",
+      "retrieved_on": "2026-10-21",
+      "notes": "'it will not reroute any more vessels around the Cape of Good Hope, aside from the six it had already sent the long way around Africa as of Friday' [26 March 2021]. Hapag-Lloyd also reported nine ships at Suez anchorages waiting. Carrier-specific count only."
+    },
+    {
+      "name": "diversions_msc_services",
+      "value": 11,
+      "unit": "services diverted via the Cape of Good Hope (not vessels)",
+      "source_name": "Seatrade Maritime News, reporting MSC customer advisory of 26 March 2021",
+      "source_url": "https://www.seatrade-maritime.com/containers/container-lines-divert-services-via-cape-as-suez-canal-remains-blocked",
+      "retrieved_on": "2026-10-21",
+      "notes": "'In a customer advisory on 26 March Mediterranean Shipping Co (MSC) listed 11 services, seven as part of the 2M alliance with Maersk Line and four others, that it is diverting via the Cape of Good Hope.' Unit is SERVICES, not individual vessels — do not add to vessel counts."
+    },
+    {
+      "name": "diversions_total_linerlytica_retrospective",
+      "value": "fewer than 20 ships diverted (total, as retrospectively reported)",
+      "unit": "ships (upper-bounded range, not a point count)",
+      "source_name": "Linerlytica report of 26 December 2023, as reported by Maritime Gateway",
+      "source_url": "https://www.maritimegateway.com/vessels-rerouting-through-cape-of-good-hope-at-an-all-time-high/",
+      "retrieved_on": "2026-10-21",
+      "notes": "'Linerlytica's latest report, issued on 26 December, stated that when Suez traffic was closed for seven days due to the Ever Given grounding, fewer than 20 ships were diverted.' Retrospective (Dec 2023, in a Red Sea-crisis comparison) and from a container-liner analytics firm; scope (liner vessels only vs all vessel types) is not stated in the reporting. Recorded AS an upper-bounded range ('fewer than 20'), never converted to a point estimate. Note tension with carrier-specific reports: Maersk alone reported 15 redirected vessels on 29 Mar 2021, plus Hapag-Lloyd 6 — those carrier advisories count Maersk-and-partner / alliance vessels and service decisions, which may overlap and may include vessels that later turned back, so the figures are not additive and not directly comparable."
+    },
+    {
+      "name": "diversions_total_all_vessel_types",
+      "status": "NOT_SOURCED",
+      "notes": "No authoritative total count or share of ALL vessels (all types, all operators) that diverted around the Cape of Good Hope instead of waiting could be sourced. Contemporary and retrospective reporting is vague — e.g. the UNCTAD-affiliated backlog analysis states only that during the 6-day blockage 'more than 350 ships were waiting and some other ships opted for the long detour around the Cape of Good Hope' (Baltic Exchange, https://www.balticexchange.com/en/news-and-events/news/guest-column/2021/resolving-the-ship-backlog-puzzle-in-the-suez-canal--predicting-.html , retrieved 2026-10-21). Only carrier-specific counts (Maersk 15 vessels, Hapag-Lloyd 6 vessels, MSC 11 services) and Linerlytica's retrospective 'fewer than 20 ships' are documented. Diversions are therefore an UNGRADED metric for this backtest."
+    },
+    {
+      "name": "normal_daily_transits_published_reuters",
+      "value": "around 50 ships a day (normal); increased to 80-90 a day to clear the backlog",
+      "unit": "vessels per day",
+      "source_name": "Reuters reporting, republished by American Journal of Transportation (AJOT)",
+      "source_url": "https://www.ajot.com/news/suez-canal-authorities-say-backlog-of-ships-is-now-cleared",
+      "retrieved_on": "2026-10-21",
+      "notes": "'The canal normally handles around 50 ships a day, but had to increase that figure to 80-90 to clear the backlog.' Cross-check figure for the PortWatch baseline. The PortWatch baseline mean computed from the daily series (56.91/day, 1-22 Mar 2021) is higher than this published 'around 50' — the two are recorded separately and not reconciled/blended."
+    },
+    {
+      "name": "normal_daily_transits_published_range_maritime_executive",
+      "value": "average daily traffic typically ranges from 40 to 50 ships; 18,829 ships transited in 2020",
+      "unit": "vessels per day / vessels per year",
+      "source_name": "The Maritime Executive (reporting SCA figures)",
+      "source_url": "https://maritime-executive.com/article/suez-canal-sets-new-record-for-traffic-volume?rand=17996",
+      "retrieved_on": "2026-10-21",
+      "notes": "'Last year, 18,829 ships with a total net tonnage of 1.17 billion passed through the canal. The average daily traffic typically ranges from 40 to 50 ships.' 18,829 / 365 = 51.6 per day arithmetic on the SCA annual total — arithmetic shown, annual total is the sourced figure. Second cross-check for the PortWatch baseline."
+    },
+    {
+      "name": "sca_annual_transits_2020",
+      "value": 18829,
+      "unit": "vessels in calendar year 2020",
+      "source_name": "Suez Canal Authority, as reported by The Maritime Executive",
+      "source_url": "https://maritime-executive.com/article/suez-canal-sets-new-record-for-traffic-volume?rand=17996",
+      "retrieved_on": "2026-10-21",
+      "notes": "SCA-reported 2020 total. A separate SCA summary reported via Visual Capitalist rounds this to '19,000 vessels — averaging to 52 a day — in 2020' (https://www.visualcapitalist.com/suez-canal-critical-waterway-comes-to-halt/ , retrieved 2026-10-21); its year table likewise lists 18,829 for 2020. The unrounded 18,829 is the figure recorded here."
+    },
+    {
+      "name": "trade_value_delayed_per_day_lloyds_list",
+      "value": "US$9.6 billion per day (estimated)",
+      "unit": "USD per day (estimate)",
+      "source_name": "Lloyd's List, as reported by Reuters (29 March 2021)",
+      "source_url": "https://www.tbsnews.net/world/suez-canal-says-traffic-channel-resumes-after-stranded-ship-refloated-223879?amp",
+      "retrieved_on": "2026-10-21",
+      "notes": "Context figure only, not a grading metric: 'Lloyd's List said the blockage had held up an estimated $9.6 billion worth of cargo each day between Asia and Europe.' An estimate, labelled as such in the source."
+    }
+  ],
+  "portwatch": {
+    "file": "portwatch_suez_2021.json",
+    "source_name": "IMF PortWatch — Daily_Chokepoints_Data",
+    "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query",
+    "retrieved_on": "2026-10-21",
+    "chokepoint": {
+      "graph_id": "chk_suez",
+      "portname": "Suez Canal",
+      "portid": "chokepoint1"
+    },
+    "coverage": {
+      "date_range": "2021-02-15 to 2021-04-15",
+      "n_rows": 60,
+      "missing_dates": []
+    },
+    "derived": {
+      "baseline_mean_daily_n_total_2021-03-01_to_2021-03-22": {
+        "window_start": "2021-03-01",
+        "window_end": "2021-03-22",
+        "n_days": 22,
+        "daily_n_total": [
+          64,
+          51,
+          65,
+          58,
+          61,
+          54,
+          65,
+          57,
+          69,
+          61,
+          56,
+          54,
+          50,
+          58,
+          52,
+          57,
+          47,
+          51,
+          61,
+          54,
+          48,
+          59
+        ],
+        "sum_n_total": 1252,
+        "mean_daily_n_total": 56.91,
+        "derivation": "Mean of the PortWatch daily n_total values for the 22 days 2021-03-01 through 2021-03-22 inclusive, taken verbatim from portwatch_suez_2021.json rows. Sum = 1252; 1252 / 22 = 56.9091, recorded as 56.91 vessels/day."
+      },
+      "daily_n_total_2021-03-23_to_2021-03-31": {
+        "daily_values": {
+          "2021-03-23": 38,
+          "2021-03-24": 14,
+          "2021-03-25": 2,
+          "2021-03-26": 9,
+          "2021-03-27": 9,
+          "2021-03-28": 10,
+          "2021-03-29": 33,
+          "2021-03-30": 65,
+          "2021-03-31": 63
+        },
+        "derivation": "Daily n_total values copied verbatim from portwatch_suez_2021.json for 2021-03-23 through 2021-03-31. Trough minimum is 2 on 2021-03-25. NOTE: PortWatch does NOT read zero during the closure (14 on 24 Mar, 2-10 on 25-28 Mar, 33 on 29 Mar) — the layer evidently counts some vessel movements within/at the chokepoint (e.g. vessels already inside the canal system) even while through-transit was blocked; the counts are reported verbatim and are NOT reinterpreted as through-transits. 23 Mar (38) and 29 Mar (33) are partial-event days (grounding 05:40 UTC; refloat 13:05 UTC, shipping resumed 17:00 UTC)."
+      },
+      "clearance_mean_daily_n_total_2021-03-30_to_2021-04-05": {
+        "window_start": "2021-03-30",
+        "window_end": "2021-04-05",
+        "n_days": 7,
+        "daily_n_total": [
+          65,
+          63,
+          77,
+          77,
+          88,
+          87,
+          48
+        ],
+        "sum_n_total": 505,
+        "mean_daily_n_total": 72.14,
+        "derivation": "Mean of the PortWatch daily n_total values for the 7 days 2021-03-30 through 2021-04-05 inclusive, taken verbatim from portwatch_suez_2021.json rows. Sum = 505; 505 / 7 = 72.1429, recorded as 72.14 vessels/day. Window spans the SCA-declared backlog clearance on 2021-04-03; 88 on 3 Apr and 87 on 4 Apr are the two highest days in the whole 60-day series."
+      }
+    }
+  }
+}

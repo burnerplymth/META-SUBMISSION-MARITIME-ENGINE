@@ -1,0 +1,27 @@
+{
+ "files": {
+  "episodes.json": {
+   "bytes": 22023,
+   "sha256": "a5b392ab95c12667f39762d8dc0eb2a512398df1bb92f9ee12825486c245ca66"
+  },
+  "sam_recorded.json": {
+   "bytes": 1922,
+   "sha256": "80508acea3b7fe1d8348cf89774d9f960e3c95a0cdff3195df5536a76022c2f6"
+  },
+  "scenes.json.gz": {
+   "bytes": 55760,
+   "sha256": "9a5b68f0581c811341ac48a48a9acc758df4cd13baace49c4163512b1f2153ff"
+  },
+  "series.json.gz": {
+   "bytes": 30000,
+   "sha256": "a84206ab329049954a3b8b6560a1ad7d9013d29d0fa6e4ef57bd86dcfde3c8d5"
+  },
+  "tracks.json.gz": {
+   "bytes": 36354,
+   "sha256": "84831625b0c3c1873e05d25ed24d5743554acce52f3976cd2987efbc9574574a"
+  }
+ },
+ "max_total_bytes": 8388608,
+ "schema": "supermap.research.manifest.v1",
+ "total_bytes": 146059
+}

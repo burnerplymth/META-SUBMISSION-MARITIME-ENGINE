@@ -1,0 +1,299 @@
+{
+ "config": "rev2d",
+ "digest": {
+  "n_events": 14,
+  "places": {
+   "chk_panama": {
+    "first_delay_d": 203.688554,
+    "first_lag_d": 0.0,
+    "first_seq": 0,
+    "max_delay_d": 203.688554
+   },
+   "chk_suez": {
+    "first_delay_d": 7.618961,
+    "first_lag_d": 19.5,
+    "first_seq": 6,
+    "max_delay_d": 7.618961
+   },
+   "sea_colon": {
+    "first_delay_d": 78.066828,
+    "first_lag_d": 23.5,
+    "first_seq": 7,
+    "max_delay_d": 78.066828
+   }
+  },
+  "seed_first_lag_d": 0.0,
+  "seed_wait_d": 203.688554
+ },
+ "digest_checked_against_published": true,
+ "disruption": {
+  "capacity_loss": 0.5,
+  "duration_d": 215,
+  "kind": "capacity_cut",
+  "node_id": "chk_panama",
+  "shape": "step",
+  "started_at": "2023-10-30T00:00:00Z"
+ },
+ "edges": [
+  {
+   "channel": "congestion",
+   "from_node": "chk_panama",
+   "from_seq": null,
+   "to_node": "chk_panama",
+   "to_seq": 0
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_colon",
+   "to_seq": 1
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_balboa",
+   "to_seq": 2
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_houston",
+   "to_seq": 3
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_newyork",
+   "to_seq": 4
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_savannah",
+   "to_seq": 5
+  },
+  {
+   "channel": "reroute",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "chk_suez",
+   "to_seq": 6
+  },
+  {
+   "channel": "inventory",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_colon",
+   "to_seq": 7
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_shanghai",
+   "to_seq": 8
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_panama",
+   "from_seq": 0,
+   "to_node": "sea_cartagena",
+   "to_seq": 9
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 6,
+   "to_node": "chk_suez",
+   "to_seq": 10
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 6,
+   "to_node": "sea_rotterdam",
+   "to_seq": 11
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 6,
+   "to_node": "sea_portsaid",
+   "to_seq": 12
+  },
+  {
+   "channel": "cost",
+   "from_node": "chk_suez",
+   "from_seq": 6,
+   "to_node": "sea_antwerp",
+   "to_seq": 13
+  }
+ ],
+ "episode": "panama",
+ "event_count": 14,
+ "events": [
+  {
+   "at": "2023-10-30T00:00:00Z",
+   "channel": "congestion",
+   "delay_d": 203.688554,
+   "magnitude": 0.5,
+   "mechanism": "capacity loss at source: service rate = mu_max x (1 - loss)",
+   "node_id": "chk_panama",
+   "parent_id": null,
+   "seq": 0,
+   "tick": 0
+  },
+  {
+   "at": "2023-11-02T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_colon",
+   "parent_id": 0,
+   "seq": 1,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-03T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.464719,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_balboa",
+   "parent_id": 0,
+   "seq": 2,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-10T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_houston",
+   "parent_id": 0,
+   "seq": 3,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-10T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_newyork",
+   "parent_id": 0,
+   "seq": 4,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-10T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 1.0,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_savannah",
+   "parent_id": 0,
+   "seq": 5,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-18T12:00:00Z",
+   "channel": "reroute",
+   "delay_d": 7.618961,
+   "magnitude": 0.127804,
+   "mechanism": "reroute: bypass lane sea_busan->chk_suez:sea#routes-A[chk_panama] carries the flow of sea_busan->chk_panama:sea, forecast wait at the primary exceeds added days plus forecast wait here, capped by headroom",
+   "node_id": "chk_suez",
+   "parent_id": 0,
+   "seq": 6,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-22T12:00:00Z",
+   "channel": "inventory",
+   "delay_d": 78.066828,
+   "magnitude": 0.316492,
+   "mechanism": "inventory: arrivals below baseline draw the cover down, at stockout onward flow equals arrivals (cover days / shortfall rate)",
+   "node_id": "sea_colon",
+   "parent_id": 0,
+   "seq": 7,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-26T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.511217,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_shanghai",
+   "parent_id": 0,
+   "seq": 8,
+   "tick": 1
+  },
+  {
+   "at": "2023-11-27T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.423785,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_cartagena",
+   "parent_id": 0,
+   "seq": 9,
+   "tick": 1
+  },
+  {
+   "at": "2024-11-14T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.014468,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "chk_suez",
+   "parent_id": 6,
+   "seq": 10,
+   "tick": 2
+  },
+  {
+   "at": "2024-11-17T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.016688,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_rotterdam",
+   "parent_id": 6,
+   "seq": 11,
+   "tick": 2
+  },
+  {
+   "at": "2024-12-18T00:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.011493,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_portsaid",
+   "parent_id": 6,
+   "seq": 12,
+   "tick": 2
+  },
+  {
+   "at": "2024-12-26T12:00:00Z",
+   "channel": "cost",
+   "delay_d": 0.0,
+   "magnitude": 0.010283,
+   "mechanism": "cost: excess queue and cover stock-days over baseline stock-days (normalised, not currency)",
+   "node_id": "sea_antwerp",
+   "parent_id": 6,
+   "seq": 13,
+   "tick": 2
+  }
+ ],
+ "run_id": "replay_panama_rev2d",
+ "schema": "supermap.replay.chain/1",
+ "status": "complete",
+ "stream_hash": "1e1560f836884be6f88a2f9545e785a8ca3caa9cadae6a32d5be479db10798bf"
+}
