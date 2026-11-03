@@ -1,0 +1,11 @@
+{
+ "adapter": "aisstream",
+ "saved_at": "2026-10-21T00:35:57Z",
+ "provenance": {
+  "source": "AISStream",
+  "retrieved_at": "2026-10-21T00:35:57Z",
+  "mode": "SNAPSHOT"
+ },
+ "records": [],
+ "note": "NEEDS-KEY: no live fetch attempted; set AISSTREAM_API_KEY"
+}

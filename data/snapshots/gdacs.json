@@ -1,0 +1,71 @@
+{
+ "adapter": "gdacs",
+ "saved_at": "2026-10-24T23:56:48Z",
+ "provenance": {
+  "source": "GDACS",
+  "retrieved_at": "2026-10-24T23:56:48Z",
+  "mode": "LIVE"
+ },
+ "records": [
+  {
+   "id": "evt_20260421_sea_coatzacoalcos_other_92591048",
+   "node_id": "sea_coatzacoalcos",
+   "kind": "other",
+   "severity": 3,
+   "detected_at": "2026-10-24T23:56:48Z",
+   "source": "GDACS",
+   "retrieved_at": "2026-10-24T23:56:48Z",
+   "evidence_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1027449",
+   "status": "active",
+   "mode": "LIVE",
+   "dedupe_key": "gdacs:DR:1027449",
+   "started_at": "2026-04-21T00:00:00Z",
+   "expires_at": "2026-10-22T00:00:00Z",
+   "gdacs": {
+    "eventtype": "DR",
+    "eventid": 1027449,
+    "name": "Drought in The Bahamas, Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
+    "alertlevel": "Orange",
+    "country": "The Bahamas, Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
+    "fromdate": "2026-04-21T00:00:00",
+    "todate": "2026-10-22T00:00:00",
+    "distance_to_node_km": 79.6
+   },
+   "provenance": {
+    "source": "GDACS",
+    "retrieved_at": "2026-10-24T23:56:48Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "id": "evt_20251221_air_munich_other_83c46b0e",
+   "node_id": "air_munich",
+   "kind": "other",
+   "severity": 3,
+   "detected_at": "2026-10-24T23:56:48Z",
+   "source": "GDACS",
+   "retrieved_at": "2026-10-24T23:56:48Z",
+   "evidence_url": "https://www.gdacs.org/report.aspx?eventtype=DR&eventid=1018332",
+   "status": "active",
+   "mode": "LIVE",
+   "dedupe_key": "gdacs:DR:1018332",
+   "started_at": "2025-12-21T00:00:00Z",
+   "expires_at": "2026-10-22T00:00:00Z",
+   "gdacs": {
+    "eventtype": "DR",
+    "eventid": 1018332,
+    "name": "Drought in Austria, Bosnia  and  Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Moldova, Montenegro, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine, ",
+    "alertlevel": "Orange",
+    "country": "Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Moldova, Montenegro, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine, ",
+    "fromdate": "2025-12-21T00:00:00",
+    "todate": "2026-10-22T00:00:00",
+    "distance_to_node_km": 99.5
+   },
+   "provenance": {
+    "source": "GDACS",
+    "retrieved_at": "2026-10-24T23:56:48Z",
+    "mode": "LIVE"
+   }
+  }
+ ]
+}

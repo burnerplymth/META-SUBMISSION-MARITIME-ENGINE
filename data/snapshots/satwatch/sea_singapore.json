@@ -1,0 +1,94 @@
+{
+ "bbox": [
+  103.6,
+  1.13,
+  104.05,
+  1.35
+ ],
+ "catalog": {
+  "http_status": 200,
+  "search_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search"
+ },
+ "core_bbox": [
+  103.9,
+  1.2,
+  104.05,
+  1.33
+ ],
+ "crops": {
+  "baseline": "sea_singapore_baseline_2026-09-06.png",
+  "now": "sea_singapore_now_2026-10-06.png"
+ },
+ "detection": {
+  "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+  "counts": null,
+  "detections": null,
+  "note": "detection awaits Meta API key (SAM 3.1)",
+  "prompts": [
+   "container ship",
+   "cargo vessel",
+   "container stack",
+   "gantry crane"
+  ],
+  "provider": "fixture",
+  "status": "AWAITING_META_KEY"
+ },
+ "imagery_dates": {
+  "baseline": "2026-09-06",
+  "now": "2026-10-06"
+ },
+ "kind": "satwatch_scan",
+ "name": "Singapore Anchorage",
+ "node_id": "sea_singapore",
+ "notes": [],
+ "resolution_m": 10,
+ "retrieved_at": "2026-10-21T01:04:41Z",
+ "scene_baseline": {
+  "cloud_pct_aoi": 17.85,
+  "cloud_pct_tile": 57.154351,
+  "date": "2026-09-06",
+  "datetime": "2026-09-06T03:15:39.024000Z",
+  "id": "S2B_MSIL2A_20260906T031539_R118_T48NUG_20260906T065656",
+  "mgrs_tile": "48NUG",
+  "platform": "Sentinel-2B"
+ },
+ "scene_now": {
+  "cloud_pct_aoi": 23.74,
+  "cloud_pct_tile": 45.441931,
+  "date": "2026-10-06",
+  "datetime": "2026-10-06T03:16:09.024000Z",
+  "id": "S2B_MSIL2A_20261006T031609_R118_T48NUG_20261006T070305",
+  "mgrs_tile": "48NUG",
+  "platform": "Sentinel-2B"
+ },
+ "screened": [
+  {
+   "cloud_pct_aoi": 90.26,
+   "date": "2026-10-16",
+   "id": "S2B_MSIL2A_20261016T031719_R118_T48NUG_20261016T070334"
+  },
+  {
+   "cloud_pct_aoi": 62.19,
+   "date": "2026-10-13",
+   "id": "S2A_MSIL2A_20261013T032151_R118_T48NUG_20261013T075402"
+  },
+  {
+   "cloud_pct_aoi": 100.0,
+   "date": "2026-10-11",
+   "id": "S2C_MSIL2A_20261011T031641_R118_T48NUG_20261011T080703"
+  },
+  {
+   "cloud_pct_aoi": 23.74,
+   "date": "2026-10-06",
+   "id": "S2B_MSIL2A_20261006T031609_R118_T48NUG_20261006T070305"
+  },
+  {
+   "cloud_pct_aoi": 17.85,
+   "date": "2026-09-06",
+   "id": "S2B_MSIL2A_20260906T031539_R118_T48NUG_20260906T065656"
+  }
+ ],
+ "source": "Microsoft Planetary Computer / Sentinel-2 L2A",
+ "usable_pair": true,
+ "version": 1
+}

@@ -1,0 +1,281 @@
+{
+ "adapter": "cbp",
+ "saved_at": "2026-10-24T23:56:47Z",
+ "provenance": {
+  "source": "CBP Border Wait Times",
+  "retrieved_at": "2026-10-24T23:56:46Z",
+  "mode": "LIVE"
+ },
+ "records": [
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_blaine",
+   "port_name": "Blaine",
+   "crossing": "Pacific Highway",
+   "lanes": "commercial",
+   "wait_min": 5,
+   "fast_wait_min": null,
+   "lanes_open": 2,
+   "date": "10/24/2026",
+   "time": "16:46:15",
+   "dedupe_key": "cbp:gnd_blaine:Pacific Highway:10/24/2026:16:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_blaine",
+   "port_name": "Blaine",
+   "crossing": "Point Roberts",
+   "lanes": "commercial",
+   "wait_min": null,
+   "fast_wait_min": null,
+   "lanes_open": null,
+   "date": "10/24/2026",
+   "time": "16:46:15",
+   "dedupe_key": "cbp:gnd_blaine:Point Roberts:10/24/2026:16:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_buffalo",
+   "port_name": "Buffalo/Niagara Falls",
+   "crossing": "Lewiston Bridge",
+   "lanes": "commercial",
+   "wait_min": 0,
+   "fast_wait_min": null,
+   "lanes_open": 2,
+   "date": "10/24/2026",
+   "time": "19:46:15",
+   "dedupe_key": "cbp:gnd_buffalo:Lewiston Bridge:10/24/2026:19:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_buffalo",
+   "port_name": "Buffalo/Niagara Falls",
+   "crossing": "Peace Bridge",
+   "lanes": "commercial",
+   "wait_min": 4,
+   "fast_wait_min": null,
+   "lanes_open": 4,
+   "date": "10/24/2026",
+   "time": "19:46:15",
+   "dedupe_key": "cbp:gnd_buffalo:Peace Bridge:10/24/2026:19:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_detroit",
+   "port_name": "Detroit",
+   "crossing": "Ambassador Bridge",
+   "lanes": "commercial",
+   "wait_min": 5,
+   "fast_wait_min": null,
+   "lanes_open": 3,
+   "date": "10/24/2026",
+   "time": "19:46:15",
+   "dedupe_key": "cbp:gnd_detroit:Ambassador Bridge:10/24/2026:19:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_detroit",
+   "port_name": "Detroit",
+   "crossing": "Gordie Howe International Bridge",
+   "lanes": "commercial",
+   "wait_min": 5,
+   "fast_wait_min": null,
+   "lanes_open": 3,
+   "date": "10/24/2026",
+   "time": "19:46:15",
+   "dedupe_key": "cbp:gnd_detroit:Gordie Howe International Bridge:10/24/2026:19:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_detroit",
+   "port_name": "Detroit",
+   "crossing": "Windsor Tunnel",
+   "lanes": "commercial",
+   "wait_min": null,
+   "fast_wait_min": null,
+   "lanes_open": null,
+   "date": "10/24/2026",
+   "time": "19:46:15",
+   "dedupe_key": "cbp:gnd_detroit:Windsor Tunnel:10/24/2026:19:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_porthuron",
+   "port_name": "Port Huron",
+   "crossing": "Bluewater Bridge",
+   "lanes": "commercial",
+   "wait_min": 5,
+   "fast_wait_min": null,
+   "lanes_open": 3,
+   "date": "10/24/2026",
+   "time": "19:46:15",
+   "dedupe_key": "cbp:gnd_porthuron:Bluewater Bridge:10/24/2026:19:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_elpaso",
+   "port_name": "El Paso",
+   "crossing": null,
+   "lanes": "commercial",
+   "wait_min": null,
+   "fast_wait_min": null,
+   "lanes_open": null,
+   "date": "10/24/2026",
+   "time": "17:46:15",
+   "dedupe_key": "cbp:gnd_elpaso::10/24/2026:17:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_elpaso",
+   "port_name": "El Paso",
+   "crossing": "Bridge of the Americas (BOTA)",
+   "lanes": "commercial",
+   "wait_min": null,
+   "fast_wait_min": null,
+   "lanes_open": null,
+   "date": "10/24/2026",
+   "time": "17:46:15",
+   "dedupe_key": "cbp:gnd_elpaso:Bridge of the Americas (BOTA):10/24/2026:17:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_elpaso",
+   "port_name": "El Paso",
+   "crossing": "Ysleta",
+   "lanes": "commercial",
+   "wait_min": null,
+   "fast_wait_min": null,
+   "lanes_open": null,
+   "date": "10/24/2026",
+   "time": "17:46:15",
+   "dedupe_key": "cbp:gnd_elpaso:Ysleta:10/24/2026:17:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_laredo",
+   "port_name": "Laredo",
+   "crossing": "Colombia Solidarity",
+   "lanes": "commercial",
+   "wait_min": 0,
+   "fast_wait_min": 0,
+   "lanes_open": 3,
+   "date": "10/24/2026",
+   "time": "18:46:15",
+   "dedupe_key": "cbp:gnd_laredo:Colombia Solidarity:10/24/2026:18:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_laredo",
+   "port_name": "Laredo",
+   "crossing": "World Trade Bridge",
+   "lanes": "commercial",
+   "wait_min": 25,
+   "fast_wait_min": 0,
+   "lanes_open": 6,
+   "date": "10/24/2026",
+   "time": "18:46:15",
+   "dedupe_key": "cbp:gnd_laredo:World Trade Bridge:10/24/2026:18:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_nogales",
+   "port_name": "Nogales",
+   "crossing": "Mariposa",
+   "lanes": "commercial",
+   "wait_min": 0,
+   "fast_wait_min": 0,
+   "lanes_open": 3,
+   "date": "10/24/2026",
+   "time": "17:46:15",
+   "dedupe_key": "cbp:gnd_nogales:Mariposa:10/24/2026:17:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "border_wait",
+   "node_id": "gnd_otaymesa",
+   "port_name": "Otay Mesa",
+   "crossing": "Commercial",
+   "lanes": "commercial",
+   "wait_min": 5,
+   "fast_wait_min": 5,
+   "lanes_open": 2,
+   "date": "10/24/2026",
+   "time": "16:46:15",
+   "dedupe_key": "cbp:gnd_otaymesa:Commercial:10/24/2026:16:46:15",
+   "provenance": {
+    "source": "CBP Border Wait Times",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  }
+ ]
+}

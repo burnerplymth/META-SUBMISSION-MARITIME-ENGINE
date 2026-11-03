@@ -1,0 +1,8667 @@
+{
+ "attribution": {
+  "chip": "COPERNICUS \u00b7 ESA",
+  "licence": "Copernicus Sentinel data: free, full and open (Regulation (EU) No 1159/2013)",
+  "text": "Contains modified Copernicus Sentinel data, ESA"
+ },
+ "bbox": [
+  103.9,
+  1.2,
+  104.05,
+  1.33
+ ],
+ "contract": "satwatch-multi/1",
+ "count_basis": "BRIGHT_TARGETS",
+ "counts": {
+  "targets_floor": 238
+ },
+ "crop": {
+  "file": "s1_sea_singapore_2026-10-22.png",
+  "pixel_spacing_m": 10.43,
+  "px": [
+   1600,
+   1378
+  ],
+  "render": {
+   "p5_dn": 25,
+   "p998_dn": 1556,
+   "stretch": "log amplitude (dB), p5 to p99.8 of valid pixels"
+  },
+  "url": "/satwatch/multi/crops/s1_sea_singapore_2026-10-22.png"
+ },
+ "detections": [
+  {
+   "bbox": null,
+   "contrast_db": 40.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0001",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 40.1 dB",
+   "point": [
+    626.362,
+    301.872
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 1.0,
+   "size_px": {
+    "area": 31,
+    "long": 16.3,
+    "long_m": 170.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 43.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0002",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 43.2 dB",
+   "point": [
+    401.875,
+    456.096
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 1.0,
+   "size_px": {
+    "area": 16,
+    "long": 5.0,
+    "long_m": 52.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 42.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0003",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 42.3 dB",
+   "point": [
+    53.75,
+    966.219
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 1.0,
+   "size_px": {
+    "area": 22,
+    "long": 6.8,
+    "long_m": 71.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 39.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0004",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 39.7 dB",
+   "point": [
+    413.631,
+    570.334
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.99,
+   "size_px": {
+    "area": 26,
+    "long": 11.4,
+    "long_m": 119.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 39.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0005",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 39.3 dB",
+   "point": [
+    982.656,
+    329.79
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.976,
+   "size_px": {
+    "area": 20,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 38.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0006",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 38.9 dB",
+   "point": [
+    360.069,
+    408.026
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.96,
+   "size_px": {
+    "area": 33,
+    "long": 15.4,
+    "long_m": 161.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 38.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0007",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 38.1 dB",
+   "point": [
+    798.962,
+    311.8
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.932,
+   "size_px": {
+    "area": 19,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 37.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0008",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 37.0 dB",
+   "point": [
+    837.375,
+    364.419
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.893,
+   "size_px": {
+    "area": 30,
+    "long": 6.9,
+    "long_m": 72.0,
+    "short": 6.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 36.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0009",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 36.9 dB",
+   "point": [
+    2.812,
+    397.192
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.889,
+   "size_px": {
+    "area": 18,
+    "long": 7.7,
+    "long_m": 80.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 36.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0010",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 36.8 dB",
+   "point": [
+    366.137,
+    359.797
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.886,
+   "size_px": {
+    "area": 81,
+    "long": 20.3,
+    "long_m": 211.0,
+    "short": 5.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 36.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0011",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 36.2 dB",
+   "point": [
+    27.162,
+    648.403
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.864,
+   "size_px": {
+    "area": 24,
+    "long": 18.7,
+    "long_m": 195.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 36.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0012",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 36.2 dB",
+   "point": [
+    628.675,
+    193.215
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.863,
+   "size_px": {
+    "area": 16,
+    "long": 5.1,
+    "long_m": 53.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 35.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0013",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 35.7 dB",
+   "point": [
+    331.175,
+    505.943
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.847,
+   "size_px": {
+    "area": 32,
+    "long": 15.2,
+    "long_m": 158.0,
+    "short": 5.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 35.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0014",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 35.7 dB",
+   "point": [
+    700.462,
+    385.66
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.845,
+   "size_px": {
+    "area": 17,
+    "long": 24.3,
+    "long_m": 254.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 35.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0015",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 35.5 dB",
+   "point": [
+    35.212,
+    418.97
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.841,
+   "size_px": {
+    "area": 19,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0016",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.9 dB",
+   "point": [
+    176.85,
+    287.888
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.819,
+   "size_px": {
+    "area": 28,
+    "long": 9.5,
+    "long_m": 99.0,
+    "short": 4.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0017",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.9 dB",
+   "point": [
+    171.887,
+    548.324
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.819,
+   "size_px": {
+    "area": 23,
+    "long": 6.3,
+    "long_m": 66.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0018",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.7 dB",
+   "point": [
+    815.625,
+    879.536
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.81,
+   "size_px": {
+    "area": 16,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0019",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.4 dB",
+   "point": [
+    547.656,
+    334.869
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.801,
+   "size_px": {
+    "area": 20,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0020",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.3 dB",
+   "point": [
+    220.075,
+    397.837
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.797,
+   "size_px": {
+    "area": 32,
+    "long": 15.3,
+    "long_m": 160.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0021",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.2 dB",
+   "point": [
+    480.481,
+    318.578
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.791,
+   "size_px": {
+    "area": 44,
+    "long": 15.9,
+    "long_m": 165.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0022",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.1 dB",
+   "point": [
+    93.2,
+    517.054
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.79,
+   "size_px": {
+    "area": 16,
+    "long": 5.5,
+    "long_m": 57.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 34.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0023",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 34.0 dB",
+   "point": [
+    649.988,
+    410.131
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.784,
+   "size_px": {
+    "area": 29,
+    "long": 25.4,
+    "long_m": 265.0,
+    "short": 6.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0024",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.9 dB",
+   "point": [
+    22.188,
+    846.785
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.784,
+   "size_px": {
+    "area": 19,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0025",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.9 dB",
+   "point": [
+    741.306,
+    469.245
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.782,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0026",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.8 dB",
+   "point": [
+    691.381,
+    286.321
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.78,
+   "size_px": {
+    "area": 21,
+    "long": 18.1,
+    "long_m": 189.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0027",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.8 dB",
+   "point": [
+    840.025,
+    147.409
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.779,
+   "size_px": {
+    "area": 35,
+    "long": 20.1,
+    "long_m": 210.0,
+    "short": 6.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0028",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.5 dB",
+   "point": [
+    792.812,
+    385.827
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.769,
+   "size_px": {
+    "area": 23,
+    "long": 5.0,
+    "long_m": 52.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0029",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.4 dB",
+   "point": [
+    442.431,
+    309.848
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.766,
+   "size_px": {
+    "area": 51,
+    "long": 10.3,
+    "long_m": 108.0,
+    "short": 7.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0030",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.3 dB",
+   "point": [
+    341.488,
+    323.316
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.76,
+   "size_px": {
+    "area": 34,
+    "long": 14.6,
+    "long_m": 152.0,
+    "short": 5.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 33.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0031",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 33.2 dB",
+   "point": [
+    479.431,
+    234.122
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.759,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0032",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.9 dB",
+   "point": [
+    37.25,
+    462.975
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.748,
+   "size_px": {
+    "area": 29,
+    "long": 16.6,
+    "long_m": 173.0,
+    "short": 6.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0033",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.7 dB",
+   "point": [
+    385.256,
+    324.811
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.741,
+   "size_px": {
+    "area": 22,
+    "long": 5.9,
+    "long_m": 62.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0034",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.7 dB",
+   "point": [
+    554.519,
+    378.048
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.741,
+   "size_px": {
+    "area": 62,
+    "long": 20.3,
+    "long_m": 212.0,
+    "short": 5.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0035",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.6 dB",
+   "point": [
+    406.85,
+    372.192
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.737,
+   "size_px": {
+    "area": 26,
+    "long": 14.9,
+    "long_m": 156.0,
+    "short": 5.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0036",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.6 dB",
+   "point": [
+    94.219,
+    590.443
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.736,
+   "size_px": {
+    "area": 52,
+    "long": 14.0,
+    "long_m": 146.0,
+    "short": 5.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0037",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.5 dB",
+   "point": [
+    482.606,
+    778.193
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.732,
+   "size_px": {
+    "area": 33,
+    "long": 9.4,
+    "long_m": 98.0,
+    "short": 5.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0038",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.3 dB",
+   "point": [
+    743.644,
+    351.836
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.725,
+   "size_px": {
+    "area": 18,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0039",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.2 dB",
+   "point": [
+    285.444,
+    369.369
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.722,
+   "size_px": {
+    "area": 61,
+    "long": 18.4,
+    "long_m": 192.0,
+    "short": 5.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 32.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0040",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.0 dB",
+   "point": [
+    673.688,
+    322.293
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.714,
+   "size_px": {
+    "area": 42,
+    "long": 20.2,
+    "long_m": 211.0,
+    "short": 7.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0041",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.9 dB",
+   "point": [
+    118.112,
+    339.659
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.712,
+   "size_px": {
+    "area": 31,
+    "long": 16.2,
+    "long_m": 169.0,
+    "short": 5.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0042",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.9 dB",
+   "point": [
+    117.669,
+    436.531
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.711,
+   "size_px": {
+    "area": 26,
+    "long": 27.1,
+    "long_m": 282.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0043",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.8 dB",
+   "point": [
+    19.275,
+    602.388
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.709,
+   "size_px": {
+    "area": 64,
+    "long": 15.2,
+    "long_m": 159.0,
+    "short": 6.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0044",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.8 dB",
+   "point": [
+    276.562,
+    320.493
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.707,
+   "size_px": {
+    "area": 44,
+    "long": 15.5,
+    "long_m": 162.0,
+    "short": 4.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0045",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.8 dB",
+   "point": [
+    591.263,
+    420.087
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.706,
+   "size_px": {
+    "area": 65,
+    "long": 25.6,
+    "long_m": 267.0,
+    "short": 6.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0046",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.7 dB",
+   "point": [
+    511.331,
+    356.64
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.704,
+   "size_px": {
+    "area": 43,
+    "long": 16.5,
+    "long_m": 172.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0047",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.5 dB",
+   "point": [
+    88.769,
+    797.939
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.697,
+   "size_px": {
+    "area": 62,
+    "long": 21.0,
+    "long_m": 219.0,
+    "short": 5.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0048",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.4 dB",
+   "point": [
+    513.538,
+    198.817
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.692,
+   "size_px": {
+    "area": 19,
+    "long": 6.4,
+    "long_m": 67.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0049",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.3 dB",
+   "point": [
+    662.944,
+    256.139
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.691,
+   "size_px": {
+    "area": 39,
+    "long": 12.1,
+    "long_m": 126.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0050",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.4 dB",
+   "point": [
+    474.094,
+    388.788
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.691,
+   "size_px": {
+    "area": 20,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0051",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.2 dB",
+   "point": [
+    203.931,
+    627.634
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.686,
+   "size_px": {
+    "area": 24,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 6.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 31.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0052",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 31.0 dB",
+   "point": [
+    569.656,
+    202.286
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.68,
+   "size_px": {
+    "area": 20,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0053",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.9 dB",
+   "point": [
+    616.825,
+    270.341
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.676,
+   "size_px": {
+    "area": 38,
+    "long": 12.3,
+    "long_m": 129.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0054",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.9 dB",
+   "point": [
+    455.55,
+    429.862
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.675,
+   "size_px": {
+    "area": 53,
+    "long": 31.3,
+    "long_m": 327.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0055",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.9 dB",
+   "point": [
+    6.731,
+    557.104
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.673,
+   "size_px": {
+    "area": 26,
+    "long": 23.7,
+    "long_m": 247.0,
+    "short": 6.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0056",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.8 dB",
+   "point": [
+    127.575,
+    678.157
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.67,
+   "size_px": {
+    "area": 26,
+    "long": 13.5,
+    "long_m": 141.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0057",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.4 dB",
+   "point": [
+    175.225,
+    649.782
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.658,
+   "size_px": {
+    "area": 58,
+    "long": 18.2,
+    "long_m": 190.0,
+    "short": 5.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0058",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.4 dB",
+   "point": [
+    733.438,
+    245.646
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.656,
+   "size_px": {
+    "area": 21,
+    "long": 6.7,
+    "long_m": 70.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0059",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.4 dB",
+   "point": [
+    516.25,
+    272.134
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.656,
+   "size_px": {
+    "area": 16,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0060",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.4 dB",
+   "point": [
+    143.719,
+    583.89
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.656,
+   "size_px": {
+    "area": 31,
+    "long": 7.4,
+    "long_m": 77.0,
+    "short": 6.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0061",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.1 dB",
+   "point": [
+    511.406,
+    300.363
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.647,
+   "size_px": {
+    "area": 85,
+    "long": 20.2,
+    "long_m": 211.0,
+    "short": 6.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0062",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.1 dB",
+   "point": [
+    575.837,
+    297.104
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.645,
+   "size_px": {
+    "area": 45,
+    "long": 14.3,
+    "long_m": 150.0,
+    "short": 6.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0063",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.1 dB",
+   "point": [
+    328.131,
+    347.845
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.645,
+   "size_px": {
+    "area": 41,
+    "long": 10.7,
+    "long_m": 112.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0064",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.0 dB",
+   "point": [
+    475.719,
+    273.563
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.644,
+   "size_px": {
+    "area": 17,
+    "long": 5.3,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0065",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.0 dB",
+   "point": [
+    249.312,
+    292.38
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.644,
+   "size_px": {
+    "area": 15,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0066",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.0 dB",
+   "point": [
+    339.719,
+    456.698
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.644,
+   "size_px": {
+    "area": 65,
+    "long": 21.6,
+    "long_m": 225.0,
+    "short": 6.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 30.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0067",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 30.0 dB",
+   "point": [
+    85.044,
+    336.212
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.642,
+   "size_px": {
+    "area": 60,
+    "long": 17.5,
+    "long_m": 182.0,
+    "short": 5.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0068",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.9 dB",
+   "point": [
+    417.756,
+    407.663
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.639,
+   "size_px": {
+    "area": 35,
+    "long": 22.1,
+    "long_m": 230.0,
+    "short": 5.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0069",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.8 dB",
+   "point": [
+    206.675,
+    358.919
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.636,
+   "size_px": {
+    "area": 44,
+    "long": 14.5,
+    "long_m": 151.0,
+    "short": 6.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0070",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.8 dB",
+   "point": [
+    629.062,
+    345.363
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.634,
+   "size_px": {
+    "area": 63,
+    "long": 18.4,
+    "long_m": 192.0,
+    "short": 8.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0071",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.7 dB",
+   "point": [
+    17.056,
+    355.501
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.633,
+   "size_px": {
+    "area": 34,
+    "long": 9.1,
+    "long_m": 95.0,
+    "short": 5.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0072",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.7 dB",
+   "point": [
+    734.288,
+    400.0
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.633,
+   "size_px": {
+    "area": 56,
+    "long": 16.0,
+    "long_m": 167.0,
+    "short": 5.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0073",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.7 dB",
+   "point": [
+    25.938,
+    425.98
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.63,
+   "size_px": {
+    "area": 18,
+    "long": 5.9,
+    "long_m": 61.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0074",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.6 dB",
+   "point": [
+    653.063,
+    227.939
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.629,
+   "size_px": {
+    "area": 15,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0075",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.6 dB",
+   "point": [
+    91.037,
+    554.303
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.629,
+   "size_px": {
+    "area": 67,
+    "long": 16.3,
+    "long_m": 170.0,
+    "short": 6.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0076",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.5 dB",
+   "point": [
+    488.713,
+    602.772
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.625,
+   "size_px": {
+    "area": 32,
+    "long": 14.9,
+    "long_m": 155.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0077",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.5 dB",
+   "point": [
+    442.337,
+    355.595
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.624,
+   "size_px": {
+    "area": 76,
+    "long": 19.7,
+    "long_m": 205.0,
+    "short": 7.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0078",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.4 dB",
+   "point": [
+    157.644,
+    342.75
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.623,
+   "size_px": {
+    "area": 26,
+    "long": 11.8,
+    "long_m": 123.0,
+    "short": 5.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0079",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.3 dB",
+   "point": [
+    459.162,
+    215.051
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.619,
+   "size_px": {
+    "area": 19,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0080",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.3 dB",
+   "point": [
+    345.387,
+    243.041
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.619,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0081",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.3 dB",
+   "point": [
+    640.094,
+    245.196
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.616,
+   "size_px": {
+    "area": 40,
+    "long": 10.3,
+    "long_m": 107.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0082",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.2 dB",
+   "point": [
+    647.9,
+    202.504
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.614,
+   "size_px": {
+    "area": 22,
+    "long": 8.0,
+    "long_m": 83.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0083",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.1 dB",
+   "point": [
+    332.738,
+    266.393
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.61,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0084",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.1 dB",
+   "point": [
+    6.694,
+    513.353
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.61,
+   "size_px": {
+    "area": 42,
+    "long": 13.5,
+    "long_m": 141.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0085",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.9 dB",
+   "point": [
+    521.456,
+    243.077
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.603,
+   "size_px": {
+    "area": 24,
+    "long": 8.2,
+    "long_m": 86.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0086",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.9 dB",
+   "point": [
+    173.156,
+    396.763
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.603,
+   "size_px": {
+    "area": 42,
+    "long": 21.5,
+    "long_m": 225.0,
+    "short": 5.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0087",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.9 dB",
+   "point": [
+    623.712,
+    332.322
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.602,
+   "size_px": {
+    "area": 54,
+    "long": 18.5,
+    "long_m": 193.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0088",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.9 dB",
+   "point": [
+    50.694,
+    507.525
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.602,
+   "size_px": {
+    "area": 38,
+    "long": 10.2,
+    "long_m": 106.0,
+    "short": 6.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0089",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.7 dB",
+   "point": [
+    683.587,
+    238.904
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.598,
+   "size_px": {
+    "area": 45,
+    "long": 12.1,
+    "long_m": 126.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0090",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.7 dB",
+   "point": [
+    720.081,
+    322.496
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.597,
+   "size_px": {
+    "area": 89,
+    "long": 23.1,
+    "long_m": 241.0,
+    "short": 5.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0091",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.7 dB",
+   "point": [
+    596.969,
+    249.891
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.595,
+   "size_px": {
+    "area": 34,
+    "long": 10.2,
+    "long_m": 107.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0092",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.7 dB",
+   "point": [
+    381.8,
+    497.112
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.595,
+   "size_px": {
+    "area": 52,
+    "long": 27.9,
+    "long_m": 291.0,
+    "short": 6.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0093",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.4 dB",
+   "point": [
+    232.694,
+    322.199
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.587,
+   "size_px": {
+    "area": 59,
+    "long": 17.2,
+    "long_m": 179.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0094",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.3 dB",
+   "point": [
+    287.2,
+    477.155
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.581,
+   "size_px": {
+    "area": 50,
+    "long": 27.4,
+    "long_m": 286.0,
+    "short": 7.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0095",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.2 dB",
+   "point": [
+    332.344,
+    243.019
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.58,
+   "size_px": {
+    "area": 16,
+    "long": 5.1,
+    "long_m": 53.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0096",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.2 dB",
+   "point": [
+    410.087,
+    335.885
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.58,
+   "size_px": {
+    "area": 66,
+    "long": 18.8,
+    "long_m": 196.0,
+    "short": 5.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0097",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.1 dB",
+   "point": [
+    335.575,
+    282.961
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.574,
+   "size_px": {
+    "area": 24,
+    "long": 8.6,
+    "long_m": 90.0,
+    "short": 5.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0098",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.0 dB",
+   "point": [
+    550.869,
+    260.682
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.57,
+   "size_px": {
+    "area": 18,
+    "long": 5.5,
+    "long_m": 57.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 27.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0099",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 27.9 dB",
+   "point": [
+    512.619,
+    218.128
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.567,
+   "size_px": {
+    "area": 26,
+    "long": 8.4,
+    "long_m": 88.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 27.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0100",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 27.8 dB",
+   "point": [
+    396.331,
+    256.48
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.565,
+   "size_px": {
+    "area": 46,
+    "long": 11.7,
+    "long_m": 122.0,
+    "short": 5.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 27.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0101",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 27.5 dB",
+   "point": [
+    274.788,
+    271.234
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.554,
+   "size_px": {
+    "area": 19,
+    "long": 6.3,
+    "long_m": 66.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 27.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0102",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 27.4 dB",
+   "point": [
+    606.406,
+    196.524
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.551,
+   "size_px": {
+    "area": 32,
+    "long": 9.0,
+    "long_m": 94.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 27.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0103",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 27.4 dB",
+   "point": [
+    54.6,
+    598.643
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.55,
+   "size_px": {
+    "area": 44,
+    "long": 16.3,
+    "long_m": 170.0,
+    "short": 6.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 27.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0104",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 27.3 dB",
+   "point": [
+    436.319,
+    217.808
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.545,
+   "size_px": {
+    "area": 28,
+    "long": 7.6,
+    "long_m": 80.0,
+    "short": 5.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 27.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0105",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 27.3 dB",
+   "point": [
+    605.644,
+    232.417
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.545,
+   "size_px": {
+    "area": 30,
+    "long": 11.7,
+    "long_m": 122.0,
+    "short": 4.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0106",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.8 dB",
+   "point": [
+    902.862,
+    11.865
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.528,
+   "size_px": {
+    "area": 26,
+    "long": 7.7,
+    "long_m": 80.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0107",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.8 dB",
+   "point": [
+    364.281,
+    287.337
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.528,
+   "size_px": {
+    "area": 20,
+    "long": 7.3,
+    "long_m": 76.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0108",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.8 dB",
+   "point": [
+    792.694,
+    281.705
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.527,
+   "size_px": {
+    "area": 16,
+    "long": 5.2,
+    "long_m": 54.0,
+    "short": 4.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0109",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.8 dB",
+   "point": [
+    252.2,
+    381.074
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.527,
+   "size_px": {
+    "area": 86,
+    "long": 22.5,
+    "long_m": 235.0,
+    "short": 5.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0110",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.7 dB",
+   "point": [
+    808.856,
+    146.422
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.525,
+   "size_px": {
+    "area": 51,
+    "long": 27.0,
+    "long_m": 282.0,
+    "short": 15.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0111",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.5 dB",
+   "point": [
+    79.869,
+    469.057
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.517,
+   "size_px": {
+    "area": 49,
+    "long": 26.3,
+    "long_m": 274.0,
+    "short": 15.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0112",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.5 dB",
+   "point": [
+    569.612,
+    223.556
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.516,
+   "size_px": {
+    "area": 25,
+    "long": 8.0,
+    "long_m": 84.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0113",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.2 dB",
+   "point": [
+    149.094,
+    309.652
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.509,
+   "size_px": {
+    "area": 41,
+    "long": 10.5,
+    "long_m": 109.0,
+    "short": 6.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0114",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.2 dB",
+   "point": [
+    640.156,
+    220.21
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.508,
+   "size_px": {
+    "area": 20,
+    "long": 8.1,
+    "long_m": 84.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0115",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.2 dB",
+   "point": [
+    565.344,
+    365.537
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.507,
+   "size_px": {
+    "area": 19,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0116",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.1 dB",
+   "point": [
+    354.306,
+    262.119
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.504,
+   "size_px": {
+    "area": 23,
+    "long": 7.3,
+    "long_m": 76.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0117",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.0 dB",
+   "point": [
+    370.312,
+    208.062
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.501,
+   "size_px": {
+    "area": 19,
+    "long": 5.0,
+    "long_m": 52.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 26.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0118",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 26.0 dB",
+   "point": [
+    453.856,
+    280.718
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.501,
+   "size_px": {
+    "area": 18,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0119",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.9 dB",
+   "point": [
+    306.25,
+    264.042
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.496,
+   "size_px": {
+    "area": 20,
+    "long": 6.1,
+    "long_m": 64.0,
+    "short": 5.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0120",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.8 dB",
+   "point": [
+    292.212,
+    246.466
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.494,
+   "size_px": {
+    "area": 23,
+    "long": 9.2,
+    "long_m": 96.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0121",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.8 dB",
+   "point": [
+    199.613,
+    286.923
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.494,
+   "size_px": {
+    "area": 26,
+    "long": 7.7,
+    "long_m": 80.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0122",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.6 dB",
+   "point": [
+    414.944,
+    292.75
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.486,
+   "size_px": {
+    "area": 32,
+    "long": 8.5,
+    "long_m": 88.0,
+    "short": 5.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0123",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.5 dB",
+   "point": [
+    286.231,
+    224.485
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.483,
+   "size_px": {
+    "area": 19,
+    "long": 6.0,
+    "long_m": 63.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0124",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.5 dB",
+   "point": [
+    55.0,
+    445.726
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.483,
+   "size_px": {
+    "area": 14,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0125",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.5 dB",
+   "point": [
+    324.125,
+    293.215
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.481,
+   "size_px": {
+    "area": 29,
+    "long": 8.6,
+    "long_m": 89.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0126",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.4 dB",
+   "point": [
+    80.531,
+    527.874
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.48,
+   "size_px": {
+    "area": 23,
+    "long": 6.1,
+    "long_m": 64.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0127",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.4 dB",
+   "point": [
+    485.044,
+    258.222
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.479,
+   "size_px": {
+    "area": 30,
+    "long": 11.4,
+    "long_m": 119.0,
+    "short": 5.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0128",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.3 dB",
+   "point": [
+    997.681,
+    509.253
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.477,
+   "size_px": {
+    "area": 24,
+    "long": 7.6,
+    "long_m": 80.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0129",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.3 dB",
+   "point": [
+    427.55,
+    228.055
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.476,
+   "size_px": {
+    "area": 33,
+    "long": 9.2,
+    "long_m": 96.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0130",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.2 dB",
+   "point": [
+    309.95,
+    319.586
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.472,
+   "size_px": {
+    "area": 45,
+    "long": 12.5,
+    "long_m": 130.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0131",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.2 dB",
+   "point": [
+    619.269,
+    218.179
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.47,
+   "size_px": {
+    "area": 39,
+    "long": 10.0,
+    "long_m": 104.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0132",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.1 dB",
+   "point": [
+    360.156,
+    240.167
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.47,
+   "size_px": {
+    "area": 20,
+    "long": 6.3,
+    "long_m": 66.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0133",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.2 dB",
+   "point": [
+    616.419,
+    240.203
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.47,
+   "size_px": {
+    "area": 26,
+    "long": 7.0,
+    "long_m": 73.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0134",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.0 dB",
+   "point": [
+    232.362,
+    256.248
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.464,
+   "size_px": {
+    "area": 18,
+    "long": 6.1,
+    "long_m": 64.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0135",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.8 dB",
+   "point": [
+    173.881,
+    232.322
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.458,
+   "size_px": {
+    "area": 14,
+    "long": 5.2,
+    "long_m": 54.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0136",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.8 dB",
+   "point": [
+    433.438,
+    289.55
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.456,
+   "size_px": {
+    "area": 18,
+    "long": 5.9,
+    "long_m": 61.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0137",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.7 dB",
+   "point": [
+    504.687,
+    235.428
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.455,
+   "size_px": {
+    "area": 24,
+    "long": 7.3,
+    "long_m": 76.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0138",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.7 dB",
+   "point": [
+    598.912,
+    216.205
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.454,
+   "size_px": {
+    "area": 21,
+    "long": 7.0,
+    "long_m": 73.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0139",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.7 dB",
+   "point": [
+    240.312,
+    280.181
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.453,
+   "size_px": {
+    "area": 22,
+    "long": 8.8,
+    "long_m": 92.0,
+    "short": 5.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0140",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.6 dB",
+   "point": [
+    0.806,
+    469.311
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.451,
+   "size_px": {
+    "area": 14,
+    "long": 6.1,
+    "long_m": 63.0,
+    "short": 3.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0141",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.6 dB",
+   "point": [
+    267.575,
+    289.499
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.45,
+   "size_px": {
+    "area": 21,
+    "long": 6.2,
+    "long_m": 65.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0142",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.5 dB",
+   "point": [
+    475.131,
+    290.907
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.447,
+   "size_px": {
+    "area": 41,
+    "long": 13.9,
+    "long_m": 145.0,
+    "short": 5.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0143",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.5 dB",
+   "point": [
+    396.425,
+    227.787
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.446,
+   "size_px": {
+    "area": 18,
+    "long": 5.8,
+    "long_m": 61.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0144",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.5 dB",
+   "point": [
+    307.469,
+    296.27
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.446,
+   "size_px": {
+    "area": 29,
+    "long": 9.2,
+    "long_m": 96.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0145",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.4 dB",
+   "point": [
+    418.919,
+    246.771
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.442,
+   "size_px": {
+    "area": 22,
+    "long": 7.0,
+    "long_m": 73.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0146",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.3 dB",
+   "point": [
+    430.938,
+    191.045
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.44,
+   "size_px": {
+    "area": 25,
+    "long": 9.0,
+    "long_m": 94.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0147",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.3 dB",
+   "point": [
+    666.031,
+    222.025
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.44,
+   "size_px": {
+    "area": 20,
+    "long": 7.2,
+    "long_m": 75.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0148",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.3 dB",
+   "point": [
+    564.638,
+    244.964
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.44,
+   "size_px": {
+    "area": 48,
+    "long": 13.2,
+    "long_m": 137.0,
+    "short": 6.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0149",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.1 dB",
+   "point": [
+    376.906,
+    270.544
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.433,
+   "size_px": {
+    "area": 29,
+    "long": 9.4,
+    "long_m": 98.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0150",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.1 dB",
+   "point": [
+    480.481,
+    349.463
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.433,
+   "size_px": {
+    "area": 48,
+    "long": 12.6,
+    "long_m": 131.0,
+    "short": 5.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0151",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.1 dB",
+   "point": [
+    272.45,
+    251.197
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.431,
+   "size_px": {
+    "area": 26,
+    "long": 7.3,
+    "long_m": 76.0,
+    "short": 5.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0152",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.1 dB",
+   "point": [
+    349.375,
+    286.734
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.431,
+   "size_px": {
+    "area": 24,
+    "long": 7.3,
+    "long_m": 76.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0153",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.1 dB",
+   "point": [
+    133.375,
+    521.626
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.431,
+   "size_px": {
+    "area": 20,
+    "long": 10.4,
+    "long_m": 109.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0154",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.8 dB",
+   "point": [
+    385.275,
+    242.583
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.423,
+   "size_px": {
+    "area": 36,
+    "long": 8.1,
+    "long_m": 84.0,
+    "short": 6.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0155",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.7 dB",
+   "point": [
+    425.075,
+    270.835
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.418,
+   "size_px": {
+    "area": 21,
+    "long": 7.0,
+    "long_m": 73.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0156",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.7 dB",
+   "point": [
+    403.25,
+    212.881
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.416,
+   "size_px": {
+    "area": 20,
+    "long": 5.9,
+    "long_m": 62.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0157",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.7 dB",
+   "point": [
+    260.906,
+    235.943
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.416,
+   "size_px": {
+    "area": 19,
+    "long": 6.0,
+    "long_m": 63.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0158",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.6 dB",
+   "point": [
+    378.381,
+    225.987
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.413,
+   "size_px": {
+    "area": 22,
+    "long": 5.9,
+    "long_m": 62.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0159",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.4 dB",
+   "point": [
+    442.738,
+    266.372
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.408,
+   "size_px": {
+    "area": 25,
+    "long": 7.1,
+    "long_m": 74.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0160",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.3 dB",
+   "point": [
+    416.838,
+    220.428
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.404,
+   "size_px": {
+    "area": 16,
+    "long": 5.5,
+    "long_m": 57.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0161",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.3 dB",
+   "point": [
+    227.188,
+    289.187
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.404,
+   "size_px": {
+    "area": 21,
+    "long": 5.0,
+    "long_m": 52.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0162",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.2 dB",
+   "point": [
+    235.625,
+    243.832
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.402,
+   "size_px": {
+    "area": 16,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0163",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.2 dB",
+   "point": [
+    861.188,
+    18.795
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.4,
+   "size_px": {
+    "area": 15,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0164",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.2 dB",
+   "point": [
+    420.625,
+    204.543
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.399,
+   "size_px": {
+    "area": 22,
+    "long": 6.0,
+    "long_m": 63.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0165",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.1 dB",
+   "point": [
+    258.438,
+    269.441
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.397,
+   "size_px": {
+    "area": 19,
+    "long": 5.0,
+    "long_m": 52.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 23.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0166",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 23.1 dB",
+   "point": [
+    902.444,
+    181.872
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.395,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0167",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.9 dB",
+   "point": [
+    482.087,
+    213.599
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.391,
+   "size_px": {
+    "area": 19,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0168",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.7 dB",
+   "point": [
+    215.713,
+    261.981
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.382,
+   "size_px": {
+    "area": 39,
+    "long": 10.5,
+    "long_m": 109.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0169",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.7 dB",
+   "point": [
+    293.35,
+    269.369
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.382,
+   "size_px": {
+    "area": 36,
+    "long": 9.2,
+    "long_m": 96.0,
+    "short": 5.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0170",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.7 dB",
+   "point": [
+    392.431,
+    209.078
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.381,
+   "size_px": {
+    "area": 18,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 5.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0171",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.6 dB",
+   "point": [
+    317.256,
+    238.433
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.378,
+   "size_px": {
+    "area": 18,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0172",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.6 dB",
+   "point": [
+    463.881,
+    257.155
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.377,
+   "size_px": {
+    "area": 21,
+    "long": 6.3,
+    "long_m": 65.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0173",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.5 dB",
+   "point": [
+    229.938,
+    270.029
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.374,
+   "size_px": {
+    "area": 15,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0174",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.4 dB",
+   "point": [
+    288.056,
+    290.036
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.371,
+   "size_px": {
+    "area": 23,
+    "long": 7.7,
+    "long_m": 80.0,
+    "short": 4.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0175",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.1 dB",
+   "point": [
+    316.931,
+    255.109
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.36,
+   "size_px": {
+    "area": 27,
+    "long": 8.3,
+    "long_m": 86.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0176",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.8 dB",
+   "point": [
+    441.425,
+    243.592
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.35,
+   "size_px": {
+    "area": 18,
+    "long": 6.0,
+    "long_m": 63.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0177",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.7 dB",
+   "point": [
+    337.719,
+    224.935
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.348,
+   "size_px": {
+    "area": 13,
+    "long": 4.4,
+    "long_m": 46.0,
+    "short": 4.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0178",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.7 dB",
+   "point": [
+    998.75,
+    170.537
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.345,
+   "size_px": {
+    "area": 16,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0179",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.6 dB",
+   "point": [
+    305.681,
+    236.981
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.342,
+   "size_px": {
+    "area": 17,
+    "long": 5.9,
+    "long_m": 61.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0180",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.3 dB",
+   "point": [
+    779.881,
+    269.731
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.334,
+   "size_px": {
+    "area": 16,
+    "long": 5.2,
+    "long_m": 54.0,
+    "short": 4.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0181",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.3 dB",
+   "point": [
+    348.619,
+    189.405
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.331,
+   "size_px": {
+    "area": 14,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0182",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.2 dB",
+   "point": [
+    508.687,
+    254.463
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.328,
+   "size_px": {
+    "area": 20,
+    "long": 6.4,
+    "long_m": 66.0,
+    "short": 4.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0183",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.1 dB",
+   "point": [
+    389.812,
+    287.286
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.324,
+   "size_px": {
+    "area": 40,
+    "long": 11.1,
+    "long_m": 115.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 20.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0184",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 20.8 dB",
+   "point": [
+    256.831,
+    250.16
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.316,
+   "size_px": {
+    "area": 23,
+    "long": 6.8,
+    "long_m": 70.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 20.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0185",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 20.8 dB",
+   "point": [
+    330.562,
+    227.213
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.315,
+   "size_px": {
+    "area": 15,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 20.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0186",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 20.8 dB",
+   "point": [
+    942.444,
+    22.946
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.314,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 20.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0187",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 20.7 dB",
+   "point": [
+    495.312,
+    208.273
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.312,
+   "size_px": {
+    "area": 24,
+    "long": 7.0,
+    "long_m": 73.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 20.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0188",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 20.6 dB",
+   "point": [
+    739.825,
+    320.987
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.308,
+   "size_px": {
+    "area": 45,
+    "long": 13.3,
+    "long_m": 139.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 20.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0189",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 20.1 dB",
+   "point": [
+    160.056,
+    250.639
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.29,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0190",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.8 dB",
+   "point": [
+    583.362,
+    239.543
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.277,
+   "size_px": {
+    "area": 17,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0191",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.7 dB",
+   "point": [
+    42.894,
+    370.029
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.273,
+   "size_px": {
+    "area": 15,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0192",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.5 dB",
+   "point": [
+    403.156,
+    280.733
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.269,
+   "size_px": {
+    "area": 20,
+    "long": 6.3,
+    "long_m": 66.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0193",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.5 dB",
+   "point": [
+    463.387,
+    234.47
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.266,
+   "size_px": {
+    "area": 25,
+    "long": 7.7,
+    "long_m": 80.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0194",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.2 dB",
+   "point": [
+    315.7,
+    215.755
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.257,
+   "size_px": {
+    "area": 16,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0195",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.1 dB",
+   "point": [
+    574.019,
+    264.623
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.255,
+   "size_px": {
+    "area": 27,
+    "long": 7.7,
+    "long_m": 80.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0196",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.1 dB",
+   "point": [
+    348.125,
+    199.565
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.253,
+   "size_px": {
+    "area": 16,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0197",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.0 dB",
+   "point": [
+    732.406,
+    844.448
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.251,
+   "size_px": {
+    "area": 34,
+    "long": 10.3,
+    "long_m": 108.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0198",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.0 dB",
+   "point": [
+    217.619,
+    242.496
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.249,
+   "size_px": {
+    "area": 29,
+    "long": 8.5,
+    "long_m": 88.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0199",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.9 dB",
+   "point": [
+    216.744,
+    276.364
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.247,
+   "size_px": {
+    "area": 21,
+    "long": 6.8,
+    "long_m": 71.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0200",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.9 dB",
+   "point": [
+    247.037,
+    266.655
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.245,
+   "size_px": {
+    "area": 21,
+    "long": 6.6,
+    "long_m": 68.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0201",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.8 dB",
+   "point": [
+    882.519,
+    155.544
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.244,
+   "size_px": {
+    "area": 19,
+    "long": 6.1,
+    "long_m": 64.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0202",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.8 dB",
+   "point": [
+    502.713,
+    183.846
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.244,
+   "size_px": {
+    "area": 19,
+    "long": 5.2,
+    "long_m": 55.0,
+    "short": 4.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0203",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.8 dB",
+   "point": [
+    748.381,
+    188.781
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.241,
+   "size_px": {
+    "area": 11,
+    "long": 4.4,
+    "long_m": 46.0,
+    "short": 3.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0204",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.8 dB",
+   "point": [
+    454.0,
+    243.541
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.241,
+   "size_px": {
+    "area": 20,
+    "long": 6.0,
+    "long_m": 63.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0205",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.5 dB",
+   "point": [
+    867.363,
+    317.569
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.23,
+   "size_px": {
+    "area": 18,
+    "long": 5.5,
+    "long_m": 57.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0206",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.2 dB",
+   "point": [
+    966.062,
+    495.305
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.222,
+   "size_px": {
+    "area": 35,
+    "long": 9.4,
+    "long_m": 98.0,
+    "short": 4.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0207",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.0 dB",
+   "point": [
+    811.713,
+    203.89
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.215,
+   "size_px": {
+    "area": 37,
+    "long": 9.4,
+    "long_m": 98.0,
+    "short": 5.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 17.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0208",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 17.7 dB",
+   "point": [
+    476.587,
+    190.399
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.205,
+   "size_px": {
+    "area": 23,
+    "long": 6.7,
+    "long_m": 70.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 17.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0209",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 17.7 dB",
+   "point": [
+    370.7,
+    253.215
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.202,
+   "size_px": {
+    "area": 21,
+    "long": 6.2,
+    "long_m": 65.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 17.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0210",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 17.4 dB",
+   "point": [
+    826.212,
+    203.94
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.192,
+   "size_px": {
+    "area": 93,
+    "long": 30.0,
+    "long_m": 313.0,
+    "short": 4.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 17.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0211",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 17.0 dB",
+   "point": [
+    862.763,
+    169.63
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.177,
+   "size_px": {
+    "area": 24,
+    "long": 9.6,
+    "long_m": 100.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0212",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.9 dB",
+   "point": [
+    987.281,
+    129.144
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.175,
+   "size_px": {
+    "area": 13,
+    "long": 4.4,
+    "long_m": 46.0,
+    "short": 4.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0213",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.8 dB",
+   "point": [
+    220.444,
+    423.904
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.173,
+   "size_px": {
+    "area": 14,
+    "long": 5.1,
+    "long_m": 53.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0214",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.8 dB",
+   "point": [
+    632.631,
+    409.289
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.172,
+   "size_px": {
+    "area": 14,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0215",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.7 dB",
+   "point": [
+    883.012,
+    142.707
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.169,
+   "size_px": {
+    "area": 34,
+    "long": 10.2,
+    "long_m": 106.0,
+    "short": 5.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0216",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.7 dB",
+   "point": [
+    246.012,
+    252.903
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.169,
+   "size_px": {
+    "area": 17,
+    "long": 6.0,
+    "long_m": 62.0,
+    "short": 3.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0217",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.3 dB",
+   "point": [
+    881.419,
+    133.331
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.152,
+   "size_px": {
+    "area": 13,
+    "long": 5.1,
+    "long_m": 53.0,
+    "short": 3.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0218",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.0 dB",
+   "point": [
+    300.531,
+    222.38
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.142,
+   "size_px": {
+    "area": 17,
+    "long": 6.1,
+    "long_m": 64.0,
+    "short": 3.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0219",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.8 dB",
+   "point": [
+    726.438,
+    231.858
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.137,
+   "size_px": {
+    "area": 10,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 3.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0220",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.8 dB",
+   "point": [
+    453.825,
+    142.765
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.135,
+   "size_px": {
+    "area": 13,
+    "long": 4.6,
+    "long_m": 48.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0221",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.6 dB",
+   "point": [
+    332.413,
+    211.473
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.13,
+   "size_px": {
+    "area": 11,
+    "long": 4.4,
+    "long_m": 46.0,
+    "short": 3.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0222",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.3 dB",
+   "point": [
+    572.281,
+    159.565
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.117,
+   "size_px": {
+    "area": 13,
+    "long": 5.4,
+    "long_m": 56.0,
+    "short": 3.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0223",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.3 dB",
+   "point": [
+    110.094,
+    651.865
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.117,
+   "size_px": {
+    "area": 26,
+    "long": 9.2,
+    "long_m": 96.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0224",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.1 dB",
+   "point": [
+    285.0,
+    462.046
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.109,
+   "size_px": {
+    "area": 10,
+    "long": 4.0,
+    "long_m": 42.0,
+    "short": 3.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0225",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.0 dB",
+   "point": [
+    554.5,
+    186.205
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.108,
+   "size_px": {
+    "area": 23,
+    "long": 7.2,
+    "long_m": 75.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0226",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.8 dB",
+   "point": [
+    337.887,
+    210.726
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.1,
+   "size_px": {
+    "area": 8,
+    "long": 3.8,
+    "long_m": 40.0,
+    "short": 3.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0227",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.7 dB",
+   "point": [
+    225.731,
+    251.509
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.096,
+   "size_px": {
+    "area": 12,
+    "long": 5.1,
+    "long_m": 53.0,
+    "short": 3.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0228",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.4 dB",
+   "point": [
+    943.894,
+    2.866
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.086,
+   "size_px": {
+    "area": 49,
+    "long": 14.1,
+    "long_m": 147.0,
+    "short": 9.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0229",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.2 dB",
+   "point": [
+    343.15,
+    768.868
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.079,
+   "size_px": {
+    "area": 13,
+    "long": 5.5,
+    "long_m": 57.0,
+    "short": 3.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0230",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.0 dB",
+   "point": [
+    931.8,
+    6.212
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.072,
+   "size_px": {
+    "area": 16,
+    "long": 7.3,
+    "long_m": 76.0,
+    "short": 3.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0231",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.8 dB",
+   "point": [
+    739.169,
+    212.866
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.065,
+   "size_px": {
+    "area": 6,
+    "long": 3.1,
+    "long_m": 33.0,
+    "short": 2.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0232",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.8 dB",
+   "point": [
+    637.5,
+    412.554
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.065,
+   "size_px": {
+    "area": 6,
+    "long": 3.0,
+    "long_m": 31.0,
+    "short": 2.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0233",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.5 dB",
+   "point": [
+    906.656,
+    804.877
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.053,
+   "size_px": {
+    "area": 13,
+    "long": 6.1,
+    "long_m": 64.0,
+    "short": 3.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0234",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.3 dB",
+   "point": [
+    964.062,
+    27.032
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.046,
+   "size_px": {
+    "area": 4,
+    "long": 3.0,
+    "long_m": 31.0,
+    "short": 2.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0235",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.0 dB",
+   "point": [
+    836.25,
+    199.565
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.037,
+   "size_px": {
+    "area": 4,
+    "long": 2.0,
+    "long_m": 21.0,
+    "short": 2.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0236",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.8 dB",
+   "point": [
+    955.625,
+    9.071
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.028,
+   "size_px": {
+    "area": 6,
+    "long": 3.0,
+    "long_m": 31.0,
+    "short": 2.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0237",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.7 dB",
+   "point": [
+    996.919,
+    979.833
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.025,
+   "size_px": {
+    "area": 7,
+    "long": 4.1,
+    "long_m": 43.0,
+    "short": 2.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_singapore_2026-10-22.png",
+   "crop_px": [
+    1600,
+    1378
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_singapore:now:0238",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.4 dB",
+   "point": [
+    955.938,
+    5.08
+   ],
+   "role": "now",
+   "scene_date": "2026-10-22",
+   "score": 0.014,
+   "size_px": {
+    "area": 4,
+    "long": 3.2,
+    "long_m": 34.0,
+    "short": 1.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  }
+ ],
+ "detector": {
+  "id": "sentinel1-cfar/1",
+  "label": "CELL-AVERAGING CFAR \u00b7 VV AMPLITUDE",
+  "params": {
+   "abs_sea_amp": 150.0,
+   "block_px": 16,
+   "clip_factor": 6.0,
+   "core_db": 6.0,
+   "enl_eff": 20.0,
+   "guard_half_px": 18,
+   "land_buffer_blocks": 2,
+   "max_hit_pixels": 150000,
+   "max_length_m": 500.0,
+   "merge_px": 3,
+   "min_contrast_db": 12.0,
+   "min_land_blocks": 24,
+   "min_pixels": 3,
+   "min_ring_valid_frac": 0.35,
+   "pfa": 1e-06,
+   "pre_factor": 3.0,
+   "ring_half_px": 34,
+   "sea_separation_log10": 0.6
+  },
+  "rejected": {
+   "coast_clutter_skipped": 1018,
+   "too_small": 4
+  },
+  "stats": {
+   "alpha": 15.85,
+   "alpha_gamma": 2.44,
+   "candidate_pixels": 125351,
+   "hit_pixels": 23336,
+   "sea_level_amp": 47.0,
+   "sea_mask_mode": "bimodal",
+   "sea_pct": 83.78,
+   "valid_pct": 100.0
+  },
+  "status": "OK"
+ },
+ "imagery_mode": "SNAPSHOT",
+ "imagery_provenance": {
+  "mode": "SNAPSHOT",
+  "retrieved_at": "2026-10-25T12:17:31Z",
+  "source": "SENTINEL-1 GRD via Earth Search STAC and Planetary Computer titiler; Contains modified Copernicus Sentinel data, ESA"
+ },
+ "kind": "satwatch_multi",
+ "mode": "MODELED",
+ "name": "Singapore Anchorage",
+ "place": "sea_singapore",
+ "provenance": {
+  "mode": "MODELED",
+  "retrieved_at": "2026-10-25T12:17:31Z",
+  "source": "SENTINEL-1 GRD via Earth Search STAC and Planetary Computer titiler; Contains modified Copernicus Sentinel data, ESA"
+ },
+ "retrieved_at": "2026-10-25T12:17:31Z",
+ "scene": {
+  "date": "2026-10-22",
+  "datetime": "2026-10-22T22:47:33.763113Z",
+  "id": "S1D_IW_GRDH_1SDV_20261022T224721_20261022T224746_005134_009BB1",
+  "instrument_mode": "IW",
+  "orbit_state": "descending",
+  "platform": "sentinel-1d"
+ },
+ "ship_detection_grade": "large_vessels_all_weather",
+ "source": "sentinel-1"
+}

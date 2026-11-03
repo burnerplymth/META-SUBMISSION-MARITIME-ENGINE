@@ -1,0 +1,59 @@
+{
+ "attribution": {
+  "chip": "USGS",
+  "licence": "USGS Landsat data: public domain, no restrictions on use",
+  "text": "Landsat imagery courtesy of the U.S. Geological Survey"
+ },
+ "bbox": [
+  103.9,
+  1.2,
+  104.05,
+  1.33
+ ],
+ "contract": "satwatch-multi/1",
+ "count_basis": null,
+ "counts": null,
+ "cover_pct": 100.0,
+ "crop": {
+  "file": "landsat_sea_singapore_2026-10-05.png",
+  "pixel_spacing_m": 30.03,
+  "px": [
+   556,
+   479
+  ],
+  "url": "/satwatch/multi/crops/landsat_sea_singapore_2026-10-05.png",
+  "window_m": null
+ },
+ "detections": [],
+ "detector": {
+  "id": null,
+  "label": null,
+  "status": "NOT RUN"
+ },
+ "imagery_mode": "SNAPSHOT",
+ "kind": "satwatch_multi",
+ "mode": "SNAPSHOT",
+ "name": "Singapore Anchorage",
+ "place": "sea_singapore",
+ "place_bbox": [
+  103.9,
+  1.2,
+  104.05,
+  1.33
+ ],
+ "provenance": {
+  "mode": "SNAPSHOT",
+  "retrieved_at": "2026-10-25T12:17:41Z",
+  "source": "LANDSAT C2 L2 via Earth Search STAC and Planetary Computer titiler; Landsat imagery courtesy of the U.S. Geological Survey"
+ },
+ "retrieved_at": "2026-10-25T12:17:41Z",
+ "scene": {
+  "cloud_pct_tile": 36.94,
+  "date": "2026-10-05",
+  "datetime": "2026-10-05T03:16:40.119742Z",
+  "id": "LC08_L2SP_125059_20261005_02_T1",
+  "platform": "landsat-8"
+ },
+ "ship_detection_grade": "none",
+ "source": "landsat"
+}

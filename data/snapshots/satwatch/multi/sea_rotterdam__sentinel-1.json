@@ -1,0 +1,1359 @@
+{
+ "attribution": {
+  "chip": "COPERNICUS \u00b7 ESA",
+  "licence": "Copernicus Sentinel data: free, full and open (Regulation (EU) No 1159/2013)",
+  "text": "Contains modified Copernicus Sentinel data, ESA"
+ },
+ "bbox": [
+  3.9,
+  51.9,
+  4.2,
+  52.05
+ ],
+ "contract": "satwatch-multi/1",
+ "count_basis": "BRIGHT_TARGETS",
+ "counts": {
+  "targets_floor": 35
+ },
+ "crop": {
+  "file": "s1_sea_rotterdam_2026-10-23.png",
+  "pixel_spacing_m": 12.86,
+  "px": [
+   1600,
+   1290
+  ],
+  "render": {
+   "p5_dn": 64,
+   "p998_dn": 2798,
+   "stretch": "log amplitude (dB), p5 to p99.8 of valid pixels"
+  },
+  "url": "/satwatch/multi/crops/s1_sea_rotterdam_2026-10-23.png"
+ },
+ "detections": [
+  {
+   "bbox": null,
+   "contrast_db": 32.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0001",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 32.2 dB",
+   "point": [
+    40.625,
+    261.853
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.722,
+   "size_px": {
+    "area": 14,
+    "long": 4.0,
+    "long_m": 51.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 29.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0002",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 29.0 dB",
+   "point": [
+    50.613,
+    302.364
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.606,
+   "size_px": {
+    "area": 42,
+    "long": 13.2,
+    "long_m": 169.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0003",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.7 dB",
+   "point": [
+    323.406,
+    510.302
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.595,
+   "size_px": {
+    "area": 19,
+    "long": 6.0,
+    "long_m": 77.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 28.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0004",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 28.2 dB",
+   "point": [
+    272.6,
+    374.295
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.579,
+   "size_px": {
+    "area": 35,
+    "long": 9.5,
+    "long_m": 122.0,
+    "short": 5.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 25.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0005",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 25.2 dB",
+   "point": [
+    328.256,
+    423.256
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.473,
+   "size_px": {
+    "area": 14,
+    "long": 4.0,
+    "long_m": 51.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0006",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.4 dB",
+   "point": [
+    857.119,
+    640.698
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.444,
+   "size_px": {
+    "area": 28,
+    "long": 9.5,
+    "long_m": 122.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 24.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0007",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 24.3 dB",
+   "point": [
+    303.594,
+    499.264
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.441,
+   "size_px": {
+    "area": 20,
+    "long": 6.3,
+    "long_m": 81.0,
+    "short": 4.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 22.8,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0008",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 22.8 dB",
+   "point": [
+    868.644,
+    647.674
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.385,
+   "size_px": {
+    "area": 18,
+    "long": 5.0,
+    "long_m": 64.0,
+    "short": 4.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 21.2,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0009",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 21.2 dB",
+   "point": [
+    518.606,
+    435.062
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.328,
+   "size_px": {
+    "area": 40,
+    "long": 13.5,
+    "long_m": 174.0,
+    "short": 5.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 19.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0010",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 19.7 dB",
+   "point": [
+    302.0,
+    434.806
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.273,
+   "size_px": {
+    "area": 10,
+    "long": 4.1,
+    "long_m": 53.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0011",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.0 dB",
+   "point": [
+    793.475,
+    584.659
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.215,
+   "size_px": {
+    "area": 31,
+    "long": 10.4,
+    "long_m": 134.0,
+    "short": 5.6
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 18.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0012",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 18.0 dB",
+   "point": [
+    905.075,
+    688.465
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.214,
+   "size_px": {
+    "area": 13,
+    "long": 4.5,
+    "long_m": 58.0,
+    "short": 3.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.9,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0013",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.9 dB",
+   "point": [
+    270.087,
+    447.062
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.174,
+   "size_px": {
+    "area": 14,
+    "long": 5.1,
+    "long_m": 65.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0014",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.7 dB",
+   "point": [
+    314.688,
+    428.682
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.168,
+   "size_px": {
+    "area": 12,
+    "long": 4.0,
+    "long_m": 51.0,
+    "short": 3.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0015",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.1 dB",
+   "point": [
+    831.825,
+    623.062
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.146,
+   "size_px": {
+    "area": 36,
+    "long": 12.4,
+    "long_m": 159.0,
+    "short": 5.7
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 16.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0016",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 16.0 dB",
+   "point": [
+    555.087,
+    396.86
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.145,
+   "size_px": {
+    "area": 11,
+    "long": 4.2,
+    "long_m": 54.0,
+    "short": 3.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0017",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.5 dB",
+   "point": [
+    906.744,
+    696.512
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.126,
+   "size_px": {
+    "area": 31,
+    "long": 11.0,
+    "long_m": 141.0,
+    "short": 4.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0018",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.4 dB",
+   "point": [
+    358.381,
+    117.938
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.121,
+   "size_px": {
+    "area": 11,
+    "long": 4.4,
+    "long_m": 57.0,
+    "short": 3.5
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0019",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.4 dB",
+   "point": [
+    240.519,
+    729.411
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.121,
+   "size_px": {
+    "area": 9,
+    "long": 4.1,
+    "long_m": 53.0,
+    "short": 3.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 15.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0020",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 15.4 dB",
+   "point": [
+    821.837,
+    612.14
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.12,
+   "size_px": {
+    "area": 25,
+    "long": 13.8,
+    "long_m": 178.0,
+    "short": 3.8
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0021",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.7 dB",
+   "point": [
+    801.875,
+    588.868
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.097,
+   "size_px": {
+    "area": 14,
+    "long": 7.3,
+    "long_m": 94.0,
+    "short": 4.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.7,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0022",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.7 dB",
+   "point": [
+    342.238,
+    883.202
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.096,
+   "size_px": {
+    "area": 12,
+    "long": 5.1,
+    "long_m": 66.0,
+    "short": 3.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0023",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.6 dB",
+   "point": [
+    921.438,
+    711.55
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.092,
+   "size_px": {
+    "area": 15,
+    "long": 6.1,
+    "long_m": 78.0,
+    "short": 3.9
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0024",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.1 dB",
+   "point": [
+    616.669,
+    422.736
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.076,
+   "size_px": {
+    "area": 6,
+    "long": 3.1,
+    "long_m": 40.0,
+    "short": 2.4
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0025",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.1 dB",
+   "point": [
+    917.812,
+    708.364
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.075,
+   "size_px": {
+    "area": 7,
+    "long": 3.0,
+    "long_m": 39.0,
+    "short": 3.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 14.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0026",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 14.0 dB",
+   "point": [
+    273.188,
+    458.682
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.07,
+   "size_px": {
+    "area": 5,
+    "long": 3.2,
+    "long_m": 41.0,
+    "short": 2.3
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0027",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.4 dB",
+   "point": [
+    843.375,
+    633.721
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.051,
+   "size_px": {
+    "area": 21,
+    "long": 9.6,
+    "long_m": 123.0,
+    "short": 5.1
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0028",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.4 dB",
+   "point": [
+    322.5,
+    878.295
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.05,
+   "size_px": {
+    "area": 4,
+    "long": 2.0,
+    "long_m": 26.0,
+    "short": 2.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0029",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.3 dB",
+   "point": [
+    926.475,
+    715.225
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.046,
+   "size_px": {
+    "area": 7,
+    "long": 5.5,
+    "long_m": 70.0,
+    "short": 2.2
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 13.0,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0030",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 13.0 dB",
+   "point": [
+    920.625,
+    703.876
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.035,
+   "size_px": {
+    "area": 4,
+    "long": 2.0,
+    "long_m": 26.0,
+    "short": 2.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.6,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0031",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.6 dB",
+   "point": [
+    575.0,
+    404.651
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.022,
+   "size_px": {
+    "area": 4,
+    "long": 2.0,
+    "long_m": 26.0,
+    "short": 2.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.5,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0032",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.5 dB",
+   "point": [
+    914.062,
+    703.101
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.016,
+   "size_px": {
+    "area": 2,
+    "long": 2.0,
+    "long_m": 26.0,
+    "short": 1.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.4,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0033",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.4 dB",
+   "point": [
+    382.188,
+    864.341
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.014,
+   "size_px": {
+    "area": 2,
+    "long": 2.0,
+    "long_m": 26.0,
+    "short": 1.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.3,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0034",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.3 dB",
+   "point": [
+    815.938,
+    605.426
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.011,
+   "size_px": {
+    "area": 2,
+    "long": 2.0,
+    "long_m": 26.0,
+    "short": 1.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  },
+  {
+   "bbox": null,
+   "contrast_db": 12.1,
+   "coord_space": "norm1000",
+   "crop_id": "s1_sea_rotterdam_2026-10-23.png",
+   "crop_px": [
+    1600,
+    1290
+   ],
+   "detector_id": "sentinel1-cfar/1",
+   "id": "sea_rotterdam:now:0035",
+   "label": "bright target (SAR)",
+   "localization": "point",
+   "mask": null,
+   "note": "contrast 12.1 dB",
+   "point": [
+    249.062,
+    754.264
+   ],
+   "role": "now",
+   "scene_date": "2026-10-23",
+   "score": 0.003,
+   "size_px": {
+    "area": 2,
+    "long": 2.0,
+    "long_m": 26.0,
+    "short": 1.0
+   },
+   "visibility_basis": {
+    "cloud_pct_aoi": null,
+    "cloud_pct_tile": null,
+    "method": "SAR: not cloud-limited",
+    "note": null
+   },
+   "zone": null
+  }
+ ],
+ "detector": {
+  "id": "sentinel1-cfar/1",
+  "label": "CELL-AVERAGING CFAR \u00b7 VV AMPLITUDE",
+  "params": {
+   "abs_sea_amp": 150.0,
+   "block_px": 16,
+   "clip_factor": 6.0,
+   "core_db": 6.0,
+   "enl_eff": 20.0,
+   "guard_half_px": 18,
+   "land_buffer_blocks": 2,
+   "max_hit_pixels": 150000,
+   "max_length_m": 500.0,
+   "merge_px": 3,
+   "min_contrast_db": 12.0,
+   "min_land_blocks": 24,
+   "min_pixels": 3,
+   "min_ring_valid_frac": 0.35,
+   "pfa": 1e-06,
+   "pre_factor": 3.0,
+   "ring_half_px": 34,
+   "sea_separation_log10": 0.6
+  },
+  "rejected": {
+   "coast_clutter_skipped": 2901,
+   "too_small": 3
+  },
+  "stats": {
+   "alpha": 15.85,
+   "alpha_gamma": 2.44,
+   "candidate_pixels": 24182,
+   "hit_pixels": 966,
+   "sea_level_amp": 103.0,
+   "sea_mask_mode": "bimodal",
+   "sea_pct": 55.22,
+   "valid_pct": 100.0
+  },
+  "status": "OK"
+ },
+ "imagery_mode": "SNAPSHOT",
+ "imagery_provenance": {
+  "mode": "SNAPSHOT",
+  "retrieved_at": "2026-10-25T12:17:39Z",
+  "source": "SENTINEL-1 GRD via Earth Search STAC and Planetary Computer titiler; Contains modified Copernicus Sentinel data, ESA"
+ },
+ "kind": "satwatch_multi",
+ "mode": "MODELED",
+ "name": "Rotterdam / Europoort Anchorage",
+ "place": "sea_rotterdam",
+ "provenance": {
+  "mode": "MODELED",
+  "retrieved_at": "2026-10-25T12:17:39Z",
+  "source": "SENTINEL-1 GRD via Earth Search STAC and Planetary Computer titiler; Contains modified Copernicus Sentinel data, ESA"
+ },
+ "retrieved_at": "2026-10-25T12:17:39Z",
+ "scene": {
+  "date": "2026-10-23",
+  "datetime": "2026-10-23T05:57:57.360721Z",
+  "id": "S1C_IW_GRDH_1SDV_20261023T055744_20261023T055809_010008_013F7A",
+  "instrument_mode": "IW",
+  "orbit_state": "descending",
+  "platform": "sentinel-1c"
+ },
+ "ship_detection_grade": "large_vessels_all_weather",
+ "source": "sentinel-1"
+}

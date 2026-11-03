@@ -1,0 +1,291 @@
+{
+ "aggregate_heldout": {
+  "hits": 2,
+  "metrics_graded": 5,
+  "misses": 3,
+  "ungraded": 1
+ },
+ "aggregate_original8_v1": {
+  "hits": 3,
+  "metrics_graded": 7,
+  "misses": 4,
+  "ungraded": 1
+ },
+ "aggregate_original8_v2": {
+  "hits": 2,
+  "metrics_graded": 7,
+  "misses": 5,
+  "ungraded": 1
+ },
+ "artifact": "SIM BACKTEST SCORECARD V2",
+ "census_audit_verdict": "census weights FAITHFUL; through share 0.0 by construction of the leg census + rendered-path transit identification; no census data changed (census_audit.json)",
+ "grades_engine": "SIM layer (traffic / queues / diversions) \u2014 separate from the causal-chain scorecard; never merged",
+ "graph_sha256": "9743a288fb5d670d8f814f4f6240bab395fd72b7f63ee50475793539e564a062",
+ "metrics": [
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "ever_given",
+   "grade": "MISS",
+   "id": "EG-1",
+   "metric": "Excess peak queue at chk_suez, in days of normal corridor flow",
+   "obs_detail": "422 vessels (SCA via Reuters) \u00f7 PortWatch baseline 56.91 transits/day",
+   "observed": 7.415335463258787,
+   "sim": 2.1818181818181817,
+   "sim_detail": "excess peak 36 vessels \u00f7 16.5 corridor departures/day",
+   "v1_grade": "MISS",
+   "v1_sim": 0.5454545454545454,
+   "v2_addition": false
+  },
+  {
+   "band": "\u2014",
+   "event": "ever_given",
+   "grade": "UNGRADED",
+   "id": "EG-2",
+   "metric": "Mean added delay at chk_suez (twin statistic)",
+   "obs_detail": "average delay per queued vessel could not be sourced (only forecasts and anecdotes exist); never estimated",
+   "observed": null,
+   "sim": 1.915234,
+   "sim_detail": "hold arrivals at chk_suez: 38",
+   "v1_grade": "UNGRADED",
+   "v1_sim": 2.330994,
+   "v2_addition": false
+  },
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "ever_given",
+   "grade": "MISS",
+   "id": "EG-3",
+   "metric": "Clearance days after reopening (queue back to twin level, sustained 3 ticks)",
+   "obs_detail": "backlog fully cleared 2021-04-03 (Reuters/SCA); reopening 2021-03-29",
+   "observed": 5.0,
+   "sim": null,
+   "sim_detail": "clearance NOT reached within the run (disrupted queue still above twin at the horizon) \u2014 the held queue's tail outlasts the 30-tick run",
+   "v1_grade": "HIT",
+   "v1_sim": 9.453888888888889,
+   "v2_addition": false
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "baltimore",
+   "grade": "HIT",
+   "id": "BA-1",
+   "metric": "Port-call drop at sea_baltimore during closure window (berth calls, disrupted vs twin)",
+   "obs_detail": "",
+   "observed": -60.062015503875976,
+   "sim": -51.72413793103449,
+   "sim_detail": "span days [2, 78], berth means 0.18 vs twin 0.38/day",
+   "v1_grade": "MISS",
+   "v1_sim": -100.0,
+   "v2_addition": false
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "baltimore",
+   "grade": "HIT",
+   "id": "BA-2",
+   "metric": "Diversion uplift at sea_virginia during closure window (berth calls % change vs twin) \u2014 baseline calls-only yardstick, kept for comparability",
+   "obs_detail": "",
+   "observed": 2.0750551876379757,
+   "sim": -7.53768844221105,
+   "sim_detail": "",
+   "v1_grade": "HIT",
+   "v1_sim": -14.948453608247409,
+   "v2_addition": false
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "baltimore",
+   "grade": "MISS",
+   "id": "BA-2v",
+   "metric": "Virginia diversion effect, calls AND tonnage combined (extended-run addition; call-reassignment yardstick)",
+   "obs_detail": "calls +2.08% \u00d7 AIS-estimated import tonnage +28.56% (PortWatch port826, same windows)",
+   "observed": 31.232037350260722,
+   "sim": -7.537688442211055,
+   "sim_detail": "calls -7.54% \u00d7 reassigned tonnage +0.00% (0 reassigned calls, 0 capacity-units over 76 d \u00f7 twin Virginia tonnage/day 1,761)",
+   "v2_addition": true
+  },
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "baltimore",
+   "grade": "MISS",
+   "id": "BA-3",
+   "metric": "Recovery days after full reopening (berth calls >= 90% of twin, sustained 3 d)",
+   "obs_detail": "first 7-day mean >= 90% of baseline on 2024-06-23",
+   "observed": 13,
+   "sim": 2,
+   "sim_detail": "recovery measured from the last step's end (2024-06-10, full channel restoration)",
+   "v1_grade": "MISS",
+   "v1_sim": 0,
+   "v2_addition": false
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "red_sea",
+   "grade": "MISS",
+   "id": "RS-1",
+   "metric": "Suez transit drop, Jan-Feb 2024 (completed non-diverted arrivals on Suez-transiting lanes, disrupted vs twin)",
+   "obs_detail": "",
+   "observed": -40.835872877666525,
+   "sim": 0.0,
+   "sim_detail": "completions 1075 vs twin 1075",
+   "v1_grade": "MISS",
+   "v1_sim": 0.0,
+   "v2_addition": false
+  },
+  {
+   "band": "sim in [3.5, 24] (observed range [7, 12] widened by [0.5x, 2x])",
+   "event": "red_sea",
+   "grade": "MISS",
+   "id": "RS-2",
+   "metric": "Mean lateness of arrivals on Bab-el-Mandeb-transiting lanes, Jan-Feb 2024 (occurrence-matched vs twin)",
+   "obs_detail": "",
+   "observed": [
+    7.0,
+    12.0
+   ],
+   "sim": null,
+   "sim_detail": "over 0 matched pairs \u2014 ZERO pairs: under the open-ended expectation the exposed local-hop traffic has no certified bypass and is HELD at the strait past the window, so no in-window arrival exists to be late; the statistic is undefined and prints MISS (the conservative label), not a hit",
+   "v1_grade": "HIT",
+   "v1_sim": 7.657844638128824,
+   "v2_addition": false
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "red_sea",
+   "grade": "UNDEFINED \u2014 NO EXPOSED LANES IN CENSUS",
+   "id": "RS-3",
+   "metric": "Exposed-subpopulation Suez flow change (extended-run addition): RS-1 extraction restricted to lanes transiting BOTH chk_babelmandeb AND chk_suez",
+   "obs_detail": "PortWatch Bab el-Mandeb n_total, Jan-Feb 2024 vs Nov 2023",
+   "observed": -51.831896551724135,
+   "sim": null,
+   "sim_detail": "the modelled census contains 0 lanes transiting both straits (census audit, census_audit.json)",
+   "v2_addition": true
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "panama",
+   "grade": "MISS",
+   "id": "PA-1",
+   "metric": "Transit drop %, tightest phase (completed non-diverted arrivals on chk_panama-transiting lanes, 2023-12-01 \u2192 2024-01-16, disrupted vs twin)",
+   "obs_detail": "PortWatch Panama n_total 21.11/day (2023-12-01 \u2192 2024-01-15) vs baseline 32.11/day (2023-01-01 \u2192 2023-07-29)",
+   "observed": -34.27007581618443,
+   "sim": -6.705539358600583,
+   "sim_detail": "completions 320 vs twin 343",
+   "v2_addition": false
+  },
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "panama",
+   "grade": "MISS",
+   "id": "PA-2",
+   "metric": "Excess peak queue, days of flow (August phase run)",
+   "obs_detail": "excess queue 163 \u2212 90 = 73 vessels (FreightWaves from ACP data) \u00f7 32.11 baseline transits/day",
+   "observed": 2.2731316725978647,
+   "sim": 0.5476673427991886,
+   "sim_detail": "excess peak 6 vessels \u00f7 10.96 twin corridor departures/day (August run)",
+   "v2_addition": false
+  },
+  {
+   "band": "sim in [2.5, 30]",
+   "event": "panama",
+   "grade": "HIT",
+   "id": "PA-3",
+   "metric": "Mean added delay at chk_panama (twin statistic, primary run)",
+   "obs_detail": "published waiting-time forecast range [5, 15] d (Waterfront Maritime Services, 2023-11-07) \u2014 a dated forecast range, per the registration's stated basis",
+   "observed": [
+    5.0,
+    15.0
+   ],
+   "sim": 13.880583,
+   "sim_detail": "hold arrivals at chk_panama: 0 (counted separately, never averaged in)",
+   "v2_addition": false
+  },
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "la_lb",
+   "grade": "MISS",
+   "id": "LB-1",
+   "metric": "Excess peak queue, days of flow",
+   "obs_detail": "MXSOC peak backup 109 container ships (2022-01-09) \u00f7 PortWatch baseline container call rate 5.467/day",
+   "observed": 19.9390243902439,
+   "sim": 0.0,
+   "sim_detail": "excess peak 0 vessels \u00f7 twin berth-call rate 6.24/day at sea_losangeles",
+   "v2_addition": false
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "la_lb",
+   "grade": "HIT",
+   "id": "LB-2",
+   "metric": "Port-call change, peak window (berth calls at sea_losangeles, disrupted vs twin)",
+   "obs_detail": "PortWatch port664 total calls 10.984/day (2021-10-01 \u2192 2022-01-31) vs baseline 10.200/day (Q1 2021) \u2014 a RISE, as registered",
+   "observed": 7.683723896062503,
+   "sim": -7.7259475218658835,
+   "sim_detail": "berth means 5.75 vs twin 6.24/day over the run window",
+   "v2_addition": false
+  },
+  {
+   "band": "\u2014",
+   "event": "la_lb",
+   "grade": "UNGRADED",
+   "id": "LB-3",
+   "metric": "Clearance days after the window",
+   "obs_detail": "no capacity-restoration date exists (demand-side emptying over 2022); observed milestones 232 d / 283 d / 317 d documented in the actuals file \u2014 no like-for-like comparator, per the registration",
+   "observed": null,
+   "sim": 1.0,
+   "sim_detail": "",
+   "v2_addition": false
+  }
+ ],
+ "observed_comparators": {
+  "baltimore": {
+   "ba1_drop_pct": -60.062015503875976,
+   "ba2_change_pct": 2.0750551876379757,
+   "ba2_imports_change_pct": 28.564258044264918,
+   "ba2v_combined_pct": 31.232037350260722,
+   "ba3_recovery_days": 13
+  },
+  "ever_given": {
+   "baseline_transits_per_day": 56.90909090909091,
+   "eg1_days_of_flow": 7.415335463258787,
+   "eg3_clearance_days": 5.0,
+   "peak_queue": 422
+  },
+  "la_lb": {
+   "lb1_container_rate": 5.466666666666667,
+   "lb1_days_of_flow": 19.9390243902439,
+   "lb1_peak_vessels": 109,
+   "lb2_baseline_per_day": 10.2,
+   "lb2_change_pct": 7.683723896062503,
+   "lb2_peak_per_day": 10.983739837398375
+  },
+  "panama": {
+   "pa1_baseline_per_day": 32.114285714285714,
+   "pa1_drop_pct": -34.27007581618443,
+   "pa1_window_per_day": 21.108695652173914,
+   "pa2_days_of_flow": 2.2731316725978647,
+   "pa2_excess_vessels": 73,
+   "pa3_range_d": [
+    5.0,
+    15.0
+   ]
+  },
+  "red_sea": {
+   "rs1_drop_pct": -40.835872877666525,
+   "rs2_range_d": [
+    7.0,
+    12.0
+   ],
+   "rs3_bem_drop_pct": -51.831896551724135
+  }
+ },
+ "raw_results": {
+  "baltimore": "results_v2/baltimore_raw.json",
+  "ever_given": "results_v2/ever_given_raw.json",
+  "la_lb": "results_v2/la_lb_raw.json",
+  "panama": "results_v2/panama_raw.json",
+  "panama_august": "results_v2/panama_august_raw.json",
+  "red_sea": "results_v2/red_sea_raw.json"
+ },
+ "v1_scorecard": "scorecard.json (baseline grades never recomputed)"
+}

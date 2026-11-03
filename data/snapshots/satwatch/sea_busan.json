@@ -1,0 +1,84 @@
+{
+ "bbox": [
+  128.85,
+  34.9,
+  129.25,
+  35.25
+ ],
+ "catalog": {
+  "http_status": 200,
+  "search_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search"
+ },
+ "core_bbox": [
+  129.05,
+  34.95,
+  129.22,
+  35.18
+ ],
+ "crops": {
+  "baseline": "sea_busan_baseline_2026-09-15.png",
+  "now": "sea_busan_now_2026-10-15.png"
+ },
+ "detection": {
+  "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+  "counts": null,
+  "detections": null,
+  "note": "detection awaits Meta API key (SAM 3.1)",
+  "prompts": [
+   "container ship",
+   "cargo vessel",
+   "container stack",
+   "gantry crane"
+  ],
+  "provider": "fixture",
+  "status": "AWAITING_META_KEY"
+ },
+ "imagery_dates": {
+  "baseline": "2026-09-15",
+  "now": "2026-10-15"
+ },
+ "kind": "satwatch_scan",
+ "name": "Busan Anchorage",
+ "node_id": "sea_busan",
+ "notes": [],
+ "resolution_m": 10,
+ "retrieved_at": "2026-10-21T01:06:11Z",
+ "scene_baseline": {
+  "cloud_pct_aoi": 11.94,
+  "cloud_pct_tile": 19.985664,
+  "date": "2026-09-15",
+  "datetime": "2026-09-15T02:06:49.024000Z",
+  "id": "S2B_MSIL2A_20260915T020649_R103_T52SED_20260915T050939",
+  "mgrs_tile": "52SED",
+  "platform": "Sentinel-2B"
+ },
+ "scene_now": {
+  "cloud_pct_aoi": 0.01,
+  "cloud_pct_tile": 25.99088,
+  "date": "2026-10-15",
+  "datetime": "2026-10-15T02:06:49.024000Z",
+  "id": "S2B_MSIL2A_20261015T020649_R103_T52SED_20261015T041343",
+  "mgrs_tile": "52SED",
+  "platform": "Sentinel-2B"
+ },
+ "screened": [
+  {
+   "cloud_pct_aoi": 100.0,
+   "date": "2026-10-20",
+   "id": "S2C_MSIL2A_20261020T020711_R103_T52SED_20261020T053705"
+  },
+  {
+   "cloud_pct_aoi": 0.01,
+   "date": "2026-10-15",
+   "id": "S2B_MSIL2A_20261015T020649_R103_T52SED_20261015T041343"
+  },
+  {
+   "cloud_pct_aoi": 11.94,
+   "date": "2026-09-15",
+   "id": "S2B_MSIL2A_20260915T020649_R103_T52SED_20260915T050939"
+  }
+ ],
+ "source": "Microsoft Planetary Computer / Sentinel-2 L2A",
+ "usable_pair": true,
+ "version": 1
+}

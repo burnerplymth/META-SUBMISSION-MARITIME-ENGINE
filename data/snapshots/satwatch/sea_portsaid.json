@@ -1,0 +1,79 @@
+{
+ "bbox": [
+  32.15,
+  31.25,
+  32.55,
+  31.65
+ ],
+ "catalog": {
+  "http_status": 200,
+  "search_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search"
+ },
+ "core_bbox": [
+  32.26,
+  31.32,
+  32.44,
+  31.55
+ ],
+ "crops": {
+  "baseline": "sea_portsaid_baseline_2026-09-19.png",
+  "now": "sea_portsaid_now_2026-10-19.png"
+ },
+ "detection": {
+  "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+  "counts": null,
+  "detections": null,
+  "note": "detection awaits Meta API key (SAM 3.1)",
+  "prompts": [
+   "container ship",
+   "cargo vessel",
+   "container stack",
+   "gantry crane"
+  ],
+  "provider": "fixture",
+  "status": "AWAITING_META_KEY"
+ },
+ "imagery_dates": {
+  "baseline": "2026-09-19",
+  "now": "2026-10-19"
+ },
+ "kind": "satwatch_scan",
+ "name": "Port Said / Suez North Anchorage",
+ "node_id": "sea_portsaid",
+ "notes": [],
+ "resolution_m": 10,
+ "retrieved_at": "2026-10-21T01:04:24Z",
+ "scene_baseline": {
+  "cloud_pct_aoi": 10.41,
+  "cloud_pct_tile": 15.76943,
+  "date": "2026-09-19",
+  "datetime": "2026-09-19T08:25:59.024000Z",
+  "id": "S2B_MSIL2A_20260919T082559_R021_T36RVV_20260919T122802",
+  "mgrs_tile": "36RVV",
+  "platform": "Sentinel-2B"
+ },
+ "scene_now": {
+  "cloud_pct_aoi": 10.7,
+  "cloud_pct_tile": 20.219734,
+  "date": "2026-10-19",
+  "datetime": "2026-10-19T08:29:39.024000Z",
+  "id": "S2B_MSIL2A_20261019T082939_R021_T36RVV_20261019T123214",
+  "mgrs_tile": "36RVV",
+  "platform": "Sentinel-2B"
+ },
+ "screened": [
+  {
+   "cloud_pct_aoi": 10.7,
+   "date": "2026-10-19",
+   "id": "S2B_MSIL2A_20261019T082939_R021_T36RVV_20261019T123214"
+  },
+  {
+   "cloud_pct_aoi": 10.41,
+   "date": "2026-09-19",
+   "id": "S2B_MSIL2A_20260919T082559_R021_T36RVV_20260919T122802"
+  }
+ ],
+ "source": "Microsoft Planetary Computer / Sentinel-2 L2A",
+ "usable_pair": true,
+ "version": 1
+}

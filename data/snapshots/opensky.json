@@ -1,0 +1,59 @@
+{
+ "adapter": "opensky",
+ "saved_at": "2026-10-24T23:56:48Z",
+ "provenance": {
+  "source": "OpenSky Network",
+  "retrieved_at": "2026-10-24T23:56:46Z",
+  "mode": "LIVE"
+ },
+ "records": [
+  {
+   "record_type": "air_traffic",
+   "node_id": "air_anchorage",
+   "aircraft_in_bbox": 35,
+   "observed_at_epoch": 1792886198,
+   "dedupe_key": "opensky:air_anchorage:1792886198",
+   "provenance": {
+    "source": "OpenSky Network",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "air_traffic",
+   "node_id": "air_memphis",
+   "aircraft_in_bbox": 22,
+   "observed_at_epoch": 1792886198,
+   "dedupe_key": "opensky:air_memphis:1792886198",
+   "provenance": {
+    "source": "OpenSky Network",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "air_traffic",
+   "node_id": "air_louisville",
+   "aircraft_in_bbox": 30,
+   "observed_at_epoch": 1792886198,
+   "dedupe_key": "opensky:air_louisville:1792886198",
+   "provenance": {
+    "source": "OpenSky Network",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "air_traffic",
+   "node_id": "air_hongkong",
+   "aircraft_in_bbox": 32,
+   "observed_at_epoch": 1792886198,
+   "dedupe_key": "opensky:air_hongkong:1792886198",
+   "provenance": {
+    "source": "OpenSky Network",
+    "retrieved_at": "2026-10-24T23:56:46Z",
+    "mode": "LIVE"
+   }
+  }
+ ]
+}

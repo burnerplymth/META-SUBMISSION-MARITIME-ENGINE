@@ -1,0 +1,226 @@
+{
+  "constants": {
+    "baseline_utilisation": {
+      "bounds": [
+        0.0,
+        0.99
+      ],
+      "description": "Baseline arriving load as a fraction of capacity: throughput F = utilisation * capacity; spare service rate = capacity * (1 - utilisation).",
+      "source": "ASSUMPTION — the shipped graph carries NO utilisation field on any of its 992 nodes, so a single labelled assumption is used until per-node utilisation data is available. A node may override it with a 'utilisation' field.",
+      "unit": "fraction of node capacity",
+      "value": 0.85
+    },
+    "closure_capacity_loss": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Forced capacity loss for kind=closure.",
+      "source": "Engine validation rule (run API behaviour): kind=closure forces a full loss.",
+      "unit": "capacity fraction",
+      "value": 1.0
+    },
+    "congestion_storage_share": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Stored-backlog share for no-storage (queue_cap = 0) nodes in the service-time delay function.",
+      "source": "ASSUMPTION — a node with queue_cap = 0 has no storage: only this share of its backlog is held in transit (slow-steaming / dwell); the rest is diverted or unmet and does not wait at the node.",
+      "unit": "fraction of backlog",
+      "value": 0.25
+    },
+    "cost_delay_scale_d": {
+      "bounds": [
+        1.0,
+        3650.0
+      ],
+      "description": "Cost-leaf magnitude = min(1, winning parent elapsed time / this scale).",
+      "source": "ASSUMPTION — hand-set scale, registered unchanged. Cost magnitude is expedite pressure (dimensionless), never currency.",
+      "unit": "days",
+      "value": 30.0
+    },
+    "cost_gate_d": {
+      "bounds": [
+        0.0,
+        365.0
+      ],
+      "description": "A non-hit node records a cost leaf only when the winning parent's accumulated elapsed time reaches this gate.",
+      "source": "ASSUMPTION — hand-set gate, registered unchanged.",
+      "unit": "days",
+      "value": 5.0
+    },
+    "default_capacity_loss": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Capacity loss used for non-closure kinds whose spec omits capacity_loss.",
+      "source": "Engine validation default (run API behaviour), registered unchanged.",
+      "unit": "capacity fraction",
+      "value": 0.5
+    },
+    "default_duration_d": {
+      "bounds": [
+        0.0,
+        3650.0
+      ],
+      "description": "Duration used when a disruption spec omits duration_d.",
+      "source": "Engine validation default (run API behaviour), registered unchanged.",
+      "unit": "days",
+      "value": 7.0
+    },
+    "delay_hit_floor_d": {
+      "bounds": [
+        0.0,
+        30.0
+      ],
+      "description": "Delay floor for the delay-based hit test (evaluated on the continuous service-time wait).",
+      "source": "Hit rule: a node is also hit when its added wait reaches 1.0 d, provided the shortfall is material.",
+      "unit": "days",
+      "value": 1.0
+    },
+    "duration_max_d": {
+      "bounds": [
+        365.0,
+        36500.0
+      ],
+      "description": "Maximum accepted duration_d (rejected beyond, never clamped).",
+      "source": "Engine validation bound, set to 3650 so real replay durations (Red Sea 559 d) are not rejected; registered unchanged.",
+      "unit": "days",
+      "value": 3650.0
+    },
+    "hit_threshold_default": {
+      "bounds": [
+        0.01,
+        1.0
+      ],
+      "description": "Default hit threshold: a node is hit when its total shortfall fraction reaches this value (node hit_threshold and per-run overrides take precedence).",
+      "source": "Run parameter; default value of engine.DEFAULT_PARAMS.",
+      "unit": "shortfall fraction",
+      "value": 0.15
+    },
+    "inventory_gate_days": {
+      "bounds": [
+        0.0,
+        365.0
+      ],
+      "description": "Minimum inventory_days for the inventory channel label.",
+      "source": "Inventory channel gate: the inventory channel label applies only at nodes carrying at least this many days of inventory cover. (The buffer itself — inventory_days absorbing shortfall-days before propagation — applies at every node that carries cover.)",
+      "unit": "days of cover",
+      "value": 7.0
+    },
+    "max_events": {
+      "bounds": [
+        100,
+        1000000
+      ],
+      "description": "Run aborts with a runaway error beyond this many events.",
+      "source": "Structural runaway guard (quiescence bound), not a model parameter.",
+      "unit": "events per run (structural)",
+      "value": 5000
+    },
+    "max_layers": {
+      "bounds": [
+        10,
+        10000
+      ],
+      "description": "Run aborts with a runaway error beyond this many cascade layers.",
+      "source": "Structural runaway guard (quiescence bound), not a model parameter.",
+      "unit": "cascade layers per run (structural)",
+      "value": 200
+    },
+    "max_utilisation": {
+      "bounds": [
+        0.5,
+        0.999
+      ],
+      "description": "Per-node utilisation values are clamped to this ceiling inside the service-time model.",
+      "source": "ASSUMPTION — numerical guard so the spare service rate C*(1-u) never reaches zero and waits stay finite.",
+      "unit": "fraction of node capacity",
+      "value": 0.99
+    },
+    "mean_wait_factor": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Mean-wait factor in the service-time delay function: wait = queue_sensitivity * mean_wait_factor * stored_backlog / spare_rate.",
+      "source": "ASSUMPTION — fluid-queue triangular backlog profile: backlog rises linearly then clears, so the MEAN wait of affected flow is half the clearance time of the stored backlog.",
+      "unit": "dimensionless",
+      "value": 0.5
+    },
+    "min_material_share": {
+      "bounds": [
+        0.0,
+        0.15
+      ],
+      "description": "Minimum shortfall fraction for a delay-floor hit or a cost leaf.",
+      "source": "ASSUMPTION — guard so clock quantisation / tiny shares cannot mint hits on dense graphs; retained as the materiality floor for delay-floor hits and cost leaves.",
+      "unit": "shortfall fraction",
+      "value": 0.01
+    },
+    "mode_shift_transit_fraction": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Mode-shift added wait = this fraction * edge base_transit_d * total shortfall at the child.",
+      "source": "ASSUMPTION — hand-set factor, registered unchanged.",
+      "unit": "dimensionless",
+      "value": 0.5
+    },
+    "pulse_duration_factor": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Effective-duration multiplier for shape=pulse.",
+      "source": "Shape semantics: a pulse delivers the full loss for half the duration.",
+      "unit": "dimensionless",
+      "value": 0.5
+    },
+    "queue_sensitivity_default": {
+      "bounds": [
+        0.1,
+        3.0
+      ],
+      "description": "Default for the queue_sensitivity run parameter; callers may override within bounds (rejected, never clamped).",
+      "source": "Run parameter; default value of engine.DEFAULT_PARAMS.",
+      "unit": "dimensionless multiplier",
+      "value": 1.0
+    },
+    "ramp_loss_factor": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Effective-loss multiplier for shape=ramp.",
+      "source": "Shape semantics: a ramp averages half the peak loss over the duration.",
+      "unit": "dimensionless",
+      "value": 0.5
+    },
+    "reroute_propagate_fraction": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Fraction of a reroute arrival's shortfall that propagates onward when the reroute arrival is itself a first hit.",
+      "source": "ASSUMPTION — hand-set factor, registered unchanged.",
+      "unit": "dimensionless",
+      "value": 0.5
+    },
+    "upstream_attenuation": {
+      "bounds": [
+        0.0,
+        1.0
+      ],
+      "description": "Fraction of a hit node's shortfall that backs up to an upstream supplier over each inbound edge.",
+      "source": "ASSUMPTION — hand-set factor, registered unchanged.",
+      "unit": "dimensionless",
+      "value": 0.5
+    }
+  },
+  "model_revision": "Engine model revision 2 (versioned constants registry; absolute-flow aggregation and service-time delay)",
+  "version": "2.0.0"
+}

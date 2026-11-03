@@ -1,0 +1,4410 @@
+{
+ "adapter": "comtrade",
+ "saved_at": "2026-10-25T00:37:26Z",
+ "provenance": {
+  "source": "UN Comtrade (UN Statistics Division) v1 API",
+  "retrieved_at": "2026-10-25T00:37:20Z",
+  "mode": "LIVE"
+ },
+ "records": [
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.005492,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.323288,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.183371,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.457598,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.030252,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.000534,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.026789,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.314293,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.529137,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:W00:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.129247,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:CHN:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 9e-06,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:CHN:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.088004,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:CHN:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.143003,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:CHN:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.003436,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 4.9e-05,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.044754,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.001403,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.002557,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.000747,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.024405,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.032637,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.029359,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:NLD:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.009636,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.005627,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.037991,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.020556,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.000164,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.000171,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.135043,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.018161,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.017413,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:SGP:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.005154,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.030917,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.021878,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.071386,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.055429,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.08899,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.042748,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.019132,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.115271,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.09493,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "partner": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_shanghai",
+    "sea_ningbo",
+    "chk_taiwan"
+   ],
+   "dedupe_key": "comtrade:CHN:USA:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.067424,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.011455,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.348718,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.26477,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.255495,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.119561,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.002137,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.325578,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.358076,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.226028,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_rotterdam",
+    "chk_dover"
+   ],
+   "dedupe_key": "comtrade:NLD:W00:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.08818,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.039066,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.402186,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.182607,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.159439,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.216703,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.002231,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.137648,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.46375,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.212507,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 591,
+    "iso": "PAN",
+    "name": "Panama"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_panama",
+    "sea_balboa"
+   ],
+   "dedupe_key": "comtrade:PAN:W00:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.183863,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.001122,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.215273,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.296119,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.474969,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.012518,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.000288,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.136976,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.325876,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.529771,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_singapore",
+    "chk_malacca"
+   ],
+   "dedupe_key": "comtrade:SGP:W00:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.007089,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.137983,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.441306,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.165646,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.135401,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.119664,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.009423,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.532942,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.061968,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.366606,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 818,
+    "iso": "EGY",
+    "name": "Egypt"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "chk_suez",
+    "sea_portsaid"
+   ],
+   "dedupe_key": "comtrade:EGY:W00:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.029062,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.001829,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.124654,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.383079,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.295795,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.194643,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.028437,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.315918,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.290043,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.231176,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 0,
+    "iso": "W00",
+    "name": "World"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:W00:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "chapter_share",
+   "share": 0.134426,
+   "share_field": "Share of the reporter's five-chapter total, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.009809,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.00061,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.078598,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.163624,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.039135,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.003905,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.01664,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.037052,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.072393,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 156,
+    "iso": "CHN",
+    "name": "China"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:CHN:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.022971,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:M:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 4.2e-05,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.01828,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.00923,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.002243,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.000451,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.002076,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.115498,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.038098,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.027237,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 528,
+    "iso": "NLD",
+    "name": "Netherlands"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:NLD:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.009344,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:M:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.003097,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:M:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.00568,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:M:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.007097,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "import",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:M:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.000115,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "10",
+   "hs_chapter_name": "Cereals",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:X:10:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.000661,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "27",
+   "hs_chapter_name": "Mineral fuels, oils",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:X:27:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.012059,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "84",
+   "hs_chapter_name": "Machinery and mechanical appliances",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:X:84:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.031494,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "85",
+   "hs_chapter_name": "Electrical machinery and equipment",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:X:85:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.022222,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  },
+  {
+   "reporter": {
+    "code": 842,
+    "iso": "USA",
+    "name": "United States"
+   },
+   "partner": {
+    "code": 702,
+    "iso": "SGP",
+    "name": "Singapore"
+   },
+   "flow": "export",
+   "hs_chapter": "87",
+   "hs_chapter_name": "Vehicles (other than rail)",
+   "period": "2025",
+   "frequency": "annual",
+   "related_place_ids": [
+    "sea_losangeles",
+    "sea_newyork"
+   ],
+   "dedupe_key": "comtrade:USA:SGP:X:87:2025",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "UN Comtrade (UN Statistics Division) v1 API",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   },
+   "record_type": "comtrade_derived",
+   "measure": "partner_share",
+   "share": 0.00103,
+   "share_field": "Share of the reporter's world value in this chapter, same flow and year",
+   "derived": true,
+   "notice": "Derived from UN Comtrade; not the original records",
+   "citation": "UN Comtrade"
+  }
+ ],
+ "note": "Derived from UN Comtrade; not the original records. Shares only; no USD value is stored."
+}

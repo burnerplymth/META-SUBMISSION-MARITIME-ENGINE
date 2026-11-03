@@ -1,0 +1,986 @@
+{
+ "adapter": "eia",
+ "saved_at": "2026-10-25T00:37:23Z",
+ "provenance": {
+  "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+  "retrieved_at": "2026-10-25T00:37:20Z",
+  "mode": "LIVE"
+ },
+ "records": [
+  {
+   "record_type": "eia_spot_price",
+   "series_id": "RBRTE",
+   "label": "Brent crude oil spot (Europe)",
+   "units": "$/bbl",
+   "shipping_relevance": "crude benchmark for tanker cargoes and bunker fuel",
+   "latest_period": "2026-10-20",
+   "latest_value": 115.22,
+   "history": [
+    {
+     "period": "2026-09-09",
+     "value": 109.51
+    },
+    {
+     "period": "2026-09-10",
+     "value": 120.98
+    },
+    {
+     "period": "2026-09-11",
+     "value": 118.06
+    },
+    {
+     "period": "2026-09-14",
+     "value": 121.25
+    },
+    {
+     "period": "2026-09-15",
+     "value": 130.8
+    },
+    {
+     "period": "2026-09-16",
+     "value": 127.84
+    },
+    {
+     "period": "2026-09-17",
+     "value": 121.18
+    },
+    {
+     "period": "2026-09-18",
+     "value": 119.66
+    },
+    {
+     "period": "2026-09-21",
+     "value": 116.15
+    },
+    {
+     "period": "2026-09-22",
+     "value": 114.89
+    },
+    {
+     "period": "2026-09-23",
+     "value": 117.45
+    },
+    {
+     "period": "2026-09-24",
+     "value": 120.92
+    },
+    {
+     "period": "2026-09-25",
+     "value": 116.01
+    },
+    {
+     "period": "2026-09-28",
+     "value": 119.97
+    },
+    {
+     "period": "2026-09-29",
+     "value": 113.96
+    },
+    {
+     "period": "2026-09-30",
+     "value": 115.91
+    },
+    {
+     "period": "2026-10-01",
+     "value": 114.82
+    },
+    {
+     "period": "2026-10-02",
+     "value": 135.51
+    },
+    {
+     "period": "2026-10-05",
+     "value": 125.51
+    },
+    {
+     "period": "2026-10-06",
+     "value": 125.44
+    },
+    {
+     "period": "2026-10-07",
+     "value": 126.0
+    },
+    {
+     "period": "2026-10-08",
+     "value": 130.18
+    },
+    {
+     "period": "2026-10-09",
+     "value": 130.03
+    },
+    {
+     "period": "2026-10-12",
+     "value": 129.95
+    },
+    {
+     "period": "2026-10-13",
+     "value": 125.78
+    },
+    {
+     "period": "2026-10-14",
+     "value": 126.55
+    },
+    {
+     "period": "2026-10-15",
+     "value": 126.35
+    },
+    {
+     "period": "2026-10-16",
+     "value": 119.33
+    },
+    {
+     "period": "2026-10-19",
+     "value": 118.82
+    },
+    {
+     "period": "2026-10-20",
+     "value": 115.22
+    }
+   ],
+   "frequency": "daily",
+   "eia_route": "petroleum/pri/spt",
+   "dedupe_key": "eia:RBRTE:2026-10-20",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_spot_price",
+   "series_id": "RWTC",
+   "label": "WTI crude oil spot (Cushing, OK)",
+   "units": "$/bbl",
+   "shipping_relevance": "US crude benchmark; US Gulf export parcels",
+   "latest_period": "2026-10-20",
+   "latest_value": 107.89,
+   "history": [
+    {
+     "period": "2026-09-09",
+     "value": 97.26
+    },
+    {
+     "period": "2026-09-10",
+     "value": 103.57
+    },
+    {
+     "period": "2026-09-11",
+     "value": 101.27
+    },
+    {
+     "period": "2026-09-14",
+     "value": 102.42
+    },
+    {
+     "period": "2026-09-15",
+     "value": 107.02
+    },
+    {
+     "period": "2026-09-16",
+     "value": 103.62
+    },
+    {
+     "period": "2026-09-17",
+     "value": 103.21
+    },
+    {
+     "period": "2026-09-18",
+     "value": 101.44
+    },
+    {
+     "period": "2026-09-21",
+     "value": 96.97
+    },
+    {
+     "period": "2026-09-22",
+     "value": 96.41
+    },
+    {
+     "period": "2026-09-23",
+     "value": 93.38
+    },
+    {
+     "period": "2026-09-24",
+     "value": 95.88
+    },
+    {
+     "period": "2026-09-25",
+     "value": 85.23
+    },
+    {
+     "period": "2026-09-28",
+     "value": 99.37
+    },
+    {
+     "period": "2026-09-29",
+     "value": 96.16
+    },
+    {
+     "period": "2026-09-30",
+     "value": 97.18
+    },
+    {
+     "period": "2026-10-01",
+     "value": 99.77
+    },
+    {
+     "period": "2026-10-02",
+     "value": 97.89
+    },
+    {
+     "period": "2026-10-05",
+     "value": 96.13
+    },
+    {
+     "period": "2026-10-06",
+     "value": 96.24
+    },
+    {
+     "period": "2026-10-07",
+     "value": 95.02
+    },
+    {
+     "period": "2026-10-08",
+     "value": 98.26
+    },
+    {
+     "period": "2026-10-09",
+     "value": 98.73
+    },
+    {
+     "period": "2026-10-12",
+     "value": 94.99
+    },
+    {
+     "period": "2026-10-13",
+     "value": 95.39
+    },
+    {
+     "period": "2026-10-14",
+     "value": 96.34
+    },
+    {
+     "period": "2026-10-15",
+     "value": 104.71
+    },
+    {
+     "period": "2026-10-16",
+     "value": 108.21
+    },
+    {
+     "period": "2026-10-19",
+     "value": 110.01
+    },
+    {
+     "period": "2026-10-20",
+     "value": 107.89
+    }
+   ],
+   "frequency": "daily",
+   "eia_route": "petroleum/pri/spt",
+   "dedupe_key": "eia:RWTC:2026-10-20",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_spot_price",
+   "series_id": "EER_EPD2DXL0_PF4_Y35NY_DPG",
+   "label": "New York Harbor ULSD diesel spot",
+   "units": "$/gal",
+   "shipping_relevance": "distillate / marine gasoil proxy",
+   "latest_period": "2026-10-20",
+   "latest_value": 5.265,
+   "history": [
+    {
+     "period": "2026-09-09",
+     "value": 4.85
+    },
+    {
+     "period": "2026-09-10",
+     "value": 5.17
+    },
+    {
+     "period": "2026-09-11",
+     "value": 5.048
+    },
+    {
+     "period": "2026-09-14",
+     "value": 5.078
+    },
+    {
+     "period": "2026-09-15",
+     "value": 5.338
+    },
+    {
+     "period": "2026-09-16",
+     "value": 5.365
+    },
+    {
+     "period": "2026-09-17",
+     "value": 5.174
+    },
+    {
+     "period": "2026-09-18",
+     "value": 5.16
+    },
+    {
+     "period": "2026-09-21",
+     "value": 4.977
+    },
+    {
+     "period": "2026-09-22",
+     "value": 5.007
+    },
+    {
+     "period": "2026-09-23",
+     "value": 4.962
+    },
+    {
+     "period": "2026-09-24",
+     "value": 4.881
+    },
+    {
+     "period": "2026-09-25",
+     "value": 4.949
+    },
+    {
+     "period": "2026-09-28",
+     "value": 4.91
+    },
+    {
+     "period": "2026-09-29",
+     "value": 4.999
+    },
+    {
+     "period": "2026-09-30",
+     "value": 5.023
+    },
+    {
+     "period": "2026-10-01",
+     "value": 4.75
+    },
+    {
+     "period": "2026-10-02",
+     "value": 4.674
+    },
+    {
+     "period": "2026-10-05",
+     "value": 4.628
+    },
+    {
+     "period": "2026-10-06",
+     "value": 4.713
+    },
+    {
+     "period": "2026-10-07",
+     "value": 4.997
+    },
+    {
+     "period": "2026-10-08",
+     "value": 5.305
+    },
+    {
+     "period": "2026-10-09",
+     "value": 4.91
+    },
+    {
+     "period": "2026-10-12",
+     "value": 4.91
+    },
+    {
+     "period": "2026-10-13",
+     "value": 5.114
+    },
+    {
+     "period": "2026-10-14",
+     "value": 5.066
+    },
+    {
+     "period": "2026-10-15",
+     "value": 4.943
+    },
+    {
+     "period": "2026-10-16",
+     "value": 5.102
+    },
+    {
+     "period": "2026-10-19",
+     "value": 5.173
+    },
+    {
+     "period": "2026-10-20",
+     "value": 5.265
+    }
+   ],
+   "frequency": "daily",
+   "eia_route": "petroleum/pri/spt",
+   "dedupe_key": "eia:EER_EPD2DXL0_PF4_Y35NY_DPG:2026-10-20",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_spot_price",
+   "series_id": "EER_EPJK_PF4_RGC_DPG",
+   "label": "US Gulf Coast jet fuel spot",
+   "units": "$/gal",
+   "shipping_relevance": "air-freight fuel cost context",
+   "latest_period": "2026-10-20",
+   "latest_value": 4.632,
+   "history": [
+    {
+     "period": "2026-09-09",
+     "value": 4.341
+    },
+    {
+     "period": "2026-09-10",
+     "value": 4.682
+    },
+    {
+     "period": "2026-09-11",
+     "value": 4.521
+    },
+    {
+     "period": "2026-09-14",
+     "value": 4.488
+    },
+    {
+     "period": "2026-09-15",
+     "value": 4.705
+    },
+    {
+     "period": "2026-09-16",
+     "value": 4.68
+    },
+    {
+     "period": "2026-09-17",
+     "value": 4.514
+    },
+    {
+     "period": "2026-09-18",
+     "value": 4.532
+    },
+    {
+     "period": "2026-09-21",
+     "value": 4.397
+    },
+    {
+     "period": "2026-09-22",
+     "value": 4.354
+    },
+    {
+     "period": "2026-09-23",
+     "value": 4.35
+    },
+    {
+     "period": "2026-09-24",
+     "value": 4.291
+    },
+    {
+     "period": "2026-09-25",
+     "value": 4.365
+    },
+    {
+     "period": "2026-09-28",
+     "value": 4.343
+    },
+    {
+     "period": "2026-09-29",
+     "value": 4.399
+    },
+    {
+     "period": "2026-09-30",
+     "value": 4.677
+    },
+    {
+     "period": "2026-10-01",
+     "value": 4.355
+    },
+    {
+     "period": "2026-10-02",
+     "value": 4.307
+    },
+    {
+     "period": "2026-10-05",
+     "value": 4.35
+    },
+    {
+     "period": "2026-10-06",
+     "value": 4.342
+    },
+    {
+     "period": "2026-10-07",
+     "value": 4.384
+    },
+    {
+     "period": "2026-10-08",
+     "value": 4.588
+    },
+    {
+     "period": "2026-10-09",
+     "value": 4.36
+    },
+    {
+     "period": "2026-10-12",
+     "value": 4.374
+    },
+    {
+     "period": "2026-10-13",
+     "value": 4.624
+    },
+    {
+     "period": "2026-10-14",
+     "value": 4.562
+    },
+    {
+     "period": "2026-10-15",
+     "value": 4.426
+    },
+    {
+     "period": "2026-10-16",
+     "value": 4.516
+    },
+    {
+     "period": "2026-10-19",
+     "value": 4.567
+    },
+    {
+     "period": "2026-10-20",
+     "value": 4.632
+    }
+   ],
+   "frequency": "daily",
+   "eia_route": "petroleum/pri/spt",
+   "dedupe_key": "eia:EER_EPJK_PF4_RGC_DPG:2026-10-20",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_spot_price",
+   "series_id": "RNGWHHD",
+   "label": "Henry Hub natural gas spot",
+   "units": "$/MMBtu",
+   "shipping_relevance": "LNG feedgas price context",
+   "latest_period": "2026-10-20",
+   "latest_value": 3.1,
+   "history": [
+    {
+     "period": "2026-09-09",
+     "value": 2.81
+    },
+    {
+     "period": "2026-09-10",
+     "value": 2.76
+    },
+    {
+     "period": "2026-09-11",
+     "value": 2.71
+    },
+    {
+     "period": "2026-09-14",
+     "value": 2.85
+    },
+    {
+     "period": "2026-09-15",
+     "value": 2.97
+    },
+    {
+     "period": "2026-09-16",
+     "value": 3.0
+    },
+    {
+     "period": "2026-09-17",
+     "value": 2.9
+    },
+    {
+     "period": "2026-09-18",
+     "value": 2.97
+    },
+    {
+     "period": "2026-09-21",
+     "value": 2.93
+    },
+    {
+     "period": "2026-09-22",
+     "value": 2.9
+    },
+    {
+     "period": "2026-09-23",
+     "value": 3.06
+    },
+    {
+     "period": "2026-09-24",
+     "value": 3.0
+    },
+    {
+     "period": "2026-09-25",
+     "value": 3.21
+    },
+    {
+     "period": "2026-09-28",
+     "value": 3.13
+    },
+    {
+     "period": "2026-09-29",
+     "value": 3.18
+    },
+    {
+     "period": "2026-09-30",
+     "value": 3.02
+    },
+    {
+     "period": "2026-10-01",
+     "value": 3.0
+    },
+    {
+     "period": "2026-10-02",
+     "value": 2.9
+    },
+    {
+     "period": "2026-10-05",
+     "value": 2.96
+    },
+    {
+     "period": "2026-10-06",
+     "value": 3.03
+    },
+    {
+     "period": "2026-10-07",
+     "value": 3.16
+    },
+    {
+     "period": "2026-10-08",
+     "value": 3.24
+    },
+    {
+     "period": "2026-10-09",
+     "value": 3.1
+    },
+    {
+     "period": "2026-10-12",
+     "value": 3.1
+    },
+    {
+     "period": "2026-10-13",
+     "value": 3.14
+    },
+    {
+     "period": "2026-10-14",
+     "value": 3.22
+    },
+    {
+     "period": "2026-10-15",
+     "value": 3.3
+    },
+    {
+     "period": "2026-10-16",
+     "value": 3.22
+    },
+    {
+     "period": "2026-10-19",
+     "value": 3.28
+    },
+    {
+     "period": "2026-10-20",
+     "value": 3.1
+    }
+   ],
+   "frequency": "daily",
+   "eia_route": "natural-gas/pri/fut",
+   "dedupe_key": "eia:RNGWHHD:2026-10-20",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "WORLD",
+   "origin_name": "World",
+   "quantity_kbbl": 192947.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:WORLD",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "OPN_N",
+   "origin_name": "Non-OPEC",
+   "quantity_kbbl": 168508.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:OPN_N",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_CA",
+   "origin_name": "Canada",
+   "quantity_kbbl": 128792.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_CA",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "REG_CA",
+   "origin_name": "Canada (Region)",
+   "quantity_kbbl": 128792.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:REG_CA",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "REG_OA",
+   "origin_name": "Other Americas",
+   "quantity_kbbl": 59332.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:REG_OA",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "OPN_Y",
+   "origin_name": "OPEC",
+   "quantity_kbbl": 24439.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:OPN_Y",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_VE",
+   "origin_name": "Venezuela",
+   "quantity_kbbl": 21718.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_VE",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_MX",
+   "origin_name": "Mexico",
+   "quantity_kbbl": 10900.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_MX",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_BR",
+   "origin_name": "Brazil",
+   "quantity_kbbl": 7110.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_BR",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_CO",
+   "origin_name": "Colombia",
+   "quantity_kbbl": 5441.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_CO",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_EC",
+   "origin_name": "Ecuador",
+   "quantity_kbbl": 5253.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_EC",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_GY",
+   "origin_name": "Guyana",
+   "quantity_kbbl": 4394.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_GY",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "REG_AF",
+   "origin_name": "Africa",
+   "quantity_kbbl": 4029.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:REG_AF",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_AR",
+   "origin_name": "Argentina",
+   "quantity_kbbl": 3916.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_AR",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  },
+  {
+   "record_type": "eia_crude_imports_by_origin",
+   "period": "2026-07",
+   "origin_id": "CTY_LY",
+   "origin_name": "Libya",
+   "quantity_kbbl": 1421.0,
+   "us_total_all_origins_kbbl": 771788.0,
+   "units": "thousand barrels per month",
+   "aggregation": "sum of EIA-814 rows by origin over grades and destination PADDs",
+   "dedupe_key": "eia:crude_imports:2026-07:CTY_LY",
+   "figure_label": "SOURCED",
+   "context_only": true,
+   "provenance": {
+    "source": "U.S. Energy Information Administration (EIA) Open Data API v2",
+    "retrieved_at": "2026-10-25T00:37:20Z",
+    "mode": "LIVE"
+   }
+  }
+ ]
+}

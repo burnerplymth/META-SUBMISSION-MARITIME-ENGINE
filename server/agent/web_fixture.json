@@ -1,0 +1,85 @@
+{
+ "_note": "A real reply from api.meta.ai /v1/responses (muse-spark-1.3, web_search tool), saved once on 2026-10-29. The sources are the pages the live search returned for the query; their dates are theirs, not the date of this file. Text is the model's own; citation markers were the model's domain markers mapped to the retrieved hits.",
+ "recorded_at": "2026-10-29",
+ "model": "muse-spark-1.3",
+ "query": "port congestion Rotterdam recent news",
+ "sources": [
+  {
+   "title": "Ocean Shipping Freight Market Update | C.H. Robinson",
+   "url": "https://www.chrobinson.com/en-us/resources/insights-and-advisories/north-america-freight-insights/dec-2025-freight-market-update/ocean/",
+   "snippet": ""
+  },
+  {
+   "title": "Europe Port Congestion Rises Amid Trade & Alliance Shifts",
+   "url": "https://logicall.com/blog/europe-port-bottlenecks-reappear/",
+   "snippet": ""
+  },
+  {
+   "title": "Major European Ports are Experiencing Congestion Challenges",
+   "url": "https://maritime-executive.com/article/major-european-ports-are-experiencing-congestion-challenges",
+   "snippet": ""
+  },
+  {
+   "title": "The Three Major Ports Of Antwerp, Hamburg And Rotterdam Are Seriously Congested - sea/ocean freight - News - SDI Logistics",
+   "url": "https://www.sdilogistics-shippings.com/news/the-three-major-ports-of-antwerp-hamburg-and-85145677.html",
+   "snippet": ""
+  },
+  {
+   "title": "Traders shift to China-Europe freight trains as European port congestion intensifies",
+   "url": "https://www.hellenicshippingnews.com/traders-shift-to-china-europe-freight-trains-as-european-port-congestion-intensifies/",
+   "snippet": ""
+  }
+ ],
+ "paragraphs": [
+  {
+   "text": "Recent reporting points to sustained congestion at Rotterdam:",
+   "cite": []
+  },
+  {
+   "text": "Port of Rotterdam continues to see elevated dwell times — averaging roughly 14 days at RWG and about four days at ECT.",
+   "cite": [
+    0
+   ]
+  },
+  {
+   "text": "Recent labor actions at Antwerp and Rotterdam have ended or been temporarily paused, though congestion persists, currently averaging two to eight days at Rotterdam.",
+   "cite": [
+    0
+   ]
+  },
+  {
+   "text": "Persistent congestion at major north European ports — including Rotterdam, Hamburg, and Antwerp — continues constraining capacity by extending vessel turnaround times and reducing effective service frequency.",
+   "cite": [
+    0
+   ]
+  },
+  {
+   "text": "At several key terminals in Antwerp and Rotterdam, yard utilisation has reached or exceeded 90%, well above the 75% threshold typically associated with severe congestion.",
+   "cite": [
+    1
+   ]
+  },
+  {
+   "text": "A similar situation is visible at Europe Container Terminals (ECT), Rotterdam where yard space is up to 85 percent full.",
+   "cite": [
+    2
+   ]
+  },
+  {
+   "text": "Separately, the average waiting time for ships in Rotterdam has been as long as 77 hours.",
+   "cite": [
+    3
+   ]
+  },
+  {
+   "text": "Traders are beefing up contingency plans such as switching to China-Europe freight trains to deal with congestion at major ports in Europe.",
+   "cite": [
+    4
+   ]
+  },
+  {
+   "text": "Note: these are web-reported figures, not modelled output from SupermAP tools.",
+   "cite": []
+  }
+ ]
+}

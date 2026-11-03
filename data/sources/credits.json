@@ -1,0 +1,702 @@
+{
+ "version": "credits-v1",
+ "kind": "Registry of every external source shown in the product (single source of truth for the web app, the map and the server exports). Not legal advice.",
+ "surfaces": {
+  "sources": "Sources list reachable from the top bar",
+  "map": "Map attribution control",
+  "footer": "Footer of reports and exports",
+  "export": "Export centre and every export file",
+  "provenance": "Provenance drawer"
+ },
+ "sources": [
+  {
+   "id": "imf-portwatch",
+   "name": "IMF PortWatch",
+   "group": "data",
+   "line": "Source: International Monetary Fund, PortWatch, https://portwatch.imf.org",
+   "transformed": "Transformed: 30-day windows, shares and capacity weights",
+   "licence": "IMF data terms: copy, derive and publish with attribution and a statement of transformations; bulk automated download and commercial reuse need permission",
+   "url": "https://portwatch.imf.org",
+   "terms_url": "https://www.imf.org/en/about/copyright-and-terms",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "map",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "portwatch",
+    "imf"
+   ],
+   "note": null,
+   "licence_short": "IMF terms",
+   "map_text": "Source: International Monetary Fund, PortWatch, https://portwatch.imf.org"
+  },
+  {
+   "id": "un-comtrade",
+   "name": "UN Comtrade",
+   "group": "data",
+   "line": "Source: UN Comtrade (comtrade.un.org)",
+   "transformed": "Derived from UN Comtrade; not the original records",
+   "licence": "UN Comtrade licence agreement: original records may not be redistributed without written UN permission; only derived shares are published",
+   "url": "https://comtrade.un.org",
+   "terms_url": "https://comtrade.un.org/licenseagreement.html",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "comtrade"
+   ],
+   "note": null,
+   "licence_short": "UN terms",
+   "map_text": null
+  },
+  {
+   "id": "opensky",
+   "name": "OpenSky Network",
+   "group": "data",
+   "line": "Source: OpenSky Network, https://opensky-network.org",
+   "transformed": "Snapshot, not live",
+   "licence": "OpenSky terms: research and non-commercial use; cite Schafer et al., IPSN 2014",
+   "url": "https://opensky-network.org",
+   "terms_url": "https://opensky-network.org/about/terms-of-use",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "opensky"
+   ],
+   "note": null,
+   "licence_short": "Research use",
+   "map_text": null
+  },
+  {
+   "id": "eia",
+   "name": "U.S. EIA",
+   "group": "data",
+   "line": "Source: U.S. Energy Information Administration, https://www.eia.gov",
+   "transformed": null,
+   "licence": "US government data; acknowledgement of EIA as the source is requested",
+   "url": "https://www.eia.gov",
+   "terms_url": "https://www.eia.gov/about/copyrights_reuse.php",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "eia"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": null
+  },
+  {
+   "id": "noaa-nws",
+   "name": "NOAA / National Weather Service",
+   "group": "data",
+   "line": "Source: NOAA / National Weather Service, https://www.weather.gov",
+   "transformed": null,
+   "licence": "US government data, public domain",
+   "url": "https://www.weather.gov",
+   "terms_url": "https://www.weather.gov/disclaimer",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "noaa",
+    "nws",
+    "weather.gov"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": null
+  },
+  {
+   "id": "gdacs",
+   "name": "GDACS",
+   "group": "data",
+   "line": "Source: GDACS (European Commission JRC and UN OCHA), https://www.gdacs.org",
+   "transformed": "Automatic alerts; not an official warning",
+   "licence": "Reuse under the European Commission reuse notice (CC BY 4.0) with acknowledgement; alerts are automatic and not an official warning",
+   "url": "https://www.gdacs.org",
+   "terms_url": "https://gdacs.org/About/termofuse.aspx",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "gdacs"
+   ],
+   "note": null,
+   "licence_short": "CC BY 4.0",
+   "map_text": null
+  },
+  {
+   "id": "gdelt",
+   "name": "The GDELT Project",
+   "group": "data",
+   "line": "Source: The GDELT Project, https://www.gdeltproject.org",
+   "transformed": "Titles and links only",
+   "licence": "Free to use with citation; headlines belong to their publishers",
+   "url": "https://www.gdeltproject.org",
+   "terms_url": "https://www.gdeltproject.org/about.html",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "gdelt"
+   ],
+   "note": null,
+   "licence_short": "Citation",
+   "map_text": null
+  },
+  {
+   "id": "marinecadastre-ais",
+   "name": "MarineCadastre AIS",
+   "group": "data",
+   "line": "Source: US Coast Guard AIS via MarineCadastre.gov (NOAA, BOEM)",
+   "transformed": "Thinned sample of one port day",
+   "licence": "US government data, public domain",
+   "url": "https://marinecadastre.gov/ais/",
+   "terms_url": "https://marinecadastre.gov/ais/",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "marinecadastre",
+    "coast guard ais"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": null
+  },
+  {
+   "id": "aisstream",
+   "name": "AISStream",
+   "group": "data",
+   "line": "Source: AISStream, https://aisstream.io",
+   "transformed": null,
+   "licence": "Needs a user key; nothing is bundled",
+   "url": "https://aisstream.io",
+   "terms_url": "https://aisstream.io",
+   "required": false,
+   "surfaces": [
+    "sources"
+   ],
+   "match": [
+    "aisstream"
+   ],
+   "note": null,
+   "licence_short": "Needs key",
+   "map_text": null
+  },
+  {
+   "id": "cbp",
+   "name": "U.S. Customs and Border Protection",
+   "group": "data",
+   "line": "Source: U.S. Customs and Border Protection, https://www.cbp.gov",
+   "transformed": null,
+   "licence": "US government data, public domain",
+   "url": "https://www.cbp.gov",
+   "terms_url": "https://www.cbp.gov",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "cbp",
+    "border wait"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": null
+  },
+  {
+   "id": "ntad-bts",
+   "name": "NTAD / BTS",
+   "group": "data",
+   "line": "Source: U.S. DOT Bureau of Transportation Statistics, NTAD",
+   "transformed": null,
+   "licence": "US government data, public domain",
+   "url": "https://www.bts.gov",
+   "terms_url": "https://www.bts.gov",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "ntad",
+    "bts"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": null
+  },
+  {
+   "id": "sec-edgar",
+   "name": "SEC EDGAR",
+   "group": "data",
+   "line": "Source: U.S. Securities and Exchange Commission, EDGAR",
+   "transformed": null,
+   "licence": "US government data; SEC fair-access policy",
+   "url": "https://www.sec.gov/edgar",
+   "terms_url": "https://www.sec.gov/edgar",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "edgar",
+    "sec filing"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": null
+  },
+  {
+   "id": "open-meteo",
+   "name": "Open-Meteo",
+   "group": "data",
+   "line": "Weather data by Open-Meteo.com, https://open-meteo.com",
+   "transformed": null,
+   "licence": "Data CC BY 4.0; the free API is non-commercial",
+   "url": "https://open-meteo.com",
+   "terms_url": "https://open-meteo.com/en/license",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "map",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "open-meteo",
+    "open meteo"
+   ],
+   "note": null,
+   "licence_short": "CC BY 4.0",
+   "map_text": "Weather data by Open-Meteo.com"
+  },
+  {
+   "id": "natural-earth",
+   "name": "Natural Earth",
+   "group": "data",
+   "line": "Natural Earth (public domain), https://www.naturalearthdata.com",
+   "transformed": null,
+   "licence": "Public domain",
+   "url": "https://www.naturalearthdata.com",
+   "terms_url": "https://www.naturalearthdata.com",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "map"
+   ],
+   "match": [
+    "natural earth"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": "Natural Earth (public domain)"
+  },
+  {
+   "id": "worldbank-unctad",
+   "name": "World Bank / UNCTAD",
+   "group": "data",
+   "line": "Source: World Bank (CPPI 2023), UNCTADstat",
+   "transformed": null,
+   "licence": "CC BY 3.0 IGO",
+   "url": "https://www.worldbank.org",
+   "terms_url": "https://www.worldbank.org",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "provenance"
+   ],
+   "match": [
+    "cppi",
+    "unctad",
+    "world bank"
+   ],
+   "note": null,
+   "licence_short": "CC BY 3.0 IGO",
+   "map_text": null
+  },
+  {
+   "id": "drewry-wci",
+   "name": "Drewry (link only)",
+   "group": "data",
+   "line": "Drewry World Container Index: link only, no value shown",
+   "transformed": null,
+   "licence": "Commercial product; Drewry terms do not allow quoting index values",
+   "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry",
+   "terms_url": "https://www.drewry.co.uk/terms",
+   "required": false,
+   "surfaces": [
+    "sources"
+   ],
+   "match": [
+    "drewry",
+    "freightos",
+    "scfi"
+   ],
+   "note": null,
+   "licence_short": "Link only",
+   "map_text": null
+  },
+  {
+   "id": "openstreetmap",
+   "name": "OpenStreetMap",
+   "group": "map",
+   "line": "© OpenStreetMap contributors, https://www.openstreetmap.org/copyright",
+   "transformed": "Port geometry derived from OpenStreetMap",
+   "licence": "ODbL 1.0: attribution; share-alike for derived databases (data/ports_geo)",
+   "url": "https://www.openstreetmap.org/copyright",
+   "terms_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "map",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "openstreetmap",
+    "osm",
+    "odbl"
+   ],
+   "note": null,
+   "licence_short": "ODbL 1.0",
+   "map_text": "© OpenStreetMap contributors"
+  },
+  {
+   "id": "carto",
+   "name": "CARTO basemap",
+   "group": "map",
+   "line": "Basemap © CARTO, https://carto.com/attributions",
+   "transformed": null,
+   "licence": "CARTO terms: attribution required",
+   "url": "https://carto.com/attributions",
+   "terms_url": "https://carto.com/legal/",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "map"
+   ],
+   "match": [
+    "carto"
+   ],
+   "note": null,
+   "licence_short": "CARTO terms",
+   "map_text": "© CARTO"
+  },
+  {
+   "id": "maplibre-glyphs",
+   "name": "MapLibre demo glyphs",
+   "group": "map",
+   "line": "Map rendering: MapLibre GL JS (BSD-3-Clause)",
+   "transformed": null,
+   "licence": "BSD-3-Clause",
+   "url": "https://maplibre.org",
+   "terms_url": "https://maplibre.org",
+   "required": false,
+   "surfaces": [
+    "sources"
+   ],
+   "match": [
+    "maplibre"
+   ],
+   "note": null,
+   "licence_short": "BSD-3-Clause",
+   "map_text": null
+  },
+  {
+   "id": "copernicus-sentinel",
+   "name": "Copernicus Sentinel",
+   "group": "imagery",
+   "line": "Contains modified Copernicus Sentinel data",
+   "transformed": "Contains modified Copernicus Sentinel data",
+   "licence": "Free, full and open (Regulation (EU) No 1159/2013); attribution required",
+   "url": "https://www.copernicus.eu",
+   "terms_url": "https://sentinels.copernicus.eu/web/sentinel/terms-and-conditions",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "map",
+    "footer",
+    "export",
+    "provenance"
+   ],
+   "match": [
+    "copernicus",
+    "sentinel",
+    "planetary computer",
+    "element84"
+   ],
+   "note": null,
+   "licence_short": "Open data",
+   "map_text": "Contains modified Copernicus Sentinel data"
+  },
+  {
+   "id": "eox-cloudless",
+   "name": "EOX Sentinel-2 cloudless",
+   "group": "imagery",
+   "line": "EOxCloudless https://cloudless.eox.at by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2016 & 2017)",
+   "transformed": null,
+   "licence": "CC BY 4.0 (2016 layer)",
+   "url": "https://cloudless.eox.at",
+   "terms_url": "https://s2maps.eu/",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "map"
+   ],
+   "match": [
+    "eox",
+    "cloudless"
+   ],
+   "note": null,
+   "licence_short": "CC BY 4.0",
+   "map_text": "EOxCloudless https://cloudless.eox.at by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2016 & 2017)"
+  },
+  {
+   "id": "nasa-gibs",
+   "name": "NASA GIBS / Earthdata",
+   "group": "imagery",
+   "line": "NASA GIBS / Earthdata",
+   "transformed": null,
+   "licence": "NASA Earthdata open data policy; acknowledgement requested",
+   "url": "https://earthdata.nasa.gov/gibs",
+   "terms_url": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-policy",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "map"
+   ],
+   "match": [
+    "gibs",
+    "earthdata",
+    "nasa"
+   ],
+   "note": null,
+   "licence_short": "Open data",
+   "map_text": "NASA GIBS / Earthdata"
+  },
+  {
+   "id": "landsat-naip",
+   "name": "Landsat / NAIP",
+   "group": "imagery",
+   "line": "Source: USGS Landsat Collection 2, USDA NAIP",
+   "transformed": null,
+   "licence": "US government data, public domain",
+   "url": "https://www.usgs.gov/landsat-missions",
+   "terms_url": "https://www.usgs.gov/landsat-missions",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "provenance"
+   ],
+   "match": [
+    "landsat",
+    "naip",
+    "usgs"
+   ],
+   "note": null,
+   "licence_short": "Public domain",
+   "map_text": null
+  },
+  {
+   "id": "pdok-luchtfoto",
+   "name": "PDOK Luchtfoto",
+   "group": "imagery",
+   "line": "Source: PDOK Luchtfoto, CC BY 4.0, https://www.pdok.nl",
+   "transformed": "Preview crop of an aerial scene",
+   "licence": "CC BY 4.0",
+   "url": "https://www.pdok.nl",
+   "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "provenance",
+    "export"
+   ],
+   "match": [
+    "pdok"
+   ],
+   "note": null,
+   "licence_short": "CC BY 4.0",
+   "map_text": null
+  },
+  {
+   "id": "pnoa",
+   "name": "PNOA",
+   "group": "imagery",
+   "line": "Source: PNOA, © Instituto Geografico Nacional de Espana, CC BY 4.0",
+   "transformed": "Preview crop of an aerial scene",
+   "licence": "CC BY 4.0 (service metadata)",
+   "url": "https://pnoa.ign.es",
+   "terms_url": "https://creativecommons.org/licenses/by/4.0/",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "provenance",
+    "export"
+   ],
+   "match": [
+    "pnoa"
+   ],
+   "note": null,
+   "licence_short": "CC BY 4.0",
+   "map_text": null
+  },
+  {
+   "id": "digitaal-vlaanderen",
+   "name": "Digitaal Vlaanderen",
+   "group": "imagery",
+   "line": "© Digitaal Vlaanderen, Orthofotomozaiek Vlaanderen",
+   "transformed": null,
+   "licence": "Modellicentie gratis hergebruik (naamsvermelding) or Vlaamse Open Data licentie v1.2, per dataset; no scene is shipped",
+   "url": "https://www.vlaanderen.be/digitaal-vlaanderen",
+   "terms_url": "https://www.vlaanderen.be/digitaal-vlaanderen/onze-diensten-en-platformen/open-data/voorwaarden-voor-het-hergebruik-van-overheidsinformatie/modellicentie-gratis-hergebruik",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "provenance",
+    "export"
+   ],
+   "match": [
+    "digitaal vlaanderen",
+    "vlaanderen"
+   ],
+   "note": null,
+   "licence_short": "Open data",
+   "map_text": null
+  },
+  {
+   "id": "ign-bd-ortho",
+   "name": "IGN BD ORTHO",
+   "group": "imagery",
+   "line": "Source: IGN, BD ORTHO",
+   "transformed": null,
+   "licence": "Licence ouverte / Etalab 2.0; no scene is shipped",
+   "url": "https://geoservices.ign.fr/bdortho",
+   "terms_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+   "required": true,
+   "surfaces": [
+    "sources",
+    "provenance",
+    "export"
+   ],
+   "match": [
+    "ign",
+    "bd ortho"
+   ],
+   "note": null,
+   "licence_short": "Etalab 2.0",
+   "map_text": null
+  },
+  {
+   "id": "meta-model-api",
+   "name": "Meta Model API",
+   "group": "model",
+   "line": "Meta AI, Meta Model API",
+   "transformed": null,
+   "licence": "Meta API terms; recorded replies are labelled Recorded",
+   "url": "https://api.meta.ai",
+   "terms_url": "https://api.meta.ai",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "provenance"
+   ],
+   "match": [
+    "meta ai",
+    "meta model api"
+   ],
+   "note": null,
+   "licence_short": "Meta terms",
+   "map_text": null
+  },
+  {
+   "id": "sam-3-1",
+   "name": "SAM 3.1",
+   "group": "model",
+   "line": "Segmentation: SAM 3.1 (Meta), SAM License",
+   "transformed": "Detected, not verified",
+   "licence": "SAM License (2025-11-19)",
+   "url": "https://ai.meta.com/sam3/",
+   "terms_url": "https://ai.meta.com/sam3/",
+   "required": false,
+   "surfaces": [
+    "sources",
+    "provenance"
+   ],
+   "match": [
+    "sam 3.1",
+    "sam-3.1",
+    "sam 3"
+   ],
+   "note": null,
+   "licence_short": "SAM License",
+   "map_text": null
+  },
+  {
+   "id": "ibm-plex",
+   "name": "IBM Plex",
+   "group": "font",
+   "line": "Fonts: IBM Plex, SIL Open Font License 1.1",
+   "transformed": null,
+   "licence": "SIL Open Font License 1.1; licence text ships beside the files",
+   "url": "https://www.ibm.com/plex/",
+   "terms_url": "https://openfontlicense.org",
+   "required": false,
+   "surfaces": [
+    "sources"
+   ],
+   "match": [
+    "ibm plex"
+   ],
+   "note": null,
+   "licence_short": "OFL 1.1",
+   "map_text": null
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+# SupermAP Python stack. Install with: python3 -m venv .venv && .venv/bin/pip install -r server/api/requirements.txt
+fastapi>=0.110
+uvicorn>=0.29
+httpx>=0.27
+# Pillow is a runtime dependency: server/satwatch/stac.py's SCL cloud screening (scl_cloud_from_png) imports PIL.
+Pillow>=10
+# Generation-time dependency of scripts/build_sea_routes.py only (MARNET sea-lane network, Apache-2.0, descended
+# from Eurostat SeaRoute EUPL-1.2). The engine reads data/graph/sea_routes.json and never imports it.
+searoute>=1.6.0

@@ -1,0 +1,115 @@
+{
+ "aggregate": {
+  "hits": 3,
+  "metrics_graded": 7,
+  "misses": 4,
+  "ungraded": 1
+ },
+ "artifact": "SIM BACKTEST SCORECARD",
+ "grades_engine": "SIM layer (traffic / queues / diversions) \u2014 separate from the causal-chain scorecard; never merged",
+ "graph_sha256": "9743a288fb5d670d8f814f4f6240bab395fd72b7f63ee50475793539e564a062",
+ "metrics": [
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "ever_given",
+   "grade": "MISS",
+   "id": "EG-1",
+   "metric": "Excess peak queue at chk_suez, in days of normal corridor flow",
+   "observed": 7.415335463258787,
+   "sim": 0.5454545454545454
+  },
+  {
+   "band": "\u2014",
+   "event": "ever_given",
+   "grade": "UNGRADED",
+   "id": "EG-2",
+   "metric": "Mean added delay at chk_suez (twin statistic)",
+   "observed": null,
+   "reason": "average delay per queued vessel could not be sourced (only forecasts and anecdotes exist); never estimated",
+   "sim": 2.330994
+  },
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "ever_given",
+   "grade": "HIT",
+   "id": "EG-3",
+   "metric": "Clearance days after reopening (queue back to twin level, sustained 3 ticks)",
+   "observed": 5.0,
+   "sim": 9.453888888888889
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "baltimore",
+   "grade": "MISS",
+   "id": "BA-1",
+   "metric": "Port-call drop at sea_baltimore during closure window (berth calls, disrupted vs twin)",
+   "observed": -60.062015503875976,
+   "sim": -100.0
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "baltimore",
+   "grade": "HIT",
+   "id": "BA-2",
+   "metric": "Diversion uplift at sea_virginia during closure window (berth calls % change vs twin)",
+   "observed": 2.0750551876379757,
+   "sim": -14.948453608247409
+  },
+  {
+   "band": "ratio in [0.5, 2]",
+   "event": "baltimore",
+   "grade": "MISS",
+   "id": "BA-3",
+   "metric": "Recovery days after full reopening (berth calls >= 90% of twin, sustained 3 d)",
+   "observed": 13,
+   "sim": 0
+  },
+  {
+   "band": "|diff| <= 20 pp",
+   "event": "red_sea",
+   "grade": "MISS",
+   "id": "RS-1",
+   "metric": "Suez transit drop, Jan-Feb 2024 (completed non-diverted arrivals on Suez-transiting lanes, disrupted vs twin)",
+   "observed": -40.835872877666525,
+   "sim": 0.0
+  },
+  {
+   "band": "sim in [3.5, 24] (observed range [7, 12] widened by [0.5x, 2x])",
+   "event": "red_sea",
+   "grade": "HIT",
+   "id": "RS-2",
+   "metric": "Mean lateness of arrivals on Bab-el-Mandeb-transiting lanes, Jan-Feb 2024 (occurrence-matched vs twin)",
+   "observed": [
+    7.0,
+    12.0
+   ],
+   "sim": 7.657844638128824
+  }
+ ],
+ "observed_comparators": {
+  "baltimore": {
+   "ba1_drop_pct": -60.062015503875976,
+   "ba2_change_pct": 2.0750551876379757,
+   "ba3_recovery_days": 13
+  },
+  "ever_given": {
+   "baseline_transits_per_day": 56.90909090909091,
+   "eg1_days_of_flow": 7.415335463258787,
+   "eg3_clearance_days": 5.0,
+   "peak_queue": 422
+  },
+  "red_sea": {
+   "rs1_drop_pct": -40.835872877666525,
+   "rs2_range_d": [
+    7.0,
+    12.0
+   ]
+  }
+ },
+ "raw_results": {
+  "baltimore": "results/baltimore_raw.json",
+  "ever_given": "results/ever_given_raw.json",
+  "red_sea": "results/red_sea_raw.json"
+ },
+ "sim_code_note": "all runs executed the shipped sim exactly as registered"
+}

@@ -1,0 +1,59 @@
+{
+ "attribution": {
+  "chip": "USDA \u00b7 NAIP",
+  "licence": "USDA NAIP imagery: public domain",
+  "text": "Imagery courtesy of USDA Farm Service Agency (NAIP), via USGS"
+ },
+ "bbox": [
+  -73.934461,
+  40.567763,
+  -73.915539,
+  40.582237
+ ],
+ "contract": "satwatch-multi/1",
+ "count_basis": null,
+ "counts": null,
+ "cover_pct": 100.0,
+ "crop": {
+  "file": "naip_sea_newyork_2022-07-19.png",
+  "pixel_spacing_m": 1.33,
+  "px": [
+   1200,
+   1200
+  ],
+  "url": "/satwatch/multi/crops/naip_sea_newyork_2022-07-19.png",
+  "window_m": 1600.0
+ },
+ "detections": [],
+ "detector": {
+  "id": null,
+  "label": null,
+  "status": "NOT RUN"
+ },
+ "imagery_mode": "SNAPSHOT",
+ "kind": "satwatch_multi",
+ "mode": "SNAPSHOT",
+ "name": "New York / Ambrose Anchorage",
+ "place": "sea_newyork",
+ "place_bbox": [
+  -74.05,
+  40.45,
+  -73.8,
+  40.7
+ ],
+ "provenance": {
+  "mode": "SNAPSHOT",
+  "retrieved_at": "2026-10-25T12:17:45Z",
+  "source": "NAIP AERIAL via Earth Search STAC and Planetary Computer titiler; Imagery courtesy of USDA Farm Service Agency (NAIP), via USGS"
+ },
+ "retrieved_at": "2026-10-25T12:17:45Z",
+ "scene": {
+  "date": "2022-07-19",
+  "datetime": "2022-07-19T16:00:00Z",
+  "id": "ny_m_4007325_ne_18_060_20220719",
+  "platform": null,
+  "year": "2022"
+ },
+ "ship_detection_grade": "not_a_ship_source",
+ "source": "naip"
+}

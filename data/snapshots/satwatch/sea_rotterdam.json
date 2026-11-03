@@ -1,0 +1,114 @@
+{
+ "bbox": [
+  3.85,
+  51.85,
+  4.35,
+  52.1
+ ],
+ "catalog": {
+  "http_status": 200,
+  "search_url": "https://planetarycomputer.microsoft.com/api/stac/v1/search"
+ },
+ "core_bbox": [
+  3.9,
+  51.9,
+  4.2,
+  52.05
+ ],
+ "crops": {
+  "baseline": "sea_rotterdam_baseline_2026-09-09.png",
+  "now": "sea_rotterdam_now_2026-10-08.png"
+ },
+ "detection": {
+  "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+  "counts": null,
+  "detections": null,
+  "note": "detection awaits Meta API key (SAM 3.1)",
+  "prompts": [
+   "container ship",
+   "cargo vessel",
+   "container stack",
+   "gantry crane"
+  ],
+  "provider": "fixture",
+  "status": "AWAITING_META_KEY"
+ },
+ "imagery_dates": {
+  "baseline": "2026-09-09",
+  "now": "2026-10-08"
+ },
+ "kind": "satwatch_scan",
+ "name": "Rotterdam / Europoort Anchorage",
+ "node_id": "sea_rotterdam",
+ "notes": [],
+ "resolution_m": 10,
+ "retrieved_at": "2026-10-21T01:05:03Z",
+ "scene_baseline": {
+  "cloud_pct_aoi": 6.06,
+  "cloud_pct_tile": 54.696107,
+  "date": "2026-09-09",
+  "datetime": "2026-09-09T10:56:21.025000Z",
+  "id": "S2C_MSIL2A_20260909T105621_R094_T31UET_20260909T144416",
+  "mgrs_tile": "31UET",
+  "platform": "Sentinel-2C"
+ },
+ "scene_now": {
+  "cloud_pct_aoi": 30.64,
+  "cloud_pct_tile": 41.67617,
+  "date": "2026-10-08",
+  "datetime": "2026-10-08T10:50:41.024000Z",
+  "id": "S2A_MSIL2A_20261008T105041_R051_T31UET_20261008T172015",
+  "mgrs_tile": "31UET",
+  "platform": "Sentinel-2A"
+ },
+ "screened": [
+  {
+   "cloud_pct_aoi": 76.48,
+   "date": "2026-10-19",
+   "id": "S2C_MSIL2A_20261019T110051_R094_T31UET_20261019T144052"
+  },
+  {
+   "cloud_pct_aoi": 92.46,
+   "date": "2026-10-18",
+   "id": "S2A_MSIL2A_20261018T105001_R051_T31UET_20261018T174706"
+  },
+  {
+   "cloud_pct_aoi": 100.0,
+   "date": "2026-10-16",
+   "id": "S2C_MSIL2A_20261016T105031_R051_T31UET_20261016T143006"
+  },
+  {
+   "cloud_pct_aoi": 67.15,
+   "date": "2026-10-14",
+   "id": "S2B_MSIL2A_20261014T110009_R094_T31UET_20261014T132427"
+  },
+  {
+   "cloud_pct_aoi": 49.49,
+   "date": "2026-10-11",
+   "id": "S2A_MSIL2A_20261011T105911_R094_T31UET_20261011T174109"
+  },
+  {
+   "cloud_pct_aoi": 75.95,
+   "date": "2026-10-09",
+   "id": "S2C_MSIL2A_20261009T105951_R094_T31UET_20261009T143810"
+  },
+  {
+   "cloud_pct_aoi": 30.64,
+   "date": "2026-10-08",
+   "id": "S2A_MSIL2A_20261008T105041_R051_T31UET_20261008T172015"
+  },
+  {
+   "cloud_pct_aoi": 100.0,
+   "date": "2026-09-08",
+   "id": "S2A_MSIL2A_20260908T104651_R051_T31UET_20260908T173209"
+  },
+  {
+   "cloud_pct_aoi": 6.06,
+   "date": "2026-09-09",
+   "id": "S2C_MSIL2A_20260909T105621_R094_T31UET_20260909T144416"
+  }
+ ],
+ "source": "Microsoft Planetary Computer / Sentinel-2 L2A",
+ "usable_pair": true,
+ "version": 1
+}

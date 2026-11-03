@@ -1,0 +1,572 @@
+{
+ "adapter": "gdelt",
+ "saved_at": "2026-10-21T04:39:12Z",
+ "provenance": {
+  "source": "GDELT",
+  "retrieved_at": "2026-10-21T04:39:12Z",
+  "mode": "SNAPSHOT"
+ },
+ "records": [
+  {
+   "record_type": "feed_item",
+   "title": "早报丨SpaceX 、 超微电脑业绩点燃AI硬件预期 ！ 马斯克宣布探讨巨头合并事宜 ； 大摩Wilson ： 本轮调整或以优质股补跌画上句号 ； 黄仁勋今晚发表GTC演讲 _ 东方财富网",
+   "url": "https://finance.eastmoney.com/a/202610213902008894.html",
+   "domain": "finance.eastmoney.com",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261021T004500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://finance.eastmoney.com/a/202610213902008894.html",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "财经早报丨资金持续逆势流入宽基ETF 张坤 、 董承非 、 冯柳最新持仓曝光丨2026年10月21日",
+   "url": "https://finance.sina.com.cn/stock/y/2026-10-21/doc-inivxvut5474687.shtml",
+   "domain": "finance.sina.com.cn",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261021T003000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://finance.sina.com.cn/stock/y/2026-10-21/doc-inivxvut5474687.shtml",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Polaris Renewable Energy Awards Key Supply Contract and Issues Notice to Proceed on Punta Lima Battery Storage Investment",
+   "url": "http://www.californiatelegraph.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "domain": "californiatelegraph.com",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261021T003000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:http://www.californiatelegraph.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Polaris Renewable Energy Awards Key Supply Contract and Issues Notice to Proceed on Punta Lima Battery Storage Investment",
+   "url": "http://www.hawaiitelegraph.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "domain": "hawaiitelegraph.com",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261021T001500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:http://www.hawaiitelegraph.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Polaris Renewable Energy Awards Key Supply Contract and Issues Notice to Proceed on Punta Lima Battery Storage Investment",
+   "url": "http://www.parisguardian.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "domain": "parisguardian.com",
+   "language": "English",
+   "source_country": "France",
+   "seendate": "20261021T001500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:http://www.parisguardian.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "股海导航 _ 2026年10月21日 _ 沪深股市公告与交易提示",
+   "url": "https://finance.sina.com.cn/stock/s/2026-10-21/doc-inivxrnx6312131.shtml",
+   "domain": "finance.sina.com.cn",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261021T000000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://finance.sina.com.cn/stock/s/2026-10-21/doc-inivxrnx6312131.shtml",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Polaris Renewable Energy Awards Key Supply Contract and Issues Notice ... ",
+   "url": "https://www.pr-inside.com/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-r5235534.htm",
+   "domain": "pr-inside.com",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261020T221500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.pr-inside.com/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-r5235534.htm",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Polaris Renewable Energy Inc .: Polaris Renewable Energy Awards Key Supply Contract and Issues Notice to Proceed on Punta Lima Battery Storage Investment",
+   "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69888477-polaris-renewable-energy-inc-polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investme-200.htm",
+   "domain": "finanznachrichten.de",
+   "language": "English",
+   "source_country": "Germany",
+   "seendate": "20261020T213000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.finanznachrichten.de/nachrichten-2026-10/69888477-polaris-renewable-energy-inc-polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investme-200.htm",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Water shortages will threaten growth within five years , say over half of European industrial leaders",
+   "url": "https://www.webwire.com/ViewPressRel.asp?aId=363102",
+   "domain": "webwire.com",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261020T213000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.webwire.com/ViewPressRel.asp?aId=363102",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Polaris Renewable Energy Awards Key Supply Contract and Issues Notice to Proceed on Punta Lima Battery Storage Investment",
+   "url": "http://www.torontotelegraph.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "domain": "torontotelegraph.com",
+   "language": "English",
+   "source_country": "Canada",
+   "seendate": "20261020T213000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:http://www.torontotelegraph.com/news/279388324/polaris-renewable-energy-awards-key-supply-contract-and-issues-notice-to-proceed-on-punta-lima-battery-storage-investment",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "The role of infrastructure in supply chain resilience - London Business News",
+   "url": "https://londonlovesbusiness.com/the-role-of-infrastructure-in-supply-chain-resilience/",
+   "domain": "londonlovesbusiness.com",
+   "language": "English",
+   "source_country": "United Kingdom",
+   "seendate": "20261020T181500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://londonlovesbusiness.com/the-role-of-infrastructure-in-supply-chain-resilience/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "上海锚地LNG加注次数过百 ， 三年加注超54万立方米",
+   "url": "https://baijiahao.baidu.com/s?id=1879581733489542459",
+   "domain": "baijiahao.baidu.com",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261020T174500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://baijiahao.baidu.com/s?id=1879581733489542459",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "中船防务 ， 新接订单暴增 _ 东方财富网",
+   "url": "https://finance.eastmoney.com/a/202610213901729523.html",
+   "domain": "finance.eastmoney.com",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261020T173000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://finance.eastmoney.com/a/202610213901729523.html",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Broker lists top issues affecting real estate",
+   "url": "https://www.thereporteronline.com/2026/10/20/broker-lists-top-issues-affecting-real-estate/",
+   "domain": "thereporteronline.com",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261020T150000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.thereporteronline.com/2026/10/20/broker-lists-top-issues-affecting-real-estate/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Portogallo sgomberata anche a Lisbona la tendopoli contro il carovita",
+   "url": "https://www.zazoom.it/2026-10-20/portogallo-sgomberata-anche-a-lisbona-la-tendopoli-contro-il-carovita/19824718/",
+   "domain": "zazoom.it",
+   "language": "Italian",
+   "source_country": "Italy",
+   "seendate": "20261020T140000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.zazoom.it/2026-10-20/portogallo-sgomberata-anche-a-lisbona-la-tendopoli-contro-il-carovita/19824718/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Port of Palm Beach cruise plans have neighbors on alert",
+   "url": "https://www.wlrn.org/development/2026-10-20/port-of-palm-beach-cruise-plans-have-neighbors-on-alert",
+   "domain": "wlrn.org",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261020T133000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.wlrn.org/development/2026-10-20/port-of-palm-beach-cruise-plans-have-neighbors-on-alert",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "A Look Ahead at the Highlights of the 9th China International Import Expo",
+   "url": "https://www.chinatechnews.com/2026/10/20/131110-a-look-ahead-at-the-highlights-of-the-9th-china-international-import-expo",
+   "domain": "chinatechnews.com",
+   "language": "English",
+   "source_country": "China",
+   "seendate": "20261020T120000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.chinatechnews.com/2026/10/20/131110-a-look-ahead-at-the-highlights-of-the-9th-china-international-import-expo",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "10月20日晚间沪深上市公司重大事项公告最新快递 _ 东方财富网",
+   "url": "https://finance.eastmoney.com/a/202610203901483959.html",
+   "domain": "finance.eastmoney.com",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261020T120000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://finance.eastmoney.com/a/202610203901483959.html",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "三登央视 ！ 盐田港国庆破全国纪录 ， 助力中国进出口平衡发展 _ 深圳新闻网",
+   "url": "https://www.sznews.com/news/content/2026-10/20/content_32196187.htm",
+   "domain": "sznews.com",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261020T100000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.sznews.com/news/content/2026-10/20/content_32196187.htm",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Water shortages will threaten growth within five years , say over half of European industrial leaders",
+   "url": "https://www.saultstar.com/press-releases/globe-newswire/water-shortages-will-threaten-growth-within-five-years-say-over-half-of-european-industrial-leaders/",
+   "domain": "saultstar.com",
+   "language": "English",
+   "source_country": "Canada",
+   "seendate": "20261020T091500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.saultstar.com/press-releases/globe-newswire/water-shortages-will-threaten-growth-within-five-years-say-over-half-of-european-industrial-leaders/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Safety Culture Is Brand Strategy , Whether Companies Realize It or Not",
+   "url": "https://www.ehstoday.com:443/safety-leadership/article/55412301/safety-culture-is-brand-strategy-whether-companies-realize-it-or-not",
+   "domain": "ehstoday.com",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261020T090000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.ehstoday.com:443/safety-leadership/article/55412301/safety-culture-is-brand-strategy-whether-companies-realize-it-or-not",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Water shortages will threaten growth within five years , say over half of European industrial leaders",
+   "url": "https://www.manilatimes.net/2026/10/20/tmt-newswire/globenewswire/water-shortages-will-threaten-growth-within-five-years-say-over-half-of-european-industrial-leaders/2449412",
+   "domain": "manilatimes.net",
+   "language": "English",
+   "source_country": "Philippines",
+   "seendate": "20261020T080000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.manilatimes.net/2026/10/20/tmt-newswire/globenewswire/water-shortages-will-threaten-growth-within-five-years-say-over-half-of-european-industrial-leaders/2449412",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Water shortages will threaten growth within five years , say over half of European industrial leaders",
+   "url": "https://www.brantfordexpositor.ca/press-releases/globe-newswire/water-shortages-will-threaten-growth-within-five-years-say-over-half-of-european-industrial-leaders/",
+   "domain": "brantfordexpositor.ca",
+   "language": "English",
+   "source_country": "Canada",
+   "seendate": "20261020T080000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.brantfordexpositor.ca/press-releases/globe-newswire/water-shortages-will-threaten-growth-within-five-years-say-over-half-of-european-industrial-leaders/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "The skill nobody trains : Doctor explains why mental fitness is the foundation of peak performance",
+   "url": "https://www.hindustantimes.com/lifestyle/health/the-skill-nobody-trains-doctor-explains-why-mental-fitness-is-the-foundation-of-peak-performance-101792397712639.html",
+   "domain": "hindustantimes.com",
+   "language": "English",
+   "source_country": "India",
+   "seendate": "20261020T063000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.hindustantimes.com/lifestyle/health/the-skill-nobody-trains-doctor-explains-why-mental-fitness-is-the-foundation-of-peak-performance-101792397712639.html",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Petrolün ateşi düşmüyor ! Yeniden kritik seviyeyi test etti",
+   "url": "https://www.turkiyegazetesi.com.tr/ekonomi/petrolun-atesi-dusmuyor-yeniden-kritik-seviyeyi-test-etti-1823877",
+   "domain": "turkiyegazetesi.com.tr",
+   "language": "Turkish",
+   "source_country": "Turkey",
+   "seendate": "20261020T050000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.turkiyegazetesi.com.tr/ekonomi/petrolun-atesi-dusmuyor-yeniden-kritik-seviyeyi-test-etti-1823877",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Brazil Poultry Exports Face China Halt",
+   "url": "https://www.riotimesonline.com/brazil-newcastle-disease-turkey-farm-china-poultry/",
+   "domain": "riotimesonline.com",
+   "language": "English",
+   "source_country": "Brazil",
+   "seendate": "20261020T043000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.riotimesonline.com/brazil-newcastle-disease-turkey-farm-china-poultry/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "何以中国 · 当惊世界殊｜一块电池的两次  出发 _ 央广网",
+   "url": "https://www.cnr.cn/hubei/jdt/20261020/t20261020_527847525.shtml",
+   "domain": "cnr.cn",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261020T040000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.cnr.cn/hubei/jdt/20261020/t20261020_527847525.shtml",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "虹口 ： 打造上海国际航运中心核心承载区",
+   "url": "https://baijiahao.baidu.com/s?id=1879535093986798766",
+   "domain": "baijiahao.baidu.com",
+   "language": "Chinese",
+   "source_country": "China",
+   "seendate": "20261020T031500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://baijiahao.baidu.com/s?id=1879535093986798766",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "No Diesel Relief Until 2027 , Consumer Prices Spike , Says IEA Report",
+   "url": "https://thenewamerican.com/us/tech/energy/no-diesel-relief-until-2027-as-consumer-prices-spike-iea-report/",
+   "domain": "thenewamerican.com",
+   "language": "English",
+   "source_country": "United States",
+   "seendate": "20261020T014500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://thenewamerican.com/us/tech/energy/no-diesel-relief-until-2027-as-consumer-prices-spike-iea-report/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Panama Canal News and Plans for the 2027 Season . ",
+   "url": "https://newsroompanama.com/2026/10/19/panama-canal-news-and-plans-for-the-2027-season/",
+   "domain": "newsroompanama.com",
+   "language": "English",
+   "source_country": "Panama",
+   "seendate": "20261020T013000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://newsroompanama.com/2026/10/19/panama-canal-news-and-plans-for-the-2027-season/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Economy accelerated in the July - September quarter on robust exports",
+   "url": "https://macaudailytimes.com.mo/economy-accelerated-in-the-july-september-quarter-on-robust-exports.html",
+   "domain": "macaudailytimes.com.mo",
+   "language": "English",
+   "source_country": "Macau",
+   "seendate": "20261020T003000Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://macaudailytimes.com.mo/economy-accelerated-in-the-july-september-quarter-on-robust-exports.html",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Golden Island delivers world largest ethanol bunker stem in Singapore | Hellenic Shipping News Worldwide",
+   "url": "https://www.hellenicshippingnews.com/golden-island-delivers-worlds-largest-ethanol-bunker-stem-in-singapore/",
+   "domain": "hellenicshippingnews.com",
+   "language": "English",
+   "source_country": "China",
+   "seendate": "20261019T231500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.hellenicshippingnews.com/golden-island-delivers-worlds-largest-ethanol-bunker-stem-in-singapore/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Ethanol debut for WinGD as Maersk vessel makes landmark US bunkering and voyage",
+   "url": "https://www.hellenicshippingnews.com/ethanol-debut-for-wingd-as-maersk-vessel-makes-landmark-us-bunkering-and-voyage/",
+   "domain": "hellenicshippingnews.com",
+   "language": "English",
+   "source_country": "China",
+   "seendate": "20261019T231500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.hellenicshippingnews.com/ethanol-debut-for-wingd-as-maersk-vessel-makes-landmark-us-bunkering-and-voyage/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "LNG Bunker Snapshot : JKM contract roll lifts Singapore LNG bunker price | Hellenic Shipping News Worldwide",
+   "url": "https://www.hellenicshippingnews.com/lng-bunker-snapshot-jkm-contract-roll-lifts-singapores-lng-bunker-price/",
+   "domain": "hellenicshippingnews.com",
+   "language": "English",
+   "source_country": "China",
+   "seendate": "20261019T231500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://www.hellenicshippingnews.com/lng-bunker-snapshot-jkm-contract-roll-lifts-singapores-lng-bunker-price/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "feed_item",
+   "title": "Hay Daze : The friendly floatees | Red Deer Advocate",
+   "url": "https://reddeeradvocate.com/2026/10/19/hays-daze-the-friendly-floatees/",
+   "domain": "reddeeradvocate.com",
+   "language": "English",
+   "source_country": "Canada",
+   "seendate": "20261019T221500Z",
+   "tone": null,
+   "dedupe_key": "gdelt:https://reddeeradvocate.com/2026/10/19/hays-daze-the-friendly-floatees/",
+   "provenance": {
+    "source": "GDELT",
+    "retrieved_at": "2026-10-21T04:39:12Z",
+    "mode": "SNAPSHOT"
+   }
+  }
+ ],
+ "note": "RECORDED SNAPSHOT, FILTERED: fetched 2026-10-21; items removed by the content filter; not an unedited live fetch"
+}
