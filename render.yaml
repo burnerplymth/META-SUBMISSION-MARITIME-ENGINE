@@ -1,0 +1,61 @@
+# Render Blueprint for SupermAP: one Docker web service built from ./Dockerfile.
+# To use: New > Blueprint in the Render dashboard and point it at this repository.
+# Nothing secret belongs in this file.
+services:
+  - type: web
+    name: supermap
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: standard            # the app needs at least 2 GB RAM (4 GB recommended); the free plan (512 MB) is far too small
+    region: virginia          # pick the region closest to your users
+    numInstances: 1           # one process holds the run store and the limiters: do not scale out
+    healthCheckPath: /health  # the Dockerfile HEALTHCHECK is ignored by Render
+    autoDeploy: false
+    # No `disk:` block: the filesystem is ephemeral. A redeploy resets stored runs.
+    envVars:
+      # PORT is injected by Render (default 10000); the image reads it. Do not set it here.
+      # Render's proxy is the only peer: believe its forwarded headers (first X-Forwarded-For hop) so visitors do
+      # not share one rate-limit bucket. Never set this on a host without a proxy.
+      # One process only (run store and limiters are in memory); Render would otherwise default this to the CPU count.
+      - { key: WEB_CONCURRENCY, value: "1" }
+      - { key: SUPERMAP_TRUST_PROXY, value: "1" }
+      - { key: SUPERMAP_HSTS, value: "1" }
+      - { key: SUPERMAP_COOKIE_SECURE, value: "1" }
+      - { key: SUPERMAP_BLOCK_NETWORK, value: "0" }
+      # OpenSky: research and non-commercial terms. The public link serves the stored snapshot only (labelled Snapshot).
+      - { key: SUPERMAP_SNAPSHOT_ONLY_FEEDS, value: opensky }
+      - { key: SUPERMAP_BACKUP, value: "0" }
+      - { key: SUPERMAP_LLM_TRANSPORT, value: http }          # live Meta Model API; needs META_API_KEY (set in the dashboard)
+      - { key: SUPERMAP_ALLOW_OPEN_LIVE, value: "1" }         # visitors use the live model without a token; spend is bounded by the caps below
+      - { key: SUPERMAP_LLM_DAILY_CAP_USD, value: "20" }
+      - { key: SUPERMAP_SIM_DEMO_PREBUILD, value: "1" }       # builds the demo sim run at boot (several minutes)
+      # Memory: one sim build at a time and byte-bounded caches (peak use is about 1.4 to 1.7 GB).
+      - { key: SUPERMAP_SIM_BUILD_WORKERS, value: "1" }
+      - { key: SUPERMAP_SIM_RECORD_CACHE_MB, value: "256" }
+      - { key: SUPERMAP_SIM_STATE_CACHE_MB, value: "64" }
+      - { key: SUPERMAP_SIM_STORE_MAX_BYTES, value: "2147483648" }
+      - { key: SUPERMAP_SIM_MIN_FREE_BYTES, value: "1073741824" }
+      - { key: SUPERMAP_RUNS_MAX, value: "1500" }
+      - { key: SUPERMAP_CRIT_COOLDOWN_S, value: "900" }
+      - { key: SUPERMAP_RL_LLM_BURST, value: "10" }
+      - { key: SUPERMAP_RL_LLM_REFILL, value: "0.003" }
+      - { key: SUPERMAP_RL_SIM_RUN_BURST, value: "3" }
+      - { key: SUPERMAP_RL_SIM_RUN_REFILL, value: "0.005" }
+      - { key: SUPERMAP_RL_AGENT_BURST, value: "12" }
+      - { key: SUPERMAP_RL_AGENT_REFILL, value: "0.005" }
+      - { key: SUPERMAP_AGENT_MAX_SPEND_USD, value: "0.25" }
+      - { key: SUPERMAP_AGENT_LIVE_SESSIONS_PER_CLIENT_DAY, value: "20" }
+      - { key: SUPERMAP_AGENT_LIVE_SESSIONS_PER_DAY, value: "400" }
+      - { key: SUPERMAP_RL_VOICE_BURST, value: "4" }
+      - { key: SUPERMAP_RL_VOICE_REFILL, value: "0.005" }
+      - { key: SUPERMAP_VOICE_DAILY_CAP_SECONDS, value: "300" }
+      - { key: SUPERMAP_RL_COMPUTE_BURST, value: "30" }
+      - { key: SUPERMAP_RL_COMPUTE_REFILL, value: "0.5" }
+      - { key: SUPERMAP_RL_WRITE_BURST, value: "60" }
+      - { key: SUPERMAP_RL_WRITE_REFILL, value: "1" }
+      - { key: SUPERMAP_MC_MAX_N, value: "300" }
+      - { key: SUPERMAP_MC_MAX_SECONDS, value: "600" }
+      - { key: SUPERMAP_RL_MONTECARLO_BURST, value: "4" }
+      - { key: SUPERMAP_RL_MONTECARLO_REFILL, value: "0.025" }
+      # Entered in the dashboard only when going live; never in this file.
+      - { key: META_API_KEY, sync: false }

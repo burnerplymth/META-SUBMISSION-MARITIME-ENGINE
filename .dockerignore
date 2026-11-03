@@ -1,0 +1,20 @@
+.git
+.venv
+.demo
+**/node_modules
+**/dist
+**/__pycache__
+**/*.pyc
+# runtime state; the image seeds what it needs
+data/runs
+data/sim_runs
+data/ensemble_stats
+data/reports
+data/cache
+data/llm
+web/map/dist
+*.log
+
+# UN Comtrade record-level extracts are local-only (scripts/fetch_comtrade.py writes them)
+data/impact/comtrade_extracts.json
+data/history_cache/un_comtrade

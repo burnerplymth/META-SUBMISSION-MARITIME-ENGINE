@@ -1,0 +1,30 @@
+# docker compose up --build     ->  http://localhost:8080   (offline / recorded: no network, no model key)
+#
+# Live model (spends Meta credits, capped): put the key in your shell, never in this file:
+#   META_API_KEY=... SUPERMAP_LLM_TRANSPORT=http SUPERMAP_DEMO_TOKEN=$(openssl rand -hex 16) SUPERMAP_BLOCK_NETWORK=0 docker compose up --build
+services:
+  supermap:
+    build: .
+    image: supermap:local
+    ports:
+      - "${BIND:-0.0.0.0}:${PORT:-8080}:8080"   # BIND=127.0.0.1 behind a reverse proxy
+    environment:
+      PORT: "8080"
+      SUPERMAP_BLOCK_NETWORK: "${SUPERMAP_BLOCK_NETWORK:-1}"
+      SUPERMAP_LLM_TRANSPORT: "${SUPERMAP_LLM_TRANSPORT:-fixture}"
+      SUPERMAP_LLM_DAILY_CAP_USD: "${SUPERMAP_LLM_DAILY_CAP_USD:-2}"
+      # Per-visitor limits; behind a reverse proxy also set SUPERMAP_TRUSTED_PROXIES.
+      SUPERMAP_TRUSTED_PROXIES: "${SUPERMAP_TRUSTED_PROXIES:-}"
+      SUPERMAP_RL_LLM_BURST: "${SUPERMAP_RL_LLM_BURST:-30}"
+      SUPERMAP_RL_LLM_REFILL: "${SUPERMAP_RL_LLM_REFILL:-0.5}"
+      # Only read when SUPERMAP_LLM_TRANSPORT=http. Empty by default.
+      META_API_KEY: "${META_API_KEY:-}"
+      # A live model needs a demo token (16+ random characters) or the app refuses to start; to run open on
+      # purpose (private network, no public link) set SUPERMAP_ALLOW_OPEN_LIVE=1. Empty by default.
+      SUPERMAP_DEMO_TOKEN: "${SUPERMAP_DEMO_TOKEN:-}"
+      SUPERMAP_ALLOW_OPEN_LIVE: "${SUPERMAP_ALLOW_OPEN_LIVE:-}"
+    restart: unless-stopped
+    # Data and stored runs live in the container and reset on re-create. To keep them:
+    #   volumes: ["supermap-data:/app/data"]   (and declare the volume below)
+# volumes:
+#   supermap-data:

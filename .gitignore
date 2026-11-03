@@ -1,0 +1,62 @@
+node_modules
+__pycache__/
+*.pyc
+.venv
+dist/
+.DS_Store
+
+# Runtime state a running server writes under the data dir (stored runs, caches, sessions, per-visitor
+# alert rules and watchlists, saved scenarios, briefs, exports). Never commit it.
+data/runs/*
+!data/runs/.gitkeep
+data/sim_runs/*
+!data/sim_runs/.gitkeep
+data/ensemble_stats/*
+!data/ensemble_stats/.gitkeep
+data/reports/*
+!data/reports/.gitkeep
+data/cache/
+data/comtrade_calls.json
+data/llm/
+data/voice/
+data/agent/
+data/alerts/
+data/ensemble_tree/
+data/live/
+data/history_realism/*.tmp
+data/history_budget.json
+data/history_forks/*
+data/scenarios/
+data/portsim_runs/
+data/research_cache/
+data/montecarlo/
+data/briefs/
+data/exports/
+data/opensky_credits.json
+data/opensky_states_budget.json
+data/satwatch/sam_ledger.jsonl
+data/satwatch/sam_ledger.jsonl.lock
+server/llm/*.lock
+# the model spend ledger is runtime state
+server/llm/spend_ledger.json
+
+# Local secrets: never commit (the .env.example files are templates)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa*
+*.lock
+
+# run.sh scratch data copy
+.demo/
+
+# UN Comtrade: the terms do not allow redistributing the original records. scripts/fetch_comtrade.py writes
+# them here with the user's own key; the repository ships derived aggregates only
+# (data/impact/comtrade_aggregates.json, data/snapshots/comtrade.json).
+data/impact/comtrade_extracts.json
+data/impact/comtrade_extracts.json.tmp
+data/history_cache/un_comtrade/
