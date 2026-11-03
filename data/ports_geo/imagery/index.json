@@ -1,0 +1,243 @@
+{
+ "ports": {
+  "sea_antwerp": {
+   "bytes": 445911,
+   "cloud_pct_aoi": 0.09,
+   "scene_date": "2026-07-28",
+   "scene_id": "S2C_MSIL2A_20260728T104621_R051_T31UES_20260728T144218",
+   "served": true
+  },
+  "sea_busan": {
+   "bytes": 330601,
+   "cloud_pct_aoi": 0.02,
+   "scene_date": "2026-10-22",
+   "scene_id": "S2A_MSIL2A_20261022T021121_R103_T52SDD_20261022T053502",
+   "served": true
+  },
+  "sea_colombo": {
+   "bytes": 368289,
+   "cloud_pct_aoi": 1.19,
+   "scene_date": "2026-10-06",
+   "scene_id": "S2B_MSIL2A_20261006T045659_R119_T44NLN_20261006T085805",
+   "served": true
+  },
+  "sea_durban": {
+   "bytes": 532210,
+   "cloud_pct_aoi": 0.13,
+   "scene_date": "2026-10-09",
+   "scene_id": "S2C_MSIL2A_20261009T073821_R092_T36JUM_20261009T121403",
+   "served": true
+  },
+  "sea_felixstowe": {
+   "bytes": 249798,
+   "cloud_pct_aoi": 0.09,
+   "scene_date": "2026-08-25",
+   "scene_id": "S2A_MSIL2A_20260825T110651_R137_T31UCT_20260826T081612",
+   "served": true
+  },
+  "sea_guangzhou": {
+   "bytes": 517618,
+   "cloud_pct_aoi": 2.58,
+   "scene_date": "2026-10-10",
+   "scene_id": "S2B_MSIL2A_20261010T025629_R032_T49QGF_20261010T064720",
+   "served": true
+  },
+  "sea_hamburg": {
+   "bytes": 539973,
+   "cloud_pct_aoi": 0.01,
+   "scene_date": "2026-09-22",
+   "scene_id": "S2A_MSIL2A_20260922T102701_R108_T32UNE_20260922T171012",
+   "served": true
+  },
+  "sea_hochiminh": {
+   "bytes": 457899,
+   "cloud_pct_aoi": 6.58,
+   "scene_date": "2026-10-20",
+   "scene_id": "S2A_MSIL2A_20261020T031141_R075_T48PXS_20261020T073206",
+   "served": true
+  },
+  "sea_hongkong": {
+   "bytes": 457572,
+   "cloud_pct_aoi": 0.1,
+   "scene_date": "2026-10-05",
+   "scene_id": "S2C_MSIL2A_20261005T025551_R032_T49QHE_20261005T062709",
+   "served": true
+  },
+  "sea_houston": {
+   "bytes": 402775,
+   "cloud_pct_aoi": 1.67,
+   "scene_date": "2026-10-24",
+   "scene_id": "S2C_MSIL2A_20261024T165351_R026_T15RUN_20261024T195502",
+   "served": true
+  },
+  "sea_jebelali": {
+   "bytes": 270109,
+   "cloud_pct_aoi": 2.17,
+   "scene_date": "2026-09-24",
+   "scene_id": "S2C_MSIL2A_20260924T064621_R020_T40RBN_20260924T114716",
+   "served": true
+  },
+  "sea_kaohsiung": {
+   "bytes": 446427,
+   "cloud_pct_aoi": 0.4,
+   "scene_date": "2026-10-16",
+   "scene_id": "S2C_MSIL2A_20261016T022701_R046_T50QRL_20261016T054811",
+   "served": true
+  },
+  "sea_laemchabang": {
+   "bytes": 402275,
+   "cloud_pct_aoi": 1.21,
+   "scene_date": "2026-07-24",
+   "scene_id": "S2B_MSIL2A_20260724T033539_R061_T47PQQ_20260724T072526",
+   "served": true
+  },
+  "sea_longbeach": {
+   "bytes": 274049,
+   "cloud_pct_aoi": 0.1,
+   "scene_date": "2026-10-24",
+   "scene_id": "S2C_MSIL2A_20261024T183431_R027_T11SLT_20261024T214812",
+   "served": true
+  },
+  "sea_losangeles": {
+   "bytes": 289972,
+   "cloud_pct_aoi": 0.0,
+   "scene_date": "2026-10-24",
+   "scene_id": "S2C_MSIL2A_20261024T183431_R027_T11SLT_20261024T214812",
+   "served": true
+  },
+  "sea_mundra": {
+   "bytes": 328313,
+   "cloud_pct_aoi": 0.22,
+   "scene_date": "2026-10-21",
+   "scene_id": "S2B_MSIL2A_20261021T054849_R048_T42QWL_20261021T074706",
+   "served": true
+  },
+  "sea_newyork": {
+   "bytes": 452146,
+   "cloud_pct_aoi": 0.32,
+   "scene_date": "2026-10-23",
+   "scene_id": "S2C_MSIL2A_20261023T154311_R011_T18TWL_20261023T184809",
+   "served": true
+  },
+  "sea_ningbo": {
+   "bytes": 430106,
+   "cloud_pct_aoi": 1.52,
+   "scene_date": "2026-07-23",
+   "scene_id": "S2B_MSIL2A_20260723T022529_R046_T51RUP_20260723T043624",
+   "served": true
+  },
+  "sea_piraeus": {
+   "bytes": 391679,
+   "cloud_pct_aoi": 0.16,
+   "scene_date": "2026-09-11",
+   "scene_id": "S2B_MSIL2A_20260911T090549_R050_T34SGH_20260911T113151",
+   "served": true
+  },
+  "sea_portklang": {
+   "bytes": 359432,
+   "cloud_pct_aoi": 0.18,
+   "scene_date": "2026-08-15",
+   "scene_id": "S2C_MSIL2A_20260815T032531_R018_T47NQD_20260815T081814",
+   "served": true
+  },
+  "sea_portsaid": {
+   "bytes": 442009,
+   "cloud_pct_aoi": 0.24,
+   "scene_date": "2026-09-16",
+   "scene_id": "S2A_MSIL2A_20260916T083521_R021_T36RVV_20260916T132413",
+   "served": true
+  },
+  "sea_qingdao": {
+   "bytes": 464752,
+   "cloud_pct_aoi": 0.19,
+   "scene_date": "2026-10-21",
+   "scene_id": "S2A_MSIL2A_20261021T024141_R089_T50SQE_20261021T060708",
+   "served": true
+  },
+  "sea_rotterdam": {
+   "bytes": 209617,
+   "cloud_pct_aoi": 0.09,
+   "scene_date": "2026-07-28",
+   "scene_id": "S2C_MSIL2A_20260728T104621_R051_T31UET_20260728T144218",
+   "served": true
+  },
+  "sea_santos": {
+   "bytes": 406101,
+   "cloud_pct_aoi": 0.4,
+   "scene_date": "2026-09-04",
+   "scene_id": "S2A_MSIL2A_20260904T131301_R138_T23KLP_20260904T222757",
+   "served": true
+  },
+  "sea_savannah": {
+   "bytes": 368507,
+   "cloud_pct_aoi": 0.0,
+   "scene_date": "2026-10-24",
+   "scene_id": "S2B_MSIL2A_20261024T160319_R097_T17SMR_20261024T195357",
+   "served": true
+  },
+  "sea_shanghai": {
+   "bytes": 429248,
+   "cloud_pct_aoi": 4.19,
+   "scene_date": "2026-10-11",
+   "scene_id": "S2B_MSIL2A_20261011T022619_R046_T51RVP_20261011T044410",
+   "served": true
+  },
+  "sea_shenzhen": {
+   "bytes": 344048,
+   "cloud_pct_aoi": 0.02,
+   "scene_date": "2026-10-07",
+   "scene_id": "S2A_MSIL2A_20261007T030151_R032_T50QKL_20261007T062706",
+   "served": true
+  },
+  "sea_singapore": {
+   "bytes": 178136,
+   "cloud_pct_aoi": 7.95,
+   "scene_date": "2026-09-03",
+   "scene_id": "S2A_MSIL2A_20260903T032151_R118_T48NUG_20260903T095209",
+   "served": true
+  },
+  "sea_taicang": {
+   "bytes": 437655,
+   "cloud_pct_aoi": 3.28,
+   "scene_date": "2026-10-14",
+   "scene_id": "S2B_MSIL2A_20261014T023639_R089_T51SUR_20261014T044615",
+   "served": true
+  },
+  "sea_tangermed": {
+   "bytes": 350300,
+   "cloud_pct_aoi": 0.4,
+   "scene_date": "2026-10-22",
+   "scene_id": "S2C_MSIL2A_20261022T111111_R137_T30STE_20261022T144304",
+   "served": true
+  },
+  "sea_tanjungpelepas": {
+   "bytes": 368215,
+   "cloud_pct_aoi": 3.05,
+   "scene_date": "2026-09-26",
+   "scene_id": "S2B_MSIL2A_20260926T031539_R118_T48NUG_20260926T070338",
+   "served": true
+  },
+  "sea_tianjin": {
+   "bytes": 414954,
+   "cloud_pct_aoi": 0.13,
+   "scene_date": "2026-10-15",
+   "scene_id": "S2C_MSIL2A_20261015T025701_R032_T50SNJ_20261015T064713",
+   "served": true
+  },
+  "sea_valencia": {
+   "bytes": 307704,
+   "cloud_pct_aoi": 0.29,
+   "scene_date": "2026-10-21",
+   "scene_id": "S2B_MSIL2A_20261021T105059_R051_T31SBD_20261021T132221",
+   "served": true
+  },
+  "sea_xiamen": {
+   "bytes": 410289,
+   "cloud_pct_aoi": 0.9,
+   "scene_date": "2026-10-19",
+   "scene_id": "S2C_MSIL2A_20261019T023721_R089_T50RPN_20261019T060516",
+   "served": true
+  }
+ },
+ "schema": "port-imagery-index/1"
+}

@@ -1,0 +1,251 @@
+{
+ "fetched_by": "server/realism_data/fetch.py",
+ "fetched_on": "2026-10-25",
+ "not_served": [
+  {
+   "http_status": 200,
+   "reason": "the key in this environment was rejected ('Invalid Key'); the bulk time-series zips (econ_getzippedfile) need no key and were used",
+   "sidecar": "inventory_days",
+   "source": "Census Bureau EITS API (api.census.gov/data/timeseries/eits/mtis)",
+   "url": "https://api.census.gov/data/timeseries/eits/mtis"
+  },
+  {
+   "checked_at": "2026-10-25T13:24:20Z",
+   "http_status": 403,
+   "reason": "page answered HTTP 403 through the proxy; nothing was read from it",
+   "sidecar": "inventory_days",
+   "source": "IEA oil stocks of IEA countries (days of net imports / stock levels)",
+   "url": "https://www.iea.org/data-and-statistics/data-product/oil-stocks-of-iea-countries"
+  },
+  {
+   "checked_at": "2026-10-25T13:24:21Z",
+   "http_status": 200,
+   "reason": "reachable, but the dataflow is 'Oil products stock levels - monthly data': stock LEVELS, not days of cover. Deriving days would need a consumption series and would be MODELLED, so no row is shipped",
+   "sidecar": "inventory_days",
+   "source": "Eurostat nrg_stk_oilm (EU oil products stocks)",
+   "url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/dataflow/ESTAT/nrg_stk_oilm/latest?detail=allstubs"
+  }
+ ],
+ "row_urls_verified": [
+  {
+   "bytes": 19373,
+   "checked_at": "2026-10-25T13:24:23Z",
+   "http_status": 200,
+   "url": "https://unctadstat-api.unctad.org/bulkdownload/US.PortCalls/US_PortCalls"
+  },
+  {
+   "bytes": 43708,
+   "checked_at": "2026-10-25T13:24:24Z",
+   "http_status": 200,
+   "url": "https://unctadstat.unctad.org/datacentre/dataviewer/US.PortCalls"
+  },
+  {
+   "bytes": 106745,
+   "checked_at": "2026-10-25T13:24:24Z",
+   "http_status": 200,
+   "url": "https://www.eia.gov/dnav/pet/pet_sum_sndw_dcus_nus_w.htm"
+  },
+  {
+   "bytes": 236394,
+   "checked_at": "2026-10-25T13:24:28Z",
+   "http_status": 200,
+   "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=W_EPC0_VSD_NUS_DAYS&f=W"
+  },
+  {
+   "bytes": 191693,
+   "checked_at": "2026-10-25T13:24:31Z",
+   "http_status": 200,
+   "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=W_EPM0_VSD_NUS_DAYS&f=W"
+  },
+  {
+   "bytes": 191739,
+   "checked_at": "2026-10-25T13:24:34Z",
+   "http_status": 200,
+   "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=W_EPJK_VSD_NUS_DAYS&f=W"
+  },
+  {
+   "bytes": 191712,
+   "checked_at": "2026-10-25T13:24:36Z",
+   "http_status": 200,
+   "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=W_EPD0_VSD_NUS_DAYS&f=W"
+  },
+  {
+   "bytes": 123011,
+   "checked_at": "2026-10-25T13:24:37Z",
+   "http_status": 200,
+   "url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=W_EPLLPZ_VSD_NUS_DAYS&f=W"
+  },
+  {
+   "bytes": 104518,
+   "checked_at": "2026-10-25T13:24:38Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ_getzippedfile/?programCode=MTIS"
+  },
+  {
+   "bytes": 35269,
+   "checked_at": "2026-10-25T13:24:38Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ/currentdata/?programCode=MTIS"
+  },
+  {
+   "bytes": 737785,
+   "checked_at": "2026-10-25T13:24:39Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ_getzippedfile/?programCode=MRTS"
+  },
+  {
+   "bytes": 35064,
+   "checked_at": "2026-10-25T13:24:39Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ/currentdata/?programCode=MRTS"
+  },
+  {
+   "bytes": 591476,
+   "checked_at": "2026-10-25T13:24:39Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ_getzippedfile/?programCode=MWTS"
+  },
+  {
+   "bytes": 34895,
+   "checked_at": "2026-10-25T13:24:40Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ/currentdata/?programCode=MWTS"
+  },
+  {
+   "bytes": 2568386,
+   "checked_at": "2026-10-25T13:24:41Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ_getzippedfile/?programCode=M3"
+  },
+  {
+   "bytes": 35147,
+   "checked_at": "2026-10-25T13:24:41Z",
+   "http_status": 200,
+   "url": "https://www.census.gov/econ/currentdata/?programCode=M3"
+  }
+ ],
+ "schema": "supermap.realism_sources/1",
+ "sources": {
+  "census_inventory_ratios": {
+   "extract": "census_inventory_ratios.json",
+   "extract_sha256": "963e4eba1db457756be135a309a6818bce363afd53904658c3dcd3c64cb75ce8",
+   "id": "census_inventory_ratios",
+   "name": "U.S. Census Bureau, Economic Indicators time series (MTIS, MRTS, MWTS, M3)",
+   "programs": {
+    "M3": {
+     "csv_sha256": "412424e37d49289433c757129825b77cf171184f4aefea64c3661ce6c217eced",
+     "data_updated_on": "Friday, 02-Oct-26 09:02:34 EDT",
+     "retrieved_at": "2026-10-25T13:24:19Z",
+     "zip_sha256": "8b3c658f25088c5df5ac3659ad9eb018072d38871f56ab73872c57f0231bc054",
+     "zip_url": "https://www.census.gov/econ_getzippedfile/?programCode=M3"
+    },
+    "MRTS": {
+     "csv_sha256": "306156ffeb526be145231528b44cb617475b08bbbca3d95ee30562d1d95760f9",
+     "data_updated_on": "Thursday, 15-Oct-26 09:01:15 EDT",
+     "retrieved_at": "2026-10-25T13:24:16Z",
+     "zip_sha256": "d88e68d1ed18787a5fa4d70fd71b305cb9e939bb9dbdfc0fb5fb61717ebedbee",
+     "zip_url": "https://www.census.gov/econ_getzippedfile/?programCode=MRTS"
+    },
+    "MTIS": {
+     "csv_sha256": "1cc23083b8cb1afbaab5e835e815b9d66e2e0ef5d5e50ea0c171c3b42bb581fd",
+     "data_updated_on": "Thursday, 15-Oct-26 09:02:34 EDT",
+     "retrieved_at": "2026-10-25T13:24:15Z",
+     "zip_sha256": "8387e4802ddb993778202a4603fcf8b7ade1845bbd359ff421e4814cddbbdc87",
+     "zip_url": "https://www.census.gov/econ_getzippedfile/?programCode=MTIS"
+    },
+    "MWTS": {
+     "csv_sha256": "aa9595ddb4526c243ac1a984d2779c6f713b159096204174a7902bb580c06d68",
+     "data_updated_on": "Thursday, 08-Oct-26 09:02:46 EDT",
+     "retrieved_at": "2026-10-25T13:24:16Z",
+     "zip_sha256": "3b1e9837b399725299a1320971b852ef62f6d4009bdbbfe4a23a37eda2449606",
+     "zip_url": "https://www.census.gov/econ_getzippedfile/?programCode=MWTS"
+    }
+   },
+   "retrieved_at": "2026-10-25T13:24:19Z",
+   "url": "https://www.census.gov/econ_datasets/",
+   "urls_checked": [
+    {
+     "bytes": 312607,
+     "checked_at": "2026-10-25T13:24:19Z",
+     "final_url": "https://www.census.gov/mtis/www/data/pdf/mtis_current.pdf",
+     "http_status": 200,
+     "note": "current MTIS release (PDF)",
+     "url": "https://www.census.gov/mtis/www/data/pdf/mtis_current.pdf"
+    },
+    {
+     "bytes": 369752,
+     "checked_at": "2026-10-25T13:24:19Z",
+     "final_url": "https://www.census.gov/about/policies/citation.html",
+     "http_status": 200,
+     "note": "citation policy page",
+     "url": "https://www.census.gov/about/policies/citation.html"
+    }
+   ]
+  },
+  "eia_days_of_supply": {
+   "api_url": "https://api.eia.gov/v2/petroleum/sum/sndw/data/",
+   "extract": "eia_days_of_supply.json",
+   "extract_sha256": "664e36e638db584761ff78f30f4a556aa7250390fb1bd43741d26f6432ab6929",
+   "http_status": 200,
+   "id": "eia_days_of_supply",
+   "name": "U.S. Energy Information Administration, Weekly Petroleum Status Report, days of supply",
+   "page_sha256": "c4d4424564250170d16130ba1f35d14e39c40fb1d6cac78df041227b5fcbf4eb",
+   "retrieved_at": "2026-10-25T13:24:12Z",
+   "reuse_text": "U.S. government publications are in the public domain and are not subject to copyright protection. You may use and/or distribute any of our data, files, databases, reports, graphs, charts, and other information products that are on our website or that you rece",
+   "url": "https://www.eia.gov/dnav/pet/pet_sum_sndw_dcus_nus_w.htm",
+   "urls_checked": [
+    {
+     "bytes": 52487,
+     "checked_at": "2026-10-25T13:24:14Z",
+     "final_url": "https://www.eia.gov/about/copyrights_reuse.php",
+     "http_status": 200,
+     "note": "copyright and reuse page",
+     "url": "https://www.eia.gov/about/copyrights_reuse.php"
+    }
+   ]
+  },
+  "unctad_portcalls": {
+   "archive_sha256": "37acc2dfefa7f82996c87bdead49b7965dbef1b0c58e241621396243575485e5",
+   "bulk_files": [
+    {
+     "fileBlobName": "US_PortCalls",
+     "fileId": 906,
+     "fileName": "From 2018 to 2023",
+     "fileSize": 19373
+    }
+   ],
+   "bytes": 19373,
+   "extract": "unctad_US_PortCalls.csv",
+   "extract_sha256": "43e5ec3a7cc8d9655a32c7bfb94912c44da90fceb7fb214ad87a17ca0608d547",
+   "http_status": 200,
+   "id": "unctad_portcalls",
+   "landing_url": "https://unctadstat.unctad.org/datacentre/dataviewer/US.PortCalls",
+   "methodology_note": "AIS fused with MarineTraffic port mapping, ships of 1000 GT and above; an economy needs at least 10 arrivals by at least 5 distinct vessels per commercial market to be published; passenger and RO/RO ships are excluded from time-at-port measures (UNCTADstat metadata, measuresNotes)",
+   "name": "UNCTADstat, Port call and performance statistics: time spent in ports, vessel age and size, annual (US.PortCalls)",
+   "report_last_updated": "2024-03-26T11:37:27",
+   "report_title": "Port call and performance statistics: time spent in ports, vessel age and size, annual",
+   "report_version": 10002,
+   "retrieved_at": "2026-10-25T13:24:09Z",
+   "terms_text": "All materials provided on this website are copyrighted under the Creative Commons Attribution 3.0 IGO license. For the full legal code, please click here . All data and metadata provided on the UNCTAD Data Hub may be copied freely, duplicated and further distributed provided that United Nations Trade and Development Da",
+   "url": "https://unctadstat-api.unctad.org/bulkdownload/US.PortCalls/US_PortCalls",
+   "urls_checked": [
+    {
+     "bytes": 43708,
+     "checked_at": "2026-10-25T13:24:10Z",
+     "final_url": "https://unctadstat.unctad.org/datacentre/dataviewer/US.PortCalls",
+     "http_status": 200,
+     "note": "data viewer",
+     "url": "https://unctadstat.unctad.org/datacentre/dataviewer/US.PortCalls"
+    },
+    {
+     "bytes": 17179,
+     "checked_at": "2026-10-25T13:24:11Z",
+     "final_url": "https://unctadstat.unctad.org/EN/About.html",
+     "http_status": 200,
+     "note": "terms of use page",
+     "url": "https://unctadstat.unctad.org/EN/About.html"
+    }
+   ]
+  }
+ }
+}

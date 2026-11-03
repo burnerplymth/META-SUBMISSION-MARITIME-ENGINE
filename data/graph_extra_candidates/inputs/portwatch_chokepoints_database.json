@@ -1,0 +1,287 @@
+{
+ "about": "IMF PortWatch chokepoints database (28 chokepoints), fields as served (subset). vessel_count_* are the registry's own annual-style totals.",
+ "records": [
+  {
+   "lat": 30.59334599,
+   "lon": 32.43688221,
+   "portid": "chokepoint1",
+   "portname": "Suez Canal",
+   "vessel_count_container": 5513,
+   "vessel_count_dry_bulk": 5222,
+   "vessel_count_tanker": 6418,
+   "vessel_count_total": 19787
+  },
+  {
+   "lat": 9.120512367,
+   "lon": -79.76723825,
+   "portid": "chokepoint2",
+   "portname": "Panama Canal",
+   "vessel_count_container": 2712,
+   "vessel_count_dry_bulk": 2412,
+   "vessel_count_tanker": 4507,
+   "vessel_count_total": 11020
+  },
+  {
+   "lat": 41.16928167,
+   "lon": 29.09150126,
+   "portid": "chokepoint3",
+   "portname": "Bosporus Strait",
+   "vessel_count_container": 3015,
+   "vessel_count_dry_bulk": 8058,
+   "vessel_count_tanker": 8555,
+   "vessel_count_total": 35125
+  },
+  {
+   "lat": 12.78859715,
+   "lon": 43.34954476,
+   "portid": "chokepoint4",
+   "portname": "Bab el-Mandeb Strait",
+   "vessel_count_container": 5062,
+   "vessel_count_dry_bulk": 5228,
+   "vessel_count_tanker": 6424,
+   "vessel_count_total": 19306
+  },
+  {
+   "lat": 1.516954817,
+   "lon": 102.6651061,
+   "portid": "chokepoint5",
+   "portname": "Malacca Strait",
+   "vessel_count_container": 18154,
+   "vessel_count_dry_bulk": 18336,
+   "vessel_count_tanker": 27469,
+   "vessel_count_total": 71451
+  },
+  {
+   "lat": 26.29685349,
+   "lon": 56.85984844,
+   "portid": "chokepoint6",
+   "portname": "Strait of Hormuz",
+   "vessel_count_container": 5274,
+   "vessel_count_dry_bulk": 5414,
+   "vessel_count_tanker": 19540,
+   "vessel_count_total": 32496
+  },
+  {
+   "lat": -34.92728556,
+   "lon": 20.88273666,
+   "portid": "chokepoint7",
+   "portname": "Cape of Good Hope",
+   "vessel_count_container": 3493,
+   "vessel_count_dry_bulk": 11736,
+   "vessel_count_tanker": 4706,
+   "vessel_count_total": 21531
+  },
+  {
+   "lat": 35.94227416,
+   "lon": -5.754895722,
+   "portid": "chokepoint8",
+   "portname": "Gibraltar Strait",
+   "vessel_count_container": 11698,
+   "vessel_count_dry_bulk": 10466,
+   "vessel_count_tanker": 15666,
+   "vessel_count_total": 47801
+  },
+  {
+   "lat": 51.03022414,
+   "lon": 1.505839717,
+   "portid": "chokepoint9",
+   "portname": "Dover Strait",
+   "vessel_count_container": 12535,
+   "vessel_count_dry_bulk": 8224,
+   "vessel_count_tanker": 21126,
+   "vessel_count_total": 60580
+  },
+  {
+   "lat": 55.50784043,
+   "lon": 12.85079477,
+   "portid": "chokepoint10",
+   "portname": "Oresund Strait",
+   "vessel_count_container": 2135,
+   "vessel_count_dry_bulk": 2248,
+   "vessel_count_tanker": 4318,
+   "vessel_count_total": 17833
+  },
+  {
+   "lat": 24.72350972,
+   "lon": 119.8313644,
+   "portid": "chokepoint11",
+   "portname": "Taiwan Strait",
+   "vessel_count_container": 31190,
+   "vessel_count_dry_bulk": 23626,
+   "vessel_count_tanker": 20406,
+   "vessel_count_total": 88436
+  },
+  {
+   "lat": 34.13076811,
+   "lon": 129.209206,
+   "portid": "chokepoint12",
+   "portname": "Korea Strait",
+   "vessel_count_container": 20682,
+   "vessel_count_dry_bulk": 15163,
+   "vessel_count_tanker": 22732,
+   "vessel_count_total": 82119
+  },
+  {
+   "lat": 41.32803599,
+   "lon": 140.3532743,
+   "portid": "chokepoint13",
+   "portname": "Tsugaru Strait",
+   "vessel_count_container": 3867,
+   "vessel_count_dry_bulk": 4907,
+   "vessel_count_tanker": 4443,
+   "vessel_count_total": 16440
+  },
+  {
+   "lat": 20.488890710794,
+   "lon": 121.352295045579,
+   "portid": "chokepoint14",
+   "portname": "Luzon Strait",
+   "vessel_count_container": 2438,
+   "vessel_count_dry_bulk": 11846,
+   "vessel_count_tanker": 8950,
+   "vessel_count_total": 25748
+  },
+  {
+   "lat": -8.41914514129252,
+   "lon": 115.801433044024,
+   "portid": "chokepoint15",
+   "portname": "Lombok Strait",
+   "vessel_count_container": 70,
+   "vessel_count_dry_bulk": 9566,
+   "vessel_count_tanker": 2616,
+   "vessel_count_total": 12918
+  },
+  {
+   "lat": -8.39854120024364,
+   "lon": 125.090981399512,
+   "portid": "chokepoint16",
+   "portname": "Ombai Strait",
+   "vessel_count_container": 476,
+   "vessel_count_dry_bulk": 1848,
+   "vessel_count_tanker": 1355,
+   "vessel_count_total": 4084
+  },
+  {
+   "lat": 38.373044249766,
+   "lon": 120.900049176636,
+   "portid": "chokepoint17",
+   "portname": "Bohai Strait",
+   "vessel_count_container": 7801,
+   "vessel_count_dry_bulk": 34891,
+   "vessel_count_tanker": 13290,
+   "vessel_count_total": 64100
+  },
+  {
+   "lat": -9.86253413199954,
+   "lon": 142.247528743501,
+   "portid": "chokepoint18",
+   "portname": "Torres Strait",
+   "vessel_count_container": 540,
+   "vessel_count_dry_bulk": 1570,
+   "vessel_count_tanker": 739,
+   "vessel_count_total": 3308
+  },
+  {
+   "lat": -5.96684057041462,
+   "lon": 105.775219888066,
+   "portid": "chokepoint19",
+   "portname": "Sunda Strait",
+   "vessel_count_container": 1141,
+   "vessel_count_dry_bulk": 3873,
+   "vessel_count_tanker": 4069,
+   "vessel_count_total": 10393
+  },
+  {
+   "lat": 0.352280586988657,
+   "lon": 119.257065444388,
+   "portid": "chokepoint20",
+   "portname": "Makassar Strait",
+   "vessel_count_container": 722,
+   "vessel_count_dry_bulk": 15616,
+   "vessel_count_tanker": 1909,
+   "vessel_count_total": 19117
+  },
+  {
+   "lat": -52.6403396677892,
+   "lon": -69.5948324606974,
+   "portid": "chokepoint21",
+   "portname": "Magellan Strait",
+   "vessel_count_container": 110,
+   "vessel_count_dry_bulk": 790,
+   "vessel_count_tanker": 359,
+   "vessel_count_total": 1426
+  },
+  {
+   "lat": 21.8152541926988,
+   "lon": -85.6472792223515,
+   "portid": "chokepoint22",
+   "portname": "Yucatan Channel",
+   "vessel_count_container": 3346,
+   "vessel_count_dry_bulk": 2915,
+   "vessel_count_tanker": 8402,
+   "vessel_count_total": 16416
+  },
+  {
+   "lat": 19.9861871932071,
+   "lon": -73.6975398964955,
+   "portid": "chokepoint23",
+   "portname": "Windward Passage",
+   "vessel_count_container": 2696,
+   "vessel_count_dry_bulk": 691,
+   "vessel_count_tanker": 766,
+   "vessel_count_total": 5600
+  },
+  {
+   "lat": 18.4487355684237,
+   "lon": -67.7113544869163,
+   "portid": "chokepoint24",
+   "portname": "Mona Passage",
+   "vessel_count_container": 1230,
+   "vessel_count_dry_bulk": 913,
+   "vessel_count_tanker": 899,
+   "vessel_count_total": 3714
+  },
+  {
+   "lat": 7.413614993177675,
+   "lon": 117.11462168266297,
+   "portid": "chokepoint25",
+   "portname": "Balabac Strait",
+   "vessel_count_container": 337,
+   "vessel_count_dry_bulk": 1694,
+   "vessel_count_tanker": 1286,
+   "vessel_count_total": 3794
+  },
+  {
+   "lat": 65.96648859155934,
+   "lon": -165.54982861145731,
+   "portid": "chokepoint26",
+   "portname": "Bering Strait",
+   "vessel_count_container": 23,
+   "vessel_count_dry_bulk": 51,
+   "vessel_count_tanker": 128,
+   "vessel_count_total": 294
+  },
+  {
+   "lat": 12.468315371959248,
+   "lon": 120.40342787801248,
+   "portid": "chokepoint27",
+   "portname": "Mindoro Strait",
+   "vessel_count_container": 584,
+   "vessel_count_dry_bulk": 13455,
+   "vessel_count_tanker": 1334,
+   "vessel_count_total": 16493
+  },
+  {
+   "lat": 45.26676309041701,
+   "lon": 36.54390169965004,
+   "portid": "chokepoint28",
+   "portname": "Kerch Strait",
+   "vessel_count_container": 64,
+   "vessel_count_dry_bulk": 527,
+   "vessel_count_tanker": 2559,
+   "vessel_count_total": 10390
+  }
+ ],
+ "retrieved_at": "2026-10-25",
+ "source_url": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_chokepoints_database/FeatureServer/0/query"
+}

@@ -1,0 +1,268 @@
+{
+ "about": "Lloyd's List 'One Hundred Container Ports 2024' (2023 volumes, thousand TEU) ranks 1-52, as compiled on Wikipedia 'List of busiest container ports'. Lloyd's List pages themselves return HTTP 403 to automated retrieval, so this is a secondary compilation; ranks 53-100 were not retrievable. The Wikipedia table footnotes mark Shanghai/Singapore/Ningbo as estimates.",
+ "ports": [
+  {
+   "name": "Shanghai",
+   "rank": 1,
+   "teu_thousand_2023": 49000
+  },
+  {
+   "name": "Singapore",
+   "rank": 2,
+   "teu_thousand_2023": 39010
+  },
+  {
+   "name": "Ningbo-Zhoushan",
+   "rank": 3,
+   "teu_thousand_2023": 35300
+  },
+  {
+   "name": "Shenzhen",
+   "rank": 4,
+   "teu_thousand_2023": 26890
+  },
+  {
+   "name": "Qingdao",
+   "rank": 5,
+   "teu_thousand_2023": 26390
+  },
+  {
+   "name": "Guangzhou",
+   "rank": 6,
+   "teu_thousand_2023": 20800
+  },
+  {
+   "name": "Busan",
+   "rank": 7,
+   "teu_thousand_2023": 22750
+  },
+  {
+   "name": "Tianjin",
+   "rank": 8,
+   "teu_thousand_2023": 21800
+  },
+  {
+   "name": "Jebel Ali Dubai",
+   "rank": 9,
+   "teu_thousand_2023": 14472
+  },
+  {
+   "name": "Hong Kong",
+   "rank": 10,
+   "teu_thousand_2023": 14300
+  },
+  {
+   "name": "Port Klang",
+   "rank": 11,
+   "teu_thousand_2023": 14061
+  },
+  {
+   "name": "Rotterdam",
+   "rank": 12,
+   "teu_thousand_2023": 13400
+  },
+  {
+   "name": "Xiamen",
+   "rank": 13,
+   "teu_thousand_2023": 12550
+  },
+  {
+   "name": "Antwerp",
+   "rank": 14,
+   "teu_thousand_2023": 12528
+  },
+  {
+   "name": "Tanjung Pelepas",
+   "rank": 15,
+   "teu_thousand_2023": 10480
+  },
+  {
+   "name": "Laem Chabang",
+   "rank": 16,
+   "teu_thousand_2023": 8680
+  },
+  {
+   "name": "Kaohsiung",
+   "rank": 17,
+   "teu_thousand_2023": 8834
+  },
+  {
+   "name": "Los Angeles",
+   "rank": 18,
+   "teu_thousand_2023": 8634
+  },
+  {
+   "name": "Tanger-Med",
+   "rank": 19,
+   "teu_thousand_2023": 8617
+  },
+  {
+   "name": "Taicang/Suzhou",
+   "rank": 20,
+   "teu_thousand_2023": 8039
+  },
+  {
+   "name": "Long Beach",
+   "rank": 21,
+   "teu_thousand_2023": 8018
+  },
+  {
+   "name": "New York/New Jersey",
+   "rank": 22,
+   "teu_thousand_2023": 7810
+  },
+  {
+   "name": "Hamburg",
+   "rank": 23,
+   "teu_thousand_2023": 7700
+  },
+  {
+   "name": "Mundra",
+   "rank": 24,
+   "teu_thousand_2023": 7400
+  },
+  {
+   "name": "Ho Chi Minh Saigon",
+   "rank": 25,
+   "teu_thousand_2023": 7397
+  },
+  {
+   "name": "Tanjung Priok",
+   "rank": 26,
+   "teu_thousand_2023": 7290
+  },
+  {
+   "name": "Colombo",
+   "rank": 27,
+   "teu_thousand_2023": 6940
+  },
+  {
+   "name": "Nhava Sheva/JNPT",
+   "rank": 28,
+   "teu_thousand_2023": 6354
+  },
+  {
+   "name": "Rizhao",
+   "rank": 29,
+   "teu_thousand_2023": 6260
+  },
+  {
+   "name": "Qinzhou",
+   "rank": 30,
+   "teu_thousand_2023": 6210
+  },
+  {
+   "name": "Lianyungang",
+   "rank": 31,
+   "teu_thousand_2023": 6140
+  },
+  {
+   "name": "Jeddah",
+   "rank": 32,
+   "teu_thousand_2023": 5586
+  },
+  {
+   "name": "Hai Phong",
+   "rank": 33,
+   "teu_thousand_2023": 5568
+  },
+  {
+   "name": "Cai Mep/Vung Tau",
+   "rank": 34,
+   "teu_thousand_2023": 5482
+  },
+  {
+   "name": "Yingkou",
+   "rank": 35,
+   "teu_thousand_2023": 5331
+  },
+  {
+   "name": "Manila",
+   "rank": 36,
+   "teu_thousand_2023": 5209
+  },
+  {
+   "name": "Piraeus",
+   "rank": 37,
+   "teu_thousand_2023": 5100
+  },
+  {
+   "name": "Dalian",
+   "rank": 38,
+   "teu_thousand_2023": 5028
+  },
+  {
+   "name": "Savannah",
+   "rank": 39,
+   "teu_thousand_2023": 4927
+  },
+  {
+   "name": "Abu Dhabi (Khalifa)",
+   "rank": 40,
+   "teu_thousand_2023": 4910
+  },
+  {
+   "name": "Colon",
+   "rank": 41,
+   "teu_thousand_2023": 4868
+  },
+  {
+   "name": "Valencia",
+   "rank": 42,
+   "teu_thousand_2023": 4804
+  },
+  {
+   "name": "Santos",
+   "rank": 43,
+   "teu_thousand_2023": 4783
+  },
+  {
+   "name": "Algeciras",
+   "rank": 44,
+   "teu_thousand_2023": 4733
+  },
+  {
+   "name": "Yantai",
+   "rank": 45,
+   "teu_thousand_2023": 4627
+  },
+  {
+   "name": "Tokyo",
+   "rank": 46,
+   "teu_thousand_2023": 4570
+  },
+  {
+   "name": "Port Said",
+   "rank": 47,
+   "teu_thousand_2023": 4438
+  },
+  {
+   "name": "Bremerhaven",
+   "rank": 48,
+   "teu_thousand_2023": 4181
+  },
+  {
+   "name": "Tanjung Perak",
+   "rank": 49,
+   "teu_thousand_2023": 4100
+  },
+  {
+   "name": "Dongguan",
+   "rank": 50,
+   "teu_thousand_2023": 3901
+  },
+  {
+   "name": "Houston",
+   "rank": 51,
+   "teu_thousand_2023": 3824
+  },
+  {
+   "name": "Salalah",
+   "rank": 52,
+   "teu_thousand_2023": 3790
+  }
+ ],
+ "primary_url": "https://www.lloydslist.com/one-hundred-container-ports-2024",
+ "retrieved_at": "2026-10-25",
+ "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports"
+}

@@ -1,0 +1,35 @@
+{
+ "about": "Wikipedia REST page-summary coordinates (city centroids; routing-grade, +-30 km) for China-Europe rail origin cities and Middle Corridor nodes",
+ "cities": {
+  "Chengdu": [
+   30.66,
+   104.06333333
+  ],
+  "Chongqing": [
+   29.5637,
+   106.5504
+  ],
+  "Kars": [
+   40.60777778,
+   43.09583333
+  ],
+  "Kiel Canal": [
+   53.88333333,
+   9.13333333
+  ],
+  "Xi'an": [
+   34.26111111,
+   108.94222222
+  ],
+  "Yiwu": [
+   29.30694444,
+   120.07527778
+  ],
+  "Zhengzhou": [
+   34.764,
+   113.684
+  ]
+ },
+ "retrieved_at": "2026-10-25",
+ "source_url": "https://en.wikipedia.org/api/rest_v1/page/summary/"
+}

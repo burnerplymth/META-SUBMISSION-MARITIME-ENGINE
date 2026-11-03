@@ -1,0 +1,32 @@
+{
+ "citations": [],
+ "kind": "RATE CONTEXT link block. No index value is served: Drewry's terms do not allow quoting its World Container Index values, so only a plain link to the publisher's page is shown.",
+ "licence_check": {
+  "checked_at": "2026-10-21",
+  "checked_by": "licence review",
+  "finding": "Index page reachable (HTTP 200, en.sse.net.cn/indices/scfinew.jsp) but carries no terms text, and no SSE terms granting in-product display/redistribution were verified. The SCFI current-value display is gated on this check passing; an inconclusive check does not pass.",
+  "index": "SCFI (Shanghai Containerized Freight Index), Shanghai Shipping Exchange",
+  "outcome": "NOT CLEARED — no SCFI value is displayed; the fallback (citations + analogues + watchlist) applies",
+  "url_checked": "https://en.sse.net.cn/indices/scfinew.jsp"
+ },
+ "licence_states": {
+  "drewry_wci": "NOT SERVED — Drewry's terms do not allow quoting index values; a plain link to the publisher's page is shown.",
+  "freightos_fbx": "NEEDS-LICENCE — daily series is a licensed data product (Baltic Exchange / Freightos, CME settlement); no live feed and no series is served. Dated values are cited only.",
+  "scfi": "NOT-CLEARED — see licence_check; no current SCFI value is displayed."
+ },
+ "note": "No index value is served. Under no fallback does this block compute a rate, a % move attributed to a current event, or an expected rate impact.",
+ "state": "NOT SERVED",
+ "version": "rates-1",
+ "index_links": [
+  {
+   "index": "Drewry World Container Index",
+   "publisher": "Drewry Supply Chain Advisors",
+   "url": "https://www.drewry.co.uk/supply-chain-advisors/supply-chain-expertise/world-container-index-assessed-by-drewry"
+  }
+ ],
+ "drewry_terms_check": {
+  "url_checked": "https://www.drewry.co.uk/terms",
+  "finding": "Section 5: the user may not copy, reproduce, republish, distribute or create derivative works from the content without Drewry's prior written consent; Section 2: no commercial exploitation of data; authorship must be acknowledged. No clause allows quoting index values.",
+  "outcome": "NOT SERVED - no Drewry value is displayed or shipped; a plain link remains"
+ }
+}

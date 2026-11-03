@@ -1,0 +1,30 @@
+{
+ "note": "15 alerts (0 without a point)",
+ "payload_sha256": "69f1c4d4fd14aa6e84e4d8dafcde9b60f051ad8940b14877b7b00abbf514865d",
+ "provenance": {
+  "mode": "SNAPSHOT",
+  "retrieved_at": "2026-10-25T00:44:36Z",
+  "source": "GDACS"
+ },
+ "query": {
+  "from": "2021-02-01",
+  "series": "EQ,TC,FL,VO,DR,WF|Orange,Red",
+  "to": "2021-05-15"
+ },
+ "request": {
+  "method": "GET",
+  "params": {
+   "alertlevel": "Orange,Red",
+   "eventlist": "EQ,TC,FL,VO,DR,WF",
+   "fromdate": "2021-02-01",
+   "pagenumber": "1",
+   "pagesize": "100",
+   "todate": "2021-05-15"
+  },
+  "url": "https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH"
+ },
+ "schema": "supermap.history_cache.v1",
+ "source": "gdacs",
+ "status": "OK",
+ "payload": [{"alertlevel":"Orange","alertscore":2,"country":"Mexico","episodeid":10,"eventid":1014149,"eventtype":"DR","fromdate":"2020-05-21T00:00:00","iso3":"MEX","lat":21.999,"lon":-101.003,"name":"Drought in Mexico","severitydata":{"severity":22868.0,"severitytext":"Medium impact for agricultural drought in 22868 km2","severityunit":"km2"},"todate":"2021-05-20T00:00:00"},{"alertlevel":"Orange","alertscore":2,"country":"Fiji","episodeid":12,"eventid":1000763,"eventtype":"TC","fromdate":"2021-01-30T00:00:00","iso3":"FJI","lat":-23.1,"lon":179.6,"name":"Tropical Cyclone ANA-21","severitydata":{"severity":120.3696,"severitytext":"Tropical Storm (maximum wind speed of 120 km/h)","severityunit":"km/h"},"todate":"2021-02-01T18:00:00"},{"alertlevel":"Orange","alertscore":2,"country":"India","episodeid":2,"eventid":1100755,"eventtype":"FL","fromdate":"2021-02-07T00:00:00","iso3":"IND","lat":30.2982,"lon":79.5672,"name":"Flood in India","severitydata":{"severity":0.0,"severitytext":"Magnitude 0 ","severityunit":""},"todate":"2021-02-07T00:00:00"},{"alertlevel":"Orange","alertscore":2,"country":"Philippines","episodeid":1356973,"eventid":1254794,"eventtype":"EQ","fromdate":"2021-02-07T04:22:57","iso3":"PHL","lat":6.7833,"lon":125.2056,"name":"Earthquake in Philippines","severitydata":{"severity":6.0,"severitytext":"Magnitude 6M, Depth:15.55km","severityunit":"M"},"todate":"2021-02-07T04:22:57"},{"alertlevel":"Orange","alertscore":2,"country":"Philippines","episodeid":5,"eventid":1000012,"eventtype":"VO","fromdate":"2021-02-19T00:00:00","iso3":"PHL","lat":14.002,"lon":120.993,"name":"Eruption  Taal","severitydata":{"severity":0.0,"severitytext":"","severityunit":""},"todate":"2021-07-08T00:00:00"},{"alertlevel":"Red","alertscore":3,"country":"New Caledonia, Australia, Norfolk Island, Vanuatu","episodeid":25,"eventid":1000772,"eventtype":"TC","fromdate":"2021-03-01T00:00:00","iso3":"NCL","lat":-27.3,"lon":175.7,"name":"Tropical Cyclone NIRAN-21","severitydata":{"severity":259.2576,"severitytext":"Tropical Storm (maximum wind speed of 259 km/h)","severityunit":"km/h"},"todate":"2021-03-07T00:00:00"},{"alertlevel":"Orange","alertscore":2,"country":"Kermadec Islands, New Zealand","episodeid":1362590,"eventid":1258647,"eventtype":"EQ","fromdate":"2021-03-04T19:28:32","iso3":"","lat":-29.7347,"lon":-177.2817,"name":"Earthquake in Kermadec Islands, New Zealand","severitydata":{"severity":8.1,"severitytext":"Magnitude 8.1M, Depth:26.45km","severityunit":"M"},"todate":"2021-03-04T19:28:32"},{"alertlevel":"Orange","alertscore":2,"country":"Algeria","episodeid":1365608,"eventid":1261215,"eventtype":"EQ","fromdate":"2021-03-18T00:04:07","iso3":"DZA","lat":36.917,"lon":5.2064,"name":"Earthquake in Algeria","severitydata":{"severity":6.0,"severitytext":"Magnitude 6M, Depth:10km","severityunit":"M"},"todate":"2021-03-18T00:04:07"},{"alertlevel":"Orange","alertscore":2,"country":"Indonesia","episodeid":1,"eventid":1100810,"eventtype":"FL","fromdate":"2021-04-03T01:00:00","iso3":"IDN","lat":-8.5152,"lon":125.8376,"name":"Flood in Indonesia","severitydata":{"severity":0.0,"severitytext":"Magnitude 0 ","severityunit":""},"todate":"2021-04-10T01:00:00"},{"alertlevel":"Orange","alertscore":2,"country":"Saint Vincent and the Grenadines","episodeid":5,"eventid":1000020,"eventtype":"VO","fromdate":"2021-04-09T00:00:00","iso3":"VCT","lat":13.33,"lon":-61.18,"name":"Eruption  Soufriere St. Vincent","severitydata":{"severity":0.0,"severitytext":"","severityunit":""},"todate":"2021-04-23T00:00:00"},{"alertlevel":"Orange","alertscore":2,"country":"Islamic Republic of Iran","episodeid":1370727,"eventid":1265240,"eventtype":"EQ","fromdate":"2021-04-18T06:41:50","iso3":"IRN","lat":29.7874,"lon":50.6693,"name":"Earthquake in Islamic Republic of Iran","severitydata":{"severity":5.8,"severitytext":"Magnitude 5.8M, Depth:10km","severityunit":"M"},"todate":"2021-04-18T06:41:50"},{"alertlevel":"Orange","alertscore":2,"country":"Kazakhstan, Russia, Uzbekistan","episodeid":3,"eventid":1014881,"eventtype":"DR","fromdate":"2021-04-21T00:00:00","iso3":"KAZ","lat":52.691,"lon":62.92,"name":"Drought in Kazakhstan, Russia, Uzbekistan","severitydata":{"severity":979473.0,"severitytext":"Medium impact for agricultural drought in 979473 km2","severityunit":"km2"},"todate":"2021-07-17T00:00:00"},{"alertlevel":"Orange","alertscore":2,"country":"India","episodeid":1372484,"eventid":1266651,"eventtype":"EQ","fromdate":"2021-04-28T02:21:26","iso3":"IND","lat":26.7824,"lon":92.4358,"name":"Earthquake in India","severitydata":{"severity":6.0,"severitytext":"Magnitude 6M, Depth:34km","severityunit":"M"},"todate":"2021-04-28T02:21:26"},{"alertlevel":"Orange","alertscore":2,"country":"India","episodeid":4,"eventid":1100883,"eventtype":"FL","fromdate":"2021-05-11T01:00:00","iso3":"IND","lat":10.8132,"lon":73.6805,"name":"Flood in India","severitydata":{"severity":0.0,"severitytext":"Magnitude 0 ","severityunit":""},"todate":"2021-05-17T01:00:00"},{"alertlevel":"Red","alertscore":3,"country":"India, Pakistan","episodeid":15,"eventid":1000782,"eventtype":"TC","fromdate":"2021-05-14T06:00:00","iso3":"IND","lat":20.8,"lon":71.3,"name":"Tropical Cyclone TAUKTAE-21","severitydata":{"severity":222.2208,"severitytext":"Hurricane/Typhoon > 74 mph (maximum wind speed of 222 km/h)","severityunit":"km/h"},"todate":"2021-05-17T18:00:00"}]
+}

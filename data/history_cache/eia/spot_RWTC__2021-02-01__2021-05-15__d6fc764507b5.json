@@ -1,0 +1,32 @@
+{
+ "note": "73 daily rows",
+ "payload_sha256": "a080ff90af727b40f18ea7309f9c3efddf746c1f510b888abe7c4bc0eca70931",
+ "provenance": {
+  "mode": "SNAPSHOT",
+  "retrieved_at": "2026-10-25T00:44:37Z",
+  "source": "U.S. Energy Information Administration (EIA) Open Data API v2"
+ },
+ "query": {
+  "from": "2021-02-01",
+  "series": "spot|RWTC",
+  "to": "2021-05-15"
+ },
+ "request": {
+  "method": "GET",
+  "params": {
+   "data[0]": "value",
+   "end": "2021-05-15",
+   "facets[series][]": "RWTC",
+   "frequency": "daily",
+   "length": "5000",
+   "sort[0][column]": "period",
+   "sort[0][direction]": "asc",
+   "start": "2021-02-01"
+  },
+  "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/"
+ },
+ "schema": "supermap.history_cache.v1",
+ "source": "eia",
+ "status": "OK",
+ "payload": {"route":"petroleum/pri/spt","rows":[{"period":"2021-02-01","value":53.55},{"period":"2021-02-02","value":54.77},{"period":"2021-02-03","value":55.67},{"period":"2021-02-04","value":56.19},{"period":"2021-02-05","value":56.8},{"period":"2021-02-08","value":57.95},{"period":"2021-02-09","value":58.34},{"period":"2021-02-10","value":58.69},{"period":"2021-02-11","value":58.22},{"period":"2021-02-12","value":59.5},{"period":"2021-02-16","value":60.07},{"period":"2021-02-17","value":61.09},{"period":"2021-02-18","value":60.4},{"period":"2021-02-19","value":59.12},{"period":"2021-02-22","value":61.67},{"period":"2021-02-23","value":61.66},{"period":"2021-02-24","value":63.21},{"period":"2021-02-25","value":63.43},{"period":"2021-02-26","value":61.55},{"period":"2021-03-01","value":60.54},{"period":"2021-03-02","value":59.7},{"period":"2021-03-03","value":61.33},{"period":"2021-03-04","value":63.81},{"period":"2021-03-05","value":66.08},{"period":"2021-03-08","value":65.03},{"period":"2021-03-09","value":64.02},{"period":"2021-03-10","value":64.45},{"period":"2021-03-11","value":66.02},{"period":"2021-03-12","value":65.59},{"period":"2021-03-15","value":65.36},{"period":"2021-03-16","value":64.82},{"period":"2021-03-17","value":64.55},{"period":"2021-03-18","value":59.95},{"period":"2021-03-19","value":61.43},{"period":"2021-03-22","value":61.48},{"period":"2021-03-23","value":57.75},{"period":"2021-03-24","value":61.12},{"period":"2021-03-25","value":58.47},{"period":"2021-03-26","value":60.93},{"period":"2021-03-29","value":61.49},{"period":"2021-03-30","value":60.55},{"period":"2021-03-31","value":59.19},{"period":"2021-04-01","value":61.41},{"period":"2021-04-05","value":58.73},{"period":"2021-04-06","value":59.34},{"period":"2021-04-07","value":59.77},{"period":"2021-04-08","value":59.61},{"period":"2021-04-09","value":59.29},{"period":"2021-04-12","value":59.7},{"period":"2021-04-13","value":60.2},{"period":"2021-04-14","value":63.15},{"period":"2021-04-15","value":63.42},{"period":"2021-04-16","value":63.16},{"period":"2021-04-19","value":63.33},{"period":"2021-04-20","value":62.61},{"period":"2021-04-21","value":61.34},{"period":"2021-04-22","value":61.45},{"period":"2021-04-23","value":62.18},{"period":"2021-04-26","value":62.02},{"period":"2021-04-27","value":63.03},{"period":"2021-04-28","value":63.81},{"period":"2021-04-29","value":65.0},{"period":"2021-04-30","value":63.5},{"period":"2021-05-03","value":64.46},{"period":"2021-05-04","value":65.72},{"period":"2021-05-05","value":65.63},{"period":"2021-05-06","value":64.73},{"period":"2021-05-07","value":64.96},{"period":"2021-05-10","value":64.92},{"period":"2021-05-11","value":65.31},{"period":"2021-05-12","value":65.96},{"period":"2021-05-13","value":63.82},{"period":"2021-05-14","value":65.32}],"series_id":"RWTC"}
+}

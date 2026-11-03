@@ -1,0 +1,1254 @@
+{
+  "dataset": "SupermAP expansion census: nodes added on top of the base census. Same entry rules: named source per node (source_name, retrieved 2026-10-21), coordinates from the named registry/authority (ports: IMF PortWatch ports registry), capacity figure in capacity_note or via the override dicts in build_graph.py.",
+  "version": "expansion-1",
+  "retrieved_on": "2026-10-21",
+  "counts": {
+    "port": 55,
+    "chokepoint": 2,
+    "air_hub": 13,
+    "ground_node": 10
+  },
+  "nodes": [
+    {
+      "id": "sea_qinzhou",
+      "name": "Qinzhou",
+      "aliases": [
+        "Beibu Gulf Port"
+      ],
+      "type": "port",
+      "country": "China",
+      "lat": 21.68,
+      "lon": 108.64,
+      "codes": {
+        "unlocode": "CNQZH"
+      },
+      "capacity_note": "6.21M TEU in 2023 (Lloyd's List Top 100). Beibu Gulf gateway for western China and ASEAN trade.",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports",
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), via Wikipedia 'List of busiest container ports' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_lianyungang",
+      "name": "Lianyungang",
+      "aliases": [],
+      "type": "port",
+      "country": "China",
+      "lat": 34.74,
+      "lon": 119.44,
+      "codes": {
+        "unlocode": "CNLYG"
+      },
+      "capacity_note": "6.14M TEU in 2023 (Lloyd's List Top 100). Northern Jiangsu gateway on the Yellow Sea.",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports",
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), via Wikipedia 'List of busiest container ports' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_yingkou",
+      "name": "Yingkou",
+      "aliases": [],
+      "type": "port",
+      "country": "China",
+      "lat": 40.73,
+      "lon": 122.04,
+      "codes": {
+        "unlocode": "CNYIK"
+      },
+      "capacity_note": "5.33M TEU in 2023 (Lloyd's List Top 100). Liaodong Bay port, Liaoning Port Group.",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports",
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), via Wikipedia 'List of busiest container ports' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_yantai",
+      "name": "Yantai",
+      "aliases": [],
+      "type": "port",
+      "country": "China",
+      "lat": 37.56,
+      "lon": 121.41,
+      "codes": {
+        "unlocode": "CNYAT"
+      },
+      "capacity_note": "4.63M TEU in 2023 (Lloyd's List Top 100). Shandong port facing the Bohai Strait.",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports",
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), via Wikipedia 'List of busiest container ports' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_dongguan",
+      "name": "Dongguan",
+      "aliases": [],
+      "type": "port",
+      "country": "China",
+      "lat": 22.89,
+      "lon": 113.58,
+      "codes": {
+        "unlocode": "CNDGG"
+      },
+      "capacity_note": "3.90M TEU in 2023 (Lloyd's List Top 100). Pearl River Delta river-sea port (Humen).",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports",
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), via Wikipedia 'List of busiest container ports' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_khalifa",
+      "name": "Khalifa Port",
+      "aliases": [
+        "Abu Dhabi"
+      ],
+      "type": "port",
+      "country": "United Arab Emirates",
+      "lat": 24.81,
+      "lon": 54.69,
+      "codes": {
+        "unlocode": "AEKHL"
+      },
+      "capacity_note": "4.91M TEU in 2023 (Lloyd's List Top 100, as Abu Dhabi). AD Ports Group flagship container port.",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports",
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), via Wikipedia 'List of busiest container ports' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_tanjungperak",
+      "name": "Tanjung Perak",
+      "aliases": [
+        "Surabaya"
+      ],
+      "type": "port",
+      "country": "Indonesia",
+      "lat": -7.2,
+      "lon": 112.72,
+      "codes": {
+        "unlocode": "IDSUB"
+      },
+      "capacity_note": "4.10M TEU in 2023 (Lloyd's List Top 100, as Surabaya). East Java gateway, Pelindo.",
+      "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_container_ports",
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), via Wikipedia 'List of busiest container ports' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_incheon",
+      "name": "Incheon",
+      "aliases": [],
+      "type": "port",
+      "country": "South Korea",
+      "lat": 37.44,
+      "lon": 126.62,
+      "codes": {
+        "unlocode": "KRINC"
+      },
+      "capacity_note": "3.45M TEU in 2023 (Lloyd's List Top 100 via AJOT). Seoul capital-region gateway.",
+      "source_url": null,
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), as reproduced in AJOT's 'Top 100 Container Ports 2024' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_dammam",
+      "name": "Dammam",
+      "aliases": [
+        "King Abdulaziz Port"
+      ],
+      "type": "port",
+      "country": "Saudi Arabia",
+      "lat": 26.48,
+      "lon": 50.19,
+      "codes": {
+        "unlocode": "SADMM"
+      },
+      "capacity_note": "2.30M TEU in 2023 (Lloyd's List Top 100 via AJOT). King Abdulaziz Port, Saudi Arabia's Gulf gateway; Riyadh Dry Port's primary rail link.",
+      "source_url": null,
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), as reproduced in AJOT's 'Top 100 Container Ports 2024' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_cartagena",
+      "name": "Cartagena",
+      "aliases": [],
+      "type": "port",
+      "country": "Colombia",
+      "lat": 10.34,
+      "lon": -75.51,
+      "codes": {
+        "unlocode": "COCTG"
+      },
+      "capacity_note": "3.30M TEU in 2023 (Lloyd's List Top 100 via AJOT, approx. figure). Caribbean transshipment hub (SPRC).",
+      "source_url": null,
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), as reproduced in AJOT's 'Top 100 Container Ports 2024' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_callao",
+      "name": "Callao",
+      "aliases": [],
+      "type": "port",
+      "country": "Peru",
+      "lat": -12.05,
+      "lon": -77.14,
+      "codes": {
+        "unlocode": "PECLL"
+      },
+      "capacity_note": "2.70M TEU in 2023 (Lloyd's List Top 100 via AJOT). Peru's principal container port (DP World / APMT).",
+      "source_url": null,
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), as reproduced in AJOT's 'Top 100 Container Ports 2024' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_guayaquil",
+      "name": "Guayaquil",
+      "aliases": [],
+      "type": "port",
+      "country": "Ecuador",
+      "lat": -2.26,
+      "lon": -79.92,
+      "codes": {
+        "unlocode": "ECGYE"
+      },
+      "capacity_note": "2.54M TEU in 2023 (Lloyd's List Top 100 via AJOT). Ecuador's principal container gateway.",
+      "source_url": null,
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), as reproduced in AJOT's 'Top 100 Container Ports 2024' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_buenosaires",
+      "name": "Buenos Aires",
+      "aliases": [],
+      "type": "port",
+      "country": "Argentina",
+      "lat": -34.62,
+      "lon": -58.35,
+      "codes": {
+        "unlocode": "ARBUE"
+      },
+      "capacity_note": "1.28M TEU in 2023 (Lloyd's List Top 100 via AJOT). Argentina's principal container port (Puerto Nuevo / Dock Sud).",
+      "source_url": null,
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), as reproduced in AJOT's 'Top 100 Container Ports 2024' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_balboa",
+      "name": "Balboa",
+      "aliases": [],
+      "type": "port",
+      "country": "Panama",
+      "lat": 8.96,
+      "lon": -79.57,
+      "codes": {
+        "unlocode": "PABLB"
+      },
+      "capacity_note": "2.30M TEU in 2023 (Lloyd's List Top 100 Panama Ports cluster figure via AJOT; Balboa is the Pacific-side terminal of the cluster, operated by Panama Ports Company).",
+      "source_url": null,
+      "source_name": "Lloyd's List Top 100 Ports (2023 TEU), as reproduced in AJOT's 'Top 100 Container Ports 2024' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_oakland",
+      "name": "Oakland",
+      "aliases": [],
+      "type": "port",
+      "country": "United States",
+      "lat": 37.81,
+      "lon": -122.31,
+      "codes": {
+        "unlocode": "USOAK"
+      },
+      "capacity_note": "2.07M TEU in 2023 (Port of Oakland: 2,065,709 TEU, via AJOT). Northern California gateway.",
+      "source_url": null,
+      "source_name": "Port of Oakland (2,065,709 TEU in 2023), via AJOT (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_felixstowe",
+      "name": "Felixstowe",
+      "aliases": [],
+      "type": "port",
+      "country": "United Kingdom",
+      "lat": 51.95,
+      "lon": 1.29,
+      "codes": {
+        "unlocode": "GBFXT"
+      },
+      "capacity_note": "3.25M TEU in 2023 (Dynaliners UK container ports table: 3,246,100 TEU). The UK's largest container port. The Euromediterranean Map carries a lower 2.82M figure for Felixstowe flagged 'no details'; the Dynaliners table value is used.",
+      "source_url": null,
+      "source_name": "Dynaliners UK container ports table (3,246,100 TEU in 2023), via Container News (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_dublin",
+      "name": "Dublin",
+      "aliases": [],
+      "type": "port",
+      "country": "Ireland",
+      "lat": 53.35,
+      "lon": -6.2,
+      "codes": {
+        "unlocode": "IEDUB"
+      },
+      "capacity_note": "0.79M TEU in 2023 (Euromediterranean Container Map 2024). Ireland's principal container port.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_gdansk",
+      "name": "Gdańsk",
+      "aliases": [],
+      "type": "port",
+      "country": "Poland",
+      "lat": 54.38,
+      "lon": 18.69,
+      "codes": {
+        "unlocode": "PLGDN"
+      },
+      "capacity_note": "2.05M TEU in 2023 (Euromediterranean Container Map 2024; Actiaforum Port Monitor concurs: 2,050,037 TEU). The Baltic's largest container port (Baltic Hub).",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_gdynia",
+      "name": "Gdynia",
+      "aliases": [],
+      "type": "port",
+      "country": "Poland",
+      "lat": 54.54,
+      "lon": 18.52,
+      "codes": {
+        "unlocode": "PLGDY"
+      },
+      "capacity_note": "0.87M TEU in 2023 (Euromediterranean Container Map 2024). Polish Baltic port adjacent to Gdańsk.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_lehavre",
+      "name": "Le Havre",
+      "aliases": [
+        "HAROPA"
+      ],
+      "type": "port",
+      "country": "France",
+      "lat": 49.47,
+      "lon": 0.21,
+      "codes": {
+        "unlocode": "FRLEH"
+      },
+      "capacity_note": "2.63M TEU in 2023 (Euromediterranean Container Map 2024, HAROPA Le Havre/Rouen combined). France's principal container gateway.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_genoa",
+      "name": "Genoa",
+      "aliases": [],
+      "type": "port",
+      "country": "Italy",
+      "lat": 44.41,
+      "lon": 8.86,
+      "codes": {
+        "unlocode": "ITGOA"
+      },
+      "capacity_note": "2.39M TEU in 2023 (Euromediterranean Container Map 2024; Genoa port terminals, excl. the Savona/Vado component of the Ports of Genoa system).",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_gioiatauro",
+      "name": "Gioia Tauro",
+      "aliases": [],
+      "type": "port",
+      "country": "Italy",
+      "lat": 38.46,
+      "lon": 15.91,
+      "codes": {
+        "unlocode": "ITGIT"
+      },
+      "capacity_note": "3.54M TEU in 2023 (Euromediterranean Container Map 2024; Port System Authority figure 3,548,827 TEU). Central Mediterranean transshipment hub.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_barcelona",
+      "name": "Barcelona",
+      "aliases": [],
+      "type": "port",
+      "country": "Spain",
+      "lat": 41.34,
+      "lon": 2.15,
+      "codes": {
+        "unlocode": "ESBCN"
+      },
+      "capacity_note": "3.28M TEU in 2023 (Euromediterranean Container Map 2024: 3,280,035 TEU).",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_sines",
+      "name": "Sines",
+      "aliases": [],
+      "type": "port",
+      "country": "Portugal",
+      "lat": 37.96,
+      "lon": -8.83,
+      "codes": {
+        "unlocode": "PTSIE"
+      },
+      "capacity_note": "1.66M TEU in 2023 (Euromediterranean Container Map 2024). Portugal's deep-water container gateway (PSA Sines).",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_mersin",
+      "name": "Mersin",
+      "aliases": [],
+      "type": "port",
+      "country": "Türkiye",
+      "lat": 36.81,
+      "lon": 34.65,
+      "codes": {
+        "unlocode": "TRMER"
+      },
+      "capacity_note": "1.95M TEU in 2023 (Euromediterranean Container Map 2024; Mersin International Port describes 2023 as 'approximately 2 million TEU').",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_constanta",
+      "name": "Constanța",
+      "aliases": [
+        "Constantza"
+      ],
+      "type": "port",
+      "country": "Romania",
+      "lat": 44.13,
+      "lon": 28.65,
+      "codes": {
+        "unlocode": "ROCND"
+      },
+      "capacity_note": "0.88M TEU in 2023 (Euromediterranean Container Map 2024; the port processed 884,598 containers in 2023 per port-authority reporting). The Black Sea's largest container port.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_marsaxlokk",
+      "name": "Marsaxlokk",
+      "aliases": [
+        "Malta Freeport"
+      ],
+      "type": "port",
+      "country": "Malta",
+      "lat": 35.82,
+      "lon": 14.54,
+      "codes": {
+        "unlocode": "MTMAR"
+      },
+      "capacity_note": "2.56M TEU in 2023 (Euromediterranean Container Map 2024). Malta Freeport, central Mediterranean transshipment hub.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_beirut",
+      "name": "Beirut",
+      "aliases": [],
+      "type": "port",
+      "country": "Lebanon",
+      "lat": 33.9,
+      "lon": 35.53,
+      "codes": {
+        "unlocode": "LBBEY"
+      },
+      "capacity_note": "0.82M TEU in 2023 (Euromediterranean Container Map 2024). Lebanon's principal port.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_koper",
+      "name": "Koper",
+      "aliases": [],
+      "type": "port",
+      "country": "Slovenia",
+      "lat": 45.56,
+      "lon": 13.75,
+      "codes": {
+        "unlocode": "SIKOP"
+      },
+      "capacity_note": "1.06M TEU in 2023 (Euromediterranean Container Map 2024). Luka Koper, North Adriatic gateway for Central Europe.",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_damietta",
+      "name": "Damietta",
+      "aliases": [],
+      "type": "port",
+      "country": "Egypt",
+      "lat": 31.46,
+      "lon": 31.76,
+      "codes": {
+        "unlocode": "EGDAM"
+      },
+      "capacity_note": "1.96M TEU in 2023 (Euromediterranean Container Map 2024). Nile Delta container port west of Port Said (Damietta Container & Cargo Handling / Hapag-Lloyd terminal).",
+      "source_url": "https://recursos.diariodelpuerto.com/publicaciones/EUROMEDITERRANEAN-CONTAINER-MAP-2024.pdf",
+      "source_name": "Diario del Puerto, Euromediterranean Container Map 2024 (2023 TEU, port-authority/Alphaliner basis) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_ambarli",
+      "name": "Ambarlı",
+      "aliases": [],
+      "type": "port",
+      "country": "Türkiye",
+      "lat": 40.97,
+      "lon": 28.67,
+      "codes": {
+        "unlocode": "TRAMR"
+      },
+      "capacity_note": "3.17M TEU in 2023 (Turkish Ministry of Transport / Ambarlı regional port authority). Istanbul's Marmara container complex (Ambarlı). The Euromediterranean Map's 2.86M row is flagged in that source as carried forward from 2022.",
+      "source_url": null,
+      "source_name": "Turkish Ministry of Transport and Infrastructure / Ambarlı Port Authority (3.17M TEU in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_yokohama",
+      "name": "Yokohama",
+      "aliases": [],
+      "type": "port",
+      "country": "Japan",
+      "lat": 35.43,
+      "lon": 139.67,
+      "codes": {
+        "unlocode": "JPYOK"
+      },
+      "capacity_note": "3.02M TEU in 2023 (City of Yokohama Port and Harbor Bureau official annual statistics: 3,020,999 TEU).",
+      "source_url": null,
+      "source_name": "City of Yokohama Port and Harbor Bureau, official port statistics 2023 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_nagoya",
+      "name": "Nagoya",
+      "aliases": [],
+      "type": "port",
+      "country": "Japan",
+      "lat": 35.04,
+      "lon": 136.85,
+      "codes": {
+        "unlocode": "JPNGO"
+      },
+      "capacity_note": "2.70M TEU in 2023 (Nagoya Port Authority official statistics: '2.70 million TEUs of containers in total'). Japan's largest port by cargo tonnage.",
+      "source_url": null,
+      "source_name": "Nagoya Port Authority (Port of Nagoya), official statistics (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_taichung",
+      "name": "Taichung",
+      "aliases": [],
+      "type": "port",
+      "country": "Taiwan",
+      "lat": 24.25,
+      "lon": 120.5,
+      "codes": {
+        "unlocode": "TWTXG"
+      },
+      "capacity_note": "1.61M TEU in 2023 (Taiwan International Ports Corporation official throughput table: 1,610,199 TEU).",
+      "source_url": "https://www.twport.com.tw/fapi/AttFile?type=AttFile&id=15890&l=2",
+      "source_name": "Taiwan International Ports Corporation (TIPC), Container Throughput table (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_keelung",
+      "name": "Keelung",
+      "aliases": [],
+      "type": "port",
+      "country": "Taiwan",
+      "lat": 25.15,
+      "lon": 121.75,
+      "codes": {
+        "unlocode": "TWKEE"
+      },
+      "capacity_note": "1.53M TEU in 2023 (Taiwan International Ports Corporation official throughput table: 1,533,121 TEU). Northern Taiwan gateway for Taipei.",
+      "source_url": "https://www.twport.com.tw/fapi/AttFile?type=AttFile&id=15890&l=2",
+      "source_name": "Taiwan International Ports Corporation (TIPC), Container Throughput table (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_chattogram",
+      "name": "Chattogram",
+      "aliases": [
+        "Chittagong"
+      ],
+      "type": "port",
+      "country": "Bangladesh",
+      "lat": 22.28,
+      "lon": 91.81,
+      "codes": {
+        "unlocode": "BDCGP"
+      },
+      "capacity_note": "3.05M TEU in 2023 (Chattogram Port Authority, via The Business Standard). Bangladesh's principal seaport.",
+      "source_url": null,
+      "source_name": "Chattogram Port Authority (3.05M TEU in 2023), via The Business Standard (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_hamad",
+      "name": "Hamad Port",
+      "aliases": [],
+      "type": "port",
+      "country": "Qatar",
+      "lat": 25.02,
+      "lon": 51.62,
+      "codes": {
+        "unlocode": "QAHMD"
+      },
+      "capacity_note": "Derived total ≈1.30M TEU in 2023: Mwani Qatar's annual report states transshipment volume of 557,464 TEU as 43% of total throughput, implying ≈1,296,000 TEU; recorded as 1.30M TEU in 2023 (derivation stated, not a directly published total).",
+      "source_url": null,
+      "source_name": "Mwani Qatar annual report (transshipment-share derivation) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_mombasa",
+      "name": "Mombasa",
+      "aliases": [],
+      "type": "port",
+      "country": "Kenya",
+      "lat": -4.05,
+      "lon": 39.63,
+      "codes": {
+        "unlocode": "KEMBA"
+      },
+      "capacity_note": "1.62M TEU in 2023 (Kenya Ports Authority: 1,623,080 TEU). East Africa's principal container gateway.",
+      "source_url": null,
+      "source_name": "Kenya Ports Authority (1,623,080 TEU in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_vancouver",
+      "name": "Vancouver",
+      "aliases": [
+        "Port of Vancouver",
+        "VFPA"
+      ],
+      "type": "port",
+      "country": "Canada",
+      "lat": 49.29,
+      "lon": -123.03,
+      "codes": {
+        "unlocode": "CAVAN"
+      },
+      "capacity_note": "3.13M TEU in 2023 (Vancouver Fraser Port Authority; PMSA total 3,125,559 TEU). Canada's largest port.",
+      "source_url": null,
+      "source_name": "Vancouver Fraser Port Authority / Pacific Merchant Shipping Association (3,125,559 TEU in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_montreal",
+      "name": "Montreal",
+      "aliases": [
+        "Port of Montreal"
+      ],
+      "type": "port",
+      "country": "Canada",
+      "lat": 45.54,
+      "lon": -73.53,
+      "codes": {
+        "unlocode": "CAMTR"
+      },
+      "capacity_note": "1.50M TEU in 2023 (Montreal Port Authority). St. Lawrence River gateway.",
+      "source_url": null,
+      "source_name": "Montreal Port Authority (1.50M TEU in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_halifax",
+      "name": "Halifax",
+      "aliases": [],
+      "type": "port",
+      "country": "Canada",
+      "lat": 44.67,
+      "lon": -63.57,
+      "codes": {
+        "unlocode": "CAHAL"
+      },
+      "capacity_note": "0.55M TEU in 2023 (Halifax Port Authority: 546,163 TEU). Atlantic Canada deep-water gateway.",
+      "source_url": "https://maritimemag.com/en/large-containerships-highlight-port-of-halifax-2024-cargo-volume/",
+      "source_name": "Halifax Port Authority (546,163 TEU in 2023), via Maritime Magazine (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_princerupert",
+      "name": "Prince Rupert",
+      "aliases": [
+        "Port of Prince Rupert"
+      ],
+      "type": "port",
+      "country": "Canada",
+      "lat": 54.27,
+      "lon": -130.34,
+      "codes": {
+        "unlocode": "CAPRR"
+      },
+      "capacity_note": "0.70M TEU in 2023 (Pacific Merchant Shipping Association: 704,248 TEU). North Pacific rail gateway (CN).",
+      "source_url": null,
+      "source_name": "Prince Rupert Port Authority / PMSA (704,248 TEU in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_virginia",
+      "name": "Virginia",
+      "aliases": [
+        "Norfolk",
+        "Port of Virginia"
+      ],
+      "type": "port",
+      "country": "United States",
+      "lat": 36.85,
+      "lon": -76.33,
+      "codes": {
+        "unlocode": "USORF"
+      },
+      "capacity_note": "3.29M TEU in 2023 (Port of Virginia via PMSA: 3,287,546 TEU in CY2023). Norfolk/Hampton Roads terminals.",
+      "source_url": null,
+      "source_name": "The Port of Virginia / PMSA (3,287,546 TEU in CY2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_nwsa",
+      "name": "Seattle-Tacoma (NWSA)",
+      "aliases": [
+        "Northwest Seaport Alliance",
+        "USSEA",
+        "Tacoma",
+        "Seattle"
+      ],
+      "type": "port",
+      "country": "United States",
+      "lat": 47.25,
+      "lon": -122.39,
+      "codes": {
+        "unlocode": "USTIW"
+      },
+      "capacity_note": "Recorded as 2.97M TEU in 2023: the Northwest Seaport Alliance reported it handled 'nearly three million TEU' in 2023. Node = the Seattle+Tacoma alliance gateway; the pinned PortWatch record is Tacoma (US TIW).",
+      "source_url": null,
+      "source_name": "Northwest Seaport Alliance (2023 throughput release) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_sanantonio",
+      "name": "San Antonio",
+      "aliases": [],
+      "type": "port",
+      "country": "Chile",
+      "lat": -33.59,
+      "lon": -71.62,
+      "codes": {
+        "unlocode": "CLSAI"
+      },
+      "capacity_note": "1.54M TEU in 2023 (Empresa Portuaria San Antonio: 1,540,538 TEU, stated by the port's general manager in the Lloyd's List Top 100 return release). Chile's largest container port.",
+      "source_url": "https://portalportuario.cl/puerto-de-san-antonio-regresa-al-top-100-de-terminales-de-contenedores-mas-activos-del-mundo/",
+      "source_name": "Empresa Portuaria San Antonio (1,540,538 TEU in 2023), via PortalPortuario (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_fuzhou",
+      "name": "Fuzhou",
+      "aliases": [],
+      "type": "port",
+      "country": "China",
+      "lat": 25.78,
+      "lon": 119.47,
+      "codes": {
+        "unlocode": "CNFZG"
+      },
+      "capacity_note": "Fuzhou handled 1.71M TEU in H1 2022 (APEC Port Services Network throughput review); no full-year official total retrieved — capacity derived by annualisation, see PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://www.apecpsn.org/apsn/APSNNEWS/2184.jhtml",
+      "source_name": "APEC Port Services Network, 'Global Major Ports Throughput Review' H1 2022 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_gwangyang",
+      "name": "Gwangyang",
+      "aliases": [],
+      "type": "port",
+      "country": "South Korea",
+      "lat": 34.88,
+      "lon": 127.72,
+      "codes": {
+        "unlocode": "KRKAN"
+      },
+      "capacity_note": "2.01M TEU in 2024 (Korea Ministry of Oceans and Fisheries) — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": null,
+      "source_name": "Korea Ministry of Oceans and Fisheries (2.01M TEU in 2024), via korea.net (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_karachi",
+      "name": "Karachi",
+      "aliases": [],
+      "type": "port",
+      "country": "Pakistan",
+      "lat": 24.82,
+      "lon": 66.98,
+      "codes": {
+        "unlocode": "PKKHI"
+      },
+      "capacity_note": "1.93M TEU in FY2022-23 (Karachi Port Trust official year-end release) — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://Kpt.gov.pk/news/148/total-cargo-and-container-handling-at-year-end-2022-2023",
+      "source_name": "Karachi Port Trust, 'Total Cargo and Container Handling at Year End 2022-2023' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_charleston",
+      "name": "Charleston",
+      "aliases": [],
+      "type": "port",
+      "country": "United States",
+      "lat": 32.9,
+      "lon": -79.92,
+      "codes": {
+        "unlocode": "USCHS"
+      },
+      "capacity_note": "≈2.60M TEU in FY2023 (SC Ports, fiscal year Jul 2022–Jun 2023: 'nearly 2.6 million TEU') — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": null,
+      "source_name": "South Carolina Ports Authority FY2023 release (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_manzanillo",
+      "name": "Manzanillo",
+      "aliases": [],
+      "type": "port",
+      "country": "Mexico",
+      "lat": 19.06,
+      "lon": -104.29,
+      "codes": {
+        "unlocode": "MXZLO"
+      },
+      "capacity_note": "3.90M TEU in 2024 (ASIPONA Manzanillo) — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://lado.mx/noticia/22047212/",
+      "source_name": "ASIPONA Manzanillo (3.9M TEU in 2024), via AFmedios (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_durban",
+      "name": "Durban",
+      "aliases": [],
+      "type": "port",
+      "country": "South Africa",
+      "lat": -29.88,
+      "lon": 31.02,
+      "codes": {
+        "unlocode": "ZADUR"
+      },
+      "capacity_note": "No single official port-wide TEU total retrieved: Durban Container Terminal Pier 2 processed 1.7M TEU in FY2023/24, reported as roughly three-quarters of the port's container volume — port-wide capacity derived (≈2.27M TEU) via PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://en.wikipedia.org/wiki/Port_of_Durban",
+      "source_name": "Transnet Port Terminals / ICTSI DCT Pier 2 reporting (derived); identity and coordinates: Transnet National Ports Authority via Wikipedia 'Port of Durban' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_capetown",
+      "name": "Cape Town",
+      "aliases": [],
+      "type": "port",
+      "country": "South Africa",
+      "lat": -33.92,
+      "lon": 18.45,
+      "codes": {
+        "unlocode": "ZACPT"
+      },
+      "capacity_note": "≈0.70M TEU in 2024 (Transnet National Ports Authority figures) — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://en.wikipedia.org/wiki/Port_of_Cape_Town",
+      "source_name": "Transnet National Ports Authority (annual container volume ≈700,000 TEU, 2024), via Wikipedia 'Port of Cape Town' (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_melbourne",
+      "name": "Melbourne",
+      "aliases": [],
+      "type": "port",
+      "country": "Australia",
+      "lat": -37.83,
+      "lon": 144.92,
+      "codes": {
+        "unlocode": "AUMEL"
+      },
+      "capacity_note": "3.40M TEU in 2024 (Port of Melbourne: 3,396,000 TEU, a record year) — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://mfame.guru/port-of-melbourne-achieves-highest-container-throughput-on-record/",
+      "source_name": "Port of Melbourne (3,396,000 TEU in 2024) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_sydney",
+      "name": "Sydney (Port Botany)",
+      "aliases": [
+        "Port Botany"
+      ],
+      "type": "port",
+      "country": "Australia",
+      "lat": -33.98,
+      "lon": 151.22,
+      "codes": {
+        "unlocode": "AUBOT"
+      },
+      "capacity_note": "NSW Ports states Port Botany handles 99.6% of NSW container traffic, 'or 2.8 million TEU a year' (current published run-rate, undated) — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://www.nswports.com.au/trades-handled",
+      "source_name": "NSW Ports, 'Trades Handled' (Port Botany 2.8M TEU/yr) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "sea_brisbane",
+      "name": "Brisbane",
+      "aliases": [],
+      "type": "port",
+      "country": "Australia",
+      "lat": -27.41,
+      "lon": 153.15,
+      "codes": {
+        "unlocode": "AUBNE"
+      },
+      "capacity_note": "≈1.62M TEU in FY2024-25 (Port of Brisbane, before the FY26 record of 1.74M TEU) — capacity via PORT_OVERRIDE in build_graph.py.",
+      "source_url": "https://splash247.com/brisbane-sets-annual-container-record/",
+      "source_name": "Port of Brisbane Pty Ltd (FY2024-25 throughput), via Splash247 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "chk_dover",
+      "name": "Dover Strait",
+      "aliases": [
+        "Strait of Dover",
+        "Pas de Calais"
+      ],
+      "type": "chokepoint",
+      "country": null,
+      "lat": 51.02,
+      "lon": 1.42,
+      "codes": {},
+      "capacity_note": "Around 400 vessels/day transit the Dover Strait (UK MMO AIS analysis); IMO-adopted Dover Strait TSS, the world's busiest shipping lane. Capacity via CHOKE_CAP in build_graph.py.",
+      "source_url": "https://resource.esriuk.com/blog/2019-2-1-what-goes-on-in-uk-waters/",
+      "source_name": "UK Marine Management Organisation AIS analysis via Esri UK; UK Parliament Transport Committee evidence (retrieved 2026-10-21)"
+    },
+    {
+      "id": "chk_mozambique",
+      "name": "Mozambique Channel",
+      "aliases": [],
+      "type": "chokepoint",
+      "country": null,
+      "lat": -20.2,
+      "lon": 41.3,
+      "codes": {},
+      "capacity_note": "Deep-water channel between Mozambique and Madagascar; principal Indian Ocean route for Cape-avoiding and East Africa traffic. No published transit-count series retrieved — capacity GAP-MODELED via CHOKE_CAP in build_graph.py.",
+      "source_url": null,
+      "source_name": "Standard maritime chokepoint references (identity only); no transit-count source retrieved — capacity GAP-MODELED (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_newyork",
+      "name": "New York JFK",
+      "aliases": [
+        "John F. Kennedy International"
+      ],
+      "type": "air_hub",
+      "country": "United States",
+      "lat": 40.64,
+      "lon": -73.78,
+      "codes": {
+        "iata": "JFK",
+        "icao": "KJFK"
+      },
+      "capacity_note": "1.59M short tons of freight in 2023 (Port Authority of New York & New Jersey) — capacity via AIR_OVERRIDE (metric conversion documented there).",
+      "source_url": "https://panynj.gov/content/dam/airports/statistics/statistics-general-info/annual-atr/ATR_2025.pdf",
+      "source_name": "Port Authority of New York & New Jersey, Airport Traffic Report (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_leipzig",
+      "name": "Leipzig/Halle",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Germany",
+      "lat": 51.42,
+      "lon": 12.24,
+      "codes": {
+        "iata": "LEJ",
+        "icao": "EDDP"
+      },
+      "capacity_note": "1.40M tonnes cargo in 2023 (Mitteldeutsche Flughafen AG) — capacity via AIR_OVERRIDE. DHL Express European hub.",
+      "source_url": "https://www.aircargonews.net/top-german-cargo-hubs-see-cargo-volumes-slide-in-2023/1067626.article",
+      "source_name": "Mitteldeutsche Flughafen AG (1.4M tonnes in 2023), via Air Cargo News (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_liege",
+      "name": "Liège",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Belgium",
+      "lat": 50.64,
+      "lon": 5.44,
+      "codes": {
+        "iata": "LGG",
+        "icao": "EBLG"
+      },
+      "capacity_note": "1,005,676 tonnes cargo in 2023 (Liège Airport) — capacity via AIR_OVERRIDE.",
+      "source_url": "https://payloadasia.com/2025/01/liege-airport-recrod-cargo-growth-in-2024/",
+      "source_name": "Liège Airport (1,005,676 tonnes in 2023), via Payload Asia (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_cologne",
+      "name": "Cologne Bonn",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Germany",
+      "lat": 50.87,
+      "lon": 7.14,
+      "codes": {
+        "iata": "CGN",
+        "icao": "EDDK"
+      },
+      "capacity_note": "Around 870,000 tonnes of freight in 2023 (Flughafen Köln/Bonn) — capacity via AIR_OVERRIDE. UPS European hub.",
+      "source_url": "https://www.avionews.it/item/1261768-cologne-bonn-airport-more-than-10-million-passengers-in-2024.html",
+      "source_name": "Flughafen Köln/Bonn GmbH (around 870,000 tonnes in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_madrid",
+      "name": "Madrid Barajas",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Spain",
+      "lat": 40.5,
+      "lon": -3.57,
+      "codes": {
+        "iata": "MAD",
+        "icao": "LEMD"
+      },
+      "capacity_note": "643,535 tonnes of freight in 2023 (Aena) — capacity via AIR_OVERRIDE.",
+      "source_url": "https://www.aena.es/en/press/aena-airports-in-spain-close-2023-with-more-than-283-million-passengers.html",
+      "source_name": "Aena (Madrid-Barajas freight 643,535 tonnes in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_milan",
+      "name": "Milan Malpensa",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Italy",
+      "lat": 45.63,
+      "lon": 8.73,
+      "codes": {
+        "iata": "MXP",
+        "icao": "LIMC"
+      },
+      "capacity_note": "Milan airport system cargo totalled 667,000 tonnes in 2023 (SEA Group); Malpensa is the system's cargo airport — capacity via AIR_OVERRIDE.",
+      "source_url": "https://milanairports.message-asp.com/sites/default/files/downloads/SEA%202023%20Results%20PR_ENG_clean_0.pdf",
+      "source_name": "SEA Group 2023 results (Milan system cargo 667,000 tonnes in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_brussels",
+      "name": "Brussels",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Belgium",
+      "lat": 50.9,
+      "lon": 4.48,
+      "codes": {
+        "iata": "BRU",
+        "icao": "EBBR"
+      },
+      "capacity_note": "Brussels Airport reported 732,797 tonnes total cargo in 2024, +5% vs 2023, implying ≈698,000 tonnes in 2023 — capacity via AIR_OVERRIDE (derivation stated there).",
+      "source_url": "https://indiaseatradenews.com/brussels-airport-cargo-volume-grew-5-in-2024-welcomed-4-new-airlines/",
+      "source_name": "Brussels Airport Company (2024 results release) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_atlanta",
+      "name": "Atlanta Hartsfield-Jackson",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "United States",
+      "lat": 33.64,
+      "lon": -84.43,
+      "codes": {
+        "iata": "ATL",
+        "icao": "KATL"
+      },
+      "capacity_note": "Grand total cargo 527,293 metric tons in Jan–Nov 2023 (City of Atlanta Department of Aviation monthly traffic reports) — capacity via AIR_OVERRIDE.",
+      "source_url": "https://dev.atl.com/atl/wp-content/uploads/2025/01/ATL-ATR-2411R.pdf",
+      "source_name": "City of Atlanta Department of Aviation, Airport Traffic Reports 2023 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_houston",
+      "name": "Houston Intercontinental",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "United States",
+      "lat": 29.99,
+      "lon": -95.34,
+      "codes": {
+        "iata": "IAH",
+        "icao": "KIAH"
+      },
+      "capacity_note": "Houston airport system handled 534,123 metric tons of air freight in 2023 (Houston Airports 2024 Economic Impact Study); IAH is the system's cargo gateway — capacity via AIR_OVERRIDE.",
+      "source_url": "https://www.travelandtourworld.com/news/article/houston-airports-skyrockets-to-unprecedented-heights-in-2024-as-united-airlines-zipair-southwest-airlines-and-allegiant-air-drive-a-monumental-40-billion-economic-boom/",
+      "source_name": "Houston Airports, 2024 Economic Impact Study (534,123 metric tons in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_toronto",
+      "name": "Toronto Pearson",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Canada",
+      "lat": 43.68,
+      "lon": -79.63,
+      "codes": {
+        "iata": "YYZ",
+        "icao": "CYYZ"
+      },
+      "capacity_note": "441,500 metric tons of cargo in 2024 (GTAA traffic summary) — capacity via AIR_OVERRIDE. Canada's largest cargo airport.",
+      "source_url": null,
+      "source_name": "Greater Toronto Airports Authority traffic summary, via Transport Canada (441,500 metric tons in 2024) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_zhengzhou",
+      "name": "Zhengzhou Xinzheng",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "China",
+      "lat": 34.52,
+      "lon": 113.84,
+      "codes": {
+        "iata": "CGO",
+        "icao": "ZHCC"
+      },
+      "capacity_note": "Cargo throughput exceeded 700,000 tonnes in 2021 (Henan Airport Group via Xinhua; 705,000 t) — capacity via AIR_OVERRIDE.",
+      "source_url": "https://www.busiunion.com/new/new-93-57.html",
+      "source_name": "Henan Province Airport Group via Xinhua (705,000 tonnes in 2021) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_ezhou",
+      "name": "Ezhou Huahu",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "China",
+      "lat": 30.34,
+      "lon": 115.04,
+      "codes": {
+        "iata": "EHU",
+        "icao": "ZHEC"
+      },
+      "capacity_note": "245,300 tonnes of cargo and mail throughput in 2023 (Ezhou Huahu Airport) — capacity via AIR_OVERRIDE. China's first dedicated cargo hub airport (SF Express).",
+      "source_url": "https://www.ezhou.gov.cn/english/news/202403/t20240301_614597.html",
+      "source_name": "Ezhou Huahu Airport / Ezhou municipal government (245,300 tonnes in 2023) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "air_osaka",
+      "name": "Osaka Kansai",
+      "aliases": [],
+      "type": "air_hub",
+      "country": "Japan",
+      "lat": 34.43,
+      "lon": 135.24,
+      "codes": {
+        "iata": "KIX",
+        "icao": "RJBB"
+      },
+      "capacity_note": "Total cargo volume 753,697 tonnes in FY2022 (Kansai Airports official traffic report) — capacity via AIR_OVERRIDE.",
+      "source_url": "https://assets.kansai-airports.co.jp/8059d9bd-e-trafficreport-october2023.pdf",
+      "source_name": "Kansai Airports, official traffic report (KIX total cargo 753,697 t in FY2022) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_hidalgo",
+      "name": "Hidalgo (Pharr)",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 26.18,
+      "lon": -98.2,
+      "codes": {
+        "border_crossing": "US-MX"
+      },
+      "capacity_note": "BTS TransBorder port 'Hidalgo - Texas' (Pharr–Reynosa bridge complex, Rio Grande Valley): 720,300 truck crossings in 2025 — capacity via GROUND_OVERRIDE in build_graph.py.",
+      "source_url": "https://www.bts.gov/newsroom/transborder-freight-data-annual-report-2025-0",
+      "source_name": "U.S. Bureau of Transportation Statistics, TransBorder Freight Data Annual Report 2025 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_eaglepass",
+      "name": "Eagle Pass",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 28.7,
+      "lon": -100.51,
+      "codes": {
+        "border_crossing": "US-MX"
+      },
+      "capacity_note": "BTS TransBorder port 'Eagle Pass - Texas' (Camino Real International Bridge): 245,000 truck crossings in 2025 — capacity via GROUND_OVERRIDE in build_graph.py.",
+      "source_url": "https://www.bts.gov/newsroom/transborder-freight-data-annual-report-2025-0",
+      "source_name": "U.S. Bureau of Transportation Statistics, TransBorder Freight Data Annual Report 2025 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_calexico",
+      "name": "Calexico East",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 32.68,
+      "lon": -115.39,
+      "codes": {
+        "border_crossing": "US-MX"
+      },
+      "capacity_note": "BTS TransBorder port 'Calexico - East - California' (Mexicali corridor): 582,400 truck crossings in 2025 — capacity via GROUND_OVERRIDE in build_graph.py.",
+      "source_url": "https://www.bts.gov/newsroom/transborder-freight-data-annual-report-2025-0",
+      "source_name": "U.S. Bureau of Transportation Statistics, TransBorder Freight Data Annual Report 2025 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_sweetgrass",
+      "name": "Sweetgrass",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 49.0,
+      "lon": -112.0,
+      "codes": {
+        "border_crossing": "US-CA"
+      },
+      "capacity_note": "BTS TransBorder port 'Sweetgrass - Montana' (I-15 crossing at Coutts, Alberta). No trucks/day figure converted — capacity GAP-MODELED (see calibration.md).",
+      "source_url": "https://www.bts.gov/newsroom/transborder-freight-data-annual-report-2025-0",
+      "source_name": "U.S. Bureau of Transportation Statistics, TransBorder Freight Data Annual Report 2025 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_alexandriabay",
+      "name": "Alexandria Bay",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 44.34,
+      "lon": -75.91,
+      "codes": {
+        "border_crossing": "US-CA"
+      },
+      "capacity_note": "BTS TransBorder port 'Alexandria Bay - New York' (Thousand Islands Bridge, I-81 crossing). Capacity GAP-MODELED (see calibration.md).",
+      "source_url": "https://www.bts.gov/newsroom/transborder-freight-data-annual-report-2025-0",
+      "source_name": "U.S. Bureau of Transportation Statistics, TransBorder Freight Data Annual Report 2025 (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_greer",
+      "name": "Inland Port Greer",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 34.62,
+      "lon": -82.22,
+      "codes": {},
+      "capacity_note": "SC Ports inland port at Greer, SC (Norfolk Southern-served): 146,813 rail moves in FY2023 — capacity via GROUND_OVERRIDE in build_graph.py.",
+      "source_url": null,
+      "source_name": "South Carolina Ports Authority (Inland Port Greer FY2023: 146,813 rail moves) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_frontroyal",
+      "name": "Virginia Inland Port",
+      "aliases": [
+        "Front Royal"
+      ],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 39.05,
+      "lon": -78.19,
+      "codes": {},
+      "capacity_note": "The Port of Virginia's inland terminal at Front Royal, VA; Norfolk Southern rail shuttle to the Norfolk terminals. Capacity GAP-MODELED (see calibration.md).",
+      "source_url": null,
+      "source_name": "The Port of Virginia (Virginia Port Authority), Virginia Inland Port (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_stockton",
+      "name": "Stockton Intermodal",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 37.96,
+      "lon": -121.25,
+      "codes": {},
+      "capacity_note": "BNSF Stockton Intermodal Facility (Mariposa Road), the San Joaquin Valley intermodal gateway tied to the Port of Oakland. Capacity GAP-MODELED (see calibration.md).",
+      "source_url": null,
+      "source_name": "BNSF Railway intermodal facility network (Stockton Intermodal Facility) (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_saltlakecity",
+      "name": "Utah Inland Port",
+      "aliases": [
+        "Salt Lake City"
+      ],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 40.78,
+      "lon": -111.98,
+      "codes": {},
+      "capacity_note": "Utah Inland Port Authority logistics zone in Salt Lake City's northwest quadrant; Union Pacific-served inland port project. Capacity GAP-MODELED (see calibration.md).",
+      "source_url": null,
+      "source_name": "Utah Inland Port Authority (retrieved 2026-10-21)"
+    },
+    {
+      "id": "gnd_stlouis",
+      "name": "St. Louis Intermodal",
+      "aliases": [],
+      "type": "ground_node",
+      "country": "United States",
+      "lat": 38.65,
+      "lon": -90.3,
+      "codes": {},
+      "capacity_note": "St. Louis intermodal terminal cluster (UP/BNSF/NS) in the U.S. BTS NTAD intermodal facility listings. Capacity GAP-MODELED (see calibration.md).",
+      "source_url": null,
+      "source_name": "U.S. BTS National Transportation Atlas Database (NTAD), intermodal freight facilities (retrieved 2026-10-21)"
+    }
+  ]
+}

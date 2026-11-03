@@ -1,0 +1,6306 @@
+{
+ "kind": "IMPACT-layer country join (impact store only; not part of the graph)",
+ "sources": {
+  "daily_pack_retrieved_at": "2026-10-21T07:25:09Z",
+  "reporters_ref_retrieved_at": "2026-10-21T06:33:07Z",
+  "graph_version": "1.0"
+ },
+ "nodes": {
+  "air_addisababa": {
+   "iso3": "ETH",
+   "country": "Ethiopia",
+   "m49": 231,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_amsterdam": {
+   "iso3": "NLD",
+   "country": "Netherlands",
+   "m49": 528,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_anchorage": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_antalya": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_atlanta": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_bandarseribegawan": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_bangkok": {
+   "iso3": "THA",
+   "country": "Thailand",
+   "m49": 764,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_barcelona": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_beijing": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_bobodioulasso": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_bogota": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_boston": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_brest": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_bridgetown": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_brussels": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_buenosaires": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_bujumbura": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_burgas": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_cancn": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_changshachangsha": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_charlotte": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_chattogramchittagong": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_chengdujianyang": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_chengdushuangliu": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_chicago": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_chongqing": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_cincinnati": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_cochabamba": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_cologne": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_cotonou": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_dallasfortworth": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_delhi": {
+   "iso3": "IND",
+   "country": "India (...1974)",
+   "m49": 356,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_denver": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_detroit": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_dme": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_doha": {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "m49": 634,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_dubai": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": 784,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_dubaiworldcentral": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": 784,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_ezhou": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_feldkirchenbeigraz": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_fortlauderdale": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_frankfurt": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": 276,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_freeport": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_ganja": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_guangzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_guiyangnanming": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_guzara": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_haikoumeilan": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_hamilton": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_hangzhou": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_hanoisocson": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_hochiminhcity": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_hongkong": {
+   "iso3": "HKG",
+   "country": "China, Hong Kong SAR",
+   "m49": 344,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_houston": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_incheon": {
+   "iso3": "KOR",
+   "country": "Rep. of Korea",
+   "m49": 410,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_indianapolis": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_istanbul": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": 792,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_jakarta": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": 360,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_jeddah": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_jejucity": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_kasane": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_kralendijk": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_kunming": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_lasvegas": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_leipzig": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_lga": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_lgw": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_liege": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_london": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": 826,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_losangeles": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_louisville": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_luanda": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_madrid": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_mahovljani": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_manama": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_manilapasay": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_memphis": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_mexicocity": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_miami": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_milan": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_minneapolis": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_moscow": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_mumbai": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_munich": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_nanjing": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_narita": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": 392,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_newark": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_newyork": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_ontario": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_oranjestad": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_orlando": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_osaka": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_osbourn": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_pagopago": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_paris": {
+   "iso3": null,
+   "country": null,
+   "m49": 250,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_parisorlyvaldemarne": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_paro": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_pendikistanbul": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_phoenix": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_pkx": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_rinas": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_rome": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_saltlakecity": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_sanfrancisco": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_seattle": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_seoul": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_sepang": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_shanghaiminhang": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_shanghaipudong": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_shenzhen": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_singapore": {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "m49": 702,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "air_sopaulo": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_sydneymascot": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_taipei": {
+   "iso3": null,
+   "country": null,
+   "m49": 158,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_tokyo": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_toronto": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_xiamen": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_xian": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_yerevan": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "air_zhengzhou": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "chk_babelmandeb": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_capeofgoodhope": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_danish": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_dover": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_gibraltar": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_hormuz": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_malacca": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_mozambique": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_panama": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_suez": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_taiwan": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "chk_turkish": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "chokepoint — international waterway; the daily chokepoint layer serves no country for it, and Tier-1 exposure counts ports, not straits"
+  },
+  "gnd_albuquerque": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_alexandriabay": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_anchorage": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_arcadia": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_atlanta": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_austell": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_avondale": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_ayer": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_baltimore": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_bethlehem": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_bettembourg": {
+   "iso3": "LUX",
+   "country": "Luxembourg",
+   "m49": 442,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_blaine": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_budapest": {
+   "iso3": "HUN",
+   "country": "Hungary",
+   "m49": 348,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_buffalo": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_calexico": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_camden": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_chambersburg": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_channeltunnel": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": 826,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_charlotte": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_chesapeake": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_chicago": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_cincinnati": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_citydeep": {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "m49": 710,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_clatskanie": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_cocoa": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_columbus": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_crandall": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_dadri": {
+   "iso3": "IND",
+   "country": "India (...1974)",
+   "m49": 356,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_dallas": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_denver": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_detroit": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_dillon": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_dostyk": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_duisburg": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": 276,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_duluth": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_eaglepass": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_edgerton": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_elpaso": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_erenhot": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_frontroyal": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_georgetown": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_glendale": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_greer": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_gulfport": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_halkali": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": 792,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_haslet": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_hidalgo": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_indianapolis": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_inlandempire": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_jacksonville": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_jerseycity": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_joliet": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_kansascity": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_khorgos": {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "m49": 398,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_laporte": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_laredo": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_lasvegas": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_louisville": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_madrid": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": 724,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_malaszewicze": {
+   "iso3": "POL",
+   "country": "Poland",
+   "m49": 616,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_manzhouli": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_marion": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_mccalla": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_mechanicville": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_memphis": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_milan": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": 380,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_minneapolis": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_montreal": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": 124,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_nogales": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_norfolk": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_northbessemer": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_northcharleston": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_northlake": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_oakland": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_omaha": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_otaymesa": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_paris": {
+   "iso3": null,
+   "country": null,
+   "m49": 250,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_porthuron": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_portland": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_richland": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_riyadh": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": 682,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_rossville": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_saltlakecity": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_seattle": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_sharonville": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_shellrock": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_shreveport": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_statenisland": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_stlouis": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_stockton": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_sweetgrass": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_tacoma": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_terminalisland": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_toronto": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": 124,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_tucson": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_vancouver": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": 124,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_warsaw": {
+   "iso3": "POL",
+   "country": "Poland",
+   "m49": 616,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "gnd_westspringfield": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_wilmington": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "gnd_wilmington_nc": {
+   "iso3": null,
+   "country": null,
+   "m49": null,
+   "source": null,
+   "reason": "no country source covers this node"
+  },
+  "sea_aalborg": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aarhus": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aberdeen": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_abidjan": {
+   "iso3": "CIV",
+   "country": "Côte d'Ivoire",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_abudhabi": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_acajutla": {
+   "iso3": "SLV",
+   "country": "El Salvador",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_agadir": {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_agioioilterminal": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_akita": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ako": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aktauport": {
+   "iso3": "KAZ",
+   "country": "Kazakhstan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aladabiyah": {
+   "iso3": "EGY",
+   "country": "Egypt",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_alexandria": {
+   "iso3": "EGY",
+   "country": "Egypt",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_algeciras": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_alger": {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_alhamriyahlpgterminal": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aliaga": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_alicante": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_altamira": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_amagasaki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_amamapare": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ambarli": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ambonmolucas": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_amirabadport": {
+   "iso3": "IRN",
+   "country": "Iran",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ampenan": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_amsterdam": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ancona": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_annaba": {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_antwerp": {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "m49": 56,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aomori": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aqaba": {
+   "iso3": "JOR",
+   "country": "Jordan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aratu": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_arkhangelsk": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_arzew": {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ashdod": {
+   "iso3": "ISR",
+   "country": "Israel",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_asprpirgos": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_astrakhanport": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_auckland": {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_augusta": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aveiro": {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_aviles": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_azov": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bahiablanca": {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bahiadevalparaiso": {
+   "iso3": "CHL",
+   "country": "Chile",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bahiaquinteroventanas": {
+   "iso3": "CHL",
+   "country": "Chile",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bakuport": {
+   "iso3": "AZE",
+   "country": "Azerbaijan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_balboa": {
+   "iso3": "PAN",
+   "country": "Panama",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_balikpapan": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_baltimore": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bandareparsterminal": {
+   "iso3": "IRN",
+   "country": "Iran",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bandarkhomeini": {
+   "iso3": "IRN",
+   "country": "Iran",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bandarshahidrajaee": {
+   "iso3": "IRN",
+   "country": "Iran",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bandirma": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bangkok": {
+   "iso3": "THA",
+   "country": "Thailand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_banjarmasin": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_banten": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_barcelona": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bari": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_barranquilla": {
+   "iso3": "COL",
+   "country": "Colombia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_basuo": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_batangascity": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_batumi": {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bayuquan": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_beaumont": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_beira": {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_beirut": {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bejaia": {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_belawan": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_belfast": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_benghazi": {
+   "iso3": "LBY",
+   "country": "Libya",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bergen": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bilbao": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bintulu": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bitung": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bontanglngterminal": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bordeaux": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_borusan": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_boston": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_botasnaturalgasterminal": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_brake": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bremen": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bremerhaven": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_brevik": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bridgetown": {
+   "iso3": "BRB",
+   "country": "Barbados",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_brisbane": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bristol": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_brofjorden": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bronka": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_brunsbuettel": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_brunswick": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_buco": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_buenaventura": {
+   "iso3": "COL",
+   "country": "Colombia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_buenosaires": {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bunati": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_bunbury": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_burgas": {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_busan": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": 410,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cadiz": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cagayandeoro": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cagliari": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_caimep": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_callao": {
+   "iso3": "PER",
+   "country": "Peru",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_campana": {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_capetown": {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cartagena": {
+   "iso3": "COL",
+   "country": "Colombia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cartagena_esp": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_casablanca": {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_castries": {
+   "iso3": "LCA",
+   "country": "St.  Lucia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_catania": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_caucedo": {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cebu": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ceuta": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_changzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_charleston": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_charlotte": {
+   "iso3": "VIR",
+   "country": "United States Virgin Islands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_chattogram": {
+   "iso3": "BGD",
+   "country": "Bangladesh",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_chennaimadras": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_chiba": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_chornomorsk": {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cilacap": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_coatzacoalcos": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cochinkochi": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_colombo": {
+   "iso3": "LKA",
+   "country": "Sri Lanka",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_colon": {
+   "iso3": "PAN",
+   "country": "Panama",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_conakry": {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_constanta": {
+   "iso3": "ROU",
+   "country": "Romania",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cork": {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_corpuschristi": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cotonou": {
+   "iso3": "BEN",
+   "country": "Benin",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_cuxhaven": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dachanbay": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_daesan": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dafeng": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dahej": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dakar": {
+   "iso3": "SEN",
+   "country": "Senegal",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dalian": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_damietta": {
+   "iso3": "EGY",
+   "country": "Egypt",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dammam": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dampier": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_danang": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dandong": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_daressalaam": {
+   "iso3": "TZA",
+   "country": "Tanzania",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_darwin": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_davao": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_delfzijl": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_derinceizmitkocaeli": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_diliskelesi": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_djibouti": {
+   "iso3": "DJI",
+   "country": "Djibouti",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dohaummsaid": {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_donggala": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dongguan": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_donghae": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dongjiakou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_douala": {
+   "iso3": "CMR",
+   "country": "Cameroon",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_drammen": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dublin": {
+   "iso3": "IRL",
+   "country": "Ireland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_duluth": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dumai": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dungquat": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_dunkirk": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_durban": {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_eemshaven": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_eldekheila": {
+   "iso3": "EGY",
+   "country": "Egypt",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_eleusis": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_elgrao": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_elsokhna": {
+   "iso3": "EGY",
+   "country": "Egypt",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_emden": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_eregli": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_esbjerg": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_famagusta": {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fangcheng": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fawley": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_felixstowe": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_flor": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fortalezamucuripe": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fortdefrance": {
+   "iso3": "MTQ",
+   "country": "Martinique",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fos": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fredericia": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fredrikshamn": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fredrikstad": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_freeport": {
+   "iso3": "BHS",
+   "country": "The Bahamas",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_freeportusfl": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_freetown": {
+   "iso3": "SLE",
+   "country": "Sierra Leone",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fremantle": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fujairah": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fukuyama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_funabashi": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fushikitoyama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_fuzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_galveston": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gaogang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_garston": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gdansk": {
+   "iso3": "POL",
+   "country": "Poland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gdynia": {
+   "iso3": "POL",
+   "country": "Poland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gebze": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_geelong": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gemlik": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_generalsantos": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_genoa": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_georgetown": {
+   "iso3": "GUY",
+   "country": "Guyana",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ghent": {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gijon": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gioiatauro": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gladstone": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_golcuk": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gourdshanzui": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_grangemouth": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gravesend": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gresik": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_grimsby": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gteborg": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_guangao": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_guangdongyangjiangport": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_guangxibeibugulfport": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_guangzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_guangzhouhuangpu": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_guangzhounansha": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_guayaquil": {
+   "iso3": "ECU",
+   "country": "Ecuador",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gulei": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gunsan": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gvle": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_gwangyang": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hachinohe": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_haifa": {
+   "iso3": "ISR",
+   "country": "Israel",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_haina": {
+   "iso3": "DOM",
+   "country": "Dominican Republic",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_haiphong": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hakata": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hakodate": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_haldia": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_halifax": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_halmstad": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hamad": {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hamburg": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": 276,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hamilton": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hanko": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hannan": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_harboryeweiju": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_haypoint": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hazira": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_helsingborg": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_helsinki": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_heraklion": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hibikinada": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_higashiharima": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_himeji": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_himekawa": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hiroshima": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hitachi": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hochiminh": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hofu": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hongai": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hongkong": {
+   "iso3": "HKG",
+   "country": "Hong Kong SAR",
+   "m49": 344,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_honolulu": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hososhima": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_houston": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": 840,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_huanghua": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_huelva": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_huizhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_hull": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ijmuiden": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_imabari": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_imari": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_immingham": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_incheon": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_indonesiamorowaliindustrialpark": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ipswich": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ishikariwanshinko": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ishinomaki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_iskenderun": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_itaja": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_itapoa": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_itaqui": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_iwakuni": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_izhevskoye": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_izmail": {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_izmir": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jabalazzannahruways": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jacksonville": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jaigadport": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jebelali": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jeddah": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": 682,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jiangyin": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jiaxing": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jinzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_johor": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jorflasfar": {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_juaymah": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_jubail": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kagoshima": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kakinada": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kaliningrad": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kalundborg": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kamaishi": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kamarajarport": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kamsar": {
+   "iso3": "GIN",
+   "country": "Guinea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kanazawa": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kanda": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kandla": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kaohsiung": {
+   "iso3": "TWN",
+   "country": "Taiwan Province of China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_karachi": {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_karlshamn": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kashimaibaraki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kawasaki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kbenhavn": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_keelung": {
+   "iso3": "TWN",
+   "country": "Taiwan Province of China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kemamanharbor": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kendari": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kerch": {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kge": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_khalifa": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kikuma": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kingabdullahport": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kingston": {
+   "iso3": "JAM",
+   "country": "Jamaica",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kingstown": {
+   "iso3": "VCT",
+   "country": "St.  Vincent and the Grenadines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kinuura": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kisarazu": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kitakyushuwakamatsu": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_klaipeda": {
+   "iso3": "LTU",
+   "country": "Lithuania",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kmpngsam": {
+   "iso3": "KHM",
+   "country": "Cambodia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kobe": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kochi": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kokkola": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kolkatasyamaprasadmookerjeport": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_komatsushima": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_koper": {
+   "iso3": "SVN",
+   "country": "Slovenia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_korsakov": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kotabaru": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kotka": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_krishnapatnamport": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kristiansand": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kristiansund": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kronshtadt": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_krst": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kuantan": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kudamatsu": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kupang": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kure": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_kushiro": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lacoruna": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lae": {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_laemchabang": {
+   "iso3": "THA",
+   "country": "Thailand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lagos": {
+   "iso3": "NGA",
+   "country": "Nigeria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lakecharles": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lanqiaoport": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lapallice": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_laspalmasdegrancanaria": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_laspezia": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lazarocardenas": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lehavre": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_leixoes": {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lesund": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lianyungang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_liepaja": {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_limassol": {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_limetreebay": {
+   "iso3": "VIR",
+   "country": "United States Virgin Islands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lisboa": {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_liverpool": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_livorno": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lome": {
+   "iso3": "TGO",
+   "country": "Togo",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_london": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_londongateway": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_longbeach": {
+   "iso3": "USA",
+   "country": "USA",
+   "m49": 840,
+   "source": "UN Comtrade reporter reference (M49 -> ISO3), M49 from comtrade_overlay.py NODE_M49"
+  },
+  "sea_longkougang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_losangeles": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": 840,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_luanda": {
+   "iso3": "AGO",
+   "country": "Angola",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lubecktravemunde": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lumut": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_luoyuan": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_lyttelton": {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_magdalla": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mailiao": {
+   "iso3": "TWN",
+   "country": "Taiwan Province of China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_maizuru": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_makassar": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_makhachkala": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_malaga": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_malamocco": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_malaysiaoffshoreoilterminal5": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_malaysiaoffshoreoilterminal9": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_male": {
+   "iso3": "MDV",
+   "country": "Maldives",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_malm": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_manaus": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_manila": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_manzanillo": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_maptaphut": {
+   "iso3": "THA",
+   "country": "Thailand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_maputo": {
+   "iso3": "MOZ",
+   "country": "Mozambique",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_marcushook": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_marinadicarrara": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_marsaxlokk": {
+   "iso3": "MLT",
+   "country": "Malta",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_marseille": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_marugame": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_masan": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_matarani": {
+   "iso3": "PER",
+   "country": "Peru",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_matsusaka": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_matsuyama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mawan": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mazatlan": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_medway": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mejillones": {
+   "iso3": "CHL",
+   "country": "Chile",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_melbourne": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_merakmasterminal": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mersin": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_miami": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_midia": {
+   "iso3": "ROU",
+   "country": "Romania",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_miike": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mikawa": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_milazzo": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_milfordhaven": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_minaalahmadi": {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_minasaqr": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mishima": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_misrata": {
+   "iso3": "LBY",
+   "country": "Libya",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mizushima": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mly": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mntyluoto": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mobile": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_moerdijk": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mohammedia": {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_moirana": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_moji": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mokpo": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mombasa": {
+   "iso3": "KEN",
+   "country": "Kenya",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mongstad": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_montevideo": {
+   "iso3": "URY",
+   "country": "Uruguay",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_montoir": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_montreal": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_muara": {
+   "iso3": "BRN",
+   "country": "Brunei Darussalam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_muhammadbinqasim": {
+   "iso3": "PAK",
+   "country": "Pakistan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_mundra": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": 356,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_murmansk": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_muroran": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_muugaportoftallinn": {
+   "iso3": "EST",
+   "country": "Estonia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_naantali": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nagasaki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nagoya": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_naha": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nakhodka": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_namikata": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nanjing": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nantong": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_napier": {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_napoli": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nassau": {
+   "iso3": "BHS",
+   "country": "The Bahamas",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nemrutbay": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_newcastle": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_newmangalore": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_neworleans": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_newwestminster": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_newyork": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": 840,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nghetinh": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nghison": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ngqura": {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nhavasheva": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": 356,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_niigata": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_niihama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ningbo": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nordenham": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_norrkping": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nouakchott": {
+   "iso3": "MRT",
+   "country": "Mauritania",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_noumea": {
+   "iso3": "NCL",
+   "country": "New Caledonia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_novorossiysk": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_nwsa": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_oakland": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_odense": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_odessa": {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ofunato": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_oita": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_okayama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_onahama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_onoda": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_onomichiitozaki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_oran": {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_osaka": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_oslo": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_oxelsund": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_paita": {
+   "iso3": "PER",
+   "country": "Peru",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_paldiski": {
+   "iso3": "EST",
+   "country": "Estonia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_palembang": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_palmbeach": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_panjang": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_paradip": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_paramaribo": {
+   "iso3": "SUR",
+   "country": "Suriname",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_paranagu": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pasajes": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_patras": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pecem": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pelabuhantanjungwangi": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_penang": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pengerang": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_philadelphia": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_philipsburg": {
+   "iso3": "SXM",
+   "country": "Sint Maarten",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pipavavport": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_piraeus": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pivdennyi": {
+   "iso3": "UKR",
+   "country": "Ukraine",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pohang": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pointeapierre": {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pointeapitre": {
+   "iso3": "GLP",
+   "country": "Guadeloupe",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pointlisas": {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pointnoire": {
+   "iso3": "COG",
+   "country": "Republic of Congo",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pontadelgada": {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pontianak": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_porsgrunn": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portakdeniz": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portarthur": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portauprince": {
+   "iso3": "HTI",
+   "country": "Haiti",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portcartier": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portdebouc": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portdesalvador": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portdickson": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portelizabeth": {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portest": {
+   "iso3": "REU",
+   "country": "Réunion",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_porteverglades": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_porthedland": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portjerome": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portkembla": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portklang": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portlandor": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portlouis": {
+   "iso3": "MUS",
+   "country": "Mauritius",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portmoresby": {
+   "iso3": "PNG",
+   "country": "Papua New Guinea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portodeitaguai": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portodesuape": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portodilidovenezia": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portodoacu": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portogrande": {
+   "iso3": "CPV",
+   "country": "Cabo Verde",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portowendo": {
+   "iso3": "GAB",
+   "country": "Gabon",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portsaid": {
+   "iso3": "EGY",
+   "country": "Egypt",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portsaintlouisdurhone": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portsudan": {
+   "iso3": "SDN",
+   "country": "Sudan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_portwalcott": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_poti": {
+   "iso3": "GEO",
+   "country": "Georgia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_primorsk": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_princerupert": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_progreso": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_puertobarrios": {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_puertocaldera": {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_puertocortes": {
+   "iso3": "HND",
+   "country": "Honduras",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_puertomoin": {
+   "iso3": "CRI",
+   "country": "Costa Rica",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_puertomontt": {
+   "iso3": "CHL",
+   "country": "Chile",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_puertoquetzal": {
+   "iso3": "GTM",
+   "country": "Guatemala",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_pyeongtaek": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_qingdao": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_qinhuangdao": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_qinzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_qiwei": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_quanzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_quebec": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_quynhon": {
+   "iso3": "VNM",
+   "country": "Vietnam",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_randers": {
+   "iso3": "DNK",
+   "country": "Denmark",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_raslaffan": {
+   "iso3": "QAT",
+   "country": "Qatar",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rastanura": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rauma": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ravenna": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rayong": {
+   "iso3": "THA",
+   "country": "Thailand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_reykjavk": {
+   "iso3": "ISL",
+   "country": "Iceland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_richardsbay": {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_richmondca": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_riga": {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rijeka": {
+   "iso3": "HRV",
+   "country": "Croatia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_riodejaneiro": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_riogrande": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rizhao": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rosario": {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rostock": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rostovnadonu": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rotterdam": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": 528,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rouen": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rrvik": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_rugao": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sabah": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sabinepass": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_saganoseki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sagunto": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_saiki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_saintjohn": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_saintjohns": {
+   "iso3": "ATG",
+   "country": "Antigua and Barbuda",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_saintpetersburg": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sakai": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sakaide": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sakaisemboku": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_salalah": {
+   "iso3": "OMN",
+   "country": "Oman",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_saldanhabay": {
+   "iso3": "ZAF",
+   "country": "South Africa",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_salerno": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_samarinda": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sampit": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_samsun": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sanantonio": {
+   "iso3": "CHL",
+   "country": "Chile",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sanjuan": {
+   "iso3": "PRI",
+   "country": "Puerto Rico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sanmartin": {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_santacruzdetenerife": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_santamarta": {
+   "iso3": "COL",
+   "country": "Colombia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_santander": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_santos": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sanvicente": {
+   "iso3": "CHL",
+   "country": "Chile",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sarnia": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sarrochoilterminal": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_savannah": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": 840,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_savona": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sdertlje": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sekupang": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_semarang": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sendaishiogama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sete": {
+   "iso3": "FRA",
+   "country": "France",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_setubal": {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_seville": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sfax": {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shanghai": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": 156,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shanghaiyangshan": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shantou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sharjah": {
+   "iso3": "ARE",
+   "country": "United Arab Emirates",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shekoushenzhen": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shenzhen": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shibushi": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shidaonewport": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shimizu": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shimonoseki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shougangjingtang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shuaiba": {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shuidong": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_shuwaikh": {
+   "iso3": "KWT",
+   "country": "Kuwait",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sikka": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sines": {
+   "iso3": "PRT",
+   "country": "Portugal",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_singapore": {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_singaporeoffshoreoilterminal1": {
+   "iso3": "SGP",
+   "country": "Singapore",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sitrah": {
+   "iso3": "BHR",
+   "country": "Bahrain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_skikdaportmethanier": {
+   "iso3": "DZA",
+   "country": "Algeria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_skoldvik": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sohar": {
+   "iso3": "OMN",
+   "country": "Oman",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_soma": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_songkhla": {
+   "iso3": "THA",
+   "country": "Thailand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sosebastio": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_southampton": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_southlouisiana": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_spain": {
+   "iso3": "TTO",
+   "country": "Trinidad and Tobago",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_stade": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_stavanger": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_subicbay": {
+   "iso3": "PHL",
+   "country": "Philippines",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_susaki": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_suzhouchangshu": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_suzhoutaicang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_suzhouzhangjiagang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_swinoujscie": {
+   "iso3": "POL",
+   "country": "Poland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_sydney": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_szczecin": {
+   "iso3": "POL",
+   "country": "Poland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_taboguilla": {
+   "iso3": "PAN",
+   "country": "Panama",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tachibana": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tagonoura": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_taicang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_taichung": {
+   "iso3": "TWN",
+   "country": "Taiwan Province of China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_taipei": {
+   "iso3": "TWN",
+   "country": "Taiwan Province of China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_taixing": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_takamatsu": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tallinn": {
+   "iso3": "EST",
+   "country": "Estonia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_taman": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tampaport": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tampico": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tananger": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tangermed": {
+   "iso3": "MAR",
+   "country": "Morocco",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tangshanjingtang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tanjunggeren": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tanjungpelepas": {
+   "iso3": "MYS",
+   "country": "Malaysia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tanjungperak": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tanjungpriok": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": 360,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tanjungsekong": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tanjunguban": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_taranto": {
+   "iso3": "ITA",
+   "country": "Italy",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tarragona": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tauranga": {
+   "iso3": "NZL",
+   "country": "New Zealand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_teesport": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tekirdag": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_telukbayur": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tema": {
+   "iso3": "GHA",
+   "country": "Ghana",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_temryuk": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_terneuzen": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_texascity": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_thathong": {
+   "iso3": "THA",
+   "country": "Thailand",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_thessalonki": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_thunderbay": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tianjin": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tilbury": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tokuyama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tokyo": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tomakomai": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_torne": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_townsville": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_toyo": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_trabzon": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tripoli": {
+   "iso3": "LBN",
+   "country": "Lebanon",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_troms": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_trondheim": {
+   "iso3": "NOR",
+   "country": "Norway",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tsukumi": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tsuruga": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tuapse": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tuban": {
+   "iso3": "IDN",
+   "country": "Indonesia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tubarao": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tunis": {
+   "iso3": "TUN",
+   "country": "Tunisia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_turkmenbashiport": {
+   "iso3": "TKM",
+   "country": "Turkmenistan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tuticorin": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tuzlapendik": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_tynemouth": {
+   "iso3": "GBR",
+   "country": "United Kingdom",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ube": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ulsan": {
+   "iso3": "KOR",
+   "country": "Korea",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ummqasr": {
+   "iso3": "IRQ",
+   "country": "Iraq",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ustluga": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_uusikaupunki": {
+   "iso3": "FIN",
+   "country": "Finland",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_valencia": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vancouver": {
+   "iso3": "CAN",
+   "country": "Canada",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vanino": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_varberg": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_varna": {
+   "iso3": "BGR",
+   "country": "Bulgaria",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vassiliko": {
+   "iso3": "CYP",
+   "country": "Cyprus",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_ventspils": {
+   "iso3": "LVA",
+   "country": "Latvia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_veracruz": {
+   "iso3": "MEX",
+   "country": "Mexico",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vigo": {
+   "iso3": "ESP",
+   "country": "Spain",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_viladoconde": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_virginia": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_visakhapatnam": {
+   "iso3": "IND",
+   "country": "India",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vitoria": {
+   "iso3": "BRA",
+   "country": "Brazil",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vladivostok": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vlissingen": {
+   "iso3": "NLD",
+   "country": "The Netherlands",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_volos": {
+   "iso3": "GRC",
+   "country": "Greece",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vostochnyy": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vsters": {
+   "iso3": "SWE",
+   "country": "Sweden",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_vysotsk": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_wakayamashimotsu": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_walvisbay": {
+   "iso3": "NAM",
+   "country": "Namibia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_weifangport": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_weihai": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_weipa": {
+   "iso3": "AUS",
+   "country": "Australia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_wenzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_willemstad": {
+   "iso3": "CUW",
+   "country": "Curaçao",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_wilmingtonde": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_wilmingtonnc": {
+   "iso3": "USA",
+   "country": "United States",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_wismar": {
+   "iso3": "DEU",
+   "country": "Germany",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_xiagong": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_xiamen": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_xieqiao": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_xishengxu": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_xiuyu": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yakacik": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yanbukingfahdport": {
+   "iso3": "SAU",
+   "country": "Saudi Arabia",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yangon": {
+   "iso3": "MMR",
+   "country": "Myanmar",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yangpu": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yangzhou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yantai": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yarimca": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yatsushiro": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yeysk": {
+   "iso3": "RUS",
+   "country": "Russian Federation",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yihua": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yingkou": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yokkaichi": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yokohama": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_yokosuka": {
+   "iso3": "JPN",
+   "country": "Japan",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zarate": {
+   "iso3": "ARG",
+   "country": "Argentina",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zeebrugge": {
+   "iso3": "BEL",
+   "country": "Belgium",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zhanjiang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zhapu": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zhenjiang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zhenjiangnewarea": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zhouliwang": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zhuhai": {
+   "iso3": "CHN",
+   "country": "China",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  },
+  "sea_zonguldak": {
+   "iso3": "TUR",
+   "country": "Türkiye",
+   "m49": null,
+   "source": "IMF PortWatch Daily_Ports_Data (country/ISO3 as served by portid), via portwatch_daily snapshot"
+  }
+ },
+ "unmapped": [
+  "air_antalya",
+  "air_atlanta",
+  "air_bandarseribegawan",
+  "air_barcelona",
+  "air_bobodioulasso",
+  "air_bogota",
+  "air_boston",
+  "air_brest",
+  "air_bridgetown",
+  "air_brussels",
+  "air_buenosaires",
+  "air_bujumbura",
+  "air_burgas",
+  "air_cancn",
+  "air_changshachangsha",
+  "air_charlotte",
+  "air_chattogramchittagong",
+  "air_chengdujianyang",
+  "air_chengdushuangliu",
+  "air_chongqing",
+  "air_cochabamba",
+  "air_cologne",
+  "air_cotonou",
+  "air_dallasfortworth",
+  "air_denver",
+  "air_detroit",
+  "air_dme",
+  "air_ezhou",
+  "air_feldkirchenbeigraz",
+  "air_fortlauderdale",
+  "air_freeport",
+  "air_ganja",
+  "air_guiyangnanming",
+  "air_guzara",
+  "air_haikoumeilan",
+  "air_hamilton",
+  "air_hangzhou",
+  "air_hanoisocson",
+  "air_hochiminhcity",
+  "air_houston",
+  "air_jeddah",
+  "air_jejucity",
+  "air_kasane",
+  "air_kralendijk",
+  "air_kunming",
+  "air_lasvegas",
+  "air_leipzig",
+  "air_lga",
+  "air_lgw",
+  "air_liege",
+  "air_luanda",
+  "air_madrid",
+  "air_mahovljani",
+  "air_manama",
+  "air_manilapasay",
+  "air_mexicocity",
+  "air_milan",
+  "air_minneapolis",
+  "air_moscow",
+  "air_mumbai",
+  "air_munich",
+  "air_nanjing",
+  "air_newark",
+  "air_newyork",
+  "air_oranjestad",
+  "air_orlando",
+  "air_osaka",
+  "air_osbourn",
+  "air_pagopago",
+  "air_paris",
+  "air_parisorlyvaldemarne",
+  "air_paro",
+  "air_pendikistanbul",
+  "air_phoenix",
+  "air_pkx",
+  "air_rinas",
+  "air_rome",
+  "air_saltlakecity",
+  "air_sanfrancisco",
+  "air_seattle",
+  "air_seoul",
+  "air_sepang",
+  "air_shanghaiminhang",
+  "air_sopaulo",
+  "air_sydneymascot",
+  "air_taipei",
+  "air_tokyo",
+  "air_toronto",
+  "air_xiamen",
+  "air_xian",
+  "air_yerevan",
+  "air_zhengzhou",
+  "gnd_albuquerque",
+  "gnd_alexandriabay",
+  "gnd_anchorage",
+  "gnd_arcadia",
+  "gnd_austell",
+  "gnd_avondale",
+  "gnd_ayer",
+  "gnd_baltimore",
+  "gnd_bethlehem",
+  "gnd_calexico",
+  "gnd_camden",
+  "gnd_chambersburg",
+  "gnd_charlotte",
+  "gnd_chesapeake",
+  "gnd_cincinnati",
+  "gnd_clatskanie",
+  "gnd_cocoa",
+  "gnd_crandall",
+  "gnd_denver",
+  "gnd_dillon",
+  "gnd_duluth",
+  "gnd_eaglepass",
+  "gnd_edgerton",
+  "gnd_frontroyal",
+  "gnd_georgetown",
+  "gnd_glendale",
+  "gnd_greer",
+  "gnd_gulfport",
+  "gnd_haslet",
+  "gnd_hidalgo",
+  "gnd_indianapolis",
+  "gnd_jacksonville",
+  "gnd_jerseycity",
+  "gnd_joliet",
+  "gnd_laporte",
+  "gnd_lasvegas",
+  "gnd_louisville",
+  "gnd_marion",
+  "gnd_mccalla",
+  "gnd_mechanicville",
+  "gnd_minneapolis",
+  "gnd_norfolk",
+  "gnd_northbessemer",
+  "gnd_northcharleston",
+  "gnd_northlake",
+  "gnd_oakland",
+  "gnd_omaha",
+  "gnd_paris",
+  "gnd_portland",
+  "gnd_richland",
+  "gnd_rossville",
+  "gnd_saltlakecity",
+  "gnd_seattle",
+  "gnd_sharonville",
+  "gnd_shellrock",
+  "gnd_shreveport",
+  "gnd_statenisland",
+  "gnd_stlouis",
+  "gnd_stockton",
+  "gnd_sweetgrass",
+  "gnd_tacoma",
+  "gnd_terminalisland",
+  "gnd_tucson",
+  "gnd_westspringfield",
+  "gnd_wilmington",
+  "gnd_wilmington_nc"
+ ],
+ "no_country_by_kind": [
+  "chk_babelmandeb",
+  "chk_capeofgoodhope",
+  "chk_danish",
+  "chk_dover",
+  "chk_gibraltar",
+  "chk_hormuz",
+  "chk_malacca",
+  "chk_mozambique",
+  "chk_panama",
+  "chk_suez",
+  "chk_taiwan",
+  "chk_turkish"
+ ]
+}

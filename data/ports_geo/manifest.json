@@ -1,0 +1,1633 @@
+{
+ "attribution": "(c) OpenStreetMap contributors",
+ "license": "ODbL 1.0 - https://opendatacommons.org/licenses/odbl/1-0/",
+ "license_file": "LICENSE-ODbL.txt",
+ "ports": {
+  "sea_antwerp": {
+   "bbox": [
+    4.22,
+    51.25,
+    4.37,
+    51.33
+   ],
+   "bytes": 285476,
+   "counts": {
+    "anchorage": 2,
+    "berth": 1,
+    "breakwater": 4,
+    "building": 15,
+    "crane": 64,
+    "fairway": 12,
+    "lock": 24,
+    "pier": 77,
+    "rail": 300,
+    "road": 399,
+    "storage": 9,
+    "terminal": 12,
+    "water": 44
+   },
+   "file": "sea_antwerp.geojson",
+   "generalisation_level": 6,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 445911,
+    "cloud_pct_aoi": 0.09,
+    "file": "imagery/sea_antwerp.png",
+    "resolution_m": 10,
+    "scene_date": "2026-07-28",
+    "scene_id": "S2C_MSIL2A_20260728T104621_R051_T31UES_20260728T144218",
+    "served": true
+   },
+   "note": "Zeebrugge is a separate site not mapped here.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 240403,
+    "relations": 100,
+    "ways": 19384
+   },
+   "profile": {
+    "bytes": 7034,
+    "file": "profiles/sea_antwerp.json",
+    "sha256": "766f2df5cafd4e2544713278f548cbb7d41b79d3747c5b87d4f255a47739caeb"
+   },
+   "sha256": "065f74b3498bb2a912313d97a28951deb65dd78e18676cc6dae2012513ec8095",
+   "tile_count": 9
+  },
+  "sea_busan": {
+   "bbox": [
+    128.76,
+    35.04,
+    128.86,
+    35.1
+   ],
+   "bytes": 146195,
+   "counts": {
+    "breakwater": 3,
+    "building": 178,
+    "coastline": 16,
+    "pier": 4,
+    "rail": 31,
+    "road": 250,
+    "terminal": 1,
+    "water": 5
+   },
+   "file": "sea_busan.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 330601,
+    "cloud_pct_aoi": 0.02,
+    "file": "imagery/sea_busan.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-22",
+    "scene_id": "S2A_MSIL2A_20261022T021121_R103_T52SDD_20261022T053502",
+    "served": true
+   },
+   "note": "New Port (Jinhae bay) only; the North Port and Gamman terminals at ~129.05E are not mapped.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 15572,
+    "relations": 10,
+    "ways": 1231
+   },
+   "profile": {
+    "bytes": 2821,
+    "file": "profiles/sea_busan.json",
+    "sha256": "a317743677bdfa8d90c1e37358378de8508382b8329557837a08a68ab33219f2"
+   },
+   "sha256": "e76484fca659530da8c13b36ee0c2faba137bd46ee4659b6565d25b61a594760",
+   "tile_count": 4
+  },
+  "sea_colombo": {
+   "bbox": [
+    79.82,
+    6.91,
+    79.92,
+    6.97
+   ],
+   "bytes": 340918,
+   "counts": {
+    "breakwater": 3,
+    "building": 71,
+    "coastline": 11,
+    "crane": 41,
+    "pier": 20,
+    "quay": 2,
+    "rail": 160,
+    "road": 893,
+    "storage": 39,
+    "terminal": 7,
+    "water": 31
+   },
+   "file": "sea_colombo.geojson",
+   "generalisation_level": 3,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 368289,
+    "cloud_pct_aoi": 1.19,
+    "file": "imagery/sea_colombo.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-06",
+    "scene_id": "S2B_MSIL2A_20261006T045659_R119_T44NLN_20261006T085805",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 247040,
+    "relations": 75,
+    "ways": 50552
+   },
+   "profile": {
+    "bytes": 5600,
+    "file": "profiles/sea_colombo.json",
+    "sha256": "941c2a2f3da5f4c19d8f721221ab64e437f9bf31e2a49761d1e118931811fc22"
+   },
+   "sha256": "4bf2b3013c6aa7bc7f64022acf7964139f25b3e109b45c5029d5d605e035c107",
+   "tile_count": 10
+  },
+  "sea_durban": {
+   "bbox": [
+    30.95,
+    -29.93,
+    31.05,
+    -29.83
+   ],
+   "bytes": 334152,
+   "counts": {
+    "building": 8,
+    "coastline": 9,
+    "crane": 2,
+    "fairway": 2,
+    "pier": 244,
+    "rail": 550,
+    "road": 549,
+    "storage": 1,
+    "terminal": 2,
+    "water": 3,
+    "yard": 1
+   },
+   "file": "sea_durban.geojson",
+   "generalisation_level": 6,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 532210,
+    "cloud_pct_aoi": 0.13,
+    "file": "imagery/sea_durban.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-09",
+    "scene_id": "S2C_MSIL2A_20261009T073821_R092_T36JUM_20261009T121403",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 736546,
+    "relations": 140,
+    "ways": 115285
+   },
+   "profile": {
+    "bytes": 2979,
+    "file": "profiles/sea_durban.json",
+    "sha256": "ae7ecd08036a1d86dba94574af32238fabe014c605a8da82fb6404e9a9751fef"
+   },
+   "sha256": "297d8391df79e3cccb0856adecbd105a335bbbadbe25195f62f5823ee832bd24",
+   "tile_count": 40
+  },
+  "sea_felixstowe": {
+   "bbox": [
+    1.22,
+    51.92,
+    1.32,
+    51.98
+   ],
+   "bytes": 298176,
+   "counts": {
+    "anchorage": 1,
+    "berth": 14,
+    "breakwater": 13,
+    "building": 142,
+    "coastline": 69,
+    "crane": 34,
+    "fairway": 5,
+    "lock": 1,
+    "pier": 52,
+    "rail": 83,
+    "road": 731,
+    "storage": 49,
+    "terminal": 2,
+    "water": 30
+   },
+   "file": "sea_felixstowe.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 249798,
+    "cloud_pct_aoi": 0.09,
+    "file": "imagery/sea_felixstowe.png",
+    "resolution_m": 10,
+    "scene_date": "2026-08-25",
+    "scene_id": "S2A_MSIL2A_20260825T110651_R137_T31UCT_20260826T081612",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 92945,
+    "relations": 37,
+    "ways": 15457
+   },
+   "profile": {
+    "bytes": 2821,
+    "file": "profiles/sea_felixstowe.json",
+    "sha256": "6b49e9b28219f9e5616f10e028a98e062d7608c4fc5ff84602ce1e1ac09f5848"
+   },
+   "sha256": "1790610457d5785e62b8fd0295ca895b0c059faaed15915558a6ed50bcbc474c",
+   "tile_count": 4
+  },
+  "sea_guangzhou": {
+   "bbox": [
+    113.56,
+    22.62,
+    113.66,
+    22.72
+   ],
+   "bytes": 253350,
+   "counts": {
+    "breakwater": 3,
+    "building": 81,
+    "coastline": 20,
+    "crane": 1,
+    "lock": 3,
+    "pier": 15,
+    "rail": 81,
+    "road": 513,
+    "terminal": 3,
+    "water": 277
+   },
+   "file": "sea_guangzhou.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 517618,
+    "cloud_pct_aoi": 2.58,
+    "file": "imagery/sea_guangzhou.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-10",
+    "scene_id": "S2B_MSIL2A_20261010T025629_R032_T49QGF_20261010T064720",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 12435,
+    "relations": 13,
+    "ways": 1549
+   },
+   "profile": {
+    "bytes": 3897,
+    "file": "profiles/sea_guangzhou.json",
+    "sha256": "53fe5e2d8e2d89f0a2a52951b008ecba9faafbbfff065a038b1e3bc019f33346"
+   },
+   "sha256": "aed9999d8d4d38b5ba57aaf9af7682cc7b7dbb0bba8a2c5e96be052425bd9998",
+   "tile_count": 4
+  },
+  "sea_hamburg": {
+   "bbox": [
+    9.88,
+    53.47,
+    10.03,
+    53.55
+   ],
+   "bytes": 309398,
+   "counts": {
+    "berth": 2,
+    "breakwater": 1,
+    "crane": 139,
+    "fairway": 12,
+    "lock": 40,
+    "pier": 410,
+    "quay": 59,
+    "rail": 303,
+    "road": 193,
+    "storage": 3,
+    "terminal": 21,
+    "water": 59,
+    "yard": 1
+   },
+   "file": "sea_hamburg.geojson",
+   "generalisation_level": 7,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 539973,
+    "cloud_pct_aoi": 0.01,
+    "file": "imagery/sea_hamburg.png",
+    "resolution_m": 10,
+    "scene_date": "2026-09-22",
+    "scene_id": "S2A_MSIL2A_20260922T102701_R108_T32UNE_20260922T171012",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 403086,
+    "relations": 225,
+    "ways": 63226
+   },
+   "profile": {
+    "bytes": 11696,
+    "file": "profiles/sea_hamburg.json",
+    "sha256": "68c71b81c4a7ff6ec50ea58d29e51ea9d20fd3d288027ae974a0d41f1ab63f29"
+   },
+   "sha256": "735739c11d1ff797b514e7d3c492540fecc6c30f542e598ea167018966e70981",
+   "tile_count": 15
+  },
+  "sea_hochiminh": {
+   "bbox": [
+    106.73,
+    10.72,
+    106.83,
+    10.8
+   ],
+   "bytes": 379813,
+   "counts": {
+    "building": 114,
+    "pier": 31,
+    "road": 1165,
+    "storage": 2,
+    "terminal": 10,
+    "water": 67,
+    "yard": 2
+   },
+   "file": "sea_hochiminh.geojson",
+   "generalisation_level": 2,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 457899,
+    "cloud_pct_aoi": 6.58,
+    "file": "imagery/sea_hochiminh.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-20",
+    "scene_id": "S2A_MSIL2A_20261020T031141_R075_T48PXS_20261020T073206",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 90526,
+    "relations": 43,
+    "ways": 12037
+   },
+   "profile": {
+    "bytes": 6488,
+    "file": "profiles/sea_hochiminh.json",
+    "sha256": "ae75aaf224360f3223dccc4c67015b139af14f6ed0841611bc1aee15634ab2af"
+   },
+   "sha256": "680ac22cf7276c4e4c4d67f37a403c78cb7e1a176d5379420d30b935ce6b53c7",
+   "tile_count": 4
+  },
+  "sea_hongkong": {
+   "bbox": [
+    114.08,
+    22.29,
+    114.16,
+    22.37
+   ],
+   "bytes": 322980,
+   "counts": {
+    "anchorage": 10,
+    "berth": 73,
+    "breakwater": 6,
+    "building": 42,
+    "coastline": 73,
+    "crane": 2,
+    "fairway": 7,
+    "lock": 6,
+    "pier": 69,
+    "quay": 17,
+    "rail": 17,
+    "road": 835,
+    "storage": 26,
+    "terminal": 11,
+    "water": 9,
+    "yard": 17
+   },
+   "file": "sea_hongkong.geojson",
+   "generalisation_level": 4,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 457572,
+    "cloud_pct_aoi": 0.1,
+    "file": "imagery/sea_hongkong.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-05",
+    "scene_id": "S2C_MSIL2A_20261005T025551_R032_T49QHE_20261005T062709",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 217905,
+    "relations": 216,
+    "ways": 29329
+   },
+   "profile": {
+    "bytes": 9621,
+    "file": "profiles/sea_hongkong.json",
+    "sha256": "280f7e8f41003f74b8cf074b144b400bac5ddd06fbbf9b86daec98fd862ac96f"
+   },
+   "sha256": "855e850d2c49064ddb7e78c5116baea5c4fd9792a4a71755e59466feb17f4539",
+   "tile_count": 10
+  },
+  "sea_houston": {
+   "bbox": [
+    -95.05,
+    29.6,
+    -94.95,
+    29.7
+   ],
+   "bytes": 338170,
+   "counts": {
+    "breakwater": 8,
+    "building": 41,
+    "coastline": 17,
+    "crane": 1,
+    "pier": 150,
+    "rail": 359,
+    "road": 710,
+    "storage": 86,
+    "terminal": 2,
+    "water": 23
+   },
+   "file": "sea_houston.geojson",
+   "generalisation_level": 3,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 402775,
+    "cloud_pct_aoi": 1.67,
+    "file": "imagery/sea_houston.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-24",
+    "scene_id": "S2C_MSIL2A_20261024T165351_R026_T15RUN_20261024T195502",
+    "served": true
+   },
+   "note": "The graph place point is downtown Houston; the container terminals are ~40 km downstream.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 73425,
+    "relations": 29,
+    "ways": 8778
+   },
+   "profile": {
+    "bytes": 3203,
+    "file": "profiles/sea_houston.json",
+    "sha256": "90d02ba76c198fecc5f1e0e355903e74a83a33fe80ebf6e27fde60dc519757e6"
+   },
+   "sha256": "89ca490e74bee2348ec07faff3d307a1aec1dfb869be2f17597f33b05d620a2e",
+   "tile_count": 4
+  },
+  "sea_jebelali": {
+   "bbox": [
+    54.98,
+    24.97,
+    55.1,
+    25.04
+   ],
+   "bytes": 285548,
+   "counts": {
+    "breakwater": 34,
+    "building": 62,
+    "coastline": 31,
+    "crane": 123,
+    "pier": 27,
+    "quay": 1,
+    "rail": 7,
+    "road": 642,
+    "storage": 78,
+    "terminal": 5,
+    "water": 5
+   },
+   "file": "sea_jebelali.geojson",
+   "generalisation_level": 4,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 270109,
+    "cloud_pct_aoi": 2.17,
+    "file": "imagery/sea_jebelali.png",
+    "resolution_m": 10,
+    "scene_date": "2026-09-24",
+    "scene_id": "S2C_MSIL2A_20260924T064621_R020_T40RBN_20260924T114716",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 64522,
+    "relations": 43,
+    "ways": 6989
+   },
+   "profile": {
+    "bytes": 5279,
+    "file": "profiles/sea_jebelali.json",
+    "sha256": "2c8e032f63dd0e4c44e411c4583d90f0b5f47eedb87f866a0320184a579e86dc"
+   },
+   "sha256": "fd8e68325ae3de59fcb89ff0ec609bd832a224c6b96c63d4cdd3d644c38a94b9",
+   "tile_count": 6
+  },
+  "sea_kaohsiung": {
+   "bbox": [
+    120.24,
+    22.54,
+    120.34,
+    22.64
+   ],
+   "bytes": 329302,
+   "counts": {
+    "anchorage": 5,
+    "breakwater": 38,
+    "building": 27,
+    "coastline": 73,
+    "crane": 61,
+    "pier": 89,
+    "rail": 62,
+    "road": 975,
+    "storage": 4,
+    "terminal": 11,
+    "water": 8
+   },
+   "file": "sea_kaohsiung.geojson",
+   "generalisation_level": 4,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 446427,
+    "cloud_pct_aoi": 0.4,
+    "file": "imagery/sea_kaohsiung.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-16",
+    "scene_id": "S2C_MSIL2A_20261016T022701_R046_T50QRL_20261016T054811",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 434759,
+    "relations": 321,
+    "ways": 23433
+   },
+   "profile": {
+    "bytes": 7696,
+    "file": "profiles/sea_kaohsiung.json",
+    "sha256": "21b2caf13731e4c024018b79203242a657c7f483a5e6728982bac3d2f890e41d"
+   },
+   "sha256": "6067c8868d9e327237a1d7ed312ac0423269e0a6bbc8142eabe0b3354bb11d1c",
+   "tile_count": 25
+  },
+  "sea_laemchabang": {
+   "bbox": [
+    100.85,
+    13.04,
+    100.95,
+    13.11
+   ],
+   "bytes": 376739,
+   "counts": {
+    "building": 214,
+    "coastline": 7,
+    "crane": 44,
+    "pier": 8,
+    "rail": 29,
+    "road": 1263,
+    "storage": 19,
+    "terminal": 4,
+    "water": 14,
+    "yard": 1
+   },
+   "file": "sea_laemchabang.geojson",
+   "generalisation_level": 1,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 402275,
+    "cloud_pct_aoi": 1.21,
+    "file": "imagery/sea_laemchabang.png",
+    "resolution_m": 10,
+    "scene_date": "2026-07-24",
+    "scene_id": "S2B_MSIL2A_20260724T033539_R061_T47PQQ_20260724T072526",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 29419,
+    "relations": 4,
+    "ways": 4983
+   },
+   "profile": {
+    "bytes": 3737,
+    "file": "profiles/sea_laemchabang.json",
+    "sha256": "088e76f074e3ae90db27fcf538dabd9e9de21e257600b890c304d85ef47ec6ed"
+   },
+   "sha256": "e531e9246249ba59d3aeb6a930e2d33aa4e734e861410b2060993736724e5170",
+   "tile_count": 4
+  },
+  "sea_longbeach": {
+   "bbox": [
+    -118.24,
+    33.74,
+    -118.16,
+    33.79
+   ],
+   "bytes": 285946,
+   "counts": {
+    "breakwater": 4,
+    "building": 27,
+    "coastline": 13,
+    "crane": 39,
+    "pier": 100,
+    "rail": 148,
+    "road": 733,
+    "storage": 39,
+    "water": 8
+   },
+   "file": "sea_longbeach.geojson",
+   "generalisation_level": 4,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 274049,
+    "cloud_pct_aoi": 0.1,
+    "file": "imagery/sea_longbeach.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-24",
+    "scene_id": "S2C_MSIL2A_20261024T183431_R027_T11SLT_20261024T214812",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 245062,
+    "relations": 369,
+    "ways": 27271
+   },
+   "profile": {
+    "bytes": 2440,
+    "file": "profiles/sea_longbeach.json",
+    "sha256": "93505a79dbaade6b85b3ffe27dee57f611441775eca9badc3e21b84b6bee7e8a"
+   },
+   "sha256": "79a39128ebf12ba4513386b0b34ada2fb2df02634743f224cb8a74762a25f228",
+   "tile_count": 11
+  },
+  "sea_losangeles": {
+   "bbox": [
+    -118.3,
+    33.7,
+    -118.22,
+    33.76
+   ],
+   "bytes": 303010,
+   "counts": {
+    "berth": 5,
+    "breakwater": 25,
+    "building": 28,
+    "coastline": 50,
+    "crane": 7,
+    "pier": 224,
+    "rail": 156,
+    "road": 639,
+    "storage": 44,
+    "terminal": 9,
+    "water": 1
+   },
+   "file": "sea_losangeles.geojson",
+   "generalisation_level": 3,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 289972,
+    "cloud_pct_aoi": 0.0,
+    "file": "imagery/sea_losangeles.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-24",
+    "scene_id": "S2C_MSIL2A_20261024T183431_R027_T11SLT_20261024T214812",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 166425,
+    "relations": 206,
+    "ways": 20078
+   },
+   "profile": {
+    "bytes": 7124,
+    "file": "profiles/sea_losangeles.json",
+    "sha256": "d441351c79fac03b43c2ddf3341ac4cc4bca8d59c432eb6b65840fed6ffa26b4"
+   },
+   "sha256": "26524291ba084b78e916644222342e99792d977ced14f27c6161be5691ea7fe3",
+   "tile_count": 10
+  },
+  "sea_mundra": {
+   "bbox": [
+    69.65,
+    22.7,
+    69.8,
+    22.8
+   ],
+   "bytes": 123727,
+   "counts": {
+    "building": 48,
+    "coastline": 21,
+    "pier": 4,
+    "rail": 75,
+    "road": 235,
+    "storage": 102,
+    "terminal": 5,
+    "water": 1
+   },
+   "file": "sea_mundra.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 328313,
+    "cloud_pct_aoi": 0.22,
+    "file": "imagery/sea_mundra.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-21",
+    "scene_id": "S2B_MSIL2A_20261021T054849_R048_T42QWL_20261021T074706",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 8762,
+    "relations": 13,
+    "ways": 643
+   },
+   "profile": {
+    "bytes": 5051,
+    "file": "profiles/sea_mundra.json",
+    "sha256": "108ac5935856b7e563ae06c5f10b58ab98b0ca8f5d818a3493543d04c28d5c6f"
+   },
+   "sha256": "d54c3bc099d69ff34464b7141fbe99b27d28bd5d5ee7463d6688965148b5bcd6",
+   "tile_count": 6
+  },
+  "sea_newyork": {
+   "bbox": [
+    -74.2,
+    40.64,
+    -74.1,
+    40.74
+   ],
+   "bytes": 338466,
+   "counts": {
+    "breakwater": 4,
+    "building": 20,
+    "coastline": 47,
+    "crane": 6,
+    "fairway": 28,
+    "pier": 116,
+    "rail": 280,
+    "road": 716,
+    "terminal": 11,
+    "water": 6,
+    "yard": 3
+   },
+   "file": "sea_newyork.geojson",
+   "generalisation_level": 6,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 452146,
+    "cloud_pct_aoi": 0.32,
+    "file": "imagery/sea_newyork.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-23",
+    "scene_id": "S2C_MSIL2A_20261023T154311_R011_T18TWL_20261023T184809",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 336910,
+    "relations": 180,
+    "ways": 57563
+   },
+   "profile": {
+    "bytes": 6129,
+    "file": "profiles/sea_newyork.json",
+    "sha256": "155e89717c6dae791261005569656872b0d7e11f47c9c9582da284ef6037e4f8"
+   },
+   "sha256": "6d1a8610bcd01e4bad0d92d9924a1d49e3883b815f3f705fd7365576307d1b9f",
+   "tile_count": 19
+  },
+  "sea_ningbo": {
+   "bbox": [
+    121.84,
+    29.86,
+    121.99,
+    29.96
+   ],
+   "bytes": 344968,
+   "counts": {
+    "building": 91,
+    "coastline": 12,
+    "crane": 36,
+    "pier": 65,
+    "rail": 48,
+    "road": 1019,
+    "storage": 33,
+    "terminal": 4,
+    "water": 20,
+    "yard": 8
+   },
+   "file": "sea_ningbo.geojson",
+   "generalisation_level": 2,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 430106,
+    "cloud_pct_aoi": 1.52,
+    "file": "imagery/sea_ningbo.png",
+    "resolution_m": 10,
+    "scene_date": "2026-07-23",
+    "scene_id": "S2B_MSIL2A_20260723T022529_R046_T51RUP_20260723T043624",
+    "served": true
+   },
+   "note": "Meishan and the Zhoushan island terminals are outside this rectangle.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 23376,
+    "relations": 4,
+    "ways": 2653
+   },
+   "profile": {
+    "bytes": 5998,
+    "file": "profiles/sea_ningbo.json",
+    "sha256": "7a6c41e59e35ef5b380a178d6c3bfcfb3b94c941281f028eb0c67294993d6958"
+   },
+   "sha256": "3cdd83f58d98a3a3894fd44bde87733caa753c5b382dffdb841a0435fd2a48b4",
+   "tile_count": 6
+  },
+  "sea_piraeus": {
+   "bbox": [
+    23.57,
+    37.91,
+    23.67,
+    37.98
+   ],
+   "bytes": 364241,
+   "counts": {
+    "anchorage": 1,
+    "breakwater": 16,
+    "building": 94,
+    "coastline": 64,
+    "crane": 17,
+    "pier": 50,
+    "quay": 2,
+    "rail": 83,
+    "road": 1163,
+    "storage": 30,
+    "terminal": 3,
+    "water": 8,
+    "yard": 2
+   },
+   "file": "sea_piraeus.geojson",
+   "generalisation_level": 2,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 391679,
+    "cloud_pct_aoi": 0.16,
+    "file": "imagery/sea_piraeus.png",
+    "resolution_m": 10,
+    "scene_date": "2026-09-11",
+    "scene_id": "S2B_MSIL2A_20260911T090549_R050_T34SGH_20260911T113151",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 210958,
+    "relations": 136,
+    "ways": 32669
+   },
+   "profile": {
+    "bytes": 4338,
+    "file": "profiles/sea_piraeus.json",
+    "sha256": "4818860f2d36aa1bb6595f12a5693d4cb03214cd99f89bf2e25d1c6f0d3eee15"
+   },
+   "sha256": "d96cc419e9ab27d1b835d07aea1d16380b6caa609c2295a262bbd2c3570b5a97",
+   "tile_count": 13
+  },
+  "sea_portklang": {
+   "bbox": [
+    101.28,
+    2.98,
+    101.43,
+    3.08
+   ],
+   "bytes": 334486,
+   "counts": {
+    "building": 123,
+    "coastline": 53,
+    "pier": 65,
+    "rail": 33,
+    "road": 919,
+    "terminal": 3,
+    "water": 22,
+    "yard": 1
+   },
+   "file": "sea_portklang.geojson",
+   "generalisation_level": 4,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 359432,
+    "cloud_pct_aoi": 0.18,
+    "file": "imagery/sea_portklang.png",
+    "resolution_m": 10,
+    "scene_date": "2026-08-15",
+    "scene_id": "S2C_MSIL2A_20260815T032531_R018_T47NQD_20260815T081814",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 223206,
+    "relations": 52,
+    "ways": 55078
+   },
+   "profile": {
+    "bytes": 3200,
+    "file": "profiles/sea_portklang.json",
+    "sha256": "96a44ec173af91b471049a34e8845655283ab4330660eb58d1d2981d51d90cba"
+   },
+   "sha256": "a1c72a68367cf1ee647ef416556f036ddfe2a3a4742bafa7e56f11e3cc865b37",
+   "tile_count": 15
+  },
+  "sea_portsaid": {
+   "bbox": [
+    32.28,
+    31.2,
+    32.38,
+    31.3
+   ],
+   "bytes": 373168,
+   "counts": {
+    "breakwater": 5,
+    "building": 555,
+    "coastline": 24,
+    "crane": 32,
+    "fairway": 5,
+    "pier": 36,
+    "quay": 1,
+    "rail": 32,
+    "road": 770,
+    "storage": 20,
+    "terminal": 1,
+    "water": 7
+   },
+   "file": "sea_portsaid.geojson",
+   "generalisation_level": 1,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 442009,
+    "cloud_pct_aoi": 0.24,
+    "file": "imagery/sea_portsaid.png",
+    "resolution_m": 10,
+    "scene_date": "2026-09-16",
+    "scene_id": "S2A_MSIL2A_20260916T083521_R021_T36RVV_20260916T132413",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 64224,
+    "relations": 53,
+    "ways": 9057
+   },
+   "profile": {
+    "bytes": 3145,
+    "file": "profiles/sea_portsaid.json",
+    "sha256": "71f76bdf63d61651086acc8e81c8bedd127efaeb7259eb2a07969ece09af6610"
+   },
+   "sha256": "1eac453fc5c3c89702bb8f1d02444daaa642fd4e346de837224a3a48e4c1ffde",
+   "tile_count": 4
+  },
+  "sea_qingdao": {
+   "bbox": [
+    120.16,
+    35.97,
+    120.31,
+    36.07
+   ],
+   "bytes": 344679,
+   "counts": {
+    "breakwater": 7,
+    "building": 214,
+    "coastline": 22,
+    "lock": 1,
+    "pier": 45,
+    "rail": 184,
+    "road": 754,
+    "storage": 1,
+    "terminal": 3,
+    "water": 20,
+    "yard": 20
+   },
+   "file": "sea_qingdao.geojson",
+   "generalisation_level": 3,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 464752,
+    "cloud_pct_aoi": 0.19,
+    "file": "imagery/sea_qingdao.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-21",
+    "scene_id": "S2A_MSIL2A_20261021T024141_R089_T50SQE_20261021T060708",
+    "served": true
+   },
+   "note": "Qianwan container port; Dongjiakou is not mapped.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 46151,
+    "relations": 24,
+    "ways": 6510
+   },
+   "profile": {
+    "bytes": 6959,
+    "file": "profiles/sea_qingdao.json",
+    "sha256": "8b59e6898f8e4ab33c00fbe9e2a34ee3ddfd2ab429b9edeb0fbaa853768fd17f"
+   },
+   "sha256": "a4dbb35f0afe13b5fcbcb45112fe1640aaf07fdce0e32ebfaaced449026d9f62",
+   "tile_count": 6
+  },
+  "sea_rotterdam": {
+   "bbox": [
+    3.92,
+    51.92,
+    4.17,
+    51.98
+   ],
+   "bytes": 378833,
+   "counts": {
+    "berth": 184,
+    "breakwater": 83,
+    "building": 8,
+    "coastline": 1,
+    "crane": 356,
+    "fairway": 8,
+    "pier": 316,
+    "quay": 5,
+    "rail": 160,
+    "road": 365,
+    "storage": 105,
+    "terminal": 17,
+    "water": 38
+   },
+   "file": "sea_rotterdam.geojson",
+   "generalisation_level": 6,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 209617,
+    "cloud_pct_aoi": 0.09,
+    "file": "imagery/sea_rotterdam.png",
+    "resolution_m": 10,
+    "scene_date": "2026-07-28",
+    "scene_id": "S2C_MSIL2A_20260728T104621_R051_T31UET_20260728T144218",
+    "served": true
+   },
+   "note": "Botlek, Waalhaven and the inner-city harbours are outside this rectangle.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 179461,
+    "relations": 150,
+    "ways": 23691
+   },
+   "profile": {
+    "bytes": 10772,
+    "file": "profiles/sea_rotterdam.json",
+    "sha256": "b7f09d9cc0af1e0dcf649297cb44a5a924ab27b7f88849c9f0e39153d9f20a65"
+   },
+   "sha256": "021ef730c351eac8ec5c6eaf4458db2bcf64c5a217b11d697509b6a64e8df9f8",
+   "tile_count": 10
+  },
+  "sea_santos": {
+   "bbox": [
+    -46.4,
+    -24.0,
+    -46.25,
+    -23.9
+   ],
+   "bytes": 323970,
+   "counts": {
+    "anchorage": 1,
+    "berth": 1,
+    "breakwater": 4,
+    "building": 6,
+    "coastline": 41,
+    "crane": 39,
+    "fairway": 3,
+    "pier": 63,
+    "rail": 112,
+    "road": 904,
+    "storage": 2,
+    "terminal": 15,
+    "water": 11,
+    "yard": 5
+   },
+   "file": "sea_santos.geojson",
+   "generalisation_level": 5,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 406101,
+    "cloud_pct_aoi": 0.4,
+    "file": "imagery/sea_santos.png",
+    "resolution_m": 10,
+    "scene_date": "2026-09-04",
+    "scene_id": "S2A_MSIL2A_20260904T131301_R138_T23KLP_20260904T222757",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 107379,
+    "relations": 192,
+    "ways": 17557
+   },
+   "profile": {
+    "bytes": 4398,
+    "file": "profiles/sea_santos.json",
+    "sha256": "30eb93d206c521f1e85ddcdc324c2df633f57afb9dd47888ed1def9b7f7e68b6"
+   },
+   "sha256": "0adc0764c25ee2068c64d4dcb846dd99a7f17c9502f7af70c78b749360b435b2",
+   "tile_count": 6
+  },
+  "sea_savannah": {
+   "bbox": [
+    -81.2,
+    32.08,
+    -81.05,
+    32.16
+   ],
+   "bytes": 357902,
+   "counts": {
+    "breakwater": 8,
+    "building": 82,
+    "crane": 37,
+    "lock": 3,
+    "pier": 110,
+    "rail": 361,
+    "road": 676,
+    "storage": 23,
+    "terminal": 8,
+    "water": 25,
+    "yard": 64
+   },
+   "file": "sea_savannah.geojson",
+   "generalisation_level": 4,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 368507,
+    "cloud_pct_aoi": 0.0,
+    "file": "imagery/sea_savannah.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-24",
+    "scene_id": "S2B_MSIL2A_20261024T160319_R097_T17SMR_20261024T195357",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 135411,
+    "relations": 43,
+    "ways": 19920
+   },
+   "profile": {
+    "bytes": 7230,
+    "file": "profiles/sea_savannah.json",
+    "sha256": "90555b80feabec10d5d67f45499da5ad938a827d6b7a82b22a069e1d38f3a438"
+   },
+   "sha256": "c48e5650ef139b3f4dd4a0ebfd01b80db115694c4d477bf53fb734c959031778",
+   "tile_count": 6
+  },
+  "sea_shanghai": {
+   "bbox": [
+    122.0,
+    30.59,
+    122.1,
+    30.66
+   ],
+   "bytes": 132399,
+   "counts": {
+    "anchorage": 2,
+    "breakwater": 4,
+    "building": 41,
+    "coastline": 20,
+    "crane": 217,
+    "fairway": 1,
+    "pier": 22,
+    "road": 264,
+    "terminal": 2,
+    "water": 4
+   },
+   "file": "sea_shanghai.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 429248,
+    "cloud_pct_aoi": 4.19,
+    "file": "imagery/sea_shanghai.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-11",
+    "scene_id": "S2B_MSIL2A_20261011T022619_R046_T51RVP_20261011T044410",
+    "served": true
+   },
+   "note": "Yangshan phases I-IV only; Waigaoqiao and Wusongkou are separate sites not mapped here. The graph place point is the Huangpu river city centre.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 7943,
+    "relations": 5,
+    "ways": 613
+   },
+   "profile": {
+    "bytes": 3475,
+    "file": "profiles/sea_shanghai.json",
+    "sha256": "39359f9b30cc05b40e5399483397531ba5506a5692cc37052f505b6d92157a65"
+   },
+   "sha256": "79790d803ac2ccf0554164ca609df5eba5c0ddc8b9d066c1a2220e473f37ede0",
+   "tile_count": 4
+  },
+  "sea_shenzhen": {
+   "bbox": [
+    114.2,
+    22.54,
+    114.3,
+    22.6
+   ],
+   "bytes": 379085,
+   "counts": {
+    "breakwater": 1,
+    "building": 423,
+    "coastline": 42,
+    "crane": 2,
+    "pier": 8,
+    "rail": 6,
+    "road": 760,
+    "terminal": 1,
+    "water": 17,
+    "yard": 1
+   },
+   "file": "sea_shenzhen.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 344048,
+    "cloud_pct_aoi": 0.02,
+    "file": "imagery/sea_shenzhen.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-07",
+    "scene_id": "S2A_MSIL2A_20261007T030151_R032_T50QKL_20261007T062706",
+    "served": true
+   },
+   "note": "Yantian only; Shekou, Chiwan, Mawan and Dachan Bay (west Shenzhen) are separate sites not mapped here.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 67239,
+    "relations": 46,
+    "ways": 5543
+   },
+   "profile": {
+    "bytes": 3202,
+    "file": "profiles/sea_shenzhen.json",
+    "sha256": "26ff65b068773324cacc1cc1b75ea72f9539b122f48669e5bd7b1fcbd869b5e2"
+   },
+   "sha256": "b3b1926af0384e922bd1a0630164a32ca4dbae583810444c69b4c51732a61478",
+   "tile_count": 4
+  },
+  "sea_singapore": {
+   "bbox": [
+    103.74,
+    1.25,
+    103.89,
+    1.3
+   ],
+   "bytes": 325913,
+   "counts": {
+    "anchorage": 4,
+    "breakwater": 6,
+    "building": 63,
+    "coastline": 79,
+    "crane": 140,
+    "fairway": 30,
+    "lock": 1,
+    "pier": 133,
+    "road": 758,
+    "storage": 3,
+    "terminal": 11,
+    "water": 14,
+    "yard": 3
+   },
+   "file": "sea_singapore.geojson",
+   "generalisation_level": 4,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 178136,
+    "cloud_pct_aoi": 7.95,
+    "file": "imagery/sea_singapore.png",
+    "resolution_m": 10,
+    "scene_date": "2026-09-03",
+    "scene_id": "S2A_MSIL2A_20260903T032151_R118_T48NUG_20260903T095209",
+    "served": true
+   },
+   "note": "Tuas and Jurong Port are outside this rectangle.",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 278022,
+    "relations": 383,
+    "ways": 52304
+   },
+   "profile": {
+    "bytes": 7563,
+    "file": "profiles/sea_singapore.json",
+    "sha256": "e93e3246880b29f2b1f8a7bd780c1d469cd4d96779dd1179619e0be8985ecc8c"
+   },
+   "sha256": "0a7ba6c8ad0d26491d3ef98626028387b074ee2dc04cee2b76c955cb412c5afc",
+   "tile_count": 15
+  },
+  "sea_taicang": {
+   "bbox": [
+    121.15,
+    31.55,
+    121.3,
+    31.65
+   ],
+   "bytes": 218819,
+   "counts": {
+    "building": 228,
+    "coastline": 5,
+    "lock": 1,
+    "pier": 12,
+    "rail": 16,
+    "road": 649,
+    "terminal": 5,
+    "water": 7
+   },
+   "file": "sea_taicang.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 437655,
+    "cloud_pct_aoi": 3.28,
+    "file": "imagery/sea_taicang.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-14",
+    "scene_id": "S2B_MSIL2A_20261014T023639_R089_T51SUR_20261014T044615",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 20452,
+    "relations": 4,
+    "ways": 1907
+   },
+   "profile": {
+    "bytes": 4178,
+    "file": "profiles/sea_taicang.json",
+    "sha256": "277aeaf11956658aedbfafc40b7dde3fe955819297c92cae8f0da0c20f93ed31"
+   },
+   "sha256": "7e1139efa0263e3af2d1bbcd83336d4ca8e1f4e474192ef83247aeb0ecddf213",
+   "tile_count": 6
+  },
+  "sea_tangermed": {
+   "bbox": [
+    -5.55,
+    35.85,
+    -5.42,
+    35.92
+   ],
+   "bytes": 224384,
+   "counts": {
+    "breakwater": 14,
+    "building": 94,
+    "coastline": 10,
+    "crane": 51,
+    "pier": 28,
+    "rail": 40,
+    "road": 582,
+    "storage": 21,
+    "terminal": 5,
+    "water": 1
+   },
+   "file": "sea_tangermed.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 350300,
+    "cloud_pct_aoi": 0.4,
+    "file": "imagery/sea_tangermed.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-22",
+    "scene_id": "S2C_MSIL2A_20261022T111111_R137_T30STE_20261022T144304",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 43546,
+    "relations": 13,
+    "ways": 4128
+   },
+   "profile": {
+    "bytes": 5311,
+    "file": "profiles/sea_tangermed.json",
+    "sha256": "d44c7b80094ed23b66fc509c7a3ab65d6afdc15dfcdfb53f213f35bc8b4d0ce3"
+   },
+   "sha256": "79da0db0d5ab366208dfb92781af29517e54ac6152ab3f4c8378ab2043196a1e",
+   "tile_count": 6
+  },
+  "sea_tanjungpelepas": {
+   "bbox": [
+    103.5,
+    1.31,
+    103.6,
+    1.38
+   ],
+   "bytes": 306112,
+   "counts": {
+    "building": 284,
+    "coastline": 19,
+    "crane": 3,
+    "fairway": 4,
+    "pier": 15,
+    "rail": 7,
+    "road": 783,
+    "terminal": 1,
+    "water": 37
+   },
+   "file": "sea_tanjungpelepas.geojson",
+   "generalisation_level": 0,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 368215,
+    "cloud_pct_aoi": 3.05,
+    "file": "imagery/sea_tanjungpelepas.png",
+    "resolution_m": 10,
+    "scene_date": "2026-09-26",
+    "scene_id": "S2B_MSIL2A_20260926T031539_R118_T48NUG_20260926T070338",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 35076,
+    "relations": 15,
+    "ways": 4119
+   },
+   "profile": {
+    "bytes": 3058,
+    "file": "profiles/sea_tanjungpelepas.json",
+    "sha256": "49ce669fc375a310bede49d70189e0e83d429e9b9ad639be26176344005c001a"
+   },
+   "sha256": "64497bb1dba75780b363564401979c4f483d53ecdd50acdf344bf1ae2bb139a1",
+   "tile_count": 4
+  },
+  "sea_tianjin": {
+   "bbox": [
+    117.72,
+    38.95,
+    117.82,
+    39.02
+   ],
+   "bytes": 373945,
+   "counts": {
+    "building": 340,
+    "coastline": 4,
+    "crane": 135,
+    "pier": 32,
+    "rail": 291,
+    "road": 465,
+    "storage": 286,
+    "terminal": 4,
+    "water": 6
+   },
+   "file": "sea_tianjin.geojson",
+   "generalisation_level": 1,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 414954,
+    "cloud_pct_aoi": 0.13,
+    "file": "imagery/sea_tianjin.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-15",
+    "scene_id": "S2C_MSIL2A_20261015T025701_R032_T50SNJ_20261015T064713",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 20289,
+    "relations": 4,
+    "ways": 2573
+   },
+   "profile": {
+    "bytes": 3593,
+    "file": "profiles/sea_tianjin.json",
+    "sha256": "93e39a17df4544af8d5c759b73e5ae3390a99f0782ed8cb8ed048da836843feb"
+   },
+   "sha256": "2dcbb9cec673e367b10fbd7c570a68aa273cd7856dc3154d7ea056c056d7d0dd",
+   "tile_count": 4
+  },
+  "sea_valencia": {
+   "bbox": [
+    -0.35,
+    39.42,
+    -0.25,
+    39.48
+   ],
+   "bytes": 268001,
+   "counts": {
+    "breakwater": 29,
+    "building": 134,
+    "coastline": 41,
+    "crane": 1,
+    "pier": 124,
+    "quay": 13,
+    "rail": 51,
+    "road": 625,
+    "storage": 30,
+    "terminal": 4,
+    "water": 4
+   },
+   "file": "sea_valencia.geojson",
+   "generalisation_level": 2,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 307704,
+    "cloud_pct_aoi": 0.29,
+    "file": "imagery/sea_valencia.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-21",
+    "scene_id": "S2B_MSIL2A_20261021T105059_R051_T31SBD_20261021T132221",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 171701,
+    "relations": 879,
+    "ways": 36041
+   },
+   "profile": {
+    "bytes": 4686,
+    "file": "profiles/sea_valencia.json",
+    "sha256": "35ebc402a6d0108c65a3b6d94ad2d240ffc6b84622f8615097ec1e4807190b11"
+   },
+   "sha256": "149556d2056495d6d0e54721c1e823033d107c918f87b9f321925ed831b731b4",
+   "tile_count": 13
+  },
+  "sea_xiamen": {
+   "bbox": [
+    118.02,
+    24.43,
+    118.12,
+    24.5
+   ],
+   "bytes": 361996,
+   "counts": {
+    "anchorage": 1,
+    "building": 90,
+    "coastline": 28,
+    "crane": 63,
+    "pier": 157,
+    "rail": 20,
+    "road": 926,
+    "storage": 13,
+    "terminal": 8,
+    "water": 18
+   },
+   "file": "sea_xiamen.geojson",
+   "generalisation_level": 3,
+   "imagery": {
+    "basis": "SOURCED",
+    "bytes": 410289,
+    "cloud_pct_aoi": 0.9,
+    "file": "imagery/sea_xiamen.png",
+    "resolution_m": 10,
+    "scene_date": "2026-10-19",
+    "scene_id": "S2C_MSIL2A_20261019T023721_R089_T50RPN_20261019T060516",
+    "served": true
+   },
+   "note": "",
+   "osm_retrieved": "2026-10-25",
+   "osm_stats": {
+    "nodes": 66011,
+    "relations": 81,
+    "ways": 8249
+   },
+   "profile": {
+    "bytes": 4785,
+    "file": "profiles/sea_xiamen.json",
+    "sha256": "e107159e40482d2ac244efc1c562512349ae1c31c4a036812008eb157e958652"
+   },
+   "sha256": "4a1ce50e5198178f195980e9c0e6a3a5a20828951be2fc56cb2d8b481408f984",
+   "tile_count": 4
+  }
+ },
+ "schema": "port-geo-manifest/1",
+ "source": "OpenStreetMap API 0.6 /map, tiled, cached"
+}

@@ -1,0 +1,1467 @@
+{
+ "baselines": {
+  "k_hop": {
+   "budget_places": 1,
+   "description": "directed k-hop from the seed, whole hop levels, same place budget as the model's predicted-down count; direction + rank only",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.292402,
+     1.0
+    ],
+    "graded": 3,
+    "hits": 3,
+    "rate": 1.0
+   },
+   "k": 0,
+   "magnitude": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "onset": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "rank_correlation": {
+    "graded": false,
+    "n": 3,
+    "note": "UNGRADED - fewer than 4 places with variation on both sides",
+    "spearman": null
+   },
+   "ungraded": []
+  },
+  "persistence": {
+   "description": "nothing changes: flat, 0 pp, no onset",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.094299,
+     0.991596
+    ],
+    "graded": 3,
+    "hits": 2,
+    "rate": 0.666667
+   },
+   "magnitude": {
+    "ci95_clopper_pearson": [
+     0.094299,
+     0.991596
+    ],
+    "graded": 3,
+    "hits": 2,
+    "rate": 0.666667
+   },
+   "onset": {
+    "ci95_clopper_pearson": [
+     0.0,
+     0.975
+    ],
+    "false_alarms": 0,
+    "graded": 1,
+    "hits": 0,
+    "mean_abs_error_d": null,
+    "n_with_both": 0,
+    "rate": 0.0
+   },
+   "rank_correlation": {
+    "graded": false,
+    "n": 3,
+    "note": "UNGRADED - fewer than 4 places with variation on both sides",
+    "spearman": null
+   },
+   "ungraded": []
+  }
+ },
+ "card_id": "real_cdb34aec6b97ef30",
+ "caveats": [
+  "A few events prove the machinery, not the forecasting power: every rate here rests on a handful of places for one or two events. One graded place moves a hit rate by tens of points. Read these as a worked, auditable comparison, not a skill estimate. The simulator's traffic is modelled from lane structure, not the historical fleet."
+ ],
+ "comparisons": {
+  "direction_vs_k_hop": "model 1/3 vs k_hop 3/3",
+  "direction_vs_persistence": "model 1/3 vs persistence 2/3",
+  "magnitude_vs_persistence": "model 2/3 vs persistence 2/3",
+  "onset_vs_persistence": "model 1/1 vs persistence 0/1"
+ },
+ "event": {
+  "capacity_loss": 1.0,
+  "capacity_loss_basis": {
+   "kind": "sourced",
+   "source": "data/sim_backtest/preregistration.md (dated facts)",
+   "text": "Grounding 2021-03-23T05:40Z (BBC via Sentinel Vision EVT-839) to refloat 2021-03-29T13:05Z (Boskalis press release, 29 Mar 2021) = 6 d 7 h 25 m = 6.31 d. Full closure: the canal was physically blocked by the grounded vessel."
+  },
+  "control_places": [
+   "chk_malacca"
+  ],
+  "dedupe_key": "curated_replay:ever_given",
+  "detected_at": "2021-03-23T05:40:00Z",
+  "event_id": "evt_20210323_chk_suez_closure_1193f948",
+  "evidence_url": "data/sim_backtest/preregistration.md (dated facts)",
+  "expected_duration_d": 6.31,
+  "historical": true,
+  "id": "evt_20210323_chk_suez_closure_1193f948",
+  "kind": "closure",
+  "mode": "SNAPSHOT",
+  "node_id": "chk_suez",
+  "provenance": {
+   "mode": "SNAPSHOT",
+   "retrieved_at": "2026-10-20T00:00:00Z",
+   "source": "SupermAP curated replay record (data/sim_backtest/run_configs.json)"
+  },
+  "replay_id": "ever_given",
+  "retrieved_at": "2026-10-20T00:00:00Z",
+  "severity": 5,
+  "source": "SupermAP curated replay record (data/sim_backtest/run_configs.json)",
+  "started_at": "2021-03-23T05:40:00Z",
+  "status": "resolved",
+  "title": "Ever Given / Suez Canal closure, Mar 2021",
+  "watch_context": "Suez blocked 6.3 days.",
+  "watch_places": [
+   "chk_suez",
+   "chk_capeofgoodhope"
+  ]
+ },
+ "forked_from": {
+  "events": [
+   {
+    "event_id": "evt_20210323_chk_suez_closure_1193f948",
+    "kind": "closure",
+    "mode": "SNAPSHOT",
+    "node_id": "chk_suez",
+    "provenance": {
+     "mode": "SNAPSHOT",
+     "retrieved_at": "2026-10-20T00:00:00Z",
+     "source": "SupermAP curated replay record (data/sim_backtest/run_configs.json)"
+    },
+    "replay_id": "ever_given",
+    "source": "SupermAP curated replay record (data/sim_backtest/run_configs.json)",
+    "started_at": "2021-03-23T05:40:00Z"
+   }
+  ],
+  "kind": "history_fork",
+  "label": "FORKED FROM HISTORY — the request below is derived from a recorded (SNAPSHOT) or inferred (MODELED) event; whatever runs from it is SIMULATED and must be labelled so.",
+  "lineage_id": "fork_db6ddc340c5c021f",
+  "matched_by": "event (place + start)",
+  "simulated_outputs_are": "SIMULATED (MODELED engine/sim output); inputs are HISTORICAL (SNAPSHOT/MODELED)",
+  "window": {
+   "from": "2021-03-23",
+   "to": "2021-03-29"
+  }
+ },
+ "grader": "deterministic arithmetic; no LLM at any step",
+ "headline": {
+  "comparisons": {
+   "direction_vs_k_hop": "model 1/3 vs k_hop 3/3",
+   "direction_vs_persistence": "model 1/3 vs persistence 2/3",
+   "magnitude_vs_persistence": "model 2/3 vs persistence 2/3",
+   "onset_vs_persistence": "model 1/1 vs persistence 0/1"
+  },
+  "direction": {
+   "k_hop": "3/3",
+   "model": "1/3",
+   "persistence": "2/3"
+  },
+  "magnitude": {
+   "model": "2/3",
+   "persistence": "2/3"
+  },
+  "onset": {
+   "model": "1/1",
+   "model_mean_abs_error_d": 0.0,
+   "persistence": "0/1"
+  },
+  "rank_correlation": {
+   "k_hop": null,
+   "model": null
+  }
+ },
+ "label": "BACKTEST — historical outcome vs a SIMULATED outcome. Not the live Ledger; these numbers never mix with Ledger grades.",
+ "metrics": {
+  "direction": {
+   "ci95_clopper_pearson": [
+    0.008404,
+    0.905701
+   ],
+   "graded": 3,
+   "hits": 1,
+   "rate": 0.333333
+  },
+  "magnitude": {
+   "ci95_clopper_pearson": [
+    0.094299,
+    0.991596
+   ],
+   "graded": 3,
+   "hits": 2,
+   "rate": 0.666667
+  },
+  "onset": {
+   "ci95_clopper_pearson": [
+    0.025,
+    1.0
+   ],
+   "false_alarms": 0,
+   "graded": 1,
+   "hits": 1,
+   "mean_abs_error_d": 0.0,
+   "n_with_both": 1,
+   "rate": 1.0
+  },
+  "rank_correlation": {
+   "graded": false,
+   "n": 3,
+   "note": "UNGRADED - fewer than 4 places with variation on both sides",
+   "spearman": null
+  },
+  "ungraded": []
+ },
+ "not_compared": [],
+ "notes": [
+  "Suez blocked 6.3 days."
+ ],
+ "observed_provenance": [
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "ee1623a24559ace8d24aca8d676c2251adc517f8c436b11c799529c931e029be",
+   "place": "chk_suez",
+   "retrieved_at": "2026-10-25T00:44:33Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "365048de913cc5eda114f134adf05a310e2b5812a5aa505690f1d1e0646a726c",
+   "place": "chk_capeofgoodhope",
+   "retrieved_at": "2026-10-25T00:44:33Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "04cdab8be9c2deb41a4220515ac9e86eb4263be53d02db6a8fb033417e1e89ef",
+   "place": "chk_malacca",
+   "retrieved_at": "2026-10-25T00:44:34Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  }
+ ],
+ "places": [
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 0,
+    "onset_lag_d": null,
+    "severity": -0.0
+   },
+   "model": {
+    "change_pct": -83.871,
+    "direction": "down",
+    "onset_date": "2021-03-23",
+    "onset_lag_d": 0,
+    "severity": 83.871,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 4.4286,
+    "sim_eval_mean": 0.7143,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 57.1786,
+    "change_pct": -71.268,
+    "direction": "down",
+    "eval_days_present": 7,
+    "eval_mean": 16.4286,
+    "onset_date": "2021-03-23",
+    "onset_lag_d": 0
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_suez",
+   "role": "seed"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 2,
+    "onset_lag_d": null,
+    "severity": -2.0
+   },
+   "model": {
+    "change_pct": 40.0,
+    "direction": "up",
+    "onset_date": null,
+    "onset_lag_d": null,
+    "severity": 0.0,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 1.4286,
+    "sim_eval_mean": 2.0,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 48.5,
+    "change_pct": 3.387,
+    "direction": "flat",
+    "eval_days_present": 7,
+    "eval_mean": 50.1429,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_capeofgoodhope",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 5,
+    "onset_lag_d": null,
+    "severity": -5.0
+   },
+   "model": {
+    "change_pct": 16.092,
+    "direction": "up",
+    "onset_date": null,
+    "onset_lag_d": null,
+    "severity": 0.0,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 12.4286,
+    "sim_eval_mean": 14.4286,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 159.0714,
+    "change_pct": -0.494,
+    "direction": "flat",
+    "eval_days_present": 7,
+    "eval_mean": 158.2857,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_malacca",
+   "role": "control"
+  }
+ ],
+ "rule": {
+  "baseline_days": 28,
+  "baseline_min_days": 14,
+  "denominators": {
+   "direction": "compared places with an observed and a predicted direction",
+   "magnitude": "compared places with an observed and a predicted change",
+   "onset": "compared places with an observed onset",
+   "rank": "compared places with an observed and a predicted severity"
+  },
+  "evaluation_period": "[max(from, event start), min(to, event start + ceil(duration_d) - 1)] - the disruption's own stated duration, clipped to the window / sim horizon",
+  "flat_band_pct": 10.0,
+  "grader": "deterministic arithmetic; no LLM at any step",
+  "id": "realism-v1",
+  "magnitude_band_pp": 20.0,
+  "observed_series": "IMF PortWatch daily counts (SNAPSHOT history)",
+  "onset": {
+   "hit_within_days": 7,
+   "sustain_days": 3,
+   "threshold_pct": -20.0
+  },
+  "rank": {
+   "min_places": 4,
+   "statistic": "Spearman"
+  },
+  "sim_baseline_min_days": 7,
+  "ungraded_is": "never a hit, never a miss, never estimated"
+ },
+ "run": {
+  "kind": "sim",
+  "prediction_digest": {
+   "disruptions": [
+    {
+     "capacity_loss": 1.0,
+     "duration_d": 6.31,
+     "kind": "closure",
+     "node_id": "chk_suez",
+     "shape": "step",
+     "started_at": "2021-03-23T05:40:00Z"
+    }
+   ],
+   "event": {
+    "capacity_loss": 1.0,
+    "duration_d": 6.31,
+    "kind": "closure",
+    "node_id": "chk_suez",
+    "shape": "step",
+    "started_at": "2021-03-23T05:40:00Z"
+   },
+   "kind": "sim",
+   "metric": "berth calls per day (sim 'berth' segments at the node)",
+   "run_id": "sim_23c72ec6ab45bff6",
+   "seed": 42,
+   "start_at": "2021-03-09T00:00:00Z",
+   "tick": "day",
+   "ticks": 35,
+   "unavailable": {},
+   "weather": "off"
+  },
+  "run_id": "sim_23c72ec6ab45bff6",
+  "stream_hash": null
+ },
+ "schema": "supermap.realism_card.v1",
+ "series": {
+  "chk_capeofgoodhope": {
+   "observed": [
+    [
+     "2021-02-23",
+     38
+    ],
+    [
+     "2021-02-24",
+     59
+    ],
+    [
+     "2021-02-25",
+     56
+    ],
+    [
+     "2021-02-26",
+     52
+    ],
+    [
+     "2021-02-27",
+     41
+    ],
+    [
+     "2021-02-28",
+     47
+    ],
+    [
+     "2021-03-01",
+     57
+    ],
+    [
+     "2021-03-02",
+     57
+    ],
+    [
+     "2021-03-03",
+     55
+    ],
+    [
+     "2021-03-04",
+     52
+    ],
+    [
+     "2021-03-05",
+     44
+    ],
+    [
+     "2021-03-06",
+     45
+    ],
+    [
+     "2021-03-07",
+     43
+    ],
+    [
+     "2021-03-08",
+     49
+    ],
+    [
+     "2021-03-09",
+     41
+    ],
+    [
+     "2021-03-10",
+     56
+    ],
+    [
+     "2021-03-11",
+     60
+    ],
+    [
+     "2021-03-12",
+     46
+    ],
+    [
+     "2021-03-13",
+     41
+    ],
+    [
+     "2021-03-14",
+     45
+    ],
+    [
+     "2021-03-15",
+     40
+    ],
+    [
+     "2021-03-16",
+     46
+    ],
+    [
+     "2021-03-17",
+     48
+    ],
+    [
+     "2021-03-18",
+     63
+    ],
+    [
+     "2021-03-19",
+     50
+    ],
+    [
+     "2021-03-20",
+     45
+    ],
+    [
+     "2021-03-21",
+     52
+    ],
+    [
+     "2021-03-22",
+     30
+    ],
+    [
+     "2021-03-23",
+     51
+    ],
+    [
+     "2021-03-24",
+     49
+    ],
+    [
+     "2021-03-25",
+     55
+    ],
+    [
+     "2021-03-26",
+     46
+    ],
+    [
+     "2021-03-27",
+     47
+    ],
+    [
+     "2021-03-28",
+     53
+    ],
+    [
+     "2021-03-29",
+     50
+    ],
+    [
+     "2021-03-30",
+     39
+    ],
+    [
+     "2021-03-31",
+     43
+    ],
+    [
+     "2021-04-01",
+     52
+    ],
+    [
+     "2021-04-02",
+     57
+    ],
+    [
+     "2021-04-03",
+     57
+    ],
+    [
+     "2021-04-04",
+     57
+    ],
+    [
+     "2021-04-05",
+     37
+    ],
+    [
+     "2021-04-06",
+     50
+    ],
+    [
+     "2021-04-07",
+     70
+    ],
+    [
+     "2021-04-08",
+     55
+    ],
+    [
+     "2021-04-09",
+     52
+    ],
+    [
+     "2021-04-10",
+     62
+    ],
+    [
+     "2021-04-11",
+     39
+    ],
+    [
+     "2021-04-12",
+     55
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-03-09",
+     0.0
+    ],
+    [
+     "2021-03-10",
+     2.0
+    ],
+    [
+     "2021-03-11",
+     1.0
+    ],
+    [
+     "2021-03-12",
+     2.0
+    ],
+    [
+     "2021-03-13",
+     1.0
+    ],
+    [
+     "2021-03-14",
+     3.0
+    ],
+    [
+     "2021-03-15",
+     1.0
+    ],
+    [
+     "2021-03-16",
+     1.0
+    ],
+    [
+     "2021-03-17",
+     3.0
+    ],
+    [
+     "2021-03-18",
+     0.0
+    ],
+    [
+     "2021-03-19",
+     1.0
+    ],
+    [
+     "2021-03-20",
+     3.0
+    ],
+    [
+     "2021-03-21",
+     1.0
+    ],
+    [
+     "2021-03-22",
+     1.0
+    ],
+    [
+     "2021-03-23",
+     2.0
+    ],
+    [
+     "2021-03-24",
+     1.0
+    ],
+    [
+     "2021-03-25",
+     2.0
+    ],
+    [
+     "2021-03-26",
+     1.0
+    ],
+    [
+     "2021-03-27",
+     3.0
+    ],
+    [
+     "2021-03-28",
+     1.0
+    ],
+    [
+     "2021-03-29",
+     4.0
+    ],
+    [
+     "2021-03-30",
+     2.0
+    ],
+    [
+     "2021-03-31",
+     3.0
+    ],
+    [
+     "2021-04-01",
+     2.0
+    ],
+    [
+     "2021-04-02",
+     2.0
+    ],
+    [
+     "2021-04-03",
+     5.0
+    ],
+    [
+     "2021-04-04",
+     0.0
+    ],
+    [
+     "2021-04-05",
+     5.0
+    ],
+    [
+     "2021-04-06",
+     1.0
+    ],
+    [
+     "2021-04-07",
+     1.0
+    ],
+    [
+     "2021-04-08",
+     4.0
+    ],
+    [
+     "2021-04-09",
+     2.0
+    ],
+    [
+     "2021-04-10",
+     3.0
+    ],
+    [
+     "2021-04-11",
+     2.0
+    ],
+    [
+     "2021-04-12",
+     1.0
+    ]
+   ]
+  },
+  "chk_malacca": {
+   "observed": [
+    [
+     "2021-02-23",
+     146
+    ],
+    [
+     "2021-02-24",
+     134
+    ],
+    [
+     "2021-02-25",
+     179
+    ],
+    [
+     "2021-02-26",
+     156
+    ],
+    [
+     "2021-02-27",
+     215
+    ],
+    [
+     "2021-02-28",
+     173
+    ],
+    [
+     "2021-03-01",
+     159
+    ],
+    [
+     "2021-03-02",
+     187
+    ],
+    [
+     "2021-03-03",
+     149
+    ],
+    [
+     "2021-03-04",
+     139
+    ],
+    [
+     "2021-03-05",
+     147
+    ],
+    [
+     "2021-03-06",
+     131
+    ],
+    [
+     "2021-03-07",
+     148
+    ],
+    [
+     "2021-03-08",
+     158
+    ],
+    [
+     "2021-03-09",
+     130
+    ],
+    [
+     "2021-03-10",
+     158
+    ],
+    [
+     "2021-03-11",
+     147
+    ],
+    [
+     "2021-03-12",
+     165
+    ],
+    [
+     "2021-03-13",
+     123
+    ],
+    [
+     "2021-03-14",
+     166
+    ],
+    [
+     "2021-03-15",
+     186
+    ],
+    [
+     "2021-03-16",
+     157
+    ],
+    [
+     "2021-03-17",
+     169
+    ],
+    [
+     "2021-03-18",
+     177
+    ],
+    [
+     "2021-03-19",
+     174
+    ],
+    [
+     "2021-03-20",
+     153
+    ],
+    [
+     "2021-03-21",
+     165
+    ],
+    [
+     "2021-03-22",
+     163
+    ],
+    [
+     "2021-03-23",
+     157
+    ],
+    [
+     "2021-03-24",
+     176
+    ],
+    [
+     "2021-03-25",
+     143
+    ],
+    [
+     "2021-03-26",
+     139
+    ],
+    [
+     "2021-03-27",
+     158
+    ],
+    [
+     "2021-03-28",
+     162
+    ],
+    [
+     "2021-03-29",
+     173
+    ],
+    [
+     "2021-03-30",
+     149
+    ],
+    [
+     "2021-03-31",
+     181
+    ],
+    [
+     "2021-04-01",
+     180
+    ],
+    [
+     "2021-04-02",
+     174
+    ],
+    [
+     "2021-04-03",
+     176
+    ],
+    [
+     "2021-04-04",
+     146
+    ],
+    [
+     "2021-04-05",
+     168
+    ],
+    [
+     "2021-04-06",
+     180
+    ],
+    [
+     "2021-04-07",
+     187
+    ],
+    [
+     "2021-04-08",
+     194
+    ],
+    [
+     "2021-04-09",
+     188
+    ],
+    [
+     "2021-04-10",
+     188
+    ],
+    [
+     "2021-04-11",
+     190
+    ],
+    [
+     "2021-04-12",
+     193
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-03-09",
+     13.0
+    ],
+    [
+     "2021-03-10",
+     8.0
+    ],
+    [
+     "2021-03-11",
+     14.0
+    ],
+    [
+     "2021-03-12",
+     12.0
+    ],
+    [
+     "2021-03-13",
+     11.0
+    ],
+    [
+     "2021-03-14",
+     13.0
+    ],
+    [
+     "2021-03-15",
+     15.0
+    ],
+    [
+     "2021-03-16",
+     10.0
+    ],
+    [
+     "2021-03-17",
+     14.0
+    ],
+    [
+     "2021-03-18",
+     11.0
+    ],
+    [
+     "2021-03-19",
+     17.0
+    ],
+    [
+     "2021-03-20",
+     11.0
+    ],
+    [
+     "2021-03-21",
+     11.0
+    ],
+    [
+     "2021-03-22",
+     14.0
+    ],
+    [
+     "2021-03-23",
+     16.0
+    ],
+    [
+     "2021-03-24",
+     12.0
+    ],
+    [
+     "2021-03-25",
+     15.0
+    ],
+    [
+     "2021-03-26",
+     14.0
+    ],
+    [
+     "2021-03-27",
+     16.0
+    ],
+    [
+     "2021-03-28",
+     14.0
+    ],
+    [
+     "2021-03-29",
+     14.0
+    ],
+    [
+     "2021-03-30",
+     17.0
+    ],
+    [
+     "2021-03-31",
+     14.0
+    ],
+    [
+     "2021-04-01",
+     18.0
+    ],
+    [
+     "2021-04-02",
+     14.0
+    ],
+    [
+     "2021-04-03",
+     18.0
+    ],
+    [
+     "2021-04-04",
+     17.0
+    ],
+    [
+     "2021-04-05",
+     15.0
+    ],
+    [
+     "2021-04-06",
+     16.0
+    ],
+    [
+     "2021-04-07",
+     16.0
+    ],
+    [
+     "2021-04-08",
+     15.0
+    ],
+    [
+     "2021-04-09",
+     17.0
+    ],
+    [
+     "2021-04-10",
+     15.0
+    ],
+    [
+     "2021-04-11",
+     17.0
+    ],
+    [
+     "2021-04-12",
+     15.0
+    ]
+   ]
+  },
+  "chk_suez": {
+   "observed": [
+    [
+     "2021-02-23",
+     62
+    ],
+    [
+     "2021-02-24",
+     50
+    ],
+    [
+     "2021-02-25",
+     65
+    ],
+    [
+     "2021-02-26",
+     65
+    ],
+    [
+     "2021-02-27",
+     43
+    ],
+    [
+     "2021-02-28",
+     64
+    ],
+    [
+     "2021-03-01",
+     64
+    ],
+    [
+     "2021-03-02",
+     51
+    ],
+    [
+     "2021-03-03",
+     65
+    ],
+    [
+     "2021-03-04",
+     58
+    ],
+    [
+     "2021-03-05",
+     61
+    ],
+    [
+     "2021-03-06",
+     54
+    ],
+    [
+     "2021-03-07",
+     65
+    ],
+    [
+     "2021-03-08",
+     57
+    ],
+    [
+     "2021-03-09",
+     69
+    ],
+    [
+     "2021-03-10",
+     61
+    ],
+    [
+     "2021-03-11",
+     56
+    ],
+    [
+     "2021-03-12",
+     54
+    ],
+    [
+     "2021-03-13",
+     50
+    ],
+    [
+     "2021-03-14",
+     58
+    ],
+    [
+     "2021-03-15",
+     52
+    ],
+    [
+     "2021-03-16",
+     57
+    ],
+    [
+     "2021-03-17",
+     47
+    ],
+    [
+     "2021-03-18",
+     51
+    ],
+    [
+     "2021-03-19",
+     61
+    ],
+    [
+     "2021-03-20",
+     54
+    ],
+    [
+     "2021-03-21",
+     48
+    ],
+    [
+     "2021-03-22",
+     59
+    ],
+    [
+     "2021-03-23",
+     38
+    ],
+    [
+     "2021-03-24",
+     14
+    ],
+    [
+     "2021-03-25",
+     2
+    ],
+    [
+     "2021-03-26",
+     9
+    ],
+    [
+     "2021-03-27",
+     9
+    ],
+    [
+     "2021-03-28",
+     10
+    ],
+    [
+     "2021-03-29",
+     33
+    ],
+    [
+     "2021-03-30",
+     65
+    ],
+    [
+     "2021-03-31",
+     63
+    ],
+    [
+     "2021-04-01",
+     77
+    ],
+    [
+     "2021-04-02",
+     77
+    ],
+    [
+     "2021-04-03",
+     88
+    ],
+    [
+     "2021-04-04",
+     87
+    ],
+    [
+     "2021-04-05",
+     48
+    ],
+    [
+     "2021-04-06",
+     78
+    ],
+    [
+     "2021-04-07",
+     69
+    ],
+    [
+     "2021-04-08",
+     77
+    ],
+    [
+     "2021-04-09",
+     88
+    ],
+    [
+     "2021-04-10",
+     69
+    ],
+    [
+     "2021-04-11",
+     68
+    ],
+    [
+     "2021-04-12",
+     45
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-03-09",
+     6.0
+    ],
+    [
+     "2021-03-10",
+     2.0
+    ],
+    [
+     "2021-03-11",
+     5.0
+    ],
+    [
+     "2021-03-12",
+     5.0
+    ],
+    [
+     "2021-03-13",
+     4.0
+    ],
+    [
+     "2021-03-14",
+     4.0
+    ],
+    [
+     "2021-03-15",
+     7.0
+    ],
+    [
+     "2021-03-16",
+     4.0
+    ],
+    [
+     "2021-03-17",
+     3.0
+    ],
+    [
+     "2021-03-18",
+     5.0
+    ],
+    [
+     "2021-03-19",
+     5.0
+    ],
+    [
+     "2021-03-20",
+     4.0
+    ],
+    [
+     "2021-03-21",
+     4.0
+    ],
+    [
+     "2021-03-22",
+     4.0
+    ],
+    [
+     "2021-03-23",
+     1.0
+    ],
+    [
+     "2021-03-24",
+     0.0
+    ],
+    [
+     "2021-03-25",
+     0.0
+    ],
+    [
+     "2021-03-26",
+     0.0
+    ],
+    [
+     "2021-03-27",
+     0.0
+    ],
+    [
+     "2021-03-28",
+     0.0
+    ],
+    [
+     "2021-03-29",
+     4.0
+    ],
+    [
+     "2021-03-30",
+     4.0
+    ],
+    [
+     "2021-03-31",
+     5.0
+    ],
+    [
+     "2021-04-01",
+     5.0
+    ],
+    [
+     "2021-04-02",
+     5.0
+    ],
+    [
+     "2021-04-03",
+     3.0
+    ],
+    [
+     "2021-04-04",
+     4.0
+    ],
+    [
+     "2021-04-05",
+     5.0
+    ],
+    [
+     "2021-04-06",
+     4.0
+    ],
+    [
+     "2021-04-07",
+     4.0
+    ],
+    [
+     "2021-04-08",
+     4.0
+    ],
+    [
+     "2021-04-09",
+     4.0
+    ],
+    [
+     "2021-04-10",
+     5.0
+    ],
+    [
+     "2021-04-11",
+     5.0
+    ],
+    [
+     "2021-04-12",
+     4.0
+    ]
+   ]
+  }
+ },
+ "source": "COMPUTED",
+ "title": "Ever Given / Suez Canal closure, Mar 2021",
+ "window": {
+  "baseline": {
+   "from": "2021-02-23",
+   "to": "2021-03-22"
+  },
+  "evaluation_from": "2021-03-23",
+  "evaluation_to": "2021-03-29",
+  "event_start": "2021-03-23",
+  "from": "2021-03-09",
+  "to": "2021-04-12"
+ }
+}

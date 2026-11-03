@@ -1,0 +1,4289 @@
+{
+ "baselines": {
+  "k_hop": {
+   "budget_places": 1,
+   "description": "directed k-hop from the seed, whole hop levels, same place budget as the model's predicted-down count; direction + rank only",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.052745,
+     0.853367
+    ],
+    "graded": 5,
+    "hits": 2,
+    "rate": 0.4
+   },
+   "k": 0,
+   "magnitude": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "onset": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "rank_correlation": {
+    "graded": true,
+    "n": 5,
+    "note": null,
+    "spearman": 0.125
+   },
+   "ungraded": []
+  },
+  "persistence": {
+   "description": "nothing changes: flat, 0 pp, no onset",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.146633,
+     0.947255
+    ],
+    "graded": 5,
+    "hits": 3,
+    "rate": 0.6
+   },
+   "magnitude": {
+    "ci95_clopper_pearson": [
+     0.478176,
+     1.0
+    ],
+    "graded": 5,
+    "hits": 5,
+    "rate": 1.0
+   },
+   "onset": {
+    "ci95_clopper_pearson": [
+     0.0,
+     0.975
+    ],
+    "false_alarms": 0,
+    "graded": 1,
+    "hits": 0,
+    "mean_abs_error_d": null,
+    "n_with_both": 0,
+    "rate": 0.0
+   },
+   "rank_correlation": {
+    "graded": false,
+    "n": 5,
+    "note": "UNGRADED - fewer than 4 places with variation on both sides",
+    "spearman": null
+   },
+   "ungraded": []
+  }
+ },
+ "card_id": "real_04dd5a2f068b7505",
+ "caveats": [
+  "A few events prove the machinery, not the forecasting power: every rate here rests on a handful of places for one or two events. One graded place moves a hit rate by tens of points. Read these as a worked, auditable comparison, not a skill estimate. The simulator's traffic is modelled from lane structure, not the historical fleet."
+ ],
+ "comparisons": {
+  "direction_vs_k_hop": "model 1/5 vs k_hop 2/5",
+  "direction_vs_persistence": "model 1/5 vs persistence 3/5",
+  "magnitude_vs_persistence": "model 2/5 vs persistence 5/5",
+  "onset_vs_persistence": "model 0/1 vs persistence 0/1"
+ },
+ "event": {
+  "capacity_loss": 0.78,
+  "capacity_loss_basis": {
+   "kind": "modeled",
+   "source": "Marine Exchange of Southern California (MESocal) 10 Nov 2021 report, via Western Overseas: https://www.westernoverseas.com/port-congestion-update-11-12-21/ (same report already cited for the 2021-11-10 observed steps in this dataset)",
+   "text": "MODELED assumption - not a sourced figure and never to be presented as one. No sourced capacity-loss fraction exists for LA 2021: the source record quantifies queues and waits, not capacity loss, and berth throughput did not collapse (the Port of Los Angeles was on track for a record ~10.7M TEU in 2021, Port of Los Angeles release, 20 Dec 2021), so no throughput-drop derivation is defensible. Model: at the 10 Nov 2021 MESocal snapshot the complex held 109 container ships waiting and 30 at berth; capacity_loss is set to the waiting share of container ships present, 109 / (109 + 30) = 0.78 (rounded to 2 dp) - a stock-share proxy for the share of container-ship flow the berth/landside system was not serving at the peak snapshot, NOT a measured throughput drop. The binding constraint was landside (dwell/driver channel), not berth capacity. Any scorecard printing LA results must print this modeled assumption alongside them. (An earlier version carried capacity_loss as null; the engine then silently substituted its 0.5 default for congestion-kind specs.)"
+  },
+  "control_places": [],
+  "dedupe_key": "curated_replay:la_2021",
+  "detected_at": "2021-09-19T00:00:00Z",
+  "event_id": "evt_20210919_sea_losangeles_congestion_7b7b8b9d",
+  "evidence_url": "Marine Exchange of Southern California (MESocal) 10 Nov 2021 report, via Western Overseas: https://www.westernoverseas.com/port-congestion-update-11-12-21/ (same report already cited for the 2021-11-10 observed steps in this dataset)",
+  "expected_duration_d": 58.0,
+  "historical": true,
+  "id": "evt_20210919_sea_losangeles_congestion_7b7b8b9d",
+  "kind": "congestion",
+  "mode": "MODELED",
+  "modeled_notice": "capacity_loss is a MODELED assumption, not a sourced figure - see capacity_loss_basis",
+  "node_id": "sea_losangeles",
+  "provenance": {
+   "mode": "MODELED",
+   "retrieved_at": "2026-10-20T00:00:00Z",
+   "source": "SupermAP curated replay record (data/replay/la_2021.json)"
+  },
+  "replay_id": "la_2021",
+  "retrieved_at": "2026-10-20T00:00:00Z",
+  "severity": 4,
+  "source": "SupermAP curated replay record (data/replay/la_2021.json)",
+  "started_at": "2021-09-19T00:00:00Z",
+  "status": "resolved",
+  "title": "Los Angeles / Long Beach congestion, 2021",
+  "watch_context": "A QUEUE/DWELL event: ships waited at anchor, berth throughput did not collapse, so port-call counts need not fall. Oakland/NWSA/Savannah/New York are the documented diversion destinations.",
+  "watch_places": [
+   "sea_losangeles",
+   "sea_oakland",
+   "sea_nwsa",
+   "sea_savannah",
+   "sea_newyork"
+  ]
+ },
+ "forked_from": {
+  "events": [
+   {
+    "event_id": "evt_20210919_sea_losangeles_congestion_7b7b8b9d",
+    "kind": "congestion",
+    "mode": "MODELED",
+    "node_id": "sea_losangeles",
+    "provenance": {
+     "mode": "MODELED",
+     "retrieved_at": "2026-10-20T00:00:00Z",
+     "source": "SupermAP curated replay record (data/replay/la_2021.json)"
+    },
+    "replay_id": "la_2021",
+    "source": "SupermAP curated replay record (data/replay/la_2021.json)",
+    "started_at": "2021-09-19T00:00:00Z"
+   }
+  ],
+  "kind": "history_fork",
+  "label": "FORKED FROM HISTORY — the request below is derived from a recorded (SNAPSHOT) or inferred (MODELED) event; whatever runs from it is SIMULATED and must be labelled so.",
+  "lineage_id": "fork_e9221d324880e3a4",
+  "matched_by": "event (place + start)",
+  "simulated_outputs_are": "SIMULATED (MODELED engine/sim output); inputs are HISTORICAL (SNAPSHOT/MODELED)",
+  "window": {
+   "from": "2021-09-19",
+   "to": "2021-11-16"
+  }
+ },
+ "grader": "deterministic arithmetic; no LLM at any step",
+ "headline": {
+  "comparisons": {
+   "direction_vs_k_hop": "model 1/5 vs k_hop 2/5",
+   "direction_vs_persistence": "model 1/5 vs persistence 3/5",
+   "magnitude_vs_persistence": "model 2/5 vs persistence 5/5",
+   "onset_vs_persistence": "model 0/1 vs persistence 0/1"
+  },
+  "direction": {
+   "k_hop": "2/5",
+   "model": "1/5",
+   "persistence": "3/5"
+  },
+  "magnitude": {
+   "model": "2/5",
+   "persistence": "5/5"
+  },
+  "onset": {
+   "model": "0/1",
+   "model_mean_abs_error_d": null,
+   "persistence": "0/1"
+  },
+  "rank_correlation": {
+   "k_hop": 0.125,
+   "model": 0.395285
+  }
+ },
+ "label": "BACKTEST — historical outcome vs a SIMULATED outcome. Not the live Ledger; these numbers never mix with Ledger grades.",
+ "metrics": {
+  "direction": {
+   "ci95_clopper_pearson": [
+    0.005051,
+    0.716418
+   ],
+   "graded": 5,
+   "hits": 1,
+   "rate": 0.2
+  },
+  "magnitude": {
+   "ci95_clopper_pearson": [
+    0.052745,
+    0.853367
+   ],
+   "graded": 5,
+   "hits": 2,
+   "rate": 0.4
+  },
+  "onset": {
+   "ci95_clopper_pearson": [
+    0.0,
+    0.975
+   ],
+   "false_alarms": 1,
+   "graded": 1,
+   "hits": 0,
+   "mean_abs_error_d": null,
+   "n_with_both": 0,
+   "rate": 0.0
+  },
+  "rank_correlation": {
+   "graded": true,
+   "n": 5,
+   "note": null,
+   "spearman": 0.395285
+  },
+  "ungraded": []
+ },
+ "not_compared": [],
+ "notes": [
+  "window end clipped to the sim horizon (2021-11-29)",
+  "the event's capacity_loss basis is MODELED: MODELED assumption - not a sourced figure and never to be presented as one. No sourced capacity-loss fraction exists for LA 2021: the source record quantifies queues and waits, not capacity loss, and berth throughput did not collapse (the P",
+  "A QUEUE/DWELL event: ships waited at anchor, berth throughput did not collapse, so port-call counts need not fall. Oakland/NWSA/Savannah/New York are the documented diversion destinations."
+ ],
+ "observed_provenance": [
+  {
+   "metric": "port_calls",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "88198efc786024d886f4a0ac105fda6f44b9cbae550c0507a2e17c4539df7921",
+   "place": "sea_losangeles",
+   "retrieved_at": "2026-10-25T00:45:03Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "calls/day"
+  },
+  {
+   "metric": "port_calls",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "c9be2608c8c6d56db8cb676b5eb6ac4f24e3742f3ea9d1276097f74bed4e9df7",
+   "place": "sea_oakland",
+   "retrieved_at": "2026-10-25T00:45:04Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "calls/day"
+  },
+  {
+   "metric": "port_calls",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "e89e7ffbbbb0f50f8ea650f7b70525fb23555874dcec6d883b997685b9e4859c",
+   "place": "sea_nwsa",
+   "retrieved_at": "2026-10-25T00:45:04Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "calls/day"
+  },
+  {
+   "metric": "port_calls",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "ac1343117f5ea1fe1fcf7d4452f74f1684ca424cf5c437f838fe12b1a337eb5a",
+   "place": "sea_savannah",
+   "retrieved_at": "2026-10-25T00:45:05Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "calls/day"
+  },
+  {
+   "metric": "port_calls",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "50349f994eb24b7c3dd217f9012b974aa3de9f54716983b8b9f1526c387317b1",
+   "place": "sea_newyork",
+   "retrieved_at": "2026-10-25T00:45:05Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "calls/day"
+  }
+ ],
+ "places": [
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 0,
+    "onset_lag_d": null,
+    "severity": -0.0
+   },
+   "model": {
+    "change_pct": -18.37,
+    "direction": "down",
+    "onset_date": "2021-09-20",
+    "onset_lag_d": 1,
+    "severity": 18.37,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 3.9286,
+    "sim_eval_mean": 3.2069,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 11.25,
+    "change_pct": -1.916,
+    "direction": "flat",
+    "eval_days_present": 58,
+    "eval_mean": 11.0345,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "sea_losangeles",
+   "role": "seed"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 1,
+    "onset_lag_d": null,
+    "severity": -1.0
+   },
+   "model": {
+    "change_pct": 5.603,
+    "direction": "flat",
+    "onset_date": null,
+    "onset_lag_d": null,
+    "severity": 0.0,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 1.7143,
+    "sim_eval_mean": 1.8103,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 1.8214,
+    "change_pct": 12.644,
+    "direction": "up",
+    "eval_days_present": 58,
+    "eval_mean": 2.0517,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "sea_oakland",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 2,
+    "onset_lag_d": null,
+    "severity": -2.0
+   },
+   "model": {
+    "change_pct": 112.853,
+    "direction": "up",
+    "onset_date": null,
+    "onset_lag_d": null,
+    "severity": 0.0,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 0.7857,
+    "sim_eval_mean": 1.6724,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 2.1429,
+    "change_pct": 17.471,
+    "direction": "up",
+    "eval_days_present": 58,
+    "eval_mean": 2.5172,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "sea_nwsa",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 2,
+    "onset_lag_d": null,
+    "severity": -2.0
+   },
+   "model": {
+    "change_pct": 64.272,
+    "direction": "up",
+    "onset_date": null,
+    "onset_lag_d": null,
+    "severity": 0.0,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 2.5714,
+    "sim_eval_mean": 4.2241,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 6.1071,
+    "change_pct": 3.045,
+    "direction": "flat",
+    "eval_days_present": 58,
+    "eval_mean": 6.2931,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "sea_savannah",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 2,
+    "onset_lag_d": null,
+    "severity": -2.0
+   },
+   "model": {
+    "change_pct": 68.966,
+    "direction": "up",
+    "onset_date": null,
+    "onset_lag_d": null,
+    "severity": 0.0,
+    "sim_baseline_days_present": 14,
+    "sim_baseline_per_day": 4.1429,
+    "sim_eval_mean": 7.0,
+    "why_no_direction": null
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 11.6786,
+    "change_pct": -7.139,
+    "direction": "flat",
+    "eval_days_present": 58,
+    "eval_mean": 10.8448,
+    "onset_date": "2021-10-30",
+    "onset_lag_d": 41
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "sea_newyork",
+   "role": "watch"
+  }
+ ],
+ "rule": {
+  "baseline_days": 28,
+  "baseline_min_days": 14,
+  "denominators": {
+   "direction": "compared places with an observed and a predicted direction",
+   "magnitude": "compared places with an observed and a predicted change",
+   "onset": "compared places with an observed onset",
+   "rank": "compared places with an observed and a predicted severity"
+  },
+  "evaluation_period": "[max(from, event start), min(to, event start + ceil(duration_d) - 1)] - the disruption's own stated duration, clipped to the window / sim horizon",
+  "flat_band_pct": 10.0,
+  "grader": "deterministic arithmetic; no LLM at any step",
+  "id": "realism-v1",
+  "magnitude_band_pp": 20.0,
+  "observed_series": "IMF PortWatch daily counts (SNAPSHOT history)",
+  "onset": {
+   "hit_within_days": 7,
+   "sustain_days": 3,
+   "threshold_pct": -20.0
+  },
+  "rank": {
+   "min_places": 4,
+   "statistic": "Spearman"
+  },
+  "sim_baseline_min_days": 7,
+  "ungraded_is": "never a hit, never a miss, never estimated"
+ },
+ "run": {
+  "kind": "sim",
+  "prediction_digest": {
+   "disruptions": [
+    {
+     "capacity_loss": 0.78,
+     "duration_d": 58.0,
+     "kind": "congestion",
+     "node_id": "sea_losangeles",
+     "shape": "step",
+     "started_at": "2021-09-19T00:00:00Z"
+    }
+   ],
+   "event": {
+    "capacity_loss": 0.78,
+    "duration_d": 58.0,
+    "kind": "congestion",
+    "node_id": "sea_losangeles",
+    "shape": "step",
+    "started_at": "2021-09-19T00:00:00Z"
+   },
+   "kind": "sim",
+   "metric": "berth calls per day (sim 'berth' segments at the node)",
+   "run_id": "sim_6e7a9ccfce4cc513",
+   "seed": 42,
+   "start_at": "2021-09-05T00:00:00Z",
+   "tick": "day",
+   "ticks": 86,
+   "unavailable": {},
+   "weather": "off"
+  },
+  "run_id": "sim_6e7a9ccfce4cc513",
+  "stream_hash": null
+ },
+ "schema": "supermap.realism_card.v1",
+ "series": {
+  "sea_losangeles": {
+   "observed": [
+    [
+     "2021-08-22",
+     7
+    ],
+    [
+     "2021-08-23",
+     12
+    ],
+    [
+     "2021-08-24",
+     7
+    ],
+    [
+     "2021-08-25",
+     14
+    ],
+    [
+     "2021-08-26",
+     7
+    ],
+    [
+     "2021-08-27",
+     13
+    ],
+    [
+     "2021-08-28",
+     9
+    ],
+    [
+     "2021-08-29",
+     9
+    ],
+    [
+     "2021-08-30",
+     10
+    ],
+    [
+     "2021-08-31",
+     13
+    ],
+    [
+     "2021-09-01",
+     10
+    ],
+    [
+     "2021-09-02",
+     18
+    ],
+    [
+     "2021-09-03",
+     11
+    ],
+    [
+     "2021-09-04",
+     10
+    ],
+    [
+     "2021-09-05",
+     11
+    ],
+    [
+     "2021-09-06",
+     13
+    ],
+    [
+     "2021-09-07",
+     13
+    ],
+    [
+     "2021-09-08",
+     7
+    ],
+    [
+     "2021-09-09",
+     6
+    ],
+    [
+     "2021-09-10",
+     12
+    ],
+    [
+     "2021-09-11",
+     15
+    ],
+    [
+     "2021-09-12",
+     12
+    ],
+    [
+     "2021-09-13",
+     20
+    ],
+    [
+     "2021-09-14",
+     10
+    ],
+    [
+     "2021-09-15",
+     10
+    ],
+    [
+     "2021-09-16",
+     11
+    ],
+    [
+     "2021-09-17",
+     10
+    ],
+    [
+     "2021-09-18",
+     15
+    ],
+    [
+     "2021-09-19",
+     9
+    ],
+    [
+     "2021-09-20",
+     15
+    ],
+    [
+     "2021-09-21",
+     15
+    ],
+    [
+     "2021-09-22",
+     12
+    ],
+    [
+     "2021-09-23",
+     12
+    ],
+    [
+     "2021-09-24",
+     12
+    ],
+    [
+     "2021-09-25",
+     9
+    ],
+    [
+     "2021-09-26",
+     7
+    ],
+    [
+     "2021-09-27",
+     12
+    ],
+    [
+     "2021-09-28",
+     18
+    ],
+    [
+     "2021-09-29",
+     9
+    ],
+    [
+     "2021-09-30",
+     12
+    ],
+    [
+     "2021-10-01",
+     9
+    ],
+    [
+     "2021-10-02",
+     5
+    ],
+    [
+     "2021-10-03",
+     12
+    ],
+    [
+     "2021-10-04",
+     6
+    ],
+    [
+     "2021-10-05",
+     7
+    ],
+    [
+     "2021-10-06",
+     13
+    ],
+    [
+     "2021-10-07",
+     15
+    ],
+    [
+     "2021-10-08",
+     8
+    ],
+    [
+     "2021-10-09",
+     10
+    ],
+    [
+     "2021-10-10",
+     16
+    ],
+    [
+     "2021-10-11",
+     10
+    ],
+    [
+     "2021-10-12",
+     12
+    ],
+    [
+     "2021-10-13",
+     6
+    ],
+    [
+     "2021-10-14",
+     9
+    ],
+    [
+     "2021-10-15",
+     12
+    ],
+    [
+     "2021-10-16",
+     9
+    ],
+    [
+     "2021-10-17",
+     8
+    ],
+    [
+     "2021-10-18",
+     17
+    ],
+    [
+     "2021-10-19",
+     13
+    ],
+    [
+     "2021-10-20",
+     10
+    ],
+    [
+     "2021-10-21",
+     11
+    ],
+    [
+     "2021-10-22",
+     8
+    ],
+    [
+     "2021-10-23",
+     13
+    ],
+    [
+     "2021-10-24",
+     10
+    ],
+    [
+     "2021-10-25",
+     11
+    ],
+    [
+     "2021-10-26",
+     12
+    ],
+    [
+     "2021-10-27",
+     10
+    ],
+    [
+     "2021-10-28",
+     13
+    ],
+    [
+     "2021-10-29",
+     8
+    ],
+    [
+     "2021-10-30",
+     15
+    ],
+    [
+     "2021-10-31",
+     12
+    ],
+    [
+     "2021-11-01",
+     11
+    ],
+    [
+     "2021-11-02",
+     6
+    ],
+    [
+     "2021-11-03",
+     10
+    ],
+    [
+     "2021-11-04",
+     13
+    ],
+    [
+     "2021-11-05",
+     14
+    ],
+    [
+     "2021-11-06",
+     10
+    ],
+    [
+     "2021-11-07",
+     8
+    ],
+    [
+     "2021-11-08",
+     9
+    ],
+    [
+     "2021-11-09",
+     13
+    ],
+    [
+     "2021-11-10",
+     13
+    ],
+    [
+     "2021-11-11",
+     12
+    ],
+    [
+     "2021-11-12",
+     7
+    ],
+    [
+     "2021-11-13",
+     19
+    ],
+    [
+     "2021-11-14",
+     7
+    ],
+    [
+     "2021-11-15",
+     16
+    ],
+    [
+     "2021-11-16",
+     14
+    ],
+    [
+     "2021-11-17",
+     11
+    ],
+    [
+     "2021-11-18",
+     15
+    ],
+    [
+     "2021-11-19",
+     13
+    ],
+    [
+     "2021-11-20",
+     9
+    ],
+    [
+     "2021-11-21",
+     9
+    ],
+    [
+     "2021-11-22",
+     15
+    ],
+    [
+     "2021-11-23",
+     10
+    ],
+    [
+     "2021-11-24",
+     13
+    ],
+    [
+     "2021-11-25",
+     6
+    ],
+    [
+     "2021-11-26",
+     11
+    ],
+    [
+     "2021-11-27",
+     11
+    ],
+    [
+     "2021-11-28",
+     12
+    ],
+    [
+     "2021-11-29",
+     12
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-09-05",
+     3.0
+    ],
+    [
+     "2021-09-06",
+     2.0
+    ],
+    [
+     "2021-09-07",
+     4.0
+    ],
+    [
+     "2021-09-08",
+     6.0
+    ],
+    [
+     "2021-09-09",
+     2.0
+    ],
+    [
+     "2021-09-10",
+     4.0
+    ],
+    [
+     "2021-09-11",
+     5.0
+    ],
+    [
+     "2021-09-12",
+     3.0
+    ],
+    [
+     "2021-09-13",
+     5.0
+    ],
+    [
+     "2021-09-14",
+     5.0
+    ],
+    [
+     "2021-09-15",
+     5.0
+    ],
+    [
+     "2021-09-16",
+     2.0
+    ],
+    [
+     "2021-09-17",
+     6.0
+    ],
+    [
+     "2021-09-18",
+     3.0
+    ],
+    [
+     "2021-09-19",
+     4.0
+    ],
+    [
+     "2021-09-20",
+     3.0
+    ],
+    [
+     "2021-09-21",
+     1.0
+    ],
+    [
+     "2021-09-22",
+     1.0
+    ],
+    [
+     "2021-09-23",
+     1.0
+    ],
+    [
+     "2021-09-24",
+     2.0
+    ],
+    [
+     "2021-09-25",
+     3.0
+    ],
+    [
+     "2021-09-26",
+     3.0
+    ],
+    [
+     "2021-09-27",
+     3.0
+    ],
+    [
+     "2021-09-28",
+     5.0
+    ],
+    [
+     "2021-09-29",
+     4.0
+    ],
+    [
+     "2021-09-30",
+     0.0
+    ],
+    [
+     "2021-10-01",
+     4.0
+    ],
+    [
+     "2021-10-02",
+     4.0
+    ],
+    [
+     "2021-10-03",
+     1.0
+    ],
+    [
+     "2021-10-04",
+     3.0
+    ],
+    [
+     "2021-10-05",
+     3.0
+    ],
+    [
+     "2021-10-06",
+     1.0
+    ],
+    [
+     "2021-10-07",
+     4.0
+    ],
+    [
+     "2021-10-08",
+     2.0
+    ],
+    [
+     "2021-10-09",
+     5.0
+    ],
+    [
+     "2021-10-10",
+     3.0
+    ],
+    [
+     "2021-10-11",
+     2.0
+    ],
+    [
+     "2021-10-12",
+     5.0
+    ],
+    [
+     "2021-10-13",
+     3.0
+    ],
+    [
+     "2021-10-14",
+     7.0
+    ],
+    [
+     "2021-10-15",
+     2.0
+    ],
+    [
+     "2021-10-16",
+     3.0
+    ],
+    [
+     "2021-10-17",
+     4.0
+    ],
+    [
+     "2021-10-18",
+     1.0
+    ],
+    [
+     "2021-10-19",
+     2.0
+    ],
+    [
+     "2021-10-20",
+     4.0
+    ],
+    [
+     "2021-10-21",
+     3.0
+    ],
+    [
+     "2021-10-22",
+     4.0
+    ],
+    [
+     "2021-10-23",
+     4.0
+    ],
+    [
+     "2021-10-24",
+     3.0
+    ],
+    [
+     "2021-10-25",
+     0.0
+    ],
+    [
+     "2021-10-26",
+     3.0
+    ],
+    [
+     "2021-10-27",
+     2.0
+    ],
+    [
+     "2021-10-28",
+     5.0
+    ],
+    [
+     "2021-10-29",
+     1.0
+    ],
+    [
+     "2021-10-30",
+     5.0
+    ],
+    [
+     "2021-10-31",
+     3.0
+    ],
+    [
+     "2021-11-01",
+     3.0
+    ],
+    [
+     "2021-11-02",
+     6.0
+    ],
+    [
+     "2021-11-03",
+     3.0
+    ],
+    [
+     "2021-11-04",
+     3.0
+    ],
+    [
+     "2021-11-05",
+     8.0
+    ],
+    [
+     "2021-11-06",
+     1.0
+    ],
+    [
+     "2021-11-07",
+     1.0
+    ],
+    [
+     "2021-11-08",
+     6.0
+    ],
+    [
+     "2021-11-09",
+     4.0
+    ],
+    [
+     "2021-11-10",
+     5.0
+    ],
+    [
+     "2021-11-11",
+     1.0
+    ],
+    [
+     "2021-11-12",
+     8.0
+    ],
+    [
+     "2021-11-13",
+     5.0
+    ],
+    [
+     "2021-11-14",
+     3.0
+    ],
+    [
+     "2021-11-15",
+     3.0
+    ],
+    [
+     "2021-11-16",
+     7.0
+    ],
+    [
+     "2021-11-17",
+     5.0
+    ],
+    [
+     "2021-11-18",
+     12.0
+    ],
+    [
+     "2021-11-19",
+     8.0
+    ],
+    [
+     "2021-11-20",
+     8.0
+    ],
+    [
+     "2021-11-21",
+     10.0
+    ],
+    [
+     "2021-11-22",
+     10.0
+    ],
+    [
+     "2021-11-23",
+     9.0
+    ],
+    [
+     "2021-11-24",
+     5.0
+    ],
+    [
+     "2021-11-25",
+     9.0
+    ],
+    [
+     "2021-11-26",
+     12.0
+    ],
+    [
+     "2021-11-27",
+     7.0
+    ],
+    [
+     "2021-11-28",
+     11.0
+    ],
+    [
+     "2021-11-29",
+     10.0
+    ]
+   ]
+  },
+  "sea_newyork": {
+   "observed": [
+    [
+     "2021-08-22",
+     3
+    ],
+    [
+     "2021-08-23",
+     17
+    ],
+    [
+     "2021-08-24",
+     13
+    ],
+    [
+     "2021-08-25",
+     14
+    ],
+    [
+     "2021-08-26",
+     14
+    ],
+    [
+     "2021-08-27",
+     13
+    ],
+    [
+     "2021-08-28",
+     15
+    ],
+    [
+     "2021-08-29",
+     10
+    ],
+    [
+     "2021-08-30",
+     12
+    ],
+    [
+     "2021-08-31",
+     12
+    ],
+    [
+     "2021-09-01",
+     12
+    ],
+    [
+     "2021-09-02",
+     10
+    ],
+    [
+     "2021-09-03",
+     8
+    ],
+    [
+     "2021-09-04",
+     12
+    ],
+    [
+     "2021-09-05",
+     7
+    ],
+    [
+     "2021-09-06",
+     3
+    ],
+    [
+     "2021-09-07",
+     14
+    ],
+    [
+     "2021-09-08",
+     10
+    ],
+    [
+     "2021-09-09",
+     18
+    ],
+    [
+     "2021-09-10",
+     14
+    ],
+    [
+     "2021-09-11",
+     11
+    ],
+    [
+     "2021-09-12",
+     9
+    ],
+    [
+     "2021-09-13",
+     16
+    ],
+    [
+     "2021-09-14",
+     14
+    ],
+    [
+     "2021-09-15",
+     12
+    ],
+    [
+     "2021-09-16",
+     15
+    ],
+    [
+     "2021-09-17",
+     12
+    ],
+    [
+     "2021-09-18",
+     7
+    ],
+    [
+     "2021-09-19",
+     9
+    ],
+    [
+     "2021-09-20",
+     13
+    ],
+    [
+     "2021-09-21",
+     12
+    ],
+    [
+     "2021-09-22",
+     10
+    ],
+    [
+     "2021-09-23",
+     10
+    ],
+    [
+     "2021-09-24",
+     11
+    ],
+    [
+     "2021-09-25",
+     11
+    ],
+    [
+     "2021-09-26",
+     7
+    ],
+    [
+     "2021-09-27",
+     12
+    ],
+    [
+     "2021-09-28",
+     12
+    ],
+    [
+     "2021-09-29",
+     12
+    ],
+    [
+     "2021-09-30",
+     13
+    ],
+    [
+     "2021-10-01",
+     11
+    ],
+    [
+     "2021-10-02",
+     11
+    ],
+    [
+     "2021-10-03",
+     8
+    ],
+    [
+     "2021-10-04",
+     13
+    ],
+    [
+     "2021-10-05",
+     11
+    ],
+    [
+     "2021-10-06",
+     13
+    ],
+    [
+     "2021-10-07",
+     9
+    ],
+    [
+     "2021-10-08",
+     11
+    ],
+    [
+     "2021-10-09",
+     12
+    ],
+    [
+     "2021-10-10",
+     4
+    ],
+    [
+     "2021-10-11",
+     15
+    ],
+    [
+     "2021-10-12",
+     12
+    ],
+    [
+     "2021-10-13",
+     10
+    ],
+    [
+     "2021-10-14",
+     5
+    ],
+    [
+     "2021-10-15",
+     12
+    ],
+    [
+     "2021-10-16",
+     6
+    ],
+    [
+     "2021-10-17",
+     13
+    ],
+    [
+     "2021-10-18",
+     18
+    ],
+    [
+     "2021-10-19",
+     14
+    ],
+    [
+     "2021-10-20",
+     12
+    ],
+    [
+     "2021-10-21",
+     12
+    ],
+    [
+     "2021-10-22",
+     13
+    ],
+    [
+     "2021-10-23",
+     13
+    ],
+    [
+     "2021-10-24",
+     8
+    ],
+    [
+     "2021-10-25",
+     14
+    ],
+    [
+     "2021-10-26",
+     9
+    ],
+    [
+     "2021-10-27",
+     10
+    ],
+    [
+     "2021-10-28",
+     15
+    ],
+    [
+     "2021-10-29",
+     10
+    ],
+    [
+     "2021-10-30",
+     6
+    ],
+    [
+     "2021-10-31",
+     9
+    ],
+    [
+     "2021-11-01",
+     9
+    ],
+    [
+     "2021-11-02",
+     9
+    ],
+    [
+     "2021-11-03",
+     14
+    ],
+    [
+     "2021-11-04",
+     11
+    ],
+    [
+     "2021-11-05",
+     11
+    ],
+    [
+     "2021-11-06",
+     13
+    ],
+    [
+     "2021-11-07",
+     8
+    ],
+    [
+     "2021-11-08",
+     14
+    ],
+    [
+     "2021-11-09",
+     9
+    ],
+    [
+     "2021-11-10",
+     8
+    ],
+    [
+     "2021-11-11",
+     8
+    ],
+    [
+     "2021-11-12",
+     13
+    ],
+    [
+     "2021-11-13",
+     9
+    ],
+    [
+     "2021-11-14",
+     7
+    ],
+    [
+     "2021-11-15",
+     15
+    ],
+    [
+     "2021-11-16",
+     8
+    ],
+    [
+     "2021-11-17",
+     7
+    ],
+    [
+     "2021-11-18",
+     8
+    ],
+    [
+     "2021-11-19",
+     12
+    ],
+    [
+     "2021-11-20",
+     12
+    ],
+    [
+     "2021-11-21",
+     9
+    ],
+    [
+     "2021-11-22",
+     13
+    ],
+    [
+     "2021-11-23",
+     13
+    ],
+    [
+     "2021-11-24",
+     8
+    ],
+    [
+     "2021-11-25",
+     5
+    ],
+    [
+     "2021-11-26",
+     18
+    ],
+    [
+     "2021-11-27",
+     13
+    ],
+    [
+     "2021-11-28",
+     10
+    ],
+    [
+     "2021-11-29",
+     12
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-09-05",
+     5.0
+    ],
+    [
+     "2021-09-06",
+     3.0
+    ],
+    [
+     "2021-09-07",
+     3.0
+    ],
+    [
+     "2021-09-08",
+     2.0
+    ],
+    [
+     "2021-09-09",
+     5.0
+    ],
+    [
+     "2021-09-10",
+     8.0
+    ],
+    [
+     "2021-09-11",
+     2.0
+    ],
+    [
+     "2021-09-12",
+     5.0
+    ],
+    [
+     "2021-09-13",
+     4.0
+    ],
+    [
+     "2021-09-14",
+     2.0
+    ],
+    [
+     "2021-09-15",
+     3.0
+    ],
+    [
+     "2021-09-16",
+     5.0
+    ],
+    [
+     "2021-09-17",
+     5.0
+    ],
+    [
+     "2021-09-18",
+     6.0
+    ],
+    [
+     "2021-09-19",
+     3.0
+    ],
+    [
+     "2021-09-20",
+     5.0
+    ],
+    [
+     "2021-09-21",
+     2.0
+    ],
+    [
+     "2021-09-22",
+     7.0
+    ],
+    [
+     "2021-09-23",
+     8.0
+    ],
+    [
+     "2021-09-24",
+     4.0
+    ],
+    [
+     "2021-09-25",
+     3.0
+    ],
+    [
+     "2021-09-26",
+     9.0
+    ],
+    [
+     "2021-09-27",
+     6.0
+    ],
+    [
+     "2021-09-28",
+     7.0
+    ],
+    [
+     "2021-09-29",
+     7.0
+    ],
+    [
+     "2021-09-30",
+     2.0
+    ],
+    [
+     "2021-10-01",
+     8.0
+    ],
+    [
+     "2021-10-02",
+     4.0
+    ],
+    [
+     "2021-10-03",
+     8.0
+    ],
+    [
+     "2021-10-04",
+     5.0
+    ],
+    [
+     "2021-10-05",
+     7.0
+    ],
+    [
+     "2021-10-06",
+     10.0
+    ],
+    [
+     "2021-10-07",
+     4.0
+    ],
+    [
+     "2021-10-08",
+     5.0
+    ],
+    [
+     "2021-10-09",
+     8.0
+    ],
+    [
+     "2021-10-10",
+     7.0
+    ],
+    [
+     "2021-10-11",
+     5.0
+    ],
+    [
+     "2021-10-12",
+     7.0
+    ],
+    [
+     "2021-10-13",
+     9.0
+    ],
+    [
+     "2021-10-14",
+     6.0
+    ],
+    [
+     "2021-10-15",
+     8.0
+    ],
+    [
+     "2021-10-16",
+     3.0
+    ],
+    [
+     "2021-10-17",
+     7.0
+    ],
+    [
+     "2021-10-18",
+     8.0
+    ],
+    [
+     "2021-10-19",
+     8.0
+    ],
+    [
+     "2021-10-20",
+     7.0
+    ],
+    [
+     "2021-10-21",
+     10.0
+    ],
+    [
+     "2021-10-22",
+     3.0
+    ],
+    [
+     "2021-10-23",
+     11.0
+    ],
+    [
+     "2021-10-24",
+     3.0
+    ],
+    [
+     "2021-10-25",
+     12.0
+    ],
+    [
+     "2021-10-26",
+     3.0
+    ],
+    [
+     "2021-10-27",
+     16.0
+    ],
+    [
+     "2021-10-28",
+     6.0
+    ],
+    [
+     "2021-10-29",
+     5.0
+    ],
+    [
+     "2021-10-30",
+     4.0
+    ],
+    [
+     "2021-10-31",
+     8.0
+    ],
+    [
+     "2021-11-01",
+     12.0
+    ],
+    [
+     "2021-11-02",
+     10.0
+    ],
+    [
+     "2021-11-03",
+     5.0
+    ],
+    [
+     "2021-11-04",
+     7.0
+    ],
+    [
+     "2021-11-05",
+     14.0
+    ],
+    [
+     "2021-11-06",
+     5.0
+    ],
+    [
+     "2021-11-07",
+     8.0
+    ],
+    [
+     "2021-11-08",
+     4.0
+    ],
+    [
+     "2021-11-09",
+     19.0
+    ],
+    [
+     "2021-11-10",
+     6.0
+    ],
+    [
+     "2021-11-11",
+     7.0
+    ],
+    [
+     "2021-11-12",
+     9.0
+    ],
+    [
+     "2021-11-13",
+     11.0
+    ],
+    [
+     "2021-11-14",
+     8.0
+    ],
+    [
+     "2021-11-15",
+     3.0
+    ],
+    [
+     "2021-11-16",
+     8.0
+    ],
+    [
+     "2021-11-17",
+     14.0
+    ],
+    [
+     "2021-11-18",
+     9.0
+    ],
+    [
+     "2021-11-19",
+     6.0
+    ],
+    [
+     "2021-11-20",
+     7.0
+    ],
+    [
+     "2021-11-21",
+     12.0
+    ],
+    [
+     "2021-11-22",
+     12.0
+    ],
+    [
+     "2021-11-23",
+     12.0
+    ],
+    [
+     "2021-11-24",
+     4.0
+    ],
+    [
+     "2021-11-25",
+     13.0
+    ],
+    [
+     "2021-11-26",
+     11.0
+    ],
+    [
+     "2021-11-27",
+     11.0
+    ],
+    [
+     "2021-11-28",
+     6.0
+    ],
+    [
+     "2021-11-29",
+     9.0
+    ]
+   ]
+  },
+  "sea_nwsa": {
+   "observed": [
+    [
+     "2021-08-22",
+     0
+    ],
+    [
+     "2021-08-23",
+     2
+    ],
+    [
+     "2021-08-24",
+     2
+    ],
+    [
+     "2021-08-25",
+     3
+    ],
+    [
+     "2021-08-26",
+     3
+    ],
+    [
+     "2021-08-27",
+     3
+    ],
+    [
+     "2021-08-28",
+     4
+    ],
+    [
+     "2021-08-29",
+     1
+    ],
+    [
+     "2021-08-30",
+     1
+    ],
+    [
+     "2021-08-31",
+     2
+    ],
+    [
+     "2021-09-01",
+     1
+    ],
+    [
+     "2021-09-02",
+     1
+    ],
+    [
+     "2021-09-03",
+     5
+    ],
+    [
+     "2021-09-04",
+     3
+    ],
+    [
+     "2021-09-05",
+     0
+    ],
+    [
+     "2021-09-06",
+     1
+    ],
+    [
+     "2021-09-07",
+     1
+    ],
+    [
+     "2021-09-08",
+     4
+    ],
+    [
+     "2021-09-09",
+     0
+    ],
+    [
+     "2021-09-10",
+     5
+    ],
+    [
+     "2021-09-11",
+     0
+    ],
+    [
+     "2021-09-12",
+     0
+    ],
+    [
+     "2021-09-13",
+     3
+    ],
+    [
+     "2021-09-14",
+     0
+    ],
+    [
+     "2021-09-15",
+     5
+    ],
+    [
+     "2021-09-16",
+     2
+    ],
+    [
+     "2021-09-17",
+     5
+    ],
+    [
+     "2021-09-18",
+     3
+    ],
+    [
+     "2021-09-19",
+     3
+    ],
+    [
+     "2021-09-20",
+     1
+    ],
+    [
+     "2021-09-21",
+     2
+    ],
+    [
+     "2021-09-22",
+     2
+    ],
+    [
+     "2021-09-23",
+     3
+    ],
+    [
+     "2021-09-24",
+     6
+    ],
+    [
+     "2021-09-25",
+     3
+    ],
+    [
+     "2021-09-26",
+     0
+    ],
+    [
+     "2021-09-27",
+     3
+    ],
+    [
+     "2021-09-28",
+     1
+    ],
+    [
+     "2021-09-29",
+     3
+    ],
+    [
+     "2021-09-30",
+     1
+    ],
+    [
+     "2021-10-01",
+     5
+    ],
+    [
+     "2021-10-02",
+     3
+    ],
+    [
+     "2021-10-03",
+     1
+    ],
+    [
+     "2021-10-04",
+     1
+    ],
+    [
+     "2021-10-05",
+     3
+    ],
+    [
+     "2021-10-06",
+     4
+    ],
+    [
+     "2021-10-07",
+     5
+    ],
+    [
+     "2021-10-08",
+     5
+    ],
+    [
+     "2021-10-09",
+     3
+    ],
+    [
+     "2021-10-10",
+     1
+    ],
+    [
+     "2021-10-11",
+     2
+    ],
+    [
+     "2021-10-12",
+     2
+    ],
+    [
+     "2021-10-13",
+     3
+    ],
+    [
+     "2021-10-14",
+     2
+    ],
+    [
+     "2021-10-15",
+     3
+    ],
+    [
+     "2021-10-16",
+     3
+    ],
+    [
+     "2021-10-17",
+     1
+    ],
+    [
+     "2021-10-18",
+     4
+    ],
+    [
+     "2021-10-19",
+     3
+    ],
+    [
+     "2021-10-20",
+     4
+    ],
+    [
+     "2021-10-21",
+     2
+    ],
+    [
+     "2021-10-22",
+     2
+    ],
+    [
+     "2021-10-23",
+     4
+    ],
+    [
+     "2021-10-24",
+     0
+    ],
+    [
+     "2021-10-25",
+     3
+    ],
+    [
+     "2021-10-26",
+     3
+    ],
+    [
+     "2021-10-27",
+     1
+    ],
+    [
+     "2021-10-28",
+     1
+    ],
+    [
+     "2021-10-29",
+     5
+    ],
+    [
+     "2021-10-30",
+     4
+    ],
+    [
+     "2021-10-31",
+     3
+    ],
+    [
+     "2021-11-01",
+     3
+    ],
+    [
+     "2021-11-02",
+     0
+    ],
+    [
+     "2021-11-03",
+     2
+    ],
+    [
+     "2021-11-04",
+     3
+    ],
+    [
+     "2021-11-05",
+     4
+    ],
+    [
+     "2021-11-06",
+     2
+    ],
+    [
+     "2021-11-07",
+     1
+    ],
+    [
+     "2021-11-08",
+     0
+    ],
+    [
+     "2021-11-09",
+     2
+    ],
+    [
+     "2021-11-10",
+     4
+    ],
+    [
+     "2021-11-11",
+     1
+    ],
+    [
+     "2021-11-12",
+     6
+    ],
+    [
+     "2021-11-13",
+     1
+    ],
+    [
+     "2021-11-14",
+     1
+    ],
+    [
+     "2021-11-15",
+     2
+    ],
+    [
+     "2021-11-16",
+     1
+    ],
+    [
+     "2021-11-17",
+     4
+    ],
+    [
+     "2021-11-18",
+     2
+    ],
+    [
+     "2021-11-19",
+     8
+    ],
+    [
+     "2021-11-20",
+     3
+    ],
+    [
+     "2021-11-21",
+     1
+    ],
+    [
+     "2021-11-22",
+     1
+    ],
+    [
+     "2021-11-23",
+     2
+    ],
+    [
+     "2021-11-24",
+     3
+    ],
+    [
+     "2021-11-25",
+     0
+    ],
+    [
+     "2021-11-26",
+     7
+    ],
+    [
+     "2021-11-27",
+     2
+    ],
+    [
+     "2021-11-28",
+     3
+    ],
+    [
+     "2021-11-29",
+     4
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-09-05",
+     0.0
+    ],
+    [
+     "2021-09-06",
+     1.0
+    ],
+    [
+     "2021-09-07",
+     0.0
+    ],
+    [
+     "2021-09-08",
+     0.0
+    ],
+    [
+     "2021-09-09",
+     1.0
+    ],
+    [
+     "2021-09-10",
+     1.0
+    ],
+    [
+     "2021-09-11",
+     1.0
+    ],
+    [
+     "2021-09-12",
+     1.0
+    ],
+    [
+     "2021-09-13",
+     1.0
+    ],
+    [
+     "2021-09-14",
+     0.0
+    ],
+    [
+     "2021-09-15",
+     2.0
+    ],
+    [
+     "2021-09-16",
+     0.0
+    ],
+    [
+     "2021-09-17",
+     2.0
+    ],
+    [
+     "2021-09-18",
+     1.0
+    ],
+    [
+     "2021-09-19",
+     1.0
+    ],
+    [
+     "2021-09-20",
+     1.0
+    ],
+    [
+     "2021-09-21",
+     0.0
+    ],
+    [
+     "2021-09-22",
+     2.0
+    ],
+    [
+     "2021-09-23",
+     1.0
+    ],
+    [
+     "2021-09-24",
+     1.0
+    ],
+    [
+     "2021-09-25",
+     1.0
+    ],
+    [
+     "2021-09-26",
+     1.0
+    ],
+    [
+     "2021-09-27",
+     1.0
+    ],
+    [
+     "2021-09-28",
+     0.0
+    ],
+    [
+     "2021-09-29",
+     2.0
+    ],
+    [
+     "2021-09-30",
+     1.0
+    ],
+    [
+     "2021-10-01",
+     1.0
+    ],
+    [
+     "2021-10-02",
+     1.0
+    ],
+    [
+     "2021-10-03",
+     1.0
+    ],
+    [
+     "2021-10-04",
+     1.0
+    ],
+    [
+     "2021-10-05",
+     1.0
+    ],
+    [
+     "2021-10-06",
+     1.0
+    ],
+    [
+     "2021-10-07",
+     1.0
+    ],
+    [
+     "2021-10-08",
+     1.0
+    ],
+    [
+     "2021-10-09",
+     1.0
+    ],
+    [
+     "2021-10-10",
+     2.0
+    ],
+    [
+     "2021-10-11",
+     1.0
+    ],
+    [
+     "2021-10-12",
+     2.0
+    ],
+    [
+     "2021-10-13",
+     1.0
+    ],
+    [
+     "2021-10-14",
+     2.0
+    ],
+    [
+     "2021-10-15",
+     2.0
+    ],
+    [
+     "2021-10-16",
+     2.0
+    ],
+    [
+     "2021-10-17",
+     2.0
+    ],
+    [
+     "2021-10-18",
+     2.0
+    ],
+    [
+     "2021-10-19",
+     2.0
+    ],
+    [
+     "2021-10-20",
+     1.0
+    ],
+    [
+     "2021-10-21",
+     3.0
+    ],
+    [
+     "2021-10-22",
+     2.0
+    ],
+    [
+     "2021-10-23",
+     2.0
+    ],
+    [
+     "2021-10-24",
+     2.0
+    ],
+    [
+     "2021-10-25",
+     1.0
+    ],
+    [
+     "2021-10-26",
+     3.0
+    ],
+    [
+     "2021-10-27",
+     0.0
+    ],
+    [
+     "2021-10-28",
+     4.0
+    ],
+    [
+     "2021-10-29",
+     1.0
+    ],
+    [
+     "2021-10-30",
+     3.0
+    ],
+    [
+     "2021-10-31",
+     1.0
+    ],
+    [
+     "2021-11-01",
+     3.0
+    ],
+    [
+     "2021-11-02",
+     2.0
+    ],
+    [
+     "2021-11-03",
+     3.0
+    ],
+    [
+     "2021-11-04",
+     2.0
+    ],
+    [
+     "2021-11-05",
+     3.0
+    ],
+    [
+     "2021-11-06",
+     1.0
+    ],
+    [
+     "2021-11-07",
+     3.0
+    ],
+    [
+     "2021-11-08",
+     2.0
+    ],
+    [
+     "2021-11-09",
+     3.0
+    ],
+    [
+     "2021-11-10",
+     1.0
+    ],
+    [
+     "2021-11-11",
+     2.0
+    ],
+    [
+     "2021-11-12",
+     3.0
+    ],
+    [
+     "2021-11-13",
+     1.0
+    ],
+    [
+     "2021-11-14",
+     4.0
+    ],
+    [
+     "2021-11-15",
+     2.0
+    ],
+    [
+     "2021-11-16",
+     2.0
+    ],
+    [
+     "2021-11-17",
+     1.0
+    ],
+    [
+     "2021-11-18",
+     2.0
+    ],
+    [
+     "2021-11-19",
+     4.0
+    ],
+    [
+     "2021-11-20",
+     1.0
+    ],
+    [
+     "2021-11-21",
+     2.0
+    ],
+    [
+     "2021-11-22",
+     4.0
+    ],
+    [
+     "2021-11-23",
+     2.0
+    ],
+    [
+     "2021-11-24",
+     3.0
+    ],
+    [
+     "2021-11-25",
+     1.0
+    ],
+    [
+     "2021-11-26",
+     4.0
+    ],
+    [
+     "2021-11-27",
+     0.0
+    ],
+    [
+     "2021-11-28",
+     4.0
+    ],
+    [
+     "2021-11-29",
+     3.0
+    ]
+   ]
+  },
+  "sea_oakland": {
+   "observed": [
+    [
+     "2021-08-22",
+     1
+    ],
+    [
+     "2021-08-23",
+     2
+    ],
+    [
+     "2021-08-24",
+     5
+    ],
+    [
+     "2021-08-25",
+     2
+    ],
+    [
+     "2021-08-26",
+     2
+    ],
+    [
+     "2021-08-27",
+     4
+    ],
+    [
+     "2021-08-28",
+     1
+    ],
+    [
+     "2021-08-29",
+     0
+    ],
+    [
+     "2021-08-30",
+     2
+    ],
+    [
+     "2021-08-31",
+     2
+    ],
+    [
+     "2021-09-01",
+     2
+    ],
+    [
+     "2021-09-02",
+     1
+    ],
+    [
+     "2021-09-03",
+     1
+    ],
+    [
+     "2021-09-04",
+     2
+    ],
+    [
+     "2021-09-05",
+     0
+    ],
+    [
+     "2021-09-06",
+     1
+    ],
+    [
+     "2021-09-07",
+     3
+    ],
+    [
+     "2021-09-08",
+     1
+    ],
+    [
+     "2021-09-09",
+     2
+    ],
+    [
+     "2021-09-10",
+     2
+    ],
+    [
+     "2021-09-11",
+     0
+    ],
+    [
+     "2021-09-12",
+     4
+    ],
+    [
+     "2021-09-13",
+     2
+    ],
+    [
+     "2021-09-14",
+     0
+    ],
+    [
+     "2021-09-15",
+     2
+    ],
+    [
+     "2021-09-16",
+     3
+    ],
+    [
+     "2021-09-17",
+     2
+    ],
+    [
+     "2021-09-18",
+     2
+    ],
+    [
+     "2021-09-19",
+     2
+    ],
+    [
+     "2021-09-20",
+     1
+    ],
+    [
+     "2021-09-21",
+     1
+    ],
+    [
+     "2021-09-22",
+     3
+    ],
+    [
+     "2021-09-23",
+     1
+    ],
+    [
+     "2021-09-24",
+     1
+    ],
+    [
+     "2021-09-25",
+     2
+    ],
+    [
+     "2021-09-26",
+     1
+    ],
+    [
+     "2021-09-27",
+     3
+    ],
+    [
+     "2021-09-28",
+     1
+    ],
+    [
+     "2021-09-29",
+     3
+    ],
+    [
+     "2021-09-30",
+     3
+    ],
+    [
+     "2021-10-01",
+     1
+    ],
+    [
+     "2021-10-02",
+     4
+    ],
+    [
+     "2021-10-03",
+     1
+    ],
+    [
+     "2021-10-04",
+     2
+    ],
+    [
+     "2021-10-05",
+     3
+    ],
+    [
+     "2021-10-06",
+     3
+    ],
+    [
+     "2021-10-07",
+     3
+    ],
+    [
+     "2021-10-08",
+     0
+    ],
+    [
+     "2021-10-09",
+     1
+    ],
+    [
+     "2021-10-10",
+     3
+    ],
+    [
+     "2021-10-11",
+     1
+    ],
+    [
+     "2021-10-12",
+     4
+    ],
+    [
+     "2021-10-13",
+     2
+    ],
+    [
+     "2021-10-14",
+     2
+    ],
+    [
+     "2021-10-15",
+     2
+    ],
+    [
+     "2021-10-16",
+     2
+    ],
+    [
+     "2021-10-17",
+     1
+    ],
+    [
+     "2021-10-18",
+     3
+    ],
+    [
+     "2021-10-19",
+     3
+    ],
+    [
+     "2021-10-20",
+     2
+    ],
+    [
+     "2021-10-21",
+     0
+    ],
+    [
+     "2021-10-22",
+     2
+    ],
+    [
+     "2021-10-23",
+     1
+    ],
+    [
+     "2021-10-24",
+     1
+    ],
+    [
+     "2021-10-25",
+     3
+    ],
+    [
+     "2021-10-26",
+     1
+    ],
+    [
+     "2021-10-27",
+     2
+    ],
+    [
+     "2021-10-28",
+     1
+    ],
+    [
+     "2021-10-29",
+     3
+    ],
+    [
+     "2021-10-30",
+     1
+    ],
+    [
+     "2021-10-31",
+     2
+    ],
+    [
+     "2021-11-01",
+     2
+    ],
+    [
+     "2021-11-02",
+     1
+    ],
+    [
+     "2021-11-03",
+     3
+    ],
+    [
+     "2021-11-04",
+     2
+    ],
+    [
+     "2021-11-05",
+     0
+    ],
+    [
+     "2021-11-06",
+     4
+    ],
+    [
+     "2021-11-07",
+     1
+    ],
+    [
+     "2021-11-08",
+     2
+    ],
+    [
+     "2021-11-09",
+     3
+    ],
+    [
+     "2021-11-10",
+     1
+    ],
+    [
+     "2021-11-11",
+     5
+    ],
+    [
+     "2021-11-12",
+     2
+    ],
+    [
+     "2021-11-13",
+     2
+    ],
+    [
+     "2021-11-14",
+     4
+    ],
+    [
+     "2021-11-15",
+     5
+    ],
+    [
+     "2021-11-16",
+     3
+    ],
+    [
+     "2021-11-17",
+     2
+    ],
+    [
+     "2021-11-18",
+     2
+    ],
+    [
+     "2021-11-19",
+     2
+    ],
+    [
+     "2021-11-20",
+     1
+    ],
+    [
+     "2021-11-21",
+     1
+    ],
+    [
+     "2021-11-22",
+     4
+    ],
+    [
+     "2021-11-23",
+     4
+    ],
+    [
+     "2021-11-24",
+     2
+    ],
+    [
+     "2021-11-25",
+     2
+    ],
+    [
+     "2021-11-26",
+     2
+    ],
+    [
+     "2021-11-27",
+     4
+    ],
+    [
+     "2021-11-28",
+     0
+    ],
+    [
+     "2021-11-29",
+     4
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-09-05",
+     2.0
+    ],
+    [
+     "2021-09-06",
+     2.0
+    ],
+    [
+     "2021-09-07",
+     1.0
+    ],
+    [
+     "2021-09-08",
+     1.0
+    ],
+    [
+     "2021-09-09",
+     2.0
+    ],
+    [
+     "2021-09-10",
+     2.0
+    ],
+    [
+     "2021-09-11",
+     1.0
+    ],
+    [
+     "2021-09-12",
+     2.0
+    ],
+    [
+     "2021-09-13",
+     3.0
+    ],
+    [
+     "2021-09-14",
+     1.0
+    ],
+    [
+     "2021-09-15",
+     2.0
+    ],
+    [
+     "2021-09-16",
+     1.0
+    ],
+    [
+     "2021-09-17",
+     2.0
+    ],
+    [
+     "2021-09-18",
+     2.0
+    ],
+    [
+     "2021-09-19",
+     2.0
+    ],
+    [
+     "2021-09-20",
+     1.0
+    ],
+    [
+     "2021-09-21",
+     2.0
+    ],
+    [
+     "2021-09-22",
+     1.0
+    ],
+    [
+     "2021-09-23",
+     1.0
+    ],
+    [
+     "2021-09-24",
+     3.0
+    ],
+    [
+     "2021-09-25",
+     1.0
+    ],
+    [
+     "2021-09-26",
+     2.0
+    ],
+    [
+     "2021-09-27",
+     1.0
+    ],
+    [
+     "2021-09-28",
+     2.0
+    ],
+    [
+     "2021-09-29",
+     2.0
+    ],
+    [
+     "2021-09-30",
+     1.0
+    ],
+    [
+     "2021-10-01",
+     2.0
+    ],
+    [
+     "2021-10-02",
+     2.0
+    ],
+    [
+     "2021-10-03",
+     0.0
+    ],
+    [
+     "2021-10-04",
+     2.0
+    ],
+    [
+     "2021-10-05",
+     3.0
+    ],
+    [
+     "2021-10-06",
+     2.0
+    ],
+    [
+     "2021-10-07",
+     1.0
+    ],
+    [
+     "2021-10-08",
+     1.0
+    ],
+    [
+     "2021-10-09",
+     2.0
+    ],
+    [
+     "2021-10-10",
+     1.0
+    ],
+    [
+     "2021-10-11",
+     1.0
+    ],
+    [
+     "2021-10-12",
+     2.0
+    ],
+    [
+     "2021-10-13",
+     3.0
+    ],
+    [
+     "2021-10-14",
+     1.0
+    ],
+    [
+     "2021-10-15",
+     1.0
+    ],
+    [
+     "2021-10-16",
+     3.0
+    ],
+    [
+     "2021-10-17",
+     0.0
+    ],
+    [
+     "2021-10-18",
+     2.0
+    ],
+    [
+     "2021-10-19",
+     2.0
+    ],
+    [
+     "2021-10-20",
+     2.0
+    ],
+    [
+     "2021-10-21",
+     3.0
+    ],
+    [
+     "2021-10-22",
+     2.0
+    ],
+    [
+     "2021-10-23",
+     2.0
+    ],
+    [
+     "2021-10-24",
+     0.0
+    ],
+    [
+     "2021-10-25",
+     2.0
+    ],
+    [
+     "2021-10-26",
+     4.0
+    ],
+    [
+     "2021-10-27",
+     2.0
+    ],
+    [
+     "2021-10-28",
+     1.0
+    ],
+    [
+     "2021-10-29",
+     2.0
+    ],
+    [
+     "2021-10-30",
+     3.0
+    ],
+    [
+     "2021-10-31",
+     1.0
+    ],
+    [
+     "2021-11-01",
+     2.0
+    ],
+    [
+     "2021-11-02",
+     4.0
+    ],
+    [
+     "2021-11-03",
+     0.0
+    ],
+    [
+     "2021-11-04",
+     1.0
+    ],
+    [
+     "2021-11-05",
+     4.0
+    ],
+    [
+     "2021-11-06",
+     3.0
+    ],
+    [
+     "2021-11-07",
+     0.0
+    ],
+    [
+     "2021-11-08",
+     4.0
+    ],
+    [
+     "2021-11-09",
+     3.0
+    ],
+    [
+     "2021-11-10",
+     0.0
+    ],
+    [
+     "2021-11-11",
+     3.0
+    ],
+    [
+     "2021-11-12",
+     3.0
+    ],
+    [
+     "2021-11-13",
+     1.0
+    ],
+    [
+     "2021-11-14",
+     0.0
+    ],
+    [
+     "2021-11-15",
+     3.0
+    ],
+    [
+     "2021-11-16",
+     3.0
+    ],
+    [
+     "2021-11-17",
+     3.0
+    ],
+    [
+     "2021-11-18",
+     4.0
+    ],
+    [
+     "2021-11-19",
+     4.0
+    ],
+    [
+     "2021-11-20",
+     1.0
+    ],
+    [
+     "2021-11-21",
+     4.0
+    ],
+    [
+     "2021-11-22",
+     3.0
+    ],
+    [
+     "2021-11-23",
+     4.0
+    ],
+    [
+     "2021-11-24",
+     2.0
+    ],
+    [
+     "2021-11-25",
+     5.0
+    ],
+    [
+     "2021-11-26",
+     2.0
+    ],
+    [
+     "2021-11-27",
+     4.0
+    ],
+    [
+     "2021-11-28",
+     3.0
+    ],
+    [
+     "2021-11-29",
+     2.0
+    ]
+   ]
+  },
+  "sea_savannah": {
+   "observed": [
+    [
+     "2021-08-22",
+     6
+    ],
+    [
+     "2021-08-23",
+     7
+    ],
+    [
+     "2021-08-24",
+     8
+    ],
+    [
+     "2021-08-25",
+     2
+    ],
+    [
+     "2021-08-26",
+     11
+    ],
+    [
+     "2021-08-27",
+     3
+    ],
+    [
+     "2021-08-28",
+     8
+    ],
+    [
+     "2021-08-29",
+     4
+    ],
+    [
+     "2021-08-30",
+     7
+    ],
+    [
+     "2021-08-31",
+     1
+    ],
+    [
+     "2021-09-01",
+     7
+    ],
+    [
+     "2021-09-02",
+     6
+    ],
+    [
+     "2021-09-03",
+     10
+    ],
+    [
+     "2021-09-04",
+     6
+    ],
+    [
+     "2021-09-05",
+     4
+    ],
+    [
+     "2021-09-06",
+     5
+    ],
+    [
+     "2021-09-07",
+     6
+    ],
+    [
+     "2021-09-08",
+     7
+    ],
+    [
+     "2021-09-09",
+     5
+    ],
+    [
+     "2021-09-10",
+     9
+    ],
+    [
+     "2021-09-11",
+     7
+    ],
+    [
+     "2021-09-12",
+     9
+    ],
+    [
+     "2021-09-13",
+     8
+    ],
+    [
+     "2021-09-14",
+     2
+    ],
+    [
+     "2021-09-15",
+     6
+    ],
+    [
+     "2021-09-16",
+     5
+    ],
+    [
+     "2021-09-17",
+     7
+    ],
+    [
+     "2021-09-18",
+     5
+    ],
+    [
+     "2021-09-19",
+     7
+    ],
+    [
+     "2021-09-20",
+     5
+    ],
+    [
+     "2021-09-21",
+     7
+    ],
+    [
+     "2021-09-22",
+     4
+    ],
+    [
+     "2021-09-23",
+     6
+    ],
+    [
+     "2021-09-24",
+     6
+    ],
+    [
+     "2021-09-25",
+     10
+    ],
+    [
+     "2021-09-26",
+     4
+    ],
+    [
+     "2021-09-27",
+     8
+    ],
+    [
+     "2021-09-28",
+     3
+    ],
+    [
+     "2021-09-29",
+     7
+    ],
+    [
+     "2021-09-30",
+     5
+    ],
+    [
+     "2021-10-01",
+     11
+    ],
+    [
+     "2021-10-02",
+     6
+    ],
+    [
+     "2021-10-03",
+     4
+    ],
+    [
+     "2021-10-04",
+     7
+    ],
+    [
+     "2021-10-05",
+     5
+    ],
+    [
+     "2021-10-06",
+     3
+    ],
+    [
+     "2021-10-07",
+     7
+    ],
+    [
+     "2021-10-08",
+     6
+    ],
+    [
+     "2021-10-09",
+     12
+    ],
+    [
+     "2021-10-10",
+     8
+    ],
+    [
+     "2021-10-11",
+     7
+    ],
+    [
+     "2021-10-12",
+     4
+    ],
+    [
+     "2021-10-13",
+     8
+    ],
+    [
+     "2021-10-14",
+     7
+    ],
+    [
+     "2021-10-15",
+     9
+    ],
+    [
+     "2021-10-16",
+     6
+    ],
+    [
+     "2021-10-17",
+     5
+    ],
+    [
+     "2021-10-18",
+     6
+    ],
+    [
+     "2021-10-19",
+     4
+    ],
+    [
+     "2021-10-20",
+     7
+    ],
+    [
+     "2021-10-21",
+     4
+    ],
+    [
+     "2021-10-22",
+     9
+    ],
+    [
+     "2021-10-23",
+     6
+    ],
+    [
+     "2021-10-24",
+     6
+    ],
+    [
+     "2021-10-25",
+     7
+    ],
+    [
+     "2021-10-26",
+     1
+    ],
+    [
+     "2021-10-27",
+     3
+    ],
+    [
+     "2021-10-28",
+     9
+    ],
+    [
+     "2021-10-29",
+     6
+    ],
+    [
+     "2021-10-30",
+     11
+    ],
+    [
+     "2021-10-31",
+     3
+    ],
+    [
+     "2021-11-01",
+     8
+    ],
+    [
+     "2021-11-02",
+     6
+    ],
+    [
+     "2021-11-03",
+     3
+    ],
+    [
+     "2021-11-04",
+     7
+    ],
+    [
+     "2021-11-05",
+     6
+    ],
+    [
+     "2021-11-06",
+     4
+    ],
+    [
+     "2021-11-07",
+     3
+    ],
+    [
+     "2021-11-08",
+     8
+    ],
+    [
+     "2021-11-09",
+     7
+    ],
+    [
+     "2021-11-10",
+     7
+    ],
+    [
+     "2021-11-11",
+     8
+    ],
+    [
+     "2021-11-12",
+     6
+    ],
+    [
+     "2021-11-13",
+     5
+    ],
+    [
+     "2021-11-14",
+     10
+    ],
+    [
+     "2021-11-15",
+     8
+    ],
+    [
+     "2021-11-16",
+     4
+    ],
+    [
+     "2021-11-17",
+     7
+    ],
+    [
+     "2021-11-18",
+     6
+    ],
+    [
+     "2021-11-19",
+     7
+    ],
+    [
+     "2021-11-20",
+     3
+    ],
+    [
+     "2021-11-21",
+     7
+    ],
+    [
+     "2021-11-22",
+     3
+    ],
+    [
+     "2021-11-23",
+     8
+    ],
+    [
+     "2021-11-24",
+     7
+    ],
+    [
+     "2021-11-25",
+     8
+    ],
+    [
+     "2021-11-26",
+     3
+    ],
+    [
+     "2021-11-27",
+     8
+    ],
+    [
+     "2021-11-28",
+     4
+    ],
+    [
+     "2021-11-29",
+     8
+    ]
+   ],
+   "simulated": [
+    [
+     "2021-09-05",
+     1.0
+    ],
+    [
+     "2021-09-06",
+     4.0
+    ],
+    [
+     "2021-09-07",
+     0.0
+    ],
+    [
+     "2021-09-08",
+     3.0
+    ],
+    [
+     "2021-09-09",
+     2.0
+    ],
+    [
+     "2021-09-10",
+     0.0
+    ],
+    [
+     "2021-09-11",
+     4.0
+    ],
+    [
+     "2021-09-12",
+     5.0
+    ],
+    [
+     "2021-09-13",
+     2.0
+    ],
+    [
+     "2021-09-14",
+     1.0
+    ],
+    [
+     "2021-09-15",
+     4.0
+    ],
+    [
+     "2021-09-16",
+     3.0
+    ],
+    [
+     "2021-09-17",
+     4.0
+    ],
+    [
+     "2021-09-18",
+     3.0
+    ],
+    [
+     "2021-09-19",
+     2.0
+    ],
+    [
+     "2021-09-20",
+     2.0
+    ],
+    [
+     "2021-09-21",
+     4.0
+    ],
+    [
+     "2021-09-22",
+     3.0
+    ],
+    [
+     "2021-09-23",
+     4.0
+    ],
+    [
+     "2021-09-24",
+     2.0
+    ],
+    [
+     "2021-09-25",
+     3.0
+    ],
+    [
+     "2021-09-26",
+     4.0
+    ],
+    [
+     "2021-09-27",
+     2.0
+    ],
+    [
+     "2021-09-28",
+     7.0
+    ],
+    [
+     "2021-09-29",
+     1.0
+    ],
+    [
+     "2021-09-30",
+     2.0
+    ],
+    [
+     "2021-10-01",
+     6.0
+    ],
+    [
+     "2021-10-02",
+     2.0
+    ],
+    [
+     "2021-10-03",
+     2.0
+    ],
+    [
+     "2021-10-04",
+     8.0
+    ],
+    [
+     "2021-10-05",
+     4.0
+    ],
+    [
+     "2021-10-06",
+     3.0
+    ],
+    [
+     "2021-10-07",
+     4.0
+    ],
+    [
+     "2021-10-08",
+     4.0
+    ],
+    [
+     "2021-10-09",
+     5.0
+    ],
+    [
+     "2021-10-10",
+     4.0
+    ],
+    [
+     "2021-10-11",
+     2.0
+    ],
+    [
+     "2021-10-12",
+     4.0
+    ],
+    [
+     "2021-10-13",
+     5.0
+    ],
+    [
+     "2021-10-14",
+     3.0
+    ],
+    [
+     "2021-10-15",
+     5.0
+    ],
+    [
+     "2021-10-16",
+     2.0
+    ],
+    [
+     "2021-10-17",
+     7.0
+    ],
+    [
+     "2021-10-18",
+     3.0
+    ],
+    [
+     "2021-10-19",
+     2.0
+    ],
+    [
+     "2021-10-20",
+     7.0
+    ],
+    [
+     "2021-10-21",
+     4.0
+    ],
+    [
+     "2021-10-22",
+     5.0
+    ],
+    [
+     "2021-10-23",
+     3.0
+    ],
+    [
+     "2021-10-24",
+     5.0
+    ],
+    [
+     "2021-10-25",
+     4.0
+    ],
+    [
+     "2021-10-26",
+     4.0
+    ],
+    [
+     "2021-10-27",
+     7.0
+    ],
+    [
+     "2021-10-28",
+     4.0
+    ],
+    [
+     "2021-10-29",
+     3.0
+    ],
+    [
+     "2021-10-30",
+     6.0
+    ],
+    [
+     "2021-10-31",
+     4.0
+    ],
+    [
+     "2021-11-01",
+     8.0
+    ],
+    [
+     "2021-11-02",
+     4.0
+    ],
+    [
+     "2021-11-03",
+     3.0
+    ],
+    [
+     "2021-11-04",
+     6.0
+    ],
+    [
+     "2021-11-05",
+     6.0
+    ],
+    [
+     "2021-11-06",
+     5.0
+    ],
+    [
+     "2021-11-07",
+     5.0
+    ],
+    [
+     "2021-11-08",
+     3.0
+    ],
+    [
+     "2021-11-09",
+     8.0
+    ],
+    [
+     "2021-11-10",
+     2.0
+    ],
+    [
+     "2021-11-11",
+     8.0
+    ],
+    [
+     "2021-11-12",
+     7.0
+    ],
+    [
+     "2021-11-13",
+     3.0
+    ],
+    [
+     "2021-11-14",
+     5.0
+    ],
+    [
+     "2021-11-15",
+     5.0
+    ],
+    [
+     "2021-11-16",
+     11.0
+    ],
+    [
+     "2021-11-17",
+     5.0
+    ],
+    [
+     "2021-11-18",
+     3.0
+    ],
+    [
+     "2021-11-19",
+     5.0
+    ],
+    [
+     "2021-11-20",
+     6.0
+    ],
+    [
+     "2021-11-21",
+     6.0
+    ],
+    [
+     "2021-11-22",
+     9.0
+    ],
+    [
+     "2021-11-23",
+     6.0
+    ],
+    [
+     "2021-11-24",
+     5.0
+    ],
+    [
+     "2021-11-25",
+     4.0
+    ],
+    [
+     "2021-11-26",
+     11.0
+    ],
+    [
+     "2021-11-27",
+     7.0
+    ],
+    [
+     "2021-11-28",
+     6.0
+    ],
+    [
+     "2021-11-29",
+     4.0
+    ]
+   ]
+  }
+ },
+ "source": "COMPUTED",
+ "title": "Los Angeles / Long Beach congestion, 2021",
+ "window": {
+  "baseline": {
+   "from": "2021-08-22",
+   "to": "2021-09-18"
+  },
+  "evaluation_from": "2021-09-19",
+  "evaluation_to": "2021-11-15",
+  "event_start": "2021-09-19",
+  "from": "2021-09-05",
+  "to": "2021-11-29"
+ }
+}

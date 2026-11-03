@@ -1,0 +1,4993 @@
+{
+ "baselines": {
+  "k_hop": {
+   "budget_places": 3,
+   "description": "directed k-hop from the seed, whole hop levels, same place budget as the model's predicted-down count; direction + rank only",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.043272,
+     0.777222
+    ],
+    "graded": 6,
+    "hits": 2,
+    "rate": 0.333333
+   },
+   "k": 1,
+   "magnitude": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "onset": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "rank_correlation": {
+    "graded": true,
+    "n": 6,
+    "note": null,
+    "spearman": 0.277218
+   },
+   "ungraded": []
+  },
+  "persistence": {
+   "description": "nothing changes: flat, 0 pp, no onset",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.118117,
+     0.881883
+    ],
+    "graded": 6,
+    "hits": 3,
+    "rate": 0.5
+   },
+   "magnitude": {
+    "ci95_clopper_pearson": [
+     0.118117,
+     0.881883
+    ],
+    "graded": 6,
+    "hits": 3,
+    "rate": 0.5
+   },
+   "onset": {
+    "ci95_clopper_pearson": [
+     0.0,
+     0.602365
+    ],
+    "false_alarms": 0,
+    "graded": 4,
+    "hits": 0,
+    "mean_abs_error_d": null,
+    "n_with_both": 0,
+    "rate": 0.0
+   },
+   "rank_correlation": {
+    "graded": false,
+    "n": 6,
+    "note": "UNGRADED - fewer than 4 places with variation on both sides",
+    "spearman": null
+   },
+   "ungraded": []
+  }
+ },
+ "card_id": "real_3b7406f38290b1c9",
+ "caveats": [
+  "A few events prove the machinery, not the forecasting power: every rate here rests on a handful of places for one or two events. One graded place moves a hit rate by tens of points. Read these as a worked, auditable comparison, not a skill estimate. The simulator's traffic is modelled from lane structure, not the historical fleet."
+ ],
+ "comparisons": {
+  "direction_vs_k_hop": "model 2/6 vs k_hop 2/6",
+  "direction_vs_persistence": "model 2/6 vs persistence 3/6",
+  "magnitude_vs_persistence": "model 0/1 vs persistence 3/6",
+  "onset_vs_persistence": "model 1/4 vs persistence 0/4"
+ },
+ "event": {
+  "capacity_loss": 0.5,
+  "capacity_loss_basis": {
+   "kind": "derived",
+   "source": "Panama Canal Authority (ACP) Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+   "text": "Derived by arithmetic only on the two sourced ACP slot counts: normal schedule ~36 transits/day, crisis minimum 18/day from 1 Feb 2024; capacity_loss = 1 - 18/36 = 0.5. No conversion factor involved."
+  },
+  "control_places": [
+   "chk_malacca"
+  ],
+  "dedupe_key": "curated_replay:panama_2023_24",
+  "detected_at": "2023-10-30T00:00:00Z",
+  "event_id": "evt_20231030_chk_panama_capacity_cut_57172cbe",
+  "evidence_url": "Panama Canal Authority (ACP) Customer Advisory 30 Oct 2023, via DB Group: https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought",
+  "expected_duration_d": 215.0,
+  "historical": true,
+  "id": "evt_20231030_chk_panama_capacity_cut_57172cbe",
+  "kind": "capacity_cut",
+  "mode": "SNAPSHOT",
+  "node_id": "chk_panama",
+  "provenance": {
+   "mode": "SNAPSHOT",
+   "retrieved_at": "2026-10-20T00:00:00Z",
+   "source": "SupermAP curated replay record (data/replay/panama_2023_24.json)"
+  },
+  "replay_id": "panama_2023_24",
+  "retrieved_at": "2026-10-20T00:00:00Z",
+  "severity": 4,
+  "source": "SupermAP curated replay record (data/replay/panama_2023_24.json)",
+  "started_at": "2023-10-30T00:00:00Z",
+  "status": "resolved",
+  "title": "Panama Canal drought, 2023-24",
+  "watch_context": "Panama slots cut 36->18/day. NOTE: the Red Sea crisis overlaps this window from Dec 2023 and confounds Suez and Cape of Good Hope; the grade says so.",
+  "watch_places": [
+   "chk_panama",
+   "sea_balboa",
+   "sea_colon",
+   "chk_suez",
+   "chk_capeofgoodhope"
+  ]
+ },
+ "forked_from": {
+  "events": [
+   {
+    "event_id": "evt_20231030_chk_panama_capacity_cut_57172cbe",
+    "kind": "capacity_cut",
+    "mode": "SNAPSHOT",
+    "node_id": "chk_panama",
+    "provenance": {
+     "mode": "SNAPSHOT",
+     "retrieved_at": "2026-10-20T00:00:00Z",
+     "source": "SupermAP curated replay record (data/replay/panama_2023_24.json)"
+    },
+    "replay_id": "panama_2023_24",
+    "source": "SupermAP curated replay record (data/replay/panama_2023_24.json)",
+    "started_at": "2023-10-30T00:00:00Z"
+   }
+  ],
+  "kind": "history_fork",
+  "label": "FORKED FROM HISTORY — the request below is derived from a recorded (SNAPSHOT) or inferred (MODELED) event; whatever runs from it is SIMULATED and must be labelled so.",
+  "lineage_id": "fork_91eb89a165bd08aa",
+  "simulated_outputs_are": "SIMULATED (MODELED engine/sim output); inputs are HISTORICAL (SNAPSHOT/MODELED)",
+  "window": {
+   "from": "2023-10-30",
+   "to": "2024-06-01"
+  }
+ },
+ "grader": "deterministic arithmetic; no LLM at any step",
+ "headline": {
+  "comparisons": {
+   "direction_vs_k_hop": "model 2/6 vs k_hop 2/6",
+   "direction_vs_persistence": "model 2/6 vs persistence 3/6",
+   "magnitude_vs_persistence": "model 0/1 vs persistence 3/6",
+   "onset_vs_persistence": "model 1/4 vs persistence 0/4"
+  },
+  "direction": {
+   "k_hop": "2/6",
+   "model": "2/6",
+   "persistence": "3/6"
+  },
+  "magnitude": {
+   "model": "0/1",
+   "persistence": "3/6"
+  },
+  "onset": {
+   "model": "1/4",
+   "model_mean_abs_error_d": 13.67037,
+   "persistence": "0/4"
+  },
+  "rank_correlation": {
+   "k_hop": 0.277218,
+   "model": 0.491869
+  }
+ },
+ "label": "BACKTEST — historical outcome vs a SIMULATED outcome. Not the live Ledger; these numbers never mix with Ledger grades.",
+ "metrics": {
+  "direction": {
+   "ci95_clopper_pearson": [
+    0.043272,
+    0.777222
+   ],
+   "graded": 6,
+   "hits": 2,
+   "rate": 0.333333
+  },
+  "magnitude": {
+   "ci95_clopper_pearson": [
+    0.0,
+    0.975
+   ],
+   "graded": 1,
+   "hits": 0,
+   "rate": 0.0
+  },
+  "onset": {
+   "ci95_clopper_pearson": [
+    0.006309,
+    0.80588
+   ],
+   "false_alarms": 0,
+   "graded": 4,
+   "hits": 1,
+   "mean_abs_error_d": 13.67037,
+   "n_with_both": 3,
+   "rate": 0.25
+  },
+  "rank_correlation": {
+   "graded": true,
+   "n": 6,
+   "note": null,
+   "spearman": 0.491869
+  },
+  "ungraded": []
+ },
+ "not_compared": [],
+ "notes": [
+  "Panama slots cut 36->18/day. NOTE: the Red Sea crisis overlaps this window from Dec 2023 and confounds Suez and Cape of Good Hope; the grade says so."
+ ],
+ "observed_provenance": [
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "a1dcb30ecb5e79519d9fffe17d57cc9b3641883672ae49af402f6ff81069aec9",
+   "place": "chk_panama",
+   "retrieved_at": "2026-10-25T00:44:59Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "port_calls",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "c917c17f3116861683ceb2ab62a4af4848f2565b1078e4febae67d061311a895",
+   "place": "sea_balboa",
+   "retrieved_at": "2026-10-25T00:45:00Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "calls/day"
+  },
+  {
+   "metric": "port_calls",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "94eb70181e27ba90b082c7ea74d5b12459697f73dcd953ee662666bec59e9999",
+   "place": "sea_colon",
+   "retrieved_at": "2026-10-25T00:45:00Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "calls/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "650df89a5b6fd706f9fca1a400b51155ad1144f4eb6660b68816928378446d74",
+   "place": "chk_suez",
+   "retrieved_at": "2026-10-25T00:44:43Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "79bcdfce8f93bfcefee9cca4677a908a5921abc5361638f754d27857c82bc689",
+   "place": "chk_capeofgoodhope",
+   "retrieved_at": "2026-10-25T00:44:43Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "f12117ef43a934f9bbddeb03b5e90fb989d5a3e3a240081afe596580c575cd9b",
+   "place": "chk_malacca",
+   "retrieved_at": "2026-10-25T00:44:44Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  }
+ ],
+ "places": [
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 0,
+    "onset_lag_d": null,
+    "severity": -0.0
+   },
+   "model": {
+    "change_pct": -50.0,
+    "channels": [
+     "congestion"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 13.888889,
+    "onset_lag_d": 13.888889,
+    "severity": 13.888889
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 30.1429,
+    "change_pct": -28.113,
+    "direction": "down",
+    "eval_days_present": 151,
+    "eval_mean": 21.6689,
+    "onset_date": "2023-11-10",
+    "onset_lag_d": 11
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_panama",
+   "role": "seed"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 1,
+    "onset_lag_d": null,
+    "severity": -1.0
+   },
+   "model": {
+    "change_pct": null,
+    "channels": [
+     "inventory"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 10.0,
+    "onset_lag_d": 24.188889,
+    "severity": 10.0
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 7.2143,
+    "change_pct": -9.121,
+    "direction": "flat",
+    "eval_days_present": 151,
+    "eval_mean": 6.5563,
+    "onset_date": "2023-12-17",
+    "onset_lag_d": 48
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "sea_balboa",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 1,
+    "onset_lag_d": null,
+    "severity": -1.0
+   },
+   "model": {
+    "change_pct": null,
+    "channels": [
+     "inventory"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 10.0,
+    "onset_lag_d": 35.688889,
+    "severity": 10.0
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 3.0357,
+    "change_pct": 3.623,
+    "direction": "flat",
+    "eval_days_present": 151,
+    "eval_mean": 3.1457,
+    "onset_date": "2023-12-19",
+    "onset_lag_d": 50
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "sea_colon",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 6,
+    "onset_lag_d": null,
+    "severity": -6.0
+   },
+   "model": {
+    "change_pct": null,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 76.4643,
+    "change_pct": -26.685,
+    "direction": "down",
+    "eval_days_present": 151,
+    "eval_mean": 56.0596,
+    "onset_date": "2023-12-23",
+    "onset_lag_d": 54
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_suez",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 4,
+    "onset_lag_d": null,
+    "severity": -4.0
+   },
+   "model": {
+    "change_pct": null,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 50.3929,
+    "change_pct": 35.229,
+    "direction": "up",
+    "eval_days_present": 151,
+    "eval_mean": 68.1457,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_capeofgoodhope",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "flat",
+    "hops_from_seed": 3,
+    "onset_lag_d": null,
+    "severity": -3.0
+   },
+   "model": {
+    "change_pct": null,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 221.3214,
+    "change_pct": 0.956,
+    "direction": "flat",
+    "eval_days_present": 151,
+    "eval_mean": 223.4371,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_malacca",
+   "role": "control"
+  }
+ ],
+ "rule": {
+  "baseline_days": 28,
+  "baseline_min_days": 14,
+  "denominators": {
+   "direction": "compared places with an observed and a predicted direction",
+   "magnitude": "compared places with an observed and a predicted change",
+   "onset": "compared places with an observed onset",
+   "rank": "compared places with an observed and a predicted severity"
+  },
+  "evaluation_period": "[max(from, event start), min(to, event start + ceil(duration_d) - 1)] - the disruption's own stated duration, clipped to the window / sim horizon",
+  "flat_band_pct": 10.0,
+  "grader": "deterministic arithmetic; no LLM at any step",
+  "id": "realism-v1",
+  "magnitude_band_pp": 20.0,
+  "observed_series": "IMF PortWatch daily counts (SNAPSHOT history)",
+  "onset": {
+   "hit_within_days": 7,
+   "sustain_days": 3,
+   "threshold_pct": -20.0
+  },
+  "rank": {
+   "min_places": 4,
+   "statistic": "Spearman"
+  },
+  "sim_baseline_min_days": 7,
+  "ungraded_is": "never a hit, never a miss, never estimated"
+ },
+ "run": {
+  "kind": "chain",
+  "prediction_digest": {
+   "event": {
+    "capacity_loss": 0.5,
+    "duration_d": 215.0,
+    "kind": "capacity_cut",
+    "node_id": "chk_panama",
+    "shape": "step",
+    "started_at": "2023-10-30T00:00:00Z"
+   },
+   "kind": "chain",
+   "n_events": 20,
+   "params": {
+    "hit_threshold": 0.15,
+    "queue_sensitivity": 1.0
+   },
+   "places": {
+    "chk_panama": {
+     "channels": [
+      "congestion"
+     ],
+     "first_at": "2023-11-12T21:20:00Z",
+     "first_delay_d": 13.888889,
+     "first_lag_d": 13.888889,
+     "first_seq": 0,
+     "max_delay_d": 13.888889,
+     "max_magnitude": 0.5
+    },
+    "sea_balboa": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-11-23T04:32:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 24.188889,
+     "first_seq": 1,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.186649
+    },
+    "sea_buenosaires": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2023-12-19T19:10:27Z",
+     "first_delay_d": 6.410045,
+     "first_lag_d": 50.798924,
+     "first_seq": 8,
+     "max_delay_d": 6.410045,
+     "max_magnitude": 0.040963
+    },
+    "sea_callao": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2023-12-06T16:32:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 37.688889,
+     "first_seq": 5,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.088452
+    },
+    "sea_cartagena": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-11-23T21:20:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 24.888889,
+     "first_seq": 2,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.515032
+    },
+    "sea_colon": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-12-04T16:32:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 35.688889,
+     "first_seq": 3,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.967442
+    },
+    "sea_guayaquil": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2023-12-18T11:44:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 49.488889,
+     "first_seq": 6,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.107779
+    },
+    "sea_manzanillo": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-12-07T16:32:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 38.688889,
+     "first_seq": 4,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.337366
+    },
+    "sea_sanantonio": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2023-12-14T17:01:19Z",
+     "first_delay_d": 5.020366,
+     "first_lag_d": 45.709248,
+     "first_seq": 9,
+     "max_delay_d": 5.020366,
+     "max_magnitude": 0.03969
+    },
+    "sea_santos": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-12-09T21:20:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 40.888889,
+     "first_seq": 7,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.128027
+    }
+   },
+   "run_id": "run_6037bf497e8ea5d8",
+   "stream_hash": "ecd4066b566f79be151bf3a0e0592478606484ce26c5949e0ac786777e6b50b1"
+  },
+  "run_id": "run_6037bf497e8ea5d8",
+  "stream_hash": "ecd4066b566f79be151bf3a0e0592478606484ce26c5949e0ac786777e6b50b1"
+ },
+ "schema": "supermap.realism_card.v1",
+ "series": {
+  "chk_capeofgoodhope": {
+   "observed": [
+    [
+     "2023-10-02",
+     68
+    ],
+    [
+     "2023-10-03",
+     61
+    ],
+    [
+     "2023-10-04",
+     52
+    ],
+    [
+     "2023-10-05",
+     49
+    ],
+    [
+     "2023-10-06",
+     36
+    ],
+    [
+     "2023-10-07",
+     42
+    ],
+    [
+     "2023-10-08",
+     47
+    ],
+    [
+     "2023-10-09",
+     52
+    ],
+    [
+     "2023-10-10",
+     45
+    ],
+    [
+     "2023-10-11",
+     49
+    ],
+    [
+     "2023-10-12",
+     57
+    ],
+    [
+     "2023-10-13",
+     63
+    ],
+    [
+     "2023-10-14",
+     51
+    ],
+    [
+     "2023-10-15",
+     39
+    ],
+    [
+     "2023-10-16",
+     66
+    ],
+    [
+     "2023-10-17",
+     55
+    ],
+    [
+     "2023-10-18",
+     49
+    ],
+    [
+     "2023-10-19",
+     52
+    ],
+    [
+     "2023-10-20",
+     58
+    ],
+    [
+     "2023-10-21",
+     43
+    ],
+    [
+     "2023-10-22",
+     47
+    ],
+    [
+     "2023-10-23",
+     48
+    ],
+    [
+     "2023-10-24",
+     51
+    ],
+    [
+     "2023-10-25",
+     51
+    ],
+    [
+     "2023-10-26",
+     64
+    ],
+    [
+     "2023-10-27",
+     42
+    ],
+    [
+     "2023-10-28",
+     46
+    ],
+    [
+     "2023-10-29",
+     28
+    ],
+    [
+     "2023-10-30",
+     37
+    ],
+    [
+     "2023-10-31",
+     51
+    ],
+    [
+     "2023-11-01",
+     58
+    ],
+    [
+     "2023-11-02",
+     57
+    ],
+    [
+     "2023-11-03",
+     48
+    ],
+    [
+     "2023-11-04",
+     47
+    ],
+    [
+     "2023-11-05",
+     42
+    ],
+    [
+     "2023-11-06",
+     54
+    ],
+    [
+     "2023-11-07",
+     53
+    ],
+    [
+     "2023-11-08",
+     42
+    ],
+    [
+     "2023-11-09",
+     48
+    ],
+    [
+     "2023-11-10",
+     47
+    ],
+    [
+     "2023-11-11",
+     46
+    ],
+    [
+     "2023-11-12",
+     35
+    ],
+    [
+     "2023-11-13",
+     53
+    ],
+    [
+     "2023-11-14",
+     55
+    ],
+    [
+     "2023-11-15",
+     60
+    ],
+    [
+     "2023-11-16",
+     44
+    ],
+    [
+     "2023-11-17",
+     46
+    ],
+    [
+     "2023-11-18",
+     58
+    ],
+    [
+     "2023-11-19",
+     44
+    ],
+    [
+     "2023-11-20",
+     63
+    ],
+    [
+     "2023-11-21",
+     44
+    ],
+    [
+     "2023-11-22",
+     51
+    ],
+    [
+     "2023-11-23",
+     55
+    ],
+    [
+     "2023-11-24",
+     48
+    ],
+    [
+     "2023-11-25",
+     49
+    ],
+    [
+     "2023-11-26",
+     50
+    ],
+    [
+     "2023-11-27",
+     45
+    ],
+    [
+     "2023-11-28",
+     46
+    ],
+    [
+     "2023-11-29",
+     39
+    ],
+    [
+     "2023-11-30",
+     51
+    ],
+    [
+     "2023-12-01",
+     52
+    ],
+    [
+     "2023-12-02",
+     50
+    ],
+    [
+     "2023-12-03",
+     35
+    ],
+    [
+     "2023-12-04",
+     49
+    ],
+    [
+     "2023-12-05",
+     43
+    ],
+    [
+     "2023-12-06",
+     52
+    ],
+    [
+     "2023-12-07",
+     40
+    ],
+    [
+     "2023-12-08",
+     49
+    ],
+    [
+     "2023-12-09",
+     36
+    ],
+    [
+     "2023-12-10",
+     49
+    ],
+    [
+     "2023-12-11",
+     54
+    ],
+    [
+     "2023-12-12",
+     48
+    ],
+    [
+     "2023-12-13",
+     62
+    ],
+    [
+     "2023-12-14",
+     45
+    ],
+    [
+     "2023-12-15",
+     50
+    ],
+    [
+     "2023-12-16",
+     57
+    ],
+    [
+     "2023-12-17",
+     57
+    ],
+    [
+     "2023-12-18",
+     59
+    ],
+    [
+     "2023-12-19",
+     44
+    ],
+    [
+     "2023-12-20",
+     48
+    ],
+    [
+     "2023-12-21",
+     54
+    ],
+    [
+     "2023-12-22",
+     43
+    ],
+    [
+     "2023-12-23",
+     48
+    ],
+    [
+     "2023-12-24",
+     51
+    ],
+    [
+     "2023-12-25",
+     50
+    ],
+    [
+     "2023-12-26",
+     54
+    ],
+    [
+     "2023-12-27",
+     54
+    ],
+    [
+     "2023-12-28",
+     58
+    ],
+    [
+     "2023-12-29",
+     76
+    ],
+    [
+     "2023-12-30",
+     65
+    ],
+    [
+     "2023-12-31",
+     61
+    ],
+    [
+     "2024-01-01",
+     65
+    ],
+    [
+     "2024-01-02",
+     82
+    ],
+    [
+     "2024-01-03",
+     87
+    ],
+    [
+     "2024-01-04",
+     69
+    ],
+    [
+     "2024-01-05",
+     70
+    ],
+    [
+     "2024-01-06",
+     70
+    ],
+    [
+     "2024-01-07",
+     64
+    ],
+    [
+     "2024-01-08",
+     79
+    ],
+    [
+     "2024-01-09",
+     66
+    ],
+    [
+     "2024-01-10",
+     72
+    ],
+    [
+     "2024-01-11",
+     74
+    ],
+    [
+     "2024-01-12",
+     83
+    ],
+    [
+     "2024-01-13",
+     82
+    ],
+    [
+     "2024-01-14",
+     52
+    ],
+    [
+     "2024-01-15",
+     73
+    ],
+    [
+     "2024-01-16",
+     63
+    ],
+    [
+     "2024-01-17",
+     64
+    ],
+    [
+     "2024-01-18",
+     70
+    ],
+    [
+     "2024-01-19",
+     73
+    ],
+    [
+     "2024-01-20",
+     61
+    ],
+    [
+     "2024-01-21",
+     87
+    ],
+    [
+     "2024-01-22",
+     48
+    ],
+    [
+     "2024-01-23",
+     71
+    ],
+    [
+     "2024-01-24",
+     66
+    ],
+    [
+     "2024-01-25",
+     85
+    ],
+    [
+     "2024-01-26",
+     84
+    ],
+    [
+     "2024-01-27",
+     72
+    ],
+    [
+     "2024-01-28",
+     85
+    ],
+    [
+     "2024-01-29",
+     69
+    ],
+    [
+     "2024-01-30",
+     84
+    ],
+    [
+     "2024-01-31",
+     68
+    ],
+    [
+     "2024-02-01",
+     87
+    ],
+    [
+     "2024-02-02",
+     80
+    ],
+    [
+     "2024-02-03",
+     91
+    ],
+    [
+     "2024-02-04",
+     82
+    ],
+    [
+     "2024-02-05",
+     84
+    ],
+    [
+     "2024-02-06",
+     85
+    ],
+    [
+     "2024-02-07",
+     75
+    ],
+    [
+     "2024-02-08",
+     74
+    ],
+    [
+     "2024-02-09",
+     71
+    ],
+    [
+     "2024-02-10",
+     93
+    ],
+    [
+     "2024-02-11",
+     70
+    ],
+    [
+     "2024-02-12",
+     102
+    ],
+    [
+     "2024-02-13",
+     89
+    ],
+    [
+     "2024-02-14",
+     75
+    ],
+    [
+     "2024-02-15",
+     98
+    ],
+    [
+     "2024-02-16",
+     62
+    ],
+    [
+     "2024-02-17",
+     109
+    ],
+    [
+     "2024-02-18",
+     104
+    ],
+    [
+     "2024-02-19",
+     83
+    ],
+    [
+     "2024-02-20",
+     91
+    ],
+    [
+     "2024-02-21",
+     96
+    ],
+    [
+     "2024-02-22",
+     85
+    ],
+    [
+     "2024-02-23",
+     105
+    ],
+    [
+     "2024-02-24",
+     86
+    ],
+    [
+     "2024-02-25",
+     66
+    ],
+    [
+     "2024-02-26",
+     87
+    ],
+    [
+     "2024-02-27",
+     70
+    ],
+    [
+     "2024-02-28",
+     84
+    ],
+    [
+     "2024-02-29",
+     103
+    ],
+    [
+     "2024-03-01",
+     101
+    ],
+    [
+     "2024-03-02",
+     106
+    ],
+    [
+     "2024-03-03",
+     102
+    ],
+    [
+     "2024-03-04",
+     91
+    ],
+    [
+     "2024-03-05",
+     85
+    ],
+    [
+     "2024-03-06",
+     90
+    ],
+    [
+     "2024-03-07",
+     107
+    ],
+    [
+     "2024-03-08",
+     84
+    ],
+    [
+     "2024-03-09",
+     84
+    ],
+    [
+     "2024-03-10",
+     100
+    ],
+    [
+     "2024-03-11",
+     89
+    ],
+    [
+     "2024-03-12",
+     75
+    ],
+    [
+     "2024-03-13",
+     97
+    ],
+    [
+     "2024-03-14",
+     84
+    ],
+    [
+     "2024-03-15",
+     87
+    ],
+    [
+     "2024-03-16",
+     81
+    ],
+    [
+     "2024-03-17",
+     66
+    ],
+    [
+     "2024-03-18",
+     95
+    ],
+    [
+     "2024-03-19",
+     66
+    ],
+    [
+     "2024-03-20",
+     75
+    ],
+    [
+     "2024-03-21",
+     84
+    ],
+    [
+     "2024-03-22",
+     80
+    ],
+    [
+     "2024-03-23",
+     67
+    ],
+    [
+     "2024-03-24",
+     88
+    ],
+    [
+     "2024-03-25",
+     78
+    ],
+    [
+     "2024-03-26",
+     91
+    ],
+    [
+     "2024-03-27",
+     68
+    ],
+    [
+     "2024-03-28",
+     85
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_malacca": {
+   "observed": [
+    [
+     "2023-10-02",
+     218
+    ],
+    [
+     "2023-10-03",
+     220
+    ],
+    [
+     "2023-10-04",
+     213
+    ],
+    [
+     "2023-10-05",
+     196
+    ],
+    [
+     "2023-10-06",
+     217
+    ],
+    [
+     "2023-10-07",
+     231
+    ],
+    [
+     "2023-10-08",
+     243
+    ],
+    [
+     "2023-10-09",
+     233
+    ],
+    [
+     "2023-10-10",
+     214
+    ],
+    [
+     "2023-10-11",
+     204
+    ],
+    [
+     "2023-10-12",
+     213
+    ],
+    [
+     "2023-10-13",
+     207
+    ],
+    [
+     "2023-10-14",
+     226
+    ],
+    [
+     "2023-10-15",
+     245
+    ],
+    [
+     "2023-10-16",
+     243
+    ],
+    [
+     "2023-10-17",
+     207
+    ],
+    [
+     "2023-10-18",
+     242
+    ],
+    [
+     "2023-10-19",
+     231
+    ],
+    [
+     "2023-10-20",
+     218
+    ],
+    [
+     "2023-10-21",
+     239
+    ],
+    [
+     "2023-10-22",
+     205
+    ],
+    [
+     "2023-10-23",
+     223
+    ],
+    [
+     "2023-10-24",
+     237
+    ],
+    [
+     "2023-10-25",
+     203
+    ],
+    [
+     "2023-10-26",
+     227
+    ],
+    [
+     "2023-10-27",
+     208
+    ],
+    [
+     "2023-10-28",
+     210
+    ],
+    [
+     "2023-10-29",
+     224
+    ],
+    [
+     "2023-10-30",
+     239
+    ],
+    [
+     "2023-10-31",
+     233
+    ],
+    [
+     "2023-11-01",
+     211
+    ],
+    [
+     "2023-11-02",
+     232
+    ],
+    [
+     "2023-11-03",
+     199
+    ],
+    [
+     "2023-11-04",
+     241
+    ],
+    [
+     "2023-11-05",
+     234
+    ],
+    [
+     "2023-11-06",
+     245
+    ],
+    [
+     "2023-11-07",
+     223
+    ],
+    [
+     "2023-11-08",
+     240
+    ],
+    [
+     "2023-11-09",
+     251
+    ],
+    [
+     "2023-11-10",
+     238
+    ],
+    [
+     "2023-11-11",
+     248
+    ],
+    [
+     "2023-11-12",
+     229
+    ],
+    [
+     "2023-11-13",
+     232
+    ],
+    [
+     "2023-11-14",
+     229
+    ],
+    [
+     "2023-11-15",
+     233
+    ],
+    [
+     "2023-11-16",
+     227
+    ],
+    [
+     "2023-11-17",
+     211
+    ],
+    [
+     "2023-11-18",
+     236
+    ],
+    [
+     "2023-11-19",
+     208
+    ],
+    [
+     "2023-11-20",
+     219
+    ],
+    [
+     "2023-11-21",
+     226
+    ],
+    [
+     "2023-11-22",
+     214
+    ],
+    [
+     "2023-11-23",
+     210
+    ],
+    [
+     "2023-11-24",
+     244
+    ],
+    [
+     "2023-11-25",
+     218
+    ],
+    [
+     "2023-11-26",
+     232
+    ],
+    [
+     "2023-11-27",
+     209
+    ],
+    [
+     "2023-11-28",
+     205
+    ],
+    [
+     "2023-11-29",
+     237
+    ],
+    [
+     "2023-11-30",
+     223
+    ],
+    [
+     "2023-12-01",
+     222
+    ],
+    [
+     "2023-12-02",
+     214
+    ],
+    [
+     "2023-12-03",
+     232
+    ],
+    [
+     "2023-12-04",
+     225
+    ],
+    [
+     "2023-12-05",
+     249
+    ],
+    [
+     "2023-12-06",
+     228
+    ],
+    [
+     "2023-12-07",
+     229
+    ],
+    [
+     "2023-12-08",
+     222
+    ],
+    [
+     "2023-12-09",
+     215
+    ],
+    [
+     "2023-12-10",
+     224
+    ],
+    [
+     "2023-12-11",
+     232
+    ],
+    [
+     "2023-12-12",
+     244
+    ],
+    [
+     "2023-12-13",
+     261
+    ],
+    [
+     "2023-12-14",
+     206
+    ],
+    [
+     "2023-12-15",
+     258
+    ],
+    [
+     "2023-12-16",
+     233
+    ],
+    [
+     "2023-12-17",
+     254
+    ],
+    [
+     "2023-12-18",
+     214
+    ],
+    [
+     "2023-12-19",
+     212
+    ],
+    [
+     "2023-12-20",
+     210
+    ],
+    [
+     "2023-12-21",
+     240
+    ],
+    [
+     "2023-12-22",
+     222
+    ],
+    [
+     "2023-12-23",
+     218
+    ],
+    [
+     "2023-12-24",
+     227
+    ],
+    [
+     "2023-12-25",
+     186
+    ],
+    [
+     "2023-12-26",
+     205
+    ],
+    [
+     "2023-12-27",
+     228
+    ],
+    [
+     "2023-12-28",
+     213
+    ],
+    [
+     "2023-12-29",
+     208
+    ],
+    [
+     "2023-12-30",
+     217
+    ],
+    [
+     "2023-12-31",
+     225
+    ],
+    [
+     "2024-01-01",
+     234
+    ],
+    [
+     "2024-01-02",
+     238
+    ],
+    [
+     "2024-01-03",
+     213
+    ],
+    [
+     "2024-01-04",
+     227
+    ],
+    [
+     "2024-01-05",
+     231
+    ],
+    [
+     "2024-01-06",
+     220
+    ],
+    [
+     "2024-01-07",
+     233
+    ],
+    [
+     "2024-01-08",
+     223
+    ],
+    [
+     "2024-01-09",
+     211
+    ],
+    [
+     "2024-01-10",
+     221
+    ],
+    [
+     "2024-01-11",
+     239
+    ],
+    [
+     "2024-01-12",
+     209
+    ],
+    [
+     "2024-01-13",
+     227
+    ],
+    [
+     "2024-01-14",
+     212
+    ],
+    [
+     "2024-01-15",
+     224
+    ],
+    [
+     "2024-01-16",
+     230
+    ],
+    [
+     "2024-01-17",
+     216
+    ],
+    [
+     "2024-01-18",
+     255
+    ],
+    [
+     "2024-01-19",
+     215
+    ],
+    [
+     "2024-01-20",
+     230
+    ],
+    [
+     "2024-01-21",
+     237
+    ],
+    [
+     "2024-01-22",
+     225
+    ],
+    [
+     "2024-01-23",
+     259
+    ],
+    [
+     "2024-01-24",
+     207
+    ],
+    [
+     "2024-01-25",
+     222
+    ],
+    [
+     "2024-01-26",
+     236
+    ],
+    [
+     "2024-01-27",
+     228
+    ],
+    [
+     "2024-01-28",
+     215
+    ],
+    [
+     "2024-01-29",
+     193
+    ],
+    [
+     "2024-01-30",
+     217
+    ],
+    [
+     "2024-01-31",
+     213
+    ],
+    [
+     "2024-02-01",
+     223
+    ],
+    [
+     "2024-02-02",
+     235
+    ],
+    [
+     "2024-02-03",
+     247
+    ],
+    [
+     "2024-02-04",
+     219
+    ],
+    [
+     "2024-02-05",
+     245
+    ],
+    [
+     "2024-02-06",
+     210
+    ],
+    [
+     "2024-02-07",
+     248
+    ],
+    [
+     "2024-02-08",
+     224
+    ],
+    [
+     "2024-02-09",
+     238
+    ],
+    [
+     "2024-02-10",
+     230
+    ],
+    [
+     "2024-02-11",
+     222
+    ],
+    [
+     "2024-02-12",
+     201
+    ],
+    [
+     "2024-02-13",
+     189
+    ],
+    [
+     "2024-02-14",
+     186
+    ],
+    [
+     "2024-02-15",
+     229
+    ],
+    [
+     "2024-02-16",
+     231
+    ],
+    [
+     "2024-02-17",
+     219
+    ],
+    [
+     "2024-02-18",
+     232
+    ],
+    [
+     "2024-02-19",
+     237
+    ],
+    [
+     "2024-02-20",
+     205
+    ],
+    [
+     "2024-02-21",
+     228
+    ],
+    [
+     "2024-02-22",
+     214
+    ],
+    [
+     "2024-02-23",
+     204
+    ],
+    [
+     "2024-02-24",
+     229
+    ],
+    [
+     "2024-02-25",
+     206
+    ],
+    [
+     "2024-02-26",
+     240
+    ],
+    [
+     "2024-02-27",
+     197
+    ],
+    [
+     "2024-02-28",
+     219
+    ],
+    [
+     "2024-02-29",
+     213
+    ],
+    [
+     "2024-03-01",
+     207
+    ],
+    [
+     "2024-03-02",
+     196
+    ],
+    [
+     "2024-03-03",
+     217
+    ],
+    [
+     "2024-03-04",
+     204
+    ],
+    [
+     "2024-03-05",
+     191
+    ],
+    [
+     "2024-03-06",
+     232
+    ],
+    [
+     "2024-03-07",
+     238
+    ],
+    [
+     "2024-03-08",
+     188
+    ],
+    [
+     "2024-03-09",
+     213
+    ],
+    [
+     "2024-03-10",
+     208
+    ],
+    [
+     "2024-03-11",
+     238
+    ],
+    [
+     "2024-03-12",
+     209
+    ],
+    [
+     "2024-03-13",
+     231
+    ],
+    [
+     "2024-03-14",
+     228
+    ],
+    [
+     "2024-03-15",
+     207
+    ],
+    [
+     "2024-03-16",
+     236
+    ],
+    [
+     "2024-03-17",
+     227
+    ],
+    [
+     "2024-03-18",
+     226
+    ],
+    [
+     "2024-03-19",
+     239
+    ],
+    [
+     "2024-03-20",
+     204
+    ],
+    [
+     "2024-03-21",
+     198
+    ],
+    [
+     "2024-03-22",
+     222
+    ],
+    [
+     "2024-03-23",
+     248
+    ],
+    [
+     "2024-03-24",
+     198
+    ],
+    [
+     "2024-03-25",
+     232
+    ],
+    [
+     "2024-03-26",
+     214
+    ],
+    [
+     "2024-03-27",
+     240
+    ],
+    [
+     "2024-03-28",
+     219
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_panama": {
+   "observed": [
+    [
+     "2023-10-02",
+     29
+    ],
+    [
+     "2023-10-03",
+     31
+    ],
+    [
+     "2023-10-04",
+     30
+    ],
+    [
+     "2023-10-05",
+     31
+    ],
+    [
+     "2023-10-06",
+     33
+    ],
+    [
+     "2023-10-07",
+     35
+    ],
+    [
+     "2023-10-08",
+     29
+    ],
+    [
+     "2023-10-09",
+     34
+    ],
+    [
+     "2023-10-10",
+     29
+    ],
+    [
+     "2023-10-11",
+     30
+    ],
+    [
+     "2023-10-12",
+     29
+    ],
+    [
+     "2023-10-13",
+     29
+    ],
+    [
+     "2023-10-14",
+     29
+    ],
+    [
+     "2023-10-15",
+     32
+    ],
+    [
+     "2023-10-16",
+     28
+    ],
+    [
+     "2023-10-17",
+     28
+    ],
+    [
+     "2023-10-18",
+     27
+    ],
+    [
+     "2023-10-19",
+     32
+    ],
+    [
+     "2023-10-20",
+     29
+    ],
+    [
+     "2023-10-21",
+     27
+    ],
+    [
+     "2023-10-22",
+     27
+    ],
+    [
+     "2023-10-23",
+     35
+    ],
+    [
+     "2023-10-24",
+     29
+    ],
+    [
+     "2023-10-25",
+     31
+    ],
+    [
+     "2023-10-26",
+     30
+    ],
+    [
+     "2023-10-27",
+     32
+    ],
+    [
+     "2023-10-28",
+     30
+    ],
+    [
+     "2023-10-29",
+     29
+    ],
+    [
+     "2023-10-30",
+     30
+    ],
+    [
+     "2023-10-31",
+     29
+    ],
+    [
+     "2023-11-01",
+     31
+    ],
+    [
+     "2023-11-02",
+     28
+    ],
+    [
+     "2023-11-03",
+     25
+    ],
+    [
+     "2023-11-04",
+     22
+    ],
+    [
+     "2023-11-05",
+     27
+    ],
+    [
+     "2023-11-06",
+     28
+    ],
+    [
+     "2023-11-07",
+     25
+    ],
+    [
+     "2023-11-08",
+     26
+    ],
+    [
+     "2023-11-09",
+     25
+    ],
+    [
+     "2023-11-10",
+     24
+    ],
+    [
+     "2023-11-11",
+     22
+    ],
+    [
+     "2023-11-12",
+     23
+    ],
+    [
+     "2023-11-13",
+     23
+    ],
+    [
+     "2023-11-14",
+     21
+    ],
+    [
+     "2023-11-15",
+     24
+    ],
+    [
+     "2023-11-16",
+     23
+    ],
+    [
+     "2023-11-17",
+     27
+    ],
+    [
+     "2023-11-18",
+     22
+    ],
+    [
+     "2023-11-19",
+     20
+    ],
+    [
+     "2023-11-20",
+     21
+    ],
+    [
+     "2023-11-21",
+     22
+    ],
+    [
+     "2023-11-22",
+     24
+    ],
+    [
+     "2023-11-23",
+     23
+    ],
+    [
+     "2023-11-24",
+     22
+    ],
+    [
+     "2023-11-25",
+     26
+    ],
+    [
+     "2023-11-26",
+     24
+    ],
+    [
+     "2023-11-27",
+     25
+    ],
+    [
+     "2023-11-28",
+     26
+    ],
+    [
+     "2023-11-29",
+     21
+    ],
+    [
+     "2023-11-30",
+     23
+    ],
+    [
+     "2023-12-01",
+     24
+    ],
+    [
+     "2023-12-02",
+     28
+    ],
+    [
+     "2023-12-03",
+     25
+    ],
+    [
+     "2023-12-04",
+     24
+    ],
+    [
+     "2023-12-05",
+     22
+    ],
+    [
+     "2023-12-06",
+     20
+    ],
+    [
+     "2023-12-07",
+     23
+    ],
+    [
+     "2023-12-08",
+     19
+    ],
+    [
+     "2023-12-09",
+     19
+    ],
+    [
+     "2023-12-10",
+     21
+    ],
+    [
+     "2023-12-11",
+     18
+    ],
+    [
+     "2023-12-12",
+     20
+    ],
+    [
+     "2023-12-13",
+     20
+    ],
+    [
+     "2023-12-14",
+     23
+    ],
+    [
+     "2023-12-15",
+     22
+    ],
+    [
+     "2023-12-16",
+     23
+    ],
+    [
+     "2023-12-17",
+     22
+    ],
+    [
+     "2023-12-18",
+     21
+    ],
+    [
+     "2023-12-19",
+     19
+    ],
+    [
+     "2023-12-20",
+     20
+    ],
+    [
+     "2023-12-21",
+     20
+    ],
+    [
+     "2023-12-22",
+     23
+    ],
+    [
+     "2023-12-23",
+     23
+    ],
+    [
+     "2023-12-24",
+     23
+    ],
+    [
+     "2023-12-25",
+     24
+    ],
+    [
+     "2023-12-26",
+     15
+    ],
+    [
+     "2023-12-27",
+     19
+    ],
+    [
+     "2023-12-28",
+     27
+    ],
+    [
+     "2023-12-29",
+     23
+    ],
+    [
+     "2023-12-30",
+     22
+    ],
+    [
+     "2023-12-31",
+     22
+    ],
+    [
+     "2024-01-01",
+     22
+    ],
+    [
+     "2024-01-02",
+     21
+    ],
+    [
+     "2024-01-03",
+     20
+    ],
+    [
+     "2024-01-04",
+     21
+    ],
+    [
+     "2024-01-05",
+     18
+    ],
+    [
+     "2024-01-06",
+     20
+    ],
+    [
+     "2024-01-07",
+     22
+    ],
+    [
+     "2024-01-08",
+     17
+    ],
+    [
+     "2024-01-09",
+     17
+    ],
+    [
+     "2024-01-10",
+     20
+    ],
+    [
+     "2024-01-11",
+     17
+    ],
+    [
+     "2024-01-12",
+     23
+    ],
+    [
+     "2024-01-13",
+     20
+    ],
+    [
+     "2024-01-14",
+     20
+    ],
+    [
+     "2024-01-15",
+     19
+    ],
+    [
+     "2024-01-16",
+     19
+    ],
+    [
+     "2024-01-17",
+     24
+    ],
+    [
+     "2024-01-18",
+     19
+    ],
+    [
+     "2024-01-19",
+     18
+    ],
+    [
+     "2024-01-20",
+     20
+    ],
+    [
+     "2024-01-21",
+     18
+    ],
+    [
+     "2024-01-22",
+     18
+    ],
+    [
+     "2024-01-23",
+     15
+    ],
+    [
+     "2024-01-24",
+     17
+    ],
+    [
+     "2024-01-25",
+     17
+    ],
+    [
+     "2024-01-26",
+     20
+    ],
+    [
+     "2024-01-27",
+     18
+    ],
+    [
+     "2024-01-28",
+     23
+    ],
+    [
+     "2024-01-29",
+     19
+    ],
+    [
+     "2024-01-30",
+     22
+    ],
+    [
+     "2024-01-31",
+     21
+    ],
+    [
+     "2024-02-01",
+     24
+    ],
+    [
+     "2024-02-02",
+     20
+    ],
+    [
+     "2024-02-03",
+     23
+    ],
+    [
+     "2024-02-04",
+     21
+    ],
+    [
+     "2024-02-05",
+     22
+    ],
+    [
+     "2024-02-06",
+     17
+    ],
+    [
+     "2024-02-07",
+     24
+    ],
+    [
+     "2024-02-08",
+     17
+    ],
+    [
+     "2024-02-09",
+     19
+    ],
+    [
+     "2024-02-10",
+     21
+    ],
+    [
+     "2024-02-11",
+     20
+    ],
+    [
+     "2024-02-12",
+     17
+    ],
+    [
+     "2024-02-13",
+     20
+    ],
+    [
+     "2024-02-14",
+     24
+    ],
+    [
+     "2024-02-15",
+     22
+    ],
+    [
+     "2024-02-16",
+     21
+    ],
+    [
+     "2024-02-17",
+     23
+    ],
+    [
+     "2024-02-18",
+     22
+    ],
+    [
+     "2024-02-19",
+     21
+    ],
+    [
+     "2024-02-20",
+     21
+    ],
+    [
+     "2024-02-21",
+     19
+    ],
+    [
+     "2024-02-22",
+     21
+    ],
+    [
+     "2024-02-23",
+     23
+    ],
+    [
+     "2024-02-24",
+     20
+    ],
+    [
+     "2024-02-25",
+     21
+    ],
+    [
+     "2024-02-26",
+     23
+    ],
+    [
+     "2024-02-27",
+     19
+    ],
+    [
+     "2024-02-28",
+     21
+    ],
+    [
+     "2024-02-29",
+     18
+    ],
+    [
+     "2024-03-01",
+     22
+    ],
+    [
+     "2024-03-02",
+     20
+    ],
+    [
+     "2024-03-03",
+     20
+    ],
+    [
+     "2024-03-04",
+     20
+    ],
+    [
+     "2024-03-05",
+     20
+    ],
+    [
+     "2024-03-06",
+     23
+    ],
+    [
+     "2024-03-07",
+     21
+    ],
+    [
+     "2024-03-08",
+     22
+    ],
+    [
+     "2024-03-09",
+     21
+    ],
+    [
+     "2024-03-10",
+     20
+    ],
+    [
+     "2024-03-11",
+     23
+    ],
+    [
+     "2024-03-12",
+     21
+    ],
+    [
+     "2024-03-13",
+     23
+    ],
+    [
+     "2024-03-14",
+     23
+    ],
+    [
+     "2024-03-15",
+     18
+    ],
+    [
+     "2024-03-16",
+     22
+    ],
+    [
+     "2024-03-17",
+     22
+    ],
+    [
+     "2024-03-18",
+     24
+    ],
+    [
+     "2024-03-19",
+     21
+    ],
+    [
+     "2024-03-20",
+     23
+    ],
+    [
+     "2024-03-21",
+     20
+    ],
+    [
+     "2024-03-22",
+     24
+    ],
+    [
+     "2024-03-23",
+     23
+    ],
+    [
+     "2024-03-24",
+     21
+    ],
+    [
+     "2024-03-25",
+     23
+    ],
+    [
+     "2024-03-26",
+     23
+    ],
+    [
+     "2024-03-27",
+     24
+    ],
+    [
+     "2024-03-28",
+     20
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_suez": {
+   "observed": [
+    [
+     "2023-10-02",
+     71
+    ],
+    [
+     "2023-10-03",
+     65
+    ],
+    [
+     "2023-10-04",
+     63
+    ],
+    [
+     "2023-10-05",
+     82
+    ],
+    [
+     "2023-10-06",
+     75
+    ],
+    [
+     "2023-10-07",
+     77
+    ],
+    [
+     "2023-10-08",
+     91
+    ],
+    [
+     "2023-10-09",
+     84
+    ],
+    [
+     "2023-10-10",
+     77
+    ],
+    [
+     "2023-10-11",
+     72
+    ],
+    [
+     "2023-10-12",
+     79
+    ],
+    [
+     "2023-10-13",
+     80
+    ],
+    [
+     "2023-10-14",
+     81
+    ],
+    [
+     "2023-10-15",
+     80
+    ],
+    [
+     "2023-10-16",
+     85
+    ],
+    [
+     "2023-10-17",
+     69
+    ],
+    [
+     "2023-10-18",
+     59
+    ],
+    [
+     "2023-10-19",
+     79
+    ],
+    [
+     "2023-10-20",
+     86
+    ],
+    [
+     "2023-10-21",
+     58
+    ],
+    [
+     "2023-10-22",
+     85
+    ],
+    [
+     "2023-10-23",
+     78
+    ],
+    [
+     "2023-10-24",
+     83
+    ],
+    [
+     "2023-10-25",
+     79
+    ],
+    [
+     "2023-10-26",
+     76
+    ],
+    [
+     "2023-10-27",
+     74
+    ],
+    [
+     "2023-10-28",
+     89
+    ],
+    [
+     "2023-10-29",
+     64
+    ],
+    [
+     "2023-10-30",
+     73
+    ],
+    [
+     "2023-10-31",
+     67
+    ],
+    [
+     "2023-11-01",
+     76
+    ],
+    [
+     "2023-11-02",
+     80
+    ],
+    [
+     "2023-11-03",
+     74
+    ],
+    [
+     "2023-11-04",
+     82
+    ],
+    [
+     "2023-11-05",
+     80
+    ],
+    [
+     "2023-11-06",
+     77
+    ],
+    [
+     "2023-11-07",
+     67
+    ],
+    [
+     "2023-11-08",
+     87
+    ],
+    [
+     "2023-11-09",
+     76
+    ],
+    [
+     "2023-11-10",
+     76
+    ],
+    [
+     "2023-11-11",
+     71
+    ],
+    [
+     "2023-11-12",
+     72
+    ],
+    [
+     "2023-11-13",
+     83
+    ],
+    [
+     "2023-11-14",
+     79
+    ],
+    [
+     "2023-11-15",
+     87
+    ],
+    [
+     "2023-11-16",
+     74
+    ],
+    [
+     "2023-11-17",
+     95
+    ],
+    [
+     "2023-11-18",
+     71
+    ],
+    [
+     "2023-11-19",
+     66
+    ],
+    [
+     "2023-11-20",
+     70
+    ],
+    [
+     "2023-11-21",
+     70
+    ],
+    [
+     "2023-11-22",
+     85
+    ],
+    [
+     "2023-11-23",
+     63
+    ],
+    [
+     "2023-11-24",
+     86
+    ],
+    [
+     "2023-11-25",
+     77
+    ],
+    [
+     "2023-11-26",
+     80
+    ],
+    [
+     "2023-11-27",
+     70
+    ],
+    [
+     "2023-11-28",
+     77
+    ],
+    [
+     "2023-11-29",
+     71
+    ],
+    [
+     "2023-11-30",
+     75
+    ],
+    [
+     "2023-12-01",
+     79
+    ],
+    [
+     "2023-12-02",
+     71
+    ],
+    [
+     "2023-12-03",
+     82
+    ],
+    [
+     "2023-12-04",
+     70
+    ],
+    [
+     "2023-12-05",
+     76
+    ],
+    [
+     "2023-12-06",
+     67
+    ],
+    [
+     "2023-12-07",
+     67
+    ],
+    [
+     "2023-12-08",
+     88
+    ],
+    [
+     "2023-12-09",
+     77
+    ],
+    [
+     "2023-12-10",
+     71
+    ],
+    [
+     "2023-12-11",
+     76
+    ],
+    [
+     "2023-12-12",
+     84
+    ],
+    [
+     "2023-12-13",
+     83
+    ],
+    [
+     "2023-12-14",
+     73
+    ],
+    [
+     "2023-12-15",
+     72
+    ],
+    [
+     "2023-12-16",
+     69
+    ],
+    [
+     "2023-12-17",
+     91
+    ],
+    [
+     "2023-12-18",
+     75
+    ],
+    [
+     "2023-12-19",
+     76
+    ],
+    [
+     "2023-12-20",
+     79
+    ],
+    [
+     "2023-12-21",
+     78
+    ],
+    [
+     "2023-12-22",
+     72
+    ],
+    [
+     "2023-12-23",
+     56
+    ],
+    [
+     "2023-12-24",
+     60
+    ],
+    [
+     "2023-12-25",
+     58
+    ],
+    [
+     "2023-12-26",
+     58
+    ],
+    [
+     "2023-12-27",
+     54
+    ],
+    [
+     "2023-12-28",
+     71
+    ],
+    [
+     "2023-12-29",
+     61
+    ],
+    [
+     "2023-12-30",
+     68
+    ],
+    [
+     "2023-12-31",
+     52
+    ],
+    [
+     "2024-01-01",
+     45
+    ],
+    [
+     "2024-01-02",
+     61
+    ],
+    [
+     "2024-01-03",
+     53
+    ],
+    [
+     "2024-01-04",
+     60
+    ],
+    [
+     "2024-01-05",
+     49
+    ],
+    [
+     "2024-01-06",
+     53
+    ],
+    [
+     "2024-01-07",
+     57
+    ],
+    [
+     "2024-01-08",
+     63
+    ],
+    [
+     "2024-01-09",
+     54
+    ],
+    [
+     "2024-01-10",
+     48
+    ],
+    [
+     "2024-01-11",
+     50
+    ],
+    [
+     "2024-01-12",
+     36
+    ],
+    [
+     "2024-01-13",
+     47
+    ],
+    [
+     "2024-01-14",
+     49
+    ],
+    [
+     "2024-01-15",
+     53
+    ],
+    [
+     "2024-01-16",
+     48
+    ],
+    [
+     "2024-01-17",
+     58
+    ],
+    [
+     "2024-01-18",
+     61
+    ],
+    [
+     "2024-01-19",
+     47
+    ],
+    [
+     "2024-01-20",
+     37
+    ],
+    [
+     "2024-01-21",
+     51
+    ],
+    [
+     "2024-01-22",
+     46
+    ],
+    [
+     "2024-01-23",
+     39
+    ],
+    [
+     "2024-01-24",
+     41
+    ],
+    [
+     "2024-01-25",
+     44
+    ],
+    [
+     "2024-01-26",
+     40
+    ],
+    [
+     "2024-01-27",
+     35
+    ],
+    [
+     "2024-01-28",
+     54
+    ],
+    [
+     "2024-01-29",
+     36
+    ],
+    [
+     "2024-01-30",
+     34
+    ],
+    [
+     "2024-01-31",
+     40
+    ],
+    [
+     "2024-02-01",
+     38
+    ],
+    [
+     "2024-02-02",
+     37
+    ],
+    [
+     "2024-02-03",
+     43
+    ],
+    [
+     "2024-02-04",
+     45
+    ],
+    [
+     "2024-02-05",
+     42
+    ],
+    [
+     "2024-02-06",
+     40
+    ],
+    [
+     "2024-02-07",
+     46
+    ],
+    [
+     "2024-02-08",
+     47
+    ],
+    [
+     "2024-02-09",
+     43
+    ],
+    [
+     "2024-02-10",
+     47
+    ],
+    [
+     "2024-02-11",
+     33
+    ],
+    [
+     "2024-02-12",
+     47
+    ],
+    [
+     "2024-02-13",
+     53
+    ],
+    [
+     "2024-02-14",
+     38
+    ],
+    [
+     "2024-02-15",
+     28
+    ],
+    [
+     "2024-02-16",
+     43
+    ],
+    [
+     "2024-02-17",
+     34
+    ],
+    [
+     "2024-02-18",
+     36
+    ],
+    [
+     "2024-02-19",
+     48
+    ],
+    [
+     "2024-02-20",
+     37
+    ],
+    [
+     "2024-02-21",
+     41
+    ],
+    [
+     "2024-02-22",
+     46
+    ],
+    [
+     "2024-02-23",
+     46
+    ],
+    [
+     "2024-02-24",
+     51
+    ],
+    [
+     "2024-02-25",
+     43
+    ],
+    [
+     "2024-02-26",
+     47
+    ],
+    [
+     "2024-02-27",
+     42
+    ],
+    [
+     "2024-02-28",
+     40
+    ],
+    [
+     "2024-02-29",
+     48
+    ],
+    [
+     "2024-03-01",
+     35
+    ],
+    [
+     "2024-03-02",
+     43
+    ],
+    [
+     "2024-03-03",
+     32
+    ],
+    [
+     "2024-03-04",
+     28
+    ],
+    [
+     "2024-03-05",
+     36
+    ],
+    [
+     "2024-03-06",
+     33
+    ],
+    [
+     "2024-03-07",
+     44
+    ],
+    [
+     "2024-03-08",
+     53
+    ],
+    [
+     "2024-03-09",
+     50
+    ],
+    [
+     "2024-03-10",
+     42
+    ],
+    [
+     "2024-03-11",
+     37
+    ],
+    [
+     "2024-03-12",
+     44
+    ],
+    [
+     "2024-03-13",
+     42
+    ],
+    [
+     "2024-03-14",
+     36
+    ],
+    [
+     "2024-03-15",
+     35
+    ],
+    [
+     "2024-03-16",
+     39
+    ],
+    [
+     "2024-03-17",
+     36
+    ],
+    [
+     "2024-03-18",
+     40
+    ],
+    [
+     "2024-03-19",
+     39
+    ],
+    [
+     "2024-03-20",
+     36
+    ],
+    [
+     "2024-03-21",
+     39
+    ],
+    [
+     "2024-03-22",
+     35
+    ],
+    [
+     "2024-03-23",
+     45
+    ],
+    [
+     "2024-03-24",
+     37
+    ],
+    [
+     "2024-03-25",
+     47
+    ],
+    [
+     "2024-03-26",
+     38
+    ],
+    [
+     "2024-03-27",
+     44
+    ],
+    [
+     "2024-03-28",
+     31
+    ]
+   ],
+   "simulated": null
+  },
+  "sea_balboa": {
+   "observed": [
+    [
+     "2023-10-02",
+     8
+    ],
+    [
+     "2023-10-03",
+     8
+    ],
+    [
+     "2023-10-04",
+     7
+    ],
+    [
+     "2023-10-05",
+     7
+    ],
+    [
+     "2023-10-06",
+     12
+    ],
+    [
+     "2023-10-07",
+     8
+    ],
+    [
+     "2023-10-08",
+     6
+    ],
+    [
+     "2023-10-09",
+     11
+    ],
+    [
+     "2023-10-10",
+     6
+    ],
+    [
+     "2023-10-11",
+     10
+    ],
+    [
+     "2023-10-12",
+     5
+    ],
+    [
+     "2023-10-13",
+     9
+    ],
+    [
+     "2023-10-14",
+     2
+    ],
+    [
+     "2023-10-15",
+     9
+    ],
+    [
+     "2023-10-16",
+     8
+    ],
+    [
+     "2023-10-17",
+     9
+    ],
+    [
+     "2023-10-18",
+     8
+    ],
+    [
+     "2023-10-19",
+     6
+    ],
+    [
+     "2023-10-20",
+     9
+    ],
+    [
+     "2023-10-21",
+     5
+    ],
+    [
+     "2023-10-22",
+     5
+    ],
+    [
+     "2023-10-23",
+     4
+    ],
+    [
+     "2023-10-24",
+     10
+    ],
+    [
+     "2023-10-25",
+     8
+    ],
+    [
+     "2023-10-26",
+     7
+    ],
+    [
+     "2023-10-27",
+     4
+    ],
+    [
+     "2023-10-28",
+     6
+    ],
+    [
+     "2023-10-29",
+     5
+    ],
+    [
+     "2023-10-30",
+     9
+    ],
+    [
+     "2023-10-31",
+     6
+    ],
+    [
+     "2023-11-01",
+     9
+    ],
+    [
+     "2023-11-02",
+     7
+    ],
+    [
+     "2023-11-03",
+     9
+    ],
+    [
+     "2023-11-04",
+     4
+    ],
+    [
+     "2023-11-05",
+     5
+    ],
+    [
+     "2023-11-06",
+     9
+    ],
+    [
+     "2023-11-07",
+     7
+    ],
+    [
+     "2023-11-08",
+     7
+    ],
+    [
+     "2023-11-09",
+     7
+    ],
+    [
+     "2023-11-10",
+     11
+    ],
+    [
+     "2023-11-11",
+     6
+    ],
+    [
+     "2023-11-12",
+     6
+    ],
+    [
+     "2023-11-13",
+     4
+    ],
+    [
+     "2023-11-14",
+     8
+    ],
+    [
+     "2023-11-15",
+     4
+    ],
+    [
+     "2023-11-16",
+     7
+    ],
+    [
+     "2023-11-17",
+     7
+    ],
+    [
+     "2023-11-18",
+     5
+    ],
+    [
+     "2023-11-19",
+     4
+    ],
+    [
+     "2023-11-20",
+     9
+    ],
+    [
+     "2023-11-21",
+     4
+    ],
+    [
+     "2023-11-22",
+     9
+    ],
+    [
+     "2023-11-23",
+     8
+    ],
+    [
+     "2023-11-24",
+     7
+    ],
+    [
+     "2023-11-25",
+     9
+    ],
+    [
+     "2023-11-26",
+     4
+    ],
+    [
+     "2023-11-27",
+     6
+    ],
+    [
+     "2023-11-28",
+     7
+    ],
+    [
+     "2023-11-29",
+     7
+    ],
+    [
+     "2023-11-30",
+     5
+    ],
+    [
+     "2023-12-01",
+     7
+    ],
+    [
+     "2023-12-02",
+     4
+    ],
+    [
+     "2023-12-03",
+     7
+    ],
+    [
+     "2023-12-04",
+     7
+    ],
+    [
+     "2023-12-05",
+     8
+    ],
+    [
+     "2023-12-06",
+     8
+    ],
+    [
+     "2023-12-07",
+     9
+    ],
+    [
+     "2023-12-08",
+     8
+    ],
+    [
+     "2023-12-09",
+     3
+    ],
+    [
+     "2023-12-10",
+     6
+    ],
+    [
+     "2023-12-11",
+     7
+    ],
+    [
+     "2023-12-12",
+     10
+    ],
+    [
+     "2023-12-13",
+     7
+    ],
+    [
+     "2023-12-14",
+     6
+    ],
+    [
+     "2023-12-15",
+     6
+    ],
+    [
+     "2023-12-16",
+     8
+    ],
+    [
+     "2023-12-17",
+     5
+    ],
+    [
+     "2023-12-18",
+     5
+    ],
+    [
+     "2023-12-19",
+     5
+    ],
+    [
+     "2023-12-20",
+     8
+    ],
+    [
+     "2023-12-21",
+     6
+    ],
+    [
+     "2023-12-22",
+     8
+    ],
+    [
+     "2023-12-23",
+     7
+    ],
+    [
+     "2023-12-24",
+     5
+    ],
+    [
+     "2023-12-25",
+     7
+    ],
+    [
+     "2023-12-26",
+     6
+    ],
+    [
+     "2023-12-27",
+     6
+    ],
+    [
+     "2023-12-28",
+     6
+    ],
+    [
+     "2023-12-29",
+     4
+    ],
+    [
+     "2023-12-30",
+     4
+    ],
+    [
+     "2023-12-31",
+     10
+    ],
+    [
+     "2024-01-01",
+     5
+    ],
+    [
+     "2024-01-02",
+     7
+    ],
+    [
+     "2024-01-03",
+     9
+    ],
+    [
+     "2024-01-04",
+     6
+    ],
+    [
+     "2024-01-05",
+     4
+    ],
+    [
+     "2024-01-06",
+     5
+    ],
+    [
+     "2024-01-07",
+     6
+    ],
+    [
+     "2024-01-08",
+     8
+    ],
+    [
+     "2024-01-09",
+     7
+    ],
+    [
+     "2024-01-10",
+     6
+    ],
+    [
+     "2024-01-11",
+     4
+    ],
+    [
+     "2024-01-12",
+     8
+    ],
+    [
+     "2024-01-13",
+     7
+    ],
+    [
+     "2024-01-14",
+     8
+    ],
+    [
+     "2024-01-15",
+     5
+    ],
+    [
+     "2024-01-16",
+     5
+    ],
+    [
+     "2024-01-17",
+     5
+    ],
+    [
+     "2024-01-18",
+     6
+    ],
+    [
+     "2024-01-19",
+     9
+    ],
+    [
+     "2024-01-20",
+     4
+    ],
+    [
+     "2024-01-21",
+     9
+    ],
+    [
+     "2024-01-22",
+     6
+    ],
+    [
+     "2024-01-23",
+     6
+    ],
+    [
+     "2024-01-24",
+     5
+    ],
+    [
+     "2024-01-25",
+     8
+    ],
+    [
+     "2024-01-26",
+     6
+    ],
+    [
+     "2024-01-27",
+     6
+    ],
+    [
+     "2024-01-28",
+     2
+    ],
+    [
+     "2024-01-29",
+     8
+    ],
+    [
+     "2024-01-30",
+     8
+    ],
+    [
+     "2024-01-31",
+     6
+    ],
+    [
+     "2024-02-01",
+     8
+    ],
+    [
+     "2024-02-02",
+     7
+    ],
+    [
+     "2024-02-03",
+     8
+    ],
+    [
+     "2024-02-04",
+     6
+    ],
+    [
+     "2024-02-05",
+     8
+    ],
+    [
+     "2024-02-06",
+     10
+    ],
+    [
+     "2024-02-07",
+     4
+    ],
+    [
+     "2024-02-08",
+     7
+    ],
+    [
+     "2024-02-09",
+     5
+    ],
+    [
+     "2024-02-10",
+     10
+    ],
+    [
+     "2024-02-11",
+     6
+    ],
+    [
+     "2024-02-12",
+     7
+    ],
+    [
+     "2024-02-13",
+     8
+    ],
+    [
+     "2024-02-14",
+     11
+    ],
+    [
+     "2024-02-15",
+     7
+    ],
+    [
+     "2024-02-16",
+     7
+    ],
+    [
+     "2024-02-17",
+     6
+    ],
+    [
+     "2024-02-18",
+     4
+    ],
+    [
+     "2024-02-19",
+     7
+    ],
+    [
+     "2024-02-20",
+     7
+    ],
+    [
+     "2024-02-21",
+     6
+    ],
+    [
+     "2024-02-22",
+     5
+    ],
+    [
+     "2024-02-23",
+     6
+    ],
+    [
+     "2024-02-24",
+     8
+    ],
+    [
+     "2024-02-25",
+     3
+    ],
+    [
+     "2024-02-26",
+     9
+    ],
+    [
+     "2024-02-27",
+     4
+    ],
+    [
+     "2024-02-28",
+     6
+    ],
+    [
+     "2024-02-29",
+     7
+    ],
+    [
+     "2024-03-01",
+     6
+    ],
+    [
+     "2024-03-02",
+     9
+    ],
+    [
+     "2024-03-03",
+     7
+    ],
+    [
+     "2024-03-04",
+     6
+    ],
+    [
+     "2024-03-05",
+     9
+    ],
+    [
+     "2024-03-06",
+     6
+    ],
+    [
+     "2024-03-07",
+     6
+    ],
+    [
+     "2024-03-08",
+     5
+    ],
+    [
+     "2024-03-09",
+     10
+    ],
+    [
+     "2024-03-10",
+     7
+    ],
+    [
+     "2024-03-11",
+     5
+    ],
+    [
+     "2024-03-12",
+     5
+    ],
+    [
+     "2024-03-13",
+     5
+    ],
+    [
+     "2024-03-14",
+     7
+    ],
+    [
+     "2024-03-15",
+     4
+    ],
+    [
+     "2024-03-16",
+     6
+    ],
+    [
+     "2024-03-17",
+     3
+    ],
+    [
+     "2024-03-18",
+     10
+    ],
+    [
+     "2024-03-19",
+     3
+    ],
+    [
+     "2024-03-20",
+     7
+    ],
+    [
+     "2024-03-21",
+     8
+    ],
+    [
+     "2024-03-22",
+     4
+    ],
+    [
+     "2024-03-23",
+     10
+    ],
+    [
+     "2024-03-24",
+     5
+    ],
+    [
+     "2024-03-25",
+     8
+    ],
+    [
+     "2024-03-26",
+     6
+    ],
+    [
+     "2024-03-27",
+     5
+    ],
+    [
+     "2024-03-28",
+     8
+    ]
+   ],
+   "simulated": null
+  },
+  "sea_colon": {
+   "observed": [
+    [
+     "2023-10-02",
+     4
+    ],
+    [
+     "2023-10-03",
+     4
+    ],
+    [
+     "2023-10-04",
+     2
+    ],
+    [
+     "2023-10-05",
+     4
+    ],
+    [
+     "2023-10-06",
+     3
+    ],
+    [
+     "2023-10-07",
+     5
+    ],
+    [
+     "2023-10-08",
+     4
+    ],
+    [
+     "2023-10-09",
+     0
+    ],
+    [
+     "2023-10-10",
+     4
+    ],
+    [
+     "2023-10-11",
+     4
+    ],
+    [
+     "2023-10-12",
+     3
+    ],
+    [
+     "2023-10-13",
+     2
+    ],
+    [
+     "2023-10-14",
+     3
+    ],
+    [
+     "2023-10-15",
+     2
+    ],
+    [
+     "2023-10-16",
+     3
+    ],
+    [
+     "2023-10-17",
+     0
+    ],
+    [
+     "2023-10-18",
+     4
+    ],
+    [
+     "2023-10-19",
+     5
+    ],
+    [
+     "2023-10-20",
+     6
+    ],
+    [
+     "2023-10-21",
+     3
+    ],
+    [
+     "2023-10-22",
+     2
+    ],
+    [
+     "2023-10-23",
+     1
+    ],
+    [
+     "2023-10-24",
+     2
+    ],
+    [
+     "2023-10-25",
+     1
+    ],
+    [
+     "2023-10-26",
+     4
+    ],
+    [
+     "2023-10-27",
+     2
+    ],
+    [
+     "2023-10-28",
+     3
+    ],
+    [
+     "2023-10-29",
+     5
+    ],
+    [
+     "2023-10-30",
+     4
+    ],
+    [
+     "2023-10-31",
+     5
+    ],
+    [
+     "2023-11-01",
+     4
+    ],
+    [
+     "2023-11-02",
+     3
+    ],
+    [
+     "2023-11-03",
+     5
+    ],
+    [
+     "2023-11-04",
+     1
+    ],
+    [
+     "2023-11-05",
+     4
+    ],
+    [
+     "2023-11-06",
+     5
+    ],
+    [
+     "2023-11-07",
+     0
+    ],
+    [
+     "2023-11-08",
+     5
+    ],
+    [
+     "2023-11-09",
+     2
+    ],
+    [
+     "2023-11-10",
+     5
+    ],
+    [
+     "2023-11-11",
+     5
+    ],
+    [
+     "2023-11-12",
+     4
+    ],
+    [
+     "2023-11-13",
+     3
+    ],
+    [
+     "2023-11-14",
+     3
+    ],
+    [
+     "2023-11-15",
+     4
+    ],
+    [
+     "2023-11-16",
+     2
+    ],
+    [
+     "2023-11-17",
+     4
+    ],
+    [
+     "2023-11-18",
+     2
+    ],
+    [
+     "2023-11-19",
+     3
+    ],
+    [
+     "2023-11-20",
+     3
+    ],
+    [
+     "2023-11-21",
+     3
+    ],
+    [
+     "2023-11-22",
+     4
+    ],
+    [
+     "2023-11-23",
+     3
+    ],
+    [
+     "2023-11-24",
+     3
+    ],
+    [
+     "2023-11-25",
+     2
+    ],
+    [
+     "2023-11-26",
+     5
+    ],
+    [
+     "2023-11-27",
+     3
+    ],
+    [
+     "2023-11-28",
+     2
+    ],
+    [
+     "2023-11-29",
+     5
+    ],
+    [
+     "2023-11-30",
+     1
+    ],
+    [
+     "2023-12-01",
+     6
+    ],
+    [
+     "2023-12-02",
+     2
+    ],
+    [
+     "2023-12-03",
+     4
+    ],
+    [
+     "2023-12-04",
+     5
+    ],
+    [
+     "2023-12-05",
+     3
+    ],
+    [
+     "2023-12-06",
+     6
+    ],
+    [
+     "2023-12-07",
+     3
+    ],
+    [
+     "2023-12-08",
+     2
+    ],
+    [
+     "2023-12-09",
+     4
+    ],
+    [
+     "2023-12-10",
+     3
+    ],
+    [
+     "2023-12-11",
+     3
+    ],
+    [
+     "2023-12-12",
+     2
+    ],
+    [
+     "2023-12-13",
+     1
+    ],
+    [
+     "2023-12-14",
+     4
+    ],
+    [
+     "2023-12-15",
+     4
+    ],
+    [
+     "2023-12-16",
+     4
+    ],
+    [
+     "2023-12-17",
+     4
+    ],
+    [
+     "2023-12-18",
+     3
+    ],
+    [
+     "2023-12-19",
+     2
+    ],
+    [
+     "2023-12-20",
+     2
+    ],
+    [
+     "2023-12-21",
+     2
+    ],
+    [
+     "2023-12-22",
+     4
+    ],
+    [
+     "2023-12-23",
+     3
+    ],
+    [
+     "2023-12-24",
+     3
+    ],
+    [
+     "2023-12-25",
+     1
+    ],
+    [
+     "2023-12-26",
+     2
+    ],
+    [
+     "2023-12-27",
+     5
+    ],
+    [
+     "2023-12-28",
+     5
+    ],
+    [
+     "2023-12-29",
+     1
+    ],
+    [
+     "2023-12-30",
+     4
+    ],
+    [
+     "2023-12-31",
+     0
+    ],
+    [
+     "2024-01-01",
+     3
+    ],
+    [
+     "2024-01-02",
+     6
+    ],
+    [
+     "2024-01-03",
+     1
+    ],
+    [
+     "2024-01-04",
+     4
+    ],
+    [
+     "2024-01-05",
+     2
+    ],
+    [
+     "2024-01-06",
+     4
+    ],
+    [
+     "2024-01-07",
+     3
+    ],
+    [
+     "2024-01-08",
+     2
+    ],
+    [
+     "2024-01-09",
+     3
+    ],
+    [
+     "2024-01-10",
+     4
+    ],
+    [
+     "2024-01-11",
+     4
+    ],
+    [
+     "2024-01-12",
+     3
+    ],
+    [
+     "2024-01-13",
+     3
+    ],
+    [
+     "2024-01-14",
+     5
+    ],
+    [
+     "2024-01-15",
+     2
+    ],
+    [
+     "2024-01-16",
+     6
+    ],
+    [
+     "2024-01-17",
+     4
+    ],
+    [
+     "2024-01-18",
+     2
+    ],
+    [
+     "2024-01-19",
+     3
+    ],
+    [
+     "2024-01-20",
+     3
+    ],
+    [
+     "2024-01-21",
+     4
+    ],
+    [
+     "2024-01-22",
+     5
+    ],
+    [
+     "2024-01-23",
+     0
+    ],
+    [
+     "2024-01-24",
+     2
+    ],
+    [
+     "2024-01-25",
+     5
+    ],
+    [
+     "2024-01-26",
+     1
+    ],
+    [
+     "2024-01-27",
+     4
+    ],
+    [
+     "2024-01-28",
+     3
+    ],
+    [
+     "2024-01-29",
+     2
+    ],
+    [
+     "2024-01-30",
+     3
+    ],
+    [
+     "2024-01-31",
+     4
+    ],
+    [
+     "2024-02-01",
+     3
+    ],
+    [
+     "2024-02-02",
+     3
+    ],
+    [
+     "2024-02-03",
+     1
+    ],
+    [
+     "2024-02-04",
+     4
+    ],
+    [
+     "2024-02-05",
+     2
+    ],
+    [
+     "2024-02-06",
+     4
+    ],
+    [
+     "2024-02-07",
+     5
+    ],
+    [
+     "2024-02-08",
+     3
+    ],
+    [
+     "2024-02-09",
+     3
+    ],
+    [
+     "2024-02-10",
+     2
+    ],
+    [
+     "2024-02-11",
+     3
+    ],
+    [
+     "2024-02-12",
+     4
+    ],
+    [
+     "2024-02-13",
+     2
+    ],
+    [
+     "2024-02-14",
+     3
+    ],
+    [
+     "2024-02-15",
+     4
+    ],
+    [
+     "2024-02-16",
+     2
+    ],
+    [
+     "2024-02-17",
+     2
+    ],
+    [
+     "2024-02-18",
+     5
+    ],
+    [
+     "2024-02-19",
+     2
+    ],
+    [
+     "2024-02-20",
+     0
+    ],
+    [
+     "2024-02-21",
+     4
+    ],
+    [
+     "2024-02-22",
+     5
+    ],
+    [
+     "2024-02-23",
+     0
+    ],
+    [
+     "2024-02-24",
+     5
+    ],
+    [
+     "2024-02-25",
+     1
+    ],
+    [
+     "2024-02-26",
+     2
+    ],
+    [
+     "2024-02-27",
+     2
+    ],
+    [
+     "2024-02-28",
+     2
+    ],
+    [
+     "2024-02-29",
+     3
+    ],
+    [
+     "2024-03-01",
+     4
+    ],
+    [
+     "2024-03-02",
+     4
+    ],
+    [
+     "2024-03-03",
+     2
+    ],
+    [
+     "2024-03-04",
+     2
+    ],
+    [
+     "2024-03-05",
+     4
+    ],
+    [
+     "2024-03-06",
+     4
+    ],
+    [
+     "2024-03-07",
+     1
+    ],
+    [
+     "2024-03-08",
+     7
+    ],
+    [
+     "2024-03-09",
+     1
+    ],
+    [
+     "2024-03-10",
+     3
+    ],
+    [
+     "2024-03-11",
+     5
+    ],
+    [
+     "2024-03-12",
+     1
+    ],
+    [
+     "2024-03-13",
+     5
+    ],
+    [
+     "2024-03-14",
+     4
+    ],
+    [
+     "2024-03-15",
+     3
+    ],
+    [
+     "2024-03-16",
+     3
+    ],
+    [
+     "2024-03-17",
+     1
+    ],
+    [
+     "2024-03-18",
+     3
+    ],
+    [
+     "2024-03-19",
+     4
+    ],
+    [
+     "2024-03-20",
+     2
+    ],
+    [
+     "2024-03-21",
+     4
+    ],
+    [
+     "2024-03-22",
+     3
+    ],
+    [
+     "2024-03-23",
+     4
+    ],
+    [
+     "2024-03-24",
+     5
+    ],
+    [
+     "2024-03-25",
+     2
+    ],
+    [
+     "2024-03-26",
+     3
+    ],
+    [
+     "2024-03-27",
+     3
+    ],
+    [
+     "2024-03-28",
+     3
+    ]
+   ],
+   "simulated": null
+  }
+ },
+ "source": "COMPUTED",
+ "title": "Panama Canal drought, 2023-24",
+ "window": {
+  "baseline": {
+   "from": "2023-10-02",
+   "to": "2023-10-29"
+  },
+  "evaluation_from": "2023-10-30",
+  "evaluation_to": "2024-03-28",
+  "event_start": "2023-10-30",
+  "from": "2023-10-16",
+  "to": "2024-03-28"
+ }
+}

@@ -1,0 +1,1028 @@
+{
+ "air_cargo_vs_aci": {
+  "2013": {
+   "absent": [
+    "AUH"
+   ],
+   "rows": 30,
+   "shell_only": [
+    "HND",
+    "KUL"
+   ],
+   "tally": {
+    "absent": 1,
+    "core": 27,
+    "shell": 2
+   }
+  },
+  "2015": {
+   "absent": [
+    "AUH",
+    "LUX"
+   ],
+   "rows": 29,
+   "shell_only": [
+    "HND"
+   ],
+   "tally": {
+    "absent": 2,
+    "core": 26,
+    "shell": 1
+   }
+  },
+  "2019": {
+   "absent": [],
+   "rows": 20,
+   "shell_only": [],
+   "tally": {
+    "core": 20
+   }
+  },
+  "2024": {
+   "absent": [],
+   "rows": 10,
+   "shell_only": [],
+   "tally": {
+    "core": 10
+   }
+  }
+ },
+ "border_crossings": {
+  "by_country": {
+   "China / Kazakhstan": 1,
+   "China / Mongolia": 1,
+   "China / Russia": 1,
+   "Poland / Belarus": 1,
+   "United States / Canada": 4,
+   "United States / Mexico": 4
+  },
+  "ground_nodes_by_country_all_tiers": {
+   "Canada": 3,
+   "China / Kazakhstan": 1,
+   "China / Mongolia": 1,
+   "China / Russia": 1,
+   "France": 1,
+   "Germany": 1,
+   "Hungary": 1,
+   "India": 1,
+   "Italy": 1,
+   "Kazakhstan / China": 1,
+   "Luxembourg": 1,
+   "Poland": 1,
+   "Poland / Belarus": 1,
+   "Saudi Arabia": 1,
+   "South Africa": 1,
+   "Spain": 1,
+   "Turkey": 1,
+   "United Kingdom / France": 1,
+   "United States": 72,
+   "United States / Canada": 4,
+   "United States / Mexico": 4
+  },
+  "in_graph": 12
+ },
+ "chokepoint_capacity_vs_portwatch_median": {
+  "chk_babelmandeb": {
+   "graph": 70,
+   "portwatch_median": 73.0
+  },
+  "chk_capeofgoodhope": {
+   "graph": 100,
+   "portwatch_median": 46.0
+  },
+  "chk_danish": {
+   "graph": 167,
+   "portwatch_median": 45.0
+  },
+  "chk_dover": {
+   "graph": 400,
+   "portwatch_median": 174.0
+  },
+  "chk_gibraltar": {
+   "graph": 274,
+   "portwatch_median": 145.0
+  },
+  "chk_hormuz": {
+   "graph": 74,
+   "portwatch_median": 96.0
+  },
+  "chk_malacca": {
+   "graph": 281,
+   "portwatch_median": 214.0
+  },
+  "chk_panama": {
+   "graph": 36,
+   "portwatch_median": 32.0
+  },
+  "chk_suez": {
+   "graph": 72,
+   "portwatch_median": 72.0
+  },
+  "chk_taiwan": {
+   "graph": 240,
+   "portwatch_median": 241.5
+  },
+  "chk_turkish": {
+   "graph": 110,
+   "portwatch_median": 96.0
+  }
+ },
+ "chokepoints_core": {
+  "chk_babelmandeb": {
+   "bidirectional_partners": 0,
+   "both": [],
+   "capacity_vessels_day": 70,
+   "in_legs": 1,
+   "in_only": [
+    "colombo"
+   ],
+   "name": "Bab el-Mandeb",
+   "out_legs": 1,
+   "out_only": [
+    "jeddah"
+   ],
+   "out_share_sum": 0.3,
+   "through_pairs_in_x_out": 1
+  },
+  "chk_capeofgoodhope": {
+   "bidirectional_partners": 1,
+   "both": [
+    "capetown"
+   ],
+   "capacity_vessels_day": 100,
+   "in_legs": 3,
+   "in_only": [
+    "colombo",
+    "jeddah"
+   ],
+   "name": "Cape of Good Hope",
+   "out_legs": 3,
+   "out_only": [
+    "portsaid",
+    "rotterdam"
+   ],
+   "out_share_sum": 0.5,
+   "through_pairs_in_x_out": 8
+  },
+  "chk_danish": {
+   "bidirectional_partners": 3,
+   "both": [
+    "gdansk",
+    "gdynia",
+    "hamburg"
+   ],
+   "capacity_vessels_day": 167,
+   "in_legs": 3,
+   "in_only": [],
+   "name": "Danish Straits",
+   "out_legs": 3,
+   "out_only": [],
+   "out_share_sum": 0.58,
+   "through_pairs_in_x_out": 6
+  },
+  "chk_dover": {
+   "bidirectional_partners": 2,
+   "both": [
+    "felixstowe",
+    "lehavre"
+   ],
+   "capacity_vessels_day": 400,
+   "in_legs": 3,
+   "in_only": [
+    "rotterdam"
+   ],
+   "name": "Dover Strait",
+   "out_legs": 2,
+   "out_only": [],
+   "out_share_sum": 0.38,
+   "through_pairs_in_x_out": 4
+  },
+  "chk_gibraltar": {
+   "bidirectional_partners": 0,
+   "both": [],
+   "capacity_vessels_day": 274,
+   "in_legs": 2,
+   "in_only": [
+    "algeciras",
+    "sines"
+   ],
+   "name": "Strait of Gibraltar",
+   "out_legs": 1,
+   "out_only": [
+    "tangermed"
+   ],
+   "out_share_sum": 0.25,
+   "through_pairs_in_x_out": 2
+  },
+  "chk_hormuz": {
+   "bidirectional_partners": 1,
+   "both": [
+    "dammam"
+   ],
+   "capacity_vessels_day": 74,
+   "in_legs": 4,
+   "in_only": [
+    "jebelali",
+    "karachi",
+    "khalifa"
+   ],
+   "name": "Strait of Hormuz",
+   "out_legs": 3,
+   "out_only": [
+    "mundra",
+    "salalah"
+   ],
+   "out_share_sum": 0.58,
+   "through_pairs_in_x_out": 11
+  },
+  "chk_malacca": {
+   "bidirectional_partners": 1,
+   "both": [
+    "singapore"
+   ],
+   "capacity_vessels_day": 281,
+   "in_legs": 3,
+   "in_only": [
+    "portklang",
+    "tanjungpelepas"
+   ],
+   "name": "Strait of Malacca",
+   "out_legs": 2,
+   "out_only": [
+    "colombo"
+   ],
+   "out_share_sum": 0.55,
+   "through_pairs_in_x_out": 5
+  },
+  "chk_mozambique": {
+   "bidirectional_partners": 2,
+   "both": [
+    "durban",
+    "mombasa"
+   ],
+   "capacity_vessels_day": 60,
+   "in_legs": 3,
+   "in_only": [
+    "colombo"
+   ],
+   "name": "Mozambique Channel",
+   "out_legs": 2,
+   "out_only": [],
+   "out_share_sum": 0.35,
+   "through_pairs_in_x_out": 4
+  },
+  "chk_panama": {
+   "bidirectional_partners": 3,
+   "both": [
+    "balboa",
+    "colon",
+    "shanghai"
+   ],
+   "capacity_vessels_day": 36,
+   "in_legs": 6,
+   "in_only": [
+    "cartagena",
+    "losangeles",
+    "manzanillo"
+   ],
+   "name": "Panama Canal",
+   "out_legs": 6,
+   "out_only": [
+    "houston",
+    "newyork",
+    "savannah"
+   ],
+   "out_share_sum": 0.99,
+   "through_pairs_in_x_out": 33
+  },
+  "chk_suez": {
+   "bidirectional_partners": 1,
+   "both": [
+    "jeddah"
+   ],
+   "capacity_vessels_day": 72,
+   "in_legs": 1,
+   "in_only": [],
+   "name": "Suez Canal",
+   "out_legs": 2,
+   "out_only": [
+    "portsaid"
+   ],
+   "out_share_sum": 0.6,
+   "through_pairs_in_x_out": 1
+  },
+  "chk_taiwan": {
+   "bidirectional_partners": 2,
+   "both": [
+    "fuzhou",
+    "keelung"
+   ],
+   "capacity_vessels_day": 240,
+   "in_legs": 4,
+   "in_only": [
+    "kaohsiung",
+    "xiamen"
+   ],
+   "name": "Taiwan Strait",
+   "out_legs": 4,
+   "out_only": [
+    "hongkong",
+    "shanghai"
+   ],
+   "out_share_sum": 0.73,
+   "through_pairs_in_x_out": 14
+  },
+  "chk_turkish": {
+   "bidirectional_partners": 3,
+   "both": [
+    "ambarli",
+    "constanta",
+    "piraeus"
+   ],
+   "capacity_vessels_day": 110,
+   "in_legs": 3,
+   "in_only": [],
+   "name": "Turkish Straits",
+   "out_legs": 3,
+   "out_only": [],
+   "out_share_sum": 0.57,
+   "through_pairs_in_x_out": 6
+  }
+ },
+ "core_coordinate_defects": [
+  {
+   "consequence": "the 8 km same-complex rule of the shell builder dropped Wilhelmshaven (1,231 calls, JadeWeserPort) as a duplicate of 'Bremerhaven'; the graph file is not edited, so the sidecar must carry Wilhelmshaven with an explicit override",
+   "graph": [
+    53.57,
+    8.13
+   ],
+   "id": "sea_bremerhaven",
+   "km_to_registry_Bremerhaven": 28.2,
+   "km_to_registry_Wilhelmshaven": 1.2,
+   "registry_Bremerhaven": [
+    53.54944124,
+    8.555056667
+   ],
+   "registry_Wilhelmshaven": [
+    53.58031398,
+    8.124443685
+   ]
+  },
+  {
+   "consequence": "Trieste (Italy, 1,915 calls, TAL pipeline head) lies 8 km from Koper (Slovenia) and was absorbed by the same-complex rule; the two have different hinterlands, customs territories and operators",
+   "id": "sea_koper vs Trieste",
+   "km": 7.6
+  }
+ ],
+ "cppi_2023": {
+  "absent_201_405_count": 44,
+  "absent_top200": [
+   {
+    "cppi_name": "POSORJA",
+    "rank": 37,
+    "why": "registry record present, nearest graph port sea_guayaquil 60km"
+   },
+   {
+    "cppi_name": "KHALIFA BIN SALMAN",
+    "rank": 43,
+    "why": "override"
+   },
+   {
+    "cppi_name": "CORONEL",
+    "rank": 97,
+    "why": "registry record present, nearest graph port sea_sanvicente 32km"
+   },
+   {
+    "cppi_name": "BERBERA",
+    "rank": 106,
+    "why": "registry record present, nearest graph port sea_djibouti 244km"
+   },
+   {
+    "cppi_name": "WELLINGTON",
+    "rank": 112,
+    "why": "registry record present, nearest graph port sea_napier 266km"
+   },
+   {
+    "cppi_name": "OMAEZAKI",
+    "rank": 140,
+    "why": "registry record present, nearest graph port sea_shimizu 51km"
+   },
+   {
+    "cppi_name": "AL DUQM",
+    "rank": 158,
+    "why": "no registry record, no name match"
+   },
+   {
+    "cppi_name": "PUERTO BOLIVAR (ECUADOR)",
+    "rank": 164,
+    "why": "registry record present, nearest graph port sea_guayaquil 111km"
+   },
+   {
+    "cppi_name": "MOGADISCIO",
+    "rank": 166,
+    "why": "no registry record, no name match"
+   },
+   {
+    "cppi_name": "BAR",
+    "rank": 169,
+    "why": "registry record present, nearest graph port sea_bari 212km"
+   },
+   {
+    "cppi_name": "SANTO TOMAS DE CASTILLA",
+    "rank": 170,
+    "why": "no registry record, no name match"
+   },
+   {
+    "cppi_name": "PAPEETE",
+    "rank": 176,
+    "why": "registry record present, nearest graph port sea_tauranga 4013km"
+   },
+   {
+    "cppi_name": "BASSETERRE",
+    "rank": 180,
+    "why": "registry record present, nearest graph port sea_philipsburg 88km"
+   },
+   {
+    "cppi_name": "ARRECIFE DE LANZAROTE",
+    "rank": 185,
+    "why": "no registry record, no name match"
+   },
+   {
+    "cppi_name": "GENERAL SAN MARTIN",
+    "rank": 187,
+    "why": "no registry record, no name match"
+   },
+   {
+    "cppi_name": "LA GUAIRA",
+    "rank": 195,
+    "why": "registry record present, nearest graph port sea_willemstad 275km"
+   },
+   {
+    "cppi_name": "LATAKIA",
+    "rank": 196,
+    "why": "registry record present, nearest graph port sea_tripoli 119km"
+   },
+   {
+    "cppi_name": "CIVITAVECCHIA",
+    "rank": 200,
+    "why": "registry record present, nearest graph port sea_livorno 202km"
+   }
+  ],
+  "all405": {
+   "absent": 62,
+   "core": 107,
+   "shell": 236
+  },
+  "note": "several CPPI terminals map to one graph node (Yangshan->Shanghai; Chiwan/Shekou/Yantian/Mawan/Da Chan Bay->Shenzhen), so the CORE share is of ranked terminals, not distinct graph nodes",
+  "ports_ranked": 405,
+  "top100": {
+   "absent": 3,
+   "core": 55,
+   "shell": 42
+  },
+  "top200": {
+   "absent": 18,
+   "core": 71,
+   "shell": 111
+  },
+  "top50": {
+   "absent": 2,
+   "core": 37,
+   "shell": 11
+  }
+ },
+ "graph_sha256_prefix": "9743a288fb5d670d",
+ "landbridges": {
+  "china_interior_rail_hubs_in_graph": [],
+  "china_side_origin_hubs_with_legs": [],
+  "eurasian_rail_nodes": {
+   "gnd_dostyk": {
+    "in": [],
+    "out": [
+     "gnd_malaszewicze"
+    ]
+   },
+   "gnd_duisburg": {
+    "in": [
+     "gnd_budapest",
+     "gnd_malaszewicze",
+     "sea_antwerp",
+     "sea_hamburg",
+     "sea_rotterdam"
+    ],
+    "out": [
+     "gnd_bettembourg",
+     "gnd_budapest",
+     "gnd_milan",
+     "gnd_warsaw"
+    ]
+   },
+   "gnd_erenhot": {
+    "in": [],
+    "out": [
+     "gnd_malaszewicze"
+    ]
+   },
+   "gnd_khorgos": {
+    "in": [],
+    "out": [
+     "gnd_halkali",
+     "gnd_malaszewicze"
+    ]
+   },
+   "gnd_malaszewicze": {
+    "in": [
+     "gnd_dostyk",
+     "gnd_erenhot",
+     "gnd_khorgos",
+     "gnd_manzhouli",
+     "gnd_warsaw"
+    ],
+    "out": [
+     "gnd_duisburg"
+    ]
+   },
+   "gnd_manzhouli": {
+    "in": [],
+    "out": [
+     "gnd_malaszewicze"
+    ]
+   }
+  },
+  "panama_railway_balboa_colon_ground_leg": false,
+  "pipeline_or_pipeline_medium_legs": 0,
+  "saudi_landbridge_dammam_jeddah": false,
+  "suez_med_rail_truck": false,
+  "sumed_pipeline": "absent (no Ain Sokhna->Sidi Kerir leg; Sidi Kerir is not a graph place)",
+  "tehuantepec_salina_cruz": "absent (Salina Cruz is not a graph place)",
+  "trans_arabian_pipelines": "absent (no medium attribute exists; capacity units are TEU/vessels/trucks/tonnes)",
+  "us_landbridge_declared_as_bypass_of_panama": false,
+  "us_landbridge_ground_paths": {
+   "sea_houston": [
+    "sea_losangeles",
+    "gnd_inlandempire",
+    "gnd_dallas",
+    "gnd_haslet",
+    "sea_houston"
+   ],
+   "sea_newyork": [
+    "sea_losangeles",
+    "gnd_inlandempire",
+    "gnd_chicago",
+    "gnd_detroit",
+    "gnd_buffalo",
+    "sea_newyork"
+   ],
+   "sea_savannah": [
+    "sea_losangeles",
+    "gnd_inlandempire",
+    "gnd_dallas",
+    "gnd_atlanta",
+    "sea_savannah"
+   ],
+   "sea_virginia": [
+    "sea_losangeles",
+    "gnd_inlandempire",
+    "gnd_chicago",
+    "gnd_indianapolis",
+    "sea_virginia"
+   ]
+  }
+ },
+ "lloyds_2023_top52": {
+  "absent": [],
+  "caveat": "Lloyd's List pages returned HTTP 403; ranks 1-52 come from the Wikipedia compilation of the Lloyd's List figures; ranks 53-100 were not retrievable",
+  "shell_only": [],
+  "tally": {
+   "core": 52
+  }
+ },
+ "outbound_share_budget_core_sea": {
+  "headroom_lt_0.10": [
+   "chk_panama=0.99",
+   "sea_busan=0.93",
+   "sea_shanghai=0.99",
+   "sea_singapore=0.993"
+  ],
+  "headroom_lt_0.25": 7,
+  "median": 0.46,
+  "origins": 112
+ },
+ "panama": {
+  "bypass_declared_for_any_panama_leg": false,
+  "engine2_panama_cut_215d_50pct_peak_backlog_vessel_days": "not recorded",
+  "in": [
+   [
+    "sea_balboa",
+    0.25,
+    0.3
+   ],
+   [
+    "sea_cartagena",
+    0.15,
+    1.0
+   ],
+   [
+    "sea_colon",
+    0.2,
+    0.5
+   ],
+   [
+    "sea_losangeles",
+    0.08,
+    9.0
+   ],
+   [
+    "sea_manzanillo",
+    0.1,
+    3.5
+   ],
+   [
+    "sea_shanghai",
+    0.06,
+    20.0
+   ]
+  ],
+  "out": [
+   [
+    "sea_balboa",
+    0.04,
+    0.3
+   ],
+   [
+    "sea_colon",
+    0.2,
+    0.5
+   ],
+   [
+    "sea_houston",
+    0.15,
+    6.0
+   ],
+   [
+    "sea_newyork",
+    0.25,
+    6.0
+   ],
+   [
+    "sea_savannah",
+    0.15,
+    5.0
+   ],
+   [
+    "sea_shanghai",
+    0.2,
+    21.0
+   ]
+  ]
+ },
+ "portwatch_chokepoints_28": {
+  "graph_has_but_portwatch_lacks": [
+   "chk_mozambique (graph default 60/day, GAP-MODELED)"
+  ],
+  "in_graph": 11,
+  "not_in_graph": [
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 34.13076811,
+    "lon": 129.209206,
+    "median_daily_transits_2022-07..2023-10": 241.0,
+    "name": "Korea Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 326,
+    "portid": "chokepoint12"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 41.32803599,
+    "lon": 140.3532743,
+    "median_daily_transits_2022-07..2023-10": 47.0,
+    "name": "Tsugaru Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 67,
+    "portid": "chokepoint13"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 20.488890710794,
+    "lon": 121.352295045579,
+    "median_daily_transits_2022-07..2023-10": 78.0,
+    "name": "Luzon Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 145,
+    "portid": "chokepoint14"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": -8.41914514129252,
+    "lon": 115.801433044024,
+    "median_daily_transits_2022-07..2023-10": 36.5,
+    "name": "Lombok Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 49,
+    "portid": "chokepoint15"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": -8.39854120024364,
+    "lon": 125.090981399512,
+    "median_daily_transits_2022-07..2023-10": 11.0,
+    "name": "Ombai Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 20,
+    "portid": "chokepoint16"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 38.373044249766,
+    "lon": 120.900049176636,
+    "median_daily_transits_2022-07..2023-10": 186.0,
+    "name": "Bohai Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 230,
+    "portid": "chokepoint17"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": -9.86253413199954,
+    "lon": 142.247528743501,
+    "median_daily_transits_2022-07..2023-10": 9.0,
+    "name": "Torres Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 16,
+    "portid": "chokepoint18"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": -5.96684057041462,
+    "lon": 105.775219888066,
+    "median_daily_transits_2022-07..2023-10": 29.0,
+    "name": "Sunda Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 44,
+    "portid": "chokepoint19"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 0.352280586988657,
+    "lon": 119.257065444388,
+    "median_daily_transits_2022-07..2023-10": 57.0,
+    "name": "Makassar Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 75,
+    "portid": "chokepoint20"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": -52.6403396677892,
+    "lon": -69.5948324606974,
+    "median_daily_transits_2022-07..2023-10": 4.0,
+    "name": "Magellan Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 10,
+    "portid": "chokepoint21"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 21.8152541926988,
+    "lon": -85.6472792223515,
+    "median_daily_transits_2022-07..2023-10": 45.0,
+    "name": "Yucatan Channel",
+    "nearest_graph_chokepoint": null,
+    "p99": 60,
+    "portid": "chokepoint22"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 19.9861871932071,
+    "lon": -73.6975398964955,
+    "median_daily_transits_2022-07..2023-10": 15.0,
+    "name": "Windward Passage",
+    "nearest_graph_chokepoint": null,
+    "p99": 25,
+    "portid": "chokepoint23"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 18.4487355684237,
+    "lon": -67.7113544869163,
+    "median_daily_transits_2022-07..2023-10": 11.0,
+    "name": "Mona Passage",
+    "nearest_graph_chokepoint": null,
+    "p99": 19,
+    "portid": "chokepoint24"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 7.413614993177675,
+    "lon": 117.11462168266297,
+    "median_daily_transits_2022-07..2023-10": 11.0,
+    "name": "Balabac Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 23,
+    "portid": "chokepoint25"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 65.96648859155934,
+    "lon": -165.54982861145731,
+    "median_daily_transits_2022-07..2023-10": 0.0,
+    "name": "Bering Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 5,
+    "portid": "chokepoint26"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 12.468315371959248,
+    "lon": 120.40342787801248,
+    "median_daily_transits_2022-07..2023-10": 50.0,
+    "name": "Mindoro Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 68,
+    "portid": "chokepoint27"
+   },
+   {
+    "graph_id": null,
+    "km_to_it": null,
+    "lat": 45.26676309041701,
+    "lon": 36.54390169965004,
+    "median_daily_transits_2022-07..2023-10": 12.0,
+    "name": "Kerch Strait",
+    "nearest_graph_chokepoint": null,
+    "p99": 52,
+    "portid": "chokepoint28"
+   }
+  ]
+ },
+ "registry_vs_graph": {
+  "ge_434_but_absent_examples": [
+   "Pelabuhan Sungai Udang (Malaysia, 632 calls, 50 km to sea_portdickson)",
+   "Seattle (United States, 574 calls, 36 km to sea_nwsa)",
+   "Detroit (United States, 570 calls, 95 km to sea_sarnia)",
+   "Botas (Türkiye, 528 calls, 31 km to sea_yakacik)",
+   "Corinto (Nicaragua, 434 calls, 313 km to sea_acajutla)"
+  ],
+  "graph_ports": 760,
+  "records_ge_100_calls_not_within_15km": 568,
+  "records_ge_100_calls_total": 1392,
+  "records_ge_200_calls_not_within_15km": 343,
+  "records_ge_434_calls_not_within_15km_of_a_graph_port": 8,
+  "records_ge_434_calls_not_within_25km": 5,
+  "registry_records": 2065,
+  "shell_cutoff_total_calls": 434
+ },
+ "retrieved_inputs": "see inputs/*.json",
+ "sea_basin_connectivity": {
+  "baltic_ports_in_graph": 62,
+  "baltic_ports_with_leg_to_or_from_chk_danish": [
+   "sea_gdansk",
+   "sea_gdynia",
+   "sea_hamburg"
+  ],
+  "black_sea_ports_in_graph": 31,
+  "black_sea_ports_with_leg_to_or_from_chk_turkish": [
+   "sea_ambarli",
+   "sea_constanta"
+  ]
+ },
+ "services": {
+  "calls_mapped": 1437,
+  "calls_on_shell_places": 142,
+  "chokepoints_in_via": {
+   "chk_capeofgoodhope": 51,
+   "chk_panama": 11,
+   "chk_suez": 42
+  },
+  "dropped_by_name": {
+   "Bahrain": 1,
+   "Chancay": 1,
+   "Ecuador": 1,
+   "Ensenada": 2,
+   "Istanbul": 5,
+   "Istanbul-Evyap (Izmit)": 1,
+   "Izmit": 2,
+   "Manzanillo": 4,
+   "Navegantes": 2,
+   "Posorja": 1,
+   "Safi": 1,
+   "Sihanoukville": 1,
+   "South PRC": 18,
+   "TPWC": 2,
+   "Tekirdag": 1,
+   "Trieste": 6,
+   "Vado Ligure": 1,
+   "Venice": 1,
+   "Wilhelmshaven": 4,
+   "Wilmington": 1,
+   "Yarimca": 1
+  },
+  "dropped_calls": 57,
+  "dropped_names": 21,
+  "entries": 129,
+  "operators": {
+   "CMA CGM": 3,
+   "CMA CGM, Maersk": 1,
+   "COSCO Shipping Lines": 1,
+   "COSCO Shipping Lines, Evergreen, PIL, Wan Hai": 1,
+   "Gemini Cooperation (Maersk, Hapag-Lloyd)": 20,
+   "HMM": 2,
+   "MSC": 14,
+   "Maersk": 1,
+   "Maersk, ZIM": 1,
+   "ONE (Ocean Network Express)": 1,
+   "Ocean Alliance (CMA CGM, COSCO/OOCL, Evergreen)": 42,
+   "Premier Alliance members (HMM, ONE, Yang Ming)": 26,
+   "THE Alliance (Hapag-Lloyd, HMM, ONE, Yang Ming)": 16
+  },
+  "places_used": 125,
+  "places_used_by_tier": {
+   "core": 79,
+   "shell": 46
+  },
+  "trades": {
+   "asia-mediterranean": 31,
+   "asia-north-europe": 41,
+   "asia-usec-panama-out-cape-back": 3,
+   "asia-usec-routing-unstated": 2,
+   "asia-usec-via-cape": 2,
+   "asia-usec-via-panama": 6,
+   "asia-usec-via-suez": 2,
+   "asia-usgulf-routing-unstated": 1,
+   "asia-uswc": 3,
+   "europe-americas-panama": 1,
+   "gulf-asia": 7,
+   "india-europe": 3,
+   "india-mediterranean": 1,
+   "india-usec-via-cape": 2,
+   "intra-asia": 6,
+   "latam-ecsa": 4,
+   "latam-wcsa": 5,
+   "redsea-asia": 4,
+   "transatlantic": 5
+  }
+ },
+ "suez_bab_corridor": {
+  "legs_into_bab_total": 1,
+  "legs_into_suez_from_mediterranean_side": [],
+  "legs_out_of_bab_total": 1,
+  "legs_out_of_bab_toward_indian_ocean": [],
+  "walkable_westbound": "sea_colombo -> chk_babelmandeb -> sea_jeddah -> chk_suez -> sea_portsaid"
+ },
+ "totals": {
+  "authored_bypass_legs": [
+   "chk_capeofgoodhope->sea_portsaid:sea bypass_of chk_suez->sea_portsaid:sea",
+   "chk_capeofgoodhope->sea_rotterdam:sea bypass_of sea_portsaid->sea_rotterdam:sea",
+   "sea_colombo->chk_capeofgoodhope:sea bypass_of sea_colombo->chk_babelmandeb:sea",
+   "sea_jeddah->chk_capeofgoodhope:sea bypass_of sea_jeddah->chk_suez:sea",
+   "sea_singapore->sea_colombo:sea bypass_of sea_singapore->chk_malacca:sea"
+  ],
+  "edges": 4550,
+  "edges_by_mode": {
+   "air": 558,
+   "ground": 350,
+   "sea": 3642
+  },
+  "edges_by_mode_tier": {
+   "air/core-core": 98,
+   "air/mixed": 248,
+   "air/shell-shell": 212,
+   "ground/core-core": 104,
+   "ground/mixed": 174,
+   "ground/shell-shell": 72,
+   "sea/core-core": 334,
+   "sea/mixed": 1602,
+   "sea/shell-shell": 1706
+  },
+  "nodes": 992,
+  "nodes_by_kind_tier": {
+   "air_hub/core": 43,
+   "air_hub/shell": 77,
+   "chokepoint/core": 12,
+   "ground_node/core": 45,
+   "ground_node/shell": 55,
+   "port/core": 100,
+   "port/shell": 660
+  },
+  "sea_edge_basis": {
+   "MODELED": 2631,
+   "SOURCED": 1011
+  }
+ }
+}

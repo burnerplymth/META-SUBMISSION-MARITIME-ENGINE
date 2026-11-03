@@ -1,0 +1,1283 @@
+{
+ "kind": "Derived from UN Comtrade; not the original records",
+ "source": "UN Comtrade",
+ "citation": "Source: UN Comtrade (comtrade.un.org), UN Statistics Division",
+ "derivation": "Share of each reporter's imports per HS group that comes from each routing region, on net weight where every partner carries one, else value. No partner record and no absolute value is kept.",
+ "routing_sets_version": "routing-sets-1",
+ "period_policy": "2024 first; 2023 fallback where 2024 returned no records; the period actually returned is recorded per extract",
+ "retrieved_at": "2026-10-21T06:40:44Z",
+ "aggregates": [
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "10",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 81,
+   "region_shares": {
+    "africa": 7.6603e-05,
+    "central_asia": 0.00071165,
+    "east_asia": 0.000123459,
+    "europe": 0.323697598,
+    "latin_america": 0.025716362,
+    "middle_east": 0.00775867,
+    "north_america": 0.010638439,
+    "oceania": 7.7095e-05,
+    "south_asia": 0.023026448,
+    "southeast_asia": 0.051920613,
+    "unassigned": 0.556253064
+   }
+  },
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "27",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 149,
+   "region_shares": {
+    "africa": 0.012398453,
+    "central_asia": 0.000479279,
+    "east_asia": 0.003827699,
+    "europe": 0.772318416,
+    "latin_america": 0.000837894,
+    "middle_east": 0.033440064,
+    "north_america": 0.045871292,
+    "oceania": 0.008323368,
+    "south_asia": 8.7e-08,
+    "southeast_asia": 0.000545751,
+    "unassigned": 0.121957696
+   }
+  },
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "2709",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 40,
+   "region_shares": {
+    "africa": 0.003092727,
+    "east_asia": 1.1e-08,
+    "europe": 0.98497465,
+    "latin_america": 1.3e-08,
+    "middle_east": 1.46e-07,
+    "north_america": 0.004837765,
+    "southeast_asia": 5e-09,
+    "unassigned": 0.007094683
+   }
+  },
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "2711",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 34,
+   "region_shares": {
+    "africa": 0.002422196,
+    "east_asia": 4.2e-08,
+    "europe": 0.637552055,
+    "middle_east": 0.070081349,
+    "north_america": 0.071160128,
+    "unassigned": 0.21878423
+   }
+  },
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "85",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 182,
+   "region_shares": {
+    "africa": 0.004578993,
+    "central_asia": 4.4424e-05,
+    "east_asia": 0.133632612,
+    "europe": 0.597880431,
+    "latin_america": 0.007919682,
+    "middle_east": 0.011019146,
+    "north_america": 0.025015743,
+    "oceania": 0.000644274,
+    "south_asia": 2.4615e-05,
+    "southeast_asia": 0.034177419,
+    "unassigned": 0.185062662
+   }
+  },
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "8542",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 72,
+   "region_shares": {
+    "africa": 7.9157e-05,
+    "east_asia": 0.047939504,
+    "europe": 0.800201178,
+    "latin_america": 0.000146175,
+    "middle_east": 0.00015088,
+    "north_america": 0.003598838,
+    "oceania": 1.8274e-05,
+    "south_asia": 3.808e-06,
+    "southeast_asia": 0.042621714,
+    "unassigned": 0.105240472
+   }
+  },
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "87",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 156,
+   "region_shares": {
+    "africa": 0.014316797,
+    "central_asia": 6.4e-07,
+    "east_asia": 0.194822872,
+    "europe": 0.584397962,
+    "latin_america": 0.008112128,
+    "middle_east": 0.024376349,
+    "north_america": 0.01696069,
+    "oceania": 0.000154659,
+    "south_asia": 3.1292e-05,
+    "southeast_asia": 0.003500321,
+    "unassigned": 0.15332629
+   }
+  },
+  {
+   "reporter_code": 56,
+   "reporter_iso3": "BEL",
+   "reporter_name": "Belgium",
+   "cmd_code": "TOTAL",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 234,
+   "region_shares": {
+    "africa": 0.013977281,
+    "central_asia": 0.000597574,
+    "east_asia": 0.067712173,
+    "europe": 0.613245173,
+    "latin_america": 0.013823563,
+    "middle_east": 0.019249775,
+    "north_america": 0.065242952,
+    "oceania": 0.004343489,
+    "south_asia": 0.001952824,
+    "southeast_asia": 0.015590586,
+    "unassigned": 0.184264608
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "10",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 107,
+   "region_shares": {
+    "africa": 0.00265131,
+    "central_asia": 9.409e-06,
+    "east_asia": 0.006702099,
+    "europe": 0.005909921,
+    "latin_america": 0.013896184,
+    "middle_east": 0.001834552,
+    "north_america": 0.736949686,
+    "oceania": 0.001122954,
+    "south_asia": 0.018184651,
+    "southeast_asia": 0.101392199,
+    "unassigned": 0.111347033
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "27",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 114,
+   "region_shares": {
+    "africa": 0.04724473,
+    "east_asia": 0.013870498,
+    "europe": 0.072634928,
+    "latin_america": 0.025685113,
+    "middle_east": 0.046175101,
+    "north_america": 0.782383638,
+    "oceania": 2.1904e-05,
+    "south_asia": 6.29e-07,
+    "southeast_asia": 0.000997529,
+    "unassigned": 0.01098593
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "2709",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 27,
+   "region_shares": {
+    "africa": 0.112927011,
+    "east_asia": 7.7e-08,
+    "europe": 3.1e-07,
+    "latin_america": 0.04100397,
+    "middle_east": 0.096836135,
+    "north_america": 0.749232131,
+    "oceania": 3e-09,
+    "southeast_asia": 1e-09,
+    "unassigned": 3.62e-07
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "2711",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 31,
+   "region_shares": {
+    "east_asia": 0.00236929,
+    "europe": 0.000250845,
+    "latin_america": 0.052150161,
+    "middle_east": 5.4609e-05,
+    "north_america": 0.88013561,
+    "southeast_asia": 8.855e-05,
+    "unassigned": 0.064950935
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "85",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 218,
+   "region_shares": {
+    "africa": 0.000895076,
+    "central_asia": 4.417e-06,
+    "east_asia": 0.339798146,
+    "europe": 0.078610881,
+    "latin_america": 0.103884484,
+    "middle_east": 0.003548498,
+    "north_america": 0.292298639,
+    "oceania": 0.00122415,
+    "south_asia": 4.8775e-05,
+    "southeast_asia": 0.125393911,
+    "unassigned": 0.054293023
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "8542",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 102,
+   "region_shares": {
+    "africa": 0.001599689,
+    "east_asia": 0.209241648,
+    "europe": 0.061326079,
+    "latin_america": 0.015151483,
+    "middle_east": 0.00285145,
+    "north_america": 0.15802458,
+    "oceania": 0.000148337,
+    "south_asia": 3.04e-06,
+    "southeast_asia": 0.344333727,
+    "unassigned": 0.207319966
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "87",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 197,
+   "region_shares": {
+    "africa": 0.001027946,
+    "central_asia": 1.6007e-05,
+    "east_asia": 0.185039247,
+    "europe": 0.075377009,
+    "latin_america": 0.145038486,
+    "middle_east": 0.001233166,
+    "north_america": 0.570700741,
+    "oceania": 0.000137676,
+    "south_asia": 1.0269e-05,
+    "southeast_asia": 0.005079032,
+    "unassigned": 0.016340422
+   }
+  },
+  {
+   "reporter_code": 124,
+   "reporter_iso3": "CAN",
+   "reporter_name": "Canada",
+   "cmd_code": "TOTAL",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 223,
+   "region_shares": {
+    "africa": 0.00997534,
+    "central_asia": 0.000459315,
+    "east_asia": 0.166234003,
+    "europe": 0.112235026,
+    "latin_america": 0.093401401,
+    "middle_east": 0.010441063,
+    "north_america": 0.499783124,
+    "oceania": 0.00533318,
+    "south_asia": 0.004442947,
+    "southeast_asia": 0.043009736,
+    "unassigned": 0.054684866
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "10",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 37,
+   "region_shares": {
+    "africa": 0.001047185,
+    "central_asia": 0.020321893,
+    "east_asia": 6.0165e-05,
+    "europe": 0.003697722,
+    "latin_america": 0.182128548,
+    "middle_east": 1.8e-08,
+    "north_america": 0.293697668,
+    "oceania": 0.21728639,
+    "south_asia": 0.004980784,
+    "southeast_asia": 0.060434309,
+    "unassigned": 0.216345318
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "27",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 106,
+   "region_shares": {
+    "africa": 0.020243436,
+    "central_asia": 0.026179244,
+    "east_asia": 0.027904765,
+    "europe": 0.007185813,
+    "latin_america": 0.063933644,
+    "middle_east": 0.347488276,
+    "north_america": 0.059873048,
+    "oceania": 0.050483656,
+    "south_asia": 8.4331e-05,
+    "southeast_asia": 0.153664309,
+    "unassigned": 0.242959479
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "2709",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 45,
+   "region_shares": {
+    "africa": 0.022468135,
+    "central_asia": 0.003674913,
+    "east_asia": 0.001027955,
+    "europe": 0.007423693,
+    "latin_america": 0.093426071,
+    "middle_east": 0.442714027,
+    "north_america": 0.033999936,
+    "oceania": 0.001080281,
+    "southeast_asia": 0.127781777,
+    "unassigned": 0.266403212
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "2711",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 43,
+   "region_shares": {
+    "africa": 0.021377846,
+    "central_asia": 0.150883552,
+    "east_asia": 0.000791631,
+    "europe": 0.000273229,
+    "latin_america": 0.002045536,
+    "middle_east": 0.226647713,
+    "north_america": 0.143724712,
+    "oceania": 0.173854835,
+    "southeast_asia": 0.099017271,
+    "unassigned": 0.181383675
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "85",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 204,
+   "region_shares": {
+    "africa": 0.001027791,
+    "central_asia": 1.742e-06,
+    "east_asia": 0.403814592,
+    "europe": 0.059039165,
+    "latin_america": 0.014959084,
+    "middle_east": 0.008903939,
+    "north_america": 0.031681108,
+    "oceania": 0.000264995,
+    "south_asia": 4.5725e-05,
+    "southeast_asia": 0.197986278,
+    "unassigned": 0.282275582
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "8542",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 118,
+   "region_shares": {
+    "africa": 0.0005973,
+    "central_asia": 1.65e-07,
+    "east_asia": 0.413529874,
+    "europe": 0.021421083,
+    "latin_america": 0.015240038,
+    "middle_east": 0.011390419,
+    "north_america": 0.030552685,
+    "oceania": 9.098e-06,
+    "south_asia": 6.42e-07,
+    "southeast_asia": 0.14230373,
+    "unassigned": 0.364954964
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "87",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 135,
+   "region_shares": {
+    "africa": 0.000456579,
+    "central_asia": 1.285e-06,
+    "east_asia": 0.206197667,
+    "europe": 0.503455471,
+    "latin_america": 0.022814894,
+    "middle_east": 0.00113263,
+    "north_america": 0.145952279,
+    "oceania": 0.000149002,
+    "south_asia": 5.0107e-05,
+    "southeast_asia": 0.021062533,
+    "unassigned": 0.098727552
+   }
+  },
+  {
+   "reporter_code": 156,
+   "reporter_iso3": "CHN",
+   "reporter_name": "China",
+   "cmd_code": "TOTAL",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 216,
+   "region_shares": {
+    "africa": 0.029613527,
+    "central_asia": 0.011870412,
+    "east_asia": 0.188502353,
+    "europe": 0.097729913,
+    "latin_america": 0.090762094,
+    "middle_east": 0.082270721,
+    "north_america": 0.081680392,
+    "oceania": 0.059267909,
+    "south_asia": 0.001691899,
+    "southeast_asia": 0.153077825,
+    "unassigned": 0.203532956
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "10",
+   "period": "2023",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 36,
+   "region_shares": {
+    "africa": 0.020998831,
+    "east_asia": 0.025740627,
+    "europe": 0.053817713,
+    "latin_america": 0.004715025,
+    "middle_east": 0.00273801,
+    "north_america": 0.391053925,
+    "south_asia": 0.043981206,
+    "southeast_asia": 0.001776811,
+    "unassigned": 0.455177851
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "27",
+   "period": "2023",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 45,
+   "region_shares": {
+    "africa": 0.056043451,
+    "east_asia": 0.006353019,
+    "europe": 0.000579646,
+    "latin_america": 1.27e-06,
+    "middle_east": 0.909753257,
+    "north_america": 0.00249367,
+    "south_asia": 0.000125825,
+    "southeast_asia": 0.00721186,
+    "unassigned": 0.017438002
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "2709",
+   "period": "2023",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 1,
+   "region_shares": {
+    "middle_east": 1.0
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "2711",
+   "period": "2023",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 9,
+   "region_shares": {
+    "africa": 0.413908238,
+    "europe": 1.9059e-05,
+    "middle_east": 0.069579547,
+    "north_america": 0.516492497,
+    "unassigned": 6.59e-07
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "85",
+   "period": "2023",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 118,
+   "region_shares": {
+    "africa": 0.006262663,
+    "east_asia": 0.761944878,
+    "europe": 0.074278164,
+    "latin_america": 0.002783898,
+    "middle_east": 0.030025218,
+    "north_america": 0.029011404,
+    "oceania": 0.000133417,
+    "south_asia": 0.000543239,
+    "southeast_asia": 0.019943889,
+    "unassigned": 0.07507323
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "8542",
+   "period": "2023",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 31,
+   "region_shares": {
+    "africa": 0.001968215,
+    "east_asia": 0.532168729,
+    "europe": 0.378007309,
+    "latin_america": 0.015485378,
+    "middle_east": 0.028763672,
+    "north_america": 0.009291764,
+    "southeast_asia": 0.027510277,
+    "unassigned": 0.006804656
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "87",
+   "period": "2023",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 90,
+   "region_shares": {
+    "africa": 0.00996312,
+    "east_asia": 0.685316263,
+    "europe": 0.059637884,
+    "latin_america": 0.000334194,
+    "middle_east": 0.011666844,
+    "north_america": 0.008693054,
+    "oceania": 0.000125067,
+    "south_asia": 3.8413e-05,
+    "southeast_asia": 0.023719939,
+    "unassigned": 0.200505224
+   }
+  },
+  {
+   "reporter_code": 231,
+   "reporter_iso3": "ETH",
+   "reporter_name": "Ethiopia",
+   "cmd_code": "TOTAL",
+   "period": "2023",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 164,
+   "region_shares": {
+    "africa": 0.08309878,
+    "central_asia": 0.000182432,
+    "east_asia": 0.363835599,
+    "europe": 0.079513662,
+    "latin_america": 0.004137478,
+    "middle_east": 0.219812468,
+    "north_america": 0.065901945,
+    "oceania": 0.000809954,
+    "south_asia": 0.003252087,
+    "southeast_asia": 0.046795144,
+    "unassigned": 0.132660452
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "10",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 95,
+   "region_shares": {
+    "africa": 0.000429129,
+    "central_asia": 0.000140193,
+    "east_asia": 0.001832684,
+    "europe": 0.713836423,
+    "latin_america": 0.005396713,
+    "middle_east": 0.002055222,
+    "north_america": 0.003952696,
+    "oceania": 2.0125e-05,
+    "south_asia": 0.007036993,
+    "southeast_asia": 0.010718601,
+    "unassigned": 0.254581221
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "27",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 120,
+   "region_shares": {
+    "africa": 0.035531132,
+    "central_asia": 0.057708351,
+    "east_asia": 0.003056984,
+    "europe": 0.389953674,
+    "latin_america": 0.01462277,
+    "middle_east": 0.044208197,
+    "north_america": 0.122521477,
+    "oceania": 0.018377075,
+    "south_asia": 6.6e-08,
+    "southeast_asia": 0.000658026,
+    "unassigned": 0.313362247
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "2709",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 33,
+   "region_shares": {
+    "africa": 0.065533464,
+    "central_asia": 0.134806601,
+    "europe": 0.307367673,
+    "latin_america": 0.022985167,
+    "middle_east": 0.076548851,
+    "north_america": 0.193330286,
+    "unassigned": 0.199427958
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "2711",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 34,
+   "region_shares": {
+    "africa": 6.5908e-05,
+    "central_asia": 4.2368e-05,
+    "east_asia": 3.7367e-05,
+    "europe": 0.037275528,
+    "middle_east": 0.000231555,
+    "north_america": 0.008822433,
+    "southeast_asia": 1.91e-07,
+    "unassigned": 0.95352465
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "85",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 210,
+   "region_shares": {
+    "africa": 0.005577061,
+    "central_asia": 4.4492e-05,
+    "east_asia": 0.355261435,
+    "europe": 0.356595921,
+    "latin_america": 0.010206459,
+    "middle_east": 0.009625568,
+    "north_america": 0.035844489,
+    "oceania": 0.000470101,
+    "south_asia": 0.000218582,
+    "southeast_asia": 0.089963548,
+    "unassigned": 0.136192343
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "8542",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 142,
+   "region_shares": {
+    "africa": 0.00853521,
+    "central_asia": 1.4465e-05,
+    "east_asia": 0.246508818,
+    "europe": 0.177122716,
+    "latin_america": 0.006575844,
+    "middle_east": 0.001168171,
+    "north_america": 0.024362371,
+    "oceania": 0.000123454,
+    "south_asia": 0.000168183,
+    "southeast_asia": 0.350298019,
+    "unassigned": 0.185122747
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "87",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 142,
+   "region_shares": {
+    "africa": 0.034425113,
+    "central_asia": 1.5509e-05,
+    "east_asia": 0.097352147,
+    "europe": 0.591128778,
+    "latin_america": 0.030469712,
+    "middle_east": 0.032226816,
+    "north_america": 0.059692711,
+    "oceania": 0.000142876,
+    "south_asia": 0.000284778,
+    "southeast_asia": 0.00760065,
+    "unassigned": 0.146660912
+   }
+  },
+  {
+   "reporter_code": 276,
+   "reporter_iso3": "DEU",
+   "reporter_name": "Germany",
+   "cmd_code": "TOTAL",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 230,
+   "region_shares": {
+    "africa": 0.016367684,
+    "central_asia": 0.005053463,
+    "east_asia": 0.151823348,
+    "europe": 0.481675003,
+    "latin_america": 0.019741518,
+    "middle_east": 0.025323863,
+    "north_america": 0.074554569,
+    "oceania": 0.003503679,
+    "south_asia": 0.009088894,
+    "southeast_asia": 0.039679168,
+    "unassigned": 0.173188811
+   }
+  },
+  {
+   "reporter_code": 344,
+   "reporter_iso3": "HKG",
+   "reporter_name": "China, Hong Kong SAR",
+   "cmd_code": "10",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 27,
+   "region_shares": {
+    "africa": 1.125e-06,
+    "east_asia": 0.153527196,
+    "europe": 0.003170462,
+    "latin_america": 0.002813445,
+    "north_america": 0.014863444,
+    "oceania": 0.009918061,
+    "south_asia": 0.011122502,
+    "southeast_asia": 0.792489697,
+    "unassigned": 0.012094068
+   }
+  },
+  {
+   "reporter_code": 344,
+   "reporter_iso3": "HKG",
+   "reporter_name": "China, Hong Kong SAR",
+   "cmd_code": "27",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 39,
+   "region_shares": {
+    "africa": 0.003668148,
+    "east_asia": 0.645249931,
+    "europe": 0.000811923,
+    "latin_america": 0.001366629,
+    "middle_east": 0.043027281,
+    "north_america": 0.00596901,
+    "oceania": 0.006163927,
+    "southeast_asia": 0.24949987,
+    "unassigned": 0.044243279
+   }
+  },
+  {
+   "reporter_code": 344,
+   "reporter_iso3": "HKG",
+   "reporter_name": "China, Hong Kong SAR",
+   "cmd_code": "2711",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 10,
+   "region_shares": {
+    "africa": 0.026307144,
+    "east_asia": 0.831265594,
+    "europe": 9.06e-07,
+    "middle_east": 0.100226214,
+    "oceania": 0.031666816,
+    "southeast_asia": 0.010528114,
+    "unassigned": 5.211e-06
+   }
+  },
+  {
+   "reporter_code": 344,
+   "reporter_iso3": "HKG",
+   "reporter_name": "China, Hong Kong SAR",
+   "cmd_code": "85",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 155,
+   "region_shares": {
+    "africa": 0.001294694,
+    "central_asia": 1.2813e-05,
+    "east_asia": 0.563130798,
+    "europe": 0.012841943,
+    "latin_america": 0.003400437,
+    "middle_east": 0.004227485,
+    "north_america": 0.02625434,
+    "oceania": 0.000764943,
+    "south_asia": 8.1942e-05,
+    "southeast_asia": 0.231347631,
+    "unassigned": 0.156642972
+   }
+  },
+  {
+   "reporter_code": 344,
+   "reporter_iso3": "HKG",
+   "reporter_name": "China, Hong Kong SAR",
+   "cmd_code": "8542",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 80,
+   "region_shares": {
+    "africa": 0.000886751,
+    "east_asia": 0.467025288,
+    "europe": 0.005539531,
+    "latin_america": 0.004506173,
+    "middle_east": 0.000356493,
+    "north_america": 0.014579753,
+    "oceania": 8.3171e-05,
+    "south_asia": 1.892e-06,
+    "southeast_asia": 0.291649333,
+    "unassigned": 0.215371613
+   }
+  },
+  {
+   "reporter_code": 344,
+   "reporter_iso3": "HKG",
+   "reporter_name": "China, Hong Kong SAR",
+   "cmd_code": "87",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 66,
+   "region_shares": {
+    "africa": 0.006958898,
+    "central_asia": 1.108e-06,
+    "east_asia": 0.602359076,
+    "europe": 0.245065635,
+    "latin_america": 0.000450946,
+    "middle_east": 0.011047391,
+    "north_america": 0.041451442,
+    "oceania": 0.000634686,
+    "south_asia": 1.361e-06,
+    "southeast_asia": 0.04730405,
+    "unassigned": 0.044725406
+   }
+  },
+  {
+   "reporter_code": 344,
+   "reporter_iso3": "HKG",
+   "reporter_name": "China, Hong Kong SAR",
+   "cmd_code": "TOTAL",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 186,
+   "region_shares": {
+    "africa": 0.004641374,
+    "central_asia": 0.000231072,
+    "east_asia": 0.51976481,
+    "europe": 0.047016958,
+    "latin_america": 0.007641326,
+    "middle_east": 0.034556027,
+    "north_america": 0.04266925,
+    "oceania": 0.01150304,
+    "south_asia": 0.000464667,
+    "southeast_asia": 0.171547244,
+    "unassigned": 0.159964233
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "10",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 63,
+   "region_shares": {
+    "africa": 0.001472929,
+    "central_asia": 1.3e-08,
+    "east_asia": 0.000235988,
+    "europe": 0.432878532,
+    "latin_america": 0.00238194,
+    "middle_east": 0.007068282,
+    "north_america": 0.004728992,
+    "oceania": 0.000385224,
+    "south_asia": 0.000368274,
+    "southeast_asia": 0.015342757,
+    "unassigned": 0.535137068
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "27",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 62,
+   "region_shares": {
+    "africa": 1.352e-06,
+    "central_asia": 0.000140067,
+    "east_asia": 0.000230705,
+    "europe": 0.356396438,
+    "latin_america": 1.9e-08,
+    "middle_east": 0.007160495,
+    "north_america": 0.000878296,
+    "oceania": 5.0753e-05,
+    "southeast_asia": 6.523e-06,
+    "unassigned": 0.635135352
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "2709",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 7,
+   "region_shares": {
+    "africa": 2e-09,
+    "europe": 0.137152572,
+    "north_america": 2e-09,
+    "unassigned": 0.862847424
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "2711",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 27,
+   "region_shares": {
+    "central_asia": 0.00042607,
+    "east_asia": 2.072e-06,
+    "europe": 0.059249141,
+    "middle_east": 0.023258052,
+    "north_america": 0.000289637,
+    "southeast_asia": 3e-07,
+    "unassigned": 0.916774729
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "85",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 178,
+   "region_shares": {
+    "africa": 0.003929929,
+    "central_asia": 0.00014845,
+    "east_asia": 0.216962974,
+    "europe": 0.562988549,
+    "latin_america": 0.006314009,
+    "middle_east": 0.011186122,
+    "north_america": 0.022125866,
+    "oceania": 0.000481425,
+    "south_asia": 0.000206918,
+    "southeast_asia": 0.034829629,
+    "unassigned": 0.140826128
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "8542",
+   "period": "2024",
+   "flow": "M",
+   "basis": "net weight",
+   "partner_count": 85,
+   "region_shares": {
+    "africa": 9.8161e-05,
+    "central_asia": 8.21e-06,
+    "east_asia": 0.058652679,
+    "europe": 0.849590286,
+    "latin_america": 0.002572963,
+    "middle_east": 0.000794003,
+    "north_america": 0.002469177,
+    "oceania": 8.31e-06,
+    "south_asia": 1.013e-06,
+    "southeast_asia": 0.00807631,
+    "unassigned": 0.077728887
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "87",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 93,
+   "region_shares": {
+    "africa": 0.001832893,
+    "central_asia": 6.494e-06,
+    "east_asia": 0.071232784,
+    "europe": 0.805414695,
+    "latin_america": 0.001214876,
+    "middle_east": 0.00779616,
+    "north_america": 0.011154652,
+    "oceania": 1.4416e-05,
+    "south_asia": 1.341e-06,
+    "southeast_asia": 0.002211017,
+    "unassigned": 0.099120673
+   }
+  },
+  {
+   "reporter_code": 348,
+   "reporter_iso3": "HUN",
+   "reporter_name": "Hungary",
+   "cmd_code": "TOTAL",
+   "period": "2024",
+   "flow": "M",
+   "basis": "value (CIF, as reported)",
+   "partner_count": 199,
+   "region_shares": {
+    "africa": 0.002339553,
+    "central_asia": 0.000124608,
+    "east_asia": 0.128491321,
+    "europe": 0.636125906,
+    "latin_america": 0.004558727,
+    "middle_east": 0.014040569,
+    "north_america": 0.0207858,
+    "oceania": 0.000374876,
+    "south_asia": 0.00149832,
+    "southeast_asia": 0.01867914,
+    "unassigned": 0.172981181
+   }
+  }
+ ],
+ "empty": [
+  {
+   "reporter_code": 158,
+   "cmd_code": "10"
+  },
+  {
+   "reporter_code": 158,
+   "cmd_code": "27"
+  },
+  {
+   "reporter_code": 158,
+   "cmd_code": "2709"
+  },
+  {
+   "reporter_code": 158,
+   "cmd_code": "2711"
+  },
+  {
+   "reporter_code": 158,
+   "cmd_code": "85"
+  },
+  {
+   "reporter_code": 158,
+   "cmd_code": "8542"
+  },
+  {
+   "reporter_code": 158,
+   "cmd_code": "87"
+  },
+  {
+   "reporter_code": 158,
+   "cmd_code": "TOTAL"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "10"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "27"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "2709"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "2711"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "85"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "8542"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "87"
+  },
+  {
+   "reporter_code": 250,
+   "cmd_code": "TOTAL"
+  },
+  {
+   "reporter_code": 344,
+   "cmd_code": "2709"
+  },
+  {
+   "reporter_code": 356,
+   "cmd_code": "27"
+  },
+  {
+   "reporter_code": 356,
+   "cmd_code": "TOTAL"
+  }
+ ],
+ "failures": []
+}

@@ -1,0 +1,6974 @@
+{
+ "baselines": {
+  "k_hop": {
+   "budget_places": 6,
+   "description": "directed k-hop from the seed, whole hop levels, same place budget as the model's predicted-down count; direction + rank only",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.043272,
+     0.777222
+    ],
+    "graded": 6,
+    "hits": 2,
+    "rate": 0.333333
+   },
+   "k": 6,
+   "magnitude": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "onset": {
+    "graded": 0,
+    "note": "UNGRADED - direction-only baseline"
+   },
+   "rank_correlation": {
+    "graded": true,
+    "n": 6,
+    "note": null,
+    "spearman": 0.46291
+   },
+   "ungraded": []
+  },
+  "persistence": {
+   "description": "nothing changes: flat, 0 pp, no onset",
+   "direction": {
+    "ci95_clopper_pearson": [
+     0.118117,
+     0.881883
+    ],
+    "graded": 6,
+    "hits": 3,
+    "rate": 0.5
+   },
+   "magnitude": {
+    "ci95_clopper_pearson": [
+     0.118117,
+     0.881883
+    ],
+    "graded": 6,
+    "hits": 3,
+    "rate": 0.5
+   },
+   "onset": {
+    "ci95_clopper_pearson": [
+     0.0,
+     0.602365
+    ],
+    "false_alarms": 0,
+    "graded": 4,
+    "hits": 0,
+    "mean_abs_error_d": null,
+    "n_with_both": 0,
+    "rate": 0.0
+   },
+   "rank_correlation": {
+    "graded": false,
+    "n": 6,
+    "note": "UNGRADED - fewer than 4 places with variation on both sides",
+    "spearman": null
+   },
+   "ungraded": []
+  }
+ },
+ "card_id": "real_129ffa832ea75aee",
+ "caveats": [
+  "A few events prove the machinery, not the forecasting power: every rate here rests on a handful of places for one or two events. One graded place moves a hit rate by tens of points. Read these as a worked, auditable comparison, not a skill estimate. The simulator's traffic is modelled from lane structure, not the historical fleet."
+ ],
+ "comparisons": {
+  "direction_vs_k_hop": "model 2/6 vs k_hop 2/6",
+  "direction_vs_persistence": "model 2/6 vs persistence 3/6",
+  "magnitude_vs_persistence": "model 0/1 vs persistence 3/6",
+  "onset_vs_persistence": "model 0/4 vs persistence 0/4"
+ },
+ "event": {
+  "capacity_loss": 0.7,
+  "capacity_loss_basis": {
+   "kind": "sourced",
+   "source": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+   "text": "The loss figure is stated by the source: gross tonnage of ships entering the Gulf of Aden fell >70% between the 1st half of Dec 2023 and the 1st half of Feb 2024; taken as 0.7 (the stated floor). Corroborated in the same timeline by Suez transits -70% by Jun 2024 (UNCTAD Review of Maritime Transport 2024). No arithmetic conversion applied. Container-ship capacity fell further (-92% by Jun 2024); 0.7 is the conservative all-shipping figure."
+  },
+  "control_places": [
+   "chk_malacca",
+   "chk_hormuz"
+  ],
+  "dedupe_key": "curated_replay:red_sea_2024",
+  "detected_at": "2023-11-19T00:00:00Z",
+  "event_id": "evt_20231119_chk_babelmandeb_capacity_cut_6ff18f1e",
+  "evidence_url": "UNCTAD, via Africa Ports feature (Apr 2024): https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/",
+  "expected_duration_d": 559.0,
+  "historical": true,
+  "id": "evt_20231119_chk_babelmandeb_capacity_cut_6ff18f1e",
+  "kind": "capacity_cut",
+  "mode": "SNAPSHOT",
+  "node_id": "chk_babelmandeb",
+  "provenance": {
+   "mode": "SNAPSHOT",
+   "retrieved_at": "2026-10-20T00:00:00Z",
+   "source": "SupermAP curated replay record (data/replay/red_sea_2024.json)"
+  },
+  "replay_id": "red_sea_2024",
+  "retrieved_at": "2026-10-20T00:00:00Z",
+  "severity": 5,
+  "source": "SupermAP curated replay record (data/replay/red_sea_2024.json)",
+  "started_at": "2023-11-19T00:00:00Z",
+  "status": "resolved",
+  "title": "Red Sea / Bab el-Mandeb crisis, 2023-2025",
+  "watch_context": "Gulf of Aden gross tonnage fell >70% (UNCTAD); Suez transits fell, Cape of Good Hope rose. Malacca and Hormuz are controls expected NOT to fall.",
+  "watch_places": [
+   "chk_babelmandeb",
+   "chk_suez",
+   "chk_capeofgoodhope",
+   "chk_gibraltar"
+  ]
+ },
+ "forked_from": {
+  "events": [
+   {
+    "event_id": "evt_20231119_chk_babelmandeb_capacity_cut_6ff18f1e",
+    "kind": "capacity_cut",
+    "mode": "SNAPSHOT",
+    "node_id": "chk_babelmandeb",
+    "provenance": {
+     "mode": "SNAPSHOT",
+     "retrieved_at": "2026-10-20T00:00:00Z",
+     "source": "SupermAP curated replay record (data/replay/red_sea_2024.json)"
+    },
+    "replay_id": "red_sea_2024",
+    "source": "SupermAP curated replay record (data/replay/red_sea_2024.json)",
+    "started_at": "2023-11-19T00:00:00Z"
+   }
+  ],
+  "kind": "history_fork",
+  "label": "FORKED FROM HISTORY — the request below is derived from a recorded (SNAPSHOT) or inferred (MODELED) event; whatever runs from it is SIMULATED and must be labelled so.",
+  "lineage_id": "fork_86f26eaa84aaadd1",
+  "simulated_outputs_are": "SIMULATED (MODELED engine/sim output); inputs are HISTORICAL (SNAPSHOT/MODELED)",
+  "window": {
+   "from": "2023-11-19",
+   "to": "2025-05-31"
+  }
+ },
+ "grader": "deterministic arithmetic; no LLM at any step",
+ "headline": {
+  "comparisons": {
+   "direction_vs_k_hop": "model 2/6 vs k_hop 2/6",
+   "direction_vs_persistence": "model 2/6 vs persistence 3/6",
+   "magnitude_vs_persistence": "model 0/1 vs persistence 3/6",
+   "onset_vs_persistence": "model 0/4 vs persistence 0/4"
+  },
+  "direction": {
+   "k_hop": "2/6",
+   "model": "2/6",
+   "persistence": "3/6"
+  },
+  "magnitude": {
+   "model": "0/1",
+   "persistence": "3/6"
+  },
+  "onset": {
+   "model": "0/4",
+   "model_mean_abs_error_d": 24.330174,
+   "persistence": "0/4"
+  },
+  "rank_correlation": {
+   "k_hop": 0.46291,
+   "model": -0.654654
+  }
+ },
+ "label": "BACKTEST — historical outcome vs a SIMULATED outcome. Not the live Ledger; these numbers never mix with Ledger grades.",
+ "metrics": {
+  "direction": {
+   "ci95_clopper_pearson": [
+    0.043272,
+    0.777222
+   ],
+   "graded": 6,
+   "hits": 2,
+   "rate": 0.333333
+  },
+  "magnitude": {
+   "ci95_clopper_pearson": [
+    0.0,
+    0.975
+   ],
+   "graded": 1,
+   "hits": 0,
+   "rate": 0.0
+  },
+  "onset": {
+   "ci95_clopper_pearson": [
+    0.0,
+    0.602365
+   ],
+   "false_alarms": 2,
+   "graded": 4,
+   "hits": 0,
+   "mean_abs_error_d": 24.330174,
+   "n_with_both": 4,
+   "rate": 0.0
+  },
+  "rank_correlation": {
+   "graded": true,
+   "n": 6,
+   "note": null,
+   "spearman": -0.654654
+  },
+  "ungraded": []
+ },
+ "not_compared": [],
+ "notes": [
+  "Gulf of Aden gross tonnage fell >70% (UNCTAD); Suez transits fell, Cape of Good Hope rose. Malacca and Hormuz are controls expected NOT to fall."
+ ],
+ "observed_provenance": [
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "daa557a044ff4fe845816aa16ac4292c8cf80b287c725675be0c9e374aa81ead",
+   "place": "chk_babelmandeb",
+   "retrieved_at": "2026-10-25T00:44:42Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "650df89a5b6fd706f9fca1a400b51155ad1144f4eb6660b68816928378446d74",
+   "place": "chk_suez",
+   "retrieved_at": "2026-10-25T00:44:43Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "79bcdfce8f93bfcefee9cca4677a908a5921abc5361638f754d27857c82bc689",
+   "place": "chk_capeofgoodhope",
+   "retrieved_at": "2026-10-25T00:44:43Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "daca25fdca622580dbe0ffcf38a5b30dc2ae43c58814ab4685142202112c22e9",
+   "place": "chk_gibraltar",
+   "retrieved_at": "2026-10-25T00:44:43Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "f12117ef43a934f9bbddeb03b5e90fb989d5a3e3a240081afe596580c575cd9b",
+   "place": "chk_malacca",
+   "retrieved_at": "2026-10-25T00:44:44Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  },
+  {
+   "metric": "transits",
+   "mode": "SNAPSHOT",
+   "payload_sha256": "5bba1255c7ed9ae6912aebd2f2c3eb9c9dacb22bd445b787b43d88d6f0369ed2",
+   "place": "chk_hormuz",
+   "retrieved_at": "2026-10-25T00:44:44Z",
+   "source": "IMF PortWatch (daily layers)",
+   "unit": "vessels/day"
+  }
+ ],
+ "places": [
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 0,
+    "onset_lag_d": null,
+    "severity": -0.0
+   },
+   "model": {
+    "change_pct": -70.0,
+    "channels": [
+     "congestion"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 6.666667,
+    "onset_lag_d": 6.666667,
+    "severity": 6.666667
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 76.75,
+    "change_pct": -41.86,
+    "direction": "down",
+    "eval_days_present": 151,
+    "eval_mean": 44.6225,
+    "onset_date": "2023-12-17",
+    "onset_lag_d": 28
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_babelmandeb",
+   "role": "seed"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 2,
+    "onset_lag_d": null,
+    "severity": -2.0
+   },
+   "model": {
+    "change_pct": null,
+    "channels": [
+     "queue"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 6.666667,
+    "onset_lag_d": 53.177014,
+    "severity": 6.666667
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 77.6786,
+    "change_pct": -34.149,
+    "direction": "down",
+    "eval_days_present": 151,
+    "eval_mean": 51.1523,
+    "onset_date": "2023-12-23",
+    "onset_lag_d": 34
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_suez",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 2,
+    "onset_lag_d": null,
+    "severity": -2.0
+   },
+   "model": {
+    "change_pct": null,
+    "channels": [
+     "reroute"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 7.5,
+    "onset_lag_d": 33.666667,
+    "severity": 7.5
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 48.5,
+    "change_pct": 50.556,
+    "direction": "up",
+    "eval_days_present": 151,
+    "eval_mean": 73.0199,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_capeofgoodhope",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 6,
+    "onset_lag_d": null,
+    "severity": -6.0
+   },
+   "model": {
+    "change_pct": null,
+    "channels": [
+     "queue"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 6.666667,
+    "onset_lag_d": 131.743681,
+    "severity": 6.666667
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 146.0,
+    "change_pct": -4.622,
+    "direction": "flat",
+    "eval_days_present": 151,
+    "eval_mean": 139.2517,
+    "onset_date": "2024-02-22",
+    "onset_lag_d": 95
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_gibraltar",
+   "role": "watch"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 6,
+    "onset_lag_d": null,
+    "severity": -6.0
+   },
+   "model": {
+    "change_pct": null,
+    "channels": [
+     "queue"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 6.666667,
+    "onset_lag_d": 154.543681,
+    "severity": 6.666667
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 227.4286,
+    "change_pct": -1.944,
+    "direction": "flat",
+    "eval_days_present": 151,
+    "eval_mean": 223.0066,
+    "onset_date": null,
+    "onset_lag_d": null
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_malacca",
+   "role": "control"
+  },
+  {
+   "k_hop": {
+    "change_pct": null,
+    "direction": "down",
+    "hops_from_seed": 6,
+    "onset_lag_d": null,
+    "severity": -6.0
+   },
+   "model": {
+    "change_pct": null,
+    "channels": [
+     "queue"
+    ],
+    "direction": "down",
+    "first_hit_delay_d": 6.666667,
+    "onset_lag_d": 54.933333,
+    "severity": 6.666667
+   },
+   "observed": {
+    "baseline_days_present": 28,
+    "baseline_per_day": 82.8214,
+    "change_pct": -2.951,
+    "direction": "flat",
+    "eval_days_present": 151,
+    "eval_mean": 80.3775,
+    "onset_date": "2024-02-02",
+    "onset_lag_d": 75
+   },
+   "persistence": {
+    "change_pct": 0.0,
+    "direction": "flat",
+    "onset_lag_d": null,
+    "severity": 0.0
+   },
+   "place": "chk_hormuz",
+   "role": "control"
+  }
+ ],
+ "rule": {
+  "baseline_days": 28,
+  "baseline_min_days": 14,
+  "denominators": {
+   "direction": "compared places with an observed and a predicted direction",
+   "magnitude": "compared places with an observed and a predicted change",
+   "onset": "compared places with an observed onset",
+   "rank": "compared places with an observed and a predicted severity"
+  },
+  "evaluation_period": "[max(from, event start), min(to, event start + ceil(duration_d) - 1)] - the disruption's own stated duration, clipped to the window / sim horizon",
+  "flat_band_pct": 10.0,
+  "grader": "deterministic arithmetic; no LLM at any step",
+  "id": "realism-v1",
+  "magnitude_band_pp": 20.0,
+  "observed_series": "IMF PortWatch daily counts (SNAPSHOT history)",
+  "onset": {
+   "hit_within_days": 7,
+   "sustain_days": 3,
+   "threshold_pct": -20.0
+  },
+  "rank": {
+   "min_places": 4,
+   "statistic": "Spearman"
+  },
+  "sim_baseline_min_days": 7,
+  "ungraded_is": "never a hit, never a miss, never estimated"
+ },
+ "run": {
+  "kind": "chain",
+  "prediction_digest": {
+   "event": {
+    "capacity_loss": 0.7,
+    "duration_d": 559.0,
+    "kind": "capacity_cut",
+    "node_id": "chk_babelmandeb",
+    "shape": "step",
+    "started_at": "2023-11-19T00:00:00Z"
+   },
+   "kind": "chain",
+   "n_events": 385,
+   "params": {
+    "hit_threshold": 0.15,
+    "queue_sensitivity": 1.0
+   },
+   "places": {
+    "air_addisababa": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-12T10:11:53Z",
+     "first_delay_d": 0.072859,
+     "first_lag_d": 267.424919,
+     "first_seq": 187,
+     "max_delay_d": 0.072859,
+     "max_magnitude": 0.182148
+    },
+    "air_anchorage": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-16T08:06:20Z",
+     "first_delay_d": 0.163401,
+     "first_lag_d": 240.337731,
+     "first_seq": 149,
+     "max_delay_d": 0.163401,
+     "max_magnitude": 0.653605
+    },
+    "air_atlanta": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-11T00:16:52Z",
+     "first_delay_d": 0.090461,
+     "first_lag_d": 266.011713,
+     "first_seq": 173,
+     "max_delay_d": 0.090461,
+     "max_magnitude": 0.452305
+    },
+    "air_bangkok": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-16T01:56:30Z",
+     "first_delay_d": 0.106573,
+     "first_lag_d": 240.080903,
+     "first_seq": 150,
+     "max_delay_d": 0.106573,
+     "max_magnitude": 0.710487
+    },
+    "air_brussels": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-17T09:35:03Z",
+     "first_delay_d": 0.135242,
+     "first_lag_d": 241.39934,
+     "first_seq": 165,
+     "max_delay_d": 0.135242,
+     "max_magnitude": 0.491787
+    },
+    "air_chicago": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-16T23:13:25Z",
+     "first_delay_d": 0.22992,
+     "first_lag_d": 240.96765,
+     "first_seq": 166,
+     "max_delay_d": 0.22992,
+     "max_magnitude": 0.510933
+    },
+    "air_cincinnati": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-11T01:53:55Z",
+     "first_delay_d": 0.057861,
+     "first_lag_d": 266.079109,
+     "first_seq": 174,
+     "max_delay_d": 0.057861,
+     "max_magnitude": 0.578613
+    },
+    "air_cologne": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-17T13:24:19Z",
+     "first_delay_d": 0.112409,
+     "first_lag_d": 241.558553,
+     "first_seq": 175,
+     "max_delay_d": 0.112409,
+     "max_magnitude": 0.562045
+    },
+    "air_delhi": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2023-12-30T16:44:54Z",
+     "first_delay_d": 0.397853,
+     "first_lag_d": 41.697847,
+     "first_seq": 13,
+     "max_delay_d": 0.397853,
+     "max_magnitude": 0.994633
+    },
+    "air_doha": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-18T04:09:30Z",
+     "first_delay_d": 0.287104,
+     "first_lag_d": 242.173264,
+     "first_seq": 176,
+     "max_delay_d": 0.287104,
+     "max_magnitude": 0.820297
+    },
+    "air_dubai": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-17T16:28:05Z",
+     "first_delay_d": 0.272062,
+     "first_lag_d": 241.686169,
+     "first_seq": 167,
+     "max_delay_d": 0.272062,
+     "max_magnitude": 0.777321
+    },
+    "air_dubaiworldcentral": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-17T22:44:34Z",
+     "first_delay_d": 0.061446,
+     "first_lag_d": 241.947616,
+     "first_seq": 177,
+     "max_delay_d": 0.061446,
+     "max_magnitude": 0.614462
+    },
+    "air_ezhou": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-16T23:29:59Z",
+     "first_delay_d": 0.141424,
+     "first_lag_d": 240.979155,
+     "first_seq": 168,
+     "max_delay_d": 0.141424,
+     "max_magnitude": 0.565697
+    },
+    "air_frankfurt": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-11T15:38:58Z",
+     "first_delay_d": 0.185789,
+     "first_lag_d": 266.65206,
+     "first_seq": 180,
+     "max_delay_d": 0.185789,
+     "max_magnitude": 0.371579
+    },
+    "air_hongkong": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-15T16:11:02Z",
+     "first_delay_d": 0.497317,
+     "first_lag_d": 239.674329,
+     "first_seq": 124,
+     "max_delay_d": 0.497317,
+     "max_magnitude": 0.994633
+    },
+    "air_houston": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-11T00:23:26Z",
+     "first_delay_d": 0.095018,
+     "first_lag_d": 266.016273,
+     "first_seq": 178,
+     "max_delay_d": 0.095018,
+     "max_magnitude": 0.422303
+    },
+    "air_incheon": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-04-19T20:16:25Z",
+     "first_delay_d": 0.467723,
+     "first_lag_d": 152.844734,
+     "first_seq": 125,
+     "max_delay_d": 0.467723,
+     "max_magnitude": 0.935445
+    },
+    "air_jakarta": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-05-07T06:43:13Z",
+     "first_delay_d": 0.103003,
+     "first_lag_d": 170.280012,
+     "first_seq": 67,
+     "max_delay_d": 0.103003,
+     "max_magnitude": 0.686687
+    },
+    "air_leipzig": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-11T17:16:20Z",
+     "first_delay_d": 0.017612,
+     "first_lag_d": 266.719676,
+     "first_seq": 183,
+     "max_delay_d": 0.017612,
+     "max_magnitude": 0.704478
+    },
+    "air_liege": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-12T05:53:41Z",
+     "first_delay_d": 0.157983,
+     "first_lag_d": 267.245613,
+     "first_seq": 188,
+     "max_delay_d": 0.157983,
+     "max_magnitude": 0.63193
+    },
+    "air_london": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-19T02:03:54Z",
+     "first_delay_d": 0.212768,
+     "first_lag_d": 243.086042,
+     "first_seq": 181,
+     "max_delay_d": 0.212768,
+     "max_magnitude": 0.531921
+    },
+    "air_losangeles": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-07T06:02:16Z",
+     "first_delay_d": 0.174559,
+     "first_lag_d": 262.251574,
+     "first_seq": 151,
+     "max_delay_d": 0.174559,
+     "max_magnitude": 0.349119
+    },
+    "air_louisville": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-17T01:06:27Z",
+     "first_delay_d": 0.208415,
+     "first_lag_d": 241.046146,
+     "first_seq": 169,
+     "max_delay_d": 0.208415,
+     "max_magnitude": 0.833661
+    },
+    "air_madrid": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-11T20:53:18Z",
+     "first_delay_d": 0.06829,
+     "first_lag_d": 266.870347,
+     "first_seq": 184,
+     "max_delay_d": 0.06829,
+     "max_magnitude": 0.455267
+    },
+    "air_memphis": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-10T19:42:36Z",
+     "first_delay_d": 0.110909,
+     "first_lag_d": 265.82125,
+     "first_seq": 170,
+     "max_delay_d": 0.110909,
+     "max_magnitude": 0.443637
+    },
+    "air_milan": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-11T18:35:30Z",
+     "first_delay_d": 0.022597,
+     "first_lag_d": 266.774653,
+     "first_seq": 185,
+     "max_delay_d": 0.022597,
+     "max_magnitude": 0.451933
+    },
+    "air_narita": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-18T07:33:56Z",
+     "first_delay_d": 0.447585,
+     "first_lag_d": 242.315231,
+     "first_seq": 171,
+     "max_delay_d": 0.447585,
+     "max_magnitude": 0.994633
+    },
+    "air_newyork": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-12T02:18:19Z",
+     "first_delay_d": 0.093998,
+     "first_lag_d": 267.096053,
+     "first_seq": 182,
+     "max_delay_d": 0.093998,
+     "max_magnitude": 0.537131
+    },
+    "air_ontario": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-06-11T02:05:04Z",
+     "first_delay_d": 0.176502,
+     "first_lag_d": 205.086852,
+     "first_seq": 126,
+     "max_delay_d": 0.176502,
+     "max_magnitude": 0.882508
+    },
+    "air_osaka": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-16T21:32:55Z",
+     "first_delay_d": 0.160126,
+     "first_lag_d": 240.897859,
+     "first_seq": 152,
+     "max_delay_d": 0.160126,
+     "max_magnitude": 0.80063
+    },
+    "air_paris": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-12T00:54:12Z",
+     "first_delay_d": 0.085576,
+     "first_lag_d": 267.037639,
+     "first_seq": 186,
+     "max_delay_d": 0.085576,
+     "max_magnitude": 0.570508
+    },
+    "air_shanghaipudong": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-08T10:17:52Z",
+     "first_delay_d": 0.177501,
+     "first_lag_d": 263.429074,
+     "first_seq": 153,
+     "max_delay_d": 0.177501,
+     "max_magnitude": 0.355003
+    },
+    "air_singapore": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-16T17:08:19Z",
+     "first_delay_d": 0.333202,
+     "first_lag_d": 240.714109,
+     "first_seq": 154,
+     "max_delay_d": 0.333202,
+     "max_magnitude": 0.666404
+    },
+    "air_taipei": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-08-08T16:07:58Z",
+     "first_delay_d": 0.420628,
+     "first_lag_d": 263.672199,
+     "first_seq": 155,
+     "max_delay_d": 0.420628,
+     "max_magnitude": 0.841256
+    },
+    "air_toronto": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-17T03:44:20Z",
+     "first_delay_d": 0.088134,
+     "first_lag_d": 241.155787,
+     "first_seq": 179,
+     "max_delay_d": 0.088134,
+     "max_magnitude": 0.503625
+    },
+    "air_zhengzhou": {
+     "channels": [
+      "mode-shift"
+     ],
+     "first_at": "2024-07-16T22:25:36Z",
+     "first_delay_d": 0.146717,
+     "first_lag_d": 240.934444,
+     "first_seq": 156,
+     "max_delay_d": 0.146717,
+     "max_magnitude": 0.58687
+    },
+    "chk_babelmandeb": {
+     "channels": [
+      "congestion"
+     ],
+     "first_at": "2023-11-25T16:00:00Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 6.666667,
+     "first_seq": 0,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.7
+    },
+    "chk_capeofgoodhope": {
+     "channels": [
+      "reroute"
+     ],
+     "first_at": "2023-12-22T16:00:00Z",
+     "first_delay_d": 7.5,
+     "first_lag_d": 33.666667,
+     "first_seq": 2,
+     "max_delay_d": 7.5,
+     "max_magnitude": 1.0
+    },
+    "chk_danish": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-28T13:02:54Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 130.543681,
+     "first_seq": 45,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.420435
+    },
+    "chk_dover": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-16T03:26:54Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 118.143681,
+     "first_seq": 28,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.409796
+    },
+    "chk_gibraltar": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-29T17:50:54Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 131.743681,
+     "first_seq": 46,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.436805
+    },
+    "chk_hormuz": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-01-12T22:24:00Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 54.933333,
+     "first_seq": 14,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.4924
+    },
+    "chk_malacca": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-04-21T13:02:54Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 154.543681,
+     "first_seq": 47,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.430868
+    },
+    "chk_mozambique": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2023-12-22T20:00:00Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 33.833333,
+     "first_seq": 3,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.497504
+    },
+    "chk_panama": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-06-15T18:22:54Z",
+     "first_delay_d": 13.888889,
+     "first_lag_d": 209.765903,
+     "first_seq": 68,
+     "max_delay_d": 13.888889,
+     "max_magnitude": 0.367258
+    },
+    "chk_suez": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-01-11T04:14:54Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 53.177014,
+     "first_seq": 15,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.497718
+    },
+    "chk_taiwan": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-05-30T15:26:54Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 193.643681,
+     "first_seq": 95,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.307466
+    },
+    "chk_turkish": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-02-26T13:02:54Z",
+     "first_delay_d": 6.666667,
+     "first_lag_d": 99.543681,
+     "first_seq": 29,
+     "max_delay_d": 6.666667,
+     "max_magnitude": 0.430813
+    },
+    "gnd_alexandriabay": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-04-03T05:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 136.243681,
+     "first_seq": 69,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.574405
+    },
+    "gnd_atlanta": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-07-19T14:22:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 243.599236,
+     "first_seq": 96,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.64878
+    },
+    "gnd_bettembourg": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-22T09:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 124.377014,
+     "first_seq": 97,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.430019
+    },
+    "gnd_blaine": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-06-09T01:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 203.043681,
+     "first_seq": 127,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.759008
+    },
+    "gnd_budapest": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-06T00:14:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 108.010347,
+     "first_seq": 48,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.289586
+    },
+    "gnd_buffalo": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-07-29T05:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 253.210347,
+     "first_seq": 98,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.544265
+    },
+    "gnd_calexico": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-06-14T10:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 208.443681,
+     "first_seq": 128,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.321912
+    },
+    "gnd_channeltunnel": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-30T05:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 132.243681,
+     "first_seq": 157,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.396726
+    },
+    "gnd_chicago": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-06T06:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 261.277014,
+     "first_seq": 129,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.991055
+    },
+    "gnd_citydeep": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-01-18T00:00:00Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 60.0,
+     "first_seq": 16,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.482857
+    },
+    "gnd_columbus": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-07-29T09:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 253.410347,
+     "first_seq": 99,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.511524
+    },
+    "gnd_dadri": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2023-12-30T00:00:00Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 41.0,
+     "first_seq": 7,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.279387
+    },
+    "gnd_dallas": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-11T14:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 266.610347,
+     "first_seq": 130,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.421406
+    },
+    "gnd_detroit": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-02T05:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 257.243681,
+     "first_seq": 100,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.428319
+    },
+    "gnd_duisburg": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-12T17:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 114.710347,
+     "first_seq": 49,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.395262
+    },
+    "gnd_eaglepass": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-15T13:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 270.543681,
+     "first_seq": 131,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.789696
+    },
+    "gnd_elpaso": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-16T10:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 271.443681,
+     "first_seq": 158,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.054266
+    },
+    "gnd_frontroyal": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-19T17:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 274.710347,
+     "first_seq": 132,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.518119
+    },
+    "gnd_greer": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-09T09:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 264.410347,
+     "first_seq": 133,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.432233
+    },
+    "gnd_halkali": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-12T08:14:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 114.343681,
+     "first_seq": 70,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.056539
+    },
+    "gnd_hidalgo": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-15T15:26:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 270.643681,
+     "first_seq": 134,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.991055
+    },
+    "gnd_inlandempire": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-06-10T17:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 204.710347,
+     "first_seq": 101,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.409255
+    },
+    "gnd_kansascity": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-16T10:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 271.443681,
+     "first_seq": 159,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.525487
+    },
+    "gnd_khorgos": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-04-05T09:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 138.410347,
+     "first_seq": 135,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.012348
+    },
+    "gnd_laredo": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-07-05T19:10:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 229.799236,
+     "first_seq": 102,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.991055
+    },
+    "gnd_madrid": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-31T17:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 133.743681,
+     "first_seq": 172,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.043211
+    },
+    "gnd_malaszewicze": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-22T01:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 124.077014,
+     "first_seq": 103,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.089366
+    },
+    "gnd_memphis": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-10T14:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 265.610347,
+     "first_seq": 160,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.510684
+    },
+    "gnd_milan": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-17T13:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 119.543681,
+     "first_seq": 71,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.988671
+    },
+    "gnd_montreal": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-30T09:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 132.410347,
+     "first_seq": 50,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.902467
+    },
+    "gnd_nogales": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-16T22:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 271.943681,
+     "first_seq": 161,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.043731
+    },
+    "gnd_otaymesa": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-06-18T01:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 212.077014,
+     "first_seq": 136,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.076587
+    },
+    "gnd_paris": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-26T09:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 128.410347,
+     "first_seq": 137,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.19595
+    },
+    "gnd_porthuron": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-06T01:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 261.077014,
+     "first_seq": 162,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.055303
+    },
+    "gnd_riyadh": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-01-28T04:00:00Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 70.166667,
+     "first_seq": 30,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.484794
+    },
+    "gnd_saltlakecity": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-22T02:38:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 277.110347,
+     "first_seq": 138,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.465016
+    },
+    "gnd_stlouis": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-20T04:14:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 275.177014,
+     "first_seq": 163,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.546049
+    },
+    "gnd_stockton": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-08-21T12:14:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 276.510347,
+     "first_seq": 139,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.527012
+    },
+    "gnd_sweetgrass": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-04-08T21:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 141.877014,
+     "first_seq": 104,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.549848
+    },
+    "gnd_toronto": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-04-03T17:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 136.743681,
+     "first_seq": 72,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.685274
+    },
+    "gnd_vancouver": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-06-05T09:50:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 199.410347,
+     "first_seq": 105,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.717144
+    },
+    "gnd_warsaw": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-03-18T01:02:54Z",
+     "first_delay_d": 3.333333,
+     "first_lag_d": 120.043681,
+     "first_seq": 73,
+     "max_delay_d": 3.333333,
+     "max_magnitude": 0.419454
+    },
+    "sea_algeciras": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-04T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 167.377014,
+     "first_seq": 51,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.784535
+    },
+    "sea_ambarli": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-07T20:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 109.843681,
+     "first_seq": 52,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_antwerp": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-21T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 215.877014,
+     "first_seq": 74,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.616334
+    },
+    "sea_balboa": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-26T01:34:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 220.065903,
+     "first_seq": 106,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.259828
+    },
+    "sea_barcelona": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-03T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 136.877014,
+     "first_seq": 53,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.835374
+    },
+    "sea_beirut": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-07T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 80.377014,
+     "first_seq": 20,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.712453
+    },
+    "sea_bremerhaven": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-13T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 237.377014,
+     "first_seq": 107,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.495616
+    },
+    "sea_brisbane": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-31T13:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 194.543681,
+     "first_seq": 108,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.557115
+    },
+    "sea_buenosaires": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-31T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 133.877014,
+     "first_seq": 31,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.696546
+    },
+    "sea_busan": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-18T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 151.877014,
+     "first_seq": 54,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_caimep": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-02T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 226.877014,
+     "first_seq": 109,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.606394
+    },
+    "sea_callao": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-09T13:34:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 233.565903,
+     "first_seq": 140,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.210495
+    },
+    "sea_capetown": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-02T04:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 44.166667,
+     "first_seq": 8,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.935782
+    },
+    "sea_cartagena": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-30T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 163.377014,
+     "first_seq": 55,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.822481
+    },
+    "sea_charleston": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-05T01:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 260.077014,
+     "first_seq": 110,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.856345
+    },
+    "sea_chattogram": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-12-24T16:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 35.666667,
+     "first_seq": 4,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.878657
+    },
+    "sea_colombo": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-12-11T16:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 22.666667,
+     "first_seq": 1,
+     "max_delay_d": 10.0,
+     "max_magnitude": 1.0
+    },
+    "sea_colon": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-26T06:22:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 220.265903,
+     "first_seq": 75,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_constanta": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-08T17:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 110.743681,
+     "first_seq": 32,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_dalian": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-14T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 208.377014,
+     "first_seq": 111,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.642124
+    },
+    "sea_damietta": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-06T16:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 79.677014,
+     "first_seq": 21,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_dammam": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-23T20:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 65.833333,
+     "first_seq": 22,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_dongguan": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-09-09T06:38:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 295.277014,
+     "first_seq": 141,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.690104
+    },
+    "sea_dublin": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-20T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 122.377014,
+     "first_seq": 33,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.524369
+    },
+    "sea_durban": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-13T16:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 55.666667,
+     "first_seq": 9,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_felixstowe": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-26T13:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 128.543681,
+     "first_seq": 34,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.787209
+    },
+    "sea_fuzhou": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-23T16:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 186.677014,
+     "first_seq": 76,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.647995
+    },
+    "sea_gdansk": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-21T01:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 123.077014,
+     "first_seq": 35,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_gdynia": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-08T10:38:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 141.443681,
+     "first_seq": 56,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_genoa": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-15T01:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 148.077014,
+     "first_seq": 57,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.568667
+    },
+    "sea_gioiatauro": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-18T16:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 91.677014,
+     "first_seq": 36,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.935481
+    },
+    "sea_guangzhou": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-09-19T13:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 305.577014,
+     "first_seq": 142,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_guayaquil": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-21T08:46:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 245.365903,
+     "first_seq": 143,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.229926
+    },
+    "sea_gwangyang": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-23T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 186.377014,
+     "first_seq": 77,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.555957
+    },
+    "sea_haiphong": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-26T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 250.377014,
+     "first_seq": 144,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_halifax": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-07T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 140.377014,
+     "first_seq": 58,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.530225
+    },
+    "sea_hamad": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-03T20:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 76.833333,
+     "first_seq": 23,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.898174
+    },
+    "sea_hamburg": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-02T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 226.877014,
+     "first_seq": 78,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.586915
+    },
+    "sea_hochiminh": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-07T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 170.377014,
+     "first_seq": 79,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.964825
+    },
+    "sea_hongkong": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-14T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 238.877014,
+     "first_seq": 112,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.494541
+    },
+    "sea_houston": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-01T18:22:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 225.765903,
+     "first_seq": 80,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.422785
+    },
+    "sea_incheon": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-23T01:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 186.077014,
+     "first_seq": 81,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.621015
+    },
+    "sea_jebelali": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-23T22:24:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 65.933333,
+     "first_seq": 17,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_jeddah": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-03T00:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 45.010347,
+     "first_seq": 10,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_kaohsiung": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-29T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 284.877014,
+     "first_seq": 145,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.672307
+    },
+    "sea_karachi": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-04T11:12:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 46.466667,
+     "first_seq": 11,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.980105
+    },
+    "sea_keelung": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-23T01:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 186.077014,
+     "first_seq": 82,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_khalifa": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-03T12:48:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 76.533333,
+     "first_seq": 24,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_koper": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-01T16:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 103.677014,
+     "first_seq": 37,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.618392
+    },
+    "sea_laemchabang": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-25T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 158.877014,
+     "first_seq": 59,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.60674
+    },
+    "sea_lehavre": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-06T08:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 139.343681,
+     "first_seq": 60,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.874585
+    },
+    "sea_lianyungang": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-23T01:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 186.077014,
+     "first_seq": 83,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.730729
+    },
+    "sea_longbeach": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-06T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 200.877014,
+     "first_seq": 84,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.527555
+    },
+    "sea_losangeles": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-06T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 261.877014,
+     "first_seq": 113,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.440159
+    },
+    "sea_manila": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-09-10T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 296.377014,
+     "first_seq": 146,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.104162
+    },
+    "sea_manzanillo": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-10T13:34:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 234.565903,
+     "first_seq": 114,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.489747
+    },
+    "sea_marsaxlokk": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-08T04:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 81.177014,
+     "first_seq": 25,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.703127
+    },
+    "sea_melbourne": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-19T13:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 182.543681,
+     "first_seq": 85,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.713425
+    },
+    "sea_mersin": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-18T04:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 91.177014,
+     "first_seq": 38,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.911929
+    },
+    "sea_mombasa": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-27T16:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 69.666667,
+     "first_seq": 12,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.975269
+    },
+    "sea_montreal": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-26T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 128.877014,
+     "first_seq": 39,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_mundra": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-12-24T16:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 35.666667,
+     "first_seq": 5,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_nagoya": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-03T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 197.877014,
+     "first_seq": 115,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.807339
+    },
+    "sea_newyork": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-24T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 248.877014,
+     "first_seq": 86,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.51564
+    },
+    "sea_ningbo": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-16T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 149.877014,
+     "first_seq": 61,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.932227
+    },
+    "sea_nwsa": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-08T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 171.377014,
+     "first_seq": 87,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_oakland": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-17T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 272.877014,
+     "first_seq": 116,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.858317
+    },
+    "sea_piraeus": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-02-18T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 91.877014,
+     "first_seq": 26,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_portklang": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-01-07T04:00:00Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 49.166667,
+     "first_seq": 18,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.62091
+    },
+    "sea_portsaid": {
+     "channels": [
+      "reroute"
+     ],
+     "first_at": "2024-01-27T04:14:54Z",
+     "first_delay_d": 15.3,
+     "first_lag_d": 69.177014,
+     "first_seq": 19,
+     "max_delay_d": 15.3,
+     "max_magnitude": 0.987478
+    },
+    "sea_princerupert": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-07T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 170.377014,
+     "first_seq": 88,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_qingdao": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-30T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 163.377014,
+     "first_seq": 62,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.843053
+    },
+    "sea_qinzhou": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-09-30T18:38:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 316.777014,
+     "first_seq": 147,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.855708
+    },
+    "sea_rizhao": {
+     "channels": [
+      "queue"
+     ],
+     "first_at": "2024-05-11T01:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 174.077014,
+     "first_seq": 117,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.113936
+    },
+    "sea_rotterdam": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-08T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 110.877014,
+     "first_seq": 27,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.491488
+    },
+    "sea_salalah": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2023-12-20T00:14:54Z",
+     "first_delay_d": 3.343683,
+     "first_lag_d": 31.010347,
+     "first_seq": 6,
+     "max_delay_d": 3.343683,
+     "max_magnitude": 0.987478
+    },
+    "sea_sanantonio": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-22T13:34:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 246.565903,
+     "first_seq": 164,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.141381
+    },
+    "sea_santos": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-14T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 147.377014,
+     "first_seq": 40,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.798001
+    },
+    "sea_savannah": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-07-15T18:22:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 239.765903,
+     "first_seq": 89,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.586098
+    },
+    "sea_shanghai": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-11T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 174.877014,
+     "first_seq": 63,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.97344
+    },
+    "sea_shenzhen": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-29T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 284.877014,
+     "first_seq": 118,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_sines": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-22T09:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 124.377014,
+     "first_seq": 41,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_singapore": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-13T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 146.877014,
+     "first_seq": 42,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_sydney": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-11T13:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 205.543681,
+     "first_seq": 119,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.786265
+    },
+    "sea_taicang": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-03T13:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 197.577014,
+     "first_seq": 90,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.275191
+    },
+    "sea_taichung": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-09-10T13:50:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 296.577014,
+     "first_seq": 148,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.367452
+    },
+    "sea_tangermed": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-18T09:55:27Z",
+     "first_delay_d": 4.536501,
+     "first_lag_d": 120.413507,
+     "first_seq": 43,
+     "max_delay_d": 4.536501,
+     "max_magnitude": 0.987478
+    },
+    "sea_tanjungpelepas": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-02T01:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 165.043681,
+     "first_seq": 64,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.642997
+    },
+    "sea_tanjungperak": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-25T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 158.877014,
+     "first_seq": 65,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.716359
+    },
+    "sea_tanjungpriok": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-06T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 169.877014,
+     "first_seq": 66,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_tianjin": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-05-23T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 186.877014,
+     "first_seq": 91,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_tokyo": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-27T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 282.877014,
+     "first_seq": 120,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.632114
+    },
+    "sea_valencia": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-03-03T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 105.877014,
+     "first_seq": 44,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.879966
+    },
+    "sea_vancouver": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-01T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 195.877014,
+     "first_seq": 92,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_virginia": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-15T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 270.877014,
+     "first_seq": 121,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_xiamen": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-08-30T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 285.877014,
+     "first_seq": 122,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.550261
+    },
+    "sea_yantai": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-24T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 218.877014,
+     "first_seq": 123,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.506152
+    },
+    "sea_yingkou": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-06-03T21:02:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 197.877014,
+     "first_seq": 93,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.987478
+    },
+    "sea_yokohama": {
+     "channels": [
+      "inventory"
+     ],
+     "first_at": "2024-04-30T16:14:54Z",
+     "first_delay_d": 10.0,
+     "first_lag_d": 163.677014,
+     "first_seq": 94,
+     "max_delay_d": 10.0,
+     "max_magnitude": 0.617557
+    }
+   },
+   "run_id": "run_589a843a1805a8f4",
+   "stream_hash": "f6a3e841d90e8d880bf1ae49d54cae99c521cd52a25c2e76622c338f90102a25"
+  },
+  "run_id": "run_589a843a1805a8f4",
+  "stream_hash": "f6a3e841d90e8d880bf1ae49d54cae99c521cd52a25c2e76622c338f90102a25"
+ },
+ "schema": "supermap.realism_card.v1",
+ "series": {
+  "chk_babelmandeb": {
+   "observed": [
+    [
+     "2023-10-22",
+     75
+    ],
+    [
+     "2023-10-23",
+     62
+    ],
+    [
+     "2023-10-24",
+     71
+    ],
+    [
+     "2023-10-25",
+     86
+    ],
+    [
+     "2023-10-26",
+     62
+    ],
+    [
+     "2023-10-27",
+     95
+    ],
+    [
+     "2023-10-28",
+     83
+    ],
+    [
+     "2023-10-29",
+     62
+    ],
+    [
+     "2023-10-30",
+     84
+    ],
+    [
+     "2023-10-31",
+     77
+    ],
+    [
+     "2023-11-01",
+     61
+    ],
+    [
+     "2023-11-02",
+     94
+    ],
+    [
+     "2023-11-03",
+     87
+    ],
+    [
+     "2023-11-04",
+     85
+    ],
+    [
+     "2023-11-05",
+     69
+    ],
+    [
+     "2023-11-06",
+     65
+    ],
+    [
+     "2023-11-07",
+     67
+    ],
+    [
+     "2023-11-08",
+     77
+    ],
+    [
+     "2023-11-09",
+     84
+    ],
+    [
+     "2023-11-10",
+     70
+    ],
+    [
+     "2023-11-11",
+     86
+    ],
+    [
+     "2023-11-12",
+     71
+    ],
+    [
+     "2023-11-13",
+     84
+    ],
+    [
+     "2023-11-14",
+     70
+    ],
+    [
+     "2023-11-15",
+     76
+    ],
+    [
+     "2023-11-16",
+     75
+    ],
+    [
+     "2023-11-17",
+     87
+    ],
+    [
+     "2023-11-18",
+     84
+    ],
+    [
+     "2023-11-19",
+     59
+    ],
+    [
+     "2023-11-20",
+     72
+    ],
+    [
+     "2023-11-21",
+     87
+    ],
+    [
+     "2023-11-22",
+     84
+    ],
+    [
+     "2023-11-23",
+     75
+    ],
+    [
+     "2023-11-24",
+     86
+    ],
+    [
+     "2023-11-25",
+     74
+    ],
+    [
+     "2023-11-26",
+     88
+    ],
+    [
+     "2023-11-27",
+     65
+    ],
+    [
+     "2023-11-28",
+     77
+    ],
+    [
+     "2023-11-29",
+     89
+    ],
+    [
+     "2023-11-30",
+     72
+    ],
+    [
+     "2023-12-01",
+     64
+    ],
+    [
+     "2023-12-02",
+     67
+    ],
+    [
+     "2023-12-03",
+     90
+    ],
+    [
+     "2023-12-04",
+     85
+    ],
+    [
+     "2023-12-05",
+     72
+    ],
+    [
+     "2023-12-06",
+     66
+    ],
+    [
+     "2023-12-07",
+     75
+    ],
+    [
+     "2023-12-08",
+     82
+    ],
+    [
+     "2023-12-09",
+     77
+    ],
+    [
+     "2023-12-10",
+     65
+    ],
+    [
+     "2023-12-11",
+     62
+    ],
+    [
+     "2023-12-12",
+     83
+    ],
+    [
+     "2023-12-13",
+     81
+    ],
+    [
+     "2023-12-14",
+     91
+    ],
+    [
+     "2023-12-15",
+     76
+    ],
+    [
+     "2023-12-16",
+     65
+    ],
+    [
+     "2023-12-17",
+     57
+    ],
+    [
+     "2023-12-18",
+     52
+    ],
+    [
+     "2023-12-19",
+     56
+    ],
+    [
+     "2023-12-20",
+     63
+    ],
+    [
+     "2023-12-21",
+     53
+    ],
+    [
+     "2023-12-22",
+     50
+    ],
+    [
+     "2023-12-23",
+     50
+    ],
+    [
+     "2023-12-24",
+     69
+    ],
+    [
+     "2023-12-25",
+     60
+    ],
+    [
+     "2023-12-26",
+     57
+    ],
+    [
+     "2023-12-27",
+     45
+    ],
+    [
+     "2023-12-28",
+     45
+    ],
+    [
+     "2023-12-29",
+     70
+    ],
+    [
+     "2023-12-30",
+     44
+    ],
+    [
+     "2023-12-31",
+     49
+    ],
+    [
+     "2024-01-01",
+     36
+    ],
+    [
+     "2024-01-02",
+     52
+    ],
+    [
+     "2024-01-03",
+     41
+    ],
+    [
+     "2024-01-04",
+     54
+    ],
+    [
+     "2024-01-05",
+     45
+    ],
+    [
+     "2024-01-06",
+     45
+    ],
+    [
+     "2024-01-07",
+     43
+    ],
+    [
+     "2024-01-08",
+     51
+    ],
+    [
+     "2024-01-09",
+     53
+    ],
+    [
+     "2024-01-10",
+     43
+    ],
+    [
+     "2024-01-11",
+     55
+    ],
+    [
+     "2024-01-12",
+     35
+    ],
+    [
+     "2024-01-13",
+     43
+    ],
+    [
+     "2024-01-14",
+     27
+    ],
+    [
+     "2024-01-15",
+     29
+    ],
+    [
+     "2024-01-16",
+     38
+    ],
+    [
+     "2024-01-17",
+     46
+    ],
+    [
+     "2024-01-18",
+     32
+    ],
+    [
+     "2024-01-19",
+     36
+    ],
+    [
+     "2024-01-20",
+     39
+    ],
+    [
+     "2024-01-21",
+     40
+    ],
+    [
+     "2024-01-22",
+     45
+    ],
+    [
+     "2024-01-23",
+     35
+    ],
+    [
+     "2024-01-24",
+     31
+    ],
+    [
+     "2024-01-25",
+     34
+    ],
+    [
+     "2024-01-26",
+     29
+    ],
+    [
+     "2024-01-27",
+     32
+    ],
+    [
+     "2024-01-28",
+     31
+    ],
+    [
+     "2024-01-29",
+     37
+    ],
+    [
+     "2024-01-30",
+     28
+    ],
+    [
+     "2024-01-31",
+     37
+    ],
+    [
+     "2024-02-01",
+     32
+    ],
+    [
+     "2024-02-02",
+     39
+    ],
+    [
+     "2024-02-03",
+     28
+    ],
+    [
+     "2024-02-04",
+     27
+    ],
+    [
+     "2024-02-05",
+     50
+    ],
+    [
+     "2024-02-06",
+     37
+    ],
+    [
+     "2024-02-07",
+     28
+    ],
+    [
+     "2024-02-08",
+     29
+    ],
+    [
+     "2024-02-09",
+     30
+    ],
+    [
+     "2024-02-10",
+     32
+    ],
+    [
+     "2024-02-11",
+     38
+    ],
+    [
+     "2024-02-12",
+     28
+    ],
+    [
+     "2024-02-13",
+     41
+    ],
+    [
+     "2024-02-14",
+     32
+    ],
+    [
+     "2024-02-15",
+     33
+    ],
+    [
+     "2024-02-16",
+     38
+    ],
+    [
+     "2024-02-17",
+     33
+    ],
+    [
+     "2024-02-18",
+     43
+    ],
+    [
+     "2024-02-19",
+     36
+    ],
+    [
+     "2024-02-20",
+     33
+    ],
+    [
+     "2024-02-21",
+     32
+    ],
+    [
+     "2024-02-22",
+     37
+    ],
+    [
+     "2024-02-23",
+     45
+    ],
+    [
+     "2024-02-24",
+     26
+    ],
+    [
+     "2024-02-25",
+     44
+    ],
+    [
+     "2024-02-26",
+     38
+    ],
+    [
+     "2024-02-27",
+     41
+    ],
+    [
+     "2024-02-28",
+     28
+    ],
+    [
+     "2024-02-29",
+     35
+    ],
+    [
+     "2024-03-01",
+     21
+    ],
+    [
+     "2024-03-02",
+     30
+    ],
+    [
+     "2024-03-03",
+     53
+    ],
+    [
+     "2024-03-04",
+     37
+    ],
+    [
+     "2024-03-05",
+     28
+    ],
+    [
+     "2024-03-06",
+     35
+    ],
+    [
+     "2024-03-07",
+     30
+    ],
+    [
+     "2024-03-08",
+     30
+    ],
+    [
+     "2024-03-09",
+     29
+    ],
+    [
+     "2024-03-10",
+     33
+    ],
+    [
+     "2024-03-11",
+     26
+    ],
+    [
+     "2024-03-12",
+     36
+    ],
+    [
+     "2024-03-13",
+     33
+    ],
+    [
+     "2024-03-14",
+     35
+    ],
+    [
+     "2024-03-15",
+     38
+    ],
+    [
+     "2024-03-16",
+     24
+    ],
+    [
+     "2024-03-17",
+     39
+    ],
+    [
+     "2024-03-18",
+     22
+    ],
+    [
+     "2024-03-19",
+     34
+    ],
+    [
+     "2024-03-20",
+     29
+    ],
+    [
+     "2024-03-21",
+     26
+    ],
+    [
+     "2024-03-22",
+     40
+    ],
+    [
+     "2024-03-23",
+     32
+    ],
+    [
+     "2024-03-24",
+     33
+    ],
+    [
+     "2024-03-25",
+     29
+    ],
+    [
+     "2024-03-26",
+     46
+    ],
+    [
+     "2024-03-27",
+     36
+    ],
+    [
+     "2024-03-28",
+     33
+    ],
+    [
+     "2024-03-29",
+     32
+    ],
+    [
+     "2024-03-30",
+     25
+    ],
+    [
+     "2024-03-31",
+     37
+    ],
+    [
+     "2024-04-01",
+     34
+    ],
+    [
+     "2024-04-02",
+     29
+    ],
+    [
+     "2024-04-03",
+     23
+    ],
+    [
+     "2024-04-04",
+     31
+    ],
+    [
+     "2024-04-05",
+     30
+    ],
+    [
+     "2024-04-06",
+     33
+    ],
+    [
+     "2024-04-07",
+     28
+    ],
+    [
+     "2024-04-08",
+     28
+    ],
+    [
+     "2024-04-09",
+     38
+    ],
+    [
+     "2024-04-10",
+     34
+    ],
+    [
+     "2024-04-11",
+     40
+    ],
+    [
+     "2024-04-12",
+     31
+    ],
+    [
+     "2024-04-13",
+     32
+    ],
+    [
+     "2024-04-14",
+     31
+    ],
+    [
+     "2024-04-15",
+     28
+    ],
+    [
+     "2024-04-16",
+     41
+    ],
+    [
+     "2024-04-17",
+     32
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_capeofgoodhope": {
+   "observed": [
+    [
+     "2023-10-22",
+     47
+    ],
+    [
+     "2023-10-23",
+     48
+    ],
+    [
+     "2023-10-24",
+     51
+    ],
+    [
+     "2023-10-25",
+     51
+    ],
+    [
+     "2023-10-26",
+     64
+    ],
+    [
+     "2023-10-27",
+     42
+    ],
+    [
+     "2023-10-28",
+     46
+    ],
+    [
+     "2023-10-29",
+     28
+    ],
+    [
+     "2023-10-30",
+     37
+    ],
+    [
+     "2023-10-31",
+     51
+    ],
+    [
+     "2023-11-01",
+     58
+    ],
+    [
+     "2023-11-02",
+     57
+    ],
+    [
+     "2023-11-03",
+     48
+    ],
+    [
+     "2023-11-04",
+     47
+    ],
+    [
+     "2023-11-05",
+     42
+    ],
+    [
+     "2023-11-06",
+     54
+    ],
+    [
+     "2023-11-07",
+     53
+    ],
+    [
+     "2023-11-08",
+     42
+    ],
+    [
+     "2023-11-09",
+     48
+    ],
+    [
+     "2023-11-10",
+     47
+    ],
+    [
+     "2023-11-11",
+     46
+    ],
+    [
+     "2023-11-12",
+     35
+    ],
+    [
+     "2023-11-13",
+     53
+    ],
+    [
+     "2023-11-14",
+     55
+    ],
+    [
+     "2023-11-15",
+     60
+    ],
+    [
+     "2023-11-16",
+     44
+    ],
+    [
+     "2023-11-17",
+     46
+    ],
+    [
+     "2023-11-18",
+     58
+    ],
+    [
+     "2023-11-19",
+     44
+    ],
+    [
+     "2023-11-20",
+     63
+    ],
+    [
+     "2023-11-21",
+     44
+    ],
+    [
+     "2023-11-22",
+     51
+    ],
+    [
+     "2023-11-23",
+     55
+    ],
+    [
+     "2023-11-24",
+     48
+    ],
+    [
+     "2023-11-25",
+     49
+    ],
+    [
+     "2023-11-26",
+     50
+    ],
+    [
+     "2023-11-27",
+     45
+    ],
+    [
+     "2023-11-28",
+     46
+    ],
+    [
+     "2023-11-29",
+     39
+    ],
+    [
+     "2023-11-30",
+     51
+    ],
+    [
+     "2023-12-01",
+     52
+    ],
+    [
+     "2023-12-02",
+     50
+    ],
+    [
+     "2023-12-03",
+     35
+    ],
+    [
+     "2023-12-04",
+     49
+    ],
+    [
+     "2023-12-05",
+     43
+    ],
+    [
+     "2023-12-06",
+     52
+    ],
+    [
+     "2023-12-07",
+     40
+    ],
+    [
+     "2023-12-08",
+     49
+    ],
+    [
+     "2023-12-09",
+     36
+    ],
+    [
+     "2023-12-10",
+     49
+    ],
+    [
+     "2023-12-11",
+     54
+    ],
+    [
+     "2023-12-12",
+     48
+    ],
+    [
+     "2023-12-13",
+     62
+    ],
+    [
+     "2023-12-14",
+     45
+    ],
+    [
+     "2023-12-15",
+     50
+    ],
+    [
+     "2023-12-16",
+     57
+    ],
+    [
+     "2023-12-17",
+     57
+    ],
+    [
+     "2023-12-18",
+     59
+    ],
+    [
+     "2023-12-19",
+     44
+    ],
+    [
+     "2023-12-20",
+     48
+    ],
+    [
+     "2023-12-21",
+     54
+    ],
+    [
+     "2023-12-22",
+     43
+    ],
+    [
+     "2023-12-23",
+     48
+    ],
+    [
+     "2023-12-24",
+     51
+    ],
+    [
+     "2023-12-25",
+     50
+    ],
+    [
+     "2023-12-26",
+     54
+    ],
+    [
+     "2023-12-27",
+     54
+    ],
+    [
+     "2023-12-28",
+     58
+    ],
+    [
+     "2023-12-29",
+     76
+    ],
+    [
+     "2023-12-30",
+     65
+    ],
+    [
+     "2023-12-31",
+     61
+    ],
+    [
+     "2024-01-01",
+     65
+    ],
+    [
+     "2024-01-02",
+     82
+    ],
+    [
+     "2024-01-03",
+     87
+    ],
+    [
+     "2024-01-04",
+     69
+    ],
+    [
+     "2024-01-05",
+     70
+    ],
+    [
+     "2024-01-06",
+     70
+    ],
+    [
+     "2024-01-07",
+     64
+    ],
+    [
+     "2024-01-08",
+     79
+    ],
+    [
+     "2024-01-09",
+     66
+    ],
+    [
+     "2024-01-10",
+     72
+    ],
+    [
+     "2024-01-11",
+     74
+    ],
+    [
+     "2024-01-12",
+     83
+    ],
+    [
+     "2024-01-13",
+     82
+    ],
+    [
+     "2024-01-14",
+     52
+    ],
+    [
+     "2024-01-15",
+     73
+    ],
+    [
+     "2024-01-16",
+     63
+    ],
+    [
+     "2024-01-17",
+     64
+    ],
+    [
+     "2024-01-18",
+     70
+    ],
+    [
+     "2024-01-19",
+     73
+    ],
+    [
+     "2024-01-20",
+     61
+    ],
+    [
+     "2024-01-21",
+     87
+    ],
+    [
+     "2024-01-22",
+     48
+    ],
+    [
+     "2024-01-23",
+     71
+    ],
+    [
+     "2024-01-24",
+     66
+    ],
+    [
+     "2024-01-25",
+     85
+    ],
+    [
+     "2024-01-26",
+     84
+    ],
+    [
+     "2024-01-27",
+     72
+    ],
+    [
+     "2024-01-28",
+     85
+    ],
+    [
+     "2024-01-29",
+     69
+    ],
+    [
+     "2024-01-30",
+     84
+    ],
+    [
+     "2024-01-31",
+     68
+    ],
+    [
+     "2024-02-01",
+     87
+    ],
+    [
+     "2024-02-02",
+     80
+    ],
+    [
+     "2024-02-03",
+     91
+    ],
+    [
+     "2024-02-04",
+     82
+    ],
+    [
+     "2024-02-05",
+     84
+    ],
+    [
+     "2024-02-06",
+     85
+    ],
+    [
+     "2024-02-07",
+     75
+    ],
+    [
+     "2024-02-08",
+     74
+    ],
+    [
+     "2024-02-09",
+     71
+    ],
+    [
+     "2024-02-10",
+     93
+    ],
+    [
+     "2024-02-11",
+     70
+    ],
+    [
+     "2024-02-12",
+     102
+    ],
+    [
+     "2024-02-13",
+     89
+    ],
+    [
+     "2024-02-14",
+     75
+    ],
+    [
+     "2024-02-15",
+     98
+    ],
+    [
+     "2024-02-16",
+     62
+    ],
+    [
+     "2024-02-17",
+     109
+    ],
+    [
+     "2024-02-18",
+     104
+    ],
+    [
+     "2024-02-19",
+     83
+    ],
+    [
+     "2024-02-20",
+     91
+    ],
+    [
+     "2024-02-21",
+     96
+    ],
+    [
+     "2024-02-22",
+     85
+    ],
+    [
+     "2024-02-23",
+     105
+    ],
+    [
+     "2024-02-24",
+     86
+    ],
+    [
+     "2024-02-25",
+     66
+    ],
+    [
+     "2024-02-26",
+     87
+    ],
+    [
+     "2024-02-27",
+     70
+    ],
+    [
+     "2024-02-28",
+     84
+    ],
+    [
+     "2024-02-29",
+     103
+    ],
+    [
+     "2024-03-01",
+     101
+    ],
+    [
+     "2024-03-02",
+     106
+    ],
+    [
+     "2024-03-03",
+     102
+    ],
+    [
+     "2024-03-04",
+     91
+    ],
+    [
+     "2024-03-05",
+     85
+    ],
+    [
+     "2024-03-06",
+     90
+    ],
+    [
+     "2024-03-07",
+     107
+    ],
+    [
+     "2024-03-08",
+     84
+    ],
+    [
+     "2024-03-09",
+     84
+    ],
+    [
+     "2024-03-10",
+     100
+    ],
+    [
+     "2024-03-11",
+     89
+    ],
+    [
+     "2024-03-12",
+     75
+    ],
+    [
+     "2024-03-13",
+     97
+    ],
+    [
+     "2024-03-14",
+     84
+    ],
+    [
+     "2024-03-15",
+     87
+    ],
+    [
+     "2024-03-16",
+     81
+    ],
+    [
+     "2024-03-17",
+     66
+    ],
+    [
+     "2024-03-18",
+     95
+    ],
+    [
+     "2024-03-19",
+     66
+    ],
+    [
+     "2024-03-20",
+     75
+    ],
+    [
+     "2024-03-21",
+     84
+    ],
+    [
+     "2024-03-22",
+     80
+    ],
+    [
+     "2024-03-23",
+     67
+    ],
+    [
+     "2024-03-24",
+     88
+    ],
+    [
+     "2024-03-25",
+     78
+    ],
+    [
+     "2024-03-26",
+     91
+    ],
+    [
+     "2024-03-27",
+     68
+    ],
+    [
+     "2024-03-28",
+     85
+    ],
+    [
+     "2024-03-29",
+     74
+    ],
+    [
+     "2024-03-30",
+     89
+    ],
+    [
+     "2024-03-31",
+     95
+    ],
+    [
+     "2024-04-01",
+     70
+    ],
+    [
+     "2024-04-02",
+     83
+    ],
+    [
+     "2024-04-03",
+     86
+    ],
+    [
+     "2024-04-04",
+     94
+    ],
+    [
+     "2024-04-05",
+     75
+    ],
+    [
+     "2024-04-06",
+     70
+    ],
+    [
+     "2024-04-07",
+     66
+    ],
+    [
+     "2024-04-08",
+     65
+    ],
+    [
+     "2024-04-09",
+     109
+    ],
+    [
+     "2024-04-10",
+     72
+    ],
+    [
+     "2024-04-11",
+     67
+    ],
+    [
+     "2024-04-12",
+     89
+    ],
+    [
+     "2024-04-13",
+     83
+    ],
+    [
+     "2024-04-14",
+     103
+    ],
+    [
+     "2024-04-15",
+     124
+    ],
+    [
+     "2024-04-16",
+     125
+    ],
+    [
+     "2024-04-17",
+     78
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_gibraltar": {
+   "observed": [
+    [
+     "2023-10-22",
+     97
+    ],
+    [
+     "2023-10-23",
+     164
+    ],
+    [
+     "2023-10-24",
+     148
+    ],
+    [
+     "2023-10-25",
+     174
+    ],
+    [
+     "2023-10-26",
+     162
+    ],
+    [
+     "2023-10-27",
+     148
+    ],
+    [
+     "2023-10-28",
+     149
+    ],
+    [
+     "2023-10-29",
+     126
+    ],
+    [
+     "2023-10-30",
+     137
+    ],
+    [
+     "2023-10-31",
+     128
+    ],
+    [
+     "2023-11-01",
+     143
+    ],
+    [
+     "2023-11-02",
+     149
+    ],
+    [
+     "2023-11-03",
+     111
+    ],
+    [
+     "2023-11-04",
+     108
+    ],
+    [
+     "2023-11-05",
+     133
+    ],
+    [
+     "2023-11-06",
+     116
+    ],
+    [
+     "2023-11-07",
+     123
+    ],
+    [
+     "2023-11-08",
+     159
+    ],
+    [
+     "2023-11-09",
+     190
+    ],
+    [
+     "2023-11-10",
+     201
+    ],
+    [
+     "2023-11-11",
+     165
+    ],
+    [
+     "2023-11-12",
+     129
+    ],
+    [
+     "2023-11-13",
+     145
+    ],
+    [
+     "2023-11-14",
+     152
+    ],
+    [
+     "2023-11-15",
+     177
+    ],
+    [
+     "2023-11-16",
+     150
+    ],
+    [
+     "2023-11-17",
+     152
+    ],
+    [
+     "2023-11-18",
+     152
+    ],
+    [
+     "2023-11-19",
+     174
+    ],
+    [
+     "2023-11-20",
+     152
+    ],
+    [
+     "2023-11-21",
+     148
+    ],
+    [
+     "2023-11-22",
+     141
+    ],
+    [
+     "2023-11-23",
+     126
+    ],
+    [
+     "2023-11-24",
+     135
+    ],
+    [
+     "2023-11-25",
+     172
+    ],
+    [
+     "2023-11-26",
+     164
+    ],
+    [
+     "2023-11-27",
+     137
+    ],
+    [
+     "2023-11-28",
+     128
+    ],
+    [
+     "2023-11-29",
+     138
+    ],
+    [
+     "2023-11-30",
+     148
+    ],
+    [
+     "2023-12-01",
+     149
+    ],
+    [
+     "2023-12-02",
+     163
+    ],
+    [
+     "2023-12-03",
+     157
+    ],
+    [
+     "2023-12-04",
+     164
+    ],
+    [
+     "2023-12-05",
+     147
+    ],
+    [
+     "2023-12-06",
+     123
+    ],
+    [
+     "2023-12-07",
+     160
+    ],
+    [
+     "2023-12-08",
+     152
+    ],
+    [
+     "2023-12-09",
+     142
+    ],
+    [
+     "2023-12-10",
+     134
+    ],
+    [
+     "2023-12-11",
+     126
+    ],
+    [
+     "2023-12-12",
+     135
+    ],
+    [
+     "2023-12-13",
+     147
+    ],
+    [
+     "2023-12-14",
+     154
+    ],
+    [
+     "2023-12-15",
+     140
+    ],
+    [
+     "2023-12-16",
+     139
+    ],
+    [
+     "2023-12-17",
+     173
+    ],
+    [
+     "2023-12-18",
+     175
+    ],
+    [
+     "2023-12-19",
+     138
+    ],
+    [
+     "2023-12-20",
+     158
+    ],
+    [
+     "2023-12-21",
+     148
+    ],
+    [
+     "2023-12-22",
+     147
+    ],
+    [
+     "2023-12-23",
+     149
+    ],
+    [
+     "2023-12-24",
+     121
+    ],
+    [
+     "2023-12-25",
+     122
+    ],
+    [
+     "2023-12-26",
+     151
+    ],
+    [
+     "2023-12-27",
+     145
+    ],
+    [
+     "2023-12-28",
+     150
+    ],
+    [
+     "2023-12-29",
+     149
+    ],
+    [
+     "2023-12-30",
+     143
+    ],
+    [
+     "2023-12-31",
+     151
+    ],
+    [
+     "2024-01-01",
+     151
+    ],
+    [
+     "2024-01-02",
+     125
+    ],
+    [
+     "2024-01-03",
+     113
+    ],
+    [
+     "2024-01-04",
+     117
+    ],
+    [
+     "2024-01-05",
+     124
+    ],
+    [
+     "2024-01-06",
+     150
+    ],
+    [
+     "2024-01-07",
+     145
+    ],
+    [
+     "2024-01-08",
+     175
+    ],
+    [
+     "2024-01-09",
+     112
+    ],
+    [
+     "2024-01-10",
+     133
+    ],
+    [
+     "2024-01-11",
+     146
+    ],
+    [
+     "2024-01-12",
+     141
+    ],
+    [
+     "2024-01-13",
+     146
+    ],
+    [
+     "2024-01-14",
+     168
+    ],
+    [
+     "2024-01-15",
+     131
+    ],
+    [
+     "2024-01-16",
+     141
+    ],
+    [
+     "2024-01-17",
+     128
+    ],
+    [
+     "2024-01-18",
+     113
+    ],
+    [
+     "2024-01-19",
+     117
+    ],
+    [
+     "2024-01-20",
+     160
+    ],
+    [
+     "2024-01-21",
+     141
+    ],
+    [
+     "2024-01-22",
+     163
+    ],
+    [
+     "2024-01-23",
+     126
+    ],
+    [
+     "2024-01-24",
+     118
+    ],
+    [
+     "2024-01-25",
+     126
+    ],
+    [
+     "2024-01-26",
+     134
+    ],
+    [
+     "2024-01-27",
+     151
+    ],
+    [
+     "2024-01-28",
+     120
+    ],
+    [
+     "2024-01-29",
+     135
+    ],
+    [
+     "2024-01-30",
+     148
+    ],
+    [
+     "2024-01-31",
+     152
+    ],
+    [
+     "2024-02-01",
+     145
+    ],
+    [
+     "2024-02-02",
+     138
+    ],
+    [
+     "2024-02-03",
+     138
+    ],
+    [
+     "2024-02-04",
+     133
+    ],
+    [
+     "2024-02-05",
+     165
+    ],
+    [
+     "2024-02-06",
+     128
+    ],
+    [
+     "2024-02-07",
+     150
+    ],
+    [
+     "2024-02-08",
+     149
+    ],
+    [
+     "2024-02-09",
+     89
+    ],
+    [
+     "2024-02-10",
+     103
+    ],
+    [
+     "2024-02-11",
+     120
+    ],
+    [
+     "2024-02-12",
+     110
+    ],
+    [
+     "2024-02-13",
+     129
+    ],
+    [
+     "2024-02-14",
+     148
+    ],
+    [
+     "2024-02-15",
+     184
+    ],
+    [
+     "2024-02-16",
+     143
+    ],
+    [
+     "2024-02-17",
+     143
+    ],
+    [
+     "2024-02-18",
+     135
+    ],
+    [
+     "2024-02-19",
+     136
+    ],
+    [
+     "2024-02-20",
+     123
+    ],
+    [
+     "2024-02-21",
+     124
+    ],
+    [
+     "2024-02-22",
+     108
+    ],
+    [
+     "2024-02-23",
+     100
+    ],
+    [
+     "2024-02-24",
+     115
+    ],
+    [
+     "2024-02-25",
+     107
+    ],
+    [
+     "2024-02-26",
+     106
+    ],
+    [
+     "2024-02-27",
+     107
+    ],
+    [
+     "2024-02-28",
+     151
+    ],
+    [
+     "2024-02-29",
+     185
+    ],
+    [
+     "2024-03-01",
+     190
+    ],
+    [
+     "2024-03-02",
+     140
+    ],
+    [
+     "2024-03-03",
+     114
+    ],
+    [
+     "2024-03-04",
+     127
+    ],
+    [
+     "2024-03-05",
+     147
+    ],
+    [
+     "2024-03-06",
+     161
+    ],
+    [
+     "2024-03-07",
+     140
+    ],
+    [
+     "2024-03-08",
+     93
+    ],
+    [
+     "2024-03-09",
+     117
+    ],
+    [
+     "2024-03-10",
+     143
+    ],
+    [
+     "2024-03-11",
+     129
+    ],
+    [
+     "2024-03-12",
+     171
+    ],
+    [
+     "2024-03-13",
+     174
+    ],
+    [
+     "2024-03-14",
+     149
+    ],
+    [
+     "2024-03-15",
+     146
+    ],
+    [
+     "2024-03-16",
+     140
+    ],
+    [
+     "2024-03-17",
+     134
+    ],
+    [
+     "2024-03-18",
+     165
+    ],
+    [
+     "2024-03-19",
+     151
+    ],
+    [
+     "2024-03-20",
+     143
+    ],
+    [
+     "2024-03-21",
+     153
+    ],
+    [
+     "2024-03-22",
+     132
+    ],
+    [
+     "2024-03-23",
+     131
+    ],
+    [
+     "2024-03-24",
+     140
+    ],
+    [
+     "2024-03-25",
+     137
+    ],
+    [
+     "2024-03-26",
+     121
+    ],
+    [
+     "2024-03-27",
+     85
+    ],
+    [
+     "2024-03-28",
+     121
+    ],
+    [
+     "2024-03-29",
+     144
+    ],
+    [
+     "2024-03-30",
+     90
+    ],
+    [
+     "2024-03-31",
+     108
+    ],
+    [
+     "2024-04-01",
+     133
+    ],
+    [
+     "2024-04-02",
+     161
+    ],
+    [
+     "2024-04-03",
+     136
+    ],
+    [
+     "2024-04-04",
+     139
+    ],
+    [
+     "2024-04-05",
+     145
+    ],
+    [
+     "2024-04-06",
+     157
+    ],
+    [
+     "2024-04-07",
+     127
+    ],
+    [
+     "2024-04-08",
+     139
+    ],
+    [
+     "2024-04-09",
+     149
+    ],
+    [
+     "2024-04-10",
+     142
+    ],
+    [
+     "2024-04-11",
+     131
+    ],
+    [
+     "2024-04-12",
+     141
+    ],
+    [
+     "2024-04-13",
+     139
+    ],
+    [
+     "2024-04-14",
+     139
+    ],
+    [
+     "2024-04-15",
+     149
+    ],
+    [
+     "2024-04-16",
+     154
+    ],
+    [
+     "2024-04-17",
+     133
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_hormuz": {
+   "observed": [
+    [
+     "2023-10-22",
+     64
+    ],
+    [
+     "2023-10-23",
+     80
+    ],
+    [
+     "2023-10-24",
+     83
+    ],
+    [
+     "2023-10-25",
+     84
+    ],
+    [
+     "2023-10-26",
+     74
+    ],
+    [
+     "2023-10-27",
+     77
+    ],
+    [
+     "2023-10-28",
+     61
+    ],
+    [
+     "2023-10-29",
+     102
+    ],
+    [
+     "2023-10-30",
+     109
+    ],
+    [
+     "2023-10-31",
+     92
+    ],
+    [
+     "2023-11-01",
+     93
+    ],
+    [
+     "2023-11-02",
+     105
+    ],
+    [
+     "2023-11-03",
+     100
+    ],
+    [
+     "2023-11-04",
+     59
+    ],
+    [
+     "2023-11-05",
+     66
+    ],
+    [
+     "2023-11-06",
+     65
+    ],
+    [
+     "2023-11-07",
+     62
+    ],
+    [
+     "2023-11-08",
+     66
+    ],
+    [
+     "2023-11-09",
+     88
+    ],
+    [
+     "2023-11-10",
+     95
+    ],
+    [
+     "2023-11-11",
+     100
+    ],
+    [
+     "2023-11-12",
+     109
+    ],
+    [
+     "2023-11-13",
+     105
+    ],
+    [
+     "2023-11-14",
+     87
+    ],
+    [
+     "2023-11-15",
+     85
+    ],
+    [
+     "2023-11-16",
+     59
+    ],
+    [
+     "2023-11-17",
+     70
+    ],
+    [
+     "2023-11-18",
+     79
+    ],
+    [
+     "2023-11-19",
+     76
+    ],
+    [
+     "2023-11-20",
+     70
+    ],
+    [
+     "2023-11-21",
+     68
+    ],
+    [
+     "2023-11-22",
+     61
+    ],
+    [
+     "2023-11-23",
+     60
+    ],
+    [
+     "2023-11-24",
+     79
+    ],
+    [
+     "2023-11-25",
+     60
+    ],
+    [
+     "2023-11-26",
+     55
+    ],
+    [
+     "2023-11-27",
+     73
+    ],
+    [
+     "2023-11-28",
+     81
+    ],
+    [
+     "2023-11-29",
+     68
+    ],
+    [
+     "2023-11-30",
+     62
+    ],
+    [
+     "2023-12-01",
+     68
+    ],
+    [
+     "2023-12-02",
+     69
+    ],
+    [
+     "2023-12-03",
+     85
+    ],
+    [
+     "2023-12-04",
+     88
+    ],
+    [
+     "2023-12-05",
+     85
+    ],
+    [
+     "2023-12-06",
+     81
+    ],
+    [
+     "2023-12-07",
+     84
+    ],
+    [
+     "2023-12-08",
+     68
+    ],
+    [
+     "2023-12-09",
+     66
+    ],
+    [
+     "2023-12-10",
+     72
+    ],
+    [
+     "2023-12-11",
+     62
+    ],
+    [
+     "2023-12-12",
+     76
+    ],
+    [
+     "2023-12-13",
+     75
+    ],
+    [
+     "2023-12-14",
+     59
+    ],
+    [
+     "2023-12-15",
+     70
+    ],
+    [
+     "2023-12-16",
+     64
+    ],
+    [
+     "2023-12-17",
+     70
+    ],
+    [
+     "2023-12-18",
+     56
+    ],
+    [
+     "2023-12-19",
+     75
+    ],
+    [
+     "2023-12-20",
+     73
+    ],
+    [
+     "2023-12-21",
+     79
+    ],
+    [
+     "2023-12-22",
+     82
+    ],
+    [
+     "2023-12-23",
+     77
+    ],
+    [
+     "2023-12-24",
+     68
+    ],
+    [
+     "2023-12-25",
+     87
+    ],
+    [
+     "2023-12-26",
+     75
+    ],
+    [
+     "2023-12-27",
+     71
+    ],
+    [
+     "2023-12-28",
+     99
+    ],
+    [
+     "2023-12-29",
+     86
+    ],
+    [
+     "2023-12-30",
+     83
+    ],
+    [
+     "2023-12-31",
+     70
+    ],
+    [
+     "2024-01-01",
+     60
+    ],
+    [
+     "2024-01-02",
+     73
+    ],
+    [
+     "2024-01-03",
+     74
+    ],
+    [
+     "2024-01-04",
+     79
+    ],
+    [
+     "2024-01-05",
+     77
+    ],
+    [
+     "2024-01-06",
+     72
+    ],
+    [
+     "2024-01-07",
+     66
+    ],
+    [
+     "2024-01-08",
+     68
+    ],
+    [
+     "2024-01-09",
+     49
+    ],
+    [
+     "2024-01-10",
+     60
+    ],
+    [
+     "2024-01-11",
+     74
+    ],
+    [
+     "2024-01-12",
+     75
+    ],
+    [
+     "2024-01-13",
+     69
+    ],
+    [
+     "2024-01-14",
+     85
+    ],
+    [
+     "2024-01-15",
+     100
+    ],
+    [
+     "2024-01-16",
+     87
+    ],
+    [
+     "2024-01-17",
+     74
+    ],
+    [
+     "2024-01-18",
+     63
+    ],
+    [
+     "2024-01-19",
+     58
+    ],
+    [
+     "2024-01-20",
+     85
+    ],
+    [
+     "2024-01-21",
+     68
+    ],
+    [
+     "2024-01-22",
+     75
+    ],
+    [
+     "2024-01-23",
+     91
+    ],
+    [
+     "2024-01-24",
+     85
+    ],
+    [
+     "2024-01-25",
+     69
+    ],
+    [
+     "2024-01-26",
+     82
+    ],
+    [
+     "2024-01-27",
+     67
+    ],
+    [
+     "2024-01-28",
+     84
+    ],
+    [
+     "2024-01-29",
+     62
+    ],
+    [
+     "2024-01-30",
+     56
+    ],
+    [
+     "2024-01-31",
+     71
+    ],
+    [
+     "2024-02-01",
+     85
+    ],
+    [
+     "2024-02-02",
+     58
+    ],
+    [
+     "2024-02-03",
+     64
+    ],
+    [
+     "2024-02-04",
+     61
+    ],
+    [
+     "2024-02-05",
+     67
+    ],
+    [
+     "2024-02-06",
+     70
+    ],
+    [
+     "2024-02-07",
+     80
+    ],
+    [
+     "2024-02-08",
+     78
+    ],
+    [
+     "2024-02-09",
+     67
+    ],
+    [
+     "2024-02-10",
+     77
+    ],
+    [
+     "2024-02-11",
+     78
+    ],
+    [
+     "2024-02-12",
+     74
+    ],
+    [
+     "2024-02-13",
+     62
+    ],
+    [
+     "2024-02-14",
+     67
+    ],
+    [
+     "2024-02-15",
+     93
+    ],
+    [
+     "2024-02-16",
+     88
+    ],
+    [
+     "2024-02-17",
+     74
+    ],
+    [
+     "2024-02-18",
+     65
+    ],
+    [
+     "2024-02-19",
+     66
+    ],
+    [
+     "2024-02-20",
+     75
+    ],
+    [
+     "2024-02-21",
+     70
+    ],
+    [
+     "2024-02-22",
+     57
+    ],
+    [
+     "2024-02-23",
+     66
+    ],
+    [
+     "2024-02-24",
+     81
+    ],
+    [
+     "2024-02-25",
+     81
+    ],
+    [
+     "2024-02-26",
+     77
+    ],
+    [
+     "2024-02-27",
+     63
+    ],
+    [
+     "2024-02-28",
+     76
+    ],
+    [
+     "2024-02-29",
+     67
+    ],
+    [
+     "2024-03-01",
+     76
+    ],
+    [
+     "2024-03-02",
+     59
+    ],
+    [
+     "2024-03-03",
+     91
+    ],
+    [
+     "2024-03-04",
+     89
+    ],
+    [
+     "2024-03-05",
+     74
+    ],
+    [
+     "2024-03-06",
+     63
+    ],
+    [
+     "2024-03-07",
+     84
+    ],
+    [
+     "2024-03-08",
+     108
+    ],
+    [
+     "2024-03-09",
+     82
+    ],
+    [
+     "2024-03-10",
+     66
+    ],
+    [
+     "2024-03-11",
+     100
+    ],
+    [
+     "2024-03-12",
+     111
+    ],
+    [
+     "2024-03-13",
+     90
+    ],
+    [
+     "2024-03-14",
+     119
+    ],
+    [
+     "2024-03-15",
+     105
+    ],
+    [
+     "2024-03-16",
+     127
+    ],
+    [
+     "2024-03-17",
+     99
+    ],
+    [
+     "2024-03-18",
+     106
+    ],
+    [
+     "2024-03-19",
+     109
+    ],
+    [
+     "2024-03-20",
+     119
+    ],
+    [
+     "2024-03-21",
+     108
+    ],
+    [
+     "2024-03-22",
+     99
+    ],
+    [
+     "2024-03-23",
+     96
+    ],
+    [
+     "2024-03-24",
+     93
+    ],
+    [
+     "2024-03-25",
+     102
+    ],
+    [
+     "2024-03-26",
+     78
+    ],
+    [
+     "2024-03-27",
+     95
+    ],
+    [
+     "2024-03-28",
+     83
+    ],
+    [
+     "2024-03-29",
+     95
+    ],
+    [
+     "2024-03-30",
+     93
+    ],
+    [
+     "2024-03-31",
+     105
+    ],
+    [
+     "2024-04-01",
+     95
+    ],
+    [
+     "2024-04-02",
+     109
+    ],
+    [
+     "2024-04-03",
+     112
+    ],
+    [
+     "2024-04-04",
+     95
+    ],
+    [
+     "2024-04-05",
+     107
+    ],
+    [
+     "2024-04-06",
+     124
+    ],
+    [
+     "2024-04-07",
+     99
+    ],
+    [
+     "2024-04-08",
+     116
+    ],
+    [
+     "2024-04-09",
+     109
+    ],
+    [
+     "2024-04-10",
+     110
+    ],
+    [
+     "2024-04-11",
+     96
+    ],
+    [
+     "2024-04-12",
+     106
+    ],
+    [
+     "2024-04-13",
+     115
+    ],
+    [
+     "2024-04-14",
+     98
+    ],
+    [
+     "2024-04-15",
+     93
+    ],
+    [
+     "2024-04-16",
+     78
+    ],
+    [
+     "2024-04-17",
+     70
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_malacca": {
+   "observed": [
+    [
+     "2023-10-22",
+     205
+    ],
+    [
+     "2023-10-23",
+     223
+    ],
+    [
+     "2023-10-24",
+     237
+    ],
+    [
+     "2023-10-25",
+     203
+    ],
+    [
+     "2023-10-26",
+     227
+    ],
+    [
+     "2023-10-27",
+     208
+    ],
+    [
+     "2023-10-28",
+     210
+    ],
+    [
+     "2023-10-29",
+     224
+    ],
+    [
+     "2023-10-30",
+     239
+    ],
+    [
+     "2023-10-31",
+     233
+    ],
+    [
+     "2023-11-01",
+     211
+    ],
+    [
+     "2023-11-02",
+     232
+    ],
+    [
+     "2023-11-03",
+     199
+    ],
+    [
+     "2023-11-04",
+     241
+    ],
+    [
+     "2023-11-05",
+     234
+    ],
+    [
+     "2023-11-06",
+     245
+    ],
+    [
+     "2023-11-07",
+     223
+    ],
+    [
+     "2023-11-08",
+     240
+    ],
+    [
+     "2023-11-09",
+     251
+    ],
+    [
+     "2023-11-10",
+     238
+    ],
+    [
+     "2023-11-11",
+     248
+    ],
+    [
+     "2023-11-12",
+     229
+    ],
+    [
+     "2023-11-13",
+     232
+    ],
+    [
+     "2023-11-14",
+     229
+    ],
+    [
+     "2023-11-15",
+     233
+    ],
+    [
+     "2023-11-16",
+     227
+    ],
+    [
+     "2023-11-17",
+     211
+    ],
+    [
+     "2023-11-18",
+     236
+    ],
+    [
+     "2023-11-19",
+     208
+    ],
+    [
+     "2023-11-20",
+     219
+    ],
+    [
+     "2023-11-21",
+     226
+    ],
+    [
+     "2023-11-22",
+     214
+    ],
+    [
+     "2023-11-23",
+     210
+    ],
+    [
+     "2023-11-24",
+     244
+    ],
+    [
+     "2023-11-25",
+     218
+    ],
+    [
+     "2023-11-26",
+     232
+    ],
+    [
+     "2023-11-27",
+     209
+    ],
+    [
+     "2023-11-28",
+     205
+    ],
+    [
+     "2023-11-29",
+     237
+    ],
+    [
+     "2023-11-30",
+     223
+    ],
+    [
+     "2023-12-01",
+     222
+    ],
+    [
+     "2023-12-02",
+     214
+    ],
+    [
+     "2023-12-03",
+     232
+    ],
+    [
+     "2023-12-04",
+     225
+    ],
+    [
+     "2023-12-05",
+     249
+    ],
+    [
+     "2023-12-06",
+     228
+    ],
+    [
+     "2023-12-07",
+     229
+    ],
+    [
+     "2023-12-08",
+     222
+    ],
+    [
+     "2023-12-09",
+     215
+    ],
+    [
+     "2023-12-10",
+     224
+    ],
+    [
+     "2023-12-11",
+     232
+    ],
+    [
+     "2023-12-12",
+     244
+    ],
+    [
+     "2023-12-13",
+     261
+    ],
+    [
+     "2023-12-14",
+     206
+    ],
+    [
+     "2023-12-15",
+     258
+    ],
+    [
+     "2023-12-16",
+     233
+    ],
+    [
+     "2023-12-17",
+     254
+    ],
+    [
+     "2023-12-18",
+     214
+    ],
+    [
+     "2023-12-19",
+     212
+    ],
+    [
+     "2023-12-20",
+     210
+    ],
+    [
+     "2023-12-21",
+     240
+    ],
+    [
+     "2023-12-22",
+     222
+    ],
+    [
+     "2023-12-23",
+     218
+    ],
+    [
+     "2023-12-24",
+     227
+    ],
+    [
+     "2023-12-25",
+     186
+    ],
+    [
+     "2023-12-26",
+     205
+    ],
+    [
+     "2023-12-27",
+     228
+    ],
+    [
+     "2023-12-28",
+     213
+    ],
+    [
+     "2023-12-29",
+     208
+    ],
+    [
+     "2023-12-30",
+     217
+    ],
+    [
+     "2023-12-31",
+     225
+    ],
+    [
+     "2024-01-01",
+     234
+    ],
+    [
+     "2024-01-02",
+     238
+    ],
+    [
+     "2024-01-03",
+     213
+    ],
+    [
+     "2024-01-04",
+     227
+    ],
+    [
+     "2024-01-05",
+     231
+    ],
+    [
+     "2024-01-06",
+     220
+    ],
+    [
+     "2024-01-07",
+     233
+    ],
+    [
+     "2024-01-08",
+     223
+    ],
+    [
+     "2024-01-09",
+     211
+    ],
+    [
+     "2024-01-10",
+     221
+    ],
+    [
+     "2024-01-11",
+     239
+    ],
+    [
+     "2024-01-12",
+     209
+    ],
+    [
+     "2024-01-13",
+     227
+    ],
+    [
+     "2024-01-14",
+     212
+    ],
+    [
+     "2024-01-15",
+     224
+    ],
+    [
+     "2024-01-16",
+     230
+    ],
+    [
+     "2024-01-17",
+     216
+    ],
+    [
+     "2024-01-18",
+     255
+    ],
+    [
+     "2024-01-19",
+     215
+    ],
+    [
+     "2024-01-20",
+     230
+    ],
+    [
+     "2024-01-21",
+     237
+    ],
+    [
+     "2024-01-22",
+     225
+    ],
+    [
+     "2024-01-23",
+     259
+    ],
+    [
+     "2024-01-24",
+     207
+    ],
+    [
+     "2024-01-25",
+     222
+    ],
+    [
+     "2024-01-26",
+     236
+    ],
+    [
+     "2024-01-27",
+     228
+    ],
+    [
+     "2024-01-28",
+     215
+    ],
+    [
+     "2024-01-29",
+     193
+    ],
+    [
+     "2024-01-30",
+     217
+    ],
+    [
+     "2024-01-31",
+     213
+    ],
+    [
+     "2024-02-01",
+     223
+    ],
+    [
+     "2024-02-02",
+     235
+    ],
+    [
+     "2024-02-03",
+     247
+    ],
+    [
+     "2024-02-04",
+     219
+    ],
+    [
+     "2024-02-05",
+     245
+    ],
+    [
+     "2024-02-06",
+     210
+    ],
+    [
+     "2024-02-07",
+     248
+    ],
+    [
+     "2024-02-08",
+     224
+    ],
+    [
+     "2024-02-09",
+     238
+    ],
+    [
+     "2024-02-10",
+     230
+    ],
+    [
+     "2024-02-11",
+     222
+    ],
+    [
+     "2024-02-12",
+     201
+    ],
+    [
+     "2024-02-13",
+     189
+    ],
+    [
+     "2024-02-14",
+     186
+    ],
+    [
+     "2024-02-15",
+     229
+    ],
+    [
+     "2024-02-16",
+     231
+    ],
+    [
+     "2024-02-17",
+     219
+    ],
+    [
+     "2024-02-18",
+     232
+    ],
+    [
+     "2024-02-19",
+     237
+    ],
+    [
+     "2024-02-20",
+     205
+    ],
+    [
+     "2024-02-21",
+     228
+    ],
+    [
+     "2024-02-22",
+     214
+    ],
+    [
+     "2024-02-23",
+     204
+    ],
+    [
+     "2024-02-24",
+     229
+    ],
+    [
+     "2024-02-25",
+     206
+    ],
+    [
+     "2024-02-26",
+     240
+    ],
+    [
+     "2024-02-27",
+     197
+    ],
+    [
+     "2024-02-28",
+     219
+    ],
+    [
+     "2024-02-29",
+     213
+    ],
+    [
+     "2024-03-01",
+     207
+    ],
+    [
+     "2024-03-02",
+     196
+    ],
+    [
+     "2024-03-03",
+     217
+    ],
+    [
+     "2024-03-04",
+     204
+    ],
+    [
+     "2024-03-05",
+     191
+    ],
+    [
+     "2024-03-06",
+     232
+    ],
+    [
+     "2024-03-07",
+     238
+    ],
+    [
+     "2024-03-08",
+     188
+    ],
+    [
+     "2024-03-09",
+     213
+    ],
+    [
+     "2024-03-10",
+     208
+    ],
+    [
+     "2024-03-11",
+     238
+    ],
+    [
+     "2024-03-12",
+     209
+    ],
+    [
+     "2024-03-13",
+     231
+    ],
+    [
+     "2024-03-14",
+     228
+    ],
+    [
+     "2024-03-15",
+     207
+    ],
+    [
+     "2024-03-16",
+     236
+    ],
+    [
+     "2024-03-17",
+     227
+    ],
+    [
+     "2024-03-18",
+     226
+    ],
+    [
+     "2024-03-19",
+     239
+    ],
+    [
+     "2024-03-20",
+     204
+    ],
+    [
+     "2024-03-21",
+     198
+    ],
+    [
+     "2024-03-22",
+     222
+    ],
+    [
+     "2024-03-23",
+     248
+    ],
+    [
+     "2024-03-24",
+     198
+    ],
+    [
+     "2024-03-25",
+     232
+    ],
+    [
+     "2024-03-26",
+     214
+    ],
+    [
+     "2024-03-27",
+     240
+    ],
+    [
+     "2024-03-28",
+     219
+    ],
+    [
+     "2024-03-29",
+     229
+    ],
+    [
+     "2024-03-30",
+     213
+    ],
+    [
+     "2024-03-31",
+     241
+    ],
+    [
+     "2024-04-01",
+     247
+    ],
+    [
+     "2024-04-02",
+     220
+    ],
+    [
+     "2024-04-03",
+     224
+    ],
+    [
+     "2024-04-04",
+     232
+    ],
+    [
+     "2024-04-05",
+     221
+    ],
+    [
+     "2024-04-06",
+     189
+    ],
+    [
+     "2024-04-07",
+     220
+    ],
+    [
+     "2024-04-08",
+     237
+    ],
+    [
+     "2024-04-09",
+     213
+    ],
+    [
+     "2024-04-10",
+     220
+    ],
+    [
+     "2024-04-11",
+     228
+    ],
+    [
+     "2024-04-12",
+     215
+    ],
+    [
+     "2024-04-13",
+     231
+    ],
+    [
+     "2024-04-14",
+     251
+    ],
+    [
+     "2024-04-15",
+     226
+    ],
+    [
+     "2024-04-16",
+     230
+    ],
+    [
+     "2024-04-17",
+     279
+    ]
+   ],
+   "simulated": null
+  },
+  "chk_suez": {
+   "observed": [
+    [
+     "2023-10-22",
+     85
+    ],
+    [
+     "2023-10-23",
+     78
+    ],
+    [
+     "2023-10-24",
+     83
+    ],
+    [
+     "2023-10-25",
+     79
+    ],
+    [
+     "2023-10-26",
+     76
+    ],
+    [
+     "2023-10-27",
+     74
+    ],
+    [
+     "2023-10-28",
+     89
+    ],
+    [
+     "2023-10-29",
+     64
+    ],
+    [
+     "2023-10-30",
+     73
+    ],
+    [
+     "2023-10-31",
+     67
+    ],
+    [
+     "2023-11-01",
+     76
+    ],
+    [
+     "2023-11-02",
+     80
+    ],
+    [
+     "2023-11-03",
+     74
+    ],
+    [
+     "2023-11-04",
+     82
+    ],
+    [
+     "2023-11-05",
+     80
+    ],
+    [
+     "2023-11-06",
+     77
+    ],
+    [
+     "2023-11-07",
+     67
+    ],
+    [
+     "2023-11-08",
+     87
+    ],
+    [
+     "2023-11-09",
+     76
+    ],
+    [
+     "2023-11-10",
+     76
+    ],
+    [
+     "2023-11-11",
+     71
+    ],
+    [
+     "2023-11-12",
+     72
+    ],
+    [
+     "2023-11-13",
+     83
+    ],
+    [
+     "2023-11-14",
+     79
+    ],
+    [
+     "2023-11-15",
+     87
+    ],
+    [
+     "2023-11-16",
+     74
+    ],
+    [
+     "2023-11-17",
+     95
+    ],
+    [
+     "2023-11-18",
+     71
+    ],
+    [
+     "2023-11-19",
+     66
+    ],
+    [
+     "2023-11-20",
+     70
+    ],
+    [
+     "2023-11-21",
+     70
+    ],
+    [
+     "2023-11-22",
+     85
+    ],
+    [
+     "2023-11-23",
+     63
+    ],
+    [
+     "2023-11-24",
+     86
+    ],
+    [
+     "2023-11-25",
+     77
+    ],
+    [
+     "2023-11-26",
+     80
+    ],
+    [
+     "2023-11-27",
+     70
+    ],
+    [
+     "2023-11-28",
+     77
+    ],
+    [
+     "2023-11-29",
+     71
+    ],
+    [
+     "2023-11-30",
+     75
+    ],
+    [
+     "2023-12-01",
+     79
+    ],
+    [
+     "2023-12-02",
+     71
+    ],
+    [
+     "2023-12-03",
+     82
+    ],
+    [
+     "2023-12-04",
+     70
+    ],
+    [
+     "2023-12-05",
+     76
+    ],
+    [
+     "2023-12-06",
+     67
+    ],
+    [
+     "2023-12-07",
+     67
+    ],
+    [
+     "2023-12-08",
+     88
+    ],
+    [
+     "2023-12-09",
+     77
+    ],
+    [
+     "2023-12-10",
+     71
+    ],
+    [
+     "2023-12-11",
+     76
+    ],
+    [
+     "2023-12-12",
+     84
+    ],
+    [
+     "2023-12-13",
+     83
+    ],
+    [
+     "2023-12-14",
+     73
+    ],
+    [
+     "2023-12-15",
+     72
+    ],
+    [
+     "2023-12-16",
+     69
+    ],
+    [
+     "2023-12-17",
+     91
+    ],
+    [
+     "2023-12-18",
+     75
+    ],
+    [
+     "2023-12-19",
+     76
+    ],
+    [
+     "2023-12-20",
+     79
+    ],
+    [
+     "2023-12-21",
+     78
+    ],
+    [
+     "2023-12-22",
+     72
+    ],
+    [
+     "2023-12-23",
+     56
+    ],
+    [
+     "2023-12-24",
+     60
+    ],
+    [
+     "2023-12-25",
+     58
+    ],
+    [
+     "2023-12-26",
+     58
+    ],
+    [
+     "2023-12-27",
+     54
+    ],
+    [
+     "2023-12-28",
+     71
+    ],
+    [
+     "2023-12-29",
+     61
+    ],
+    [
+     "2023-12-30",
+     68
+    ],
+    [
+     "2023-12-31",
+     52
+    ],
+    [
+     "2024-01-01",
+     45
+    ],
+    [
+     "2024-01-02",
+     61
+    ],
+    [
+     "2024-01-03",
+     53
+    ],
+    [
+     "2024-01-04",
+     60
+    ],
+    [
+     "2024-01-05",
+     49
+    ],
+    [
+     "2024-01-06",
+     53
+    ],
+    [
+     "2024-01-07",
+     57
+    ],
+    [
+     "2024-01-08",
+     63
+    ],
+    [
+     "2024-01-09",
+     54
+    ],
+    [
+     "2024-01-10",
+     48
+    ],
+    [
+     "2024-01-11",
+     50
+    ],
+    [
+     "2024-01-12",
+     36
+    ],
+    [
+     "2024-01-13",
+     47
+    ],
+    [
+     "2024-01-14",
+     49
+    ],
+    [
+     "2024-01-15",
+     53
+    ],
+    [
+     "2024-01-16",
+     48
+    ],
+    [
+     "2024-01-17",
+     58
+    ],
+    [
+     "2024-01-18",
+     61
+    ],
+    [
+     "2024-01-19",
+     47
+    ],
+    [
+     "2024-01-20",
+     37
+    ],
+    [
+     "2024-01-21",
+     51
+    ],
+    [
+     "2024-01-22",
+     46
+    ],
+    [
+     "2024-01-23",
+     39
+    ],
+    [
+     "2024-01-24",
+     41
+    ],
+    [
+     "2024-01-25",
+     44
+    ],
+    [
+     "2024-01-26",
+     40
+    ],
+    [
+     "2024-01-27",
+     35
+    ],
+    [
+     "2024-01-28",
+     54
+    ],
+    [
+     "2024-01-29",
+     36
+    ],
+    [
+     "2024-01-30",
+     34
+    ],
+    [
+     "2024-01-31",
+     40
+    ],
+    [
+     "2024-02-01",
+     38
+    ],
+    [
+     "2024-02-02",
+     37
+    ],
+    [
+     "2024-02-03",
+     43
+    ],
+    [
+     "2024-02-04",
+     45
+    ],
+    [
+     "2024-02-05",
+     42
+    ],
+    [
+     "2024-02-06",
+     40
+    ],
+    [
+     "2024-02-07",
+     46
+    ],
+    [
+     "2024-02-08",
+     47
+    ],
+    [
+     "2024-02-09",
+     43
+    ],
+    [
+     "2024-02-10",
+     47
+    ],
+    [
+     "2024-02-11",
+     33
+    ],
+    [
+     "2024-02-12",
+     47
+    ],
+    [
+     "2024-02-13",
+     53
+    ],
+    [
+     "2024-02-14",
+     38
+    ],
+    [
+     "2024-02-15",
+     28
+    ],
+    [
+     "2024-02-16",
+     43
+    ],
+    [
+     "2024-02-17",
+     34
+    ],
+    [
+     "2024-02-18",
+     36
+    ],
+    [
+     "2024-02-19",
+     48
+    ],
+    [
+     "2024-02-20",
+     37
+    ],
+    [
+     "2024-02-21",
+     41
+    ],
+    [
+     "2024-02-22",
+     46
+    ],
+    [
+     "2024-02-23",
+     46
+    ],
+    [
+     "2024-02-24",
+     51
+    ],
+    [
+     "2024-02-25",
+     43
+    ],
+    [
+     "2024-02-26",
+     47
+    ],
+    [
+     "2024-02-27",
+     42
+    ],
+    [
+     "2024-02-28",
+     40
+    ],
+    [
+     "2024-02-29",
+     48
+    ],
+    [
+     "2024-03-01",
+     35
+    ],
+    [
+     "2024-03-02",
+     43
+    ],
+    [
+     "2024-03-03",
+     32
+    ],
+    [
+     "2024-03-04",
+     28
+    ],
+    [
+     "2024-03-05",
+     36
+    ],
+    [
+     "2024-03-06",
+     33
+    ],
+    [
+     "2024-03-07",
+     44
+    ],
+    [
+     "2024-03-08",
+     53
+    ],
+    [
+     "2024-03-09",
+     50
+    ],
+    [
+     "2024-03-10",
+     42
+    ],
+    [
+     "2024-03-11",
+     37
+    ],
+    [
+     "2024-03-12",
+     44
+    ],
+    [
+     "2024-03-13",
+     42
+    ],
+    [
+     "2024-03-14",
+     36
+    ],
+    [
+     "2024-03-15",
+     35
+    ],
+    [
+     "2024-03-16",
+     39
+    ],
+    [
+     "2024-03-17",
+     36
+    ],
+    [
+     "2024-03-18",
+     40
+    ],
+    [
+     "2024-03-19",
+     39
+    ],
+    [
+     "2024-03-20",
+     36
+    ],
+    [
+     "2024-03-21",
+     39
+    ],
+    [
+     "2024-03-22",
+     35
+    ],
+    [
+     "2024-03-23",
+     45
+    ],
+    [
+     "2024-03-24",
+     37
+    ],
+    [
+     "2024-03-25",
+     47
+    ],
+    [
+     "2024-03-26",
+     38
+    ],
+    [
+     "2024-03-27",
+     44
+    ],
+    [
+     "2024-03-28",
+     31
+    ],
+    [
+     "2024-03-29",
+     34
+    ],
+    [
+     "2024-03-30",
+     41
+    ],
+    [
+     "2024-03-31",
+     34
+    ],
+    [
+     "2024-04-01",
+     43
+    ],
+    [
+     "2024-04-02",
+     49
+    ],
+    [
+     "2024-04-03",
+     37
+    ],
+    [
+     "2024-04-04",
+     46
+    ],
+    [
+     "2024-04-05",
+     37
+    ],
+    [
+     "2024-04-06",
+     39
+    ],
+    [
+     "2024-04-07",
+     42
+    ],
+    [
+     "2024-04-08",
+     46
+    ],
+    [
+     "2024-04-09",
+     33
+    ],
+    [
+     "2024-04-10",
+     33
+    ],
+    [
+     "2024-04-11",
+     49
+    ],
+    [
+     "2024-04-12",
+     41
+    ],
+    [
+     "2024-04-13",
+     38
+    ],
+    [
+     "2024-04-14",
+     33
+    ],
+    [
+     "2024-04-15",
+     43
+    ],
+    [
+     "2024-04-16",
+     46
+    ],
+    [
+     "2024-04-17",
+     42
+    ]
+   ],
+   "simulated": null
+  }
+ },
+ "source": "COMPUTED",
+ "title": "Red Sea / Bab el-Mandeb crisis, 2023-2025",
+ "window": {
+  "baseline": {
+   "from": "2023-10-22",
+   "to": "2023-11-18"
+  },
+  "evaluation_from": "2023-11-19",
+  "evaluation_to": "2024-04-17",
+  "event_start": "2023-11-19",
+  "from": "2023-11-05",
+  "to": "2024-04-17"
+ }
+}

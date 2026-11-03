@@ -1,0 +1,190 @@
+{
+ "graph_pin": {
+  "file_sha256_prefix": "9743a288fb5d670d"
+ },
+ "lane": "realism: ports, places, legs completeness",
+ "resolution": [
+  {
+   "basis": "new SHELL place (registry port1318)",
+   "confidence": "high",
+   "dropped_calls": 6,
+   "place_id": "sea_trieste",
+   "service_name": "Trieste",
+   "status": "resolved"
+  },
+  {
+   "basis": "new SHELL place (registry port1396); CORE sea_bremerhaven carries Wilhelmshaven's coordinates",
+   "confidence": "high",
+   "dropped_calls": 4,
+   "place_id": "sea_wilhelmshaven",
+   "service_name": "Wilhelmshaven",
+   "status": "resolved"
+  },
+  {
+   "basis": "ALREADY in graph.json as shell 'Porto Di Lido-Venezia' (registry port1005); the service mapper did not find it",
+   "confidence": "high",
+   "dropped_calls": 1,
+   "place_id": "sea_portodilidovenezia",
+   "service_name": "Venice",
+   "status": "alias_existing"
+  },
+  {
+   "basis": "ALREADY in graph.json (shell); mapper miss",
+   "confidence": "high",
+   "dropped_calls": 1,
+   "place_id": "sea_tekirdag",
+   "service_name": "Tekirdag",
+   "status": "alias_existing"
+  },
+  {
+   "basis": "ALREADY in graph.json (shell); mapper miss",
+   "confidence": "high",
+   "dropped_calls": 1,
+   "place_id": "sea_yarimca",
+   "service_name": "Yarimca",
+   "status": "alias_existing"
+  },
+  {
+   "basis": "Navegantes (Portonave) and Itajai face each other across the Itajai-Acu river mouth: one port complex (coordinates of Portonave not fetched; adjacency is general knowledge, so confidence is high but not machine-checked); ALREADY in graph.json",
+   "confidence": "high",
+   "dropped_calls": 2,
+   "place_id": "sea_itaja",
+   "service_name": "Navegantes",
+   "status": "alias_existing"
+  },
+  {
+   "basis": "Sihanoukville Autonomous Port was Kompong Som (graph name 'Kampong Saom'); ALREADY in graph.json",
+   "confidence": "high",
+   "dropped_calls": 1,
+   "place_id": "sea_kmpngsam",
+   "service_name": "Sihanoukville",
+   "status": "alias_existing"
+  },
+  {
+   "basis": "Vado Gateway lies in the Savona-Vado port system (CPPI 'SAVONA-VADO' rank 36); graph place is 'Savona' (shell); same port authority and port system, a few km apart (Vado coordinates not fetched)",
+   "confidence": "medium",
+   "dropped_calls": 1,
+   "place_id": "sea_savona",
+   "service_name": "Vado Ligure",
+   "status": "alias_existing"
+  },
+  {
+   "basis": "Khalifa Bin Salman Port (registry port2012, 1 call) is 7 km from shell Sitrah and was absorbed by the same-complex rule; map to Sitrah, flag low confidence",
+   "confidence": "low",
+   "dropped_calls": 1,
+   "place_id": "sea_sitrah",
+   "service_name": "Bahrain",
+   "status": "alias_existing"
+  },
+  {
+   "basis": "new SHELL place (registry port326)",
+   "confidence": "high",
+   "dropped_calls": 2,
+   "place_id": "sea_ensenada",
+   "service_name": "Ensenada",
+   "status": "resolved"
+  },
+  {
+   "basis": "new SHELL place (registry port2032)",
+   "confidence": "high",
+   "dropped_calls": 1,
+   "place_id": "sea_posorja",
+   "service_name": "Posorja",
+   "status": "resolved"
+  },
+  {
+   "basis": "new SHELL place (registry port2272; SOURCED design capacity)",
+   "confidence": "high",
+   "dropped_calls": 1,
+   "place_id": "sea_chancay",
+   "service_name": "Chancay",
+   "status": "resolved"
+  },
+  {
+   "basis": "new SHELL place (registry port1118)",
+   "confidence": "high",
+   "dropped_calls": 1,
+   "place_id": "sea_safi",
+   "service_name": "Safi",
+   "status": "resolved"
+  },
+  {
+   "basis": "every occurrence follows a printed (Panama) marker and precedes Savannah/Charleston (THE22 EC1, PREM EC2/EC3): Manzanillo International Terminal is in Colon province (Atlantic side); the Mexican Manzanillo (sea_manzanillo) is on the Pacific and cannot sit between (Panama) and Savannah",
+   "confidence": "medium",
+   "dropped_calls": 4,
+   "place_id": "sea_colon",
+   "service_name": "Manzanillo",
+   "status": "ambiguous_resolved"
+  },
+  {
+   "basis": "THE22 EC2 sequence Norfolk - Wilmington - Savannah is the US South Atlantic coast: Wilmington NC, not Wilmington DE (sea_wilmingtonde)",
+   "confidence": "medium",
+   "dropped_calls": 1,
+   "place_id": "sea_wilmingtonnc",
+   "service_name": "Wilmington",
+   "status": "ambiguous_resolved"
+  },
+  {
+   "basis": "Gulf of Izmit port cluster (Derince/Izmit/Kocaeli) exists in graph as one shell place",
+   "confidence": "medium",
+   "dropped_calls": 2,
+   "place_id": "sea_derinceizmitkocaeli",
+   "service_name": "Izmit",
+   "status": "ambiguous_resolved"
+  },
+  {
+   "basis": "Evyap Port is on the Gulf of Izmit (Dilovasi, Gebze district); graph shell 'Gebze' is the nearest named place; flagged low",
+   "confidence": "low",
+   "dropped_calls": 1,
+   "place_id": "sea_gebze",
+   "service_name": "Istanbul-Evyap (Izmit)",
+   "status": "ambiguous_resolved"
+  },
+  {
+   "basis": "REFUSED: could be Ambarli (CORE), Marport, Kumport or Evyap; each rotation prints 'Istanbul' alone next to a named terminal elsewhere in the loop, so no unique mapping exists",
+   "confidence": "none",
+   "dropped_calls": 5,
+   "place_id": null,
+   "service_name": "Istanbul",
+   "status": "unresolved"
+  },
+  {
+   "basis": "REFUSED: aggregate label for a set of south-China ports (Yantian/Nansha/Shekou/Chiwan class), not a place; resolution needs the carrier's terminal list",
+   "confidence": "none",
+   "dropped_calls": 18,
+   "place_id": null,
+   "service_name": "South PRC",
+   "status": "unresolved"
+  },
+  {
+   "basis": "REFUSED: unexplained abbreviation in a Hapag-Lloyd 2022 rotation ('From TPWC - Tokyo ...'); not matched to any port",
+   "confidence": "none",
+   "dropped_calls": 2,
+   "place_id": null,
+   "service_name": "TPWC",
+   "status": "unresolved"
+  },
+  {
+   "basis": "REFUSED: country label; candidates Guayaquil (CORE) and new Posorja",
+   "confidence": "none",
+   "dropped_calls": 1,
+   "place_id": null,
+   "service_name": "Ecuador",
+   "status": "unresolved"
+  }
+ ],
+ "retrieved_at": "2026-10-25",
+ "schema": "supermap.graph_extra.candidates/1",
+ "status": "CANDIDATES - not wired into any engine; sidecar data/graph/extra.json does not exist yet",
+ "summary": {
+  "ambiguous_resolved_with_caveat": 4,
+  "calls": 57,
+  "calls_resolved_high_or_medium": 29,
+  "calls_resolved_low": 2,
+  "calls_unresolved": 26,
+  "names": 21,
+  "resolved_to_existing_place": 7,
+  "resolved_to_new_place": 6,
+  "unresolved": 4
+ }
+}

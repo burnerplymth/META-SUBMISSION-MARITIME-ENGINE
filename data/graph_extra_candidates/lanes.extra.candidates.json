@@ -1,0 +1,842 @@
+{
+ "graph_pin": {
+  "file_sha256_prefix": "9743a288fb5d670d"
+ },
+ "lane": "realism: ports, places, legs completeness",
+ "lanes": [
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE at the new leg's own days per km; dtau = lane tau - leg tau (A-lane convention of the authored colombo->Cape bypass)",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 13.474,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "sea_jebelali",
+   "key": "sea_jebelali->chk_capeofgoodhope:sea",
+   "kind": "A",
+   "leg": "sea_jebelali->chk_babelmandeb:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_jebelali -> Cape 13,442 km vs sea_jebelali -> Bab el-Mandeb 4,189 km",
+   "tau": 19.574,
+   "to": "chk_capeofgoodhope",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE at the new leg's own days per km; dtau = lane tau - leg tau (A-lane convention of the authored colombo->Cape bypass)",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 12.236,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "sea_karachi",
+   "key": "sea_karachi->chk_capeofgoodhope:sea",
+   "kind": "A",
+   "leg": "sea_karachi->chk_babelmandeb:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_karachi -> Cape 12,135 km vs sea_karachi -> Bab el-Mandeb 3,716 km",
+   "tau": 17.636,
+   "to": "chk_capeofgoodhope",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE at the new leg's own days per km; dtau = lane tau - leg tau (A-lane convention of the authored colombo->Cape bypass)",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 12.258,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "sea_mundra",
+   "key": "sea_mundra->chk_capeofgoodhope:sea",
+   "kind": "A",
+   "leg": "sea_mundra->chk_babelmandeb:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_mundra -> Cape 11,991 km vs sea_mundra -> Bab el-Mandeb 3,572 km",
+   "tau": 17.458,
+   "to": "chk_capeofgoodhope",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE at the new leg's own days per km; dtau = lane tau - leg tau (A-lane convention of the authored colombo->Cape bypass)",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 11.249,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "sea_nhavasheva",
+   "key": "sea_nhavasheva->chk_capeofgoodhope:sea",
+   "kind": "A",
+   "leg": "sea_nhavasheva->chk_babelmandeb:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_nhavasheva -> Cape 11,220 km vs sea_nhavasheva -> Bab el-Mandeb 3,500 km",
+   "tau": 16.349,
+   "to": "chk_capeofgoodhope",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE at the new leg's own days per km; dtau = lane tau - leg tau (A-lane convention of the authored colombo->Cape bypass)",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 14.919,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "sea_salalah",
+   "key": "sea_salalah->chk_capeofgoodhope:sea",
+   "kind": "A",
+   "leg": "sea_salalah->chk_babelmandeb:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_salalah -> Cape 12,360 km vs sea_salalah -> Bab el-Mandeb 1,953 km",
+   "tau": 17.719,
+   "to": "chk_capeofgoodhope",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_colombo:sea",
+   "kind": "B",
+   "leg": "chk_babelmandeb->sea_colombo:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Cape -> colombo 9,432 km vs Bab el-Mandeb -> colombo 4,140 km",
+   "tau": 13.67,
+   "to": "sea_colombo",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_jebelali:sea",
+   "kind": "B",
+   "leg": "chk_babelmandeb->sea_jebelali:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Cape -> jebelali 12,741 km vs Bab el-Mandeb -> jebelali 4,189 km",
+   "tau": 18.553,
+   "to": "sea_jebelali",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_karachi:sea",
+   "kind": "B",
+   "leg": "chk_babelmandeb->sea_karachi:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Cape -> karachi 12,007 km vs Bab el-Mandeb -> karachi 3,716 km",
+   "tau": 17.451,
+   "to": "sea_karachi",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_mundra:sea",
+   "kind": "B",
+   "leg": "chk_babelmandeb->sea_mundra:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Cape -> mundra 11,698 km vs Bab el-Mandeb -> mundra 3,572 km",
+   "tau": 17.031,
+   "to": "sea_mundra",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_nhavasheva:sea",
+   "kind": "B",
+   "leg": "chk_babelmandeb->sea_nhavasheva:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Cape -> nhavasheva 11,220 km vs Bab el-Mandeb -> nhavasheva 3,500 km",
+   "tau": 16.349,
+   "to": "sea_nhavasheva",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "BAB_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_salalah:sea",
+   "kind": "B",
+   "leg": "chk_babelmandeb->sea_salalah:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Cape -> salalah 12,353 km vs Bab el-Mandeb -> salalah 1,953 km",
+   "tau": 17.71,
+   "to": "sea_salalah",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_lombok",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference; dtau from the Singapore-Colombo total via the alternative vs via Malacca at the primary chain's days per km",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": "sea_singapore->chk_lombok:sea",
+   "dtau": 6.634,
+   "family": "MALACCA_VIA_LOMBOK",
+   "faster_alternative": false,
+   "from": "sea_singapore",
+   "key": "sea_singapore->chk_lombok:sea",
+   "kind": "A",
+   "leg": "sea_singapore->chk_malacca:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_singapore -> LOMBOK 1,723 km",
+   "sources": [
+    "Authored bypass sea_singapore->sea_colombo (bypass_of sea_singapore->chk_malacca:sea) in graph.json models the Sunda/Lombok route as one direct leg"
+   ],
+   "tau": 1.9,
+   "to": "chk_lombok",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_lombok",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference; dtau from the Singapore-Colombo total via the alternative vs via Malacca at the primary chain's days per km",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 6.634,
+   "family": "MALACCA_VIA_LOMBOK",
+   "faster_alternative": false,
+   "from": "sea_tanjungpelepas",
+   "key": "sea_tanjungpelepas->chk_lombok:sea",
+   "kind": "A",
+   "leg": "sea_tanjungpelepas->chk_malacca:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_tanjungpelepas -> LOMBOK 1,755 km",
+   "sources": [
+    "Authored bypass sea_singapore->sea_colombo (bypass_of sea_singapore->chk_malacca:sea) in graph.json models the Sunda/Lombok route as one direct leg"
+   ],
+   "tau": 3.287,
+   "to": "chk_lombok",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_lombok",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": "chk_lombok->sea_colombo:sea",
+   "dtau": 0.0,
+   "family": "MALACCA_VIA_LOMBOK",
+   "faster_alternative": false,
+   "from": "chk_lombok",
+   "key": "chk_lombok->sea_colombo:sea",
+   "kind": "B",
+   "leg": "chk_malacca->sea_colombo:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "LOMBOK -> colombo 4,678 km",
+   "tau": 5.3,
+   "to": "sea_colombo",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_lombok",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": "chk_lombok->sea_singapore:sea",
+   "dtau": 0.0,
+   "family": "MALACCA_VIA_LOMBOK",
+   "faster_alternative": false,
+   "from": "chk_lombok",
+   "key": "chk_lombok->sea_singapore:sea",
+   "kind": "B",
+   "leg": "chk_malacca->sea_singapore:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "LOMBOK -> singapore 1,723 km",
+   "tau": 1.9,
+   "to": "sea_singapore",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_sunda",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference; dtau from the Singapore-Colombo total via the alternative vs via Malacca at the primary chain's days per km",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": "sea_singapore->chk_sunda:sea",
+   "dtau": 3.371,
+   "family": "MALACCA_VIA_SUNDA",
+   "faster_alternative": false,
+   "from": "sea_singapore",
+   "key": "sea_singapore->chk_sunda:sea",
+   "kind": "A",
+   "leg": "sea_singapore->chk_malacca:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_singapore -> SUNDA 1,171 km",
+   "sources": [
+    "Authored bypass sea_singapore->sea_colombo (bypass_of sea_singapore->chk_malacca:sea) in graph.json models the Sunda/Lombok route as one direct leg"
+   ],
+   "tau": 1.3,
+   "to": "chk_sunda",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_sunda",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference; dtau from the Singapore-Colombo total via the alternative vs via Malacca at the primary chain's days per km",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 3.371,
+   "family": "MALACCA_VIA_SUNDA",
+   "faster_alternative": false,
+   "from": "sea_tanjungpelepas",
+   "key": "sea_tanjungpelepas->chk_sunda:sea",
+   "kind": "A",
+   "leg": "sea_tanjungpelepas->chk_malacca:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "sea_tanjungpelepas -> SUNDA 1,203 km",
+   "sources": [
+    "Authored bypass sea_singapore->sea_colombo (bypass_of sea_singapore->chk_malacca:sea) in graph.json models the Sunda/Lombok route as one direct leg"
+   ],
+   "tau": 2.252,
+   "to": "chk_sunda",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_sunda",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": "chk_sunda->sea_colombo:sea",
+   "dtau": 0.0,
+   "family": "MALACCA_VIA_SUNDA",
+   "faster_alternative": false,
+   "from": "chk_sunda",
+   "key": "chk_sunda->sea_colombo:sea",
+   "kind": "B",
+   "leg": "chk_malacca->sea_colombo:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "SUNDA -> colombo 3,577 km",
+   "tau": 4.0,
+   "to": "sea_colombo",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_sunda",
+   "basis": "R-ROUTE with a 150 km floor on the primary reference",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": "chk_sunda->sea_singapore:sea",
+   "dtau": 0.0,
+   "family": "MALACCA_VIA_SUNDA",
+   "faster_alternative": false,
+   "from": "chk_sunda",
+   "key": "chk_sunda->sea_singapore:sea",
+   "kind": "B",
+   "leg": "chk_malacca->sea_singapore:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "SUNDA -> singapore 1,171 km",
+   "tau": 1.3,
+   "to": "sea_singapore",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE; dtau = flow-weighted mean over the three Atlantic receivers of (alternative total nm - Panama total nm) x the Shanghai-Panama-receiver chain's days per nm",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 10.469,
+   "family": "PANAMA_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "sea_shanghai",
+   "key": "sea_shanghai->chk_capeofgoodhope:sea",
+   "kind": "A",
+   "leg": "sea_shanghai->chk_panama:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Shanghai -> CAPE 7,647 nm vs Shanghai -> Panama 8,721 nm",
+   "sources": [
+    "PREM EC2/EC3 and ONE/Premier services rotate Asia-US East Coast via (Cape of Good Hope); data/graph/services.json svc_prem_2512_ec2, svc_prem_2512_ec3"
+   ],
+   "tau": 17.537,
+   "to": "chk_capeofgoodhope",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE: tau = primary leg days x (alternative nm / primary nm); dtau on the B lane is 0 (engine2 takes max(0, tau - leg tau)); the route difference is carried on the A lane, as in server/engine2/routes.py",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_houston:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_houston:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "CAPE -> houston 7,850 nm vs Panama -> houston 1,827 nm",
+   "sources": [
+    "PREM EC2/EC3 and ONE/Premier services rotate Asia-US East Coast via (Cape of Good Hope); data/graph/services.json svc_prem_2512_ec2, svc_prem_2512_ec3"
+   ],
+   "tau": 25.784,
+   "to": "sea_houston",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE: tau = primary leg days x (alternative nm / primary nm); dtau on the B lane is 0 (engine2 takes max(0, tau - leg tau)); the route difference is carried on the A lane, as in server/engine2/routes.py",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_newyork:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_newyork:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "CAPE -> newyork 6,848 nm vs Panama -> newyork 2,020 nm",
+   "sources": [
+    "PREM EC2/EC3 and ONE/Premier services rotate Asia-US East Coast via (Cape of Good Hope); data/graph/services.json svc_prem_2512_ec2, svc_prem_2512_ec3"
+   ],
+   "tau": 20.345,
+   "to": "sea_newyork",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_capeofgoodhope",
+   "basis": "R-ROUTE: tau = primary leg days x (alternative nm / primary nm); dtau on the B lane is 0 (engine2 takes max(0, tau - leg tau)); the route difference is carried on the A lane, as in server/engine2/routes.py",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_CAPE",
+   "faster_alternative": false,
+   "from": "chk_capeofgoodhope",
+   "key": "chk_capeofgoodhope->sea_savannah:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_savannah:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "CAPE -> savannah 7,018 nm vs Panama -> savannah 1,453 nm",
+   "sources": [
+    "PREM EC2/EC3 and ONE/Premier services rotate Asia-US East Coast via (Cape of Good Hope); data/graph/services.json svc_prem_2512_ec2, svc_prem_2512_ec3"
+   ],
+   "tau": 24.156,
+   "to": "sea_savannah",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_suez",
+   "basis": "R-ROUTE; dtau = flow-weighted mean over the three Atlantic receivers of (alternative total nm - Panama total nm) x the Shanghai-Panama-receiver chain's days per nm",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 5.541,
+   "family": "PANAMA_VIA_SUEZ",
+   "faster_alternative": false,
+   "from": "sea_shanghai",
+   "key": "sea_shanghai->chk_suez:sea",
+   "kind": "A",
+   "leg": "sea_shanghai->chk_panama:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Shanghai -> SUEZ 7,008 nm vs Shanghai -> Panama 8,721 nm",
+   "sources": [
+    "THE22 EC4 and PREM services rotate Asia-US East Coast via (Suez); data/graph/services.json svc_the22_ec4"
+   ],
+   "tau": 16.072,
+   "to": "chk_suez",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_suez",
+   "basis": "R-ROUTE: tau = primary leg days x (alternative nm / primary nm); dtau on the B lane is 0 (engine2 takes max(0, tau - leg tau)); the route difference is carried on the A lane, as in server/engine2/routes.py",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_SUEZ",
+   "faster_alternative": false,
+   "from": "chk_suez",
+   "key": "chk_suez->sea_houston:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_houston:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "SUEZ -> houston 6,791 nm vs Panama -> houston 1,827 nm",
+   "sources": [
+    "THE22 EC4 and PREM services rotate Asia-US East Coast via (Suez); data/graph/services.json svc_the22_ec4"
+   ],
+   "tau": 22.305,
+   "to": "sea_houston",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_suez",
+   "basis": "R-ROUTE: tau = primary leg days x (alternative nm / primary nm); dtau on the B lane is 0 (engine2 takes max(0, tau - leg tau)); the route difference is carried on the A lane, as in server/engine2/routes.py",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_SUEZ",
+   "faster_alternative": false,
+   "from": "chk_suez",
+   "key": "chk_suez->sea_newyork:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_newyork:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "SUEZ -> newyork 5,182 nm vs Panama -> newyork 2,020 nm",
+   "sources": [
+    "THE22 EC4 and PREM services rotate Asia-US East Coast via (Suez); data/graph/services.json svc_the22_ec4"
+   ],
+   "tau": 15.396,
+   "to": "sea_newyork",
+   "why": ""
+  },
+  {
+   "alt_gate": "chk_suez",
+   "basis": "R-ROUTE: tau = primary leg days x (alternative nm / primary nm); dtau on the B lane is 0 (engine2 takes max(0, tau - leg tau)); the route difference is carried on the A lane, as in server/engine2/routes.py",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_SUEZ",
+   "faster_alternative": false,
+   "from": "chk_suez",
+   "key": "chk_suez->sea_savannah:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_savannah:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "SUEZ -> savannah 5,792 nm vs Panama -> savannah 1,453 nm",
+   "sources": [
+    "THE22 EC4 and PREM services rotate Asia-US East Coast via (Suez); data/graph/services.json svc_the22_ec4"
+   ],
+   "tau": 19.936,
+   "to": "sea_savannah",
+   "why": ""
+  },
+  {
+   "alt_gate": "gnd_chicago",
+   "basis": "R-GRAPH",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_USLANDBRIDGE",
+   "faster_alternative": true,
+   "from": "sea_losangeles",
+   "key": "sea_losangeles->gnd_chicago:sea",
+   "kind": "A",
+   "leg": "sea_losangeles->chk_panama:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Los Angeles -> Inland Empire -> Chicago by rail",
+   "sources": [
+    "US transcontinental rail landbridge: chain of existing graph ground legs sea_losangeles->gnd_inlandempire->gnd_chicago->...; days are the graph's MODELED ground leg days (data/graph/graph.json)"
+   ],
+   "tau": 3.1,
+   "to": "gnd_chicago",
+   "why": ""
+  },
+  {
+   "alt_gate": "gnd_chicago",
+   "basis": "R-GRAPH: graph leg days; the landbridge is FASTER than the canal route on the graph's own numbers, so dtau is floored at 0 and the lane is flagged faster_alternative (its cost and capacity limits are the gate headroom, not time)",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_USLANDBRIDGE",
+   "faster_alternative": true,
+   "from": "sea_shanghai",
+   "key": "sea_shanghai->gnd_chicago:sea",
+   "kind": "A",
+   "leg": "sea_shanghai->chk_panama:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "Shanghai -> Los Angeles 14.0 d + LA -> Inland Empire 0.5 d + Inland Empire -> Chicago 2.6 d; total to New York 19.5 d vs 26.0 d via Panama",
+   "sources": [
+    "US transcontinental rail landbridge: chain of existing graph ground legs sea_losangeles->gnd_inlandempire->gnd_chicago->...; days are the graph's MODELED ground leg days (data/graph/graph.json)"
+   ],
+   "tau": 17.1,
+   "to": "gnd_chicago",
+   "why": ""
+  },
+  {
+   "alt_gate": "gnd_chicago",
+   "basis": "R-GRAPH: sum of existing graph ground-leg days along the shortest ground path",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_USLANDBRIDGE",
+   "faster_alternative": false,
+   "from": "gnd_chicago",
+   "key": "gnd_chicago->sea_houston:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_houston:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "gnd_chicago > gnd_dallas > gnd_eaglepass > gnd_laredo > sea_houston",
+   "sources": [
+    "US transcontinental rail landbridge: chain of existing graph ground legs sea_losangeles->gnd_inlandempire->gnd_chicago->...; days are the graph's MODELED ground leg days (data/graph/graph.json)"
+   ],
+   "tau": 3.7,
+   "to": "sea_houston",
+   "why": ""
+  },
+  {
+   "alt_gate": "gnd_chicago",
+   "basis": "R-GRAPH: sum of existing graph ground-leg days along the shortest ground path",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_USLANDBRIDGE",
+   "faster_alternative": false,
+   "from": "gnd_chicago",
+   "key": "gnd_chicago->sea_newyork:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_newyork:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "gnd_chicago > gnd_detroit > gnd_buffalo > sea_newyork",
+   "sources": [
+    "US transcontinental rail landbridge: chain of existing graph ground legs sea_losangeles->gnd_inlandempire->gnd_chicago->...; days are the graph's MODELED ground leg days (data/graph/graph.json)"
+   ],
+   "tau": 2.4,
+   "to": "sea_newyork",
+   "why": ""
+  },
+  {
+   "alt_gate": "gnd_chicago",
+   "basis": "R-GRAPH: sum of existing graph ground-leg days along the shortest ground path",
+   "capacity_share": 0.0,
+   "capacity_share_basis": "DORMANT_ZERO: an alternative lane carries no baseline flow; it is used only when the primary leg's forecast wait exceeds the lane's added days (engine2 reroute rule)",
+   "carrier_edge": null,
+   "dtau": 0.0,
+   "family": "PANAMA_VIA_USLANDBRIDGE",
+   "faster_alternative": false,
+   "from": "gnd_chicago",
+   "key": "gnd_chicago->sea_savannah:sea",
+   "kind": "B",
+   "leg": "chk_panama->sea_savannah:sea",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "derived: waypoint-chain route lengths (MODELLED) x the primary leg's own days per km"
+   },
+   "route": "gnd_chicago > gnd_memphis > gnd_atlanta > sea_savannah",
+   "sources": [
+    "US transcontinental rail landbridge: chain of existing graph ground legs sea_losangeles->gnd_inlandempire->gnd_chicago->...; days are the graph's MODELED ground leg days (data/graph/graph.json)"
+   ],
+   "tau": 2.5,
+   "to": "sea_savannah",
+   "why": ""
+  }
+ ],
+ "retrieved_at": "2026-10-25",
+ "schema": "supermap.graph_extra.candidates/1",
+ "semantics": "engine2 routes-table lane specs (server/engine2/routes.py): kind A leaves the primary leg's sender for an alternative gate, kind B leaves the gate for the primary leg's receiver; tau = days to the far end; dtau = added days (A lane only; B lane dtau is max(0, tau - primary tau) inside the engine). capacity_share is 0.0 by construction.",
+ "status": "CANDIDATES - not wired into any engine; sidecar data/graph/extra.json does not exist yet",
+ "summary": {
+  "lanes": 32,
+  "lanes_by_family": {
+   "BAB_VIA_CAPE": 11,
+   "MALACCA_VIA_LOMBOK": 4,
+   "MALACCA_VIA_SUNDA": 4,
+   "PANAMA_VIA_CAPE": 4,
+   "PANAMA_VIA_SUEZ": 4,
+   "PANAMA_VIA_USLANDBRIDGE": 5
+  }
+ }
+}

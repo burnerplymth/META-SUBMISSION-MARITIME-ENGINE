@@ -1,0 +1,1432 @@
+{
+ "graph_pin": {
+  "file_sha256_prefix": "9743a288fb5d670d"
+ },
+ "lane": "realism: ports, places, legs completeness",
+ "places": [
+  {
+   "activity": {
+    "kind": "aci_annual_cargo_tonnes_2015",
+    "value": 837551
+   },
+   "aliases": [
+    "AUH",
+    "OMAA"
+   ],
+   "capacity": 2295,
+   "capacity_basis": "ESTIMATE",
+   "capacity_note": "ACI World 2015 annual cargo 837,551 tonnes (Wikipedia compilation of ACI figures, rank 28) / 365 = 2,295 t/day. 11-year-old figure: a labelled ESTIMATE, not a current throughput.",
+   "capacity_unit": "tonnes/day",
+   "country": "United Arab Emirates",
+   "id": "air_abudhabi",
+   "inventory_days": 3.0,
+   "kind": "air_hub",
+   "lat": 24.440966,
+   "lon": 54.649237,
+   "mode": "air",
+   "name": "Zayed International Airport",
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://en.wikipedia.org/wiki/List_of_busiest_airports_by_cargo_traffic"
+   },
+   "queue_cap": 4590,
+   "sources": [
+    "https://davidmegginson.github.io/ourairports-data/airports.csv",
+    "https://en.wikipedia.org/wiki/List_of_busiest_airports_by_cargo_traffic"
+   ],
+   "tier": "shell",
+   "why": "Etihad Cargo hub; ACI 2015 rank 28 (837,551 t), absent from graph"
+  },
+  {
+   "activity": {
+    "kind": "aci_annual_cargo_tonnes_2015",
+    "value": 779478
+   },
+   "aliases": [
+    "LUX",
+    "ELLX"
+   ],
+   "capacity": 2136,
+   "capacity_basis": "ESTIMATE",
+   "capacity_note": "ACI World 2015 annual cargo 779,478 tonnes (Wikipedia compilation of ACI figures, rank 29) / 365 = 2,136 t/day. 11-year-old figure: a labelled ESTIMATE, not a current throughput.",
+   "capacity_unit": "tonnes/day",
+   "country": "Luxembourg",
+   "id": "air_luxembourg",
+   "inventory_days": 3.0,
+   "kind": "air_hub",
+   "lat": 49.626845,
+   "lon": 6.212134,
+   "mode": "air",
+   "name": "Luxembourg-Findel International Airport",
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://en.wikipedia.org/wiki/List_of_busiest_airports_by_cargo_traffic"
+   },
+   "queue_cap": 4272,
+   "sources": [
+    "https://davidmegginson.github.io/ourairports-data/airports.csv",
+    "https://en.wikipedia.org/wiki/List_of_busiest_airports_by_cargo_traffic"
+   ],
+   "tier": "shell",
+   "why": "Cargolux hub; ACI 2015 rank 29 (779,478 t), absent from graph"
+  },
+  {
+   "aliases": [
+    "Nord-Ostsee-Kanal",
+    "NOK"
+   ],
+   "capacity": 73,
+   "capacity_basis": "SOURCED_OBSERVED",
+   "capacity_note": "26,659 ships (2023) / 365; secondary report of WSV statistics; WSV page not retrieved",
+   "capacity_unit": "vessels/day",
+   "id": "chk_kiel",
+   "inventory_days": 0.0,
+   "kind": "chokepoint",
+   "lat": 53.88333,
+   "lon": 9.13333,
+   "mode": "sea",
+   "name": "Kiel Canal",
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "Federal Waterways and Shipping Administration (WSV) via Hansa News, 26,659 ships in 2023 / 365 = 73 vessels/day (observed throughput used as capacity proxy, the CORE chokepoint interpretation) https://hansa.news/nok-less-cargo-last-year/ (retrieved 2026-10-25)"
+   },
+   "queue_cap": 146,
+   "queue_cap_note": "2 x capacity, the CORE chokepoint convention (11 of 12 CORE chokepoints)",
+   "sources": [
+    "Federal Waterways and Shipping Administration (WSV) via Hansa News, 26,659 ships in 2023 / 365 = 73 vessels/day (observed throughput used as capacity proxy, the CORE chokepoint interpretation) https://hansa.news/nok-less-cargo-last-year/ (retrieved 2026-10-25)",
+    "Coordinates: Wikipedia REST summary 'Kiel Canal' https://en.wikipedia.org/api/rest_v1/page/summary/Kiel_Canal"
+   ],
+   "tier": "core_ext",
+   "why": "North Sea-Baltic shortcut parallel to the Danish Straits (26,659 ships 2023)"
+  },
+  {
+   "aliases": [
+    "Selat Lombok"
+   ],
+   "capacity": 36,
+   "capacity_basis": "SOURCED_OBSERVED",
+   "capacity_note": "median of 486 daily n_total counts, same window as the rev2c calibration; a demonstrated rate, not a design capacity",
+   "capacity_unit": "vessels/day",
+   "id": "chk_lombok",
+   "inventory_days": 0.0,
+   "kind": "chokepoint",
+   "lat": -8.41915,
+   "lon": 115.80143,
+   "mode": "sea",
+   "name": "Lombok Strait",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "IMF PortWatch Daily_Chokepoints_Data chokepoint15 median daily transits 36.5 (P99 49) over 2022-07-01..2023-10-29, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query (retrieved 2026-10-25)"
+   },
+   "queue_cap": 72,
+   "queue_cap_note": "2 x capacity, the CORE chokepoint convention (11 of 12 CORE chokepoints)",
+   "sources": [
+    "IMF PortWatch Daily_Chokepoints_Data chokepoint15 median daily transits 36.5 (P99 49) over 2022-07-01..2023-10-29, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query (retrieved 2026-10-25)",
+    "IMF PortWatch chokepoints database chokepoint15 coordinates, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_chokepoints_database/FeatureServer/0/query (retrieved 2026-10-25)"
+   ],
+   "tier": "core_ext",
+   "why": "second Malacca alternative (deeper draft); Australia-Asia and Cape-bound bulk"
+  },
+  {
+   "aliases": [
+    "Estrecho de Magallanes"
+   ],
+   "capacity": 4,
+   "capacity_basis": "SOURCED_OBSERVED",
+   "capacity_note": "median of 486 daily n_total counts, same window as the rev2c calibration; a demonstrated rate, not a design capacity",
+   "capacity_unit": "vessels/day",
+   "id": "chk_magellan",
+   "inventory_days": 0.0,
+   "kind": "chokepoint",
+   "lat": -52.64034,
+   "lon": -69.59483,
+   "mode": "sea",
+   "name": "Strait of Magellan",
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "IMF PortWatch Daily_Chokepoints_Data chokepoint21 median daily transits 4.0 (P99 10) over 2022-07-01..2023-10-29, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query (retrieved 2026-10-25)"
+   },
+   "queue_cap": 8,
+   "queue_cap_note": "2 x capacity, the CORE chokepoint convention (11 of 12 CORE chokepoints)",
+   "sources": [
+    "IMF PortWatch Daily_Chokepoints_Data chokepoint21 median daily transits 4.0 (P99 10) over 2022-07-01..2023-10-29, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query (retrieved 2026-10-25)",
+    "IMF PortWatch chokepoints database chokepoint21 coordinates, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_chokepoints_database/FeatureServer/0/query (retrieved 2026-10-25)"
+   ],
+   "tier": "core_ext",
+   "why": "the only non-Panama sea link between the two Chilean/Argentine coasts for ships using the straits (4/day)"
+  },
+  {
+   "aliases": [
+    "Selat Sunda"
+   ],
+   "capacity": 29,
+   "capacity_basis": "SOURCED_OBSERVED",
+   "capacity_note": "median of 486 daily n_total counts, same window as the rev2c calibration; a demonstrated rate, not a design capacity",
+   "capacity_unit": "vessels/day",
+   "id": "chk_sunda",
+   "inventory_days": 0.0,
+   "kind": "chokepoint",
+   "lat": -5.96684,
+   "lon": 105.77522,
+   "mode": "sea",
+   "name": "Sunda Strait",
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "IMF PortWatch Daily_Chokepoints_Data chokepoint19 median daily transits 29.0 (P99 44) over 2022-07-01..2023-10-29, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query (retrieved 2026-10-25)"
+   },
+   "queue_cap": 58,
+   "queue_cap_note": "2 x capacity, the CORE chokepoint convention (11 of 12 CORE chokepoints)",
+   "sources": [
+    "IMF PortWatch Daily_Chokepoints_Data chokepoint19 median daily transits 29.0 (P99 44) over 2022-07-01..2023-10-29, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query (retrieved 2026-10-25)",
+    "IMF PortWatch chokepoints database chokepoint19 coordinates, https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_chokepoints_database/FeatureServer/0/query (retrieved 2026-10-25)"
+   ],
+   "tier": "core_ext",
+   "why": "Malacca alternative for Asia-Indian Ocean and Cape-bound traffic; the graph carries it only as the authored singapore->colombo bypass leg"
+  },
+  {
+   "activity": {
+    "kind": "china_europe_train_operation_trips_2024",
+    "note": "New Silk Road Discovery / CRCT, via railmarket.com search summary; trips may count both directions",
+    "value": 2285
+   },
+   "aliases": [],
+   "capacity": 1500,
+   "capacity_basis": "NOT_PUBLISHED",
+   "capacity_note": "NOT_PUBLISHED: no per-hub throughput retrieved; the MODELED ground shell default (1,500) applies. Coordinates are the CITY centroid (+-30 km), not the terminal.",
+   "capacity_unit": "trucks/day",
+   "country": "China",
+   "id": "gnd_chengdu",
+   "inventory_days": 5.0,
+   "kind": "ground_node",
+   "lat": 30.66,
+   "lon": 104.06333,
+   "mode": "ground",
+   "name": "Chengdu International Railway Port",
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   },
+   "queue_cap": 1500,
+   "routing_only": true,
+   "sources": [
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Chengdu",
+    "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   ],
+   "tier": "shell",
+   "why": "China-Europe rail origin hub (top-5 by 2024 trips); the four CORE border nodes have no inbound leg today"
+  },
+  {
+   "activity": {
+    "kind": "china_europe_train_operation_trips_2024",
+    "note": "New Silk Road Discovery / CRCT, via railmarket.com search summary; trips may count both directions",
+    "value": 2059
+   },
+   "aliases": [],
+   "capacity": 1500,
+   "capacity_basis": "NOT_PUBLISHED",
+   "capacity_note": "NOT_PUBLISHED: no per-hub throughput retrieved; the MODELED ground shell default (1,500) applies. Coordinates are the CITY centroid (+-30 km), not the terminal.",
+   "capacity_unit": "trucks/day",
+   "country": "China",
+   "id": "gnd_chongqing",
+   "inventory_days": 5.0,
+   "kind": "ground_node",
+   "lat": 29.5637,
+   "lon": 106.5504,
+   "mode": "ground",
+   "name": "Chongqing Tuanjie Village Station",
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   },
+   "queue_cap": 1500,
+   "routing_only": true,
+   "sources": [
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Chongqing",
+    "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   ],
+   "tier": "shell",
+   "why": "China-Europe rail origin hub (top-5 by 2024 trips); the four CORE border nodes have no inbound leg today"
+  },
+  {
+   "activity": {
+    "kind": "china_europe_train_operation_trips_2024",
+    "note": "New Silk Road Discovery / CRCT, via railmarket.com search summary; trips may count both directions",
+    "value": 3849
+   },
+   "aliases": [],
+   "capacity": 1500,
+   "capacity_basis": "NOT_PUBLISHED",
+   "capacity_note": "NOT_PUBLISHED: no per-hub throughput retrieved; the MODELED ground shell default (1,500) applies. Coordinates are the CITY centroid (+-30 km), not the terminal.",
+   "capacity_unit": "trucks/day",
+   "country": "China",
+   "id": "gnd_xian",
+   "inventory_days": 5.0,
+   "kind": "ground_node",
+   "lat": 34.26111,
+   "lon": 108.94222,
+   "mode": "ground",
+   "name": "Xi'an International Port (Chang'an)",
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   },
+   "queue_cap": 1500,
+   "routing_only": true,
+   "sources": [
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Xi%27an",
+    "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   ],
+   "tier": "shell",
+   "why": "China-Europe rail origin hub (top-5 by 2024 trips); the four CORE border nodes have no inbound leg today"
+  },
+  {
+   "activity": {
+    "kind": "china_europe_train_operation_trips_2024",
+    "note": "New Silk Road Discovery / CRCT, via railmarket.com search summary; trips may count both directions",
+    "value": 812
+   },
+   "aliases": [],
+   "capacity": 1500,
+   "capacity_basis": "NOT_PUBLISHED",
+   "capacity_note": "NOT_PUBLISHED: no per-hub throughput retrieved; the MODELED ground shell default (1,500) applies. Coordinates are the CITY centroid (+-30 km), not the terminal.",
+   "capacity_unit": "trucks/day",
+   "country": "China",
+   "id": "gnd_yiwu",
+   "inventory_days": 5.0,
+   "kind": "ground_node",
+   "lat": 29.30694,
+   "lon": 120.07528,
+   "mode": "ground",
+   "name": "Yiwu West",
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   },
+   "queue_cap": 1500,
+   "routing_only": true,
+   "sources": [
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Yiwu",
+    "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   ],
+   "tier": "shell",
+   "why": "China-Europe rail origin hub (top-5 by 2024 trips); the four CORE border nodes have no inbound leg today"
+  },
+  {
+   "activity": {
+    "kind": "china_europe_train_operation_trips_2024",
+    "note": "New Silk Road Discovery / CRCT, via railmarket.com search summary; trips may count both directions",
+    "value": 2052
+   },
+   "aliases": [],
+   "capacity": 1500,
+   "capacity_basis": "NOT_PUBLISHED",
+   "capacity_note": "NOT_PUBLISHED: no per-hub throughput retrieved; the MODELED ground shell default (1,500) applies. Coordinates are the CITY centroid (+-30 km), not the terminal.",
+   "capacity_unit": "trucks/day",
+   "country": "China",
+   "id": "gnd_zhengzhou",
+   "inventory_days": 5.0,
+   "kind": "ground_node",
+   "lat": 34.764,
+   "lon": 113.684,
+   "mode": "ground",
+   "name": "Zhengzhou International Hub",
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   },
+   "queue_cap": 1500,
+   "routing_only": true,
+   "sources": [
+    "https://en.wikipedia.org/api/rest_v1/page/summary/Zhengzhou",
+    "https://railmarket.com/news/freight-rail/28943-china-europe-19-000-freight-trains-in-2024"
+   ],
+   "tier": "shell",
+   "why": "China-Europe rail origin hub (top-5 by 2024 trips); the four CORE border nodes have no inbound leg today"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 145,
+    "vessel_count_tanker": 67,
+    "vessel_count_total": 420
+   },
+   "aliases": [
+    "YEADE"
+   ],
+   "capacity": 937,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port9: 145 container / 420 total observed vessel calls => about 937 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Yemen",
+   "dominant_vessel_type": "container",
+   "id": "sea_aden",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 12.781866,
+   "lon": 44.954943,
+   "mode": "sea",
+   "name": "Aden",
+   "nearest_existing_graph_port": {
+    "id": "sea_djibouti",
+    "km": 240.5
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 2811,
+   "registry": {
+    "fullname": "Aden, Yemen",
+    "iso3": "YEM",
+    "portids": [
+     "port9"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Gulf of Aden gate port 40 km from Bab el-Mandeb; Yemen container terminal; CPPI 2023 rank 237"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 127,
+    "vessel_count_tanker": 34,
+    "vessel_count_total": 316
+   },
+   "aliases": [
+    "SOBBO"
+   ],
+   "capacity": 821,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port146: 127 container / 316 total observed vessel calls => about 821 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Somalia",
+   "dominant_vessel_type": "container",
+   "id": "sea_berbera",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 10.432943,
+   "lon": 44.996979,
+   "mode": "sea",
+   "name": "Berbera",
+   "nearest_existing_graph_port": {
+    "id": "sea_djibouti",
+    "km": 243.9
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 2463,
+   "registry": {
+    "fullname": "Berbera, Somalia",
+    "iso3": "SOM",
+    "portids": [
+     "port146"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "CPPI 2023 rank 106; DP World Berbera, Gulf of Aden"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 12,
+    "vessel_count_tanker": 359,
+    "vessel_count_total": 528
+   },
+   "aliases": [],
+   "capacity": 78,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port162: 12 container / 528 total observed vessel calls => about 78 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Türkiye",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_botasceyhan",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 36.876716,
+   "lon": 35.918573,
+   "mode": "sea",
+   "name": "Ceyhan (BOTAS crude terminal)",
+   "nearest_existing_graph_port": {
+    "id": "sea_yakacik",
+    "km": 31.3
+   },
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 234,
+   "registry": {
+    "fullname": "Botas, Türkiye",
+    "iso3": "TUR",
+    "portids": [
+     "port162"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Kirkuk-Ceyhan and BTC crude export terminal; Hormuz bypass for Iraqi crude when the line operates"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 32,
+    "vessel_count_tanker": 13,
+    "vessel_count_total": 62
+   },
+   "aliases": [
+    "PECHY"
+   ],
+   "capacity": 2740,
+   "capacity_basis": "SOURCED",
+   "capacity_is_container_capacity": true,
+   "capacity_note": "Phase 1 design capacity 1.0 million TEU per year (Container News, 'Peruvian COSCO terminal commences operations', Nov 2024) / 365 = 2,740 TEU/day; one report quotes 1.2 million (Seatrade). The registry (62 calls) pre-dates the opening, so the SOURCED design figure is used instead of the registry ESTIMATE.",
+   "capacity_unit": "TEU/day",
+   "country": "Peru",
+   "dominant_vessel_type": "container",
+   "id": "sea_chancay",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": -11.591907,
+   "lon": -77.279072,
+   "mode": "sea",
+   "name": "Chancay",
+   "nearest_existing_graph_port": {
+    "id": "sea_callao",
+    "km": 53.1
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 8220,
+   "registry": {
+    "fullname": "Chancay, Peru",
+    "iso3": "PER",
+    "portids": [
+     "port2272"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query",
+    "https://container-news.com/peruvian-cosco-terminal-commences-operations/ ; https://www.seatrade-maritime.com/ports-logistics/cosco-shipping-terminal-in-peru-to-start-operations-this-month (search results, pages not machine-verified; retrieved 2026-10-25)"
+   ],
+   "tier": "shell",
+   "why": "services (1 dropped call); COSCO-operated deep-water port opened Nov 2024 (China-Peru trans-Pacific service)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 150,
+    "vessel_count_tanker": 26,
+    "vessel_count_total": 284
+   },
+   "aliases": [
+    "CLCNL"
+   ],
+   "capacity": 970,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": true,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port263: 150 container / 284 total observed vessel calls => about 970 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Chile",
+   "dominant_vessel_type": "container",
+   "id": "sea_coronel",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": -37.025469,
+   "lon": -73.162199,
+   "mode": "sea",
+   "name": "Coronel",
+   "nearest_existing_graph_port": {
+    "id": "sea_sanvicente",
+    "km": 31.6
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 2910,
+   "registry": {
+    "fullname": "Coronel, Chile",
+    "iso3": "CHL",
+    "portids": [
+     "port263"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "CPPI 2023 rank 97; Chile (Biobio)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 52,
+    "vessel_count_tanker": 135,
+    "vessel_count_total": 332
+   },
+   "aliases": [
+    "OMDQM"
+   ],
+   "capacity": 336,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port984: 52 container / 332 total observed vessel calls => about 336 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Oman",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_duqm",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 19.670667,
+   "lon": 57.717361,
+   "mode": "sea",
+   "name": "Duqm",
+   "nearest_existing_graph_port": {
+    "id": "sea_salalah",
+    "km": 497.7
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 1008,
+   "registry": {
+    "fullname": "Duqm, Oman",
+    "iso3": "OMN",
+    "portids": [
+     "port984"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "CPPI 2023 rank 158; Oman Arabian Sea port outside Hormuz"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 233,
+    "vessel_count_tanker": 4,
+    "vessel_count_total": 365
+   },
+   "aliases": [
+    "MXESE"
+   ],
+   "capacity": 1506,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": true,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port326: 233 container / 365 total observed vessel calls => about 1,506 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Mexico",
+   "dominant_vessel_type": "container",
+   "id": "sea_ensenada",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 31.849565,
+   "lon": -116.624599,
+   "mode": "sea",
+   "name": "Ensenada",
+   "nearest_existing_graph_port": {
+    "id": "sea_longbeach",
+    "km": 258.1
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 4518,
+   "registry": {
+    "fullname": "Ensenada, Mexico",
+    "iso3": "MEX",
+    "portids": [
+     "port326"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "services (2 dropped calls); Baja California container port (Pacific Mexico)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 32,
+    "vessel_count_tanker": 89,
+    "vessel_count_total": 320
+   },
+   "aliases": [
+    "LKHBA"
+   ],
+   "capacity": 207,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port678: 32 container / 320 total observed vessel calls => about 207 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Sri Lanka",
+   "dominant_vessel_type": "RoRo",
+   "id": "sea_hambantota",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 6.128669,
+   "lon": 81.094659,
+   "mode": "sea",
+   "name": "Hambantota",
+   "nearest_existing_graph_port": {
+    "id": "sea_colombo",
+    "km": 166.0
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 621,
+   "registry": {
+    "fullname": "Hambantota, Sri Lanka",
+    "iso3": "LKA",
+    "portids": [
+     "port678"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Sri Lanka south-coast deep-water port on the main east-west lane"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 0,
+    "vessel_count_tanker": 75,
+    "vessel_count_total": 91
+   },
+   "aliases": [],
+   "capacity": 280,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port2164: 0 container / 91 total observed vessel calls => about 280 TEU/day via all-traffic factor K_total = 1,122 TEU per vessel call (median over 77 CORE ports); the registry records no container calls. Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Iran",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_kharg",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 29.243073,
+   "lon": 50.335074,
+   "mode": "sea",
+   "name": "Kharg Island",
+   "nearest_existing_graph_port": {
+    "id": "sea_bandarkhomeini",
+    "km": 180.4
+   },
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 840,
+   "registry": {
+    "fullname": "Kharg Island, Iran",
+    "iso3": "IRN",
+    "portids": [
+     "port2164"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Iran's main crude export terminal inside the Gulf (registry under-counts: AIS gaps)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 70,
+    "vessel_count_tanker": 178,
+    "vessel_count_total": 293
+   },
+   "aliases": [
+    "AEKLF"
+   ],
+   "capacity": 452,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port561: 70 container / 293 total observed vessel calls => about 452 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "United Arab Emirates",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_khorfakkan",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 25.353689,
+   "lon": 56.368755,
+   "mode": "sea",
+   "name": "Khor Fakkan",
+   "nearest_existing_graph_port": {
+    "id": "sea_fujairah",
+    "km": 17.1
+   },
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 1356,
+   "registry": {
+    "fullname": "Khor Fakkan, United Arab Emirates",
+    "iso3": "ARE",
+    "portids": [
+     "port561"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Gulf-of-Oman container port outside Hormuz; named in the Hapag-Lloyd 2024 land-corridor logic; Lloyd's List tail (1.8 million TEU)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 41,
+    "vessel_count_tanker": 122,
+    "vessel_count_total": 215
+   },
+   "aliases": [
+    "AOLOB"
+   ],
+   "capacity": 265,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port656: 41 container / 215 total observed vessel calls => about 265 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Angola",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_lobito",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": -12.343494,
+   "lon": 13.565558,
+   "mode": "sea",
+   "name": "Lobito",
+   "nearest_existing_graph_port": {
+    "id": "sea_luanda",
+    "km": 397.3
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 795,
+   "registry": {
+    "fullname": "Lobito, Angola",
+    "iso3": "AGO",
+    "portids": [
+     "port656"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Atlantic head of the Lobito corridor rail to DRC/Zambia"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 96,
+    "vessel_count_tanker": 95,
+    "vessel_count_total": 394
+   },
+   "aliases": [
+    "MZMNC"
+   ],
+   "capacity": 621,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port784: 96 container / 394 total observed vessel calls => about 621 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Mozambique",
+   "dominant_vessel_type": "dry_bulk",
+   "id": "sea_nacala",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": -14.535351,
+   "lon": 40.651184,
+   "mode": "sea",
+   "name": "Nacala",
+   "nearest_existing_graph_port": {
+    "id": "sea_beira",
+    "km": 851.4
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 1863,
+   "registry": {
+    "fullname": "Nacala, Mozambique",
+    "iso3": "MOZ",
+    "portids": [
+     "port784"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Indian Ocean head of the Nacala corridor (Malawi, Zambia)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 234,
+    "vessel_count_tanker": 0,
+    "vessel_count_total": 235
+   },
+   "aliases": [
+    "ECPSJ"
+   ],
+   "capacity": 1513,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": true,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port2032: 234 container / 235 total observed vessel calls => about 1,513 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Ecuador",
+   "dominant_vessel_type": "container",
+   "id": "sea_posorja",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": -2.693394,
+   "lon": -80.247946,
+   "mode": "sea",
+   "name": "Posorja (DP World Posorja)",
+   "nearest_existing_graph_port": {
+    "id": "sea_guayaquil",
+    "km": 60.4
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 4539,
+   "registry": {
+    "fullname": "Posorja, Ecuador",
+    "iso3": "ECU",
+    "portids": [
+     "port2032"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "services (1 dropped call); Ecuador's deep-water port, CPPI 2023 rank 37 absent from graph"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 22,
+    "vessel_count_tanker": 145,
+    "vessel_count_total": 430
+   },
+   "aliases": [
+    "MASFI"
+   ],
+   "capacity": 142,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port1118: 22 container / 430 total observed vessel calls => about 142 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Morocco",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_safi",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 32.308167,
+   "lon": -9.246596,
+   "mode": "sea",
+   "name": "Safi",
+   "nearest_existing_graph_port": {
+    "id": "sea_jorflasfar",
+    "km": 107.6
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 426,
+   "registry": {
+    "fullname": "Safi, Morocco",
+    "iso3": "MAR",
+    "portids": [
+     "port1118"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "services (1 dropped call); Morocco Atlantic port on the Asia-Mediterranean Cape-route loops"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 6,
+    "vessel_count_tanker": 239,
+    "vessel_count_total": 262
+   },
+   "aliases": [
+    "MXSCX"
+   ],
+   "capacity": 39,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port1136: 6 container / 262 total observed vessel calls => about 39 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Mexico",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_salinacruz",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 16.190177,
+   "lon": -95.188465,
+   "mode": "sea",
+   "name": "Salina Cruz",
+   "nearest_existing_graph_port": {
+    "id": "sea_coatzacoalcos",
+    "km": 230.4
+   },
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 117,
+   "registry": {
+    "fullname": "Salina Cruz, Mexico",
+    "iso3": "MEX",
+    "portids": [
+     "port1136"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Pacific end of the Isthmus of Tehuantepec Interoceanic Corridor (Panama alternative)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 0,
+    "vessel_count_tanker": 365,
+    "vessel_count_total": 365
+   },
+   "aliases": [],
+   "capacity": 1122,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port2129: 0 container / 365 total observed vessel calls => about 1,122 TEU/day via all-traffic factor K_total = 1,122 TEU per vessel call (median over 77 CORE ports); the registry records no container calls. Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Egypt",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_sidikerir",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 31.095883,
+   "lon": 29.618732,
+   "mode": "sea",
+   "name": "Sidi Kerir (SUMED terminal)",
+   "nearest_existing_graph_port": {
+    "id": "sea_eldekheila",
+    "km": 19.0
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 3366,
+   "registry": {
+    "fullname": "Sidi Kerir, Egypt",
+    "iso3": "EGY",
+    "portids": [
+     "port2129"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Mediterranean end of the SUMED pipeline, the only Suez-Canal oil bypass (2.5 mb/d)"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 96,
+    "vessel_count_tanker": 38,
+    "vessel_count_total": 403
+   },
+   "aliases": [
+    "GHTKD"
+   ],
+   "capacity": 621,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port1255: 96 container / 403 total observed vessel calls => about 621 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Ghana",
+   "dominant_vessel_type": "general_cargo",
+   "id": "sea_takoradi",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 4.89173,
+   "lon": -1.741934,
+   "mode": "sea",
+   "name": "Takoradi",
+   "nearest_existing_graph_port": {
+    "id": "sea_tema",
+    "km": 209.5
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 1863,
+   "registry": {
+    "fullname": "Takoradi, Ghana",
+    "iso3": "GHA",
+    "portids": [
+     "port1255"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "Ghana's second port; West Africa coverage"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 626,
+    "vessel_count_tanker": 476,
+    "vessel_count_total": 1915
+   },
+   "aliases": [
+    "ITTRS"
+   ],
+   "capacity": 4046,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port1318: 626 container / 1,915 total observed vessel calls => about 4,046 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Italy",
+   "dominant_vessel_type": "RoRo",
+   "id": "sea_trieste",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 45.622626,
+   "lon": 13.789837,
+   "mode": "sea",
+   "name": "Trieste",
+   "nearest_existing_graph_port": {
+    "id": "sea_koper",
+    "km": 7.6
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 12138,
+   "registry": {
+    "fullname": "Trieste, Italy",
+    "iso3": "ITA",
+    "portids": [
+     "port1318"
+    ]
+   },
+   "same_complex_override": "8 km from CORE sea_koper (Slovenia): the shell builder's 8 km same-complex rule absorbed it; Trieste is Italian, different customs territory, different terminals and rail (Trieste-Villa Opicina)",
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "services (6 dropped calls); TAL pipeline head; separate country and hinterland from Koper"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 54,
+    "vessel_count_tanker": 0,
+    "vessel_count_total": 55
+   },
+   "aliases": [
+    "INVZJ"
+   ],
+   "capacity": 349,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": true,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port2150: 54 container / 55 total observed vessel calls => about 349 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "India",
+   "dominant_vessel_type": "container",
+   "id": "sea_vizhinjam",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 8.368561,
+   "lon": 76.993737,
+   "mode": "sea",
+   "name": "Vizhinjam",
+   "nearest_existing_graph_port": {
+    "id": "sea_tuticorin",
+    "km": 138.6
+   },
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 1047,
+   "registry": {
+    "fullname": "Vizhinjam, India",
+    "iso3": "IND",
+    "portids": [
+     "port2150"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "India's first deep-water transshipment port (Colombo competitor), opened 2025"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 147,
+    "vessel_count_tanker": 65,
+    "vessel_count_total": 411
+   },
+   "aliases": [
+    "NZWLG"
+   ],
+   "capacity": 950,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port1388: 147 container / 411 total observed vessel calls => about 950 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "New Zealand",
+   "dominant_vessel_type": "container",
+   "id": "sea_wellington",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": -41.256889,
+   "lon": 174.830474,
+   "mode": "sea",
+   "name": "Wellington",
+   "nearest_existing_graph_port": {
+    "id": "sea_napier",
+    "km": 265.5
+   },
+   "priority": "P2",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 2850,
+   "registry": {
+    "fullname": "Wellington, New Zealand",
+    "iso3": "NZL",
+    "portids": [
+     "port1388"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "CPPI 2023 rank 112; New Zealand capital port"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 498,
+    "vessel_count_tanker": 544,
+    "vessel_count_total": 1231
+   },
+   "aliases": [
+    "DEWVN"
+   ],
+   "capacity": 3219,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port1396: 498 container / 1,231 total observed vessel calls => about 3,219 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Germany",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_wilhelmshaven",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 53.580314,
+   "lon": 8.124444,
+   "mode": "sea",
+   "name": "Wilhelmshaven (JadeWeserPort)",
+   "nearest_existing_graph_port": {
+    "id": "sea_bremerhaven",
+    "km": 1.2
+   },
+   "priority": "P0",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 9657,
+   "registry": {
+    "fullname": "Wilhelmshaven, Germany",
+    "iso3": "DEU",
+    "portids": [
+     "port1396"
+    ]
+   },
+   "same_complex_override": "CORE sea_bremerhaven is geocoded at 53.57N 8.13E, which is Wilhelmshaven's position (the true Bremerhaven is 53.55N 8.55E, 28 km east); the 1 km same-complex rule therefore dropped Wilhelmshaven; the graph file is not edited, so the sidecar carries it",
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "services (4 dropped calls); Germany's only deep-water container port"
+  },
+  {
+   "activity": {
+    "kind": "observed_port_calls",
+    "vessel_count_container": 1,
+    "vessel_count_tanker": 316,
+    "vessel_count_total": 415
+   },
+   "aliases": [],
+   "capacity": 25,
+   "capacity_basis": "ESTIMATE",
+   "capacity_is_container_capacity": false,
+   "capacity_note": "SHELL ESTIMATE: IMF PortWatch registry portid port2033: 1 container / 415 total observed vessel calls => about 6 TEU/day via container-call factor K_container = 2,359 TEU per container call (median over 77 CORE ports; data/graph/nodes-shell.json derivation). Routing-grade throughput proxy, the same MODELED interpretation the CORE census prints.",
+   "capacity_unit": "TEU/day",
+   "country": "Korea",
+   "dominant_vessel_type": "tanker",
+   "id": "sea_yeosu",
+   "inventory_days": 7.0,
+   "kind": "port",
+   "lat": 34.750509,
+   "lon": 127.760942,
+   "mode": "sea",
+   "name": "Yeosu",
+   "nearest_existing_graph_port": {
+    "id": "sea_gwangyang",
+    "km": 14.9
+   },
+   "priority": "P1",
+   "provenance": {
+    "mode": "SNAPSHOT",
+    "retrieved_at": "2026-10-25",
+    "source": "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   },
+   "queue_cap": 75,
+   "registry": {
+    "fullname": "Port of Yeosu, Korea",
+    "iso3": "KOR",
+    "portids": [
+     "port2033"
+    ]
+   },
+   "sources": [
+    "https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/PortWatch_ports_database/FeatureServer/0/query"
+   ],
+   "tier": "shell",
+   "why": "CPPI 2023 rank 20; Korean south-coast energy and container port 20 km from Gwangyang"
+  }
+ ],
+ "retrieved_at": "2026-10-25",
+ "schema": "supermap.graph_extra.candidates/1",
+ "status": "CANDIDATES - not wired into any engine; sidecar data/graph/extra.json does not exist yet",
+ "summary": {
+  "places": 33,
+  "places_by_tier_kind": {
+   "core_ext/chokepoint": 4,
+   "shell/air_hub": 2,
+   "shell/ground_node": 5,
+   "shell/port": 22
+  }
+ }
+}

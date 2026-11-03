@@ -1,0 +1,76 @@
+{
+ "attribution": "Contains modified Copernicus Sentinel data, processed via Microsoft Planetary Computer",
+ "basis": "SOURCED",
+ "bounds": [
+  -118.24,
+  33.74,
+  -118.16,
+  33.79
+ ],
+ "bytes": 274049,
+ "candidates_screened": [
+  {
+   "cloud_pct_aoi": 0.35,
+   "date": "2026-10-14",
+   "id": "S2C_MSIL2A_20261014T183331_R027_T11SLT_20261014T215413",
+   "nodata_pct_aoi": 0.0
+  },
+  {
+   "cloud_pct_aoi": 0.37,
+   "date": "2026-10-04",
+   "id": "S2C_MSIL2A_20261004T183221_R027_T11SLT_20261004T230904",
+   "nodata_pct_aoi": 0.01
+  },
+  {
+   "cloud_pct_aoi": 0.1,
+   "date": "2026-10-24",
+   "id": "S2C_MSIL2A_20261024T183431_R027_T11SLT_20261024T214812",
+   "nodata_pct_aoi": 0.0
+  },
+  {
+   "cloud_pct_aoi": 0.37,
+   "date": "2026-09-29",
+   "id": "S2B_MSIL2A_20260929T183149_R027_T11SLT_20260929T233907",
+   "nodata_pct_aoi": 0.01
+  },
+  {
+   "cloud_pct_aoi": 0.19,
+   "date": "2026-08-10",
+   "id": "S2B_MSIL2A_20260810T182919_R027_T11SLT_20260810T221732",
+   "nodata_pct_aoi": 0.0
+  },
+  {
+   "cloud_pct_aoi": 0.27,
+   "date": "2026-04-29",
+   "id": "S2A_MSIL2A_20260429T183831_R027_T11SLT_20260430T031512",
+   "nodata_pct_aoi": 0.01
+  },
+  {
+   "cloud_pct_aoi": 0.26,
+   "date": "2026-05-19",
+   "id": "S2A_MSIL2A_20260519T183831_R027_T11SLT_20260520T024816",
+   "nodata_pct_aoi": 0.0
+  },
+  {
+   "cloud_pct_aoi": 0.26,
+   "date": "2026-08-17",
+   "id": "S2A_MSIL2A_20260817T183831_R027_T11SLT_20260818T025509",
+   "nodata_pct_aoi": 0.01
+  }
+ ],
+ "cloud_pct_aoi": 0.1,
+ "cloud_pct_tile": 0.004011,
+ "height_px": 553,
+ "label": "Sentinel-2 true colour underlay (SOURCED)",
+ "note": "Sentinel-2 L2A true colour at 10 m per pixel. It shows basins, terminals and land cover; it cannot resolve ships, containers or berth slots. Scene date is the acquisition date, not today.",
+ "place_id": "sea_longbeach",
+ "platform": "Sentinel-2C",
+ "resolution_m": 10,
+ "scene_date": "2026-10-24",
+ "scene_datetime": "2026-10-24T18:34:31.025000Z",
+ "scene_id": "S2C_MSIL2A_20261024T183431_R027_T11SLT_20261024T214812",
+ "schema": "port-imagery/1",
+ "sha256": "b477153a3737682fe5dda9ca14a80d52f7eda197dde631a103ea6142a9e1c6ab",
+ "source": "Microsoft Planetary Computer / Sentinel-2 L2A",
+ "width_px": 740
+}

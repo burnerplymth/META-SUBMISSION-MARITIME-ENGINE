@@ -1,0 +1,34 @@
+PORT TWIN GEOMETRY - LICENCE AND ATTRIBUTION
+============================================
+
+The vector files in this directory (*.geojson, profiles/*.json,
+manifest.json) are DERIVED from OpenStreetMap data.
+
+    (c) OpenStreetMap contributors
+
+OpenStreetMap data is made available under the Open Database Licence
+(ODbL) 1.0:  https://opendatacommons.org/licenses/odbl/1-0/
+Copyright and licence notice: https://www.openstreetmap.org/copyright
+
+What was done to the data (a "Derived Database" / "Produced Work" under
+the ODbL): tiles were fetched from the OpenStreetMap API 0.6 /map call
+on the retrieval date recorded in each file; objects were classified
+into layers, clipped to a per-port rectangle, simplified with a fixed
+Douglas-Peucker tolerance, coordinates quantised to 1e-5 degree, and
+small objects dropped to keep each file under ~400 KB.  Profiles
+(profiles/*.json) are MODELLED estimates computed from that geometry.
+
+Obligations to carry forward when you redistribute these files (summary,
+NOT legal advice - read the licence):
+  * keep the attribution "(c) OpenStreetMap contributors" visible wherever
+    the data or a map made from it is shown;
+  * state that the data is available under the ODbL and link the licence;
+  * a publicly distributed Derived Database must itself be offered under
+    the ODbL (share-alike), and the changes to the data are to be
+    identifiable;
+  * a map image rendered from the data (a Produced Work) needs the
+    attribution but is not itself share-alike.
+
+The Sentinel-2 underlays in imagery/ are separate: Copernicus Sentinel
+data, free and open under the Copernicus data terms; see
+imagery/<place>.json for the scene id, date and attribution string.
