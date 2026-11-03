@@ -1,0 +1,27 @@
+/* RETRO theme family: Orbitron (SIL OFL 1.1 — licence travels with
+ * the files as ./fonts/orbitron-OFL.txt), self-hosted exactly like the
+ * IBM Plex Sans / IBM Plex Mono faces in fonts.css: bundled by Vite from
+ * src/assets/fonts/, never fetched from a CDN at runtime. Loaded for
+ * every theme but only APPLIED under the retro themes (styles.css
+ * scopes font-family: var(--font-display) to the retro selectors). */
+@font-face {
+  font-family: "Orbitron";
+  src: url("./fonts/orbitron-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("./fonts/orbitron-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("./fonts/orbitron-latin-900-normal.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

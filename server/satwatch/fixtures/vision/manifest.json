@@ -1,0 +1,28 @@
+{
+ "entries": [
+  {
+   "source": "sentinel-2",
+   "place": "sea_singapore",
+   "role": "now",
+   "crop_file": "sea_singapore_now_2026-10-06.png",
+   "crop_sha256": "0ac7ad69e95e7fe168e4a5ec26f1939a9f2600fdd45485a1354daf89d1eeeaa5",
+   "reply": "reply_sea_singapore_sentinel-2_now.json",
+   "recorded_at": "2026-10-28",
+   "model": "muse-spark-1.3",
+   "prompt_id": "satvision@v1",
+   "note": "real Muse Spark reply, recorded from the live API"
+  },
+  {
+   "source": "sentinel-2",
+   "place": "sea_rotterdam",
+   "role": "now",
+   "crop_file": "sea_rotterdam_now_2026-10-08.png",
+   "crop_sha256": "86843240637d0ebbe61b9ef1b05561ef4c2363f283ae6680384be2a97f749bf4",
+   "reply": "reply_sea_rotterdam_sentinel-2_now.json",
+   "recorded_at": "2026-10-28",
+   "model": "muse-spark-1.3",
+   "prompt_id": "satvision@v1",
+   "note": "real Muse Spark reply, recorded from the live API"
+  }
+ ]
+}

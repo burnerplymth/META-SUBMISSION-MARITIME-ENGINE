@@ -1,0 +1,10 @@
+{
+ "text": "{\"cannot_see\": [\"vessel type, name, flag, or cargo\", \"loaded state or direction of travel\", \"anything smaller than about three pixels\", \"detail hidden by cloud, haze or shadow in lower portion\"], \"confidence\": 0.65, \"congestion_cues\": [\"water area shows scattered small elongated shapes consistent with anchored vessels\", \"distribution looks spread across central water rather than clustered at quays\", \"haze and cloud limit clarity of fainter shapes\"], \"congestion_level\": \"moderate\", \"image_quality\": \"cloud_affected\", \"limits\": [\"10 m per pixel means small hulls are only a few pixels and cannot be typed\", \"this read is a model reading of one crop, not a count and not ground truth\"], \"scene\": \"a coastal water area with land along the top edge and cloud over the lower water\", \"visible_features\": [{\"detail\": \"curved shoreline across upper part of crop with land to the north\", \"label\": \"coastline\"}, {\"detail\": \"broad blue-grey water area occupying most of crop\", \"label\": \"water area\"}, {\"detail\": \"mottled urban and vegetated texture along northern land edge\", \"label\": \"coastal land area\"}, {\"detail\": \"many tiny dark and reddish elongated specks scattered on water, consistent with vessels\", \"label\": \"elongated shapes on water\"}, {\"detail\": \"bright white puffy patches with dark shadows over southern water\", \"label\": \"cloud cover\"}, {\"detail\": \"general pale veil reducing contrast, especially over water\", \"label\": \"haze\"}]}",
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28",
+ "prompt_id": "satvision@v1",
+ "cost_usd": 0.005569,
+ "tokens_in": 1858,
+ "tokens_out": 515,
+ "structured_output": true
+}

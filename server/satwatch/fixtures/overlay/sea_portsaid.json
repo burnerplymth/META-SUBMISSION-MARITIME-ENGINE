@@ -1,0 +1,433 @@
+{
+ "contract": "satwatch-overlay/1",
+ "coord_space": "norm1000",
+ "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+ "counts": {
+  "ambiguous_excluded_baseline": 6,
+  "ambiguous_excluded_now": 18,
+  "anchorage_baseline": 25,
+  "anchorage_now": 12,
+  "berth_baseline": 0,
+  "berth_now": 0,
+  "count_basis": "anchorage_zone",
+  "counted_by": "reference-counts",
+  "frame_vessels_baseline": 25,
+  "frame_vessels_now": 12,
+  "transit_baseline": 0,
+  "transit_now": 0,
+  "vessels": 12,
+  "vessels_baseline": 25,
+  "vessels_delta": -13,
+  "vessels_now": 12,
+  "yard_baseline": "not_visible",
+  "yard_now": "not_visible"
+ },
+ "crops": {
+  "baseline": {
+   "cloud_pct_aoi": 10.41,
+   "cloud_pct_tile": 15.76943,
+   "file": "sea_portsaid_baseline_2026-09-19.png",
+   "scene_date": "2026-09-19",
+   "scene_id": "S2B_MSIL2A_20260919T082559_R021_T36RVV_20260919T122802",
+   "url": "/satwatch/crops/sea_portsaid_baseline_2026-09-19.png"
+  },
+  "now": {
+   "cloud_pct_aoi": 10.7,
+   "cloud_pct_tile": 20.219734,
+   "file": "sea_portsaid_now_2026-10-19.png",
+   "scene_date": "2026-10-19",
+   "scene_id": "S2B_MSIL2A_20261019T082939_R021_T36RVV_20261019T123214",
+   "url": "/satwatch/crops/sea_portsaid_now_2026-10-19.png"
+  }
+ },
+ "delta": -13,
+ "detections": [
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0001",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    62,
+    34
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0002",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    500,
+    63
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0003",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    649,
+    87
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0004",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    795,
+    148
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0005",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    354,
+    227
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0006",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    619,
+    218
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0007",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    768,
+    204
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0008",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    803,
+    230
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0009",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    919,
+    217
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0010",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    355,
+    395
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0011",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    405,
+    640
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_portsaid:now:0012",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    442,
+    747
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 10.7,
+    "cloud_pct_tile": 20.219734,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+   },
+   "zone": "anchorage"
+  }
+ ],
+ "human_reviewed": false,
+ "imagery_dates": {
+  "baseline": "2026-09-19",
+  "now": "2026-10-19"
+ },
+ "name": "Port Said / Suez North Anchorage",
+ "node_id": "sea_portsaid",
+ "not_served_reason": null,
+ "note": "REFERENCE COUNTS (offline): reference counts recorded offline over the baked Sentinel-2 crops - NOT Meta SAM, NOT live. Reference count over the baked crops; offline replay, not a live detection",
+ "per_crop": {
+  "baseline": {
+   "counted": true,
+   "crop_id": "sea_portsaid_baseline_2026-09-19.png",
+   "n_localised": 0,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "baseline",
+   "scene_date": "2026-09-19",
+   "status": "OK",
+   "visibility": "Large cloud mass covering the NW ~20-25% of the frame may hide vessels there; the central, southern and NE anchorage areas are mostly clear with only small SE cloud patches."
+  },
+  "now": {
+   "counted": true,
+   "crop_id": "sea_portsaid_now_2026-10-19.png",
+   "n_localised": 12,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "status": "OK",
+   "visibility": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable."
+  }
+ },
+ "provider": "reference-counts",
+ "provider_label": "REFERENCE COUNTS - OFFLINE",
+ "served": true,
+ "status": "OK",
+ "usable_pair": true,
+ "verification": "Detected, not verified"
+}

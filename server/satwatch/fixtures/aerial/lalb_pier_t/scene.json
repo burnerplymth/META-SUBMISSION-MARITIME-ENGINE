@@ -1,0 +1,74 @@
+{
+ "acquisition_label": "Aerial survey 2022",
+ "attribution": {
+  "chip": "USDA \u00b7 NAIP",
+  "licence": "USDA NAIP imagery: public domain",
+  "text": "Imagery courtesy of USDA Farm Service Agency (NAIP), via USGS"
+ },
+ "badge": "Aerial 0.6 m, 2022",
+ "bbox_ll": [
+  -118.2497,
+  33.7301,
+  -118.2432,
+  33.7355
+ ],
+ "contract": "satwatch-aerial-scene/1",
+ "crop": {
+  "bytes": 1689385,
+  "committed": false,
+  "content_type": "image/png",
+  "file": "lalb_pier_t.png",
+  "sha256": "f6b1c137d4269e7eb689851b21e7e87d5303c6a1f8ca43a5852e1ae736cb1796"
+ },
+ "georef": {
+  "bbox": [
+   -118.2497,
+   33.7301,
+   -118.2432,
+   33.7355
+  ],
+  "kind": "ll"
+ },
+ "gsd_m": 0.6,
+ "item": "ca_m_3311823_nw_11_060_20220511",
+ "item_date": "2022-05-11",
+ "mode": "SNAPSHOT",
+ "name": "Long Beach container terminal",
+ "nodata_pct": 0.0,
+ "recorded": [
+  {
+   "phrase": "container ship",
+   "recorded_at": "2026-10-29",
+   "reply": "container-ship_t0.sse",
+   "tile": 0
+  },
+  {
+   "phrase": "crane",
+   "recorded_at": "2026-10-29",
+   "reply": "crane_t0.sse",
+   "tile": 0
+  },
+  {
+   "phrase": "ship",
+   "recorded_at": "2026-10-29",
+   "reply": "ship_t0.sse",
+   "tile": 0
+  },
+  {
+   "phrase": "vessel",
+   "recorded_at": "2026-10-29",
+   "reply": "vessel_t0.sse",
+   "tile": 0
+  }
+ ],
+ "retrieved_at": "2026-10-29T06:07:12Z",
+ "scene_id": "lalb_pier_t",
+ "size_px": [
+  1003,
+  995
+ ],
+ "source": "naip",
+ "source_label": "NAIP AERIAL",
+ "year": 2022,
+ "year_basis": "item date"
+}

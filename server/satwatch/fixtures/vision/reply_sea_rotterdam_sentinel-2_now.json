@@ -1,0 +1,10 @@
+{
+ "text": "{\"cannot_see\": [\"vessel type, name, flag, or cargo\", \"loaded state or direction of travel\", \"anything smaller than about three pixels, roughly 30 m\", \"areas hidden by cloud, cloud shadow, or haze\"], \"confidence\": 0.35, \"congestion_cues\": [], \"congestion_level\": \"cannot_assess\", \"image_quality\": \"cloud_affected\", \"limits\": [\"heavy cloud and shadow cover prevents reliable assessment of water activity\", \"10 m per pixel read is a model reading, not a count and not ground truth\"], \"scene\": \"A cloud-obscured coastal port area with open water, shoreline, and terminal land consistent with Rotterdam / Europoort Anchorage on 2026-10-08.\", \"visible_features\": [{\"detail\": \"greenish open water to north and west, partly obscured by cloud and shadow\", \"label\": \"coastal water\"}, {\"detail\": \"sandy-looking shoreline along northeast edge with surf line, consistent with coast\", \"label\": \"coastline\"}, {\"detail\": \"dark waterway entrance between breakwaters leading into inner basins\", \"label\": \"harbour entrance channel\"}, {\"detail\": \"land masses with blocky industrial patterns, basins and quays, partly visible through gaps\", \"label\": \"terminal and yard areas\"}, {\"detail\": \"bright white puffy patches covering central and western port areas\", \"label\": \"cloud cover\"}, {\"detail\": \"dark patches over water and land adjacent to clouds, consistent with shadows\", \"label\": \"cloud shadows\"}, {\"detail\": \"small bright and dark elongated specks on open channel water, consistent with wakes or small objects but not identifiable\", \"label\": \"elongated shapes on water\"}]}",
+ "model": "muse-spark-1.3",
+ "recorded_at": "2026-10-28",
+ "prompt_id": "satvision@v1",
+ "cost_usd": 0.005404,
+ "tokens_in": 1861,
+ "tokens_out": 476,
+ "structured_output": true
+}

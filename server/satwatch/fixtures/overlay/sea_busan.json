@@ -1,0 +1,172 @@
+{
+ "contract": "satwatch-overlay/1",
+ "coord_space": "norm1000",
+ "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+ "counts": {
+  "ambiguous_excluded_baseline": 9,
+  "ambiguous_excluded_now": 15,
+  "anchorage_baseline": 1,
+  "anchorage_now": 3,
+  "berth_baseline": 0,
+  "berth_now": 0,
+  "count_basis": "anchorage_zone",
+  "counted_by": "reference-counts",
+  "frame_vessels_baseline": 3,
+  "frame_vessels_now": 3,
+  "transit_baseline": 2,
+  "transit_now": 0,
+  "vessels": 3,
+  "vessels_baseline": 1,
+  "vessels_delta": 2,
+  "vessels_now": 3,
+  "yard_baseline": "moderate",
+  "yard_now": "high"
+ },
+ "crops": {
+  "baseline": {
+   "cloud_pct_aoi": 11.94,
+   "cloud_pct_tile": 19.985664,
+   "file": "sea_busan_baseline_2026-09-15.png",
+   "scene_date": "2026-09-15",
+   "scene_id": "S2B_MSIL2A_20260915T020649_R103_T52SED_20260915T050939",
+   "url": "/satwatch/crops/sea_busan_baseline_2026-09-15.png"
+  },
+  "now": {
+   "cloud_pct_aoi": 0.01,
+   "cloud_pct_tile": 25.99088,
+   "file": "sea_busan_now_2026-10-15.png",
+   "scene_date": "2026-10-15",
+   "scene_id": "S2B_MSIL2A_20261015T020649_R103_T52SED_20261015T041343",
+   "url": "/satwatch/crops/sea_busan_now_2026-10-15.png"
+  }
+ },
+ "delta": 2,
+ "detections": [
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_busan_now_2026-10-15.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_busan:now:0001",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    241,
+    404
+   ],
+   "role": "now",
+   "scene_date": "2026-10-15",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 0.01,
+    "cloud_pct_tile": 25.99088,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Essentially clear (stated 0.01% cloud): open water, anchorage and both container terminals fully visible; count is visible-only but no area is obscured. At 10 m/px hulls are only 1-3 px wide, so length is the discriminator."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_busan_now_2026-10-15.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_busan:now:0002",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    121,
+    664
+   ],
+   "role": "now",
+   "scene_date": "2026-10-15",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 0.01,
+    "cloud_pct_tile": 25.99088,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Essentially clear (stated 0.01% cloud): open water, anchorage and both container terminals fully visible; count is visible-only but no area is obscured. At 10 m/px hulls are only 1-3 px wide, so length is the discriminator."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_busan_now_2026-10-15.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_busan:now:0003",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    90,
+    713
+   ],
+   "role": "now",
+   "scene_date": "2026-10-15",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 0.01,
+    "cloud_pct_tile": 25.99088,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Essentially clear (stated 0.01% cloud): open water, anchorage and both container terminals fully visible; count is visible-only but no area is obscured. At 10 m/px hulls are only 1-3 px wide, so length is the discriminator."
+   },
+   "zone": "anchorage"
+  }
+ ],
+ "human_reviewed": false,
+ "imagery_dates": {
+  "baseline": "2026-09-15",
+  "now": "2026-10-15"
+ },
+ "name": "Busan Anchorage",
+ "node_id": "sea_busan",
+ "not_served_reason": null,
+ "note": "REFERENCE COUNTS (offline): reference counts recorded offline over the baked Sentinel-2 crops - NOT Meta SAM, NOT live. Reference count over the baked crops; offline replay, not a live detection",
+ "per_crop": {
+  "baseline": {
+   "counted": true,
+   "crop_id": "sea_busan_baseline_2026-09-15.png",
+   "n_localised": 0,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "baseline",
+   "scene_date": "2026-09-15",
+   "status": "OK",
+   "visibility": "Partly cloudy (stated 11.9%): a large cloud deck covers the western port and the east-west container terminal and parts of the NW land, so the berth count is visible-only and may undercount; the southern/western anchorage, the north-south terminal and the offshore approach lane are largely clear."
+  },
+  "now": {
+   "counted": true,
+   "crop_id": "sea_busan_now_2026-10-15.png",
+   "n_localised": 3,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "now",
+   "scene_date": "2026-10-15",
+   "status": "OK",
+   "visibility": "Essentially clear (stated 0.01% cloud): open water, anchorage and both container terminals fully visible; count is visible-only but no area is obscured. At 10 m/px hulls are only 1-3 px wide, so length is the discriminator."
+  }
+ },
+ "provider": "reference-counts",
+ "provider_label": "REFERENCE COUNTS - OFFLINE",
+ "served": true,
+ "status": "OK",
+ "usable_pair": true,
+ "verification": "Detected, not verified"
+}

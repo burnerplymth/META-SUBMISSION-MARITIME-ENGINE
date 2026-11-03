@@ -1,0 +1,662 @@
+{
+ "kind": "reference_detections",
+ "method": "Reference counts per site over the baked 1200x1200 Sentinel-2 crops, conservative countable class >= ~150 m LOA; ambiguous specks excluded and tallied. Localisations are approximate points in 0-1000 normalised image coordinates - no masks and no measured bounding boxes.",
+ "sites": {
+  "sea_portsaid": {
+   "now_scene_date": "2026-10-19",
+   "baseline_scene_date": "2026-09-19",
+   "counting_basis": "Reference count over the baked crops; offline replay, not a live detection",
+   "now": {
+    "anchorage": 12,
+    "berth": 0,
+    "transit": 0,
+    "total": 12,
+    "ambiguous_excluded": 18,
+    "visibility": "Heavy scattered white cloud and black cloud shadows across the northern ~50% of the frame obscuring part of the anchorage; southern half mostly clear, so counts there are more reliable.",
+    "detections": [
+     {
+      "x": 62,
+      "y": 34,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 500,
+      "y": 63,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 649,
+      "y": 87,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 795,
+      "y": 148,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 354,
+      "y": 227,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 619,
+      "y": 218,
+      "zone": "anchorage",
+      "class": "other large vessel"
+     },
+     {
+      "x": 768,
+      "y": 204,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 803,
+      "y": 230,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 919,
+      "y": 217,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 355,
+      "y": 395,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 405,
+      "y": 640,
+      "zone": "anchorage",
+      "class": "other large vessel"
+     },
+     {
+      "x": 442,
+      "y": 747,
+      "zone": "anchorage",
+      "class": "other large vessel"
+     }
+    ]
+   },
+   "baseline": {
+    "anchorage": 25,
+    "berth": 0,
+    "transit": 0,
+    "total": 25,
+    "ambiguous_excluded": 6,
+    "visibility": "Large cloud mass covering the NW ~20-25% of the frame may hide vessels there; the central, southern and NE anchorage areas are mostly clear with only small SE cloud patches."
+   },
+   "yard": {
+    "now": "not_visible",
+    "baseline": "not_visible",
+    "basis": "No port land, quays, terminals or container stack blocks are visible in either crop; both frames are essentially all open water with only a faint sediment tint at the very bottom edge, so no yard density can be rated."
+   }
+  },
+  "sea_singapore": {
+   "now_scene_date": "2026-10-06",
+   "baseline_scene_date": "2026-09-06",
+   "counting_basis": "Reference count over the baked crops; offline replay, not a live detection",
+   "now": {
+    "anchorage": 60,
+    "berth": 0,
+    "transit": 7,
+    "total": 67,
+    "ambiguous_excluded": 14,
+    "visibility": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible.",
+    "detections": [
+     {
+      "x": 592,
+      "y": 288,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 647,
+      "y": 287,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 542,
+      "y": 297,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 694,
+      "y": 307,
+      "zone": "anchorage",
+      "class": "tanker"
+     },
+     {
+      "x": 278,
+      "y": 315,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 375,
+      "y": 326,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 558,
+      "y": 326,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 593,
+      "y": 331,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 465,
+      "y": 332,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 497,
+      "y": 330,
+      "zone": "anchorage",
+      "class": "tanker"
+     },
+     {
+      "x": 307,
+      "y": 343,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 712,
+      "y": 346,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 135,
+      "y": 361,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 340,
+      "y": 365,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 232,
+      "y": 366,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 173,
+      "y": 372,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 595,
+      "y": 371,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 564,
+      "y": 380,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 108,
+      "y": 380,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 693,
+      "y": 398,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 744,
+      "y": 398,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 805,
+      "y": 396,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 636,
+      "y": 409,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 28,
+      "y": 414,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 561,
+      "y": 416,
+      "zone": "anchorage",
+      "class": "tanker"
+     },
+     {
+      "x": 282,
+      "y": 426,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 408,
+      "y": 426,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 373,
+      "y": 431,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 77,
+      "y": 435,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 333,
+      "y": 453,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 475,
+      "y": 456,
+      "zone": "anchorage",
+      "class": "container ship"
+     },
+     {
+      "x": 199,
+      "y": 484,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 294,
+      "y": 487,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 405,
+      "y": 482,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 250,
+      "y": 501,
+      "zone": "anchorage",
+      "class": "tanker"
+     },
+     {
+      "x": 150,
+      "y": 515,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 111,
+      "y": 534,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 491,
+      "y": 544,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 150,
+      "y": 549,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 179,
+      "y": 569,
+      "zone": "anchorage",
+      "class": "tanker"
+     },
+     {
+      "x": 139,
+      "y": 582,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 224,
+      "y": 589,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 714,
+      "y": 525,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 393,
+      "y": 429,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 249,
+      "y": 461,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 168,
+      "y": 640,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 116,
+      "y": 662,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 427,
+      "y": 662,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 71,
+      "y": 701,
+      "zone": "anchorage",
+      "class": "other large vessel"
+     },
+     {
+      "x": 13,
+      "y": 704,
+      "zone": "anchorage",
+      "class": "other large vessel"
+     },
+     {
+      "x": 263,
+      "y": 708,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 341,
+      "y": 698,
+      "zone": "anchorage",
+      "class": "other large vessel"
+     },
+     {
+      "x": 808,
+      "y": 344,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 671,
+      "y": 341,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 632,
+      "y": 326,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 401,
+      "y": 328,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 332,
+      "y": 327,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 38,
+      "y": 627,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 62,
+      "y": 608,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 548,
+      "y": 593,
+      "zone": "anchorage",
+      "class": "other large vessel"
+     },
+     {
+      "x": 972,
+      "y": 205,
+      "zone": "transit",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 877,
+      "y": 461,
+      "zone": "transit",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 973,
+      "y": 486,
+      "zone": "transit",
+      "class": "other large vessel"
+     },
+     {
+      "x": 931,
+      "y": 575,
+      "zone": "transit",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 883,
+      "y": 636,
+      "zone": "transit",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 834,
+      "y": 687,
+      "zone": "transit",
+      "class": "other large vessel"
+     },
+     {
+      "x": 815,
+      "y": 701,
+      "zone": "transit",
+      "class": "other large vessel"
+     }
+    ]
+   },
+   "baseline": {
+    "anchorage": 42,
+    "berth": 0,
+    "transit": 10,
+    "total": 52,
+    "ambiguous_excluded": 9,
+    "visibility": "Moderate to good - mostly clear with light haze; small bright cloud cluster SE covering ~8-10% of water, remainder countable."
+   },
+   "yard": {
+    "now": "not_visible",
+    "baseline": "not_visible",
+    "basis": "North edge is urban Singapore coast and Changi airport apron; no container terminal, cranes or container stacks discernible at 10 m/px in either crop, only a small marina/port inset top-right."
+   }
+  },
+  "sea_rotterdam": {
+   "now_scene_date": "2026-10-08",
+   "baseline_scene_date": "2026-09-09",
+   "counting_basis": "Reference count over the baked crops; offline replay, not a live detection",
+   "now": {
+    "anchorage": 0,
+    "berth": 3,
+    "transit": 0,
+    "total": 3,
+    "ambiguous_excluded": 5,
+    "visibility": "poor - ~30.6% cloud stated, harbour basins and central Maasvlakte ~35-40% obscured by cloud/shadow, only cloud-free water and quays counted",
+    "detections": [
+     {
+      "x": 336,
+      "y": 668,
+      "zone": "berth",
+      "class": "container ship"
+     },
+     {
+      "x": 562,
+      "y": 545,
+      "zone": "berth",
+      "class": "tanker"
+     },
+     {
+      "x": 690,
+      "y": 530,
+      "zone": "berth",
+      "class": "tanker"
+     }
+    ]
+   },
+   "baseline": {
+    "anchorage": 0,
+    "berth": 5,
+    "transit": 0,
+    "total": 5,
+    "ambiguous_excluded": 6,
+    "visibility": "good - ~6.1% cloud stated, most Maasvlakte/Europoort basins visible; small cloud over west basin and south, black no-data strip on east edge"
+   },
+   "yard": {
+    "now": "low",
+    "baseline": "moderate",
+    "basis": "Baseline: colourful container stack blocks clearly visible at Maasvlakte west and east terminals but yards not full. Now: only SW terminal stacks partly visible, east terminals largely cloud-covered."
+   }
+  },
+  "sea_busan": {
+   "now_scene_date": "2026-10-15",
+   "baseline_scene_date": "2026-09-15",
+   "counting_basis": "Reference count over the baked crops; offline replay, not a live detection",
+   "now": {
+    "anchorage": 3,
+    "berth": 0,
+    "transit": 0,
+    "total": 3,
+    "ambiguous_excluded": 15,
+    "visibility": "Essentially clear (stated 0.01% cloud): open water, anchorage and both container terminals fully visible; count is visible-only but no area is obscured. At 10 m/px hulls are only 1-3 px wide, so length is the discriminator.",
+    "detections": [
+     {
+      "x": 241,
+      "y": 404,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 121,
+      "y": 664,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     },
+     {
+      "x": 90,
+      "y": 713,
+      "zone": "anchorage",
+      "class": "cargo vessel"
+     }
+    ]
+   },
+   "baseline": {
+    "anchorage": 1,
+    "berth": 0,
+    "transit": 2,
+    "total": 3,
+    "ambiguous_excluded": 9,
+    "visibility": "Partly cloudy (stated 11.9%): a large cloud deck covers the western port and the east-west container terminal and parts of the NW land, so the berth count is visible-only and may undercount; the southern/western anchorage, the north-south terminal and the offshore approach lane are largely clear."
+   },
+   "yard": {
+    "now": "high",
+    "baseline": "moderate",
+    "basis": "NOW: dense multicolour container stack blocks fill both the east-west and north-south terminals in the harbour crop. Baseline: stacks are clearly visible on the cloud-free north-south terminal, but the east-west terminal yard is under cloud, so density there cannot be assessed."
+   }
+  },
+  "sea_jebelali": {
+   "now_scene_date": "2026-10-19",
+   "baseline_scene_date": "2026-09-19",
+   "counting_basis": "Reference count over the baked crops; offline replay, not a live detection",
+   "now": {
+    "anchorage": 0,
+    "berth": 1,
+    "transit": 0,
+    "total": 1,
+    "ambiguous_excluded": 5,
+    "visibility": "clear - no cloud in crop, dark teal sea, port and yard detail sharp, slight dust haze only",
+    "detections": [
+     {
+      "x": 461,
+      "y": 750,
+      "zone": "berth",
+      "class": "other large vessel"
+     }
+    ]
+   },
+   "baseline": {
+    "anchorage": 0,
+    "berth": 1,
+    "transit": 0,
+    "total": 1,
+    "ambiguous_excluded": 4,
+    "visibility": "clear - no cloud in crop, dark teal sea, port and yard detail sharp"
+   },
+   "yard": {
+    "now": "high",
+    "baseline": "high",
+    "basis": "Dense multicoloured container stack blocks fill most of both Terminal 1 (south) and Terminal 2 (north island) yards in both crops."
+   }
+  }
+ }
+}

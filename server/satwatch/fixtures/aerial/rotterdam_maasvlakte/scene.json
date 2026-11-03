@@ -1,0 +1,67 @@
+{
+ "acquisition_label": "Aerial survey 2025",
+ "attribution": {
+  "chip": "PDOK \u00b7 CC BY",
+  "licence": "CC BY 4.0 (PDOK service metadata: open data, cc-by)",
+  "text": "Luchtfoto 2025, Beeldmateriaal Nederland, via PDOK (CC BY 4.0)"
+ },
+ "badge": "Aerial 0.25 m, 2025",
+ "bbox_ll": [
+  4.045808,
+  51.946335,
+  4.053192,
+  51.948665
+ ],
+ "contract": "satwatch-aerial-scene/1",
+ "crop": {
+  "bytes": 426670,
+  "committed": false,
+  "content_type": "image/jpeg",
+  "file": "rotterdam_maasvlakte.jpg",
+  "sha256": "5c90e780d4ceb8da256ce17dc5ca17ec564194d0e1e413b3bf0b2f67d06eaa9a"
+ },
+ "georef": {
+  "e0": 571880.035,
+  "epsg": 25831,
+  "gsd_m": 0.25,
+  "kind": "utm",
+  "n1": 5755845.275,
+  "zone": 31
+ },
+ "gsd_m": 0.25,
+ "item": null,
+ "item_date": null,
+ "mode": "SNAPSHOT",
+ "name": "Rotterdam Maasvlakte berths",
+ "nodata_pct": 0.0,
+ "recorded": [
+  {
+   "phrase": "ship",
+   "recorded_at": "2026-10-29",
+   "reply": "ship_t0.sse",
+   "tile": 0
+  },
+  {
+   "phrase": "ship",
+   "recorded_at": "2026-10-29",
+   "reply": "ship_t1.sse",
+   "tile": 1
+  },
+  {
+   "phrase": "ship",
+   "recorded_at": "2026-10-29",
+   "reply": "ship_t2.sse",
+   "tile": 2
+  }
+ ],
+ "retrieved_at": "2026-10-29T06:07:30Z",
+ "scene_id": "rotterdam_maasvlakte",
+ "size_px": [
+  2016,
+  1008
+ ],
+ "source": "pdok-nl",
+ "source_label": "PDOK LUCHTFOTO 25 CM",
+ "year": 2025,
+ "year_basis": "layer name"
+}

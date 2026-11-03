@@ -1,0 +1,103 @@
+/* Meta AI surfaces. Tokens only; every text colour
+ * here is one of the contrast-gated text tokens (--text, --text-2, --text-3,
+ * --st-live, --st-down, --st-notserved, --accent-text) on a gated surface.
+ * Sentence case throughout: no letter-spacing, no uppercase. */
+
+/* ---- the AI badge: quiet, no border ------------------------------- */
+.metachip-wrap { display: inline-flex; vertical-align: middle; max-width: 100%; }
+.ai-badge, .ai-status { display: inline-flex; align-items: center; gap: 4px; height: var(--chip-h); padding: 0 4px; border: 0; border-radius: var(--r-1);
+  background: transparent; color: var(--text-3); font: inherit; font-size: var(--t-label); line-height: 1; white-space: nowrap; cursor: pointer; max-width: 100%; }
+.ai-badge:hover, .ai-status:hover { color: var(--text-2); background: var(--hover); }
+.ai-badge-ico { flex: none; }
+.ai-badge-w, .ai-status-w { overflow: hidden; text-overflow: ellipsis; }
+/* the mode mark: solid dot Live, ring Recorded, slashed ring Unavailable. Live
+ * is the only one that takes the live colour; recorded stays neutral. */
+.ai-mark { display: inline-flex; flex: none; color: var(--text-3); }
+.ai-mark--live { color: var(--st-live); }
+.ai-mark--unavailable { color: var(--st-notserved); }
+.ai-mark svg { display: block; }
+.ai-badge:focus-visible, .ai-status:focus-visible, .nlq-btn:focus-visible, .nlq-chip:focus-visible, .fclass-btn:focus-visible, .ai-pop-link:focus-visible {
+  outline: 1px solid var(--focus); outline-offset: 2px; }
+.metachip-wrap--blocked .ai-status { color: var(--st-down); }
+/* status bar: the indicator reads like the other status words */
+.ai-status { color: var(--text-2); height: 24px; padding: 0 2px; }
+.ai-status-w { font-size: var(--t-label); }
+
+/* ---- the details popover ------------------------------------------ */
+.metachip-pop, .metachip-card { background: var(--bg-raised); border: 1px solid var(--line-strong); border-radius: var(--r-3);
+  padding: 8px 10px; color: var(--text); }
+.metachip-pop { position: fixed; z-index: 10000; width: 248px; box-shadow: var(--shadow-1); }
+.metachip-pop--wide { width: 300px; }
+.metachip-card { display: inline-block; min-width: 220px; }
+.metachip-pop-head { font-size: var(--t-label); color: var(--text-2); margin-bottom: 6px; font-weight: 600; }
+.metachip-rows { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; margin: 0; font-size: var(--t-label); font-variant-numeric: tabular-nums slashed-zero; }
+.metachip-rows dt { color: var(--text-3); }
+.metachip-rows dd { margin: 0; color: var(--text); overflow-wrap: anywhere; display: flex; align-items: center; gap: 5px; }
+.ai-pop-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 8px; padding: 0; border: 0; background: transparent; color: var(--accent-text);
+  font: inherit; font-size: var(--t-label); cursor: pointer; }
+.ai-pop-link:hover { text-decoration: underline; }
+
+/* ---- the activity window -------------------------------------------- */
+.ai-activity .panel-body { padding: 0; }
+.ai-sum { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); padding: 8px 10px; border-bottom: 1px solid var(--line-soft); }
+.ai-sum-mode { display: inline-flex; align-items: center; gap: 5px; font-size: var(--t-data); font-weight: 600; color: var(--text); }
+.ai-sum-rows { display: flex; flex-wrap: wrap; gap: 2px 14px; grid-template-columns: none; }
+.ai-sum-rows dt, .ai-sum-rows dd { display: inline; }
+.ai-sum-rows dt { margin-right: 4px; }
+.ai-table { width: 100%; border-collapse: collapse; font-size: var(--t-data); }
+.ai-table th { position: sticky; top: 0; background: var(--bg-panel); text-align: left; font-size: var(--t-label); font-weight: 600; color: var(--text-2);
+  padding: 4px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.ai-table td { padding: 0 8px; height: var(--row-h); border-bottom: 1px solid var(--line-soft); color: var(--text); white-space: nowrap; }
+.ai-table td.ai-did { white-space: nowrap; max-width: 34ch; overflow: hidden; text-overflow: ellipsis; }
+.ai-table td.ai-model { max-width: 22ch; overflow: hidden; text-overflow: ellipsis; }
+.ai-activity .panel-body { overflow: auto; }
+.ai-table .ai-num { text-align: right; font-variant-numeric: tabular-nums slashed-zero; }
+.ai-table td .ai-mark { vertical-align: middle; margin-right: 2px; }
+
+/* ---- natural-language strip in the command bar ---------------------- */
+.nlq { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; padding: 5px 8px; border-bottom: 1px solid var(--line-soft); flex: none; }
+.nlq-btn, .fclass-btn { display: inline-flex; align-items: center; gap: 4px; font-size: var(--t-label); padding: 2px 7px; cursor: pointer; background: transparent;
+  color: var(--accent-text); border: 1px solid var(--accent-text); border-radius: var(--r-1); height: var(--chip-h); line-height: 1; }
+.nlq-btn:hover, .fclass-btn:hover { background: var(--bg-inset); }
+.nlq-chip { display: inline-flex; align-items: center; gap: 5px; height: var(--chip-h); padding: 0 6px; border-radius: var(--r-1);
+  font-size: var(--t-label); background: transparent; line-height: 1; white-space: nowrap; }
+.nlq-chip--filter, .nlq-chip--term { color: var(--text); border: 1px solid var(--line-strong); cursor: pointer; }
+.nlq-chip--filter:hover, .nlq-chip--term:hover { border-color: var(--st-down); }
+.nlq-chip i, .nlq-chip svg { color: var(--text-2); }
+.nlq-chip--unmatched { color: var(--st-notserved); border: 1px dashed var(--line-strong); }
+.nlq-chip--overridden { color: var(--st-notserved); border: 1px dashed var(--line-strong); cursor: pointer; text-decoration: line-through; }
+.nlq-hint { margin-left: auto; display: inline-flex; align-items: center; gap: 4px; font-size: var(--t-label); color: var(--text-2); }
+
+/* ---- News toolbar and the feed classifier ---------------------------- */
+.ntools { display: flex; align-items: center; gap: 6px; padding: 3px 0 4px; }
+.fclass { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin-top: 4px; }
+.fclass-row { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.fclass-tags { font-size: var(--t-label); color: var(--text-2); }
+.fclass-btn--go { color: var(--st-live); border-color: var(--st-live); }
+.news-item:focus-visible { outline: 1px solid var(--focus); outline-offset: -2px; }
+
+/* ---- ask the chain ------------------------------------------- */
+.askc { margin-top: 8px; padding: 8px; border: 1px solid var(--line-soft); border-radius: var(--r-3); background: var(--bg-inset); display: grid; gap: 6px; }
+.askc-head { display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: var(--t-label); color: var(--text-2); font-weight: 600; }
+.askc-form { display: flex; gap: 4px; align-items: center; }
+.askc-in { flex: 1; min-width: 0; height: 24px; padding: 0 7px; background: var(--bg-raised); color: var(--text); border: 1px solid var(--line-strong);
+  border-radius: var(--r-1); font-size: var(--t-label); }
+.askc-in::placeholder { color: var(--text-2); opacity: 1; }
+.askc-in:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.askc-form .fclass-btn:disabled, .askc-in:disabled { opacity: .55; cursor: default; }
+.askc-sugg, .askc-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.askc-sugg .nlq-chip { white-space: normal; height: auto; min-height: var(--chip-h); padding: 2px 6px; text-align: left; }
+.askc-out { display: grid; gap: 5px; }
+.askc-q { margin: 0; font-size: var(--t-label); color: var(--text-2); overflow-wrap: anywhere; }
+.askc-q b { color: var(--text); margin-right: 4px; }
+.askc-a { margin: 0; font-size: var(--t-data); line-height: 1.55; color: var(--text); overflow-wrap: anywhere; }
+
+/* ---- Meta AI status section of the status popover ------------------- */
+.kd { margin-top: 8px; padding-top: 6px; border-top: 1px solid var(--line-soft); }
+.kd-head { display: flex; align-items: center; justify-content: space-between; font-size: var(--t-label); color: var(--text-2); font-weight: 600; margin-bottom: 5px; }
+.kd-flag { padding: 0 5px; border: 1px solid var(--line-strong); border-radius: var(--r-1); }
+.kd-flag--wait { color: var(--st-notserved); border-style: dashed; }
+.kd-flag--ready { color: var(--st-live); border-color: var(--st-live); }
+.kd-rows dd.kd-v--wait { color: var(--st-notserved); }
+.kd-rows dd.kd-v--ok { color: var(--st-live); }
+.kd-rows dd.kd-v--down { color: var(--st-down); }

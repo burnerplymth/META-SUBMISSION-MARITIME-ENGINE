@@ -1,0 +1,36 @@
+{
+ "entries": [
+  {
+   "source": "naip",
+   "place": "sea_newyork",
+   "crop_file": "naip_sea_newyork_2022-07-19.png",
+   "crop_sha256": "d5eb38576f2bce4d3f96ca6ba6dc4b0a84cf34932f36e1b8d83c03df8e02f174",
+   "prompt": "building",
+   "reply": "reply_buildings_naip_real.sse",
+   "recorded_at": "2026-10-28",
+   "note": "real sam-3.1 reply (1 image); boxes checked against the crop"
+  },
+  {
+   "source": "sentinel-2",
+   "place": "sea_singapore",
+   "role": "now",
+   "crop_file": "sea_singapore_now_2026-10-06.png",
+   "crop_sha256": "0ac7ad69e95e7fe168e4a5ec26f1939a9f2600fdd45485a1354daf89d1eeeaa5",
+   "prompt": "container ship",
+   "reply": "reply_sea_singapore_sentinel-2_now_container-ship_real.sse",
+   "recorded_at": "2026-10-28",
+   "note": "real sam-3.1 reply (1 image), recorded from the live API"
+  },
+  {
+   "source": "sentinel-2",
+   "place": "sea_rotterdam",
+   "role": "now",
+   "crop_file": "sea_rotterdam_now_2026-10-08.png",
+   "crop_sha256": "86843240637d0ebbe61b9ef1b05561ef4c2363f283ae6680384be2a97f749bf4",
+   "prompt": "cargo vessel",
+   "reply": "reply_sea_rotterdam_sentinel-2_now_cargo-vessel_real.sse",
+   "recorded_at": "2026-10-28",
+   "note": "real sam-3.1 reply (1 image), recorded from the live API"
+  }
+ ]
+}

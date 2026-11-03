@@ -1,0 +1,404 @@
+{
+ "artifact": "supermap-money-exposures",
+ "generated_by": "server/money/build_exposures.py (live EDGAR harvest)",
+ "harvest": {
+  "retrieved_at": "2026-10-21T01:09:09Z",
+  "user_agent": "declared via SUPERMAP_EDGAR_UA (required); EDGAR fair-access, throttled",
+  "tickers_file": {
+   "source": "SEC EDGAR",
+   "url": "https://www.sec.gov/files/company_tickers.json",
+   "tickers_verified": 12,
+   "tickers_not_in_file": [
+    "ATSG",
+    "AAWW",
+    "HA",
+    "MAERSK"
+   ]
+  }
+ },
+ "method": "node->company mappings asserted ONLY where the cited annual filing's own text ties the company to the node (verbatim excerpt stored per mapping); optional targets with no passage were dropped, not asserted",
+ "mappings": [
+  {
+   "node_id": "chk_suez",
+   "ticker": "ZIM",
+   "company": "ZIM Integrated Shipping Services Ltd.",
+   "cik": 1654126,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Suez Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-09",
+    "report_date": "2025-12-31",
+    "accession": "0001178913-26-000784",
+    "url": "https://www.sec.gov/Archives/edgar/data/1654126/000117891326000784/zk2634463.htm",
+    "excerpt": "nd, leading to a supply/demand mismatch. The container shipping industry may face oversupply in the coming years and numerous other factors beyond our control may also contribute to increased capacity, including deliveries of new, refurbished or converted vessels, the possible full reopening of the Suez Canal, port and canal congestion, any change in the practice of slow steaming, a reduction in the number of void voyages and a decrease in the number of vessels that are out of service (e.g., vessels that are laid-up, drydocked, or are otherwise not available for hire), as well as decreased scrapping lev"
+   }
+  },
+  {
+   "node_id": "chk_babelmandeb",
+   "ticker": "ZIM",
+   "company": "ZIM Integrated Shipping Services Ltd.",
+   "cik": 1654126,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Red Sea",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-09",
+    "report_date": "2025-12-31",
+    "accession": "0001178913-26-000784",
+    "url": "https://www.sec.gov/Archives/edgar/data/1654126/000117891326000784/zk2634463.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "sea_longbeach",
+   "ticker": "MATX",
+   "company": "Matson, Inc.",
+   "cik": 3453,
+   "exposure_kind": "port_operations",
+   "matched_phrase": "Long Beach",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-02-27",
+    "report_date": "2025-12-31",
+    "accession": "0001104659-26-020944",
+    "url": "https://www.sec.gov/Archives/edgar/data/3453/000110465926020944/matx-20251231x10k.htm",
+    "excerpt": "wned subsidiary of Matson, Inc. Founded in 1882, MatNav provides a vital lifeline of ocean freight transportation services to the domestic non-contiguous economies of Hawaii, Alaska and Guam, and to other island economies in Micronesia. MatNav also operates premium, expedited services from China to Long Beach, California, which includes cargo from other Asia origins, provides services to Okinawa, Japan and various islands in the South Pacific, and operates an international export service from Alaska to Asia. In addition, subsidiaries of MatNav provide stevedoring, refrigerated cargo services, inland tra"
+   }
+  },
+  {
+   "node_id": "sea_ningbo",
+   "ticker": "MATX",
+   "company": "Matson, Inc.",
+   "cik": 3453,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Ningbo",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-02-27",
+    "report_date": "2025-12-31",
+    "accession": "0001104659-26-020944",
+    "url": "https://www.sec.gov/Archives/edgar/data/3453/000110465926020944/matx-20251231x10k.htm",
+    "excerpt": "s derived from the westbound carriage of containerized freight. ​ China Service: Matson’s expedited China-Long Beach Express (“CLX”) service is part of an integrated service that carries cargo from Long Beach, California to Honolulu, Hawaii, Guam, and Okinawa, Japan. The vessels then continue on to Ningbo and Shanghai, China, where they are loaded with cargo to be discharged primarily at Long Beach, California at a Matson-exclusive terminal operated by SSAT. These vessels also carry cargo destined for Hawaii which originated in Guam, Micronesia, Okinawa, China and other Asian countries. ​ Matson ope"
+   }
+  },
+  {
+   "node_id": "sea_shanghai",
+   "ticker": "MATX",
+   "company": "Matson, Inc.",
+   "cik": 3453,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Shanghai",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-02-27",
+    "report_date": "2025-12-31",
+    "accession": "0001104659-26-020944",
+    "url": "https://www.sec.gov/Archives/edgar/data/3453/000110465926020944/matx-20251231x10k.htm",
+    "excerpt": "rom the westbound carriage of containerized freight. ​ China Service: Matson’s expedited China-Long Beach Express (“CLX”) service is part of an integrated service that carries cargo from Long Beach, California to Honolulu, Hawaii, Guam, and Okinawa, Japan. The vessels then continue on to Ningbo and Shanghai, China, where they are loaded with cargo to be discharged primarily at Long Beach, California at a Matson-exclusive terminal operated by SSAT. These vessels also carry cargo destined for Hawaii which originated in Guam, Micronesia, Okinawa, China and other Asian countries. ​ Matson operates a secon"
+   }
+  },
+  {
+   "node_id": "air_memphis",
+   "ticker": "FDX",
+   "company": "FEDEX CORP",
+   "cik": 1048911,
+   "exposure_kind": "hub_operations",
+   "matched_phrase": "Memphis",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-07-20",
+    "report_date": "2026-05-31",
+    "accession": "0001048911-26-000105",
+    "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm",
+    "excerpt": "the U.S. population on Sundays. We also offer an economy service that is available for the consolidation and delivery of high volumes of low-weight, less time-sensitive business-to-consumer packages to any residential address in the U.S. Express U.S. Domestic’s largest sorting facility, located in Memphis, Tennessee, serves as the center of our multiple hub-and-spoke system and worldwide air network. A second national air hub facility is located in Indianapolis, Indiana. We are making investments over multiple years in our facilities to expand and modernize our Memphis hub and modernize our Indianap"
+   }
+  },
+  {
+   "node_id": "air_anchorage",
+   "ticker": "FDX",
+   "company": "FEDEX CORP",
+   "cik": 1048911,
+   "exposure_kind": "hub_operations",
+   "matched_phrase": "Anchorage",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-07-20",
+    "report_date": "2026-05-31",
+    "accession": "0001048911-26-000105",
+    "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm",
+    "excerpt": "f New York and New Jersey 2030 Oakland, California 75 587,700 63,000 Port of Oakland 2036 Metropolitan Chicago, Illinois 54 481,350 21,000 City of Chicago 2028 Los Angeles, California 34 305,300 23,000 City of Los Angeles 2025⁽⁴⁾ Atlanta, Georgia 35 291,525 22,600 City of Atlanta 2030 International Anchorage, Alaska (5) 64 417,300 25,000 State of Alaska, Department of Transportation and Public Facilities 2078 Paris, France (6) 123 1,798,368 59,000 Aeroports de Paris 2048 Cologne, Germany (6) 14 731,267 17,900 Cologne Bonn Airport 2040 Guangzhou, China (7) 155 873,006 36,000 Guangdong Airport Management"
+   }
+  },
+  {
+   "node_id": "air_indianapolis",
+   "ticker": "FDX",
+   "company": "FEDEX CORP",
+   "cik": 1048911,
+   "exposure_kind": "hub_operations",
+   "matched_phrase": "Indianapolis",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-07-20",
+    "report_date": "2026-05-31",
+    "accession": "0001048911-26-000105",
+    "url": "https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm",
+    "excerpt": "time-sensitive business-to-consumer packages to any residential address in the U.S. Express U.S. Domestic’s largest sorting facility, located in Memphis, Tennessee, serves as the center of our multiple hub-and-spoke system and worldwide air network. A second national air hub facility is located in Indianapolis, Indiana. We are making investments over multiple years in our facilities to expand and modernize our Memphis hub and modernize our Indianapolis hub. In addition to these national air hubs, Express U.S. Domestic operates regional air hubs in: Fort Worth, Texas; Newark, New York; and Oakland, Califo"
+   }
+  },
+  {
+   "node_id": "air_louisville",
+   "ticker": "UPS",
+   "company": "UNITED PARCEL SERVICE INC",
+   "cik": 1090727,
+   "exposure_kind": "hub_operations",
+   "matched_phrase": "Louisville",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-02-17",
+    "report_date": "2025-12-31",
+    "accession": "0001628280-26-008432",
+    "url": "https://www.sec.gov/Archives/edgar/data/1090727/000162828026008432/ups-20251231.htm",
+    "excerpt": "We offer returns services in approximately 150 countries, addressing customers' needs for efficient and reliable returns. These services have been driven by e-commerce growth and are designed to promote efficiency and a friction-free consumer experience. Our global air operations hub is located in Louisville, Kentucky, and is supported by air hubs across the United States (\"U.S.\") and internationally. We operate international air hubs in Germany, China, Hong Kong, Canada and Florida (for Latin America and the Caribbean). This design enables cost-effective package processing using fewer, larger and more"
+   }
+  },
+  {
+   "node_id": "chk_suez",
+   "ticker": "CMRE",
+   "company": "Costamare Inc.",
+   "cik": 1503584,
+   "exposure_kind": "charter_fleet_exposure",
+   "matched_phrase": "Suez Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-04",
+    "report_date": "2025-12-31",
+    "accession": "0001140361-26-007868",
+    "url": "https://www.sec.gov/Archives/edgar/data/1503584/000114036126007868/ef20064083_20f.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_panama",
+   "ticker": "CMRE",
+   "company": "Costamare Inc.",
+   "cik": 1503584,
+   "exposure_kind": "charter_fleet_exposure",
+   "matched_phrase": "Panama Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-04",
+    "report_date": "2025-12-31",
+    "accession": "0001140361-26-007868",
+    "url": "https://www.sec.gov/Archives/edgar/data/1503584/000114036126007868/ef20064083_20f.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_suez",
+   "ticker": "GSL",
+   "company": "Global Ship Lease, Inc.",
+   "cik": 1430725,
+   "exposure_kind": "charter_fleet_exposure",
+   "matched_phrase": "Suez Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-16",
+    "report_date": "2025-12-31",
+    "accession": "0001140361-26-009637",
+    "url": "https://www.sec.gov/Archives/edgar/data/1430725/000114036126009637/gsl-20251231.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_suez",
+   "ticker": "DAC",
+   "company": "Danaos Corp",
+   "cik": 1369241,
+   "exposure_kind": "charter_fleet_exposure",
+   "matched_phrase": "Suez Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-02-27",
+    "report_date": "2025-12-31",
+    "accession": "0001104659-26-021574",
+    "url": "https://www.sec.gov/Archives/edgar/data/1369241/000110465926021574/dac-20251231x20f.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_panama",
+   "ticker": "DAC",
+   "company": "Danaos Corp",
+   "cik": 1369241,
+   "exposure_kind": "charter_fleet_exposure",
+   "matched_phrase": "Panama Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-02-27",
+    "report_date": "2025-12-31",
+    "accession": "0001104659-26-021574",
+    "url": "https://www.sec.gov/Archives/edgar/data/1369241/000110465926021574/dac-20251231x20f.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_suez",
+   "ticker": "STNG",
+   "company": "Scorpio Tankers Inc.",
+   "cik": 1483934,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Suez Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-20",
+    "report_date": "2025-12-31",
+    "accession": "0001483934-26-000021",
+    "url": "https://www.sec.gov/Archives/edgar/data/1483934/000148393426000021/stng-20251231.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_panama",
+   "ticker": "STNG",
+   "company": "Scorpio Tankers Inc.",
+   "cik": 1483934,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Panama Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-20",
+    "report_date": "2025-12-31",
+    "accession": "0001483934-26-000021",
+    "url": "https://www.sec.gov/Archives/edgar/data/1483934/000148393426000021/stng-20251231.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_suez",
+   "ticker": "NAT",
+   "company": "NORDIC AMERICAN TANKERS Ltd",
+   "cik": 1000177,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Suez Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-04-29",
+    "report_date": "2025-12-31",
+    "accession": "0001140361-26-017809",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000177/000114036126017809/ef20071320_20f.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_babelmandeb",
+   "ticker": "NAT",
+   "company": "NORDIC AMERICAN TANKERS Ltd",
+   "cik": 1000177,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Red Sea",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-04-29",
+    "report_date": "2025-12-31",
+    "accession": "0001140361-26-017809",
+    "url": "https://www.sec.gov/Archives/edgar/data/1000177/000114036126017809/ef20071320_20f.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_hormuz",
+   "ticker": "STNG",
+   "company": "Scorpio Tankers Inc.",
+   "cik": 1483934,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Strait of Hormuz",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-03-20",
+    "report_date": "2025-12-31",
+    "accession": "0001483934-26-000021",
+    "url": "https://www.sec.gov/Archives/edgar/data/1483934/000148393426000021/stng-20251231.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_hormuz",
+   "ticker": "INSW",
+   "company": "International Seaways, Inc.",
+   "cik": 1679049,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Hormuz",
+   "filing": {
+    "form": "10-K",
+    "filed_date": "2026-02-26",
+    "report_date": "2025-12-31",
+    "accession": "0001104659-26-020113",
+    "url": "https://www.sec.gov/Archives/edgar/data/1679049/000110465926020113/insw-20251231x10k.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_hormuz",
+   "ticker": "TRMD",
+   "company": "TORM plc",
+   "cik": 1655891,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Strait of Hormuz",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-02-26",
+    "report_date": "2025-12-31",
+    "accession": "0001628280-26-011954",
+    "url": "https://www.sec.gov/Archives/edgar/data/1655891/000162828026011954/trmd-20251231.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  },
+  {
+   "node_id": "chk_suez",
+   "ticker": "TRMD",
+   "company": "TORM plc",
+   "cik": 1655891,
+   "exposure_kind": "route_exposure",
+   "matched_phrase": "Suez Canal",
+   "filing": {
+    "form": "20-F",
+    "filed_date": "2026-02-26",
+    "report_date": "2025-12-31",
+    "accession": "0001628280-26-011954",
+    "url": "https://www.sec.gov/Archives/edgar/data/1655891/000162828026011954/trmd-20251231.htm",
+    "excerpt": null
+   },
+   "excerpt_missing_reason": "withheld: outside the content scope of this product",
+   "excerpt_withheld_in_public_export": true
+  }
+ ],
+ "mappings_without_excerpts": [],
+ "public_export_note": "PUBLIC EXPORT: filing excerpts outside this product's content scope are withheld in this copy (excerpt null, reason recorded per mapping); the filing citations are unchanged and the full text is in the cited filing."
+}

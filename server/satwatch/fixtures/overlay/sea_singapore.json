@@ -1,0 +1,2028 @@
+{
+ "contract": "satwatch-overlay/1",
+ "coord_space": "norm1000",
+ "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+ "counts": {
+  "ambiguous_excluded_baseline": 9,
+  "ambiguous_excluded_now": 14,
+  "anchorage_baseline": 42,
+  "anchorage_now": 60,
+  "berth_baseline": 0,
+  "berth_now": 0,
+  "count_basis": "anchorage_zone",
+  "counted_by": "reference-counts",
+  "frame_vessels_baseline": 52,
+  "frame_vessels_now": 67,
+  "transit_baseline": 10,
+  "transit_now": 7,
+  "vessels": 60,
+  "vessels_baseline": 42,
+  "vessels_delta": 18,
+  "vessels_now": 60,
+  "yard_baseline": "not_visible",
+  "yard_now": "not_visible"
+ },
+ "crops": {
+  "baseline": {
+   "cloud_pct_aoi": 17.85,
+   "cloud_pct_tile": 57.154351,
+   "file": "sea_singapore_baseline_2026-09-06.png",
+   "scene_date": "2026-09-06",
+   "scene_id": "S2B_MSIL2A_20260906T031539_R118_T48NUG_20260906T065656",
+   "url": "/satwatch/crops/sea_singapore_baseline_2026-09-06.png"
+  },
+  "now": {
+   "cloud_pct_aoi": 23.74,
+   "cloud_pct_tile": 45.441931,
+   "file": "sea_singapore_now_2026-10-06.png",
+   "scene_date": "2026-10-06",
+   "scene_id": "S2B_MSIL2A_20261006T031609_R118_T48NUG_20261006T070305",
+   "url": "/satwatch/crops/sea_singapore_now_2026-10-06.png"
+  }
+ },
+ "delta": 18,
+ "detections": [
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0001",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    592,
+    288
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0002",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    647,
+    287
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0003",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    542,
+    297
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0004",
+   "label": "tanker",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    694,
+    307
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0005",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    278,
+    315
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0006",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    375,
+    326
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0007",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    558,
+    326
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0008",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    593,
+    331
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0009",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    465,
+    332
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0010",
+   "label": "tanker",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    497,
+    330
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0011",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    307,
+    343
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0012",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    712,
+    346
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0013",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    135,
+    361
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0014",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    340,
+    365
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0015",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    232,
+    366
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0016",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    173,
+    372
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0017",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    595,
+    371
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0018",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    564,
+    380
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0019",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    108,
+    380
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0020",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    693,
+    398
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0021",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    744,
+    398
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0022",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    805,
+    396
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0023",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    636,
+    409
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0024",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    28,
+    414
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0025",
+   "label": "tanker",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    561,
+    416
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0026",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    282,
+    426
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0027",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    408,
+    426
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0028",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    373,
+    431
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0029",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    77,
+    435
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0030",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    333,
+    453
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0031",
+   "label": "container ship",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    475,
+    456
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0032",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    199,
+    484
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0033",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    294,
+    487
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0034",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    405,
+    482
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0035",
+   "label": "tanker",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    250,
+    501
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0036",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    150,
+    515
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0037",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    111,
+    534
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0038",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    491,
+    544
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0039",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    150,
+    549
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0040",
+   "label": "tanker",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    179,
+    569
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0041",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    139,
+    582
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0042",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    224,
+    589
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0043",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    714,
+    525
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0044",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    393,
+    429
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0045",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    249,
+    461
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0046",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    168,
+    640
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0047",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    116,
+    662
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0048",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    427,
+    662
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0049",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    71,
+    701
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0050",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    13,
+    704
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0051",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    263,
+    708
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0052",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    341,
+    698
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0053",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    808,
+    344
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0054",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    671,
+    341
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0055",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    632,
+    326
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0056",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    401,
+    328
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0057",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    332,
+    327
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0058",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    38,
+    627
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0059",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    62,
+    608
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0060",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    548,
+    593
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "anchorage"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0061",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    972,
+    205
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "transit"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0062",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    877,
+    461
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "transit"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0063",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    973,
+    486
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "transit"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0064",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    931,
+    575
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "transit"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0065",
+   "label": "cargo vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    883,
+    636
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "transit"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0066",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    834,
+    687
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "transit"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_singapore:now:0067",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    815,
+    701
+   ],
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 23.74,
+    "cloud_pct_tile": 45.441931,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+   },
+   "zone": "transit"
+  }
+ ],
+ "human_reviewed": false,
+ "imagery_dates": {
+  "baseline": "2026-09-06",
+  "now": "2026-10-06"
+ },
+ "name": "Singapore Anchorage",
+ "node_id": "sea_singapore",
+ "not_served_reason": null,
+ "note": "REFERENCE COUNTS (offline): reference counts recorded offline over the baked Sentinel-2 crops - NOT Meta SAM, NOT live. Reference count over the baked crops; offline replay, not a live detection",
+ "per_crop": {
+  "baseline": {
+   "counted": true,
+   "crop_id": "sea_singapore_baseline_2026-09-06.png",
+   "n_localised": 0,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "baseline",
+   "scene_date": "2026-09-06",
+   "status": "OK",
+   "visibility": "Moderate to good - mostly clear with light haze; small bright cloud cluster SE covering ~8-10% of water, remainder countable."
+  },
+  "now": {
+   "counted": true,
+   "crop_id": "sea_singapore_now_2026-10-06.png",
+   "n_localised": 67,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "now",
+   "scene_date": "2026-10-06",
+   "status": "OK",
+   "visibility": "Poor to moderate - heavy haze over centre/south and bright cloud cluster covering southern ~25-30% of water; northern anchorage band mostly visible."
+  }
+ },
+ "provider": "reference-counts",
+ "provider_label": "REFERENCE COUNTS - OFFLINE",
+ "served": true,
+ "status": "OK",
+ "usable_pair": true,
+ "verification": "Detected, not verified"
+}

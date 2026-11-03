@@ -1,0 +1,140 @@
+/* HISTORY backplay, FORK and REALISM tester.
+ * Tokens only (shell/tokens.css): every text colour here is --text,
+ * --text-2, --text-3, --accent-text or an --st-* state token, all gated at
+ * 4.5:1. No explanatory prose: labels, chips and
+ * state words. */
+
+.hx { display: flex; flex-direction: column; gap: var(--s-3); font-size: var(--t-data); color: var(--text); }
+.hx .panel-body { padding: 0; max-height: none; }
+.hx-tbl td:first-child .hx-row-btn { white-space: nowrap; }
+/* Stored-card names wrap instead of truncating to identical strings. */
+.hx-tbl td:first-child .hx-row-btn--wrap { white-space: normal; overflow-wrap: anywhere; }
+.hx-body { display: flex; flex-direction: column; gap: var(--s-3); padding: var(--s-2) var(--s-3) var(--s-3); }
+.hx-sec { display: flex; flex-direction: column; gap: var(--s-2); padding-top: var(--s-2); border-top: 1px solid var(--line-soft); }
+.hx-sec:first-child { border-top: none; padding-top: 0; }
+.hx-sec-h { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; min-height: var(--row-h); font-size: var(--t-label); letter-spacing: var(--trk-caps); text-transform: uppercase; color: var(--text-2); font-weight: 600; }
+.hx-sec-h h5 { margin: 0; font: inherit; color: var(--text); }
+.hx-sec-h .spacer { flex: 1; }
+
+/* chips row */
+.hx-chips { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-2); align-items: center; }
+.hx-src { display: flex; align-items: center; gap: var(--s-1); flex-wrap: wrap; min-height: var(--row-h); border-bottom: 1px solid var(--line-soft); padding: 2px 0; }
+.hx-src > b { color: var(--text); font-weight: 600; min-width: 112px; font-size: var(--t-label); letter-spacing: var(--trk-caps); }
+.hx-src .hx-range { color: var(--text-2); font-size: var(--t-micro); }
+
+/* controls */
+.hx-ctl { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: flex-end; }
+.hx-ctl label { display: flex; flex-direction: column; gap: 2px; font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); text-transform: uppercase; }
+.hx input[type="date"], .hx input[type="text"], .hx select, .hx input[type="number"] { height: var(--seg-h); padding: 0 6px; font: inherit; font-size: var(--t-data); }
+.hx input[type="date"] { color-scheme: dark light; }
+.hx-btn { height: var(--seg-h); padding: 0 10px; white-space: nowrap; display: inline-flex; align-items: center; gap: 5px; }
+.hx-btn:disabled { opacity: .4; cursor: default; }
+.hx-btn--sim { color: var(--st-sim); --ui-edge: inset 0 0 0 1px var(--st-sim); font-weight: 600; }
+.hx-ex { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.hx-ex .hx-btn { height: 22px; padding: 0 7px; }
+
+/* tables */
+.hx-tbl-wrap { max-width: 100%; }
+.hx-tbl { width: 100%; border-collapse: collapse; font-size: var(--t-data); font-variant-numeric: tabular-nums; }
+.hx-tbl th { text-align: left; font-size: var(--t-label); letter-spacing: var(--trk-caps); text-transform: uppercase; color: var(--text-3); font-weight: 600; padding: 2px 6px 2px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.hx-tbl td { padding: 2px 6px 2px 0; border-bottom: 1px solid var(--line-soft); vertical-align: middle; height: var(--row-h); color: var(--text); }
+.hx-tbl td.num, .hx-tbl th.num { text-align: right; white-space: nowrap; }
+.hx-tbl td.dim, .hx-tbl .dim { color: var(--text-2); }
+.hx-tbl tr.sel td { background: var(--sel-fill); }
+.hx-tbl tr.sel td:first-child { box-shadow: inset 3px 0 0 var(--sel-bar); }
+.hx-row-btn { all: unset; cursor: pointer; display: block; color: inherit; width: 100%; }
+.hx-row-btn:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.hx-cell-best { font-weight: 600; }
+
+/* key-value label rows (state labels, no prose) */
+.hx-kv { display: grid; grid-template-columns: auto 1fr; gap: 1px var(--s-3); margin: 0; font-size: var(--t-data); }
+.hx-kv dt { color: var(--text-3); font-size: var(--t-label); letter-spacing: var(--trk-caps); text-transform: uppercase; }
+.hx-kv dd { margin: 0; color: var(--text); font-variant-numeric: tabular-nums; min-width: 0; overflow-wrap: anywhere; }
+.hx-card { border: 1px solid var(--line); border-radius: var(--r-2); padding: var(--s-2); background: var(--bg-panel); display: flex; flex-direction: column; gap: var(--s-2); }
+.hx-card--sim { border-left: 3px solid var(--st-sim); }
+.hx-card-h { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; font-size: var(--t-label); letter-spacing: var(--trk-caps); text-transform: uppercase; color: var(--text); font-weight: 600; }
+.hx-card-h .spacer { flex: 1; }
+
+/* charts */
+.hx-chart { display: flex; flex-direction: column; gap: 2px; }
+.hx-chart-h { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; font-size: var(--t-label); }
+.hx-chart-h > b { color: var(--text); font-weight: 600; }
+.hx-chart-h .u { color: var(--text-2); font-size: var(--t-micro); letter-spacing: var(--trk-caps); }
+.hx-chart-h .spacer { flex: 1; }
+.hx-svg { display: block; width: 100%; height: auto; overflow: visible; cursor: crosshair; }
+.hx-svg text { font-family: var(--font-data); font-size: var(--fs-xs); fill: var(--text-2); }
+.hx-svg .grid { stroke: var(--line-soft); stroke-width: 1; stroke-dasharray: 1 3; }
+.hx-svg .obs { fill: none; stroke: var(--st-snapshot); stroke-width: 1.6; stroke-linejoin: round; stroke-linecap: round; }
+.hx-svg .obs--after { stroke: var(--text-3); stroke-width: 1; opacity: .7; }
+.hx-svg .sim { fill: none; stroke: var(--st-sim); stroke-width: 1.4; stroke-dasharray: 4 3; stroke-linejoin: round; }
+.hx-svg .cur { stroke: var(--accent-text); stroke-width: 1; }
+.hx-svg .evt { stroke: var(--text-2); stroke-width: 1; }
+.hx-svg .evt--focus { stroke: var(--text); stroke-width: 1.5; }
+.hx-svg .band { fill: var(--text-3); opacity: .12; }
+.hx-svg .band--eval { fill: var(--st-snapshot); opacity: .14; }
+.hx-svg .tag { fill: var(--st-snapshot); }
+.hx-svg .tag--sim { fill: var(--st-sim); }
+.hx-svg text.tag-t { fill: var(--bg-panel); font-weight: 700; }
+.hx-svg text.lbl-obs { fill: var(--st-snapshot); font-weight: 600; }
+.hx-svg text.lbl-sim { fill: var(--st-sim); font-weight: 600; }
+.hx-svg text.cap { fill: var(--text); }
+.hx-empty { min-height: 40px; }
+
+/* as-of strip */
+.hx-asof { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-3); align-items: center; font-size: var(--t-label); color: var(--text-2); letter-spacing: var(--trk-caps); }
+.hx-asof > b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* building / state lines */
+.hx-state { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; font-size: var(--t-label); letter-spacing: var(--trk-caps); color: var(--text-2); text-transform: uppercase; }
+.hx-state > b { color: var(--text); font-variant-numeric: tabular-nums; }
+.hx-err { color: var(--st-down); }
+.hx details > summary { cursor: pointer; font-size: var(--t-label); letter-spacing: var(--trk-caps); color: var(--text-2); text-transform: uppercase; }
+.hx details > summary:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.hx details ul { margin: 4px 0 0; padding-left: 14px; color: var(--text-2); font-size: var(--t-data); line-height: 1.4; }
+
+/* lineage chip in other panels */
+.chip--fork { border-style: solid; }
+.hx-lineage { display: inline-flex; align-items: center; gap: 4px; }
+
+/* bottom transport (HISTORY) */
+.transport--history { min-height: var(--transport-h); }
+.hx-tr { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 10px; padding: 4px 12px; font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); }
+.hx-tr .hx-btn { height: 22px; padding: 0 8px; }
+.hx-tr .hx-btn--play { min-width: 74px; justify-content: center; }
+.hx-tr-row { display: inline-flex; align-items: center; gap: 4px; }
+.hx-scrub { position: relative; flex: 1 1 260px; min-width: 200px; height: 22px; }
+.hx-scrub input[type="range"] { position: absolute; inset: 0; width: 100%; margin: 0; height: 22px; z-index: 2; }
+.hx-ticks { position: absolute; left: 7px; right: 7px; bottom: 1px; height: 8px; pointer-events: none; z-index: 1; }
+.hx-ticks i { position: absolute; bottom: 0; width: 1px; height: 8px; background: var(--text-2); }
+.hx-ticks i.m { background: var(--st-model); }
+.hx-tr input[type="date"] { height: 22px; font-size: var(--t-micro); }
+.hx-tr .hx-asof-chip { margin-left: auto; }
+
+@media (max-width: 860px) {
+  .hx-btn, .hx input[type="date"], .hx input[type="text"], .hx select { min-height: 44px; }
+  .hx-ex .hx-btn, .hx-tr .hx-btn { min-height: 44px; }
+  .hx-tbl-wrap { overflow-x: auto; }
+}
+@media (prefers-reduced-motion: reduce) { .hx * { transition: none !important; animation: none !important; } }
+
+.hx-caveat { margin: 0; padding: 4px 6px; border: 1px solid var(--line); border-left: 2px solid var(--st-notserved); font-size: var(--t-micro); line-height: 1.4; color: var(--text-2); letter-spacing: 0; }
+.hx-chk { flex-direction: row !important; align-items: center; gap: 4px; }
+.hx-verdict td { height: auto; padding-top: 0; font-size: var(--t-micro); letter-spacing: var(--trk-caps); }
+
+/* EXP tool slot: the Export Centre inside the tool slot; its own
+ * window controls act on the layout, so they are hidden here. */
+.tool-export { display: flex; flex-direction: column; min-width: 0; }
+.tool-export .panel-controls { display: none; }
+.tool-export-bar { display: flex; align-items: center; gap: var(--s-2); padding: 2px var(--s-2); background: var(--bg-bar); border-bottom: 1px solid var(--line); }
+.tool-export-bar .spacer { flex: 1; }
+
+/* The events table fits the 424 px column. Fixed layout; the place,
+ * kind and source cells truncate (title carries the full text), so the FORK
+ * column is never cut. */
+.hx-tbl--ev { table-layout: fixed; }
+.hx-tbl--ev th:nth-child(1) { width: 74px; }
+.hx-tbl--ev th:nth-child(4) { width: 28px; }
+.hx-tbl--ev th:nth-child(5) { width: 132px; }
+.hx-tbl--ev th:nth-child(6) { width: 46px; }
+.hx-tbl--ev td:nth-child(2), .hx-tbl--ev td:nth-child(3), .hx-tbl--ev td:nth-child(5) { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hx-tbl--ev td:last-child { padding-right: 0; }

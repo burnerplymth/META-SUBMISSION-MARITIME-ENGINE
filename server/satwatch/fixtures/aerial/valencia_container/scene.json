@@ -1,0 +1,61 @@
+{
+ "acquisition_label": "Aerial mosaic, year varies",
+ "attribution": {
+  "chip": "IGN ES \u00b7 CC BY",
+  "licence": "CC BY 4.0 (service metadata: CC BY 4.0 scne.es)",
+  "text": "PNOA orthophotography, Instituto Geografico Nacional de Espana (IGN), CC BY 4.0"
+ },
+ "badge": "Aerial 0.5 m",
+ "bbox_ll": [
+  -0.329212,
+  39.432864,
+  -0.323188,
+  39.437535
+ ],
+ "contract": "satwatch-aerial-scene/1",
+ "crop": {
+  "bytes": 2556607,
+  "committed": false,
+  "content_type": "image/png",
+  "file": "valencia_container.png",
+  "sha256": "32c09a91e537ca3d1faebb6eb626bb515b285ec4bfbfc327056158820d808223"
+ },
+ "georef": {
+  "e0": 729868.31,
+  "epsg": 25830,
+  "gsd_m": 0.5,
+  "kind": "utm",
+  "n1": 4368737.085,
+  "zone": 30
+ },
+ "gsd_m": 0.5,
+ "item": null,
+ "item_date": null,
+ "mode": "SNAPSHOT",
+ "name": "Valencia container berths",
+ "nodata_pct": 0.0,
+ "recorded": [
+  {
+   "phrase": "crane",
+   "recorded_at": "2026-10-29",
+   "reply": "crane_t0.sse",
+   "tile": 0
+  },
+  {
+   "phrase": "ship",
+   "recorded_at": "2026-10-29",
+   "reply": "ship_t0.sse",
+   "tile": 0
+  }
+ ],
+ "retrieved_at": "2026-10-29T06:07:16Z",
+ "scene_id": "valencia_container",
+ "size_px": [
+  1008,
+  1008
+ ],
+ "source": "pnoa-es",
+ "source_label": "PNOA ORTHOPHOTO",
+ "year": null,
+ "year_basis": "mosaic of different dates and 0.25 to 0.5 m sources (not stated per tile)"
+}

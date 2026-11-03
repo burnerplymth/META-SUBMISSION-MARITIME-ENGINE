@@ -1,0 +1,26 @@
+{
+  "115e9ed86765bf330674974697213f3193bd33d157ecfc81714c5b511ffd5b59": {
+    "model": "fixture-transport (no live model)",
+    "narrative": "FIXTURE EXPLAIN (transport=fixture \u2014 recorded-fixture response, not a live Spark call). Run run_93f4e9b02a99299e: seq 0: sea_savannah via congestion (capacity loss at source), delay 3.5 d.",
+    "run_id": "run_93f4e9b02a99299e",
+    "transport": "fixture"
+  },
+  "80236d43efe903edb23c6e776288949b1e70c7ceef147e239c7fa2da59349406": {
+    "model": "fixture-transport (no live model)",
+    "narrative": "FIXTURE EXPLAIN (transport=fixture \u2014 recorded-fixture response, not a live Spark call). Run run_625786318952fa5c: seq 0: suez via congestion (capacity loss at source), delay 0.027451 d; seq 1: port_said via queue (queue spillback), delay 1.666667 d.",
+    "prompt_name": "explain",
+    "prompt_version": "1",
+    "run_id": "run_625786318952fa5c",
+    "stream_hash": "dfb20071e294f92f3abc24e189062d53a987bfd62890e06bdfe5a03c8948d7d7",
+    "transport": "fixture"
+  },
+  "c74363f3f062ec5f3a89e155c6097c6982a0907296b40b65b640a1c812145a63": {
+    "model": "fixture-transport (no live model)",
+    "narrative": "FIXTURE EXPLAIN (transport=fixture \u2014 recorded-fixture response, not a live Spark call). Run run_08fe44e520f053cd: seq 0: sea_savannah via congestion (capacity loss at source), delay 10.0 d.",
+    "prompt_name": "explain",
+    "prompt_version": "1",
+    "run_id": "run_08fe44e520f053cd",
+    "stream_hash": "e05c136daf2207c75f2e1647039348c2b961620861e8f5877050bff109146a14",
+    "transport": "fixture"
+  }
+}

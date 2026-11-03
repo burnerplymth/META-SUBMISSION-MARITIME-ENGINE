@@ -1,0 +1,172 @@
+{
+ "contract": "satwatch-overlay/1",
+ "coord_space": "norm1000",
+ "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+ "counts": {
+  "ambiguous_excluded_baseline": 6,
+  "ambiguous_excluded_now": 5,
+  "anchorage_baseline": 0,
+  "anchorage_now": 0,
+  "berth_baseline": 5,
+  "berth_now": 3,
+  "count_basis": "anchorage_zone",
+  "counted_by": "reference-counts",
+  "frame_vessels_baseline": 5,
+  "frame_vessels_now": 3,
+  "transit_baseline": 0,
+  "transit_now": 0,
+  "vessels": 0,
+  "vessels_baseline": 0,
+  "vessels_delta": 0,
+  "vessels_now": 0,
+  "yard_baseline": "moderate",
+  "yard_now": "low"
+ },
+ "crops": {
+  "baseline": {
+   "cloud_pct_aoi": 6.06,
+   "cloud_pct_tile": 54.696107,
+   "file": "sea_rotterdam_baseline_2026-09-09.png",
+   "scene_date": "2026-09-09",
+   "scene_id": "S2C_MSIL2A_20260909T105621_R094_T31UET_20260909T144416",
+   "url": "/satwatch/crops/sea_rotterdam_baseline_2026-09-09.png"
+  },
+  "now": {
+   "cloud_pct_aoi": 30.64,
+   "cloud_pct_tile": 41.67617,
+   "file": "sea_rotterdam_now_2026-10-08.png",
+   "scene_date": "2026-10-08",
+   "scene_id": "S2A_MSIL2A_20261008T105041_R051_T31UET_20261008T172015",
+   "url": "/satwatch/crops/sea_rotterdam_now_2026-10-08.png"
+  }
+ },
+ "delta": 0,
+ "detections": [
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_rotterdam_now_2026-10-08.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_rotterdam:now:0001",
+   "label": "container ship",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    336,
+    668
+   ],
+   "role": "now",
+   "scene_date": "2026-10-08",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 30.64,
+    "cloud_pct_tile": 41.67617,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "poor - ~30.6% cloud stated, harbour basins and central Maasvlakte ~35-40% obscured by cloud/shadow, only cloud-free water and quays counted"
+   },
+   "zone": "berth"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_rotterdam_now_2026-10-08.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_rotterdam:now:0002",
+   "label": "tanker",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    562,
+    545
+   ],
+   "role": "now",
+   "scene_date": "2026-10-08",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 30.64,
+    "cloud_pct_tile": 41.67617,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "poor - ~30.6% cloud stated, harbour basins and central Maasvlakte ~35-40% obscured by cloud/shadow, only cloud-free water and quays counted"
+   },
+   "zone": "berth"
+  },
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_rotterdam_now_2026-10-08.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_rotterdam:now:0003",
+   "label": "tanker",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    690,
+    530
+   ],
+   "role": "now",
+   "scene_date": "2026-10-08",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 30.64,
+    "cloud_pct_tile": 41.67617,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "poor - ~30.6% cloud stated, harbour basins and central Maasvlakte ~35-40% obscured by cloud/shadow, only cloud-free water and quays counted"
+   },
+   "zone": "berth"
+  }
+ ],
+ "human_reviewed": false,
+ "imagery_dates": {
+  "baseline": "2026-09-09",
+  "now": "2026-10-08"
+ },
+ "name": "Rotterdam / Europoort Anchorage",
+ "node_id": "sea_rotterdam",
+ "not_served_reason": null,
+ "note": "REFERENCE COUNTS (offline): reference counts recorded offline over the baked Sentinel-2 crops - NOT Meta SAM, NOT live. Reference count over the baked crops; offline replay, not a live detection",
+ "per_crop": {
+  "baseline": {
+   "counted": true,
+   "crop_id": "sea_rotterdam_baseline_2026-09-09.png",
+   "n_localised": 0,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "baseline",
+   "scene_date": "2026-09-09",
+   "status": "OK",
+   "visibility": "good - ~6.1% cloud stated, most Maasvlakte/Europoort basins visible; small cloud over west basin and south, black no-data strip on east edge"
+  },
+  "now": {
+   "counted": true,
+   "crop_id": "sea_rotterdam_now_2026-10-08.png",
+   "n_localised": 3,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "now",
+   "scene_date": "2026-10-08",
+   "status": "OK",
+   "visibility": "poor - ~30.6% cloud stated, harbour basins and central Maasvlakte ~35-40% obscured by cloud/shadow, only cloud-free water and quays counted"
+  }
+ },
+ "provider": "reference-counts",
+ "provider_label": "REFERENCE COUNTS - OFFLINE",
+ "served": true,
+ "status": "OK",
+ "usable_pair": true,
+ "verification": "Detected, not verified"
+}

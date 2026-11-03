@@ -1,0 +1,116 @@
+/* Export window, per-panel export menu, chart context menu (xp-, xm-).
+ * Semantic tokens from shell/tokens.css only; no literal colours. */
+.xp-panel .panel-body { container-type: inline-size; }
+.xp-root { display: flex; flex-direction: column; gap: 8px; min-width: 0; min-height: 0; }
+.xp-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.xp-search { display: flex; align-items: center; gap: 6px; flex: 1 1 200px; min-width: 160px; color: var(--text-2); }
+.xp-input { flex: 1 1 auto; min-width: 0; height: var(--ctl-h, 24px); padding: 0 6px; background: var(--bg-inset); color: var(--text); border: 1px solid var(--line); border-radius: var(--r-ctl, 2px); font: inherit; font-size: 12px; }
+.xp-input:focus-visible { outline: 1px solid var(--focus); outline-offset: 1px; }
+.xp-ctx { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.xp-bulk { display: flex; gap: 4px; margin-left: auto; }
+
+.xp-main { display: grid; grid-template-columns: minmax(260px, 1.05fr) minmax(280px, 1fr); gap: 10px; min-height: 0; }
+@container (max-width: 700px) { .xp-main { grid-template-columns: minmax(0, 1fr); } }
+.xp-left { border: 1px solid var(--line); background: var(--bg-panel); min-width: 0; max-height: min(38vh, 360px); overflow: auto; }
+.xp-right { min-width: 0; border: 1px solid var(--line); background: var(--bg-panel); max-height: min(38vh, 360px); overflow: auto; }
+.xp-note { padding: 10px; }
+
+.xp-group + .xp-group { border-top: 1px solid var(--line); }
+.xp-ghead { display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: var(--bg-bar); position: sticky; top: 0; z-index: 1; border-bottom: 1px solid var(--line-soft); }
+.xp-gtitle { margin: 0; font-size: 11px; font-weight: 600; color: var(--text); flex: 1 1 auto; }
+.xp-count { color: var(--text-2); font-size: 10.5px; }
+.xp-rows { list-style: none; margin: 0; padding: 0; }
+.xp-row { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; align-items: center; gap: 2px 8px; padding: 4px 8px; border-bottom: 1px solid var(--line-soft); }
+.xp-row:last-child { border-bottom: 0; }
+.xp-row:hover { background: var(--bg-inset); }
+.xp-row.on { background: var(--bg-inset); box-shadow: inset 2px 0 0 var(--accent); }
+.xp-row.focus { background: var(--bg-raised); }
+.xp-row.off { opacity: .75; }
+.xp-row .xp-formats { grid-column: 2 / 4; }
+.xp-check { display: inline-flex; align-items: center; justify-content: center; }
+.xp-check input { accent-color: var(--accent); margin: 0; width: 14px; height: 14px; }
+.xp-check input:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.xp-name { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; text-align: left; background: transparent; border: 0; color: var(--text); font: inherit; padding: 2px 0; cursor: pointer; }
+.xp-name:focus-visible { outline: 1px solid var(--focus); outline-offset: 1px; }
+.xp-title { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; font-weight: 500; }
+.xp-sub { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10.5px; color: var(--text-2); }
+.xp-state { justify-self: end; }
+.xp-formats { display: flex; flex-wrap: wrap; gap: 4px; padding: 2px 0 2px; }
+.xp-fmt { height: 20px; padding: 0 8px; background: transparent; color: var(--text-2); border: 1px solid var(--line); border-radius: var(--r-ctl, 2px); font: inherit; font-size: 10.5px; cursor: pointer; }
+.xp-fmt:hover { color: var(--text); border-color: var(--line-strong); }
+.xp-fmt.on { color: var(--text); border-color: var(--accent); box-shadow: inset 0 -2px 0 var(--accent); }
+.xp-fmt:focus-visible { outline: 1px solid var(--focus); outline-offset: 1px; }
+
+.xp-prev { display: flex; flex-direction: column; gap: 8px; padding: 10px; }
+.xp-prev--none { align-items: flex-start; }
+.xp-prev-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 10px; }
+.xp-prev-title { margin: 0; font-size: 13px; font-weight: 600; color: var(--text); }
+.xp-chips { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.xp-prev-img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); }
+.xp-prev-empty { padding: 6px 0; }
+.xp-prev-text { margin: 0; padding: 0 0 0 16px; font-size: 11.5px; color: var(--text); }
+.xp-prev-table { overflow: auto; max-height: 220px; border: 1px solid var(--line); }
+.xp-prev-table:focus-visible { outline: 1px solid var(--focus); }
+.xp-prev-table table { border-collapse: collapse; width: 100%; font-size: 11px; font-variant-numeric: tabular-nums; }
+.xp-prev-table th, .xp-prev-table td { padding: 2px 8px; border-bottom: 1px solid var(--line-soft); text-align: left; white-space: nowrap; color: var(--text); }
+.xp-prev-table th { position: sticky; top: 0; background: var(--bg-bar); font-weight: 600; }
+.xp-prev-table td.num { text-align: right; }
+.xp-prev-foot { padding: 3px 8px; color: var(--text-2); font-size: 10.5px; }
+.xp-ns { color: var(--text-2); }
+.xp-meta { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 3px 10px; margin: 0; font-size: 11.5px; }
+.xp-meta dt { color: var(--text-2); }
+.xp-meta dd { margin: 0; color: var(--text); overflow-wrap: anywhere; }
+
+.xp-foot { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); padding-top: 8px; }
+.xp-opts { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; }
+.xp-opt-row { display: inline-flex; align-items: center; gap: 6px; }
+.xp-lbl { font-size: 11px; color: var(--text-2); }
+.xp-opt-row .xp-input { min-width: 220px; }
+.xp-hint { color: var(--text-2); font-size: 10.5px; }
+.xp-go { display: flex; align-items: center; gap: 10px; }
+.xp-results { display: flex; flex-direction: column; gap: 6px; }
+.xp-progress { position: relative; height: 18px; border: 1px solid var(--line); background: var(--bg-inset); display: flex; align-items: center; }
+.xp-progress i { position: absolute; inset: 0 auto 0 0; background: var(--sel-fill, var(--accent)); opacity: .35; }
+.xp-progress span { position: relative; padding: 0 8px; font-size: 10.5px; color: var(--text); }
+.xp-res, .xp-errs, .xp-hist-list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); }
+.xp-errs { border-color: var(--line); }
+.xp-res-row, .xp-errs li, .xp-hist-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 4px 8px; border-bottom: 1px solid var(--line-soft); font-size: 11.5px; }
+.xp-res-row:last-child, .xp-errs li:last-child, .xp-hist-list li:last-child { border-bottom: 0; }
+.xp-dl { display: inline-flex; align-items: center; gap: 6px; background: transparent; border: 0; color: var(--accent-text, var(--accent)); font: inherit; cursor: pointer; padding: 0; text-decoration: underline; text-underline-offset: 2px; }
+.xp-dl:focus-visible, .xp-hash:focus-visible, .xp-link:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.xp-size { color: var(--text-2); font-size: 10.5px; }
+.xp-hash { background: transparent; color: var(--text); border: 1px solid var(--line); border-radius: var(--r-ctl, 2px); font-size: 10.5px; padding: 0 5px; cursor: pointer; }
+.xp-hash:hover { border-color: var(--accent); }
+.xp-members { flex: 1 1 100%; }
+.xp-members summary { cursor: pointer; color: var(--text-2); font-size: 11px; }
+.xp-members ul { list-style: none; margin: 4px 0 0; padding: 0; }
+.xp-members li { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 2px 0; font-size: 11px; }
+.xp-verify { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 11px; color: var(--text-2); }
+.xp-link { background: transparent; border: 0; color: var(--text-2); font: inherit; font-size: 11px; cursor: pointer; padding: 0; text-decoration: underline; text-underline-offset: 2px; }
+.xp-link:hover { color: var(--text); }
+.xp-hist { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.xp-hist-at { color: var(--text-2); }
+
+/* per-panel export menu and the small Export button */
+.xm-wrap { position: relative; display: inline-flex; }
+.xm-btn { display: inline-flex; align-items: center; gap: 4px; height: 22px; padding: 0 8px; background: transparent; color: var(--text); border: 1px solid var(--line); border-radius: var(--r-ctl, 2px); font: inherit; font-size: 11px; cursor: pointer; }
+.xm-btn:hover { border-color: var(--line-strong); }
+.xm-btn:focus-visible { outline: 1px solid var(--focus); outline-offset: 1px; }
+.xm-btn:disabled { color: var(--text-3); cursor: not-allowed; }
+.xm-pop { position: absolute; right: 0; top: calc(100% + 2px); z-index: 60; min-width: 240px; max-width: 340px; background: var(--bg-raised); border: 1px solid var(--line-strong); box-shadow: var(--shadow-2); padding: 4px 0; }
+.xm-pop--fixed { position: fixed; right: auto; top: auto; z-index: 5000; } /* above floating windows: dockview floats stack from 999 up, so the menu of a floating window was hidden under it */
+.xm-head { padding: 3px 10px; font-size: 10.5px; color: var(--text-2); }
+.xm-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; text-align: left; background: transparent; border: 0; color: var(--text); font: inherit; font-size: 12px; padding: 4px 10px; cursor: pointer; }
+.xm-item:hover, .xm-item:focus-visible { background: var(--bg-inset); outline: none; box-shadow: inset 2px 0 0 var(--accent); }
+.xm-item[disabled] { color: var(--text-3); cursor: not-allowed; }
+.xm-item small { color: var(--text-2); font-size: 10.5px; }
+.xm-sep { height: 1px; background: var(--line-soft); margin: 4px 0; }
+.xm-status { font-size: 10.5px; margin-left: 6px; color: var(--text-2); }
+.xm-status.bad { color: var(--text); }
+.xm-row { padding: 3px 10px 5px; border-bottom: 1px solid var(--line-soft); }
+.xm-rowhead { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-size: 12px; color: var(--text); }
+.xm-rowhead small { color: var(--text-2); font-size: 10.5px; }
+.xm-fmts { display: flex; flex-wrap: wrap; gap: 4px; padding-top: 3px; }
+.xm-fmt { height: 20px; padding: 0 8px; background: transparent; color: var(--text); border: 1px solid var(--line); border-radius: var(--r-ctl, 2px); font: inherit; font-size: 10.5px; cursor: pointer; }
+.xm-fmt:hover:not(:disabled), .xm-fmt:focus-visible { border-color: var(--accent); outline: none; box-shadow: inset 0 -2px 0 var(--accent); }
+.xm-fmt:disabled { color: var(--text-3); cursor: not-allowed; }

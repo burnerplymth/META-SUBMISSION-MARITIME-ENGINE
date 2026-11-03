@@ -1,0 +1,114 @@
+{
+ "contract": "satwatch-overlay/1",
+ "coord_space": "norm1000",
+ "countable_class": "large vessels >= ~150 m LOA only (10 m/px Sentinel-2)",
+ "counts": {
+  "ambiguous_excluded_baseline": 4,
+  "ambiguous_excluded_now": 5,
+  "anchorage_baseline": 0,
+  "anchorage_now": 0,
+  "berth_baseline": 1,
+  "berth_now": 1,
+  "count_basis": "anchorage_zone",
+  "counted_by": "reference-counts",
+  "frame_vessels_baseline": 1,
+  "frame_vessels_now": 1,
+  "transit_baseline": 0,
+  "transit_now": 0,
+  "vessels": 0,
+  "vessels_baseline": 0,
+  "vessels_delta": 0,
+  "vessels_now": 0,
+  "yard_baseline": "high",
+  "yard_now": "high"
+ },
+ "crops": {
+  "baseline": {
+   "cloud_pct_aoi": 0.12,
+   "cloud_pct_tile": 0.027916,
+   "file": "sea_jebelali_baseline_2026-09-19.png",
+   "scene_date": "2026-09-19",
+   "scene_id": "S2B_MSIL2A_20260919T064619_R020_T40RCN_20260919T104621",
+   "url": "/satwatch/crops/sea_jebelali_baseline_2026-09-19.png"
+  },
+  "now": {
+   "cloud_pct_aoi": 0.27,
+   "cloud_pct_tile": 0.033182,
+   "file": "sea_jebelali_now_2026-10-19.png",
+   "scene_date": "2026-10-19",
+   "scene_id": "S2B_MSIL2A_20261019T064909_R020_T40RCN_20261019T103544",
+   "url": "/satwatch/crops/sea_jebelali_now_2026-10-19.png"
+  }
+ },
+ "delta": 0,
+ "detections": [
+  {
+   "bbox": null,
+   "coord_space": "norm1000",
+   "crop_id": "sea_jebelali_now_2026-10-19.png",
+   "crop_px": [
+    1200,
+    1200
+   ],
+   "detector_id": "reference-counts",
+   "id": "sea_jebelali:now:0001",
+   "label": "other large vessel",
+   "localization": "point",
+   "mask": null,
+   "note": "approximate point; no mask, no measured bbox",
+   "point": [
+    461,
+    750
+   ],
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "score": null,
+   "visibility_basis": {
+    "cloud_pct_aoi": 0.27,
+    "cloud_pct_tile": 0.033182,
+    "method": "SCL crop pixel count over core_bbox (classes 8/9/10 = cloud)",
+    "note": "clear - no cloud in crop, dark teal sea, port and yard detail sharp, slight dust haze only"
+   },
+   "zone": "berth"
+  }
+ ],
+ "human_reviewed": false,
+ "imagery_dates": {
+  "baseline": "2026-09-19",
+  "now": "2026-10-19"
+ },
+ "name": "Jebel Ali Anchorage",
+ "node_id": "sea_jebelali",
+ "not_served_reason": null,
+ "note": "REFERENCE COUNTS (offline): reference counts recorded offline over the baked Sentinel-2 crops - NOT Meta SAM, NOT live. Reference count over the baked crops; offline replay, not a live detection",
+ "per_crop": {
+  "baseline": {
+   "counted": true,
+   "crop_id": "sea_jebelali_baseline_2026-09-19.png",
+   "n_localised": 0,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "baseline",
+   "scene_date": "2026-09-19",
+   "status": "OK",
+   "visibility": "clear - no cloud in crop, dark teal sea, port and yard detail sharp"
+  },
+  "now": {
+   "counted": true,
+   "crop_id": "sea_jebelali_now_2026-10-19.png",
+   "n_localised": 1,
+   "note": null,
+   "provider": "reference-counts",
+   "role": "now",
+   "scene_date": "2026-10-19",
+   "status": "OK",
+   "visibility": "clear - no cloud in crop, dark teal sea, port and yard detail sharp, slight dust haze only"
+  }
+ },
+ "provider": "reference-counts",
+ "provider_label": "REFERENCE COUNTS - OFFLINE",
+ "served": true,
+ "status": "OK",
+ "usable_pair": true,
+ "verification": "Detected, not verified"
+}
