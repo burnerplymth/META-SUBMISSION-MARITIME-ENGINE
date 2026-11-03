@@ -1,0 +1,555 @@
+{
+ "about": "Union of the yearly top-50 tables on Wikipedia's 'List of busiest airports by passenger traffic' as published on the retrieval date: one row per IATA code with its best (lowest) rank across those tables. Used ONLY as a presence/ranking signal for shell air-hub selection — no capacity figure is taken from it. PINNED INPUT for the shell census builder.",
+ "record_count": 78,
+ "records": [
+  {
+   "airport": "Hartsfield–Jackson Atlanta International Airport",
+   "best_rank": 1,
+   "country": "United States",
+   "iata": "ATL",
+   "passengers_latest_table": "106,302,208"
+  },
+  {
+   "airport": "Guangzhou Baiyun International Airport",
+   "best_rank": 1,
+   "country": "China",
+   "iata": "CAN",
+   "passengers_latest_table": "43,767,558"
+  },
+  {
+   "airport": "Dallas Fort Worth International Airport",
+   "best_rank": 2,
+   "country": "United States",
+   "iata": "DFW",
+   "passengers_latest_table": "73,362,946"
+  },
+  {
+   "airport": "Dubai International Airport",
+   "best_rank": 2,
+   "country": "United Arab Emirates",
+   "iata": "DXB",
+   "passengers_latest_table": "0 95,192,160"
+  },
+  {
+   "airport": "Chengdu Shuangliu International Airport",
+   "best_rank": 3,
+   "country": "China",
+   "iata": "CTU",
+   "passengers_latest_table": "40,741,509"
+  },
+  {
+   "airport": "Denver International Airport",
+   "best_rank": 3,
+   "country": "United States",
+   "iata": "DEN",
+   "passengers_latest_table": "69,286,461"
+  },
+  {
+   "airport": "Tokyo Haneda Airport",
+   "best_rank": 3,
+   "country": "Japan",
+   "iata": "HND",
+   "passengers_latest_table": "0 91,679,814"
+  },
+  {
+   "airport": "Heathrow Airport",
+   "best_rank": 4,
+   "country": "United Kingdom",
+   "iata": "LHR",
+   "passengers_latest_table": "79,183,364"
+  },
+  {
+   "airport": "O'Hare International Airport",
+   "best_rank": 4,
+   "country": "United States",
+   "iata": "ORD",
+   "passengers_latest_table": "68,340,619"
+  },
+  {
+   "airport": "Los Angeles International Airport",
+   "best_rank": 5,
+   "country": "United States",
+   "iata": "LAX",
+   "passengers_latest_table": "48,007,284"
+  },
+  {
+   "airport": "Shanghai Pudong International Airport",
+   "best_rank": 5,
+   "country": "China",
+   "iata": "PVG",
+   "passengers_latest_table": "0 84,994,548"
+  },
+  {
+   "airport": "Shenzhen Bao'an International Airport",
+   "best_rank": 5,
+   "country": "China",
+   "iata": "SZX",
+   "passengers_latest_table": "37,916,054"
+  },
+  {
+   "airport": "Chongqing Jiangbei International Airport",
+   "best_rank": 6,
+   "country": "China",
+   "iata": "CKG",
+   "passengers_latest_table": "34,937,789"
+  },
+  {
+   "airport": "Charlotte Douglas International Airport",
+   "best_rank": 6,
+   "country": "United States",
+   "iata": "CLT",
+   "passengers_latest_table": "43,302,230"
+  },
+  {
+   "airport": "Istanbul Airport",
+   "best_rank": 7,
+   "country": "Turkey",
+   "iata": "IST",
+   "passengers_latest_table": "0 80,073,252"
+  },
+  {
+   "airport": "Orlando International Airport",
+   "best_rank": 7,
+   "country": "United States",
+   "iata": "MCO",
+   "passengers_latest_table": "40,351,068"
+  },
+  {
+   "airport": "Beijing Capital International Airport",
+   "best_rank": 7,
+   "country": "China",
+   "iata": "PEK",
+   "passengers_latest_table": "34,513,827"
+  },
+  {
+   "airport": "Indira Gandhi International Airport",
+   "best_rank": 9,
+   "country": "India",
+   "iata": "DEL",
+   "passengers_latest_table": "0 77,820,834"
+  },
+  {
+   "airport": "Kunming Changshui International Airport",
+   "best_rank": 9,
+   "country": "China",
+   "iata": "KMG",
+   "passengers_latest_table": "32,990,805"
+  },
+  {
+   "airport": "Charles de Gaulle Airport",
+   "best_rank": 10,
+   "country": "France",
+   "iata": "CDG",
+   "passengers_latest_table": "57,474,033"
+  },
+  {
+   "airport": "Harry Reid International Airport",
+   "best_rank": 10,
+   "country": "United States",
+   "iata": "LAS",
+   "passengers_latest_table": "39,710,493"
+  },
+  {
+   "airport": "Shanghai Hongqiao International Airport",
+   "best_rank": 10,
+   "country": "China",
+   "iata": "SHA",
+   "passengers_latest_table": "31,165,641"
+  },
+  {
+   "airport": "John F. Kennedy International Airport",
+   "best_rank": 11,
+   "country": "United States",
+   "iata": "JFK",
+   "passengers_latest_table": "55,287,693"
+  },
+  {
+   "airport": "Phoenix Sky Harbor International Airport",
+   "best_rank": 11,
+   "country": "United States",
+   "iata": "PHX",
+   "passengers_latest_table": "38,846,713"
+  },
+  {
+   "airport": "Xi'an Xianyang International Airport",
+   "best_rank": 11,
+   "country": "China",
+   "iata": "XIY",
+   "passengers_latest_table": "31,073,924"
+  },
+  {
+   "airport": "Seoul Incheon International Airport",
+   "best_rank": 12,
+   "country": "South Korea",
+   "iata": "ICN",
+   "passengers_latest_table": "0 74,126,912"
+  },
+  {
+   "airport": "Miami International Airport",
+   "best_rank": 12,
+   "country": "United States",
+   "iata": "MIA",
+   "passengers_latest_table": "37,302,456"
+  },
+  {
+   "airport": "Amsterdam Airport Schiphol",
+   "best_rank": 13,
+   "country": "Netherlands",
+   "iata": "AMS",
+   "passengers_latest_table": "52,472,188"
+  },
+  {
+   "airport": "Adolfo Suárez Madrid–Barajas Airport",
+   "best_rank": 15,
+   "country": "Spain",
+   "iata": "MAD",
+   "passengers_latest_table": "60,181,604"
+  },
+  {
+   "airport": "Singapore Changi Airport",
+   "best_rank": 15,
+   "country": "Singapore",
+   "iata": "SIN",
+   "passengers_latest_table": "0 67,650,000"
+  },
+  {
+   "airport": "Frankfurt Airport",
+   "best_rank": 16,
+   "country": "Germany",
+   "iata": "FRA",
+   "passengers_latest_table": "59,355,389"
+  },
+  {
+   "airport": "Seattle–Tacoma International Airport",
+   "best_rank": 16,
+   "country": "United States",
+   "iata": "SEA",
+   "passengers_latest_table": "36,154,015"
+  },
+  {
+   "airport": "Hangzhou Xiaoshan International Airport",
+   "best_rank": 17,
+   "country": "China",
+   "iata": "HGH",
+   "passengers_latest_table": "28,224,342"
+  },
+  {
+   "airport": "Mexico City International Airport",
+   "best_rank": 17,
+   "country": "Mexico",
+   "iata": "MEX",
+   "passengers_latest_table": "36,056,614"
+  },
+  {
+   "airport": "Suvarnabhumi Airport",
+   "best_rank": 20,
+   "country": "Thailand",
+   "iata": "BKK",
+   "passengers_latest_table": "0 62,234,693"
+  },
+  {
+   "airport": "Kuala Lumpur International Airport",
+   "best_rank": 20,
+   "country": "Malaysia",
+   "iata": "KUL",
+   "passengers_latest_table": "0 63,409,501"
+  },
+  {
+   "airport": "Newark Liberty International Airport",
+   "best_rank": 23,
+   "country": "United States",
+   "iata": "EWR",
+   "passengers_latest_table": "43,565,254"
+  },
+  {
+   "airport": "George Bush Intercontinental Airport",
+   "best_rank": 23,
+   "country": "United States",
+   "iata": "IAH",
+   "passengers_latest_table": "31,866,308"
+  },
+  {
+   "airport": "Soekarno–Hatta International Airport",
+   "best_rank": 24,
+   "country": "Indonesia",
+   "iata": "CGK",
+   "passengers_latest_table": "31,000,000"
+  },
+  {
+   "airport": "Hong Kong International Airport",
+   "best_rank": 24,
+   "country": "Hong Kong",
+   "iata": "HKG",
+   "passengers_latest_table": "0 60,992,000"
+  },
+  {
+   "airport": "San Francisco International Airport",
+   "best_rank": 24,
+   "country": "United States",
+   "iata": "SFO",
+   "passengers_latest_table": "42,210,201"
+  },
+  {
+   "airport": "Tan Son Nhat International Airport",
+   "best_rank": 24,
+   "country": "Vietnam",
+   "iata": "SGN",
+   "passengers_latest_table": "22,062,893"
+  },
+  {
+   "airport": "Josep Tarradellas Barcelona–El Prat Airport",
+   "best_rank": 25,
+   "country": "Spain",
+   "iata": "BCN",
+   "passengers_latest_table": "41,616,302"
+  },
+  {
+   "airport": "Sheremetyevo International Airport",
+   "best_rank": 25,
+   "country": "Russia",
+   "iata": "SVO",
+   "passengers_latest_table": "30,943,456"
+  },
+  {
+   "airport": "Chhatrapati Shivaji Maharaj International Airport",
+   "best_rank": 27,
+   "country": "India",
+   "iata": "BOM",
+   "passengers_latest_table": "51,589,040"
+  },
+  {
+   "airport": "Chengdu Tianfu International Airport",
+   "best_rank": 27,
+   "country": "China",
+   "iata": "TFU",
+   "passengers_latest_table": "0 56,686,738"
+  },
+  {
+   "airport": "Zhengzhou Xinzheng International Airport",
+   "best_rank": 28,
+   "country": "China",
+   "iata": "CGO",
+   "passengers_latest_table": "21,406,709"
+  },
+  {
+   "airport": "Jeju International Airport",
+   "best_rank": 29,
+   "country": "South Korea",
+   "iata": "CJU",
+   "passengers_latest_table": "21,054,854"
+  },
+  {
+   "airport": "Toronto Pearson International Airport",
+   "best_rank": 29,
+   "country": "Canada",
+   "iata": "YYZ",
+   "passengers_latest_table": "36,356,109"
+  },
+  {
+   "airport": "Logan International Airport",
+   "best_rank": 30,
+   "country": "United States",
+   "iata": "BOS",
+   "passengers_latest_table": "36,112,473"
+  },
+  {
+   "airport": "Hamad International Airport",
+   "best_rank": 31,
+   "country": "Qatar",
+   "iata": "DOH",
+   "passengers_latest_table": "35,730,482"
+  },
+  {
+   "airport": "Fort Lauderdale–Hollywood International Airport",
+   "best_rank": 31,
+   "country": "United States",
+   "iata": "FLL",
+   "passengers_latest_table": "28,076,808"
+  },
+  {
+   "airport": "São Paulo/Guarulhos International Airport",
+   "best_rank": 31,
+   "country": "Brazil",
+   "iata": "GRU",
+   "passengers_latest_table": "20,359,547"
+  },
+  {
+   "airport": "El Dorado International Airport",
+   "best_rank": 32,
+   "country": "Colombia",
+   "iata": "BOG",
+   "passengers_latest_table": "35,362,529"
+  },
+  {
+   "airport": "Nanjing Lukou International Airport",
+   "best_rank": 33,
+   "country": "China",
+   "iata": "NKG",
+   "passengers_latest_table": "19,906,576"
+  },
+  {
+   "airport": "Beijing Daxing International Airport",
+   "best_rank": 34,
+   "country": "China",
+   "iata": "PKX",
+   "passengers_latest_table": "0 53,618,949"
+  },
+  {
+   "airport": "London Gatwick Airport",
+   "best_rank": 35,
+   "country": "United Kingdom",
+   "iata": "LGW",
+   "passengers_latest_table": "32,848,088"
+  },
+  {
+   "airport": "Changsha Huanghua International Airport",
+   "best_rank": 36,
+   "country": "China",
+   "iata": "CSX",
+   "passengers_latest_table": "19,223,825"
+  },
+  {
+   "airport": "Moscow Domodedovo Airport",
+   "best_rank": 36,
+   "country": "Russia",
+   "iata": "DME",
+   "passengers_latest_table": "25,065,087"
+  },
+  {
+   "airport": "King Abdulaziz International Airport",
+   "best_rank": 36,
+   "country": "Saudi Arabia",
+   "iata": "JED",
+   "passengers_latest_table": "0 53,400,000"
+  },
+  {
+   "airport": "Ninoy Aquino International Airport",
+   "best_rank": 37,
+   "country": "Philippines",
+   "iata": "MNL",
+   "passengers_latest_table": "0 50,100,000"
+  },
+  {
+   "airport": "Istanbul Sabiha Gökçen International Airport",
+   "best_rank": 38,
+   "country": "Turkey",
+   "iata": "SAW",
+   "passengers_latest_table": "24,991,916"
+  },
+  {
+   "airport": "Munich Airport",
+   "best_rank": 39,
+   "country": "Germany",
+   "iata": "MUC",
+   "passengers_latest_table": "31,642,738"
+  },
+  {
+   "airport": "Antalya Airport",
+   "best_rank": 40,
+   "country": "Turkey",
+   "iata": "AYT",
+   "passengers_latest_table": "31,228,377"
+  },
+  {
+   "airport": "Leonardo da Vinci Rome Fiumicino Airport",
+   "best_rank": 40,
+   "country": "Italy",
+   "iata": "FCO",
+   "passengers_latest_table": "0 50,872,356"
+  },
+  {
+   "airport": "Gimpo International Airport",
+   "best_rank": 40,
+   "country": "South Korea",
+   "iata": "GMP",
+   "passengers_latest_table": "17,446,239"
+  },
+  {
+   "airport": "Minneapolis/St Paul International Airport",
+   "best_rank": 40,
+   "country": "United States",
+   "iata": "MSP",
+   "passengers_latest_table": "24,429,003"
+  },
+  {
+   "airport": "Cancún International Airport",
+   "best_rank": 43,
+   "country": "Mexico",
+   "iata": "CUN",
+   "passengers_latest_table": "30,484,094"
+  },
+  {
+   "airport": "Xiamen Gaoqi International Airport",
+   "best_rank": 43,
+   "country": "China",
+   "iata": "XMN",
+   "passengers_latest_table": "16,710,197"
+  },
+  {
+   "airport": "Detroit Metropolitan Airport",
+   "best_rank": 44,
+   "country": "United States",
+   "iata": "DTW",
+   "passengers_latest_table": "23,610,765"
+  },
+  {
+   "airport": "Guiyang Longdongbao International Airport",
+   "best_rank": 46,
+   "country": "China",
+   "iata": "KWE",
+   "passengers_latest_table": "16,583,878"
+  },
+  {
+   "airport": "Haikou Meilan International Airport",
+   "best_rank": 47,
+   "country": "China",
+   "iata": "HAK",
+   "passengers_latest_table": "16,490,216"
+  },
+  {
+   "airport": "Orly Airport",
+   "best_rank": 47,
+   "country": "France",
+   "iata": "ORY",
+   "passengers_latest_table": "29,187,269"
+  },
+  {
+   "airport": "Salt Lake City International Airport",
+   "best_rank": 48,
+   "country": "United States",
+   "iata": "SLC",
+   "passengers_latest_table": "22,383,878"
+  },
+  {
+   "airport": "Sydney Kingsford Smith Airport",
+   "best_rank": 48,
+   "country": "Australia",
+   "iata": "SYD",
+   "passengers_latest_table": "29,094,483"
+  },
+  {
+   "airport": "Taoyuan International Airport",
+   "best_rank": 48,
+   "country": "Taiwan",
+   "iata": "TPE",
+   "passengers_latest_table": "0 47,795,969"
+  },
+  {
+   "airport": "Noi Bai International Airport",
+   "best_rank": 49,
+   "country": "Vietnam",
+   "iata": "HAN",
+   "passengers_latest_table": "16,473,214"
+  },
+  {
+   "airport": "LaGuardia Airport",
+   "best_rank": 49,
+   "country": "United States",
+   "iata": "LGA",
+   "passengers_latest_table": "28,997,592"
+  }
+ ],
+ "retrieved_at": "2026-10-21",
+ "source_name": "Wikipedia — List of busiest airports by passenger traffic",
+ "source_url": "https://en.wikipedia.org/wiki/List_of_busiest_airports_by_passenger_traffic"
+}
