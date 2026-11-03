@@ -1,0 +1,20 @@
+{
+ "episodes_sha256": "d1e714ff652a669496ca1602b205f97e3e0b6b3fe28bba524fe90f6d89c201c3",
+ "files": {
+  "beirut_2020.json": "9d87378d3a0f26dce9a5f57cda3223eb6d3ffa29b7ac58027a9f33679f99a2c0",
+  "beirut_2020.placebo.json": "2e8d304046f9527235b03913d328cb05ffe5eebe0cc9180cb46e2684b08d3aac",
+  "ila_2024.json": "619fc1e087b12b4531b689698554e81f20fce71453e37fad9b2769ba58646f87",
+  "ila_2024.placebo.json": "596947db47ed062fa7bd729ba689df987b05a18c9c052b282ab85dc913b5eb5b",
+  "la_2021.json": "74fd921e94333cfcf93d22d48e6f4db687552e39f7d318f31d27652043f72470",
+  "la_2021.placebo.json": "05cca2a07a3972834e7c628361b6ee1d5c5c3de21aef684ad2964a5dc0085197",
+  "meishan_2021.json": "063a323f9636737262fbc0e299ed3dcd5c4876bc18a4824dc12b16131d320750",
+  "meishan_2021.placebo.json": "90fa2d8e6ed8d52fdf6d7e1e1c820284fbcecdf4a08045bdf23ec7c901ed2b84",
+  "rotterdam_2025.json": "e8e87fd392bae7f0b9d132ddf092a9923968c40477887b39aa964260eeb94f86",
+  "rotterdam_2025.placebo.json": "1c1afb9aaf803ef5e39b4f835651a2e779c632788486d0bfe8eb0342aeb89b5e"
+ },
+ "manifest_sha256": "0bf91b16be7e68f9e23758beafcdb024d2c64ca8875ec41f91c71fe9df96ba0a",
+ "rule": "val01-v1",
+ "rule_sha256": "a5ddceb3ce8a43b56185656f8cd20ad3fd14629b2241b32576947252e788508e",
+ "schema": "supermap.val01.manifest.v1",
+ "split": "TEST"
+}

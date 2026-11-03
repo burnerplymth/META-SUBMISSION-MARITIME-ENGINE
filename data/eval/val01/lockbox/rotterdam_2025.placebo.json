@@ -1,0 +1,17 @@
+{
+ "available": false,
+ "collected_at": "2026-10-25T11:09:44Z",
+ "episode_id": "rotterdam_2025",
+ "episodes_sha256": "d1e714ff652a669496ca1602b205f97e3e0b6b3fe28bba524fe90f6d89c201c3",
+ "fetch_range": {
+  "from": "2019-01-01",
+  "to": "2026-10-18"
+ },
+ "label": "BACKTEST - observable PortWatch metrics on public disruption episodes. Not the live Ledger; these numbers never mix with Ledger grades.",
+ "places": [],
+ "reason": "no shifted window (+-364 d, +-728 d) inside the fetch range that avoids every registered episode window",
+ "rule": "val01-v1",
+ "rule_sha256": "a5ddceb3ce8a43b56185656f8cd20ad3fd14629b2241b32576947252e788508e",
+ "schema": "supermap.val01.placebo.v1",
+ "split": "TEST"
+}

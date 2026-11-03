@@ -1,0 +1,314 @@
+{
+  "schema": "supermap.val01.episodes.v1",
+  "benchmark": "VAL-01 lite",
+  "amendment": "Added before any model was run on a TEST episode: two port episodes added (santos_2025, nhavasheva_2021, both TRAIN by the unchanged split rule) for regional spread; unsourced candidates recorded in 'excluded'. Rule changes are in rule_val01-v1.json (control pool, placebo windows, strata, per-place table). The TRAIN aggregate of the first collection had been seen when this amendment was written; the changes follow the design aim (generalise across ports, kinds and regions), not a number.",
+  "label": "BACKTEST - historical disruptions with public PortWatch coverage; never merged with the live Ledger.",
+  "note": "INPUTS ONLY. Nothing in this file is an outcome: no PortWatch value was read to write it. capacity_loss is taken from a stated source, derived by arithmetic from a stated source, or (one case) flagged MODELED. Source verification: 'fetched' = the page was retrieved and the cited fact read; 'search_result' = the fact is quoted in a web-search result for that URL but the page itself could not be fetched (403/503) or was not fetched; 'prior_curated_record' = taken from an earlier curated record of the same event in this repo (path given), retrieved on the date shown.",
+  "split": {
+    "rule": "sha256('val01-split-v1:' + episode_id) first 8 hex digits as an integer, modulo 100; < 60 -> TRAIN, else TEST",
+    "seed_string": "val01-split-v1:",
+    "note": "The seed string was fixed before any outcome was collected and is not tuned; the resulting 7 TRAIN / 5 TEST split is whatever the hash gives."
+  },
+  "capacity_loss_basis_classes": {
+    "SOURCED": "a source states the figure",
+    "DERIVED": "arithmetic on sourced figures (shown)",
+    "STATED_CLOSURE": "sources state the place/terminal was closed or operations halted; capacity_loss = 1.0 (kind closure; the engine forces 1.0)",
+    "MODELED": "no sourced figure exists; a modelling assumption, never to be presented as sourced"
+  },
+  "episodes": [
+    {
+      "id": "redsea_2024",
+      "title": "Red Sea / Bab el-Mandeb shipping diversion",
+      "seed": "chk_babelmandeb",
+      "kind": "capacity_cut",
+      "capacity_loss": 0.7,
+      "capacity_loss_basis": {"class": "SOURCED", "derivation": "UNCTAD: gross tonnage entering the Gulf of Aden fell more than 70 percent between the first half of Dec 2023 and the first half of Feb 2024; 0.7 is the stated floor (existing replay dataset data/replay/red_sea_2024.json)."},
+      "started_at": "2023-11-19T00:00:00Z",
+      "duration_d": 559,
+      "duration_basis": "expected_duration_d of the existing replay dataset",
+      "metric": "transits",
+      "co_affected": ["chk_suez", "chk_capeofgoodhope", "sea_jeddah", "sea_portsaid"],
+      "exclude_controls": ["sea_durban"],
+      "sources": [
+        {"url": "https://africaports.co.za/2024/04/24/feature-red-sea-crisis-and-implications-for-trade-facilitation-in-africa/", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/red_sea_2024.json", "supports": "the >70 percent tonnage fall (UNCTAD figure)"},
+        {"url": "https://maritime-executive.com/article/unctad-maritime-chokepoints-are-trade-s-biggest-vulnerability", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/red_sea_2024.json", "supports": "Suez/Red Sea diversion corroboration"},
+        {"url": "https://splash247.com/shippings-answer-to-geopolitics-go-around/", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/red_sea_2024.json", "supports": "diversion around the Cape"}
+      ]
+    },
+    {
+      "id": "panama_2023_24",
+      "title": "Panama Canal drought transit limits",
+      "seed": "chk_panama",
+      "kind": "capacity_cut",
+      "capacity_loss": 0.5,
+      "capacity_loss_basis": {"class": "DERIVED", "derivation": "ACP slot counts: normal schedule about 36 transits/day, minimum 18/day from 1 Feb 2024; 1 - 18/36 = 0.5 (data/replay/panama_2023_24.json)."},
+      "started_at": "2023-10-30T00:00:00Z",
+      "duration_d": 215,
+      "duration_basis": "expected_duration_d of the existing replay dataset",
+      "metric": "transits",
+      "co_affected": ["sea_balboa", "sea_colon", "chk_suez", "sea_newyork"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://www.dbgroup.net/en/news/panama-canal-daily-transit-limited-due-drought", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/panama_2023_24.json", "supports": "ACP advisory 30 Oct 2023, 36 to 18 transits/day"},
+        {"url": "https://content.ballastmarkets.com/blog/2025-05-05-panama-canal-drought-nature-disrupts-trade/", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/panama_2023_24.json", "supports": "drought timeline"}
+      ]
+    },
+    {
+      "id": "la_2021",
+      "title": "Los Angeles / Long Beach vessel queue",
+      "seed": "sea_losangeles",
+      "kind": "capacity_cut",
+      "capacity_loss": 0.78,
+      "capacity_loss_basis": {"class": "MODELED", "derivation": "No sourced capacity-loss fraction exists for this episode. 0.78 = 109 waiting / (109 + 30 at berth) container ships at the 10 Nov 2021 MESocal snapshot, a stock-share proxy, NOT a measured throughput drop (data/replay/la_2021.json). Included because it is one of the four existing episodes; the benchmark states that its magnitude input is modelled."},
+      "started_at": "2021-09-19T00:00:00Z",
+      "duration_d": 58,
+      "duration_basis": "expected_duration_d of the existing replay dataset",
+      "metric": "port_calls",
+      "co_affected": ["sea_oakland", "sea_nwsa", "sea_savannah", "sea_newyork"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://www.hellenicshippingnews.com/a-record-111-container-ships-are-floating-off-californias-busiest-ports-despite-bidens-24-7-schedule-and-looming-fines/", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/la_2021.json", "supports": "record queue of container ships"},
+        {"url": "https://www.seatrade-maritime.com/ports-logistics/vessels-waiting-at-la-long-beach-ports-back-at-record-levels", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/la_2021.json", "supports": "vessels waiting"},
+        {"url": "https://www.westernoverseas.com/port-congestion-update-11-12-21/", "retrieved_at": "2026-10-20", "verification": "prior_curated_record", "record": "data/replay/la_2021.json", "supports": "congestion update"}
+      ]
+    },
+    {
+      "id": "evergiven_2021",
+      "title": "Ever Given grounding, Suez Canal",
+      "seed": "chk_suez",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "The canal was blocked to all traffic from the grounding (2021-03-23T05:40Z) to the refloat (2021-03-29T13:05Z); traffic resumed 2021-03-29T17:00Z."},
+      "started_at": "2021-03-23T05:40:00Z",
+      "duration_d": 6.3,
+      "duration_basis": "grounding to refloat, 6 d 7 h as reported",
+      "metric": "transits",
+      "co_affected": ["chk_babelmandeb", "sea_portsaid", "chk_capeofgoodhope", "sea_rotterdam"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction", "retrieved_at": "2026-10-21", "verification": "prior_curated_record", "record": "data/sim_backtest/ever_given/actuals.json", "supports": "grounding time, duration, resumption"},
+        {"url": "https://gardline.com/about-us/news/suez-canal-unblocked-we-pulled-it-off", "retrieved_at": "2026-10-21", "verification": "prior_curated_record", "record": "data/sim_backtest/ever_given/actuals.json", "supports": "Boskalis release: refloated 29 March 15:05 local"},
+        {"url": "https://gcaptain.com/suez-canal-says-ship-backlog-cleared/", "retrieved_at": "2026-10-21", "verification": "prior_curated_record", "record": "data/sim_backtest/ever_given/actuals.json", "supports": "Suez Canal Authority: 422 vessels queued"}
+      ]
+    },
+    {
+      "id": "shanghai_2022",
+      "title": "Shanghai COVID lockdown, April 2022 (container calls)",
+      "seed": "sea_shanghai",
+      "kind": "capacity_cut",
+      "capacity_loss": 0.25,
+      "capacity_loss_basis": {"class": "SOURCED", "derivation": "Drewry via Seatrade/WorldPorts: expected daily container handling capacity about 100,000 TEU in April 2022, a decline of 25 percent from normal; Shanghai volumes fell 25 percent month on month. (Alternative figure not used: Ministry of Transport, April 2022 throughput 82.4 percent of April 2021.)"},
+      "started_at": "2022-04-01T00:00:00Z",
+      "duration_d": 30,
+      "duration_basis": "April 2022: both quantified sources (25 percent capacity decline; 82.4 percent of last year) describe April. The end date of the lockdown itself (1 June) was NOT verified, so the stated scope of the figure is used.",
+      "metric": "port_calls_container",
+      "co_affected": ["sea_ningbo", "sea_taicang", "sea_shenzhen", "sea_losangeles"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://www.seatrade-maritime.com/ports-logistics/shanghai-port-container-handling-drops-25-april-lockdown", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "25 percent capacity decline (page fetch returned HTTP 403)"},
+        {"url": "https://www.worldports.org/shanghai-port-container-handling-drops-25-in-april-lockdown/", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "same Drewry figure, republished (page fetch returned HTTP 403)"},
+        {"url": "https://vir.com.vn/shanghai-lockdown-snarls-worlds-busiest-port-and-china-supply-chains-92567.html", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "city sealed off almost entirely for a week by 8 April 2022 (start about 1 April); week-on-week volumes down 40 percent (hearsay, not used)"},
+        {"url": "https://www.chinaservicesinfo.com/s/202205/22/WS628a1d4a498e6a12c122cb25/shanghai-port-sees-container-throughput-recover.html", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "April throughput 82.4 percent of April 2021 (Ministry of Transport)"}
+      ]
+    },
+    {
+      "id": "meishan_2021",
+      "title": "Ningbo-Zhoushan Meishan terminal closure, August 2021 (container calls)",
+      "seed": "sea_ningbo",
+      "kind": "capacity_cut",
+      "capacity_loss": 0.25,
+      "capacity_loss_basis": {"class": "DERIVED", "derivation": "Meishan terminal closed (STATED_CLOSURE) and accounts for about a quarter of the Ningbo-Zhoushan port's container throughput (Caixin/Bloomberg); Argus puts it near 20 percent (not used). capacity_loss = 0.25 for the port."},
+      "started_at": "2021-08-11T00:00:00Z",
+      "duration_d": 14,
+      "duration_basis": "closed 11 Aug; partial vessel operations from 18 Aug; official said still closed 23 Aug; Argus: closed two weeks to 25 Aug. 14 d is the Argus stated duration.",
+      "metric": "port_calls_container",
+      "co_affected": ["sea_shanghai", "sea_shenzhen", "sea_taicang"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://www.caixinglobal.com/2021-08-24/ships-resume-berthing-at-suspended-port-terminal-in-east-china-101759210.html", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "closure 11 Aug 2021; partial resumption 18 Aug; about a quarter of throughput"},
+        {"url": "https://www.argusmedia.com/zh/news-and-insights/latest-market-news/2244970-east-china-port-congestion-threatens-polymer-exports", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "closed two weeks until 25 Aug; about 20 percent of volumes"},
+        {"url": "https://www.aljazeera.com/amp/economy/2021/8/12/china-shuts-terminal-at-worlds-3rd-busiest-port-after-covid-case", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "all container services at Meishan halted until further notice"},
+        {"url": "https://maritime-executive.com/article/impact-from-ningbo-closing-less-than-feared-as-reopening-is-expected", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "project44: port calls fell 22 percent in the week"}
+      ]
+    },
+    {
+      "id": "beirut_2020",
+      "title": "Beirut port explosion",
+      "seed": "sea_beirut",
+      "kind": "capacity_cut",
+      "capacity_loss": 0.55,
+      "capacity_loss_basis": {"class": "DERIVED", "derivation": "Lebanese army commander: port operating capacity about 45 percent as of 27 Aug 2020 (Arab News via Maritime Executive); 1 - 0.45 = 0.55. The container terminal alone was reported at about 80 percent (not used: the metric counts all vessels)."},
+      "started_at": "2020-08-04T00:00:00Z",
+      "duration_d": 23,
+      "duration_basis": "4 Aug to 27 Aug 2020, the date the 45 percent figure was stated; the port had not recovered by then, so the duration is a LOWER BOUND.",
+      "metric": "port_calls",
+      "co_affected": ["sea_mersin", "sea_damietta", "sea_portsaid"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://maritime-executive.com/article/after-blast-port-of-beirut-gets-back-to-business", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "45 percent operating capacity at 27 Aug; container terminal back 10 Aug at about 80 percent"},
+        {"url": "https://english.aawsat.com/node/2442546", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "container lines resume calls as terminal restarts"},
+        {"url": "https://cyprusshippingnews.com/2020/09/01/after-the-disaster-port-of-beirut-gets-back-to-business/", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "port back to business, 1 Sep 2020"}
+      ]
+    },
+    {
+      "id": "ila_2024",
+      "title": "ILA strike, US East and Gulf Coast ports",
+      "seed": "sea_newyork",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "Sources state East Coast and Gulf ports were temporarily closed by the strike, 1 Oct to the tentative deal on 3 Oct 2024; members returned to work 4 Oct."},
+      "started_at": "2024-10-01T00:00:00Z",
+      "duration_d": 3,
+      "duration_basis": "strike began 1 Oct, deal 3 Oct (three days of striking)",
+      "metric": "port_calls",
+      "co_affected": ["sea_savannah", "sea_charleston", "sea_virginia"],
+      "exclude_controls": ["sea_halifax"],
+      "sources": [
+        {"url": "https://www.gcca.org/advocacy-updates/tentative-deal-reached-ending-east-gulf-coast-port-strike/", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "strike began 1 Oct 2024; tentative deal 3 Oct after three days; temporary closure of East Coast and Gulf ports"},
+        {"url": "https://freebeacon.com/latest-news/us-port-workers-and-operators-reach-deal-to-end-east-coast-strike/", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "Reuters text: deal ends a three-day strike that shut shipping on the East and Gulf coasts"},
+        {"url": "https://psabdp.com/transport-status/ila-port-strike", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "45,000 ILA members returned to work 4 Oct"}
+      ]
+    },
+    {
+      "id": "baltimore_2024",
+      "title": "Key Bridge collapse, Port of Baltimore",
+      "seed": "sea_baltimore",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "Maryland Port Administration, 26 Mar 2024: vessel traffic suspended indefinitely. Temporary limited channels reopened in stages from about 1 Apr; the full 700 ft x 50 ft channel reopened 10 Jun 2024. Treating the whole span as a full closure overstates the loss after the first temporary channels; this is a stated simplification, not an observation."},
+      "started_at": "2024-03-26T00:00:00Z",
+      "duration_d": 76,
+      "duration_basis": "26 Mar to 10 Jun 2024 (full channel reopening, USACE)",
+      "metric": "port_calls",
+      "co_affected": ["sea_virginia", "sea_newyork", "sea_charleston"],
+      "exclude_controls": [],
+      "note_tier": "sea_baltimore is a SHELL-tier node: engine runs are allowed; Ledger locks are not.",
+      "sources": [
+        {"url": "https://cnsmaryland.org/2024/03/26/vessel-traffic-through-the-port-of-baltimore-has-been-suspended-indefinitely/", "retrieved_at": "2026-10-21", "verification": "prior_curated_record", "record": "data/sim_backtest/baltimore/actuals.json", "supports": "vessel traffic suspended indefinitely 26 Mar 2024"},
+        {"url": "https://www.nab.usace.army.mil/Media/News-Releases/Article/3802402/us-army-corps-of-engineers-announces-full-restoration-of-baltimores-fort-mchenr/", "retrieved_at": "2026-10-21", "verification": "prior_curated_record", "record": "data/sim_backtest/baltimore/actuals.json", "supports": "full restoration of the Fort McHenry channel, 10 Jun 2024"},
+        {"url": "https://www.epa.gov/waterutilityresponse/suspension-vessel-traffic-port-baltimore-current-status-and-potential-impact", "retrieved_at": "2026-10-21", "verification": "prior_curated_record", "record": "data/sim_backtest/baltimore/actuals.json", "supports": "inbound and outbound vessel traffic suspended until further notice"}
+      ]
+    },
+    {
+      "id": "dorian_2019",
+      "title": "Hurricane Dorian, Charleston and Savannah",
+      "seed": "sea_charleston",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "V. Alexander port advisories: Charleston closed 4-5 Sep 2019, reopening Friday 6 Sep 09:00 local; Savannah shut down 3-5 Sep, reopening 6 Sep."},
+      "started_at": "2019-09-04T00:00:00Z",
+      "duration_d": 2.4,
+      "duration_basis": "closed from 4 Sep, reopening 6 Sep 09:00 local",
+      "metric": "port_calls",
+      "co_affected": ["sea_savannah", "sea_virginia"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://valexander.com/?p=2075", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "Savannah operations shut down 3-5 Sep, reopening 6 Sep; Charleston closed 4-5 Sep, reopening 6 Sep 09:00"},
+        {"url": "https://us.one-line.com/sites/g/files/lnzjqr1451/files/2019-09/Hurricane%20Dorian%20Advisory%20-%20Update%20%237.pdf", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "ONE carrier advisory: Savannah port condition back to normal with restrictions 5 Sep 18:00"},
+        {"url": "https://www.maritimeprofessional.com/maritime-safety?start=105", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "Coast Guard set Zulu at Charleston 4 Sep; Charleston remained closed to commercial operations on 6 Sep headline"}
+      ]
+    },
+    {
+      "id": "montreal_2024",
+      "title": "Port of Montreal lockout, November 2024",
+      "seed": "sea_montreal",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "Maritime Employers Association locked out 1,200 dockworkers; the labour board ordered operations to resume at 07:00 on the Saturday after (9 Nov 2024). Both facts are from search-result text; the pages were not fetched (HTTP 403)."},
+      "started_at": "2024-11-04T00:00:00Z",
+      "duration_d": 5.3,
+      "duration_basis": "lockout from Sunday night (3 Nov) to resumption Saturday 9 Nov 07:00 local; day granularity",
+      "metric": "port_calls",
+      "co_affected": ["sea_halifax", "sea_newyork"],
+      "exclude_controls": ["sea_halifax"],
+      "sources": [
+        {"url": "https://www.cbc.ca/lite/story/1.7384521", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "operations to resume at Port of Montreal Saturday after the government orders an end to the lockout (page fetch returned HTTP 403)"},
+        {"url": "https://nsnews.com/the-mix/montreal-port-operations-to-resume-saturday-after-lockout-of-longshore-workers-ended-9816484", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "1,200 dockworkers locked out; CIRB ordered resumption (page fetch returned HTTP 403)"},
+        {"url": "https://www.grainews.ca/daily/canadas-labour-board-orders-operations-to-resume-at-montreal-port", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "labour board orders operations to resume"}
+      ]
+    },
+    {
+      "id": "rotterdam_2025",
+      "title": "Rotterdam lashers strike, October 2025 (container calls)",
+      "seed": "sea_rotterdam",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "Container operations were mostly halted from the afternoon of Wed 8 Oct 2025 (Maritime Executive, 10 Oct 2025); no container ship could unload (search-result text); the strike was suspended effective Mon 13 Oct 2025 07:00 local by court order (Kuehne+Nagel). The metric is container calls, the class the strike halted."},
+      "started_at": "2025-10-08T13:15:00Z",
+      "duration_d": 4.7,
+      "duration_basis": "8 Oct 15:15 local to 13 Oct 07:00 local",
+      "metric": "port_calls_container",
+      "co_affected": ["sea_antwerp", "sea_lehavre"],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://maritime-executive.com/index.php/article/rotterdam-container-ops-remains-at-standstill-as-lashers-extend-strike-2", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "container operations mostly halted since Wednesday afternoon; extension 10 Oct; article dated 10 Oct 2025"},
+        {"url": "https://mykn.kuehne-nagel.com/news/article/lashing-companies-begin-strike-at-rotterdam", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "strike from 8 Oct 2025, extended 10 Oct, suspended 13 Oct 07:00"},
+        {"url": "https://www.worldports.org/?p=633309", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "48-hour lashing strike brings Rotterdam container operations to a standstill"}
+      ]
+    },
+    {
+      "id": "santos_2025",
+      "title": "Port of Santos 29-hour weather closure, July 2025",
+      "seed": "sea_santos",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "Santos Port Authority: vessel manoeuvres suspended from 02:00 local on Tue 29 Jul 2025, a second 'impracticability condition' that afternoon halted ship entries and exits until Wed 30 Jul morning; the port was shut for about 29 hours (DatamarNews, fetched; SBT News: reopened 10:00 Wed)."},
+      "started_at": "2025-07-29T05:00:00Z",
+      "duration_d": 1.2,
+      "duration_basis": "29 hours as reported",
+      "metric": "port_calls",
+      "co_affected": [],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://datamarnews.com/noticias/rough-seas-and-strong-winds-shut-santos-port-for-29-hours/", "retrieved_at": "2026-10-25", "verification": "fetched", "supports": "closed 29 hours, 29-30 July 2025, Santos Port Authority impracticability condition"},
+        {"url": "https://sbtnews.sbt.com.br/noticia/brasil/porto-de-santos-sp-e-reaberto-apos-suspensao-por-ressaca-e-ventos-fortes", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "port reopened 10:00 Wednesday after suspension for swell and wind"},
+        {"url": "https://www.abcdoabc.com.br/mar-agitado-e-ventos-fortes-fecham-porto-de-santos/", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "rough sea and strong winds close the Port of Santos for 29 hours"}
+      ]
+    },
+    {
+      "id": "nhavasheva_2021",
+      "title": "Cyclone Tauktae, Nhava Sheva (JNPT), May 2021",
+      "seed": "sea_nhavasheva",
+      "kind": "closure",
+      "capacity_loss": 1.0,
+      "capacity_loss_basis": {"class": "STATED_CLOSURE", "derivation": "S&P Global: JNPT suspended berthing from late Saturday night 15 May 2021, planned to sail out all vessels at berth by 23:00 on 15 May, suspended operations and evacuated the dockyard on Sunday evening; berthing at all terminals could resume from 01:00 on Tuesday 18 May depending on weather (a plan; the actual restart time was not confirmed). Maersk later reported JNPT back to normal operations."},
+      "started_at": "2021-05-15T17:30:00Z",
+      "duration_d": 2.1,
+      "duration_basis": "23:00 IST 15 May to the planned restart 01:00 IST 18 May; the actual restart is NOT confirmed, so this is the planned duration",
+      "metric": "port_calls",
+      "co_affected": [],
+      "exclude_controls": [],
+      "sources": [
+        {"url": "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/coal/051821-india-shipping-operations-run-into-disarray-as-cyclone-makes-landfall", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "Nhava Sheva suspended operations, evacuated the dockyard; berthing may resume from 1 am Tuesday"},
+        {"url": "https://maritimegateway.com/?p=37521", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "Cyclone Tauktae port operations (page fetch timed out)"},
+        {"url": "https://www.maersk.com/news/articles/2021/05/27/tropical-cyclone-tauktae-impact-port-operations-vessel-schedule", "retrieved_at": "2026-10-25", "verification": "search_result", "supports": "27 May update: Jawaharlal Nehru, Mundra and Hazira ports resumed normal operations (page fetch failed to parse)"}
+      ]
+    }
+  ],
+  "excluded": [
+    {"id": "durban_floods_2022", "reason": "Sources give yard occupancy (Pier 1 60 percent, Pier 2 78 percent on 19 Apr) and marine capacity 98 percent by 20 Apr, not a capacity loss; no closure dates were fetched (porttechnology, engineeringnews returned 403). Africa therefore has NO port episode in this set."},
+    {"id": "transnet_strike_2022", "reason": "gCaptain (fetched): Pier 1, Pier 2 and RoRo 'impacted', berthing continued, no percentage; force majeure is not a capacity figure."},
+    {"id": "antwerp_2025", "reason": "The fetched S&P/Hellenic Shipping News text describes delays and queues (about 160 ships), not a shutdown, and gives no halt times."},
+    {"id": "capetown_wind_2024", "reason": "Transnet statement of 10 Jul 2024 (fetched): terminal wind-bound, three vessels unable to work; the start date of the suspension is not stated."},
+    {"id": "saola_2023", "reason": "Yantian and Nansha suspended gate services at 16:00 on 31 Aug 2023 (fetched), but no source for the resumption time was found."},
+    {"id": "jebelali_floods_2024", "reason": "DP World stated operations continued normally; not a disruption of port calls."},
+    {"id": "hagibis_2019", "reason": "No source confirms a closure of the Tokyo Bay ports."},
+    {"id": "sanantonio_2019", "reason": "Sources disagree (Fresh Fruit Portal, fetched, says 'affected', not paralysed); no duration or capacity figure."},
+    {"id": "lehavre_2023", "reason": "A single source (Kuehne+Nagel, fetched) gives the 24 h stoppage, 06:00 23 Nov to 06:00 24 Nov 2023; a second independent source was not found, so the 2-source minimum is not met."},
+    {"id": "yantian_2021", "reason": "No graph place for Yantian (the graph's sea_shenzhen is the Shenzhen aggregate) and no sourced Yantian share of that aggregate; capacity figures differ by date (30 percent, just over 50 percent, 70 percent). Not modelled."},
+    {"id": "felixstowe_2022", "reason": "Sources (Al Jazeera, fetched 2026-10-25) give no capacity or closure statement for the eight-day strike; no capacity_loss can be sourced."},
+    {"id": "vancouver_2023", "reason": "The ILWU Canada strike (1-13 Jul 2023) is documented but no fetched source states the ports were halted or quantifies the loss (gCaptain, fetched, says only 'poised to affect')."},
+    {"id": "harvey_2017", "reason": "Before the PortWatch daily record (2019-01-01)."},
+    {"id": "rhine_2022", "reason": "Inland waterway: no graph place and no PortWatch series."},
+    {"id": "korea_truckers_2022", "reason": "Capacity figures found (60 percent on 24 Nov, 19 percent of normal on 26 Nov) but no source found for the end date; duration cannot be sourced."},
+    {"id": "antwerp_2023", "reason": "No fetched source for the 2023 Antwerp action found in this pass."}
+  ],
+  "directly_observed_waiting_time_candidates": {
+    "note": "val01-v1 does not grade delay days from PortWatch. Episodes whose source observes waiting time directly would form a separate sub-benchmark. None was collected in this pass; the following are candidates only (URLs not verified here).",
+    "candidates": [
+      {"episode": "panama_2023_24", "series": "Panama Canal Authority published waiting times / booking availability", "status": "unverified candidate"},
+      {"episode": "la_2021", "series": "Marine Exchange of Southern California ships-at-anchor counts (a queue COUNT, not a wait time)", "status": "unverified candidate"},
+      {"episode": "evergiven_2021", "series": "Suez Canal Authority queue counts (422 vessels; a COUNT, not a wait time)", "status": "unverified candidate"}
+    ]
+  }
+}

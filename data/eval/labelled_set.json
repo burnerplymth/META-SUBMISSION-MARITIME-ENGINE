@@ -1,0 +1,531 @@
+{
+ "items": [
+  {
+   "area": "Coastal waters from Savannah GA to Altamaha Sound GA out 20 nm, including Grays Reef National Marine Sanctuary",
+   "headline": "Small Craft Advisory issued October 20 at 8:27PM EDT until October 21 at 9:00PM EDT by NWS Charleston SC",
+   "item_id": "evt_20261020_sea_savannah_weather_200da99e",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_savannah",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Greenlee, AZ",
+   "headline": "Flood Advisory issued October 20 at 5:58PM MST until October 20 at 9:00PM MST by NWS Tucson AZ",
+   "item_id": "evt_20261020_gnd_nogales_weather_a27283c3",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Flood Advisory",
+    "kind": "weather",
+    "place_id": "gnd_nogales",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Brantley, GA",
+   "headline": "Flood Warning issued October 20 at 8:47PM EDT by NWS Jacksonville FL",
+   "item_id": "evt_20261020_sea_savannah_weather_2180c726",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Flood Warning",
+    "kind": "weather",
+    "place_id": "sea_savannah",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Central Phoenix; North Phoenix/Glendale; Scottsdale/Paradise Valley; East Valley; South Mountain/Ahwatukee; Southeast Valley/Queen Creek; Northwest Pinal County",
+   "headline": "Special Weather Statement issued October 20 at 9:30PM MST by NWS Phoenix AZ",
+   "item_id": "evt_20261020_gnd_nogales_weather_087066f3",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Special Weather Statement",
+    "kind": "weather",
+    "place_id": "gnd_nogales",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Maricopa, AZ",
+   "headline": "Severe Thunderstorm Warning issued October 20 at 10:09PM MST until October 20 at 10:30PM MST by NWS Phoenix AZ",
+   "item_id": "evt_20261020_gnd_nogales_weather_8668cca0",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Severe Thunderstorm Warning",
+    "kind": "weather",
+    "place_id": "gnd_nogales",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Dade; Walker; Catoosa; Whitfield; Murray; Fannin; Gilmer; Union; Towns; Chattooga; Gordon; Pickens; Dawson; Lumpkin; White; Floyd; Bartow; Cherokee; Forsyth; Hall; Banks; Jackson; Madison; Polk; Paulding; Cobb; North Fulton; Gwinnett; Barrow; Clarke; Oconee; Oglethorpe; Wilkes; Haralson; Carroll; Douglas; South Fulton; DeKalb; Rockdale; Walton; Newton; Morgan; Greene; Taliaferro; Heard; Coweta; Fayette; Clayton; Spalding; Henry; Butts; Jasper; Putnam; Hancock; Warren; Troup; Meriwether; Pike; Upson; Lamar; Monroe; Jones; Baldwin; Washington; Glascock; Jefferson; Harris; Talbot; Taylor; Crawford; Bibb; Twiggs; Wilkinson; Johnson; Emanuel; Muscogee; Chattahoochee; Marion; Schley; Macon; Peach; Houston; Bleckley; Laurens; Treutlen; Stewart; Webster; Sumter; Dooly; Crisp; Pulaski; Wilcox; Dodge; Telfair; Wheeler; Montgomery; Toombs",
+   "headline": "Special Weather Statement issued October 21 at 1:34AM EDT by NWS Peachtree City GA",
+   "item_id": "evt_20261021_sea_houston_weather_954cac49",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Special Weather Statement",
+    "kind": "weather",
+    "place_id": "sea_houston",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Flagler Beach to Volusia-Brevard County Line 0-20 nm; Volusia-Brevard County Line to Sebastian Inlet 0-20 nm; Sebastian Inlet to Jupiter Inlet 0-20 nm; Flagler Beach to Volusia-Brevard County Line 20-60 nm; Volusia-Brevard County Line to Sebastian Inlet 20-60 nm; Sebastian Inlet to Jupiter Inlet 20-60 nm",
+   "headline": "Small Craft Advisory issued October 20 at 9:24PM EDT until October 23 at 4:00AM EDT by NWS Melbourne FL",
+   "item_id": "evt_20261020_sea_melbourne_weather_f283b1d4",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_melbourne",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Lake, FL; Volusia, FL",
+   "headline": "Flood Warning issued October 20 at 9:12PM EDT by NWS Melbourne FL",
+   "item_id": "evt_20261020_sea_melbourne_weather_02d699cc",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Flood Warning",
+    "kind": "weather",
+    "place_id": "sea_melbourne",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal waters from South Santee River to Edisto Beach SC out 20 NM",
+   "headline": "Small Craft Advisory issued October 20 at 8:27PM EDT until October 21 at 9:00PM EDT by NWS Charleston SC",
+   "item_id": "evt_20261020_sea_charleston_weather_824ada51",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_charleston",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Pleasants; Tyler; Roane; Wirt; Calhoun; Ritchie; Doddridge; Clay; Braxton; Gilmer; Lewis; Harrison; Taylor",
+   "headline": "Frost Advisory issued October 20 at 8:25PM EDT until October 21 at 9:00AM EDT by NWS Charleston WV",
+   "item_id": "evt_20261021_sea_charleston_weather_54a0a5e0",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Frost Advisory",
+    "kind": "weather",
+    "place_id": "sea_charleston",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Eastern Currituck; Virginia Beach",
+   "headline": "High Surf Advisory issued October 20 at 7:25PM EDT until October 22 at 7:00PM EDT by NWS Wakefield VA",
+   "item_id": "evt_20261020_sea_virginia_weather_cd77e6fa",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "High Surf Advisory",
+    "kind": "weather",
+    "place_id": "sea_virginia",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Charles City; Surry; James City; Chesapeake; Newport News; Hampton/Poquoson; Isle of Wight; Suffolk; Norfolk; Portsmouth",
+   "headline": "Coastal Flood Advisory issued October 20 at 7:25PM EDT until October 22 at 1:00PM EDT by NWS Wakefield VA",
+   "item_id": "evt_20261020_sea_virginia_weather_056cf4b7",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Coastal Flood Advisory",
+    "kind": "weather",
+    "place_id": "sea_virginia",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Atlantic Waters of Puerto Rico AND USVI from 10 NM to 19.5N",
+   "headline": "Marine Weather Statement issued October 21 at 2:39AM AST by NWS San Juan PR",
+   "item_id": "evt_20261021_sea_charlotte_weather_e169a93a",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Marine Weather Statement",
+    "kind": "weather",
+    "place_id": "sea_charlotte",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Gila, AZ; Yavapai, AZ",
+   "headline": "Severe Thunderstorm Warning issued October 20 at 11:38PM MST until October 21 at 12:15AM MST by NWS Flagstaff AZ",
+   "item_id": "evt_20261020_air_phoenix_weather_2ac08842",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Severe Thunderstorm Warning",
+    "kind": "weather",
+    "place_id": "air_phoenix",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal waters east of Ipswich Bay and the Stellwagen Bank National Marine Sanctuary; Massachusetts Bay and Ipswich Bay",
+   "headline": "Small Craft Advisory issued October 21 at 2:36AM EDT until October 22 at 5:00PM EDT by NWS Boston/Norton MA",
+   "item_id": "evt_20261021_sea_ipswich_weather_1ce21133",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_ipswich",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Boston Harbor; Narragansett Bay",
+   "headline": "Small Craft Advisory issued October 21 at 2:36AM EDT until October 22 at 2:00AM EDT by NWS Boston/Norton MA",
+   "item_id": "evt_20261021_sea_boston_weather_cd43ac9d",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_boston",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Inland Flagler; Eastern Clay; Eastern Putnam; South Central Duval; Western St. Johns",
+   "headline": "Coastal Flood Advisory issued October 21 at 2:24AM EDT until October 22 at 4:00PM EDT by NWS Jacksonville FL",
+   "item_id": "evt_20261021_sea_jacksonville_weather_dd3a325c",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Coastal Flood Advisory",
+    "kind": "weather",
+    "place_id": "sea_jacksonville",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal Duval; Northeast Coastal St. Johns",
+   "headline": "Rip Current Statement issued October 21 at 2:24AM EDT until October 23 at 2:00AM EDT by NWS Jacksonville FL",
+   "item_id": "evt_20261021_sea_jacksonville_weather_0e90b995",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Rip Current Statement",
+    "kind": "weather",
+    "place_id": "sea_jacksonville",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal waters from Fernandina Beach to St. Augustine FL out 20 NM; Coastal waters from St. Augustine to Flagler Beach FL out 20 NM",
+   "headline": "Small Craft Advisory issued October 21 at 2:19AM EDT until October 22 at 2:00AM EDT by NWS Jacksonville FL",
+   "item_id": "evt_20261021_sea_jacksonville_weather_06f54d06",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_jacksonville",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal Waters from Stonington, ME to Port Clyde, ME out 25 NM; Coastal Waters from Port Clyde, ME to Cape Elizabeth, ME out 25 NM; Coastal Waters from Cape Elizabeth, ME to Merrimack River, MA out 25 NM",
+   "headline": "Small Craft Advisory issued October 21 at 2:18AM EDT until October 21 at 6:00PM EDT by NWS Gray ME",
+   "item_id": "evt_20261021_sea_newyork_weather_96755188",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_newyork",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Waters from Parramore Island VA to Cape Charles Light VA from 20 to 60 NM; Waters from Cape Charles Light to Virginia - North Carolina Border from 20 to 60 NM; Waters from NC VA border to Currituck Beach Light NC from 20 to 60 NM",
+   "headline": "Gale Warning issued October 21 at 2:17AM EDT until October 21 at 10:00PM EDT by NWS Wakefield VA",
+   "item_id": "evt_20261021_sea_virginia_weather_78b71f52",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Gale Warning",
+    "kind": "weather",
+    "place_id": "sea_virginia",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Northwest Valley; Buckeye/Avondale; Cave Creek/New River; Deer Valley; North Phoenix/Glendale; New River Mesa",
+   "headline": "Special Weather Statement issued October 20 at 11:17PM MST by NWS Phoenix AZ",
+   "item_id": "evt_20261020_gnd_glendale_weather_bb5f0f53",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Special Weather Statement",
+    "kind": "weather",
+    "place_id": "gnd_glendale",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Anne Arundel",
+   "headline": "Coastal Flood Advisory issued October 21 at 1:27AM EDT until October 21 at 4:00AM EDT by NWS Baltimore MD/Washington DC",
+   "item_id": "evt_20261021_sea_baltimore_weather_b776d10e",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Coastal Flood Advisory",
+    "kind": "weather",
+    "place_id": "sea_baltimore",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal waters from Jupiter Inlet to Deerfield Beach FL out 20 NM; Coastal waters from Deerfield Beach to Ocean Reef FL out 20 NM; Waters from Jupiter Inlet to Deerfield Beach FL from 20 to 60 NM; Waters from Deerfield Beach to Ocean Reef FL from 20 to 60 NM excluding the territorial waters of Bahamas",
+   "headline": "Small Craft Advisory issued October 20 at 9:54PM EDT until October 22 at 8:00PM EDT by NWS Miami FL",
+   "item_id": "evt_20261020_sea_miami_weather_8c516e9d",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_miami",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal Palm Beach County",
+   "headline": "Coastal Flood Statement issued October 20 at 9:52PM EDT until October 22 at 11:00PM EDT by NWS Miami FL",
+   "item_id": "evt_20261021_sea_miami_weather_3f0e78bb",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Coastal Flood Statement",
+    "kind": "weather",
+    "place_id": "sea_miami",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal Palm Beach County",
+   "headline": "High Surf Advisory issued October 20 at 9:52PM EDT until October 23 at 8:00PM EDT by NWS Miami FL",
+   "item_id": "evt_20261020_sea_miami_weather_98f7765c",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "High Surf Advisory",
+    "kind": "weather",
+    "place_id": "sea_miami",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal Broward County; Coastal Miami Dade County",
+   "headline": "Rip Current Statement issued October 20 at 9:52PM EDT until October 23 at 8:00PM EDT by NWS Miami FL",
+   "item_id": "evt_20261020_sea_miami_weather_2eb67bae",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Rip Current Statement",
+    "kind": "weather",
+    "place_id": "sea_miami",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Kauai Northwest Waters; Kauai Windward Waters; Kauai Leeward Waters; Kauai Channel; Oahu Windward Waters; Oahu Leeward Waters; Kaiwi Channel; Maui County Windward Waters; Maui County Leeward Waters; Maalaea Bay; Pailolo Channel; Alenuihaha Channel; Big Island Leeward Waters; Big Island Southeast Waters",
+   "headline": "Small Craft Advisory issued October 20 at 3:11PM HST until October 21 at 6:00AM HST by NWS Honolulu HI",
+   "item_id": "evt_20261020_sea_honolulu_weather_aa5c7128",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_honolulu",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Chesapeake Bay from Pooles Island to Sandy Point MD; Chester River to Queenstown MD",
+   "headline": "Small Craft Advisory issued October 20 at 8:11PM EDT until October 21 at 6:00PM EDT by NWS Baltimore MD/Washington DC",
+   "item_id": "evt_20261020_sea_baltimore_weather_a75e820f",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_baltimore",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Yavapai, AZ",
+   "headline": "Severe Thunderstorm Warning issued October 21 at 3:45AM MST until October 21 at 4:15AM MST by NWS Flagstaff AZ",
+   "item_id": "evt_20261021_gnd_glendale_weather_2502c664",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Severe Thunderstorm Warning",
+    "kind": "weather",
+    "place_id": "gnd_glendale",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Darke; Miami; Champaign; Clark; Madison; Franklin; Licking",
+   "headline": "Special Weather Statement issued October 21 at 5:47AM EDT by NWS Wilmington OH",
+   "item_id": "evt_20261021_sea_miami_weather_b3db63a9",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Special Weather Statement",
+    "kind": "weather",
+    "place_id": "sea_miami",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Coastal Volusia; Coastal Indian River; Coastal St. Lucie; Coastal Martin; Mainland Northern Brevard; Northern Brevard Barrier Islands; Mainland Southern Brevard; Southern Brevard Barrier Islands",
+   "headline": "Rip Current Statement issued October 21 at 4:04AM EDT until October 23 at 4:00AM EDT by NWS Melbourne FL",
+   "item_id": "evt_20261021_sea_melbourne_weather_33a200b1",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Rip Current Statement",
+    "kind": "weather",
+    "place_id": "sea_melbourne",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Alger; Luce; Delta; Southern Schoolcraft; Northern Schoolcraft",
+   "headline": "Special Weather Statement issued October 21 at 3:04AM EDT by NWS Marquette MI",
+   "item_id": "evt_20261021_sea_alger_weather_bffdee0e",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Special Weather Statement",
+    "kind": "weather",
+    "place_id": "sea_alger",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Lake, FL; Volusia, FL",
+   "headline": "Flood Warning issued October 21 at 9:31AM EDT by NWS Melbourne FL",
+   "item_id": "evt_20261021_air_orlando_weather_b8f08e70",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Flood Warning",
+    "kind": "weather",
+    "place_id": "air_orlando",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Brantley, GA",
+   "headline": "Flood Warning issued October 21 at 8:32AM EDT by NWS Jacksonville FL",
+   "item_id": "evt_20261021_sea_brunswick_weather_fa93e0e5",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Flood Warning",
+    "kind": "weather",
+    "place_id": "sea_brunswick",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Northwest Plateau",
+   "headline": "Flood Watch issued October 21 at 4:59AM PDT until October 22 at 5:00PM PDT by NWS Las Vegas NV",
+   "item_id": "evt_20261021_air_lasvegas_weather_a9d0a47c",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Flood Watch",
+    "kind": "weather",
+    "place_id": "air_lasvegas",
+    "severity_word": "Severe"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Bristol Bay greater than 15 NM",
+   "headline": "Small Craft Advisory issued October 21 at 3:08AM AKDT until October 21 at 5:00PM AKDT by NWS Anchorage AK",
+   "item_id": "evt_20261021_sea_bristol_weather_3ab8429c",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Small Craft Advisory",
+    "kind": "weather",
+    "place_id": "sea_bristol",
+    "severity_word": "Minor"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Valley; Sherman; Dawson; Buffalo; Gosper; Phelps; Furnas; Harlan",
+   "headline": "Special Weather Statement issued October 21 at 5:51AM CDT by NWS Hastings NE",
+   "item_id": "evt_20261021_gnd_buffalo_weather_f70ae22b",
+   "label_basis": "hand label: NWS alert type + the stored item's served place mapping (adapter node_id), checked against the alert area text",
+   "labels": {
+    "alert_type": "Special Weather Statement",
+    "kind": "weather",
+    "place_id": "gnd_buffalo",
+    "severity_word": "Moderate"
+   },
+   "source": "NOAA/NWS"
+  },
+  {
+   "area": "Austria, Bosnia & Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Moldova, Montenegro, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine, ",
+   "headline": "Drought in Austria, Bosnia  and  Herzegovina, Belgium, Belarus, Switzerland, Czech Republic, Germany, Denmark, Spain, France, Croatia, Hungary, Ireland, Italy, Liechtenstein, Luxembourg, Moldova, Montenegro, Netherlands, Poland, Romania, Serbia, Sweden, Slovenia, Slovakia, Ukraine, ",
+   "item_id": "evt_20251221_air_munich_other_83c46b0e",
+   "label_basis": "hand label: GDACS event type DR (drought) + the stored item's served place mapping",
+   "labels": {
+    "alert_type": "Drought",
+    "kind": "other",
+    "place_id": "air_munich",
+    "severity_word": "Orange"
+   },
+   "source": "GDACS"
+  },
+  {
+   "area": "The Bahamas, Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
+   "headline": "Drought in The Bahamas, Belize, Costa Rica, Cuba, Dominican Republic, Guatemala, Honduras, Haiti, Mexico, Nicaragua, El Salvador, United States",
+   "item_id": "evt_20260421_sea_coatzacoalcos_other_92591048",
+   "label_basis": "hand label: GDACS event type DR (drought) + the stored item's served place mapping",
+   "labels": {
+    "alert_type": "Drought",
+    "kind": "other",
+    "place_id": "sea_coatzacoalcos",
+    "severity_word": "Orange"
+   },
+   "source": "GDACS"
+  }
+ ],
+ "label_fields": [
+  "kind",
+  "place_id",
+  "alert_type",
+  "severity_word"
+ ],
+ "provenance": "Hand-labelled from stored feed items in data/events.jsonl (retrieved 2026-10-21). Each label was checked against the item's own served fields (source alert type, alert area text, adapter place mapping). No labels were generated by a model."
+}

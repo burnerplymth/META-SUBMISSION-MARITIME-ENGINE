@@ -1,0 +1,28 @@
+{
+ "episodes_sha256": "d1e714ff652a669496ca1602b205f97e3e0b6b3fe28bba524fe90f6d89c201c3",
+ "files": {
+  "baltimore_2024.json": "4c1d98e4cffca3f7192921709eb51dae94784756a20ee0330dc13b1b723f1e2f",
+  "baltimore_2024.placebo.json": "7f6cd9065fd652690e81175fa4809b0932088910addd8435b09e5960c7fec17c",
+  "dorian_2019.json": "9b9635249a198e7789a73f2d30db215085035a9e615b715fdbdfbffec59344a1",
+  "dorian_2019.placebo.json": "1eadf2d3688ae0ed6b1c5610ca3cefa3fea7d7f2dc5e7c65ed5e691e9a8f0185",
+  "evergiven_2021.json": "66a32d3e384e03af6eea892b762f8052aa66b289f8835440448fab8f127a78ed",
+  "evergiven_2021.placebo.json": "4d6268ad541eb99d6b176f149e63f2e607bda440089b0f5e86e556a1260d1108",
+  "montreal_2024.json": "7124f982e0f00cee76527e399642872328782e69fb2b0633b9ab3cf7cfad5b70",
+  "montreal_2024.placebo.json": "ee3c3f79da288c4799961776d9cbea6853b58c55d833acecbe87faef76a5818e",
+  "nhavasheva_2021.json": "22269a5ce244f8b2feb69d8175150c0d49a811acfa254ca61de02118d66a7456",
+  "nhavasheva_2021.placebo.json": "8d53611c502aa366432229c93b28982abde7a5bb73199b5df182b6a480c8f24c",
+  "panama_2023_24.json": "79da01afdd7c72bf0ecac43d8ee50560af468a55b30e0fc6dd0591ce52656f19",
+  "panama_2023_24.placebo.json": "22cb9fe17fb54307783e28e6d52f0a0a9da5147a571d377a11a71fb7f115ed23",
+  "redsea_2024.json": "b9f7f8df147f781385048ba1bc51b3ecfd6faa19e8fdca8394b7e05e15e7c8cb",
+  "redsea_2024.placebo.json": "a9bf5733860d39f904fb561aaefb1412c8763cd22f109fd1a45a64f24fc03bf9",
+  "santos_2025.json": "e6620a6861583f9bc11988ae711bbdbb78a49f652dfeb263c9a8d3448af66240",
+  "santos_2025.placebo.json": "270041173791963af149d6a109250f5fc3b103f50ba371d74052c0712f776d7d",
+  "shanghai_2022.json": "a7223d57676699b106b7eeb5e6faa68f2678388e347ae4cf5c71fa87eeac58a8",
+  "shanghai_2022.placebo.json": "f3a2bbd0aab96c4f414481fcbd103487b8692440cd0cc63bb1789adcb1bff940"
+ },
+ "manifest_sha256": "4e6663bfcb643267727e0f03342dd501f42c7cfc7b374777af7560aba62b6129",
+ "rule": "val01-v1",
+ "rule_sha256": "a5ddceb3ce8a43b56185656f8cd20ad3fd14629b2241b32576947252e788508e",
+ "schema": "supermap.val01.manifest.v1",
+ "split": "TRAIN"
+}

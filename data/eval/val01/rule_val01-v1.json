@@ -1,0 +1,97 @@
+{
+  "schema": "supermap.val01.rule.v1",
+  "id": "val01-v1",
+  "label": "BACKTEST - observable PortWatch metrics. Never merged with the live Ledger numbers.",
+  "grader": "deterministic arithmetic over stored numbers; no LLM at any step",
+  "observed_series": "IMF PortWatch daily counts (Daily_Chokepoints_Data n_total / Daily_Ports_Data portcalls[_class]); SNAPSHOT history; metric per episode in episodes.json",
+  "fetch": {"from": "2019-01-01", "to": "2026-10-18", "note": "one full-history fetch per place, windows are extracted from it"},
+  "windows": {
+    "pre_days": 60,
+    "post_days_after_duration": 60,
+    "note": "stored window = [start - 60 d, start + ceil(duration_d) + 60 d], clipped to the fetch range"
+  },
+  "gradeability": {
+    "baseline_days": 28, "baseline_min_days_present": 14, "baseline_min_level_per_day": 5.0,
+    "rule": "baseline B = mean of the 28 days before the start day; a place needs >= 14 days present AND B >= 5.0 per day, else it is NOT COMPARED (never a hit, never a miss, never estimated); the reason is recorded"
+  },
+  "smoothing": {
+    "w_days": "min(7, max(3, ceil(duration_d)))",
+    "S_w": "trailing mean over w days, needs >= w-2 days present",
+    "note": "w depends only on the stated duration (an input), never on an outcome"
+  },
+  "metrics": {
+    "a_onset": {
+      "applies_to": "seed",
+      "observed": "onset = first day d in [start, start+30] such that each of the next s days (d .. d+s-1) is >= 20 percent below B, s = max(1, min(3, floor(duration_d))) (series_math.onset_day on the raw series; s = 3 as realism-v1 for any episode of 3 days or more, shorter only for a stated duration under 3 days, which cannot hold 3 low days); lag = d - start day, in days",
+      "no_observed_onset": "episode UNGRADED for (a); a model onset prediction then counts as a false alarm (printed, in no denominator)",
+      "predicted": {"model": "first non-cost chain event at the seed: (at - started_at) in days", "echo": "0 (onset is immediate)", "persistence": "no onset (a miss when an onset was observed)"},
+      "hit": "|predicted lag - observed lag| <= 7 days",
+      "reported": ["hits/graded with exact Clopper-Pearson 95 percent CI", "mean absolute error in days"]
+    },
+    "b_magnitude": {
+      "applies_to": "seed",
+      "observed": "D_obs = 1 - min S_w(t) / B over t in [start, start+ceil(duration)+w-1] (peak trough of the w-day trailing mean), clipped to [0,1]",
+      "gradeable": "D_obs >= 0.10, else UNGRADED (no observed drop) and listed",
+      "predicted": {"model": "D_pred = effective capacity_loss given to the engine (closure = 1.0)", "persistence": "0"},
+      "relative_error": "|D_pred - D_obs| / D_obs",
+      "hit": "|D_pred - D_obs| <= 0.20 (the realism-v1 20 percentage point band)",
+      "reported": ["median and mean relative error", "hits/graded with exact CI"],
+      "caveat": "capacity_loss is an INPUT shared by every engine config, so the model column is identical across configs by construction: this metric tests the sourced loss figure against the observed trough, not the engine"
+    },
+    "c_recovery": {
+      "applies_to": "seed",
+      "observed": "t_trough = day of min S_w; recovery day = first t >= t_trough with S_w >= 0.9 B on 7 consecutive days; lag = t - start day. Not recovered by the end of the stored window -> CENSORED, ungraded and listed",
+      "gradeable": "D_obs >= 0.10",
+      "predicted": {"model": "duration_d + seed_wait_d, seed_wait_d = delay_d of the engine's first (seq 0) event at the seed", "echo": "duration_d", "persistence": "0"},
+      "hit": "|predicted lag - observed lag| <= max(7 days, 0.25 x observed lag)",
+      "reported": ["hits/graded with exact CI", "mean absolute error in days", "censored count"]
+    },
+    "d_downstream": {
+      "applies_to": "universe U = co_affected places (a priori, in episodes.json) + places with a PortWatch series within 2 directed hops of the seed (PlaceBook.hops_from), ordered by (hops, id), first 10; the seed excluded",
+      "observed": "change % = 100 x (mean over [start, min(start+ceil(duration)-1, window end)] - B) / B; direction down if <= -10, up if >= +10, else flat (realism-v1)",
+      "predicted_direction": {"model": "down if the place carries a non-cost chain event (delay_d > 0) else flat", "persistence": "flat", "k_hop": "k = smallest k whose hop set covers at least the model's predicted-down count over the compared places (whole hop levels); down inside, flat outside"},
+      "direction_agreement": "pred == obs over compared places, 3 classes, exact CI; also recall and precision of 'down'",
+      "rank_correlation": {"statistic": "Spearman", "predicted_severity": {"model": "max delay_d at the place", "k_hop": "-hops"}, "observed_severity": "max(0, -change %)", "min_places": 4, "aggregate": "per-episode rho listed; mean over graded episodes; persistence has no variation and is UNGRADED"}
+    },
+    "e_controls": {
+      "pool": ["sea_sydney", "sea_brisbane", "sea_melbourne", "sea_buenosaires", "sea_callao", "sea_durban", "sea_dublin", "sea_gdansk", "sea_halifax", "sea_tokyo", "sea_yokohama", "sea_nagoya", "sea_incheon", "sea_gwangyang", "sea_manila", "sea_laemchabang", "sea_tanjungpriok", "sea_karachi", "sea_mombasa", "sea_capetown", "sea_piraeus", "sea_genoa", "sea_valencia", "sea_constanta", "sea_cartagena", "sea_manzanillo", "sea_guayaquil", "sea_sanantonio", "sea_dammam", "sea_jebelali", "gnd_detroit", "gnd_vancouver"],
+      "selection": "pool minus every place that is a seed or a co_affected place of ANY registered episode (a control must be undisrupted in every episode window), minus this episode's universe, minus places within 2 directed hops of this episode's seed, minus this episode's exclude_controls. the pool covers 32 places over 6 regions and 3 kinds (sea port, ground; no chokepoint is used as a control because a chokepoint can be indirectly affected by any episode). Air hubs have no PortWatch daily series and are NOT in the set (gap, stated in the report)",
+      "false_positive": "the baseline predicts the place down while it is observed not down (flat or up)",
+      "rate": "false positives / controls with an observed non-down direction (exact CI); controls observed down are counted separately and excluded from the denominator"
+    }
+  },
+  "placebo_windows": {
+    "purpose": "undisrupted place-windows: the same places read over a window in which this episode did not happen, to measure how often the observed-direction rule says 'down' by chance and how often the model's predicted-down places would look down anyway",
+    "start": "the first of  start-364 d, start+364 d, start-728 d, start+728 d  (same weekday) whose evaluation window [placebo start - 28 d, placebo start + ceil(duration_d) + 7 d] lies inside the fetch range and does not touch any registered episode's window [start - 28 d, start + ceil(duration_d) + 60 d] for ANY episode; none qualifies -> no placebo for that episode (recorded)",
+    "places": "seed, universe and controls of the episode, same metric, same gradeability rule, same eval window length",
+    "reported": [
+      "placebo_down_rate: share of gradeable place-windows observed 'down' (exact CI), by place kind and region",
+      "placebo_model_precision: of the places the model predicted down, the share observed down in the PLACEBO window, set beside the same share in the real window (chance agreement)",
+      "placebo_onset_rate: share of episodes whose seed shows an observed onset (rule a) in the placebo window (exact CI)"
+    ],
+    "stored": "<id>.placebo.json beside the outcome file (same split, same seal)"
+  },
+  "strata": {
+    "place_kind": "sea_port | chokepoint | air_hub | ground (graph node kind; air_hub has no PortWatch series, reported as NOT SERVED with count 0)",
+    "region": "North America | Latin America & Caribbean | Europe | Middle East & North Africa | Sub-Saharan Africa | Asia-Pacific; from the node's country (first of 'A / B'), chokepoints by a fixed table in val01.py (chk_suez, chk_babelmandeb, chk_hormuz: MENA; chk_panama: Latin America; chk_malacca, chk_taiwan: Asia-Pacific; chk_turkish, chk_gibraltar, chk_dover, chk_danish: Europe; chk_capeofgoodhope, chk_mozambique: Sub-Saharan Africa)",
+    "report": "every metric (a to e) is reported pooled AND stratified by (i) the SEED's place kind and region for the seed metrics a, b, c, and (ii) the PLACE's kind and region for the place-level metrics d and e and the placebo rates; each cell has its numerator, denominator and exact Clopper-Pearson interval; a cell with a denominator under 5 is printed but flagged 'indicative'",
+    "level_split": "port-level vs chokepoint-level seeds are two kind strata; port-level episodes are at least half of the set"
+  },
+  "per_place": {
+    "table": "every compared place of every episode in one flat table (episode, role, place, kind, region, hops, baseline, observed change %, observed direction, model / k-hop / persistence direction, model severity, and the observed placebo direction), sorted so the largest disagreements are first, so outliers are visible instead of averaged away"
+  },
+  "baselines": {
+    "persistence": "nothing changes",
+    "k_hop": "directed k-hop from the seed over graph.json (realism-v1)",
+    "echo": "(a) onset at lag 0 and (c) recovery = stated duration: what an engine that only echoes its inputs would say"
+  },
+  "ci": "exact Clopper-Pearson 95 percent via engine.scorecard.clopper_pearson",
+  "aggregation": "per split (TRAIN / TEST), pooled counts over episodes; places inside one episode are not independent, so the intervals are indicative",
+  "not_graded": ["delay days (PortWatch does not observe waiting time)", "cost, inventory or channel-specific claims"],
+  "configs": {
+    "v1": "engine.Engine on data/graph/graph.json, params None",
+    "rev2": "engine2.Engine2 default plug-ins",
+    "rev2_services": "routed Engine2, services selection eras pre_red_sea_crisis, include_unverified false, include_unstated false",
+    "rev2_calibrated": "routed Engine2 with calibration profile rev2c (same services selection)"
+  }
+}
