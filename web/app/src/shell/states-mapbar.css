@@ -1,0 +1,41 @@
+/* Composition and calm states. Loaded late; tokens only, no colour literals.
+ * Layout and state treatment only (type scale, row heights and panel padding belong to the tokens and panel CSS). */
+
+/* A feed that is simply not connected (offline copy) is a muted ring and a quiet word, never a red cross. */
+.chip--offline { --chip-c: var(--text-3); border-left-color: var(--line-strong); }
+.chip--offline .chip-w { color: var(--text-2); }
+.chip--notserved { border-left-color: var(--line-strong); }
+.chip--notserved .chip-w { color: var(--text-2); }
+
+/* LIVE | SIMULATION is a mode selector: neutral selected style while no feed is live. */
+.seg--mode .seg-b--live.on.seg-b--calm { color: var(--text); --seg-mark: var(--accent); }
+.seg--mode .seg-b--live.seg-b--calm .ui-dot { background: var(--text-3); box-shadow: none; animation: none; }
+
+/* ── Map window: one slim bar, the map takes the rest ─────────────────────── */
+.panel--map .mapbar { flex-wrap: nowrap; gap: 8px; min-height: 28px; height: 28px; padding: 0 8px; overflow: hidden; align-content: center; }
+.panel--map .mapbar-t { display: inline-flex; align-items: center; gap: 6px; flex: none; color: var(--text); }
+.panel--map .mapbar .vt { margin-left: 0; }
+.panel--map .mapbar .counts { margin-left: auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; letter-spacing: 0; color: var(--text-3); }
+.panel--map .mapbar .mapbar-mini { flex: none; height: var(--ctl-h, 24px); }
+.panel--map .mapbar .sim-modes { flex: none; }
+@container mapwin (max-width: 560px) {
+  .panel--map .mapbar .counts { display: none; }
+  .panel--map .mapbar .mapbar-t b { display: none; }
+}
+@container mapwin (max-width: 440px) {
+  .panel--map .mapbar .mapbar-mini { display: none; }
+}
+/* Causal chain window: the diagram is fitted to the pane and always whole; the step table scrolls beneath it */
+.wm-win [data-panel="chain"] .panel-body { display: flex; flex-direction: column; }
+.wm-win [data-panel="chain"] .dag-wrap { flex: 0 0 auto; height: clamp(150px, 46%, 300px); margin-bottom: 6px; background: var(--bg-panel); }
+.wm-win [data-panel="chain"] .dag-wrap .react-flow { background: transparent; }
+.wm-win [data-panel="chain"] .panel-body > table { flex: none; }
+/* status bar: one calm feed summary in a recorded or offline copy */
+.statusbar .src-sum { display: inline-flex; align-items: center; gap: 10px; padding: 0 4px; height: var(--status-h); border: 0; background: none; color: var(--text-2); font: inherit; cursor: pointer; }
+.statusbar .src-sum:hover { background: var(--hover); }
+/* Port twin: the map takes the window, not 38% of it */
+.wm-win .ptw-map { height: clamp(320px, 62vh, 880px); }
+/* quiet empty state with its action */
+.empty-state--act { flex-direction: column; gap: 8px; }
+/* a deployment note above the map is one quiet line, not a block */
+.panel--map .snap-chip, .panel--map .offline-chip { margin: 0; padding: 2px 8px; font-size: var(--t-micro); line-height: 1.4; border-width: 0 0 1px; background: var(--bg-bar); flex: none; }

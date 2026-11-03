@@ -1,0 +1,218 @@
+/* SupermAP chrome layer.
+   Loaded near the end (main.tsx; shell/chrome-panels.css follows): it restyles the
+   base shell through the same class names, so nothing outside this file has to
+   change for the chrome to take this look. It never edits a pinned line
+   of styles.css (the focus ring, the reduced-motion block) and never sets a
+   literal colour: every colour is a token from tokens.css. The component
+   styles of src/ui live in ui/ui.css and come in first.
+
+   Direction: flat graphite bars (no gradients, no translucency), matte data
+   wells, 1 px hairlines, azure for selection and amber-orange for ranges,
+   2 px radii, controls 22/24/26 px, sentence-case labels (caps are for codes
+   and units), tabular numerals, no dashed borders. One control vocabulary:
+   rail-and-diamond switch, text cells over a rail, tabs over a bottom rail,
+   outline buttons, dot-and-word chips with a left rule. */
+@import "../ui/ui.css";
+
+/* ---- type: IBM Plex Sans for everything, IBM Plex Mono for codes -- */
+html, body { font-family: var(--font-ui); font-size: var(--t-data); }
+.mono, .mono * { font-family: var(--font-ui); font-variant-numeric: var(--num); }
+.code-chip, .fn-chip, .fn-rail button, .tools-menu button b, .fcb-code { font-family: var(--font-code); }
+.cmd-input input { font-family: var(--font-ui); }
+.data-table td, .kv dd, .rte-table td, .board-row, .exp-row, .qrow, .kpi .kv { font-variant-numeric: var(--num); }
+.panel-title, .ms-title { font-size: var(--t-title); font-weight: var(--w-semibold); letter-spacing: 0; }
+.meta, .saved-stamp { letter-spacing: 0; }
+
+/* ---- chips: see ui/ui.css; chrome adjustments --------------------- */
+.chip-btn { border-radius: var(--r-ctl); padding: 0; margin: 0; }
+.chip-btn:hover .chip { filter: brightness(1.15); }
+.kpi .kl .chip { height: 14px; padding: 0 4px 0 6px; }
+.statusbar .chip { font-size: var(--t-micro); height: 16px; }
+.empty-state .chip { height: var(--chip-h); }
+.ntabs, .ntabs button { letter-spacing: 0; }
+
+/* the SIMULATION label and block follow the same grammar: solid hairlines only */
+.simulated-chip { border: 0; border-left: 2px solid var(--st-sim); border-radius: 0; padding: 0 4px 0 7px; background: none; color: var(--st-sim); font-weight: var(--w-medium); letter-spacing: 0; }
+.honest, .lens-basis, .sim-block, .imp-drawer, .enx-quote, .enx-memberdetail, .enx-expand { border-style: solid; border-color: var(--line); }
+
+/* ---- bars: flat graphite, one hairline ---------------------------- */
+.topbar, .subbar, .panel-head, .inspector-tabs, .transport, .statusbar, .status-bar, .kpis { background: var(--bg-bar); box-shadow: none; }
+.topbar, .subbar, .panel-head { border-bottom: 1px solid var(--line); }
+.topbar--sim { box-shadow: inset 0 2px 0 var(--st-sim); }
+.shell--sim { box-shadow: inset 0 2px 0 var(--st-sim); }
+.topbar { height: 44px; gap: 10px; padding: 0 10px; }
+.brand { gap: 8px; margin-right: 6px; padding: 0 4px 0 2px; }
+.brand .ui-wordmark { font-size: var(--fs-lg); }
+.wtab { height: var(--ctl-h); border: 0; border-radius: 0; background: none; letter-spacing: 0; font-size: var(--t-label); font-weight: var(--w-medium); color: var(--text-2); box-shadow: inset 0 0 0 1px var(--line); }
+.wtab button { display: inline-flex; align-items: center; color: var(--text-3); }
+.user-chip { display: inline-flex; align-items: center; justify-content: center; border-radius: var(--r-ctl); background: none; box-shadow: inset 0 0 0 1px var(--line-strong); }
+.topbar .user-chip { border-radius: var(--r-ctl); border: 0; background: none; box-shadow: inset 0 0 0 1px var(--line-strong); }
+
+/* ---- buttons: the legacy idioms read as one outline family -------- */
+.btn, .tb-btn, .tb-plus, .meta-btn, .layouts-btn { --ui-edge: inset 0 0 0 0 transparent; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box;
+  min-height: var(--ctl-h-sm); padding: 0 10px; border: 0; border-radius: var(--r-ctl); font: var(--w-medium) var(--t-label)/1 var(--font-ui); letter-spacing: 0; text-transform: none;
+  box-shadow: var(--ui-edge); }
+.btn { --ui-edge: inset 0 0 0 1px var(--line-strong); background: none; color: var(--text); }
+.btn:hover:not(:disabled) { background: var(--hover); color: var(--text); }
+.btn:active:not(:disabled) { box-shadow: var(--ui-edge), inset 0 -2px 0 var(--accent); }
+.btn--amber { --ui-edge: inset 0 0 0 1px var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); color: var(--accent-text); font-weight: var(--w-semibold); }
+.btn--amber:hover:not(:disabled) { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent-text); }
+.btn--amber:active:not(:disabled) { box-shadow: var(--ui-edge), inset 0 -2px 0 var(--accent); }
+.tb-btn, .tb-plus, .meta-btn, .layouts-btn { height: var(--ctl-h); background: transparent; color: var(--text-2); }
+.tb-btn:hover, .tb-plus:hover, .meta-btn:hover, .layouts-btn:hover { background: var(--hover); color: var(--text); }
+.tb-btn[aria-expanded="true"], .layouts-btn[aria-expanded="true"] { --ui-edge: inset 0 0 0 1px var(--line-strong), inset 0 -2px 0 var(--accent); background: none; color: var(--text); }
+.tb-plus { padding: 0 6px; font-size: var(--t-head); }
+.icon-btn { display: inline-flex; align-items: center; justify-content: center; width: var(--ctl-h-sm); height: var(--ctl-h-sm); padding: 0; border-radius: var(--r-ctl); color: var(--text-2); font-size: var(--t-label); }
+.icon-btn:hover { background: var(--hover); color: var(--text); }
+.nav-glyphs { display: inline-flex; flex: none; box-shadow: inset 0 0 0 1px var(--line-strong); border-radius: var(--r-ctl); overflow: hidden; }
+.subbar .nav-glyphs button { display: inline-flex; align-items: center; justify-content: center; width: var(--ctl-h); height: var(--ctl-h); border-radius: 0; color: var(--text-2); }
+.subbar .nav-glyphs button + button { box-shadow: inset 1px 0 0 var(--line); }
+.subbar .nav-glyphs button:hover:not(:disabled) { background: var(--hover); color: var(--text); }
+.subbar .nav-glyphs button:disabled { opacity: .4; }
+.nav-glyphs button:focus-visible { outline-offset: -2px; }
+.seg--mode .seg-b { gap: 6px; }
+.sw--theme { margin: 0 2px; }
+
+/* @boost-start (every selector below is written with a :root prefix so lazily loaded panel stylesheets, appended later, cannot win a tie) */
+/* ---- static tags: a thin left rule and one word, never a box -------- */
+:root .src-tag, :root .mode-tag, :root .origin-tag, :root .exposure-chip, :root .mapbar .pill, :root .pv-tag, :root .pt-status, :root .pt-sev, :root .lp-tag, :root .kd-flag, :root .scn-place, :root .alr-chip, :root .utilbar .util-chip, :root .frozen-stamp, :root .divert-chip, :root .interp-tag, :root .sim-entry-chip, :root .await-chip {
+  display: inline-flex; align-items: center; box-sizing: border-box; border: 0; border-left: 2px solid var(--tag-c, var(--line-strong)); border-radius: 0; background: none;
+  padding: 0 4px 0 6px; min-height: var(--chip-h); font: var(--w-medium) var(--t-micro)/1 var(--font-ui); letter-spacing: 0; text-transform: none; white-space: nowrap; color: var(--tag-t, var(--text-2)); }
+:root .origin-tag, :root .link-toggle { --tag-c: var(--accent); --tag-t: var(--accent-text); }
+:root .frozen-stamp, :root .await-chip { --tag-c: var(--st-snapshot); --tag-t: var(--st-snapshot); }
+:root .divert-chip, :root .interp-tag { --tag-c: var(--st-model); --tag-t: var(--st-model); }
+:root .sim-entry-chip { --tag-c: var(--st-sim); --tag-t: var(--st-sim); }
+:root .pt-status--critical { --tag-c: var(--st-down); --tag-t: var(--st-down); }
+:root .pt-status--elevated { --tag-c: var(--range); --tag-t: var(--range-text); }
+:root .pt-status--watch { --tag-c: var(--st-snapshot); --tag-t: var(--text); }
+:root .pt-status--no-data { --tag-c: var(--st-notserved); --tag-t: var(--st-notserved); }
+:root .pv-tag--strong { --tag-c: var(--text-2); --tag-t: var(--text); }
+:root .mapbar .pill { --tag-t: var(--text-2); }
+
+/* ---- notices: a block with a 3 px left rule, no box ----------------- */
+:root .offline-chip, :root .snap-chip, :root .backtest-banner, :root .alr-err, :root .scn-refusal, :root .errorbar, :root .honest, :root .lens-basis, :root .sim-block, :root .imp-drawer, :root .explain-block, :root .sim-prov, :root .compare {
+  border: 0; border-left: 3px solid var(--note-c, var(--line-strong)); border-radius: 0; background: var(--bg-inset); }
+:root .offline-chip, :root .alr-err, :root .scn-refusal, :root .errorbar { --note-c: var(--st-down); }
+:root .backtest-banner { --note-c: var(--st-snapshot); }
+:root .sim-block { --note-c: var(--st-sim); }
+:root .compare { --note-c: var(--accent); }
+
+/* ---- button family: legacy idioms share the outline look ------------- */
+:root .ens-chip, :root .search-facet, :root .link-toggle, :root .pt-btn, :root .scn-btn, :root .scn-choice, :root .hx-btn, :root .rk-btn, :root .cx-btn, :root .sim-transport button, :root .sim-tl-row button, :root .ptw-scn-b, :root .ptw-lyr, :root .transport .sim-tl-row button {
+  --ui-edge: inset 0 0 0 1px var(--line-strong); box-sizing: border-box; border: 0; border-radius: var(--r-ctl); background: none; color: var(--text-2); box-shadow: var(--ui-edge);
+  font: var(--w-medium) var(--t-label)/1 var(--font-ui); letter-spacing: 0; text-transform: none; cursor: pointer; }
+:root .ens-chip:hover:not(:disabled), :root .search-facet:hover, :root .link-toggle:hover, :root .pt-btn:hover:not(:disabled), :root .scn-btn:hover:not(:disabled), :root .scn-choice:hover:not(:disabled), :root .hx-btn:hover:not(:disabled), :root .rk-btn:hover:not(:disabled), :root .cx-btn:hover:not(:disabled), :root .sim-transport button:hover:not(:disabled), :root .sim-tl-row button:hover:not(:disabled), :root .ptw-scn-b:hover { background: var(--hover); color: var(--text); }
+:root .ens-chip:active:not(:disabled), :root .pt-btn:active:not(:disabled), :root .scn-btn:active:not(:disabled), :root .hx-btn:active:not(:disabled), :root .rk-btn:active:not(:disabled), :root .cx-btn:active:not(:disabled), :root .sim-transport button:active:not(:disabled), :root .sim-tl-row button:active:not(:disabled) { box-shadow: var(--ui-edge), inset 0 -2px 0 var(--accent); }
+:root .ens-chip.on, :root .search-facet--on, :root .link-toggle, :root .scn-btn.on, :root .scn-choice.on, :root .hx-btn.on, :root .rk-btn.on, :root .cx-btn.on, :root .sim-transport button.on, :root .sim-tl-row button.on, :root .ptw-scn-b[aria-pressed="true"], :root .transport .sim-tl-row button.on {
+  --ui-edge: inset 0 0 0 1px var(--accent), inset 0 -2px 0 var(--accent); background: none; color: var(--accent-text); font-weight: var(--w-medium); box-shadow: var(--ui-edge); }
+:root .link-toggle--off { --ui-edge: inset 0 0 0 1px var(--st-snapshot); color: var(--st-snapshot); }
+:root .hx-btn--go { --ui-edge: inset 0 0 0 0 transparent; background: var(--accent-fill-strong); color: var(--on-accent); font-weight: var(--w-semibold); }
+:root .hx-btn--go:hover:not(:disabled) { background: var(--accent-fill-strong); color: var(--on-accent); filter: brightness(1.12); }
+
+/* ---- tabs: every legacy tab row takes the rail ---------------------- */
+:root .func-tabs, :root .inspector-tabs, :root .rk-tabs, :root .scn-tabs, :root .ntabs { gap: 0; }
+:root .func-tabs button, :root .inspector-tabs button, :root .rk-tab, :root .scn-tabs button, :root .ntabs button { position: relative; display: inline-flex; align-items: center; gap: 6px; border: 0; border-radius: 0; background: transparent;
+  font: var(--w-medium) var(--t-label)/1 var(--font-ui); letter-spacing: 0; text-transform: none; color: var(--text-3); white-space: nowrap; cursor: pointer; box-shadow: none; }
+:root .func-tabs button:hover, :root .inspector-tabs button:hover, :root .rk-tab:hover:not(:disabled), :root .scn-tabs button:hover, :root .ntabs button:hover { color: var(--text); background: var(--hover); }
+:root .func-tabs button.on, :root .inspector-tabs button.on, :root .rk-tab.on, :root .scn-tabs button.on, :root .ntabs button.on, :root .ntabs button[aria-selected="true"], :root .scn-tabs button[aria-selected="true"], :root .rk-tab[aria-selected="true"] {
+  color: var(--text); font-weight: var(--w-medium); box-shadow: none; background: none; }
+:root .func-tabs button.on::after, :root .inspector-tabs button.on::after, :root .rk-tab.on::after, :root .scn-tabs button[aria-selected="true"]::after, :root .ntabs button.on::after, :root .ntabs button[aria-selected="true"]::after {
+  content: ""; position: absolute; left: 6px; right: 6px; bottom: 0; height: 2px; background: var(--accent); }
+:root .func-tabs button { height: 100%; padding: 0 10px; }
+:root .inspector-tabs button { height: 28px; padding: 0 10px; }
+:root .rk-tabs, :root .scn-tabs { box-shadow: inset 0 -1px 0 var(--line); border-bottom: 0; }
+:root .rk-tab, :root .scn-tabs button { height: var(--tab-h); padding: 0 10px; }
+:root .ntabs { padding: 0; margin: 0 -10px 2px; align-items: stretch; box-shadow: inset 0 -1px 0 var(--line); border-bottom: 0; overflow-x: auto; }
+:root .ntabs button { height: var(--tab-h); padding: 0 10px; }
+:root .fcb-b { position: relative; }
+:root .fcb-b.on { box-shadow: none; }
+:root .fcb-b.on::after { content: ""; position: absolute; left: 6px; right: 6px; bottom: 0; height: 2px; background: var(--accent); }
+:root .func-tabs button:focus-visible, :root .inspector-tabs button:focus-visible, :root .rk-tab:focus-visible, :root .scn-tabs button:focus-visible, :root .ntabs button:focus-visible, :root .fcb-b:focus-visible { outline-offset: -2px; }
+
+/* @boost-end */
+
+/* ---- command bar and fields ---------------------------------------- */
+.cmd-input { height: var(--ctl-h); border: 0; border-radius: var(--r-ctl); background: var(--bg-inset); box-shadow: inset 0 0 0 1px var(--line); }
+.cmd-input:focus-within { box-shadow: inset 0 0 0 1px var(--line), inset 0 -2px 0 var(--accent); border-color: transparent; }
+.cmd-input input { box-shadow: none; background: none; }
+.cmd-input .fn-chip { border: 0; box-shadow: inset 0 0 0 1px var(--line-strong); border-radius: var(--r-kbd); }
+.cmd-input::after { border: 0; box-shadow: inset 0 0 0 1px var(--line-strong); border-radius: var(--r-kbd); font-family: var(--font-data); font-weight: var(--w-medium); line-height: 12px; padding: 0 4px; }
+.layouts-btn, .saved-stamp { letter-spacing: 0; }
+.func-menu button, .inspector-tabs button { letter-spacing: 0; }
+.pop > button, .pop-row, .pop-h, .pop-k { letter-spacing: 0; }
+
+/* ---- menus and popovers: solid, outlined, no blur ------------------- */
+.pop, .search-drop, .menu, .ctx-menu, .wm-menu, .lm-pop, .metachip-pop, .ph-sheet { background: var(--bg-raised); backdrop-filter: none; -webkit-backdrop-filter: none; border: 0; border-radius: var(--r-3);
+  box-shadow: var(--shadow-1); animation: none; }
+.pop > button, .menu button, .ctx-menu-item, .wm-menu-item, .lm-act, .lm-pick { min-height: var(--ctl-h); display: flex; align-items: center; gap: 8px; border-radius: var(--r-ctl); }
+.pop > button:hover, .menu button:hover, .ctx-menu-item:hover:not(:disabled), .wm-menu-item:hover:not(:disabled), .wm-menu-item:focus-visible, .lm-act:hover:not(:disabled) { background: var(--accent-fill-strong); color: var(--on-accent); }
+.pop > button.on { color: var(--text); box-shadow: inset 3px 0 0 var(--sel-bar); background: var(--sel-fill); }
+.pop > button.on:hover { color: var(--on-accent); }
+.wm-menu-item:hover:not(:disabled) .wm-menu-keys, .wm-menu-item:focus-visible .wm-menu-keys { color: inherit; }
+.pop-check input { margin: 0; }
+.pop-sep { border-top: 1px solid var(--line); }
+.lm-row.on { background: var(--accent-fill-strong); box-shadow: none; color: var(--on-accent); }
+.lm-row.on .lm-pick, .lm-row.on .lm-ico, .lm-row.on .lm-codes, .lm-row.on .lm-name { color: var(--on-accent); }
+.lm-row:hover:not(.on) { background: var(--hover); }
+.lm-row.on:hover { background: var(--accent-fill-strong); }
+.cmd-row--hot, .cmd-row:hover { background: var(--accent-fill-strong); color: var(--on-accent); }
+.cmd-row--hot .cmd-ico, .cmd-row--hot .cmd-code, .cmd-row:hover .cmd-ico, .cmd-row:hover .cmd-code { color: var(--on-accent); }
+
+/* ---- panels: flat, 2 px radius, roomier tables ---------------------- */
+html[data-density="comfortable"]:not([data-theme="retro-dark"]):not([data-theme="retro-light"]) .col--left > .panel,
+html[data-density="comfortable"]:not([data-theme="retro-dark"]):not([data-theme="retro-light"]) .col--right > .panel { border-radius: var(--r-panel); }
+.data-table td { padding: 3px 8px; }
+.data-table th { padding: 5px 8px; font-weight: var(--w-medium); color: var(--text-3); background: var(--bg-bar); }
+html[data-density="comfortable"] .data-table td { padding: 5px 8px; }
+
+/* ---- selection: azure tint with a 3 px left bar --------------------- */
+.row--sel, .trace--sel, .news-item--sel, .search-row--hot, .data-table tr.sel td:first-child { box-shadow: inset 3px 0 0 var(--sel-bar); }
+.row--sel, .trace--sel, .news-item--sel, .search-row--hot, .data-table tr.sel td { background: var(--sel-fill); }
+.data-table tbody tr:hover td { background: var(--hover); }
+.panel--focus { box-shadow: inset 0 0 0 1px var(--accent); }
+
+/* ---- KPI strip: flat tiles on the data well ------------------------- */
+.kpis { background: var(--bg-panel); }
+.kpi { background: var(--bg-panel); }
+.kpi .kv { font-weight: var(--w-semibold); letter-spacing: -.02em; }
+
+/* ---- rail: codes stay codes ---------------------------------------- */
+.fn-rail { background: var(--bg-bar); }
+.fn-rail button { letter-spacing: var(--trk-caps); }
+.fn-rail button.on { box-shadow: inset 3px 0 0 var(--accent); }
+
+/* ---- the Rail focus ring: a 1 px ring and a bottom rail ------------- */
+:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.ui-btn:focus-visible, .btn:focus-visible, .tb-btn:focus-visible, .layouts-btn:focus-visible, .meta-btn:focus-visible, .icon-btn:focus-visible { box-shadow: var(--ui-edge, none), inset 0 -2px 0 var(--focus); }
+.seg-b:focus-visible { box-shadow: inset 0 -2px 0 var(--focus); }
+.ui-tab:focus-visible { box-shadow: inset 0 -2px 0 var(--focus); }
+.cmd-input input:focus-visible { outline: 0; }
+
+/* ---- KPI and chart legend rules --------------------------- */
+/* KPI value line: the generic .kv key/value grid must not apply to a tile's figure + unit. */
+.kpi .kv { display: block; }
+/* Chart legends: the series colour rides the swatch, the words stay readable (4.5:1) in every skin. */
+.chart-legend .lg { color: var(--text-2); }
+.lg--queue::before { color: var(--bar-queue); } .lg--reroute::before { color: var(--bar-reroute); } .lg--congestion::before { color: var(--bar-congestion); }
+.lg--inventory::before { color: var(--bar-inventory); } .lg--cost::before { color: var(--bar-cost); } .lg--mode-shift::before { color: var(--bar-mode-shift); }
+.lg--queue, .lg--reroute, .lg--congestion, .lg--inventory, .lg--cost, .lg--mode-shift { color: var(--text-2); }
+.tile--clock .kv { font-size: 16px; line-height: 1.3; white-space: nowrap; }
+html[data-theme="retro-dark"] .tile--clock .kv, html[data-theme="retro-light"] .tile--clock .kv { font-size: var(--fs-md); letter-spacing: .04em; }
+.form-grid input, .form-grid select, .alr-inline input, .ens-count, .enx-wide { color: var(--text); }
+.form-grid input:focus-visible, .form-grid select:focus-visible, .alr-inline input:focus-visible { outline-offset: 2px; }
+
+/* ---- touch ---------------------------------------------------------- */
+@media (pointer: coarse) {
+  .btn, .tb-btn, .meta-btn, .layouts-btn, .icon-btn, .subbar .nav-glyphs button { min-height: 44px; min-width: 44px; }
+}
+@media (max-width: 860px) {
+  .subbar .nav-glyphs button { width: 44px; height: 44px; }
+  .seg { height: 44px; }
+  .seg-b { min-height: 0; min-width: 44px; }
+  .cmd-input { height: 44px; }
+}
+/* the whole command bar is the tap target, not the text line inside it */
+.cmd-input input { align-self: stretch; }
+@media (prefers-reduced-motion: reduce) {
+  .pop, .lm-pop { animation: none; }
+}

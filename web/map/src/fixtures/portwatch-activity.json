@@ -1,0 +1,514 @@
+{
+ "adapter": "portwatch",
+ "provenance": {
+  "source": "IMF PortWatch",
+  "retrieved_at": "2026-10-21T00:35:38Z",
+  "mode": "SNAPSHOT"
+ },
+ "records": [
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_portsaid",
+   "portid": "port192",
+   "portname": "Port Said",
+   "locode": "EG PSD",
+   "vessel_count_total": 857,
+   "vessel_count_container": 471,
+   "vessel_count_dry_bulk": 56,
+   "vessel_count_general_cargo": 183,
+   "vessel_count_tanker": 132,
+   "dedupe_key": "portwatch:port:port192",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_rizhao",
+   "portid": "port1105",
+   "portname": "Rizhao",
+   "locode": "CN RZH",
+   "vessel_count_total": 3069,
+   "vessel_count_container": 620,
+   "vessel_count_dry_bulk": 1737,
+   "vessel_count_general_cargo": 464,
+   "vessel_count_tanker": 238,
+   "dedupe_key": "portwatch:port:port1105",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_jebelali",
+   "portid": "port306",
+   "portname": "Dubai",
+   "locode": "AE DXB",
+   "vessel_count_total": 1752,
+   "vessel_count_container": 123,
+   "vessel_count_dry_bulk": 49,
+   "vessel_count_general_cargo": 1091,
+   "vessel_count_tanker": 389,
+   "dedupe_key": "portwatch:port:port306",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_shanghai",
+   "portid": "port1188",
+   "portname": "Shanghai",
+   "locode": "CN SGH",
+   "vessel_count_total": 41093,
+   "vessel_count_container": 12110,
+   "vessel_count_dry_bulk": 13770,
+   "vessel_count_general_cargo": 5162,
+   "vessel_count_tanker": 8308,
+   "dedupe_key": "portwatch:port:port1188",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_jebelali",
+   "portid": "port744",
+   "portname": "Jebel Ali",
+   "locode": "AE JEA",
+   "vessel_count_total": 7734,
+   "vessel_count_container": 4495,
+   "vessel_count_dry_bulk": 464,
+   "vessel_count_general_cargo": 939,
+   "vessel_count_tanker": 1373,
+   "dedupe_key": "portwatch:port:port744",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_newyork",
+   "portid": "port815",
+   "portname": "New York-New Jersey",
+   "locode": null,
+   "vessel_count_total": 3883,
+   "vessel_count_container": 2190,
+   "vessel_count_dry_bulk": 205,
+   "vessel_count_general_cargo": 51,
+   "vessel_count_tanker": 1099,
+   "dedupe_key": "portwatch:port:port815",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_xiamen",
+   "portid": "port1404",
+   "portname": "Xiamen",
+   "locode": "CN XAM",
+   "vessel_count_total": 7761,
+   "vessel_count_container": 5339,
+   "vessel_count_dry_bulk": 901,
+   "vessel_count_general_cargo": 954,
+   "vessel_count_tanker": 512,
+   "dedupe_key": "portwatch:port:port1404",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_rotterdam",
+   "portid": "port1114",
+   "portname": "Rotterdam",
+   "locode": "NL RTM",
+   "vessel_count_total": 32584,
+   "vessel_count_container": 7045,
+   "vessel_count_dry_bulk": 1052,
+   "vessel_count_general_cargo": 5181,
+   "vessel_count_tanker": 16990,
+   "dedupe_key": "portwatch:port:port1114",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_shenzhen",
+   "portid": "port1414",
+   "portname": "Yantian",
+   "locode": "CN YTN",
+   "vessel_count_total": 3421,
+   "vessel_count_container": 3156,
+   "vessel_count_dry_bulk": 4,
+   "vessel_count_general_cargo": 40,
+   "vessel_count_tanker": 221,
+   "dedupe_key": "portwatch:port:port1414",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_jeddah",
+   "portid": "port518",
+   "portname": "Jeddah",
+   "locode": "SA JED",
+   "vessel_count_total": 3555,
+   "vessel_count_container": 1851,
+   "vessel_count_dry_bulk": 185,
+   "vessel_count_general_cargo": 486,
+   "vessel_count_tanker": 582,
+   "dedupe_key": "portwatch:port:port518",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_ningbo",
+   "portid": "port1429",
+   "portname": "Zhoushan",
+   "locode": "CN ZOS",
+   "vessel_count_total": 6370,
+   "vessel_count_container": 450,
+   "vessel_count_dry_bulk": 1732,
+   "vessel_count_general_cargo": 611,
+   "vessel_count_tanker": 3487,
+   "dedupe_key": "portwatch:port:port1429",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_manila",
+   "portid": "port694",
+   "portname": "Manila",
+   "locode": "PH MNL",
+   "vessel_count_total": 8297,
+   "vessel_count_container": 2689,
+   "vessel_count_dry_bulk": 1065,
+   "vessel_count_general_cargo": 2553,
+   "vessel_count_tanker": 1863,
+   "dedupe_key": "portwatch:port:port694",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_algeciras",
+   "portid": "port31",
+   "portname": "Algeciras",
+   "locode": "ES ALG",
+   "vessel_count_total": 5899,
+   "vessel_count_container": 2934,
+   "vessel_count_dry_bulk": 332,
+   "vessel_count_general_cargo": 359,
+   "vessel_count_tanker": 2227,
+   "dedupe_key": "portwatch:port:port31",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_tokyo",
+   "portid": "port1305",
+   "portname": "Tokyo",
+   "locode": "JP TYO",
+   "vessel_count_total": 9502,
+   "vessel_count_container": 4646,
+   "vessel_count_dry_bulk": 529,
+   "vessel_count_general_cargo": 1907,
+   "vessel_count_tanker": 738,
+   "dedupe_key": "portwatch:port:port1305",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "gnd_detroit",
+   "portid": "port1115",
+   "portname": "Detroit",
+   "locode": "US DET",
+   "vessel_count_total": 570,
+   "vessel_count_container": 11,
+   "vessel_count_dry_bulk": 497,
+   "vessel_count_general_cargo": 27,
+   "vessel_count_tanker": 35,
+   "dedupe_key": "portwatch:port:port1115",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_santos",
+   "portid": "port1160",
+   "portname": "Santos",
+   "locode": "BR SSZ",
+   "vessel_count_total": 5258,
+   "vessel_count_container": 2026,
+   "vessel_count_dry_bulk": 1791,
+   "vessel_count_general_cargo": 333,
+   "vessel_count_tanker": 941,
+   "dedupe_key": "portwatch:port:port1160",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_ningbo",
+   "portid": "port824",
+   "portname": "Ningbo",
+   "locode": "CN NBO",
+   "vessel_count_total": 18455,
+   "vessel_count_container": 10352,
+   "vessel_count_dry_bulk": 2117,
+   "vessel_count_general_cargo": 770,
+   "vessel_count_tanker": 4945,
+   "dedupe_key": "portwatch:port:port824",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_antwerp",
+   "portid": "port57",
+   "portname": "Antwerp",
+   "locode": "BE ANR",
+   "vessel_count_total": 22760,
+   "vessel_count_container": 4600,
+   "vessel_count_dry_bulk": 567,
+   "vessel_count_general_cargo": 3137,
+   "vessel_count_tanker": 13486,
+   "dedupe_key": "portwatch:port:port57",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_laemchabang",
+   "portid": "port1197",
+   "portname": "Laem Chabang",
+   "locode": "TH LCH",
+   "vessel_count_total": 5410,
+   "vessel_count_container": 3975,
+   "vessel_count_dry_bulk": 102,
+   "vessel_count_general_cargo": 517,
+   "vessel_count_tanker": 314,
+   "dedupe_key": "portwatch:port:port1197",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_piraeus",
+   "portid": "port908",
+   "portname": "Piraeus",
+   "locode": "GR PIR",
+   "vessel_count_total": 5354,
+   "vessel_count_container": 2845,
+   "vessel_count_dry_bulk": 166,
+   "vessel_count_general_cargo": 197,
+   "vessel_count_tanker": 1248,
+   "dedupe_key": "portwatch:port:port908",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_tanjungpriok",
+   "portid": "port514",
+   "portname": "Tanjung Priok",
+   "locode": null,
+   "vessel_count_total": 9315,
+   "vessel_count_container": 4257,
+   "vessel_count_dry_bulk": 590,
+   "vessel_count_general_cargo": 2380,
+   "vessel_count_tanker": 1361,
+   "dedupe_key": "portwatch:port:port514",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_dalian",
+   "portid": "port273",
+   "portname": "Dalian",
+   "locode": "CN DAG",
+   "vessel_count_total": 6968,
+   "vessel_count_container": 2413,
+   "vessel_count_dry_bulk": 908,
+   "vessel_count_general_cargo": 1069,
+   "vessel_count_tanker": 2036,
+   "dedupe_key": "portwatch:port:port273",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_savannah",
+   "portid": "port1170",
+   "portname": "Savannah",
+   "locode": "US SAV",
+   "vessel_count_total": 2274,
+   "vessel_count_container": 1603,
+   "vessel_count_dry_bulk": 201,
+   "vessel_count_general_cargo": 127,
+   "vessel_count_tanker": 254,
+   "dedupe_key": "portwatch:port:port1170",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "gnd_montreal",
+   "portid": "port766",
+   "portname": "Montreal",
+   "locode": "CA MTR",
+   "vessel_count_total": 1150,
+   "vessel_count_container": 433,
+   "vessel_count_dry_bulk": 326,
+   "vessel_count_general_cargo": 127,
+   "vessel_count_tanker": 187,
+   "dedupe_key": "portwatch:port:port766",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_colon",
+   "portid": "port1035",
+   "portname": "Colon",
+   "locode": "PA ONX",
+   "vessel_count_total": 1035,
+   "vessel_count_container": 802,
+   "vessel_count_dry_bulk": 8,
+   "vessel_count_general_cargo": 35,
+   "vessel_count_tanker": 190,
+   "dedupe_key": "portwatch:port:port1035",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "gnd_vancouver",
+   "portid": "port1351",
+   "portname": "Vancouver",
+   "locode": "US VAN",
+   "vessel_count_total": 360,
+   "vessel_count_container": 5,
+   "vessel_count_dry_bulk": 238,
+   "vessel_count_general_cargo": 32,
+   "vessel_count_tanker": 31,
+   "dedupe_key": "portwatch:port:port1351",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "gnd_vancouver",
+   "portid": "port1350",
+   "portname": "Vancouver",
+   "locode": "CA VAN",
+   "vessel_count_total": 2054,
+   "vessel_count_container": 296,
+   "vessel_count_dry_bulk": 1369,
+   "vessel_count_general_cargo": 102,
+   "vessel_count_tanker": 268,
+   "dedupe_key": "portwatch:port:port1350",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  },
+  {
+   "record_type": "port_activity",
+   "node_id": "sea_valencia",
+   "portid": "port1348",
+   "portname": "Valencia",
+   "locode": "ES VLC",
+   "vessel_count_total": 3897,
+   "vessel_count_container": 2899,
+   "vessel_count_dry_bulk": 47,
+   "vessel_count_general_cargo": 177,
+   "vessel_count_tanker": 246,
+   "dedupe_key": "portwatch:port:port1348",
+   "provenance": {
+    "source": "IMF PortWatch",
+    "retrieved_at": "2026-10-21T00:35:38Z",
+    "mode": "SNAPSHOT"
+   }
+  }
+ ]
+}

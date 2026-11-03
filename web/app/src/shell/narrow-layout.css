@@ -1,0 +1,112 @@
+/* Layout fixes at 1600x900 and 1280x720, dark and light.
+ * Loaded last. */
+
+/* A table that scrolls sideways shows it: thin scrollbar plus edge shadows (never a silently cut column). */
+.chain-table-wrap, .rp-tablewrap, .wc-tablewrap {
+  --fx-shade: color-mix(in srgb, var(--text) 26%, transparent);
+  scrollbar-width: thin;
+  background:
+    linear-gradient(to right, var(--bg-panel), var(--bg-panel)) left center / 14px 100% no-repeat local,
+    linear-gradient(to left, var(--bg-panel), var(--bg-panel)) right center / 14px 100% no-repeat local,
+    radial-gradient(farthest-side at 0 50%, var(--fx-shade), transparent) left center / 9px 100% no-repeat scroll,
+    radial-gradient(farthest-side at 100% 50%, var(--fx-shade), transparent) right center / 9px 100% no-repeat scroll;
+}
+
+/* Ports board: the status counts wrap instead of running off the right edge; feed and filter rows keep one line
+ * but show a scrollbar; the status column fits "Deviation high" without touching the Place column. */
+.pt-root .pt-status-tog { flex-wrap: wrap; }
+.pt-root .pt-strip > .pt-status-tog { flex: 0 1 auto; max-width: 100%; }
+.pt-root .pt-strip { flex-wrap: wrap; overflow: visible; }
+.pt-root .pt-filters { scrollbar-width: thin; -webkit-mask-image: linear-gradient(to right, black calc(100% - 22px), transparent); mask-image: linear-gradient(to right, black calc(100% - 22px), transparent); }
+.pt-root .pt-filters::-webkit-scrollbar { display: block; height: 6px; }
+.pt-root .pt-w-s { width: 88px; }
+.pt-root .pt-w-n { width: 124px; }
+.pt-root .pt-table td.pt-c-status { overflow: hidden; }
+.pt-root .pt-status { max-width: 100%; height: auto; min-height: 16px; white-space: normal; line-height: 1.15; padding-top: 1px; padding-bottom: 1px; }
+.pt-root .pt-table td.pt-c-num { overflow: hidden; }
+@container panel (min-width: 700px) {
+  .pt-root .pt-w-s { width: 124px; }
+  .pt-root .pt-status { white-space: nowrap; }
+}
+@container panel (max-width: 520px) {
+  .pt-root .pt-w-n { width: 92px; }
+  .pt-root .pt-table .chip-m { display: none; }
+}
+
+/* Source health in a narrow dock: Feed, State, Last success; the Mode column is dropped (the State chip names the copy). */
+@container panel (max-width: 400px) {
+  .health-table th:nth-child(3), .health-table td:nth-child(3) { display: none; }
+  .health-table th:nth-child(1) { width: 32%; } .health-table th:nth-child(2) { width: 44%; }
+  .health-table td:nth-child(1) { overflow-wrap: normal; word-break: normal; hyphens: none; }
+  .health-table td:nth-child(2) .chip { white-space: nowrap; }
+}
+
+/* Window header stamp: the cached range is read in full on a wide window. */
+.wm-stamp { max-width: 300px; }
+
+/* Chain diagram: step text stays readable when the diagram is fitted to a small slot. */
+.dag-node { font-size: 13px; min-width: 168px; }
+.dag-node b { font-size: 13px; }
+.react-flow__edge-text { font-size: 12px; }
+
+/* Watchlists: the toolbar carries a title and the empty state is compact. */
+.wc-panel .wc-bar-title { display: inline-flex; align-items: baseline; gap: 6px; align-self: center; font-size: var(--t-title); font-weight: var(--w-semibold); color: var(--text); }
+.wc-panel .wc-controls { align-items: center; }
+.wc-panel .wc-empty { padding: 8px 10px; gap: 6px 10px; }
+.wc-panel .wc-root { max-width: none; }
+
+/* Port twin: the map fills the window instead of leaving a blank band under the stage (its 38vh floor is kept). */
+.wm-win .panel-body:has(> .ptw-root) { display: flex; flex-direction: column; }
+.wm-win .ptw-root { flex: 1 0 auto; }
+.wm-win .ptw-main { flex: 1 0 auto; align-items: stretch; }
+.wm-win .ptw-stage { min-height: 0; }
+.wm-win .ptw-stage > .ptw-map { flex: 1 1 auto; min-height: clamp(280px, 38vh, 680px); }
+@media (max-height: 799px) { .wm-win .ptw-map { height: clamp(260px, 52vh, 880px); } }
+
+/* Scenario builder in a narrow window: Start, Duration and Capacity loss sit on their own row of equal columns. */
+@container (max-width: 760px) {
+  .scb-srow { grid-template-columns: 24px repeat(3, minmax(0, 1fr)); }
+  .scb-srow > :nth-child(2) { grid-column: 2 / 4; }
+  .scb-srow > :nth-child(3) { grid-column: 4; }
+  .scb-srow > :nth-child(4) { grid-column: 2; }
+  .scb-srow > :nth-child(5) { grid-column: 3; }
+  .scb-srow > :nth-child(6) { grid-column: 4; }
+  .scb-srow .scb-checks, .scb-srow .scb-acts { grid-column: 1 / -1; }
+  .scb-srow .scb-f--cell .scb-input { min-width: 0; width: 100%; }
+}
+.scb-datefmt { font-size: var(--t-micro); color: var(--text-2); }
+
+/* KPI strip: labels that do not fit are cut with an ellipsis and carry their full text as a tooltip. */
+.kpi .kl > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+
+/* Map place card on a narrow map window: a short card that scrolls, never the whole map. */
+@container smmap (max-width: 460px) {
+  .sm-map-root .sm-card, .sm-map-root .sm-callout.sm-card, .sm-map-root .sm-focusbox.sm-card { max-height: 40%; overflow-y: auto; width: min(300px, calc(100cqw - 16px)); }
+}
+
+/* Timeline: the duration figure reads on the hatched overlap (heavier halo, full-strength ink). */
+.scb-bar-t { font-weight: 700; stroke-width: 4px; }
+
+/* Final pass: a wrapped segmented group grows with its rows (a fixed height let the second row print over the next strip). */
+.pt-root .pt-status-tog.seg { height: auto; min-height: var(--ctl-h-sm); }
+.pt-root .pt-status-tog .seg-b { min-height: var(--ctl-h-sm); }
+
+/* Causal chain in a narrow window: the Mechanism column (and then Lands) leaves the table instead of being cut at the edge; the step detail still names both. */
+@container panel (max-width: 700px) {
+  .chain-table th:nth-child(7), .chain-table td:nth-child(7) { display: none; }
+}
+@container panel (max-width: 520px) {
+  .chain-table th:nth-child(6), .chain-table td:nth-child(6) { display: none; }
+}
+
+/* Ports board in a narrow window: the feed chips ride one scrolling line (fade at the edge) so the table keeps its rows. */
+@container panel (max-width: 520px) {
+  .pt-root .pt-feeds { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; -webkit-mask-image: linear-gradient(to right, black calc(100% - 22px), transparent); mask-image: linear-gradient(to right, black calc(100% - 22px), transparent); }
+  .pt-root .pt-feeds > * { flex: none; }
+}
+
+/* Phone width: the top bar fits 390 px (Export leaves it; the command bar still opens it) so View and Tour stay reachable. */
+@media (max-width: 520px) {
+  .topbar .meta-btn.tb-export { display: none; }
+  .topbar { gap: 4px; padding: 0 6px; }
+}

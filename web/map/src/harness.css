@@ -1,0 +1,82 @@
+/* Harness chrome only — the map module itself is styled by theme/tokens.css. */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  background: #0b0b0c;
+}
+.harness {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+}
+.harness-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 10px;
+  background: #0c0c0c;
+  border-bottom: 1px solid #3d434b;
+  color: #e8e8e8;
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  flex-wrap: wrap;
+}
+.harness[data-theme="light"] .harness-bar {
+  background: #ffffff;
+  color: #17202a;
+  border-bottom-color: #c3ccd4;
+}
+.harness-logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff9e1b;
+  letter-spacing: 0.04em;
+}
+.harness[data-theme="light"] .harness-logo {
+  color: #b45309;
+}
+.harness-sub,
+.harness-stats,
+.harness-action,
+.harness-selected {
+  color: inherit;
+  opacity: 0.75;
+}
+.harness-toggle {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  cursor: pointer;
+}
+.harness-toggle input {
+  accent-color: #ff9e1b;
+}
+.harness-map {
+  flex: 1;
+  min-height: 0;
+}
+.harness-foot {
+  padding: 4px 10px;
+  background: #0c0c0c;
+  border-top: 1px solid #3d434b;
+  color: #9aa0a6;
+  font-size: 8.5px;
+  letter-spacing: 0.04em;
+}
+.harness[data-theme="light"] .harness-foot {
+  background: #ffffff;
+  border-top-color: #c3ccd4;
+  color: #4b5563;
+}
+
+/* harness chrome for the retro pair (dev harness only) */
+.harness[data-theme="retro-light"] .harness-bar { background:#f4f2fa; color:#14101f; border-bottom:1px solid #c9c2d9; }
+.harness[data-theme="retro-light"] .harness-logo { color:#b3124f; }
+.harness[data-theme="retro-light"] .harness-foot { background:#f4f2fa; color:#4a4459; border-top:1px solid #c9c2d9; }
+.harness[data-theme="retro-dark"] .harness-logo { color:#22e6ff; }

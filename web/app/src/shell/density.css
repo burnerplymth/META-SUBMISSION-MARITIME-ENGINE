@@ -1,0 +1,116 @@
+/* Density, spacing and table rhythm for the chrome
+ * (table cell 28 px, header row 26 px, 8 px cell padding,
+ * 12 px panel padding, hairline rows, tabular numerals). Loaded last (main.tsx). Tokens only: --row-h,
+ * --th-h, --pad-cell, --pad-panel, --fs-*, --lh-* (shell/tokens.css). Top-level shell geometry (top bar,
+ * function bar, KPI strip, status bar), the map toolbar and the map popup are not touched here. */
+
+/* ---- tables: one header style, one row height ---- */
+.data-table th, .rte-table th, .hx-tbl th, .rk-table th, .pt-table th, .tbl th, .lp-table th, .cx-table th, .ai-table th {
+  height: var(--th-h); padding: 0 var(--pad-cell); font-size: var(--fs-xs); font-weight: var(--w-medium);
+  letter-spacing: 0; text-transform: none; color: var(--text-3); line-height: var(--lh-md); vertical-align: middle;
+}
+.data-table td, .rte-table td, .hx-tbl td, .rk-table td, .pt-table td, .tbl td, .lp-table td, .cx-table td, .ai-table td {
+  height: var(--row-h); padding: 4px var(--pad-cell); font-size: var(--fs-md); line-height: var(--lh-md);
+  vertical-align: middle; font-variant-numeric: tabular-nums;
+}
+/* tables that print mono ids keep the sans cell size; the mono face is for ids only */
+.hx-tbl td, .rte-table td { font-size: var(--fs-sm); }
+.data-table td.num, .data-table th.num, .rte-table td.num, .rte-table th.num, .pt-table td.num, .pt-table th.num { text-align: right; }
+/* selection: azure tint with a 3 px left bar */
+.row--sel, .trace--sel, tr.row--sel > td:first-child { box-shadow: inset 3px 0 var(--sel-bar); }
+tr.row--sel > td, .row--sel { background: var(--sel-fill); }
+/* sub-lines under a cell (country, kind, last-good) sit at the small size with a 14 px line */
+.cell-sub, .health-code, .pt-sub, .pt-country { font-size: var(--fs-xs); line-height: var(--lh-xs); }
+
+/* ---- panel bodies and lists ---- */
+.panel-body { padding: var(--pad-panel); }
+.news-item { padding: 10px var(--pad-panel); }
+.news-item--sev { padding-left: calc(var(--pad-panel) - 3px); }
+.news-item p { font-size: var(--fs-md); font-weight: var(--w-semibold); line-height: var(--lh-lg); margin: 4px 0 6px; }
+.news-meta, .cite, .cite-meta { line-height: var(--lh-md); }
+.rank-row { padding: 6px 0; line-height: var(--lh-md); }
+.ms-kv div { padding: 4px 0; line-height: var(--lh-md); }
+.ms-kv dt { letter-spacing: 0; }
+.ms-empty, .ms-note { line-height: var(--lh-md); }
+
+/* ---- fields and buttons: one Rail control style (24 px, hairline, 2 px radius, sentence case) ---- */
+.form-grid input, .form-grid select, .rk-input, .dv-filter, .pt-select, .pt-search {
+  min-height: var(--ctl-h); border-radius: var(--r-ctl); background: var(--bg-inset); border: 1px solid var(--line);
+  color: var(--text); font-family: var(--font-ui); font-size: var(--fs-md); padding: 0 var(--s-2);
+}
+.dv-filter { height: var(--ctl-h-sm); font-size: var(--fs-xs); }
+.rk-input--num { font-family: var(--font-data); font-size: var(--fs-sm); }
+.form-grid input:focus-visible, .form-grid select:focus-visible, .rk-input:focus-visible { border-color: var(--focus); outline: 0; }
+.form-grid label, .rk-lbl, .dv-ds label { font-size: var(--fs-sm); color: var(--text-2); letter-spacing: 0; text-transform: none; font-family: var(--font-ui); }
+.btn, .rk-btn, .cx-btn, .hx-btn { min-height: var(--ctl-h); padding: 0 var(--s-3); border-radius: var(--r-ctl); font-family: var(--font-ui); font-size: var(--fs-sm);
+  font-weight: var(--w-medium); letter-spacing: 0; text-transform: none; }
+.rule { margin: var(--s-3) 0; border-top-color: var(--line-soft); }
+/* the desks (Analysis, Data, Exports) were mono text dumps: prose lines and cells follow the UI face */
+.tbl .mono, .tbl td, p.mono, .panel-body p.mono { font-family: var(--font-ui); }
+.tbl td:first-child { color: var(--text-2); }
+.tbl td { border-bottom: 1px solid var(--line-soft); }
+.panel-body h5 { margin: var(--s-3) 0 var(--s-1); font-size: var(--fs-sm); font-weight: var(--w-semibold); color: var(--text); }
+
+/* ---- one hairline, not two: grids, summaries and pickers sit flat inside the window frame ---- */
+.dv-grid { border-width: 1px 0 0 0; border-radius: 0; }
+.dv-summary, .dv-picker { border-width: 0 0 1px 0; background: transparent; }
+.dv-panel .panel-body { padding: var(--s-2) var(--pad-panel); }
+.rk-panel .panel-body { padding: var(--s-2) var(--pad-panel); }
+.wm-win .tbl, .wm-win .data-table { border: 0; }
+
+/* native selects wear the same field as inputs; the arrow is drawn from tokens (no browser chrome) */
+select.pt-input, .form-grid select, select.rk-input, .ui-select, .scn-field select {
+  appearance: none; -webkit-appearance: none; padding-right: 22px; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-3) 50%), linear-gradient(135deg, var(--text-3) 50%, transparent 50%);
+  background-position: calc(100% - 11px) 50%, calc(100% - 7px) 50%; background-size: 4px 4px, 4px 4px; background-repeat: no-repeat;
+}
+.pt-input { height: var(--ctl-h); font-size: var(--fs-sm); }
+.pt-filters { gap: var(--s-2); padding: var(--s-2) 0; }
+.pt-strip { gap: var(--s-1) var(--s-3); padding: var(--s-1) 0; }
+.pt-pager { letter-spacing: 0; }
+
+/* chain diagram canvas: the data well colour, not the basemap ocean (the light skin read as a grey-blue slab) */
+.dag-wrap { background: var(--bg-panel); border: 0; border-top: 1px solid var(--line-soft); border-bottom: 1px solid var(--line-soft); }
+/* codes and key hints use IBM Plex Mono everywhere */
+.fcb-code, .fn-chip, .ui-link-n, kbd, .wm-menu-keys { font-family: var(--font-code); }
+.cmd-input input { font-family: var(--font-ui); font-size: var(--fs-sm); }
+
+/* text that grew must wrap, not clip: exposure rows in the narrow mini-strip block */
+.exp-row { flex-wrap: wrap; padding: 4px var(--s-3); row-gap: 0; line-height: var(--lh-md); }
+.exp-co { flex: 1 1 4ch; min-width: 4ch; }
+.exp-cite { white-space: normal; overflow-wrap: anywhere; flex: 1 1 100%; }
+.lp-table th, .lp-table td { padding-left: var(--s-2); padding-right: var(--s-2); }
+.lp-table thead th { white-space: normal; line-height: var(--lh-xs); padding-top: 4px; padding-bottom: 4px; vertical-align: bottom; }
+
+/* ---- remaining windows: sentence case labels, solid hairlines, UI face for text (Rail) ---- */
+h5, .hx-sec-h, .hx-ctl label, .hx-tbl th, .hx-kv dt, .hx-card-h, .hx-state, .hx details > summary, .scn-field, .cx-title, .cx-caption {
+  text-transform: none; letter-spacing: 0;
+}
+.hx-sec-h, .hx-card-h { font-size: var(--fs-md); font-weight: var(--w-semibold); color: var(--text); }
+.hx-ctl label, .scn-field, .hx-kv dt, .hx-state, .hx details > summary { font-size: var(--fs-sm); color: var(--text-2); }
+.hx-tbl th { font-size: var(--fs-xs); font-weight: var(--w-medium); color: var(--text-3); }
+.cx-title { font-size: var(--fs-md); font-weight: var(--w-semibold); color: var(--text); }
+.cx-caption { font-size: var(--fs-xs); color: var(--text-3); }
+.src-tag { letter-spacing: 0; }
+.honest, .imp-drawer, .sim-block { border: 1px solid var(--line); border-radius: var(--r-panel); }
+.sim-block { border-left: 2px solid var(--st-sim); }
+.lens-basis, .enx-quote, .enx-memberdetail, .enx-expand { border-top-style: solid; border-top-color: var(--line-soft); }
+.xc-hash { border-style: solid; border-radius: var(--r-ctl); font-family: var(--font-code); }
+.lp-tag { border-radius: var(--r-ctl); }
+.lp-tag--shell, .lp-tag--air, .lp-tag--ground { border-style: solid; }
+.ptw-ub-t, .ptw-ub-t i { border-radius: var(--r-ctl); }
+/* small mono captions that are words, not codes, follow the UI face */
+.sw2-details summary, .lv-count-label, .pt-kv-extra { font-family: var(--font-ui); letter-spacing: 0; }
+.sw2-details summary { font-size: var(--fs-sm); }
+/* source health: four columns must fit the narrow left dock; the mode column never splits a word */
+.health-table { width: 100%; table-layout: fixed; }
+.health-table th, .health-table td { padding-left: var(--s-1); padding-right: var(--s-1); overflow-wrap: anywhere; }
+.health-table th:nth-child(1) { width: 21%; } .health-table th:nth-child(2) { width: 33%; } .health-table th:nth-child(3) { width: 26%; }
+.health-table td:nth-child(3), .health-table th:nth-child(3) { overflow-wrap: normal; white-space: nowrap; }
+.health-table td.num { white-space: normal; }
+.health-code { display: block; }
+
+/* chain table: cells keep their words; a narrow window scrolls sideways instead of cutting columns */
+.chain-table-wrap { overflow-x: auto; max-width: 100%; }
+.chain-table th, .chain-table td { white-space: nowrap; }
+.chain-table td.mech { white-space: normal; min-width: 150px; }

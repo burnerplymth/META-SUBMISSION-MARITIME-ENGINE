@@ -1,0 +1,1001 @@
+/* SupermAP map module styles — all chrome reads CSS variables so BOTH themes
+ * come from one variable set. The wrapper carries
+ * data-theme="dark"|"light" and data-basemap="dark"|"light"|"sat".
+ * Type scale 8.5/9/11/16px; 4px spacing grid; IBM Plex Mono for data,
+ * IBM Plex Sans for prose. */
+
+.sm-map-root {
+  --sm-land: #000000;
+  --sm-ocean: #0b0b0c;
+  --sm-panel: #0c0c0c;
+  --sm-panel-alt: #121212;
+  --sm-border: #3d434b;
+  --sm-text: #e8e8e8;
+  --sm-text-dim: #9aa0a6;
+  --sm-text-faint: #7d8590;
+  --sm-accent: #f0902e;
+  --sm-accent-text: #0b0b0c;
+  --sm-danger: #d1605c;
+  --sm-vessel: #3db8de;
+  --sm-selection: #29a8d6;
+  --sm-selection-text: #5fcaea;
+  --sm-font-data: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sm-font-prose: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  background: var(--sm-ocean);
+  color: var(--sm-text);
+  font-family: var(--sm-font-prose);
+  overflow: hidden;
+}
+
+.sm-map-root[data-theme="light"] {
+  --sm-land: #ffffff;
+  --sm-ocean: #dbe7f3;
+  --sm-panel: #ffffff;
+  --sm-panel-alt: #f4f6f8;
+  --sm-border: #c3ccd4;
+  --sm-text: #17202a;
+  --sm-text-dim: #4b5563;
+  --sm-text-faint: #5f6b76;
+  --sm-accent: #a85200;
+  --sm-accent-text: #ffffff;
+  --sm-danger: #b23a37;
+  --sm-vessel: #0b79a3;
+  --sm-selection: #0b79a3;
+  --sm-selection-text: #096890;
+}
+
+.sm-map-canvas {
+  position: absolute;
+  inset: 0;
+}
+.sm-map-canvas .maplibregl-map {
+  font-family: var(--sm-font-data);
+}
+.sm-map-canvas .maplibregl-ctrl-attrib {
+  background: color-mix(in srgb, var(--sm-panel) 92%, transparent);
+  color: var(--sm-text-dim);
+  font-family: var(--sm-font-data);
+  font-size: 8.5px;
+}
+.sm-map-canvas .maplibregl-ctrl-attrib a {
+  color: var(--sm-text-dim);
+}
+
+/* ---- top-left: ONE quiet toolbar (basemap segmented control + KEY),
+ * the collapsible key, then the fleet filter chips ---- */
+.sm-map-hud {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  z-index: 5;
+  max-width: calc(100% - 64px);
+}
+.sm-panel {
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  color: var(--sm-text);
+}
+.sm-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+/* floating layer: a flat, solid hairline card over the map (Rail: no blur,
+ * no translucency, 2 px radius). The basemap switch is the Rail segmented
+ * control: flat text over a rail, the selection marked by an underline. */
+.sm-tool,
+.sm-key {
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  border-radius: 2px;
+}
+.sm-seg {
+  display: flex;
+  align-items: stretch;
+  background: var(--sm-panel);
+  border: 0;
+  border-radius: 0;
+  box-shadow: inset 0 -1px 0 var(--sm-border);
+}
+.sm-seg button,
+.sm-tool {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: var(--sm-text-dim);
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1;
+  height: 24px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.sm-seg button {
+  position: relative;
+}
+.sm-seg button + button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: var(--sm-border);
+  opacity: 0.6;
+}
+.sm-seg button:hover,
+.sm-tool:hover {
+  color: var(--sm-text);
+}
+.sm-seg button[aria-pressed="true"] {
+  color: var(--sm-text);
+}
+.sm-seg button[aria-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  bottom: 0;
+  height: 2px;
+  background: var(--sm-selection);
+}
+.sm-tool[aria-expanded="true"] {
+  color: var(--sm-text);
+  box-shadow: inset 0 -2px 0 var(--sm-selection);
+}
+/* Rail focus: a 1 px ring and the bottom rail */
+.sm-seg button:focus-visible,
+.sm-tool:focus-visible {
+  outline: 1px solid var(--sm-selection-text);
+  outline-offset: -2px;
+  box-shadow: inset 0 -2px 0 var(--sm-selection-text);
+}
+
+/* ---- KEY: collapsible; kind colours, capacity bands, tier, state ---- */
+.sm-key {
+  padding: 6px 8px 7px;
+  font-family: var(--sm-font-data);
+  font-size: 8.5px;
+  letter-spacing: 0.06em;
+  color: var(--sm-text-dim);
+  min-width: 156px;
+}
+.sm-key-h {
+  color: var(--sm-text-dim);
+  font-family: var(--sm-font-prose);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 6px 0 3px;
+}
+.sm-key-h:first-child {
+  margin-top: 0;
+}
+.sm-key-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 15px;
+  white-space: nowrap;
+}
+.sm-key-dot {
+  --k: var(--sm-text);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--k);
+  box-shadow: 0 0 6px 1px color-mix(in srgb, var(--k) 70%, transparent);
+  flex: none;
+}
+.sm-key-dot.dim {
+  opacity: 0.55;
+  margin-left: 6px;
+  box-shadow: none;
+}
+.sm-key-dot.ring {
+  background: transparent;
+  border: 1px solid var(--k);
+  box-shadow: none;
+  width: 9px;
+  height: 9px;
+}
+.sm-key-dot.live {
+  border-radius: 1px;
+  transform: rotate(45deg);
+  background: var(--sm-text);
+  box-shadow: 0 0 0 1px var(--sm-selection-text);
+  margin-left: 6px;
+}
+.sm-key-bands {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  flex: none;
+}
+.sm-key-bands i {
+  display: block;
+  border-radius: 50%;
+  background: var(--sm-text-dim);
+  width: 3px;
+  height: 3px;
+}
+.sm-key-bands i:nth-child(2) { width: 4px; height: 4px; }
+.sm-key-bands i:nth-child(3) { width: 6px; height: 6px; }
+.sm-key-bands i:nth-child(4) { width: 8px; height: 8px; }
+.sm-key-toggles {
+  gap: 10px;
+}
+.sm-key-toggles label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.sm-key-toggles input {
+  accent-color: var(--sm-accent);
+  margin: 0;
+}
+.sm-key-toggles label:focus-within {
+  outline: 1px solid var(--sm-accent);
+  outline-offset: 1px;
+}
+
+/* ---- zoom +/- (MapLibre NavigationControl), quiet ---- */
+.sm-map-canvas .maplibregl-ctrl-top-right {
+  top: 8px;
+  right: 8px;
+}
+.sm-map-canvas .maplibregl-ctrl-top-right .maplibregl-ctrl {
+  margin: 0;
+}
+.sm-map-canvas .maplibregl-ctrl-group {
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  border-radius: 2px;
+  box-shadow: none;
+  overflow: hidden;
+}
+.sm-map-canvas .maplibregl-ctrl-group button {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+.sm-map-canvas .maplibregl-ctrl-group button + button {
+  border-top: 1px solid var(--sm-border);
+}
+.sm-map-canvas .maplibregl-ctrl-group button:hover {
+  background-color: color-mix(in srgb, var(--sm-text) 8%, transparent);
+}
+.sm-map-canvas .maplibregl-ctrl-group .maplibregl-ctrl-icon {
+  filter: none;
+}
+
+/* ---- bottom-left: provenance / truthful data-mode labelling ---- */
+.sm-map-legend {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: min(520px, calc(100% - 120px));
+}
+.sm-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  border-left: 2px solid var(--sm-text-dim);
+  border-radius: 2px;
+  padding: 2px 6px;
+  font-family: var(--sm-font-data);
+  font-size: 8.5px;
+  color: var(--sm-text-dim);
+  width: fit-content;
+}
+.sm-chip b {
+  color: var(--sm-text);
+  font-weight: 500;
+}
+.sm-chip .sm-mode {
+  border: 0;
+  padding: 0;
+  font-size: 8.5px;
+  letter-spacing: 0.06em;
+}
+.sm-chip .sm-mode-snapshot {
+  color: var(--sm-accent);
+}
+/* basemap-unreachable alert chip: only rendered while the
+ * MapLibre style/tiles are failing; never shown when tiles load normally */
+.sm-chip-alert {
+  color: var(--sm-danger);
+  border-color: var(--sm-danger);
+}
+.sm-chip-alert b {
+  color: var(--sm-danger);
+}
+.sm-chip .sm-mode-live {
+  color: var(--sm-selection-text);
+}
+.sm-chip .sm-mode-down {
+  color: var(--sm-danger);
+}
+.sm-chip .sm-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--sm-vessel);
+  flex: none;
+}
+
+/* ---- bottom-left: state chips (LIVE / SNAPSHOT / SIMULATED), scale ---- */
+.sm-statusrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.sm-scalerow {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 2px;
+}
+.sm-tier {
+  font-family: var(--sm-font-data);
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  color: var(--sm-text-dim);
+  line-height: 1;
+}
+
+.sm-scalebar {
+  font-family: var(--sm-font-data);
+  font-size: 8.5px;
+  color: var(--sm-text-dim);
+  width: fit-content;
+}
+.sm-scalebar .sm-scale-line {
+  border-left: 1px solid var(--sm-text-dim);
+  border-right: 1px solid var(--sm-text-dim);
+  border-bottom: 1px solid var(--sm-text-dim);
+  height: 4px;
+  margin-top: 1px;
+}
+
+/* ---- cascade transport (bottom centre) ---- */
+.sm-cascade-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  padding: 4px 8px;
+  font-family: var(--sm-font-data);
+  font-size: 9px;
+  color: var(--sm-text-dim);
+}
+.sm-cascade-bar button {
+  appearance: none;
+  background: var(--sm-panel-alt);
+  border: 1px solid var(--sm-border);
+  color: var(--sm-text);
+  font-family: var(--sm-font-data);
+  font-size: 9px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.sm-cascade-bar button:hover {
+  border-color: var(--sm-accent);
+  color: var(--sm-accent);
+}
+.sm-cascade-bar .sm-step-readout {
+  color: var(--sm-accent);
+  min-width: 118px;
+  text-align: center;
+}
+.sm-cascade-bar input[type="range"] {
+  accent-color: var(--sm-accent);
+  width: 120px;
+}
+
+/* ---- SATELLITE: the imagery licence text must stay legible ----
+ * EOX's required attribution is long. On SATELLITE the expanded attribution
+ * wraps in a bounded block (instead of one line running under the transport
+ * bar) and, on wide maps, the transport bar rides above it. Narrow maps keep
+ * their own 56px rule below. */
+.sm-map-root[data-basemap="sat"] .sm-map-canvas .maplibregl-ctrl-attrib {
+  max-width: min(420px, 60%);
+  white-space: normal;
+  line-height: 1.35;
+  font-size: 9px;
+  color: var(--sm-text);
+}
+.sm-map-root[data-basemap="sat"] .sm-map-canvas .maplibregl-ctrl-attrib a {
+  color: var(--sm-text);
+}
+@media (min-width: 521px) {
+  .sm-map-root[data-basemap="sat"] .sm-cascade-bar {
+    bottom: 54px;
+  }
+}
+
+/* ---- cascade transport on narrow maps (phone widths) ----
+ * The bar's intrinsic row is ~475px wide; centred with translateX it
+ * overflowed a phone-width map on both sides — the first control
+ * (back-to-start) sat entirely off-canvas and the bar's body covered
+ * the attribution toggle at the bottom-right corner. Below 520px the bar is pinned inside the map, wraps
+ * onto a second row, and its foot rides 56px up: the attribution
+ * toggle occupies the corner's first ~24px and its expanded text
+ * ~48px, so the bar clears both, expanded or not. Desktop geometry
+ * is untouched: above 520px the centred single row already fits. */
+@media (max-width: 520px) {
+  /* the scale and zoom readout would overprint the wrapped attribution line */
+  .sm-scalerow { display: none; }
+  /* the two-row transport bar sits above the corner: the state chips
+   * ride above it instead of underneath */
+  .sm-has-bar .sm-map-legend {
+    bottom: 140px;
+  }
+  .sm-cascade-bar {
+    left: 8px;
+    right: 8px;
+    transform: none;
+    bottom: 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4px;
+  }
+  .sm-cascade-bar .sm-step-readout {
+    min-width: 0;
+  }
+  .sm-cascade-bar input[type="range"] {
+    flex: 1 1 100px;
+    width: auto;
+    min-width: 100px;
+  }
+}
+
+/* ---- inspector: Bloomberg-style leader callout, no pins ---- */
+.sm-callout {
+  position: absolute;
+  z-index: 8;
+  width: 264px;
+  font-family: var(--sm-font-prose);
+  font-variant-numeric: tabular-nums;
+  pointer-events: auto;
+  transform: translate(18px, -50%);
+  /* never taller than the map; the body scrolls instead */
+  max-height: calc(100% - 16px);
+  display: flex;
+  flex-direction: column;
+}
+.sm-callout.flip {
+  transform: translate(calc(-100% - 18px), -50%);
+}
+.sm-callout::before {
+  /* leader line from the node point to the panel edge */
+  content: "";
+  position: absolute;
+  top: calc(50% - var(--sm-callout-dy, 0px));
+  left: -18px;
+  width: 18px;
+  height: 1px;
+  background: var(--sm-accent);
+}
+.sm-callout.flip::before {
+  left: auto;
+  right: -18px;
+}
+.sm-callout::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - var(--sm-callout-dy, 0px));
+  left: -21px;
+  width: 5px;
+  height: 5px;
+  margin-top: -3px;
+  border-radius: 50%;
+  background: var(--sm-accent);
+}
+.sm-callout.flip::after {
+  left: auto;
+  right: -21px;
+}
+.sm-callout-inner {
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  min-height: 0;
+  overflow-y: auto;
+}
+/* Severity form — hot (disrupted) callouts take the danger border
+   and leader; the status row carries name — STATUS in the severity colour. */
+.sm-callout.sev-hot::before,
+.sm-callout.sev-hot::after {
+  background: var(--sm-danger);
+}
+.sm-callout-inner.sev-hot {
+  border-color: var(--sm-danger);
+}
+.sm-callout-statusrow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px 0;
+}
+.sm-callout-status {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+.sm-callout-status.hot {
+  color: var(--sm-danger);
+}
+.sm-callout-sub {
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  color: var(--sm-text-dim);
+  line-height: 1.45;
+  padding: 1px 8px 5px;
+  border-bottom: 1px solid var(--sm-border);
+  word-break: break-word;
+}
+.sm-callout-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px 4px;
+  border-bottom: 1px solid var(--sm-border);
+}
+.sm-callout-name {
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.sm-callout-id {
+  font-family: var(--sm-font-data);
+  font-size: 8.5px;
+  color: var(--sm-text-faint);
+}
+.sm-callout-close {
+  appearance: none;
+  background: none;
+  border: none;
+  color: var(--sm-text-dim);
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+.sm-callout-close:hover {
+  color: var(--sm-accent);
+}
+.sm-callout-body {
+  padding: 6px 8px 8px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1px 12px;
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.3;
+}
+.sm-callout-body dt {
+  color: var(--sm-text-dim);
+  letter-spacing: 0;
+}
+.sm-callout-body dd {
+  margin: 0;
+  color: var(--sm-text);
+  text-align: right;
+}
+.sm-callout-body .sm-run-state {
+  color: var(--sm-accent);
+}
+.sm-callout-body .sm-run-state.hot {
+  color: var(--sm-danger);
+}
+.sm-callout-src {
+  padding: 0 8px 6px;
+  font-family: var(--sm-font-prose);
+  font-size: 10px;
+  color: var(--sm-text-faint);
+  line-height: 1.4;
+  word-break: break-word;
+}
+.sm-tag {
+  display: inline-block;
+  border: 0;
+  border-left: 2px solid var(--sm-border);
+  padding: 0 4px 0 6px;
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  letter-spacing: 0;
+  color: var(--sm-text-dim);
+}
+.sm-tag.amber {
+  color: var(--sm-accent);
+  border-color: var(--sm-accent);
+}
+
+/* ---- place focus box ----
+ * The focused place's card: same panel/border idiom as the inspector
+ * callout, wider, with an actions row. Anchored to the projected point
+ * by inline transform (parent clamps both axes); `.docked` pins it
+ * full-width under the HUD on narrow containers. */
+.sm-focusbox {
+  position: absolute;
+  z-index: 9;
+  font-family: var(--sm-font-prose);
+  font-variant-numeric: tabular-nums;
+  width: 300px;
+  max-width: calc(100% - 16px);
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  pointer-events: auto;
+}
+.sm-focusbox.sev-hot {
+  border-color: var(--sm-danger);
+}
+.sm-focusbox.docked {
+  left: 8px;
+  right: 8px;
+  top: 64px;
+  width: auto;
+}
+.sm-focusbox-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 8px 0;
+}
+.sm-focusbox-status {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+.sm-focusbox-status.hot {
+  color: var(--sm-danger);
+}
+.sm-focusbox-sub {
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  color: var(--sm-text-dim);
+  line-height: 1.45;
+  padding: 1px 8px 5px;
+  border-bottom: 1px solid var(--sm-border);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.sm-focusbox-country {
+  letter-spacing: 0;
+}
+.sm-focusbox-goods {
+  display: block;
+}
+.sm-focusbox-goods .sm-tag {
+  margin-left: 4px;
+}
+.sm-focusbox-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 8px 7px;
+}
+.sm-focusbox-actions .sm-callout-src {
+  padding: 0;
+}
+.sm-focusbox-desk {
+  appearance: none;
+  background: var(--sm-panel-alt, var(--sm-panel));
+  border: 1px solid var(--sm-border);
+  color: var(--sm-accent);
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.sm-focusbox-desk:hover {
+  border-color: var(--sm-accent);
+}
+
+/* ---- place paint legend (host-supplied entries) ----
+ * Same panel/border/type idiom as the kind legend; the swatch colour
+ * is the host's entry colour, set inline per entry. */
+.sm-placepaint-legend {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: color-mix(in srgb, var(--sm-panel) 92%, transparent);
+  border: 1px solid var(--sm-border);
+  padding: 4px 7px;
+  font-family: var(--sm-font-data);
+  font-size: 8.5px;
+  color: var(--sm-text-dim);
+  width: fit-content;
+  max-width: 100%;
+}
+.sm-placepaint-legend .sm-placepaint-swatch {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+/* ---- SIM ----
+ * All colours via the theme variable set above — both themes from the
+ * same rules, like every other map surface. The floating
+ * SIM toggle group's styles went with the group — the layer stack's
+ * home is the SIM panel now; only the chips + transport
+ * badge remain as map furniture. */
+.sm-chip-sim {
+  border-color: var(--sm-accent);
+}
+.sm-chip-sim b {
+  color: var(--sm-accent);
+}
+.sm-sim-bar {
+  bottom: 44px;
+}
+.sm-sim-badge {
+  background: var(--sm-accent);
+  color: var(--sm-accent-text);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 2px 6px;
+}
+
+/* visible focus ring inside the map root (the switcher rule
+ * above covers its own buttons; this covers every other control). */
+.sm-map-root :focus-visible {
+  outline: 2px solid var(--sm-accent);
+  outline-offset: 1px;
+}
+
+/* reduced motion — map chrome renders still; the cascade
+ * pulse ticker and stagger are stilled in JS (prefersReducedMotion). */
+@media (prefers-reduced-motion: reduce) {
+  .sm-map-root *, .sm-map-root *::before, .sm-map-root *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---- RETRO family ----
+ * The retro themes tint OUR layers + chrome through the same --sm-*
+ * variable set (the deck.gl layer colours come from the matching
+ * token sets in tokens.ts). Basemap tiles stay the paired CARTO set
+ * (retro-dark ↔ dark, retro-light ↔ light) — nothing here repaints
+ * tiles. Severity keeps its red family; accent = orange (dark) /
+ * pink-red (light); vessel = cyan (dark) / purple (light). */
+.sm-map-root[data-theme="retro-dark"] {
+  --sm-land: #010203;
+  --sm-ocean: #04070d;
+  --sm-panel: #070d18;
+  --sm-panel-alt: #0a1424;
+  --sm-border: #1e7d8c;
+  --sm-text: #e8fbff;
+  --sm-text-dim: #9fd8e8;
+  --sm-text-faint: #79b8c9;
+  --sm-accent: #ff9e2c;
+  --sm-accent-text: #140a00;
+  --sm-danger: #ff7a6e;
+  --sm-vessel: #22e6ff;
+  --sm-selection: #00d5e8;
+  --sm-selection-text: #00d5e8;
+}
+.sm-map-root[data-theme="retro-light"] {
+  --sm-land: #fcfbfe;
+  --sm-ocean: #d9d4ea;
+  --sm-panel: #ffffff;
+  --sm-panel-alt: #f1eef8;
+  --sm-border: #c9c2d9;
+  --sm-text: #14101f;
+  --sm-text-dim: #4a4459;
+  --sm-text-faint: #5d5670;
+  --sm-accent: #b3124f;
+  --sm-accent-text: #ffffff;
+  --sm-danger: #b91c1c;
+  --sm-vessel: #7b1fa2;
+  --sm-selection: #e0218a;
+  --sm-selection-text: #c2185b;
+}
+/* chamfered HUD corners on the map's own furniture, retro only */
+.sm-map-root[data-theme="retro-dark"] .sm-key,
+.sm-map-root[data-theme="retro-light"] .sm-key,
+.sm-map-root[data-theme="retro-dark"] .sm-seg,
+.sm-map-root[data-theme="retro-light"] .sm-seg,
+.sm-map-root[data-theme="retro-dark"] .sm-callout-inner,
+.sm-map-root[data-theme="retro-light"] .sm-callout-inner,
+.sm-map-root[data-theme="retro-dark"] .sm-focusbox,
+.sm-map-root[data-theme="retro-light"] .sm-focusbox,
+.sm-map-root[data-theme="retro-dark"] .sm-cascade-bar,
+.sm-map-root[data-theme="retro-light"] .sm-cascade-bar,
+.sm-map-root[data-theme="retro-dark"] .sm-tool,
+.sm-map-root[data-theme="retro-light"] .sm-tool {
+  clip-path: polygon(7px 0, 100% 0, 100% calc(100% - 7px), calc(100% - 7px) 100%, 0 100%, 0 7px);
+}
+
+/* ---- TWIN (digital-twin fleet renderer): chips, tooltip, capture ----
+ * Chips and state labels only. All colours via the theme variable set. */
+.sm-twin-hud {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 440px;
+}
+.sm-twin-hud .sm-chip {
+  white-space: nowrap;
+}
+.sm-twin-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  align-items: center;
+}
+.sm-twin-chip {
+  appearance: none;
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  color: var(--sm-text-dim);
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  letter-spacing: 0;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+.sm-twin-chip:focus-visible {
+  outline: 1px solid var(--sm-selection-text);
+  outline-offset: 1px;
+}
+.sm-twin-chip i {
+  font-style: normal;
+  color: var(--sm-text);
+  margin-left: 2px;
+}
+.sm-twin-chip[aria-pressed="true"] {
+  background: var(--sm-accent);
+  border-color: var(--sm-accent);
+  color: var(--sm-accent-text);
+  font-weight: 700;
+}
+.sm-twin-chip[aria-pressed="true"] i {
+  color: var(--sm-accent-text);
+}
+.sm-twin-chip:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.sm-twin-clear {
+  border-color: var(--sm-danger);
+  color: var(--sm-danger);
+}
+.sm-twin-ramp {
+  display: inline-flex;
+  height: 7px;
+  width: 54px;
+  border: 1px solid var(--sm-border);
+}
+.sm-twin-ramp span {
+  flex: 1;
+}
+.sm-chip-live {
+  border-color: var(--sm-selection);
+}
+.sm-chip-live b {
+  color: var(--sm-selection-text);
+}
+.sm-chip-idle {
+  opacity: 0.8;
+}
+.sm-twin-surface {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+.sm-twin-shape,
+.sm-twin-capture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.sm-twin-shape polygon {
+  fill: color-mix(in srgb, var(--sm-accent) 8%, transparent);
+  stroke: var(--sm-accent);
+  stroke-width: 1.2;
+  stroke-dasharray: 4 3;
+}
+.sm-twin-capture {
+  pointer-events: auto;
+  cursor: crosshair;
+  touch-action: none;
+}
+.sm-twin-tip,
+.sm-twin-sel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--sm-panel);
+  border: 1px solid var(--sm-border);
+  padding: 3px 6px;
+  font-family: var(--sm-font-prose);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--sm-text-dim);
+  white-space: nowrap;
+}
+.sm-twin-tip {
+  position: absolute;
+}
+.sm-twin-tip-live {
+  border-color: var(--sm-selection);
+}
+.sm-twin-tip b,
+.sm-twin-sel b {
+  color: var(--sm-text);
+  font-weight: 600;
+}
+.sm-twin-sel {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: auto;
+  border-color: var(--sm-accent);
+}
+.sm-twin-tag {
+  border: 0;
+  border-left: 2px solid var(--sm-border);
+  padding: 0 3px 0 5px;
+  letter-spacing: 0;
+}
+.sm-twin-tag-sim {
+  border-left-color: var(--sm-accent);
+  color: var(--sm-accent);
+}
+
+/* ---- zoom +/- glyph tone per theme. Kept at the END of the file: the
+ * theme's variable block is located by its selector text,
+ * so no earlier rule may carry those selectors. ---- */
+.sm-map-root[data-theme="dark"] .maplibregl-ctrl-group .maplibregl-ctrl-icon,
+.sm-map-root[data-theme="retro-dark"] .maplibregl-ctrl-group .maplibregl-ctrl-icon {
+  filter: invert(1) opacity(0.78);
+}
+.sm-map-root[data-theme="light"] .maplibregl-ctrl-group .maplibregl-ctrl-icon,
+.sm-map-root[data-theme="retro-light"] .maplibregl-ctrl-group .maplibregl-ctrl-icon {
+  filter: opacity(0.7);
+}

@@ -1,0 +1,97 @@
+/* Styles for the report centre, export centre and satellite
+ * desk. Uses ONLY custom properties that styles.css already defines
+ * (--panel --panel2 --border --line2 --ink --dim --faint --amber --sel
+ * --red --cyan --green --bar-mode-shift --codebg --codetx), so the shell
+ * lane's token remap carries these panels with it. Colour carries
+ * tone on borders and glyphs only; every word is --ink or --dim so text
+ * keeps its contrast in both themes. Class prefix rk- (shared parts,
+ * reports) and sw2- (satellite desk, satwatch2.css). */
+
+.rk-panel .panel-body { max-height:min(80vh, 920px); container-type:inline-size; }
+
+/* ── chips: glyph + word, never colour alone ───────────────────── */
+.rk-chip { display:inline-flex; align-items:center; gap:4px; min-height:16px; padding:0 4px 0 6px; border:0; border-left:2px solid var(--border);
+  font-family:"IBM Plex Sans", system-ui, sans-serif; font-size: var(--fs-xs); font-weight:500; letter-spacing:0; text-transform:none; color:var(--ink); background:transparent;
+  white-space:nowrap; max-width:100%; line-height:1.2; vertical-align:middle; }
+.rk-chip i { font-style:normal; font-size: var(--fs-xs); }
+/* a Status inside the wrapper draws the one left rule itself */
+.rk-chip:has(> .chip) { border-left:0; padding:0; min-height:0; }
+.rk-controls > .rk-chip, .rk-preview > .rk-chip, .sw2-main > .rk-chip { align-self:flex-start; }
+.rk-item .rk-chip { flex:none; }
+@media (max-width: 560px) { .rk-chip { white-space:normal; overflow-wrap:anywhere; } }
+.rk-chip--live { border-left-color:var(--green); } .rk-chip--live i { color:var(--green); }
+.rk-chip--snapshot { border-left-color:var(--amber); } .rk-chip--snapshot i { color:var(--amber); }
+.rk-chip--sim { border-left-color:var(--bar-mode-shift); } .rk-chip--sim i { color:var(--bar-mode-shift); }
+.rk-chip--model { border-left-color:var(--cyan); } .rk-chip--model i { color:var(--cyan); }
+.rk-chip--down { border-left-color:var(--red); } .rk-chip--down i { color:var(--red); }
+.rk-chip--sourced { border-left-color:var(--line2); } .rk-chip--sourced i { color:var(--dim); }
+.rk-chip--meta { border-left-color:var(--border); color:var(--dim); }
+.rk-chip--notserved { border-left-color:var(--faint); color:var(--dim); }
+.rk-chip--flag { border-left-color:var(--ink); } .rk-chip--flag i { color:var(--ink); }
+.rk-chip--test { border-left-color:var(--amber); color:var(--ink); } .rk-chip--test i { color:var(--amber); }
+
+/* ── layout: controls | preview, stacked when the panel is narrow ── */
+.rk-root { display:grid; grid-template-columns:minmax(0, 1fr); gap:10px; }
+@container (min-width: 760px) {
+  .rk-root { grid-template-columns:minmax(280px, 340px) minmax(0, 1fr); }
+}
+.rk-controls, .rk-preview { display:flex; flex-direction:column; gap:7px; min-width:0; }
+.rk-preview { overflow-x:auto; }
+.rk-row { display:flex; align-items:center; gap:6px; flex-wrap:wrap; min-width:0; }
+.rk-row--between { justify-content:space-between; }
+.rk-wrap { row-gap:4px; }
+.rk-lbl { font-family:"IBM Plex Sans", system-ui, sans-serif; font-size: var(--fs-xs); letter-spacing:0; color:var(--dim); text-transform:none; }
+.rk-count, .rk-code { font-size: var(--fs-xs); color:var(--dim); letter-spacing:.04em; }
+.rk-num { font-variant-numeric:tabular-nums; }
+.rk-spacer { flex:1 1 auto; }
+
+/* ── controls ──────────────────────────────────────────────────── */
+.rk-btn { border:0; box-shadow:inset 0 0 0 1px var(--border); background:transparent; color:var(--ink); font-family:"IBM Plex Sans", system-ui, sans-serif;
+  font-size: var(--fs-xs); font-weight:500; letter-spacing:0; padding:4px 8px; min-height:24px; }
+.rk-btn:hover:not(:disabled) { box-shadow:inset 0 0 0 1px var(--sel); }
+.rk-btn:active:not(:disabled) { box-shadow:inset 0 0 0 1px var(--border), inset 0 -2px 0 var(--sel); }
+.rk-btn:disabled { color:var(--faint); cursor:not-allowed; }
+.rk-btn--primary { box-shadow:inset 0 0 0 1px var(--sel); }
+.rk-input { background:var(--panel2); border:0; box-shadow:inset 0 0 0 1px var(--line2), inset 0 -1px 0 var(--border); color:var(--ink); padding:4px 6px; min-height:24px; font-size: var(--fs-xs); min-width:0; flex:1 1 120px; }
+.rk-input--num { flex:0 0 96px; }
+.rk-input[aria-invalid="true"] { box-shadow:inset 0 0 0 1px var(--red); }
+.rk-input:disabled { color:var(--faint); }
+.rk-btn:focus-visible, .rk-input:focus-visible, .rk-tab:focus-visible, .rk-check input:focus-visible, .rk-table input:focus-visible,
+.sw2-place:focus-visible, .sw2-range:focus-visible, .rk-md:focus-visible { outline: 1px solid var(--sel); outline-offset: 2px; }
+
+.rk-list { list-style:none; margin:0; padding:0; border:1px solid var(--border); }
+.rk-item { display:flex; align-items:center; gap:6px; padding:3px 6px; border-bottom:1px solid var(--line2); }
+.rk-item:last-child { border-bottom:none; }
+.rk-item .rk-check { flex:1 1 auto; }
+.rk-check { display:inline-flex; align-items:center; gap:6px; flex:0 0 auto; min-width:0; cursor:pointer; }
+.rk-check input { margin:0; flex:none; }
+.rk-item-title { color:var(--ink); overflow:hidden; text-overflow:ellipsis; }
+.rk-size { font-size: var(--fs-xs); color:var(--dim); margin-left:auto; flex:none; }
+
+.rk-tabs { display:flex; gap:0; border-bottom:1px solid var(--border); }
+.rk-tab { position:relative; padding:5px 10px; font-family:"IBM Plex Sans", system-ui, sans-serif; font-size: var(--fs-xs); font-weight:500; letter-spacing:0; color:var(--dim); min-height:26px; }
+.rk-tab:hover { color:var(--ink); }
+.rk-tab.on { color:var(--ink); }
+.rk-tab.on::after { content:""; position:absolute; left:6px; right:6px; bottom:-1px; height:2px; background:var(--sel); }
+
+/* ── preview ───────────────────────────────────────────────────── */
+.rk-toolbar { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.rk-pane { border:1px solid var(--border); background:var(--panel2); min-height:200px; display:flex; flex-direction:column; }
+.rk-empty { margin:auto; padding:30px 0; }
+.rk-frame { width:100%; height:520px; border:0; background:#fff; }
+.rk-md { margin:0; padding:10px; max-height:520px; overflow:auto; font-size: var(--fs-xs); line-height:1.5; color:var(--ink); white-space:pre-wrap; word-break:break-word; }
+.rk-state { display:flex; align-items:center; gap:8px; flex-wrap:wrap; padding:6px 0; }
+.rk-result { display:flex; align-items:center; gap:6px; flex-wrap:wrap; border-top:1px solid var(--line2); padding-top:6px; }
+
+/* ── tables ────────────────────────────────────────────────────── */
+.rk-table { width:100%; border-collapse:collapse; font-size: var(--fs-xs); }
+.rk-table th { text-align:left; font-family:"IBM Plex Sans", system-ui, sans-serif; font-size: var(--fs-xs); letter-spacing:0; font-weight:500;
+  color:var(--dim); border-bottom:1px solid var(--border); padding:3px 6px; position:sticky; top:0; background:var(--panel); }
+.rk-table td { padding:3px 6px; border-bottom:1px solid var(--line2); vertical-align:middle; }
+.rk-table tbody tr:hover td { background:var(--panel2); }
+.rk-table tbody tr.on td:first-child { box-shadow:inset 3px 0 var(--sel); }
+.rk-table .rk-r { text-align:right; }
+.rk-table input { margin:0; }
+.rk-manifest { display:flex; flex-direction:column; gap:7px; border-top:1px solid var(--border); padding-top:8px; }
+
+@media (prefers-reduced-motion: reduce) { .rk-btn, .rk-tab { transition:none; } }

@@ -1,0 +1,245 @@
+/* SupermAP shell components and the type/table/panel pass
+   Loaded after
+   styles.css and tokens.css, so equal-specificity rules here win. The
+   exact focus-ring line and the reduced-motion block stay in styles.css;
+   nothing here weakens them. */
+
+/* ---- base type -------------------------------------------------- */
+html, body { font-family: var(--font-ui); font-size: var(--t-data); }
+.mono, .mono * { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.data-table td, .kv dd, .rte-table td, .board-row, .exp-row, .qrow { font-variant-numeric: tabular-nums; }
+button { transition: color var(--dur-1) var(--ease-out), background-color var(--dur-1) var(--ease-out), border-color var(--dur-1) var(--ease-out); }
+.spacer { flex: 1; }
+
+/* Caps captions move from the 1.4 px retro tracking to .06em; 9 px floor, caps only. */
+.panel-head, .panel-title, .ntabs, .ntabs button, .kpi .kl, .data-table th, .rte-table th, .src-tag, .mode-tag, .sev-tag,
+.sec-t, .sec-sub, .trace-foot, .que-cap, .ms-upd, .ms-title, .panel-updated, .news-meta, .chart-foot, .search-ghead,
+.search-card-head, .search-foot, .lens-bar, .form-grid label, .layouts-btn, .func-menu button { letter-spacing: var(--trk-caps); }
+.panel-title, .ms-title { font-size: var(--t-title); font-weight: 600; }
+.code-chip, .ntabs button, .kpi .kl, .data-table th, .rte-table th, .src-tag, .mode-tag, .sev-tag, .sec-t, .sec-sub, .trace-foot,
+.que-cap, .ms-upd, .panel-updated, .news-meta, .chart-foot, .exposure-chip, .origin-tag, .enx-state, .search-chip { font-size: var(--t-micro); }
+.data-table td, .rte-table td { font-size: var(--t-data); }
+.data-table th, .rte-table th { color: var(--text-3); position: sticky; top: 0; background: var(--bg-panel); z-index: 1; }
+.data-table td { padding: 2px 6px; border-bottom: 1px solid var(--line-soft); }
+.data-table th { padding: 4px 6px; }
+.data-table tbody tr:hover td { background: var(--bg-inset); }
+.row--sel, .trace--sel, .news-item--sel, .search-row--hot { box-shadow: inset 2px 0 0 var(--accent); }
+.panel-head { height: var(--head-h); border-bottom: 1px solid var(--line); background: var(--bg-panel); }
+.panel { border-bottom: 1px solid var(--line); }
+.empty-state { display: flex; align-items: center; justify-content: center; gap: var(--s-2); padding: var(--s-4); min-height: 56px; }
+
+/* ---- chips: see ui/ui.css (dot and one word with a thin left rule) ---- */
+@keyframes live-pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.chip-btn { padding: 0; background: none; border: none; display: inline-flex; border-radius: var(--r-1); }
+
+/* ---- segmented controls and buttons: see ui/ui.css and shell/chrome.css ---- */
+.meta { font-size: var(--t-label); color: var(--text-2); letter-spacing: var(--trk-caps); white-space: nowrap; }
+
+/* ---- floating layer: menus and popovers (solid, outlined; Rail has no blur) --- */
+.pop { position: absolute; right: 0; top: calc(100% + 4px); z-index: 70; min-width: 220px; display: flex; flex-direction: column; gap: 2px; padding: 6px;
+  background: var(--bg-raised); border-radius: var(--r-3); box-shadow: var(--shadow-1); animation: pop-in var(--dur-2) var(--ease-out); }
+@keyframes pop-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+.pop-row { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); padding: 4px 2px; font-size: var(--t-label); }
+.pop-k { color: var(--text-3); letter-spacing: var(--trk-caps); font-size: var(--t-micro); }
+.pop-check { cursor: pointer; justify-content: flex-start; gap: 6px; color: var(--text-2); }
+.pop-check input { accent-color: var(--accent); margin: 0; }
+.pop-h { padding: 4px 8px 2px; font-size: var(--t-micro); color: var(--text-3); letter-spacing: var(--trk-caps); }
+.pop-sep { border-top: 1px solid var(--line-soft); margin-top: 4px; padding-top: 6px; }
+.pop > button { text-align: left; padding: 5px 8px; font-size: var(--t-label); letter-spacing: var(--trk-caps); border-radius: var(--r-2); color: var(--text-2); }
+.pop > button:hover { background: var(--bg-inset); color: var(--text); }
+.pop > button.on { color: var(--text); box-shadow: inset 2px 0 0 var(--accent); }
+.appear-pop { min-width: 260px; }
+.search-drop, .menu { border-radius: var(--r-3); box-shadow: var(--shadow-1); background: var(--bg-raised); }
+.menu button:hover { background: var(--bg-inset); }
+.search-drop { border-color: var(--line); }
+
+/* ---- row A: top bar (36 px) ------------------------------------- */
+.topbar { display: flex; align-items: center; gap: var(--s-2); height: var(--bar-top-h); padding: 0 12px; background: var(--bg-bar); border-bottom: 1px solid var(--line); flex: none; position: relative; z-index: 40; }
+.brand { display: inline-flex; align-items: center; gap: 8px; margin-right: 4px; }
+.wtab { display: inline-flex; align-items: center; gap: 8px; height: var(--seg-h); padding: 0 10px; border: 1px solid var(--line); border-radius: var(--r-2); background: var(--bg-inset); font-size: var(--t-label); color: var(--text-2); letter-spacing: var(--trk-caps); white-space: nowrap; }
+.wtab button { color: var(--text-3); padding: 0; } .wtab button:hover { color: var(--text); }
+.topbar .user-chip { width: 24px; height: 24px; color: var(--text-2); font-size: var(--t-label); }
+.shell--sim { box-shadow: inset 0 2px 0 var(--st-sim); }
+.topbar--sim { box-shadow: inset 0 2px 0 var(--st-sim); }
+.appear-wrap { position: relative; }
+.theme-switch { display: none; } /* hidden: LIGHT | DARK lives in the top bar */
+
+/* ---- row B: command bar (32 px) --------------------------------- */
+.subbar { height: var(--bar-sub-h); gap: var(--s-3); padding: 0 12px; background: var(--bg-bar); border-bottom: 1px solid var(--line); overflow: visible; position: relative; z-index: 30; }
+.subbar .nav-glyphs button { width: 24px; height: 24px; border-radius: var(--r-2); font-size: var(--fs-xl); color: var(--text-2); padding: 0; }
+.subbar .nav-glyphs button:hover:not(:disabled) { background: var(--bg-inset); color: var(--text); }
+.func-tabs { display: flex; gap: 0; align-self: stretch; }
+.func-tabs button { height: 100%; padding: 0 10px; font-size: var(--t-label); letter-spacing: var(--trk-caps); color: var(--text-2); }
+.func-tabs button:hover { color: var(--text); }
+.func-tabs button.on { color: var(--text); box-shadow: inset 0 -2px 0 var(--accent); font-weight: 600; }
+.cmd-input { flex: 1 1 260px; max-width: 520px; height: var(--seg-h); border: 1px solid var(--line-strong); border-left-width: 1px; border-radius: var(--r-2); background: var(--bg-inset); padding: 0 8px; gap: 6px; }
+.cmd-input .fn-chip { background: transparent; border: 1px solid var(--line); border-radius: var(--r-1); color: var(--text-2); font-size: var(--t-micro); padding: 1px 5px; letter-spacing: var(--trk-caps); }
+.cmd-input input { font-family: var(--font-data); font-size: var(--t-data); color: var(--text); }
+.cmd-input::after { content: "Ctrl K"; font-family: var(--font-data); font-size: var(--t-micro); color: var(--text-3); border: 1px solid var(--line); border-radius: var(--r-1); padding: 0 4px; line-height: 14px; }
+.cmd-input:focus-within { border-color: var(--accent); }
+.layouts-wrap { display: inline-flex; align-items: center; gap: var(--s-2); position: relative; }
+.layouts-btn { height: var(--seg-h); padding: 0 8px; font-size: var(--t-label); color: var(--text-2); border-radius: var(--r-2); }
+.layouts-btn:hover { background: var(--bg-inset); color: var(--text); }
+.layouts-menu { top: calc(100% + 4px); right: 0; min-width: 190px; }
+.layouts-menu .layouts-reset { color: var(--text-3); }
+.saved-stamp { font-size: var(--t-micro); color: var(--text-3); letter-spacing: var(--trk-caps); white-space: nowrap; }
+
+/* ---- KPI strip: tiles, 56 px, square ---------------------------- */
+.kpis { height: var(--kpi-h); gap: 0; padding: 0; background: var(--bg-bar); border-bottom: 1px solid var(--line); }
+.kpi { border: none; border-right: 1px solid var(--line); border-radius: var(--r-0); background: var(--bg-panel); padding: 5px 10px; display: flex; flex-direction: column; justify-content: space-between; }
+.kpi:last-child { border-right: none; }
+.kpi .kl { display: flex; align-items: center; justify-content: space-between; gap: 6px; color: var(--text-3); line-height: 16px; overflow: hidden; }
+.kpi .kl > span { overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.kpi .kl .chip { height: 14px; padding: 0 4px; flex: none; }
+.kpi .kv { font-size: var(--t-kpi); font-weight: 600; line-height: 1.05; margin: 0; letter-spacing: 0; color: var(--text); }
+.kpi .kv small { font-size: var(--t-micro); color: var(--text-3); font-weight: 400; margin-left: 4px; letter-spacing: var(--trk-caps); }
+.kpi .ks { font-size: var(--t-micro); color: var(--text-3); margin: 0; line-height: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; -webkit-line-clamp: unset; }
+.tiles--sim .kl, .tiles--sim .kl > span, .tiles--sim .ks, .tiles--sim .kv small { color: var(--text-2); }
+.tiles--sim .kpi { background: color-mix(in srgb, var(--st-sim) 8%, var(--bg-panel)); }
+
+/* ---- workspace -------------------------------------------------- */
+.grid, .shell { background: var(--bg-app); }
+.fn-rail { background: var(--bg-bar); border-right: 1px solid var(--line); gap: 14px; padding-top: 8px; }
+.fn-rail button { font-family: var(--font-data); font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-3); position: relative; width: 100%; padding: 2px 0; }
+.fn-rail button:hover { color: var(--text); }
+.fn-rail button.on { color: var(--accent-text); box-shadow: inset 2px 0 0 var(--accent); }
+.fn-rail .rail-mark i { position: absolute; top: -3px; right: 2px; font-style: normal; font-size: var(--fs-xs); color: var(--st-notserved); }
+.rail-sep { width: 18px; border-top: 1px solid var(--line); margin: -4px 0; }
+.col--left, .col--right { background: var(--bg-panel); border-color: var(--line); }
+.inspector-tabs { display: flex; position: sticky; top: 0; z-index: 5; background: var(--bg-bar); border-bottom: 1px solid var(--line); flex: none; overflow-x: auto; }
+.inspector-tabs button { padding: 0 10px; height: 28px; font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-3); white-space: nowrap; }
+.inspector-tabs button:hover { color: var(--text); }
+.inspector-tabs button.on { color: var(--text); box-shadow: inset 0 -2px 0 var(--accent); font-weight: 600; }
+.tool-slot .panel-updated { margin-left: auto; }
+.panel--focus { box-shadow: inset 0 0 0 1px var(--accent); }
+
+/* ---- chart dock, transport, status bar --------------------------- */
+.chart-dock { border-top: 1px solid var(--line); background: var(--bg-panel); }
+.chart-head, .chart-foot { border-color: var(--line); }
+.tv-grid { stroke: var(--line-soft); stroke-dasharray: 1 3; }
+.axis-chip { fill: var(--text-3); }
+.chart-legend { gap: 12px; color: var(--text-2); font-size: var(--t-micro); }
+.transport { flex: none; border-top: 1px solid var(--line); background: var(--bg-bar); }
+.transport--now .transport-now { height: var(--transport-now-h); }
+.transport-now { display: flex; align-items: center; gap: var(--s-2); padding: 0 12px; font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); }
+.transport-now > b { color: var(--text); font-weight: 600; }
+.transport--sim { min-height: var(--transport-h); }
+.transport .sim-timeline { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 10px; padding: 4px 12px; border-top: none; background: transparent; }
+.transport .sim-tl-row { flex: 0 1 auto; gap: 4px; }
+.transport .sim-tl-row button { height: 22px; border-radius: var(--r-2); border: 1px solid var(--line-strong); background: var(--bg-inset); color: var(--text-2); padding: 0 8px; font-size: var(--t-micro); }
+.transport .sim-tl-row button:hover { color: var(--text); border-color: var(--accent); }
+.transport .sim-tl-row button.on { background: var(--accent-fill-strong); color: var(--on-accent); border-color: var(--accent-fill-strong); }
+.transport .sim-tl-row .sim-play { min-width: 74px; color: var(--text); }
+.transport .sim-ruler { flex: 1 1 260px; min-width: 200px; height: 20px; margin: 0; border-radius: var(--r-2); background: var(--bg-inset); border-color: var(--line); }
+.transport .sim-ruler-labels { flex: 1 1 100%; order: 3; padding-top: 0; color: var(--text-3); font-size: var(--t-micro); }
+.transport .sim-timeline--empty { padding: 0 12px; height: var(--transport-h); }
+.sim-ruler-ticks span { background: var(--line-soft); } .sim-ruler-ticks span.tick-major { background: var(--line-strong); }
+.sim-playhead { background: var(--accent); } .sim-playhead::before { border-top-color: var(--accent); }
+.statusbar, .status-bar { height: var(--status-h); padding: 0 12px; gap: var(--s-3); background: var(--bg-bar); border-top: 1px solid var(--line); font-size: var(--t-micro); color: var(--text-3); flex-wrap: nowrap; overflow: hidden; white-space: nowrap; }
+.statusbar .src-dots { gap: 4px; flex: 0 1 auto; min-width: 0; overflow: hidden; flex-wrap: nowrap; }
+.statusbar .chip { flex: none; }
+/* many adapters: calm form in the status bar (glyph + word, no fill) */
+.statusbar .chip--live, .statusbar .chip--down { background: transparent; }
+.statusbar .chip--live { color: var(--st-live); border-color: transparent; }
+.statusbar .chip--down { color: var(--st-down); border-color: transparent; }
+.statusbar .chip--snapshot { border-color: transparent; }
+.statusbar .chip--meta { border-color: transparent; }
+.statusbar .chip--notserved { border-color: var(--line-strong); }
+.statusbar .meta { color: var(--text-3); }
+.statusbar .chip { height: 16px; }
+
+/* ---- SIMULATION chrome ------------------------------------------ */
+.sim-block, .compare { border-radius: var(--r-1); }
+.simulated-chip { border: 1px dashed var(--st-sim); background: transparent; color: var(--st-sim); border-radius: var(--r-1); font-weight: 600; }
+
+/* ---- comfortable density: panels as inset cards ------------------ */
+html[data-density="comfortable"]:not([data-theme="retro-dark"]):not([data-theme="retro-light"]) .col--left > .panel,
+html[data-density="comfortable"]:not([data-theme="retro-dark"]):not([data-theme="retro-light"]) .col--right > .panel {
+  margin: 6px; border: 1px solid var(--line); border-radius: var(--r-3); overflow: hidden; }
+html[data-density="comfortable"] .data-table td { padding: 5px 8px; }
+html[data-density="comfortable"] .kpi { padding: 5px 12px; }
+html[data-density="comfortable"] .seg, html[data-density="comfortable"] .tb-btn { height: 28px; }
+
+/* ---- retro: same variables, square geometry, own accents --------- */
+html[data-theme="retro-dark"] .chip, html[data-theme="retro-light"] .chip,
+html[data-theme="retro-dark"] .seg, html[data-theme="retro-light"] .seg,
+html[data-theme="retro-dark"] .pop, html[data-theme="retro-light"] .pop { border-radius: 0; }
+html[data-theme="retro-dark"] .kpi .kv, html[data-theme="retro-light"] .kpi .kv { font-size: 17px; }
+
+/* ---- paper ---------------------------------------------------------- */
+html[data-skin="paper"][data-theme="light"] .panel-title { font-weight: 600; }
+
+/* In SIMULATION the map bar carries no LIVE | CANNED | SIM desk-source
+   switch (the shell's LIVE | SIMULATION switch is the one mode control there). */
+.shell--sim .mapbar .sim-modes { display: none; }
+
+/* ---- tools menu: the rail's entries for a phone -------- */
+.tools-wrap { display: none; position: relative; align-items: center; }
+.tools-menu { left: 0; right: auto; min-width: 200px; }
+.tools-menu button b { display: inline-block; min-width: 34px; color: var(--accent-text); font-weight: 600; }
+
+/* ---- phone: one panel at a time (860 and below) ------------------ */
+@media (max-width: 860px) {
+  .tools-wrap { display: inline-flex; }
+  .tools-menu { max-height: 60vh; overflow-y: auto; }
+  .tools-menu > button { min-height: 44px; }
+  .topbar { height: auto; min-height: 44px; flex-wrap: wrap; gap: 6px; padding: 4px 12px; }
+  .brand .ui-wordmark, .wtab, .tb-plus, .topbar .meta, .meta-btn, .tb-btn-w { display: none; }
+  .seg, .seg-b, .tb-btn { min-height: 44px; }
+  .seg { height: 44px; }
+  .subbar { height: auto; flex-wrap: wrap; padding: 6px 12px; }
+  .subbar .cmd-input { flex: 1 1 100%; order: 5; max-width: none; height: 44px; }
+  .subbar .nav-glyphs button { width: 44px; height: 44px; }
+  .func-tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; height: 48px; background: var(--bg-bar); border-top: 1px solid var(--line); overflow-x: auto; align-self: auto; }
+  .func-tabs button { flex: 1 0 auto; min-width: 64px; height: 48px; }
+  .shell { padding-bottom: 48px; }
+  .saved-stamp { display: none; }
+  .kpis { height: auto; flex-wrap: wrap; }
+  .kpi { flex: 1 1 42%; border-bottom: 1px solid var(--line); }
+  .statusbar, .status-bar { height: auto; min-height: var(--status-h); flex-wrap: wrap; overflow: visible; white-space: normal; padding: 4px 12px; }
+  .transport .sim-timeline { padding: 6px 12px; }
+  .transport { order: 3; } .kpis { order: 4; } .statusbar, .status-bar { order: 5; }
+  .pop { right: 0; max-width: calc(100vw - 24px); }
+}
+@media (pointer: coarse) {
+  .seg-b, .tb-btn, .func-tabs button, .layouts-btn { min-height: 44px; }
+}
+
+/* ---- panel header basis, narrow headers, compact classify ---- */
+/* The leading word of a header stamp never truncates; the source after it
+   does, and the whole stamp is the tooltip. */
+.panel-updated:has(> .stamp-w) { display: flex; min-width: 0; }
+.panel-updated .stamp-w { flex: none; font-weight: 600; }
+.panel-updated .stamp-rest { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: pre; }
+.panel-updated--node { display: flex; align-items: center; justify-content: flex-end; overflow: hidden; text-overflow: clip; }
+.basis-stamp { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
+.basis-stamp .chip { flex: none; }
+.basis-btn { cursor: pointer; }
+.basis-btn:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.basis-src { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-3); }
+.basis-pop { z-index: 90; max-width: calc(100vw - 16px); }
+.basis-row { justify-content: flex-start; gap: 8px; }
+.basis-row .chip { flex: none; }
+.basis-label { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text); }
+
+/* A narrow panel (the 282 px feed column) puts the stamp on a second header
+   row, left-aligned under the title, so the window controls stay where they
+   are and the stamp is read in full instead of cut to a few letters. Wider
+   panels keep the one-row header. */
+.panel { container-type: inline-size; container-name: panel; }
+@container panel (max-width: 360px) {
+  .panel-head { height: auto; min-height: var(--head-h); flex-wrap: wrap; row-gap: 0; align-content: center; padding-bottom: 0; }
+  .panel-head .panel-controls { margin-left: auto; }
+  .panel-head .panel-updated { order: 5; flex: 1 0 100%; margin: 0 0 3px; text-align: left; justify-content: flex-start; }
+}
+
+/* The per-item classify control: one small unboxed text, revealed on row
+   hover or focus (keyboard reachable: the button stays a tab stop). Results
+   and the paid-call confirmation stay visible. */
+.news-item .fclass:has(> .fclass-btn:only-child) { margin-top: 1px; justify-content: flex-end; min-height: 14px; }
+.news-item .fclass > .fclass-btn:only-child { border-color: transparent; background: none; color: var(--text-3); padding: 0 4px; height: 14px;
+  opacity: 0; transition: opacity var(--dur-1) var(--ease-out); }
+.news-item:hover .fclass > .fclass-btn:only-child, .news-item:focus-within .fclass > .fclass-btn:only-child,
+.news-item .fclass > .fclass-btn:only-child:focus-visible { opacity: 1; }
+.news-item .fclass > .fclass-btn:only-child:hover { color: var(--accent-text); background: none; text-decoration: underline; }
+@media (hover: none) { .news-item .fclass > .fclass-btn:only-child { opacity: 1; } }

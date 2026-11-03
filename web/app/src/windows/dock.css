@@ -1,0 +1,139 @@
+/* Window manager skin. dockview's structural CSS is
+   imported before this file; here its --dv-* variables are mapped onto
+   SupermAP's own tokens (shell/tokens.css), so every skin (dark, light,
+   paper, retro) follows. Flat graphite title bars, one
+   matte content well, 1 px hairlines, 2 px radii, tabs as flat text over a
+   bottom rail with a marker line and end ticks, azure focus. No colour
+   literal: tokens only. */
+
+.wm-main { flex: 1 1 0; min-height: 520px; min-width: 0; display: flex; background: var(--bg-app); padding: 2px; }
+.wm-dock { flex: 1 1 auto; min-height: 0; min-width: 0; position: relative; background: var(--bg-app); }
+.wm-dock > .dv-dockview, .wm-dock .dockview-theme-supermap { position: absolute; inset: 0; }
+
+.dockview-theme-supermap {
+  --dv-paneview-active-outline-color: var(--win-ring);
+  --dv-tabs-and-actions-container-font-size: var(--t-label);
+  --dv-tabs-and-actions-container-height: var(--win-title-h);
+  --dv-tabs-and-actions-container-background-color: var(--win-title);
+  --dv-drag-over-background-color: color-mix(in srgb, var(--accent) 22%, transparent);
+  --dv-drag-over-border-color: var(--accent);
+  --dv-edge-dock-indicator-color: var(--accent);
+  --dv-tabs-container-scrollbar-color: var(--line-strong);
+  --dv-icon-hover-background-color: var(--hover);
+  --dv-floating-box-shadow: var(--shadow-1);
+  --dv-floating-border: 1px solid var(--line-strong);
+  --dv-floating-group-border: 1px solid var(--line-strong);
+  --dv-floating-titlebar-height: 0px;
+  --dv-border-radius: var(--win-r);
+  --dv-tab-font-size: var(--t-label);
+  --dv-tab-margin: 0;
+  --dv-sash-color: transparent;
+  --dv-active-sash-color: var(--accent);
+  --dv-active-sash-transition-duration: .1s;
+  --dv-active-sash-transition-delay: .15s;
+  --dv-spacing-padding: 0px;
+  --dv-tab-border-radius: 0px;
+  --dv-group-view-background-color: var(--bg-panel);
+  --dv-activegroup-visiblepanel-tab-background-color: var(--win-tab-active);
+  --dv-activegroup-hiddenpanel-tab-background-color: var(--win-title);
+  --dv-inactivegroup-visiblepanel-tab-background-color: var(--win-tab-active);
+  --dv-inactivegroup-hiddenpanel-tab-background-color: var(--win-title);
+  --dv-tab-divider-color: var(--line);
+  --dv-activegroup-visiblepanel-tab-color: var(--text);
+  --dv-activegroup-hiddenpanel-tab-color: var(--text-2);
+  --dv-inactivegroup-visiblepanel-tab-color: var(--text-2);
+  --dv-inactivegroup-hiddenpanel-tab-color: var(--text-3);
+  --dv-separator-border: var(--line);
+  --dv-paneview-header-border-color: var(--line);
+  --dv-overlay-z-index: 20;
+  --dv-context-menu-background-color: var(--bg-raised);
+  --dv-context-menu-color: var(--text);
+  --dv-transition-duration: 0s;
+  --dv-floating-group-dragging-opacity: .92;
+  font-family: var(--font-ui);
+  color: var(--text);
+}
+
+/* gutters between docked windows: one hairline */
+.dockview-theme-supermap .dv-groupview { background: var(--bg-panel); border: 1px solid var(--line); border-radius: var(--win-r); overflow: hidden; }
+.dockview-theme-supermap .dv-groupview.dv-active-group { border-color: var(--win-ring); }
+.dockview-theme-supermap .dv-tabs-and-actions-container { background: var(--bg-bar); border-bottom: 1px solid var(--line); }
+.dockview-theme-supermap .dv-resize-container { border-radius: var(--win-r); }
+.dockview-theme-supermap .dv-resize-container .dv-groupview { box-shadow: var(--shadow-1); }
+.dockview-theme-supermap .dv-split-view-container > .dv-sash-container > .dv-sash { background: transparent; }
+.dockview-theme-supermap .dv-split-view-container > .dv-sash-container > .dv-sash:hover { background: var(--accent); opacity: .5; }
+
+/* tabs */
+.dockview-theme-supermap .dv-tab { position: relative; font-size: var(--t-label); font-weight: var(--w-medium); padding: 0; border-right: 0; }
+.dockview-theme-supermap .dv-tab.dv-active-tab::after { content: ""; position: absolute; left: 6px; right: 6px; bottom: 0; height: 2px; background: var(--accent); pointer-events: none; }
+.dockview-theme-supermap .dv-tab.dv-active-tab::before { content: ""; position: absolute; left: 6px; right: 6px; bottom: -3px; height: 3px; pointer-events: none;
+  background: linear-gradient(var(--accent), var(--accent)) left / 1px 3px no-repeat, linear-gradient(var(--accent), var(--accent)) right / 1px 3px no-repeat; }
+.dockview-theme-supermap .dv-tab:hover:not(.dv-active-tab) { background: var(--hover); }
+.wm-tab { display: flex; align-items: center; gap: 6px; height: 100%; padding: 0 8px 0 10px; min-width: 0; letter-spacing: var(--trk-0); }
+.wm-tab-ico { color: var(--text-3); flex: none; }
+.dv-active-tab .wm-tab-ico { color: var(--accent-text); }
+.wm-tab-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wm-tab-x { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; padding: 0; border: 0; border-radius: var(--r-1); background: transparent; color: var(--text-3); cursor: pointer; opacity: 0; flex: none; }
+.dv-tab:hover .wm-tab-x, .dv-tab:focus-within .wm-tab-x, .dv-active-tab .wm-tab-x { opacity: 1; }
+.wm-tab-x:hover { background: var(--hover); color: var(--text); }
+
+/* header actions */
+.wm-actions { display: flex; align-items: center; gap: 2px; height: 100%; padding: 0 4px 0 2px; min-width: 0; }
+.wm-stamp { color: var(--text-3); font-size: var(--t-micro); max-width: 190px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-right: 4px; }
+.wm-ai { display: inline-flex; align-items: center; gap: 3px; color: var(--text-3); font-size: var(--t-label); margin-right: 4px; white-space: nowrap; }
+.wm-btn { display: inline-flex; align-items: center; justify-content: center; width: var(--ctl-h-sm); height: var(--ctl-h-sm); padding: 0; border: 0; border-radius: var(--r-ctl); background: transparent; color: var(--text-2); cursor: pointer; }
+.wm-btn:hover { background: var(--hover); color: var(--text); }
+.wm-btn:active { background: var(--press); }
+.wm-link { margin: 0 2px; }
+.wm-actions .ui-link { width: var(--ctl-h-sm); height: var(--ctl-h-sm); }
+
+/* window body */
+.wm-scope { height: 100%; width: 100%; display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+.wm-win { flex: 1 1 auto; min-height: 0; min-width: 0; display: flex; flex-direction: column; overflow: hidden; background: var(--bg-panel); }
+.wm-win > .panel, .wm-win > .tool-slot { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; border: 0; margin: 0; border-radius: 0; box-shadow: none; clip-path: none; }
+.wm-win .panel > .panel-head, .wm-win .tool-slot > .panel-head { display: none; }
+.wm-win .panel-body { flex: 1 1 auto; min-height: 0; max-height: none; overflow: auto; }
+.wm-win .mapbar .panel-controls { display: none; }
+.wm-win .panel--map { flex: 1 1 auto; }
+/* A short map window must not let the map (min-height 320) spill over the mini-strip,
+   nor the strip (fixed 128) clip its own last row. The map yields, the strip keeps its content. */
+.wm-win .panel--map .map-view { overflow: hidden; }
+.wm-win .panel--map .sm-map-root { min-height: 0; }
+.wm-win .panel--map .ministrip { height: auto; min-height: 128px; }
+.wm-win .chart-win { padding: 4px 6px; }
+.wm-win .chart-win .chart-svg { width: 100%; height: auto; max-height: 100%; }
+.wm-win .empty-state { display: flex; align-items: center; justify-content: center; flex: 1; }
+.wm-loading { min-height: 80px; }
+
+/* window menu */
+.wm-menu { position: fixed; z-index: 400; min-width: 200px; padding: 4px; background: var(--bg-raised); border-radius: var(--r-3); box-shadow: var(--shadow-1); display: flex; flex-direction: column; }
+.wm-menu-item { display: flex; align-items: center; gap: 8px; height: var(--ctl-h); padding: 0 8px; border: 0; border-radius: var(--r-ctl); background: transparent; color: var(--text); font: inherit; font-size: var(--t-data); text-align: left; cursor: pointer; }
+.wm-menu-item:hover:not(:disabled), .wm-menu-item:focus-visible { background: var(--hover); }
+.wm-menu-item span { flex: 1; }
+.wm-menu-item:disabled { color: var(--text-3); cursor: default; }
+.wm-menu-keys { display: inline-flex; align-items: center; height: 16px; padding: 0 4px; border-radius: var(--r-kbd); box-shadow: inset 0 0 0 1px var(--line-strong); color: var(--text-3); font: var(--w-medium) var(--t-micro)/1 var(--font-data); }
+.wm-menu-sep { height: 1px; background: var(--line); margin: 4px 2px; }
+
+/* dockview chrome that has no place in the pro-terminal look */
+.dockview-theme-supermap .dv-watermark { display: none; }
+@media (prefers-reduced-motion: reduce) { .dockview-theme-supermap * { transition: none !important; animation: none !important; } }
+
+/* narrow groups drop the stamp and the badge word before they squeeze the tabs */
+.dockview-theme-supermap .dv-tabs-and-actions-container { container-type: inline-size; }
+@container (max-width: 620px) { .wm-stamp { display: none; } }
+@container (max-width: 560px) { .wm-ai .ai-badge-w { display: none; } }
+
+/* phone: one window at a time, bottom switcher (the dock is not mounted) */
+.ph-main { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; background: var(--bg-app); padding-bottom: 48px; }
+.ph-win { flex: none; height: calc(100vh - 148px); height: calc(100dvh - 148px); min-height: 420px; display: flex; flex-direction: column; }
+.ph-win[hidden] { display: none; }
+/* the phone map fills its window (the desktop rule is for 1200 px and up; the 520 px map left a blank band under it) */
+.ph-win .panel--map { flex: 1 1 auto; min-height: 0; }
+.ph-win .panel--map .map-view { flex: 1 1 auto; min-height: 0; }
+.ph-win .panel--map .map-real { height: 100%; }
+.ph-tabs { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; height: 48px; display: flex; overflow-x: auto; background: var(--bg-bar); border-top: 1px solid var(--line); }
+.ph-tabs button, .ph-sheet button { display: inline-flex; align-items: center; gap: 6px; flex: 1 0 auto; min-width: 64px; min-height: 44px; padding: 0 12px; border: 0; background: transparent; color: var(--text-2); font: inherit; font-size: var(--t-label); cursor: pointer; white-space: nowrap; justify-content: center; }
+.ph-tabs button.on, .ph-sheet button.on { color: var(--text); box-shadow: inset 0 -2px 0 var(--accent); }
+.ph-sheet { position: fixed; left: 8px; right: 8px; bottom: 56px; z-index: 70; max-height: 60vh; overflow: auto; display: flex; flex-direction: column; padding: 4px; background: var(--bg-raised); border-radius: var(--r-3); box-shadow: var(--shadow-2); }
+.ph-sheet button { justify-content: flex-start; flex: none; }
+.ph-sheet .ph-code { margin-left: auto; color: var(--text-3); font-family: var(--font-code); font-size: var(--t-micro); }

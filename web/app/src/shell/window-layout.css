@@ -1,0 +1,48 @@
+/* Layout and contrast fixes for every window preset in both themes at 1600 x 950.
+   Loaded last (main.tsx). */
+
+/* The map window's mini-strip (queue, routes, exposure): height auto and the map yielding its 320 px floor are in
+   windows/dock.css. The window is a size container so a narrow map drops the blocks that do not
+   fit (exposure first, then the queue) instead of letting them overflow and clip. */
+.panel--map { container: mapwin / inline-size; }
+.panel--map .ministrip .ms-block { min-width: 0; padding-bottom: 6px; }
+@container mapwin (max-width: 760px) {
+  .panel--map .ministrip .ms-block.ms-exp { display: none; }
+  .panel--map .ministrip .ms-block.ms-que { flex: 0 1 38%; }
+  .panel--map .ministrip .ms-block.ms-rte { flex: 1 1 62%; }
+}
+@container mapwin (max-width: 640px) {
+  .panel--map .ministrip .ms-block.ms-que { display: none; }
+  .panel--map .ministrip .ms-block.ms-rte { flex: 1 1 100%; max-width: 100%; }
+}
+
+/* Route table in the mini-strip: columns take the width their words need (no `BASE (`, `CONGES...`, `+1...`); the
+   block grows to its table, and scrolls sideways when the window is too narrow, never clipping a word. */
+.panel--map .ministrip .ms-rte { flex: 0 0 auto; max-width: 66%; overflow-x: auto; }
+.panel--map .rte-table { table-layout: auto; width: max-content; min-width: 100%; }
+.panel--map .rte-table th, .panel--map .rte-table td { overflow: visible; text-overflow: clip; white-space: nowrap; }
+.panel--map .rte-table .num { text-align: right; }
+.panel--map .ministrip .ms-head { flex-wrap: wrap; height: auto; min-height: 26px; row-gap: 0; }
+.panel--map .ministrip .ms-upd { overflow: visible; text-overflow: clip; }
+.panel--map .ministrip .ms-note { overflow: visible; text-overflow: clip; white-space: normal; }
+
+/* Dock tabs: a title never shrinks below its full text (`Markets` read `Mar`). A group too narrow for its tabs
+   moves the surplus into the dock's overflow list (the chevron with a count) instead; a very long title stops at
+   24 characters and carries the full name as its tooltip. */
+.dockview-theme-supermap .dv-tab { flex: none; }
+.wm-tab-title { flex: none; max-width: 24ch; }
+/* The tab strip shares its row with the group's action buttons; in a group narrower than 340 px the Float and
+   Maximize buttons step aside (both stay in the window menu with their keys) so the tabs keep their words. */
+@container (max-width: 340px) {
+  .wm-actions .wm-btn[aria-label="Float"], .wm-actions .wm-btn[aria-label="Dock"],
+  .wm-actions .wm-btn[aria-label="Maximize"], .wm-actions .wm-btn[aria-label="Restore"] { display: none; }
+}
+
+/* Ports board: the rows-per-page select showed "50 / page" with the arrow on top of the last letters. */
+.pt-select--sm { max-width: 108px; min-width: 96px; }
+
+/* Popups that hang from the top bar or are drawn at the page root stack above floating windows: dockview gives a
+   floating window z-index 999 and up, so a menu at 70 to 450 was hidden under any window that overlapped it.
+   (Measured: Layouts menu and Window menu under a floating Meta AI activity window.) */
+html .pop, html .wm-menu, html .lm-pop, html .search-drop, html .basis-pop { z-index: 5000; }
+html .tour-root { z-index: 5500; }

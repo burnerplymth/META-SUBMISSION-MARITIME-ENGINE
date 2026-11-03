@@ -1,0 +1,828 @@
+@import "./assets/fonts.css";
+@import "./assets/retro-fonts.css";
+/* SupermAP visual law: ONE CSS-variable set, two themes.
+   Chrome tokens — shell #060606, chrome #0a0a0a,
+   panel #0b0b0b/#111111, chrome borders #222222 (the map landline #3d434b
+   stays a MAP token only), dark amber #e8930c,
+   light amber #b45309, selection #2f6bff, disruption red #d1605c.
+   Channel palette: queue/congestion #c65a55, reroute #bfa04e,
+   mode-shift #8f83b8, inventory #5da271, cost #6fc3df.
+   Type ladder per element (logo 15, menubar 9.5, panel
+   titles 9 authored caps, KPI label 8, table td 10.5, source tag 7.5).
+   Type floor (sizes only, no colour/token changes): the bottom
+   rungs raised where they carry content — 7.5px tags/pills/rail codes
+   → 8.5px, 8px labels (news meta, panel stamps, table heads, trace
+   foot, queue caption, KPI label) → 8.5px, map counts line pinned at
+   9px, status bar 8.5px → 9px. */
+:root, [data-theme="dark"] {
+  --shell:#060606; --chrome:#0a0a0a; --land:#000; --ocean:#0b0b0c; --panel:#0b0b0b; --panel2:#111111;
+  --border:#222222; --line2:#151515; --ink:#e2e2e2; --dim:#9a9a9a; --faint:#7d8085;
+  --amber:#e8930c; --amber-ink:#000; --sel:#2f6bff; --red:#d1605c; --cyan:#3fb6d9; --green:#4ade80;
+  --grat:#17181a; --landline:#3d434b;
+  --bar-queue:#c65a55; --bar-reroute:#bfa04e; --bar-congestion:#c65a55; --bar-inventory:#5da271;
+  --bar-cost:#6fc3df; --bar-mode-shift:#8f83b8;
+  --codebg:#1d1d20; --codetx:#e6e6e6; --tvgrid:#1b1b1d;
+}
+[data-theme="light"] {
+  --shell:#eef0f4; --chrome:#fbfbfd; --land:#fcfdfe; --ocean:#cddfec; --panel:#fff; --panel2:#f5f5f7;
+  --border:#d2d2d7; --line2:#e8e8ed; --ink:#1d1d1f; --dim:#55636f; --faint:#5b6b7a;
+  --amber:#a34a06; --amber-ink:#fff; --sel:#2f6bff; --red:#b23a37; --cyan:#0369a1; --green:#126f36;
+  --grat:#c9d8e4; --landline:#a9bccb;
+  --bar-queue:#c65a55; --bar-reroute:#bfa04e; --bar-congestion:#c65a55; --bar-inventory:#5da271;
+  --bar-cost:#6fc3df; --bar-mode-shift:#8f83b8;
+  --codebg:#e8e8ed; --codetx:#1d1d1f; --tvgrid:#e8e8ed;
+}
+* { box-sizing:border-box; }
+html, body { margin:0; background:var(--shell); color:var(--ink);
+  font-family:"IBM Plex Sans", system-ui, sans-serif; font-size: var(--fs-xs); }
+.mono, .mono * { font-family:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+button { font:inherit; color:inherit; background:none; border:none; cursor:pointer; }
+a { color:var(--accent-text); }
+h4 { font-size: var(--fs-xs); margin:4px 0; } h5 { font-size: var(--fs-xs); margin:10px 0 4px; color:var(--text-2); letter-spacing:.08em; text-transform:uppercase; }
+.dim { color:var(--dim); } .amber { color:var(--st-snapshot); } .red { color:var(--red); }
+.small { font-size: var(--fs-xs); } .fineprint { font-size: var(--fs-xs); color:var(--dim); line-height:1.5; }
+.honest { font-size: var(--fs-xs); line-height:1.55; border:1px dashed var(--border); padding:8px; background:var(--panel2); }
+.shell { display:flex; flex-direction:column; min-height:100vh; background:var(--shell); }
+/* ── util bar (24px) ─────────────────────────────── */
+.utilbar { display:flex; align-items:center; gap:10px; height:24px; padding:0 12px; background:var(--chrome);
+  border-bottom:1px solid var(--border); font-size: var(--fs-xs); letter-spacing:1px; color:var(--faint); flex:none; white-space:nowrap; overflow:hidden; }
+.utilbar .prod { color:var(--ink); font-weight:700; letter-spacing:1.6px; }
+.utilbar .wtab { background:var(--panel2); border:1px solid var(--border); border-bottom:none; padding:3px 10px;
+  color:var(--dim); letter-spacing:.4px; display:inline-flex; gap:8px; align-items:center; }
+.utilbar .wtab button, .utilbar .util-plus { color:var(--faint); padding:0; }
+.utilbar .wtab button:hover, .utilbar .util-plus:hover { color:var(--accent-text); }
+.utilbar .util-act { color:var(--faint); letter-spacing:1px; font-size: var(--fs-xs); padding:0; }
+.utilbar .util-act:hover { color:var(--accent-text); }
+/* Sim build chip (other tab's in-flight run): state words only. */
+.utilbar .util-chip { border:1px solid var(--border); padding:2px 8px; letter-spacing:1px; font-size: var(--fs-xs); color:var(--dim); }
+.utilbar .util-chip--building { color:var(--st-sim); }
+.utilbar .util-chip--ready { color:var(--ink); border-color:var(--accent); }
+.utilbar .util-chip--ready:hover, .utilbar .util-chip--failed:hover { color:var(--accent-text); }
+.utilbar .util-chip--failed { color:var(--faint); }
+/* ── function menubar (own 30px bar, persistent active state) ── */
+.menubar { display:flex; align-items:center; gap:2px; height:30px; padding:0 12px; background:var(--chrome);
+  border-bottom:1px solid var(--border); flex:none; }
+.func-menu { display:flex; gap:2px; flex-wrap:nowrap; }
+.func-menu button { padding:5px 9px; font-size: var(--fs-xs); letter-spacing:1.5px; white-space:nowrap; color:var(--dim); }
+.func-menu button:hover { color:var(--accent-text); }
+.func-menu button.on { color:var(--ink); box-shadow:inset 0 -2px 0 var(--sel); }
+.menubar .meta { margin-left:auto; font-size: var(--fs-xs); color:var(--faint); letter-spacing:1px; display:flex; gap:6px; align-items:center; white-space:nowrap; }
+.menubar .meta .sep { opacity:.6; }
+.layouts-wrap { position:relative; }
+.layouts-btn { color:var(--faint); letter-spacing:1px; font-size: var(--fs-xs); padding:2px 0; }
+.layouts-btn:hover { color:var(--accent-text); }
+.layouts-menu { position:absolute; right:0; top:20px; z-index:60; }
+/* ── navbar (38px — glyphs, logo 15, fixed 430px search + fn chip,
+      two-line burn, square user chip) ── */
+.cmdbar { display:flex; align-items:center; gap:10px; height:38px; padding:0 12px; background:var(--chrome); border-bottom:1px solid var(--border); flex:none; flex-wrap:nowrap; overflow:hidden; }
+.nav-glyphs { display:flex; gap:0; } .nav-glyphs button { font-size: var(--fs-lg); color:var(--dim); padding:2px 5px; } .nav-glyphs button:hover { color:var(--accent-text); }
+.nav-glyphs button:disabled { opacity:.3; cursor:default; } .nav-glyphs button:disabled:hover { color:var(--dim); }
+.logo { font-size: var(--fs-xl); font-weight:700; letter-spacing:1.6px; white-space:nowrap; } .logo b { color:var(--brand); }
+.cmd-input { flex:0 0 430px; display:flex; align-items:center; gap:8px; background:var(--panel2);
+  border:1px solid var(--border); border-left:3px solid var(--accent); padding:0 10px; height:27px; min-width:0; }
+.cmd-input .fn-chip { background:var(--codebg); color:var(--accent-text); font-size: var(--fs-xs); padding:2px 5px; letter-spacing:.6px; font-weight:700; white-space:nowrap; }
+.cmd-input input { flex:1; min-width:0; background:none; border:none; color:var(--ink); font-family:var(--font-code); font-size: var(--fs-xs); padding:0; }
+.cmd-input input:focus { outline:none; }
+/* A visible focus ring, app-wide — keyboard focus is never
+   outline-less. The ring token is the selection colour in both themes. */
+:focus-visible { outline:2px solid var(--sel); outline-offset:1px; }
+.cmd-input input:focus-visible { outline:2px solid var(--sel); outline-offset:-2px; }
+.btn { border:1px solid var(--border); padding:5px 10px; font-size: var(--fs-xs); letter-spacing:.06em; background:var(--panel2); }
+.btn--amber { background:var(--accent-fill-strong); color:var(--on-accent); border-color:var(--accent-fill-strong); font-weight:700; }
+.btn:disabled { opacity:.45; cursor:default; }
+.burn { margin-left:auto; display:flex; flex-direction:column; text-align:right; line-height:1.5; font-size: var(--fs-xs); color:var(--faint); white-space:nowrap; }
+.burn .burn-v { color:var(--green); font-size: var(--fs-xs); font-weight:700; }
+/* Square chip, panel/border tokens. */
+.user-chip { width:25px; height:25px; border:1px solid var(--border); background:var(--panel2); color:var(--dim); font-size: var(--fs-xs); font-weight:700;
+  display:inline-flex; align-items:center; justify-content:center; flex:none; }
+.spacer { flex:1; }
+/* ── KPI strip (6 tiles, fixed 68px) ─────── */
+/* 68px — the merged ACTIVE DISRUPTIONS tile carries two
+   sub-lines, and sub-lines now wrap to 2 lines (below) instead of
+   ellipsis-truncating mid-fact. */
+.kpis { display:flex; gap:6px; height:68px; padding:6px 8px; background:var(--shell); border-bottom:1px solid var(--border); flex:none; }
+.kpi { flex:1 1 0; min-width:0; background:var(--panel); border:1px solid var(--border); padding:6px 12px; position:relative; overflow:hidden; }
+.kpi .kl { font-size: var(--fs-xs); letter-spacing:1.5px; color:var(--faint); white-space:nowrap; }
+.kpi .kv { font-size:16px; font-weight:700; margin-top:2px; line-height:1.15; white-space:nowrap; }
+.kpi .kv small { font-size: var(--fs-xs); color:var(--dim); font-weight:400; margin-left:3px; }
+.kpi .kv--sm { font-size: var(--fs-lg); padding-top:3px; letter-spacing:.04em; }
+.kpi .ks { font-size: var(--fs-xs); color:var(--faint); margin-top:1px; line-height:1.3; white-space:normal; overflow:hidden;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; }
+.kpi .spark { position:absolute; right:10px; top:9px; }
+.kpi .spark polyline { fill:none; stroke:var(--accent); stroke-width:1.2; }
+.errorbar { background:#3a1113; color:#ffb4b8; padding:6px 10px; font-size: var(--fs-xs); border-bottom:1px solid var(--red); }
+[data-theme="light"] .errorbar { background:#fdecec; color:#7f1d1d; }
+/* ── grid (34 rail + 282 feed + 1fr + 424 rail, gap 0, pad 0) ── */
+.grid { display:grid; grid-template-columns:34px 282px minmax(0,1fr) 424px; gap:0; padding:0; align-items:stretch; flex:1; background:var(--shell); min-height:0; position:relative;
+  transition:grid-template-columns .15s ease; }
+.grid--dragging { transition:none; }
+/* Real maximize (the hollow grid--max had zero rules): the
+   maximized panel's column already takes the workspace via the
+   inline grid template (layoutGeometry.ts) — here the panel itself
+   grows to fill its column instead of keeping its natural height,
+   and its body un-caps. Applies to the map panel too (flex:1). */
+.grid--max .col > .panel { flex:1 1 auto; min-height:0; }
+.grid--max .panel-body { max-height:none; }
+.grid--max .col--centre { display:flex; flex-direction:column; }
+/* Dividers: 5px strips centred on the column boundary (9px hit
+   box, 1px rule), col-resize cursor, keyboard focus ring. Hidden on
+   the phone stack (below) — layouts + maximize are the phone tool. */
+.split-divider { position:absolute; top:0; bottom:0; width:9px; transform:translateX(-50%); z-index:30; cursor:col-resize; touch-action:none;
+  background:linear-gradient(90deg, transparent 4px, var(--border) 4px, var(--border) 5px, transparent 5px); }
+.split-divider--right { transform:translateX(50%); }
+.split-divider:hover, .split-divider:focus-visible { background:linear-gradient(90deg, transparent 4px, var(--accent-text) 4px, var(--accent-text) 5px, transparent 5px); }
+.split-divider:focus-visible { outline:1px solid var(--accent); outline-offset:-1px; }
+.fn-rail .rail-map-restore { color:var(--accent-text); font-weight:700; }
+.fn-rail { grid-column:1; background:var(--chrome); border-right:1px solid var(--border); display:flex; flex-direction:column; align-items:center; padding-top:10px; gap:19px; }
+.fn-rail button { font-family:var(--font-code); font-size: var(--fs-xs); letter-spacing:.8px; color:var(--faint); padding:0; }
+.fn-rail button:hover { color:var(--accent-text); }
+.fn-rail button.on { color:var(--accent-text); }
+.fn-rail .rail-end { margin-top:auto; padding-bottom:10px; }
+.col { display:flex; flex-direction:column; gap:0; min-width:0; min-height:0; }
+/* Every
+   shell column carries EXPLICIT grid placement (GRID_COLUMN in
+   layoutGeometry.ts: rail 1 · left 2 · centre 3 · right 4). The
+   centre column is display:none whenever the map section is hidden
+   (map closed, a no-map layout like Proof, another panel maximized)
+   — a display:none grid child is not a grid item, so under
+   auto-placement the right column shifted one track left into the
+   collapsed centre track and rendered at 0 width while the wide
+   track sat empty (the panel's own ⤢ control would land under the rail). Explicit
+   placement pins each column to its own track in every window
+   state; the phone stack (max-width:860px, below) resets all four
+   to track 1. The map itself is never unmounted by any of this —
+   hiding stays a display fact on its column. */
+.col--left { grid-column:2; background:var(--panel); border-right:1px solid var(--border); }
+.col--centre { grid-column:3; }
+.col--right { grid-column:4; background:var(--panel); border-left:1px solid var(--border); }
+/* panels: borders come from the frame — panel bottom hairline only */
+.panel { background:var(--panel); border-bottom:1px solid var(--border); display:flex; flex-direction:column; min-height:0; }
+.panel--focus { box-shadow:inset 0 0 0 1px var(--accent); }
+.panel-head { display:flex; align-items:center; gap:7px; height:26px; padding:0 10px; border-bottom:1px solid var(--border); background:var(--panel); letter-spacing:1.4px; flex-wrap:nowrap; overflow:hidden; flex:none; }
+.code-chip { font-family:var(--font-code); font-size: var(--fs-xs); background:var(--codebg); color:var(--codetx); padding:1px 5px; font-weight:700; letter-spacing:.06em; }
+.panel-title { font-size: var(--fs-xs); font-weight:700; letter-spacing:1.4px; color:var(--ink); white-space:nowrap; }
+.panel-updated { margin-left:auto; font-size: var(--fs-xs); color:var(--faint); letter-spacing:.4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
+/* Patch item 6(b): the window controls keep a clear hit area — the
+   group and its buttons never flex-shrink, and the group paints above
+   the head's other in-flow content (code chip / title / updated stamp)
+   if their boxes ever encroach on the close control. */
+.panel-controls { display:flex; gap:2px; margin-left:4px; position:relative; flex:none; z-index:2; }
+.panel-controls .icon-btn { flex:none; }
+.icon-btn { width:20px; height:18px; font-size: var(--fs-xs); color:var(--faint); } .icon-btn:hover { color:var(--accent-text); }
+.menu-wrap { position:relative; } .menu { position:absolute; right:0; top:20px; z-index:40; background:var(--panel); border:1px solid var(--border); display:flex; flex-direction:column; min-width:230px; }
+.menu button { text-align:left; padding:6px 9px; font-size: var(--fs-xs); } .menu button:hover { background:var(--panel2); color:var(--accent-text); }
+.menu button.on { color:var(--ink); box-shadow:inset 3px 0 var(--sel); }
+.menu-note { padding:6px 9px; font-size: var(--fs-xs); color:var(--dim); }
+.panel-body { padding:8px 10px; overflow:auto; max-height:640px; }
+/* ── news (DISRUPTION NEWS, category tabs, item form) ── */
+.ntabs { display:flex; gap:14px; padding:5px 10px 0; font-size: var(--fs-xs); letter-spacing:.5px; border-bottom:1px solid var(--border); white-space:nowrap; overflow:hidden; margin:0 -10px 2px; padding-left:10px; padding-right:10px; }
+.ntabs button { color:var(--faint); letter-spacing:.5px; font-size: var(--fs-xs); padding:0 0 4px; }
+.ntabs button:hover { color:var(--accent-text); }
+.ntabs button.on { color:var(--ink); box-shadow:inset 0 -2px 0 var(--sel); }
+.news-item { border-bottom:1px solid var(--line2); padding:6px 2px; cursor:pointer; }
+.news-item--sel { background:var(--panel2); box-shadow:inset 3px 0 var(--sel); }
+.news-meta { display:flex; gap:6px; font-size: var(--fs-xs); color:var(--faint); align-items:center; flex-wrap:wrap; letter-spacing:.04em; }
+.news-item p { margin:1px 0 3px; line-height:1.4; color:var(--ink); font-size: var(--fs-xs); font-weight:700;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.news-tags { display:flex; gap:5px; align-items:center; flex-wrap:wrap; }
+.src-tag { border:1px solid var(--border); padding:0 4px; text-transform:uppercase; font-size: var(--fs-xs); letter-spacing:.8px; color:var(--text-2); }
+.mode-tag { border:1px solid var(--border); color:var(--dim); padding:0 4px; font-size: var(--fs-xs); letter-spacing:.8px; }
+.mode--live { border-color:var(--st-live); color:var(--st-live); }
+.mode--snapshot { border-color:var(--st-snapshot); color:var(--st-snapshot); }
+.sev-tag { font-size: var(--fs-xs); letter-spacing:.8px; color:var(--dim); }
+.cite { margin:3px 0 0; font-size: var(--fs-xs); line-height:1.4; color:var(--dim); min-width:0; }
+.cite-link { display:block; min-width:0; padding-block:4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:var(--accent-text); text-decoration:none; }
+.cite-link:hover, .cite-link:focus-visible { text-decoration:underline; }
+.cite-pub { color:var(--text-2); }
+.cite-sep { color:var(--faint); }
+.cite-meta { display:flex; gap:6px; align-items:baseline; font-size: var(--fs-xs); color:var(--faint); }
+.cite-meta span + span::before { content:'\00b7'; margin-right:6px; }
+/* The feed's editorial layer + the
+   rail's ranked rows. SEV ≥ 4 entries carry a left border weight; the
+   areas sub-line is served geography, in the dim register; ranked rows
+   reuse the item rhythm (hairline, hover amber) at rail width. */
+.news-item--sev { border-left:3px solid var(--red); padding-left:6px; }
+.news-areas { font-size: var(--fs-xs); color:var(--dim); line-height:1.45; margin:0 0 3px; }
+.rank-row { display:flex; gap:7px; align-items:baseline; width:100%; text-align:left; padding:3px 0; border-bottom:1px solid var(--line2); font-size: var(--fs-xs); cursor:pointer; }
+.rank-row b { color:var(--ink); font-weight:700; white-space:nowrap; }
+.rank-row:hover b { color:var(--accent-text); }
+.rank-row .rank-r { margin-left:auto; font-size: var(--fs-xs); white-space:nowrap; }
+.sev-tag--hot { color:var(--red); font-weight:700; }
+.sec-sub { font-size: var(--fs-xs); color:var(--faint); letter-spacing:1.3px; margin:7px 0 2px; }
+/* numbered sections (Map Content rail: 01 · SECTION blocks) */
+.sec { padding:6px 0 8px; border-bottom:1px solid var(--line2); }
+.sec:last-of-type { border-bottom:none; }
+.sec-t { font-size: var(--fs-xs); color:var(--faint); letter-spacing:1.3px; margin-bottom:3px; }
+/* kv + forms (11px sub key authored case, value right) */
+.kv { display:grid; grid-template-columns:128px 1fr; gap:0 8px; margin:0; font-size: var(--fs-xs); }
+.kv dt { color:var(--dim); font-size: var(--fs-xs); padding:2.5px 0; border-bottom:1px solid var(--line2); }
+.kv dd { margin:0; word-break:break-word; text-align:right; padding:2.5px 0; border-bottom:1px solid var(--line2); }
+.kv dd.w { color:var(--ink); } .kv dd.r { color:var(--red); font-weight:700; } .kv dd.g { color:var(--green); }
+.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-bottom:8px; }
+.form-grid label { display:flex; flex-direction:column; gap:3px; font-size: var(--fs-xs); color:var(--dim); letter-spacing:.05em; text-transform:uppercase; }
+.form-grid label { min-width:0; }
+.form-grid select { max-width:100%; min-width:0; text-overflow:ellipsis; }
+.form-grid input, .form-grid select { background:var(--panel2); border:1px solid var(--border); color:var(--ink); padding:5px 6px; font-size: var(--fs-xs); }
+.rule { border:none; border-top:1px solid var(--border); margin:10px 0; }
+.compare { border:1px solid var(--accent); padding:8px; margin-top:10px; }
+/* layers checkbox group */
+.lyr { font-size: var(--fs-xs); padding:1.5px 0; display:flex; flex-wrap:wrap; gap:4px 14px; }
+.lyr label { display:inline-flex; gap:5px; align-items:center; cursor:pointer; min-height:24px; }
+.lyr input { accent-color:var(--sel); margin:0; }
+.lyr label.off { color:var(--faint); cursor:default; }
+/* offline fallback labelling (GET /events + GET /graph) */
+.offline-chip { border:1px solid var(--red); color:var(--red); background:var(--panel2); padding:5px 7px; font-size: var(--fs-xs); letter-spacing:.04em; margin:0 0 8px; line-height:1.5; }
+.map-loading { display:flex; align-items:center; justify-content:center; height:100%; min-height:120px; padding:20px 8px; color:var(--dim); font-size: var(--fs-xs); }
+/* ── map section (overlay bar form; head dropped for the map) ── */
+.panel--map { background:var(--panel); }
+.mapbar { display:flex; align-items:center; align-content:center; gap:8px; row-gap:2px; min-height:30px; padding:0 10px; font-size: var(--fs-xs); letter-spacing:1.3px;
+  color:var(--dim); background:var(--chrome); border-bottom:1px solid var(--border); flex:none; flex-wrap:wrap; overflow:hidden; }
+/* Patch item 6(a)/(c): the bar's children never shrink. The natural row
+   is ~1082px wide but the centre column is only ~820px at a 1560px
+   viewport, so the old nowrap bar squeezed the title into a wrapped
+   sliver and pushed the LIVE/CANNED/SIM mode chips (and, with longer
+   served pill text, the counts line's SHELL tail) past the bar's right
+   edge, where overflow:hidden cut them mid-token. Wrapping breaks only
+   BETWEEN whole children: at desktop widths the counts line takes its
+   own row at full width and the mode chips stay whole; at widths where
+   everything fits (~1822px+) the single row is pixel-identical. */
+.mapbar > :first-child, .mapbar .pill, .mapbar .vt, .mapbar .counts { flex:none; }
+.mapbar .panel-controls { flex:none; }
+.mapbar b { color:var(--ink); font-size: var(--fs-xs); }
+.mapbar .pill { font-size: var(--fs-xs); padding:1px 6px; border:1px solid var(--border); color:var(--cyan); letter-spacing:1px; white-space:nowrap; }
+.mapbar .pill--dim { color:var(--dim); }
+.mapbar .vt { display:flex; margin-left:14px; }
+.mapbar .counts { margin-left:auto; white-space:nowrap; letter-spacing:1px; font-size: var(--fs-xs); }
+.map-view { position:relative; }
+.map-alt { overflow:auto; }
+.map-real { height:520px; position:relative; } .map-real > div { height:100%; }
+/* map stub (fallback) */
+.map-stub { position:relative; } .map-svg { width:100%; height:auto; display:block; background:var(--ocean); }
+.map-ocean { fill:var(--ocean); } .graticule { stroke:var(--landline); stroke-width:.5; opacity:.5; }
+.arc { stroke:var(--cyan); stroke-width:1.2; opacity:.75; } .arc--reroute { stroke:var(--bar-reroute); }
+.map-node { cursor:pointer; } .map-node circle { fill:var(--cyan); stroke:var(--ocean); }
+.map-node--sel circle { fill:var(--accent); } .map-node text { fill:var(--ink); font-size: var(--fs-xs); font-family:var(--font-code); }
+.map-node .seq-badge { fill:var(--accent); font-weight:700; }
+.map-empty { fill:var(--dim); font-size: var(--fs-xl); }
+.map-stub-tag { font-size: var(--fs-xs); color:var(--text-2); border-top:1px solid var(--border); padding:4px 6px; background:var(--panel2); }
+/* mini-strip (128px fixed under the frame; widths 282/376/flex) */
+.ministrip { display:flex; border-top:1px solid var(--border); background:var(--panel); }
+.ms-block { padding:0 0 5px; min-width:0; }
+.ms-block + .ms-block { border-left:1px solid var(--line2); }
+.ms-que { flex:0 1 282px; } .ms-rte { flex:0 1 376px; } .ms-exp { flex:1 1 200px; }
+.ms-head { display:flex; align-items:center; gap:7px; height:26px; padding:0 10px; border-bottom:1px solid var(--line2); }
+.ms-title { font-size: var(--fs-xs); font-weight:700; letter-spacing:1.4px; white-space:nowrap; }
+.ms-upd { margin-left:auto; font-size: var(--fs-xs); color:var(--faint); letter-spacing:.4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.ms-kv { margin:0; padding:5px 10px 0; }
+.ms-kv div { display:flex; justify-content:space-between; gap:8px; padding:2px 0; border-bottom:1px solid var(--line2); font-size: var(--fs-xs); }
+.ms-kv dt { color:var(--dim); letter-spacing:.05em; }
+.ms-kv dd { margin:0; color:var(--text); font-weight:700; text-align:right; }
+.ms-kv dd.red { color:var(--red); }
+.que-chart { display:block; margin:4px 10px 0; }
+.que-cap { margin:0; padding:3px 10px 0; font-size: var(--fs-xs); color:var(--faint); letter-spacing:.4px; }
+.rte-table { width:100%; border-collapse:collapse; font-size: var(--fs-xs); table-layout:fixed; line-height:1.4; }
+.rte-table th { text-align:left; color:var(--faint); font-size: var(--fs-xs); font-weight:400; letter-spacing:1.2px; padding:4px 10px 3px; border-bottom:1px solid var(--line2); white-space:nowrap; }
+.rte-table td { padding:2px 10px; border-bottom:1px solid var(--line2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.rte-table .num, .rte-table th.num { text-align:right; }
+.rte-table th:nth-child(1) { width:38%; } .rte-table th:nth-child(2), .rte-table th:nth-child(3), .rte-table th:nth-child(4) { width:13%; } .rte-table th:nth-child(5) { width:23%; }
+.ms-empty { margin:0; padding:6px 10px; font-size: var(--fs-xs); color:var(--dim); line-height:1.5; }
+.ms-note { margin:0; padding:4px 10px 0; font-size: var(--fs-xs); color:var(--faint); line-height:1.45; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.exp-row { display:flex; gap:8px; align-items:baseline; padding:2px 10px; border-bottom:1px solid var(--line2); font-size: var(--fs-xs); }
+.exp-ticker { color:var(--accent-text); font-weight:700; min-width:42px; }
+.exp-co { flex:1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.exp-cite { color:var(--faint); font-size: var(--fs-xs); white-space:nowrap; }
+.exp-px { margin-left:auto; white-space:nowrap; }
+/* snapshot deployment notice: neutral border — a deployment mode, not an error */
+.snap-chip { border:1px solid var(--border); color:var(--dim); background:var(--panel2); padding:5px 7px; font-size: var(--fs-xs); letter-spacing:.04em; margin:0 0 8px; line-height:1.5; }
+/* tables + trace */
+.data-table { width:100%; border-collapse:collapse; font-size: var(--fs-xs); }
+.data-table th { text-align:left; color:var(--faint); font-size: var(--fs-xs); font-weight:400; border-bottom:1px solid var(--border); padding:4px; letter-spacing:1.2px; text-transform:uppercase; }
+.data-table td { border-bottom:1px solid var(--line2); padding:4px; vertical-align:top; }
+.data-table td.num, .data-table th.num { text-align:right; }
+.data-table tr { cursor:pointer; } .row--sel, .trace--sel { background:var(--panel2); box-shadow:inset 3px 0 var(--sel); }
+.mech { color:var(--dim); line-height:1.45; }
+.trace { list-style:none; margin:0; padding:0; } .trace li { display:flex; gap:9px; padding:7px 2px; border-bottom:1px solid var(--line2); cursor:pointer; align-items:flex-start; }
+.trace-foot { padding:6px 2px 0; font-size: var(--fs-xs); color:var(--faint); letter-spacing:.4px; line-height:1.6; }
+.order-badge { font-family:var(--font-code); background:var(--accent-fill-strong); color:var(--on-accent); font-weight:700; font-size: var(--fs-xs); min-width:18px; height:18px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; }
+/* Step ring: outline circle in the channel colour, not a filled disc */
+.trace .order-badge { background:transparent; border:1.1px solid var(--accent-text); color:var(--text); min-width:15px; height:15px; font-size: var(--fs-xs); margin-top:1px; flex:none; }
+.trace .bl--queue { border-color:var(--bar-queue); } .trace .bl--reroute { border-color:var(--bar-reroute); }
+.trace .bl--congestion { border-color:var(--bar-congestion); } .trace .bl--inventory { border-color:var(--bar-inventory); }
+.trace .bl--cost { border-color:var(--bar-cost); } .trace .bl--mode-shift { border-color:var(--bar-mode-shift); }
+.trace-main { display:flex; flex-direction:column; gap:1px; min-width:0; } .trace-main b { font-size: var(--fs-xs); } .trace-main small { color:var(--dim); font-size: var(--fs-xs); }
+.trace-delay { margin-left:auto; font-size: var(--fs-xs); color:var(--text); white-space:nowrap; padding-left:8px; }
+/* DAG */
+.dag-wrap { height:340px; border:1px solid var(--border); margin-bottom:8px; background:var(--ocean); }
+.dag-node { background:var(--panel); border:1px solid var(--border); padding:6px 8px; display:flex; flex-direction:column; gap:2px; font-size: var(--fs-xs); min-width:150px; cursor:pointer; }
+.dag-node--sel { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent); }
+.dag-node .order-badge { position:absolute; top:-9px; left:-9px; }
+/* chart (full-width strip; TV finish — head legend, grid, chips, foot) */
+.chart-strip { background:var(--panel); border-top:1px solid var(--border); flex:none; }
+/* Sparse-chain strip — a ~34px summary line in the chart
+   head's own grammar (code chip · label · right-aligned figure),
+   reclaiming the rest of the strip's height for the workspace. */
+.chart-strip--sparse { height:34px; overflow:hidden; display:flex; align-items:stretch; }
+.chart-summary { flex:1; display:flex; align-items:center; gap:8px; padding:0 10px; font-size: var(--fs-xs); letter-spacing:.06em; color:var(--dim); }
+.chart-summary b { color:var(--ink); font-size: var(--fs-xs); letter-spacing:.08em; }
+.chart-wrap { flex:1; min-width:0; } .chart-svg { width:100%; height:auto; display:block; }
+.chart-head { display:flex; align-items:center; gap:8px; padding:5px 10px; border-bottom:1px solid var(--border); background:var(--panel); font-size: var(--fs-xs); letter-spacing:.06em; color:var(--dim); }
+.chart-head b { color:var(--ink); font-size: var(--fs-xs); letter-spacing:.08em; }
+.chart-head .ohlc b { color:var(--ink); font-size: var(--fs-xs); letter-spacing:.04em; }
+.chart-foot { display:flex; align-items:center; gap:10px; padding:4px 10px; border-top:1px solid var(--border); font-size: var(--fs-xs); color:var(--faint); }
+.bar { fill:var(--bar-queue); } .bar--queue { fill:var(--bar-queue); } .bar--reroute { fill:var(--bar-reroute); }
+.bar--congestion { fill:var(--bar-congestion); } .bar--inventory { fill:var(--bar-inventory); }
+.bar--cost { fill:var(--bar-cost); } .bar--mode-shift { fill:var(--bar-mode-shift); }
+.tv-grid { stroke:var(--tvgrid); stroke-width:.6; }
+.axis-chip { fill:var(--faint); font-size: var(--fs-xs); font-family:var(--font-code); }
+.axis-chip--val { fill:var(--text); font-weight:700; }
+.chip-last { fill:var(--accent-fill-strong); } .chip-last-tx { fill:var(--on-accent); font-weight:700; font-size: var(--fs-xs); font-family:var(--font-code); }
+.chip-max { fill:var(--accent-fill-strong); } .chip-max-tx { fill:var(--on-accent); font-weight:700; font-size: var(--fs-xs); font-family:var(--font-code); }
+.crosshair { stroke:var(--dim); stroke-width:.7; stroke-dasharray:3 3; }
+.chart-legend { display:flex; gap:10px; font-size: var(--fs-xs); color:var(--dim); flex-wrap:wrap; }
+.lg::before { content:"■ "; } .lg--queue { color:var(--bar-queue); } .lg--reroute { color:var(--bar-reroute); } .lg--congestion { color:var(--bar-congestion); }
+.lg--inventory { color:var(--bar-inventory); } .lg--cost { color:var(--bar-cost); } .lg--mode-shift { color:var(--bar-mode-shift); }
+/* watch / health */
+.watch-row { display:flex; justify-content:space-between; width:100%; padding:5px 2px; border-bottom:1px solid var(--border); font-size: var(--fs-xs); }
+.health-row { display:flex; gap:7px; align-items:baseline; border-bottom:1px solid var(--border); padding:4px 0; flex-wrap:wrap; margin:0; }
+.dot { width:8px; height:8px; border-radius:50%; display:inline-block; background:var(--dim); }
+.dot--live { background:var(--st-live); } .dot--snapshot { background:var(--st-snapshot); } .dot--down { background:var(--st-down); }
+.backtest-banner { border:1px solid var(--st-snapshot); color:var(--st-snapshot); padding:6px 8px; font-size: var(--fs-xs); letter-spacing:.04em; }
+.ledger-entry { border-bottom:1px solid var(--border); padding:6px 0 8px; }
+.ledger-entry p { margin:3px 0; }
+.miss { line-height:1.5; border-bottom:1px solid var(--border); padding:4px 0; }
+/* Lens selector */
+.lens-bar { display:flex; gap:5px; flex-wrap:wrap; align-items:center; margin-bottom:8px; font-size: var(--fs-xs); }
+.lens-off { opacity:.32; filter:saturate(.4); }
+.origin-tag { font-size: var(--fs-xs); border:1px solid var(--accent-text); color:var(--accent-text); padding:0 4px; margin-left:6px; letter-spacing:.06em; vertical-align:1px; }
+.lens-basis { border-top:1px dashed var(--border); padding-top:5px; margin-top:6px; }
+/* Money panel */
+.money-row { border-bottom:1px solid var(--border); padding:6px 2px 8px; }
+.money-row p { margin:3px 0; }
+.money-row p > a { display:inline-block; padding-block:5px; }
+.money-head { display:flex; gap:8px; align-items:baseline; flex-wrap:wrap; }
+.money-ticker { font-weight:700; color:var(--accent-text); font-size: var(--fs-xs); }
+.exposure-chip { border:1px solid var(--border); padding:0 5px; font-size: var(--fs-xs); color:var(--dim); }
+.unpriced { color:var(--dim); font-style:italic; }
+.money-excerpt { margin:2px 0 0; }
+.sim-block { border:1px dashed var(--st-sim); padding:7px 9px; margin-top:9px; background:var(--panel2); }
+.sim-block p { margin:3px 0; }
+.sim-label { background:var(--st-sim); color:var(--bg-panel); font-weight:700; font-size: var(--fs-xs); padding:1px 6px; letter-spacing:.06em; }
+/* Satellite watch */
+.sat-card { border:1px solid var(--border); margin-bottom:10px; padding:7px; }
+.sat-card--sel { border-color:var(--accent); box-shadow:inset 3px 0 var(--accent); }
+.sat-head { display:flex; gap:8px; align-items:baseline; cursor:pointer; flex-wrap:wrap; }
+.sat-head:hover b { color:var(--accent-text); }
+.sat-scenes { color:var(--dim); margin:4px 0 0; line-height:1.6; }
+.sat-crops { display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:6px 0; }
+.sat-crops figure { margin:0; }
+.sat-crops img { width:100%; height:auto; display:block; border:1px solid var(--border); }
+.sat-crops figcaption { font-size: var(--fs-xs); color:var(--dim); padding-top:2px; }
+.await-chip { display:inline-block; border:1px solid var(--st-snapshot); color:var(--st-snapshot); padding:3px 8px; font-size: var(--fs-xs); letter-spacing:.05em; margin:5px 0 2px; }
+/* Alerts & watchlists (ALR): rule rows, fired feed, watchlist chips. */
+.alr-row { border-bottom:1px solid var(--line2); padding:5px 0; }
+.alr-head { display:flex; gap:6px; align-items:baseline; flex-wrap:wrap; }
+.alr-head b { font-size: var(--fs-xs); }
+.alr-actions { margin-left:auto; display:inline-flex; gap:4px; align-items:center; }
+.alr-err { font-size: var(--fs-xs); color:var(--red); line-height:1.5; border:1px solid var(--red); padding:5px 7px; margin:6px 0; overflow-wrap:anywhere; }
+.alr-inline { display:flex; gap:5px; margin:5px 0; }
+.alr-inline input { flex:1; min-width:0; background:var(--panel2); border:1px solid var(--border); color:var(--ink); padding:5px 6px; font-size: var(--fs-xs); }
+.alr-chips { display:flex; flex-wrap:wrap; gap:4px; margin:4px 0; }
+.alr-chip { border:1px solid var(--border); padding:1px 3px 1px 6px; font-size: var(--fs-xs); display:inline-flex; gap:4px; align-items:center; }
+.alr-chip .icon-btn { width:16px; height:16px; font-size: var(--fs-xs); }
+.alr-feed-row { border-bottom:1px solid var(--line2); padding:4px 0; font-size: var(--fs-xs); line-height:1.5; overflow-wrap:anywhere; }
+.alr-view-row { cursor:pointer; }
+.alr-view-row:hover td { color:var(--accent-text); }
+/* Explain panel: narrative block sits ABOVE the raw chain record. */
+.explain-block { border:1px solid var(--border); background:var(--panel2); padding:8px; margin-bottom:8px; }
+.explain-line { margin:0; font-size: var(--fs-xs); line-height:1.55; color:var(--dim); }
+.explain-chips { display:flex; gap:5px; flex-wrap:wrap; margin-bottom:5px; }
+.explain-text { margin:0; font-size: var(--fs-xs); line-height:1.55; overflow-wrap:anywhere; }
+/* ── status bar (adapter STATE words, ENGINE DETERMINISTIC,
+      ◐ theme toggle at the right end) ─────────────────────────────── */
+.statusbar { display:flex; gap:14px; align-items:center; padding:5px 12px; background:var(--chrome); border-top:1px solid var(--border); font-size: var(--fs-xs); color:var(--faint); letter-spacing:.04em; flex-wrap:wrap; flex:none; }
+.statusbar .dot { width:5px; height:5px; }
+.statusbar .eng-det { color:var(--green); font-weight:700; }
+.statusbar .theme-toggle { color:var(--faint); letter-spacing:.04em; font-size: var(--fs-xs); padding:0; }
+.statusbar .theme-toggle:hover { color:var(--accent-text); }
+.src-dots { display:flex; gap:10px; flex-wrap:wrap; } .src-dots span { display:inline-flex; gap:4px; align-items:center; }
+/* ── fixed terminal frame: desktop heights ≥1200px — the shell is
+      exactly 100vh; bars/KPIs/strip/status are fixed-height flex rows; the
+      main row is minmax(0,1fr) and the side columns scroll internally.
+      The centre column never scrolls: the map section flexes to fill it. */
+@media (min-width: 1200px) {
+  .shell { height:100vh; overflow:hidden; }
+  .grid { min-height:0; }
+  .col--left, .col--right { overflow-y:auto; overflow-x:hidden; }
+  /* Panels keep their natural height; the COLUMN scrolls internally
+    . Without this, flex shrink slices every stacked panel to a
+     fraction of the column and the rail reads as broken slivers. */
+  .col--left > .panel, .col--right > .panel { flex:none; }
+  .col--centre { overflow:hidden; }
+  .panel-body { max-height:none; }
+  .panel--map { flex:1; min-height:0; }
+  .panel--map .map-view { flex:1; min-height:0; }
+  .panel--map .map-real { height:100%; }
+  .panel--map .map-alt { flex:1; min-height:0; }
+  .ministrip { height:128px; flex:none; overflow:hidden; }
+  .chart-strip { height:150px; overflow:hidden; }
+  .chart-strip--sparse { height:34px; }
+  .statusbar { height:26px; }
+}
+/* phone: single-panel stack — the fixed frame is a desktop discipline;
+   the stacked scroll below is the plain flow layout. */
+@media (max-width: 860px) {
+  /* The shell sets the desktop template inline — the phone
+     stack must win over it, and dividers are not a phone tool.
+     the desktop explicit grid-column placement (above)
+     must not leak into the stack either — every column resets to
+     the single track and the order rules below stack them. */
+  .grid { grid-template-columns:1fr !important; }
+  .fn-rail, .col--left, .col--centre, .col--right { grid-column:1; }
+  .split-divider { display:none; }
+  /* Phone prioritisation —
+     the map column leads the stack and the KPI strip demotes below
+     the workspace and the chart strip (the shell is a flex column;
+     the grid's columns are its items). A fuller order (a
+     standalone top-disruption slot above the map, feed last) would
+     need the desktop frame's DOM restructured across column
+     containers, which the fixed-frame constraint rules out. */
+  .col--centre { order:1; } .col--left { order:2; } .col--right { order:3; }
+  .grid { order:1; } .chart-strip { order:2; } .kpis { order:3; } .statusbar { order:4; }
+  .fn-rail { display:none; }
+  .col--left, .col--right { border:none; }
+  .panel-body { max-height:none; }
+  .cmdbar { flex-wrap:wrap; height:auto; padding:6px 12px; }
+  .cmd-input { flex:1 1 100%; order:5; }
+  .utilbar, .menubar { overflow-x:auto; }
+  .kpis { height:auto; flex-wrap:wrap; }
+  .kpi { flex:1 1 42%; min-width:0; padding:6px 8px; }
+  .kpi .ks { white-space:normal; }
+  .burn, .user-chip { white-space:normal; overflow-wrap:anywhere; }
+  .user-chip { flex:none; }
+  .shell { overflow-x:clip; }
+  .ministrip { flex-direction:column; height:auto; }
+  .ms-block + .ms-block { border-left:none; border-top:1px solid var(--line2); }
+  .ms-que, .ms-rte, .ms-exp { flex:none; }
+  .rte-table th, .rte-table td { padding-left:6px; padding-right:6px; }
+  .rte-name { white-space:normal; }
+  .mapbar { overflow-x:auto; }
+  .chart-strip { height:auto; }
+}
+
+/* Minimal SIM entry/exit overlay on the
+   map — superseded by the mode switch + SIM panel (below); the
+   classes remain only so any stale markup degrades gracefully. */
+.sim-entry { position:absolute; right:8px; bottom:26px; z-index:6; display:flex; align-items:center; gap:6px; }
+.sim-entry-chip { background:var(--st-sim); color:var(--bg-panel); border:1px solid var(--st-sim); font-size: var(--fs-xs); font-weight:700; letter-spacing:.08em; padding:2px 6px; }
+
+/* ── SIM mode switch, SIM panel, timeline,
+      linkable boards. Desk idiom only (LSEG/TradingView grammar):
+      segmented controls, 1px borders, panel tokens, no new idioms.
+      Colours come from the theme variables — both themes apply. ── */
+.sim-modes { display:inline-flex; margin-left:10px; flex:none; }
+.simulated-chip { background:var(--st-sim); color:var(--bg-panel); font-size: var(--fs-xs); font-weight:700; letter-spacing:.08em; padding:2px 6px; margin-left:6px; align-self:center; }
+.sim-transport { display:flex; gap:4px; align-items:center; flex-wrap:wrap; font-size: var(--fs-xs); }
+.sim-transport button, .sim-tl-row button { border:1px solid var(--border); background:var(--panel2); color:var(--dim); padding:3px 7px; font-size: var(--fs-xs); letter-spacing:.05em; }
+.sim-transport button:hover, .sim-tl-row button:hover { color:var(--accent-text); border-color:var(--accent-text); }
+.sim-transport button.on, .sim-tl-row button.on { background:var(--accent-fill-strong); color:var(--on-accent); border-color:var(--accent-fill-strong); font-weight:700; }
+.sim-transport .sim-play, .sim-tl-row .sim-play { color:var(--ink); font-weight:700; min-width:74px; }
+.sim-sub { border-top:1px solid var(--line2); padding-top:2px; margin-top:8px; }
+.sim-sub-head { display:flex; align-items:center; gap:8px; }
+.sim-sub-head h5 { margin-right:auto; }
+.link-wrap { display:inline-flex; gap:6px; align-items:center; }
+.link-toggle { border:1px solid var(--sel); color:var(--accent-text); padding:2px 7px; font-size: var(--fs-xs); letter-spacing:.06em; background:var(--panel2); }
+.link-toggle--off { border-color:var(--st-snapshot); color:var(--st-snapshot); }
+.frozen-stamp { border:1px solid var(--st-snapshot); color:var(--st-snapshot); padding:2px 6px; font-size: var(--fs-xs); letter-spacing:.05em; font-weight:700; }
+.board-row { display:flex; gap:8px; align-items:baseline; padding:3px 0; border-bottom:1px solid var(--line2); font-size: var(--fs-xs); margin:0; }
+.board-row > span:first-child { flex:1; min-width:0; overflow-wrap:anywhere; }
+.board-row > span:last-child { text-align:right; white-space:nowrap; }
+.board-row .btn { padding:2px 7px; }
+.divert-chip { border:1px solid var(--st-model); color:var(--st-model); padding:0 5px; margin-left:7px; font-size: var(--fs-xs); font-weight:700; letter-spacing:.06em; white-space:nowrap; }
+/* Vehicle inspector: the identity sub-line, the close
+ * button, the rotation chain's current segment, and wrapping for the
+ * inspector's long right-hand rows. Colours via variables only, so
+ * every theme (incl. retro) inherits. */
+.veh-sub { margin:2px 0 4px; font-size: var(--fs-xs); letter-spacing:.04em; }
+.veh-close { padding:2px 7px; }
+.veh-cur { color:var(--accent-text); font-weight:700; }
+.veh .board-row > span:last-child { white-space:normal; }
+/* LIVE TWIN panel: the disruptions board's checkbox rows —
+   the headline cell wraps, the meta cell reads at natural width. */
+.lt-check { display:flex; gap:6px; align-items:baseline; flex:1; min-width:0; cursor:pointer; }
+/* Nativeness: the LIVE TWIN board checkbox takes the same
+   selection-token accent as the desk's other checkbox idioms
+   (.lyr input, .sim-sync input) — it rendered browser-default blue. */
+.lt-check input { flex:none; accent-color:var(--sel); margin:0; }
+.lt-board-row > span:last-child { white-space:normal; }
+/* One checklist row = checkbox + headline on line one, the meta line
+   beneath, so the headline owns the row width. The board is folded to LT_BOARD_ROWS rows
+   with a +N chip; opened, it scrolls inside a bounded box. */
+.lt-board { display:flex; flex-direction:column; }
+.lt-board--open { max-height:360px; overflow-y:auto; }
+.lt-row { display:grid; grid-template-columns:auto minmax(0,1fr); column-gap:6px; row-gap:1px; align-items:baseline; padding:4px 0; border-bottom:1px solid var(--line2); font-size: var(--fs-xs); cursor:pointer; }
+.lt-row input { grid-row:1 / span 2; accent-color:var(--sel); margin:0; align-self:start; margin-top:2px; }
+.lt-head { min-width:0; overflow-wrap:anywhere; }
+.lt-meta { grid-column:2; min-width:0; overflow-wrap:anywhere; font-size: var(--fs-xs); }
+.lt-more { background:none; border:none; padding:4px 0; cursor:pointer; text-align:left; }
+.qrow { display:flex; gap:8px; align-items:center; padding:3px 0; border-bottom:1px solid var(--line2); cursor:pointer; font-size: var(--fs-xs); }
+.qrow-name { flex:0 1 38%; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.qrow-bar { flex:1; height:8px; background:var(--panel2); border:1px solid var(--line2); }
+/* The queue bar is DATA in the queue/congestion channel colour —
+   the amber accent stays on the count value (the desk's value idiom),
+   not on every bar (colour only where it carries meaning). */
+.qrow-bar i { display:block; height:100%; background:var(--bar-queue); }
+.sim-prov { border:1px solid var(--border); background:var(--panel2); padding:6px 8px; }
+/* timeline (map foot, SIM mode only) */
+.sim-timeline { border-top:1px solid var(--border); background:var(--chrome); padding:5px 10px 4px; flex:none; }
+.sim-timeline--empty { display:flex; gap:8px; align-items:center; font-size: var(--fs-xs); color:var(--dim); letter-spacing:.03em; }
+.sim-tl-row { display:flex; gap:4px; align-items:center; flex-wrap:wrap; font-size: var(--fs-xs); }
+.sim-clock { margin-left:8px; font-size: var(--fs-xs); color:var(--dim); letter-spacing:.04em; white-space:nowrap; }
+.sim-clock b { color:var(--ink); font-size: var(--fs-xs); }
+.interp-tag { border:1px solid var(--st-model); color:var(--st-model); padding:0 5px; margin-left:7px; font-size: var(--fs-xs); font-weight:700; letter-spacing:.06em; }
+.sim-sync { display:inline-flex; gap:5px; align-items:center; color:var(--dim); letter-spacing:.06em; cursor:pointer; margin-left:8px; }
+.sim-sync input { accent-color:var(--sel); margin:0; }
+.sim-ruler { position:relative; height:26px; margin-top:4px; background:var(--panel2); border:1px solid var(--border); cursor:ew-resize; touch-action:none; }
+/* Ruler grammar (chart-strip axis idiom): minor ticks
+   rise 7px from the ruler's foot in the hairline colour; every sixth
+   is a major — 12px, border weight. Markers ride the top of the ruler,
+   the playhead caret drops from its top edge — axis furniture, not a
+   video scrubber. */
+.sim-ruler-ticks span { position:absolute; bottom:0; height:7px; width:1px; background:var(--line2); }
+.sim-ruler-ticks span.tick-major { height:12px; background:var(--border); }
+.sim-marker { position:absolute; top:3px; transform:translateX(-50%); font-size: var(--fs-xs); line-height:1; padding:2px; color:var(--text-2); z-index:2; }
+.sim-marker:hover { color:var(--accent-text); }
+.sim-marker--disruption_onset { color:var(--st-down); }
+.sim-marker--disruption_expiry { color:var(--text-2); }
+.sim-marker--queue_peak { color:var(--st-snapshot); }
+.sim-marker--congested_arrival { color:var(--st-down); }
+.sim-marker--chain_event { color:var(--st-model); }
+.sim-playhead { position:absolute; top:-2px; bottom:-2px; width:2px; background:var(--sel); transform:translateX(-1px); z-index:3; pointer-events:none; }
+.sim-playhead::before { content:""; position:absolute; top:-1px; left:-4px; border:5px solid transparent; border-top:6px solid var(--sel); }
+.sim-ruler-labels { display:flex; justify-content:space-between; gap:8px; font-size: var(--fs-xs); color:var(--faint); padding-top:3px; letter-spacing:.04em; }
+@media (max-width: 860px) {
+  .sim-modes { margin-left:4px; }
+  .sim-clock { white-space:normal; }
+  .sim-ruler-labels .dim { display:none; }
+  .board-row > span:last-child { white-space:normal; }
+}
+
+/* ── IMPACT panel: per-class figure blocks, goods mixes,
+   citations, analogues, methodology drawer. Square grammar, 1px
+   borders, values in the strip's amber; chips are the shared .src-tag. */
+.imp-unit { border-bottom:1px solid var(--line2); padding:4px 0 8px; margin-bottom:6px; }
+.imp-unit-head { font-size: var(--fs-xs); margin:6px 0 4px; }
+.imp-figclass { margin:4px 0; }
+.imp-mix { margin:4px 0 6px; }
+.imp-mixrow { display:flex; align-items:center; gap:8px; font-size: var(--fs-xs); padding:2.5px 0; border-bottom:1px solid var(--line2); }
+.imp-mixname { width:96px; flex:none; color:var(--dim); }
+.imp-bar { flex:1; height:5px; background:var(--panel2); border:1px solid var(--line2); position:relative; min-width:40px; }
+.imp-bar i { position:absolute; top:0; bottom:0; left:0; background:var(--accent); display:block; }
+.imp-mixval { width:52px; flex:none; text-align:right; }
+.imp-cite { border-bottom:1px solid var(--line2); padding:4px 0 6px; }
+.imp-cite p { margin:2px 0; }
+.imp-cite p > a { display:inline-block; padding-block:5px; }
+.imp-analogue { border-bottom:1px solid var(--border); padding:6px 0 8px; }
+.imp-analogue p { margin:3px 0; }
+.imp-toggle { margin-top:8px; }
+.imp-drawer { border:1px dashed var(--border); background:var(--panel2); padding:6px 8px; margin-top:6px; }
+.imp-drawer h5 { margin-top:8px; }
+
+/* ── Advanced search: the cmdbar dropdown, in
+      panel chrome — square corners, 1px borders, no
+      shadow, no rounding. Portalled to the body (the cmdbar clips
+      overflow) and anchored to the input by the component. Group
+      headers carry counts in the menubar's type style (9.5px,
+      letter-spacing 1.5px); rows are chip · title · one-line
+      description · code right-aligned; the summary card beside the
+      results is the facts grid only — nothing is drawn that the
+      served data does not carry. ── */
+/* Motion: the dropdown opens with a subtle fade/slide
+   (transform/opacity only, 150ms — inside the shell's 120–180ms ease
+   budget). The grid geometry transition + drag kill-switch
+   (.grid / .grid--dragging, App's dragging state from
+   SplitDivider's onDragState) is separate; panel mount/unmount stays
+   cut-based for linked-selection immediacy. The reduced-motion
+   kill-switch below (* animation-duration) covers this keyframe. */
+@keyframes search-drop-in { from { opacity:0; transform:translateY(-4px); } to { opacity:1; transform:translateY(0); } }
+.search-drop { position:fixed; z-index:80; background:var(--panel); border:1px solid var(--border);
+  display:flex; flex-direction:column; max-height:min(560px, calc(100vh - 120px)); color:var(--ink);
+  animation:search-drop-in .15s ease; }
+.search-facets { display:flex; flex-wrap:wrap; gap:4px; align-items:center; flex:none;
+  padding:6px 10px 2px; }
+.search-facet { font-size: var(--fs-xs); letter-spacing:.8px; padding:2px 7px; cursor:pointer;
+  background:var(--panel2); color:var(--dim); border:1px solid var(--border); }
+.search-facet--on { color:var(--accent-text); border-color:var(--accent-text); }
+.search-facet-sep { flex:0 0 8px; }
+.search-main { display:flex; min-height:0; flex:1; }
+.search-list { flex:1 1 auto; min-width:0; overflow-y:auto; padding:2px 0 6px; }
+.search-ghead { display:flex; justify-content:space-between; align-items:baseline; gap:8px;
+  padding:7px 10px 3px; font-size: var(--fs-xs); letter-spacing:1.5px; color:var(--dim); }
+.search-gcount { color:var(--faint); }
+.search-row { display:flex; gap:8px; align-items:flex-start; width:100%; text-align:left;
+  padding:5px 10px; cursor:pointer; }
+.search-row--hot { background:var(--panel2); box-shadow:inset 3px 0 var(--sel); }
+.search-row--comp { padding-left:34px; }
+.search-chip { font-size: var(--fs-xs); background:var(--codebg); color:var(--codetx); font-weight:700;
+  letter-spacing:.06em; padding:1px 5px; flex:none; margin-top:1px; white-space:nowrap; }
+.search-rowmain { flex:1; min-width:0; display:flex; flex-direction:column; gap:1px; }
+.search-title { font-size: var(--fs-xs); color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.search-row--comp .search-title { font-size: var(--fs-xs); }
+.search-sub { font-size: var(--fs-xs); color:var(--dim); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.search-code { color:var(--text-2); font-size: var(--fs-xs); flex:none; white-space:nowrap; }
+.search-act { color:var(--accent-text); font-size: var(--fs-xs); letter-spacing:.8px; flex:none; white-space:nowrap; padding-top:2px; }
+.search-card { flex:0 0 300px; border-left:1px solid var(--border); padding:8px 10px; overflow-y:auto; }
+.search-card-head { display:flex; justify-content:space-between; align-items:baseline; gap:8px;
+  font-size: var(--fs-xs); letter-spacing:1.2px; color:var(--faint); }
+.search-card-title { font-size: var(--fs-lg); font-weight:700; line-height:1.35; margin:4px 0 1px; }
+.search-card-sub { font-size: var(--fs-xs); color:var(--dim); margin-bottom:6px; }
+.search-facts { grid-template-columns:92px 1fr; font-size: var(--fs-xs); }
+.search-facts dt { font-size: var(--fs-xs); padding:2px 0; }
+.search-facts dd { padding:2px 0; }
+.search-card-foot { margin-top:8px; font-size: var(--fs-xs); letter-spacing:1px; color:var(--accent-text); }
+.search-foot { display:flex; justify-content:space-between; gap:10px; flex:none;
+  border-top:1px solid var(--border); padding:5px 10px; font-size: var(--fs-xs); letter-spacing:1px; color:var(--faint); }
+.search-hint { padding:10px 12px; }
+.search-hint-title { font-size: var(--fs-xs); letter-spacing:1.5px; color:var(--ink); }
+.search-hint p { margin:5px 0 0; font-size: var(--fs-xs); line-height:1.55; }
+@media (max-width: 860px) {
+  .search-main { flex-direction:column; }
+  .search-list { max-height:44vh; }
+  .search-card { flex:none; border-left:none; border-top:1px solid var(--border); max-height:190px; }
+}
+
+/* ── Ensemble statistics ───────────────────────────────────
+   Register finish: a place cell is a name with its kind as the
+   sub-line — never a raw identifier; the distribution uses the chart
+   grammar (hairline grid, axis chips, crosshair) with one neutral bar
+   colour that exists in both themes. */
+.cell-sub { font-size: var(--fs-xs); color:var(--dim); margin-top:1px; }
+.ens-controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:8px 0; }
+.ens-count { width:76px; background:var(--panel2); border:1px solid var(--border); color:var(--ink);
+  font-size: var(--fs-xs); padding:4px 6px; }
+.ens-jobstate { margin:8px 0; }
+.ens-progress { height:6px; border:1px solid var(--border); background:var(--panel2); margin-top:4px; }
+.ens-progress > div { height:100%; background:var(--accent); }
+.ens-bar { fill:var(--dim); opacity:.72; }
+.ens-bar:hover { opacity:1; }
+.ens-curve { margin:4px 0 8px; }
+.ens-chips { display:flex; flex-wrap:wrap; gap:4px; margin:6px 0; }
+.ens-chip { border:1px solid var(--border); background:var(--panel2); color:var(--dim);
+  font-size: var(--fs-xs); padding:2px 6px; letter-spacing:.05em; cursor:pointer; }
+.ens-chip:hover { color:var(--accent-text); border-color:var(--accent-text); }
+.ens-chip:disabled { opacity:.45; cursor:default; }
+
+/* ── Ensemble explorer (tree + explorations) ─────────────
+   Same register as the statistics surface: hairline borders, square
+   corners, one amber accent. A member row is a full-width button:
+   refinement + state on the main line, the served outcome line and
+   (for a pruned member) its reason beneath — never omitted. */
+.enx-wide { width:190px; max-width:100%; background:var(--panel2); border:1px solid var(--border);
+  color:var(--ink); font-size: var(--fs-xs); padding:4px 6px; margin-left:6px; }
+.enx-quote { border-top:1px dashed var(--border); margin-top:6px; padding-top:4px; }
+.enx-level { margin:6px 0; }
+.enx-levelhead { display:block; width:100%; text-align:left; background:var(--panel2);
+  border:1px solid var(--border); color:var(--ink); font-size: var(--fs-xs); letter-spacing:.05em;
+  padding:5px 8px; cursor:pointer; }
+.enx-levelhead:hover { color:var(--accent-text); border-color:var(--accent-text); }
+.enx-members { margin:4px 0 8px; }
+.enx-member { display:block; width:100%; text-align:left; background:transparent;
+  border:1px solid var(--border); border-top:none; color:var(--ink); padding:5px 8px; cursor:pointer; }
+.enx-level .enx-member { border-top:none; }
+.enx-members .enx-member { border-top:1px solid var(--border); margin-bottom:4px; }
+.enx-member:hover { border-color:var(--accent-text); }
+.enx-member--sel { background:var(--panel2); border-color:var(--accent); }
+.enx-member-main { display:flex; justify-content:space-between; gap:8px; font-size: var(--fs-xs); }
+.enx-member-sub { display:block; font-size: var(--fs-xs); color:var(--dim); margin-top:2px; line-height:1.5; }
+.enx-pruned { color:var(--st-snapshot); }
+.enx-state { font-size: var(--fs-xs); letter-spacing:.06em; color:var(--dim); white-space:nowrap; }
+.enx-state--pruned { color:var(--st-snapshot); }
+.enx-chipgroup { display:inline-flex; gap:2px; }
+.enx-memberdetail { border-top:1px dashed var(--border); margin-top:8px; padding-top:4px; }
+.enx-expand { border-top:1px dashed var(--border); margin-top:8px; padding-top:4px; }
+
+/* Reduced motion — transitions/animations (demo progress,
+   panel scroll, chips) render still; the cascade pulse + stagger are
+   stilled in the map's JS guard (prefersReducedMotion). */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
+
+/* ── RETRO THEME FAMILY ─────────────────────────────
+   ADDITIONAL selectable themes, scoped strictly to the two retro
+   data-theme selectors below. The institutional dark/light blocks
+   above are untouched and remain the default. Style language from
+   the user's cyberpunk-HUD references: chamfered panel corners with
+   bracket ticks, diagonal hatch fills on headers, thin circuit-trace
+   borders, blocky display type (Orbitron, vendored — retro-fonts.css)
+   for the logo + hero numerals ONLY. Severity/channel colours keep
+   their institutional MEANING (same hues as dark/light); only the
+   chrome + accent register changes. No fake data texture anywhere. */
+[data-theme="retro-dark"] {
+  --shell:#030509; --chrome:#050a12; --land:#010203; --ocean:#04070d; --panel:#070d18; --panel2:#0a1424;
+  --border:#1b6f7d; --line2:#0d1b2a; --ink:#e6fbff; --dim:#8fd0dd; --faint:#79b8c9;
+  --amber:#ff9e2c; --amber-ink:#140a00; --sel:#00d5e8; --red:#ff7a6e; --cyan:#22e6ff; --green:#34f5a5;
+  --grat:#0d1b2a; --landline:#1d4e5e;
+  --bar-queue:#c65a55; --bar-reroute:#bfa04e; --bar-congestion:#c65a55; --bar-inventory:#5da271;
+  --bar-cost:#6fc3df; --bar-mode-shift:#8f83b8;
+  --codebg:#0a1a26; --codetx:#aef3ff; --tvgrid:#0d1b2a;
+  --frame:#22e6ff; --font-display:"Orbitron", "IBM Plex Mono", ui-monospace, monospace;
+}
+[data-theme="retro-light"] {
+  --shell:#e9e7f2; --chrome:#f4f2fa; --land:#fcfbfe; --ocean:#d9d4ea; --panel:#fff; --panel2:#f1eef8;
+  --border:#c9c2d9; --line2:#e3def0; --ink:#14101f; --dim:#4a4459; --faint:#5d5670;
+  --amber:#c2185b; --amber-ink:#fff; --sel:#e0218a; --red:#b91c1c; --cyan:#7b1fa2; --green:#15803d;
+  --grat:#d8d2e6; --landline:#b6aed0;
+  --bar-queue:#c65a55; --bar-reroute:#bfa04e; --bar-congestion:#c65a55; --bar-inventory:#5da271;
+  --bar-cost:#6fc3df; --bar-mode-shift:#8f83b8;
+  --codebg:#ece7f5; --codetx:#241b33; --tvgrid:#e6e1f0;
+  --frame:#d6336c; --font-display:"Orbitron", "IBM Plex Mono", ui-monospace, monospace;
+}
+[data-theme="retro-light"] .errorbar { background:#fdecec; color:#7f1d1d; }
+
+/* theme control (all themes): the 4-way segmented shape of the
+   control — new classes only; the .theme-toggle base rule above is
+   unchanged and still styles each segment. */
+.theme-switch { display:inline-flex; }
+.theme-switch .theme-toggle { border:1px solid var(--border); padding:1px 6px; }
+.theme-switch .theme-toggle + .theme-toggle { border-left:none; }
+.theme-switch .theme-toggle.on { color:var(--accent-text); box-shadow:inset 0 -2px 0 var(--accent); }
+
+/* faint circuit grid backdrop + translucent panels (retro-dark) */
+[data-theme="retro-dark"] .shell, [data-theme="retro-light"] .shell {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--frame) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--frame) 6%, transparent) 1px, transparent 1px);
+  background-size:28px 28px;
+}
+[data-theme="retro-dark"] .panel, [data-theme="retro-dark"] .kpi,
+[data-theme="retro-dark"] .menu, [data-theme="retro-dark"] .search-drop {
+  background:color-mix(in srgb, var(--panel) 88%, transparent);
+}
+
+/* display type: logo + hero numerals only, retro only
+   (Orbitron is not used on the 9px panel titles; panel and
+   mini-strip titles read in IBM Plex Sans caps, the base .panel-title /
+   .ms-title register). Orbitron stays on the logo, the KPI numerals
+   (.kpi .kv) and hero numerals only. */
+[data-theme="retro-dark"] .logo, [data-theme="retro-light"] .logo,
+[data-theme="retro-dark"] .kpi .kv, [data-theme="retro-light"] .kpi .kv {
+  font-family:var(--font-display); letter-spacing:.1em;
+}
+[data-theme="retro-dark"] .panel-title, [data-theme="retro-light"] .panel-title,
+[data-theme="retro-dark"] .ms-title, [data-theme="retro-light"] .ms-title {
+  font-family:"IBM Plex Sans", system-ui, sans-serif; text-transform:uppercase;
+}
+/* glow is a retro-dark device only */
+[data-theme="retro-dark"] .kpi .kv, [data-theme="retro-dark"] .logo {
+  text-shadow:0 0 9px color-mix(in srgb, var(--cyan) 55%, transparent);
+}
+
+/* chamfered corners (top-left + bottom-right cuts) on panels and
+   panel-like blocks; the map panel is excluded — its furniture rides
+   to the corners. An open export menu drops the clip on its panel so
+   the menu is never cut by the chamfer. */
+[data-theme="retro-dark"] .panel, [data-theme="retro-light"] .panel,
+[data-theme="retro-dark"] .kpi, [data-theme="retro-light"] .kpi,
+[data-theme="retro-dark"] .sat-card, [data-theme="retro-light"] .sat-card,
+[data-theme="retro-dark"] .explain-block, [data-theme="retro-light"] .explain-block,
+[data-theme="retro-dark"] .search-drop, [data-theme="retro-light"] .search-drop {
+  clip-path:polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+[data-theme="retro-dark"] .panel--map, [data-theme="retro-light"] .panel--map { clip-path:none; }
+[data-theme="retro-dark"] .panel:has(.menu), [data-theme="retro-light"] .panel:has(.menu) { clip-path:none; }
+
+/* bracket ticks on the two unchamfered corners */
+[data-theme="retro-dark"] .panel, [data-theme="retro-light"] .panel,
+[data-theme="retro-dark"] .kpi, [data-theme="retro-light"] .kpi { position:relative; }
+[data-theme="retro-dark"] .panel::before, [data-theme="retro-light"] .panel::before,
+[data-theme="retro-dark"] .kpi::before, [data-theme="retro-light"] .kpi::before {
+  content:""; position:absolute; top:2px; right:2px; width:9px; height:9px; pointer-events:none;
+  border-top:2px solid var(--frame); border-right:2px solid var(--frame);
+}
+[data-theme="retro-dark"] .panel::after, [data-theme="retro-light"] .panel::after,
+[data-theme="retro-dark"] .kpi::after, [data-theme="retro-light"] .kpi::after {
+  content:""; position:absolute; bottom:2px; left:2px; width:9px; height:9px; pointer-events:none;
+  border-bottom:2px solid var(--frame); border-left:2px solid var(--frame);
+}
+
+/* diagonal hatch fills on panel headers + the empty-state strip */
+[data-theme="retro-dark"] .panel-head, [data-theme="retro-light"] .panel-head,
+[data-theme="retro-dark"] .ms-head, [data-theme="retro-light"] .ms-head,
+[data-theme="retro-dark"] .mapbar, [data-theme="retro-light"] .mapbar,
+[data-theme="retro-dark"] .chart-head, [data-theme="retro-light"] .chart-head,
+[data-theme="retro-dark"] .sim-timeline--empty, [data-theme="retro-light"] .sim-timeline--empty {
+  background-image:repeating-linear-gradient(45deg, transparent 0 7px, color-mix(in srgb, var(--frame) 13%, transparent) 7px, color-mix(in srgb, var(--frame) 13%, transparent) 8px);
+}
+.layouts-menu .layouts-reset { border-top:1px solid var(--border); color:var(--faint); letter-spacing:1px; }
+
+/* The chain diagram's zoom controls follow the theme (they rendered as
+   two white blocks in retro-dark). Doubled class selector beats the library
+   stylesheet whatever the import order. */
+.react-flow__controls { box-shadow:none; border:1px solid var(--border); }
+.react-flow__controls .react-flow__controls-button { background:var(--panel2); color:var(--ink); border-bottom:1px solid var(--border); }
+.react-flow__controls .react-flow__controls-button:hover { background:var(--panel); }
+.react-flow__controls .react-flow__controls-button svg { fill:currentColor; }
+.mode--recorded { border-color:var(--st-snapshot); color:var(--st-snapshot); }

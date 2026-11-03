@@ -1,0 +1,98 @@
+/* Scenario loop panel (SCN). Tokens only (shell/tokens.css): every text
+   colour used here is --text, --text-2, --text-3 (never on --bg-raised), an
+   accent-text or a state token, so the 4.5:1 rule holds
+   in all skins. No decorative colour; state is always glyph + word. */
+
+.scn-panel { min-width: 0; }
+.scn-stamps { display: flex; align-items: center; flex-wrap: wrap; gap: var(--s-2); padding: 5px 10px; border-bottom: 1px solid var(--line-soft); background: var(--bg-panel); }
+.scn-subject { margin-left: auto; font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); }
+.scn-tabs { display: flex; overflow-x: auto; background: var(--bg-bar); flex: none; }
+.scn-body { max-height: min(70vh, 720px); padding: 8px 10px 12px; }
+.scn-tab { display: flex; flex-direction: column; gap: var(--s-2); min-width: 0; }
+
+.scn-row { display: flex; align-items: center; gap: var(--s-2); min-width: 0; }
+.scn-row--wrap { flex-wrap: wrap; }
+.scn-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.scn-field { display: flex; flex-direction: column; gap: 3px; min-width: 0; font-size: var(--t-micro); color: var(--text-2); letter-spacing: var(--trk-caps); }
+.scn-field--wide { grid-column: 1 / -1; flex: 1 1 100%; }
+.scn-field input, .scn-field select, .scn-filter { padding: 4px 6px; font-size: var(--t-data); min-width: 0; height: 24px; text-transform: none; letter-spacing: 0; }
+.scn-field input[type="date"] { color-scheme: light dark; }
+.scn-field input:disabled { color: var(--text-2); }
+.scn-field--bad input, .scn-field--bad select { box-shadow: inset 0 0 0 1px var(--st-down); }
+.scn-field input:focus-visible, .scn-field select:focus-visible, .scn-filter:focus-visible { outline-offset: -2px; }
+.scn-static { font-size: var(--t-data); color: var(--text); font-weight: 600; text-transform: none; letter-spacing: 0; line-height: 24px; }
+.scn-pick { display: flex; gap: var(--s-2); align-items: center; }
+.scn-pick select { flex: 1 1 auto; }
+.scn-filter { flex: 1 1 110px; }
+
+.scn-seg { height: var(--seg-h); }
+.scn-seg .seg-b { padding: 0 8px; }
+.scn-choices { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+.scn-choice { height: 22px; padding: 0 7px; }
+
+.scn-btn { height: 24px; padding: 0 9px; white-space: nowrap; }
+.scn-btn.btn--amber { color: var(--on-accent); }
+.scn-btn:disabled { color: var(--text-2); }
+.scn-play { min-width: 34px; }
+
+.scn-preview { display: flex; flex-wrap: wrap; gap: var(--s-2); align-items: baseline; padding: 6px 8px; background: var(--bg-inset); border-left: 2px solid var(--st-sim); font-size: var(--t-data); color: var(--text); }
+.scn-preview-k { font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); }
+
+.scn-refusal { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2); padding: 6px 8px; font-size: var(--t-data); color: var(--text); }
+.scn-reason { min-width: 0; overflow-wrap: anywhere; color: var(--text); }
+
+/* outcome tags: glyph + word, colour is secondary */
+.scn-tag { background: transparent; }
+.scn-tag--ok { color: var(--st-live); border-color: var(--st-live); }
+.scn-tag--bad { color: var(--st-down); border-color: var(--st-down); }
+.scn-tag--warn { color: var(--st-snapshot); border-color: var(--st-snapshot); }
+.scn-tag--busy { color: var(--st-sim); border-color: var(--st-sim); }
+.scn-tag--idle { color: var(--text-2); border-color: var(--line-strong); }
+.scn-tag--meta { color: var(--text-2); border-color: var(--line); }
+.scn-tag--busy .chip-g { animation: scn-spin 1.2s linear infinite; display: inline-block; }
+@keyframes scn-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .scn-tag--busy .chip-g { animation: none; } }
+
+.scn-readout { font-size: var(--t-data); color: var(--text); min-width: 74px; }
+.scn-clock { font-size: var(--t-data); color: var(--text-2); }
+.scn-step { display: flex; flex-wrap: wrap; gap: var(--s-3); padding: 4px 8px; background: var(--bg-inset); font-size: var(--t-data); color: var(--text-2); }
+.scn-step b { color: var(--text); }
+.scn-receipt { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2); }
+.scn-k { font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); }
+
+.scn-subhead { display: flex; align-items: center; gap: var(--s-2); margin-top: var(--s-2); font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); border-bottom: 1px solid var(--line-soft); padding-bottom: 3px; }
+.scn-count { color: var(--text-2); }
+.scn-count::before { content: "· "; }
+.scn-table { font-size: var(--t-data); }
+.scn-table td { vertical-align: middle; }
+.scn-table tr { cursor: default; }
+.scn-result .data-table tbody tr[class] { cursor: pointer; }
+.scn-scroll { overflow-x: auto; max-width: 100%; }
+.scn-wide { min-width: 460px; }
+.scn-wide th, .scn-wide td { white-space: nowrap; }
+.scn-states { white-space: nowrap; }
+.scn-states .chip { margin-right: 3px; }
+.scn-actions { white-space: nowrap; display: flex; gap: 3px; }
+.scn-id { color: var(--text-2); font-size: var(--t-micro); }
+.scn-more { padding: 4px 6px; color: var(--text-2); font-size: var(--t-micro); letter-spacing: var(--trk-caps); }
+.scn-unit { color: var(--text-2); font-size: var(--t-micro); }
+.scn-session td { font-style: normal; background: var(--bg-inset); }
+.scn-d1 { color: var(--up); } .scn-d-1 { color: var(--dn); } .scn-d0 { color: var(--text-2); }
+.scn-check { display: inline-flex; align-items: center; gap: 5px; font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); }
+.scn-place { padding: 2px 6px; border: 1px solid var(--line-strong); border-radius: var(--r-1); font-size: var(--t-micro); color: var(--text-2); background: var(--bg-inset); }
+.scn-place:hover { color: var(--text); }
+.scn-result { display: flex; flex-direction: column; gap: var(--s-2); }
+.scn-kind { background: transparent; border-color: var(--line-strong); color: var(--text-2); }
+.scn-kind--shock, .scn-kind--fork-shock { color: var(--st-sim); border-color: var(--st-sim); }
+
+.scn-hash { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 6px; padding: 4px 0; border-bottom: 1px solid var(--line-soft); }
+.scn-hash-k { font-size: var(--t-micro); letter-spacing: var(--trk-caps); color: var(--text-2); grid-column: 1 / -1; }
+.scn-hash-v { grid-column: 1; overflow-wrap: anywhere; font-size: var(--t-data); color: var(--text); user-select: all; }
+.scn-hash > .scn-tag { grid-column: 2; }
+.scn-hash > .scn-btn { grid-column: -2 / -1; justify-self: end; }
+
+html[data-theme="retro-dark"] .scn-btn, html[data-theme="retro-light"] .scn-btn,
+html[data-theme="retro-dark"] .scn-choice, html[data-theme="retro-light"] .scn-choice { border-radius: 0; }
+.scn-measures td.num, .scn-measures td.mono { white-space: nowrap; }
+.scn-measures td:first-child { line-height: 1.5; }
+.scn-hash > .scn-tag { max-width: none; overflow: visible; }

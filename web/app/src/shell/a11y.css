@@ -1,0 +1,11 @@
+/* Accessibility layer: the skip link, the landmark focus target and the forced-colours focus ring. */
+.skip-link { position: fixed; left: 8px; top: 8px; z-index: 1000; padding: 8px 12px; background: var(--bg-raised); color: var(--text);
+  border: 1px solid var(--focus); font-size: var(--fs-sm); transform: translateY(-200%); }
+.skip-link:focus, .skip-link:focus-visible { transform: none; outline: 2px solid var(--focus); outline-offset: 2px; }
+#main-content:focus { outline: none; }
+/* React Flow (the causal chain diagram): its steps and legs are tab stops, and its own sheet removes their outline */
+.react-flow .react-flow__node.react-flow__node:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.react-flow .react-flow__edge.react-flow__edge:focus-visible .react-flow__edge-path { stroke: var(--focus); stroke-width: 3; }
+@media (forced-colors: active) {
+  :focus-visible { outline: 2px solid Highlight; outline-offset: 2px; }
+}

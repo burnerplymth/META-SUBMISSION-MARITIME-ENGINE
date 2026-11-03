@@ -1,0 +1,64 @@
+/* Row B in manager mode: function codes, command bar, link legend, Layouts. Tokens only. */
+.wsbar { gap: var(--s-3); }
+.wsbar-centre { flex: 1 1 420px; min-width: 300px; display: flex; justify-content: center; }
+.wsbar .cmd-input { flex: 1 1 360px; min-width: 300px; max-width: 520px; }
+.fcb { display: flex; align-items: stretch; align-self: stretch; gap: 0; flex: 0 1 auto; min-width: 0; overflow: hidden; }
+.fcb-b { flex: none; }
+.fcb-b { display: inline-flex; align-items: center; gap: 6px; height: 100%; padding: 0 9px; border: 0; background: transparent; color: var(--text-2); font: inherit; font-size: var(--t-label); font-weight: var(--w-medium); cursor: pointer; white-space: nowrap; }
+.fcb-b:hover { color: var(--text); background: var(--hover); }
+.fcb-b.on { color: var(--text); box-shadow: inset 0 -2px 0 var(--accent); }
+.fcb-code { font-family: var(--font-code); font-size: var(--t-micro); color: var(--text-3); letter-spacing: var(--trk-caps); }
+.fcb-b.on .fcb-code { color: var(--accent-text); }
+.lnk-legend { display: inline-flex; align-items: center; gap: 10px; color: var(--text-3); font-size: var(--t-label); white-space: nowrap; }
+.lnk-legend-i { display: inline-flex; align-items: center; gap: 5px; color: var(--text-2); }
+.lnk-legend-h { color: var(--text-3); }
+
+/* Layouts menu */
+.lm-btn { gap: 6px; }
+.lm-pop { position: fixed; z-index: 450; width: 360px; max-height: calc(100vh - 80px); overflow: auto; padding: 6px; background: var(--bg-raised); border-radius: var(--r-3); box-shadow: var(--shadow-2); display: flex; flex-direction: column; }
+.lm-h { display: flex; align-items: center; justify-content: space-between; padding: 6px 8px 4px; color: var(--text-3); font-size: var(--t-label); }
+.lm-h-mode { font-size: var(--t-micro); letter-spacing: var(--trk-caps); }
+.lm-sep-h { margin-top: 4px; }
+.lm-sep { height: 1px; background: var(--line); margin: 4px 2px; }
+.lm-row { display: flex; align-items: center; border-radius: var(--r-2); }
+.lm-row.on { background: var(--sel-fill); box-shadow: inset 2px 0 0 var(--accent); }
+.lm-pick { flex: 1; display: flex; align-items: center; gap: 10px; min-width: 0; padding: 7px 8px; border: 0; background: transparent; color: var(--text); font: inherit; font-size: var(--t-data); text-align: left; cursor: pointer; border-radius: var(--r-2); }
+.lm-row:hover { background: var(--hover); }
+.lm-row.on:hover { background: var(--sel-fill); }
+.lm-ico { color: var(--text-2); flex: none; }
+.lm-name { font-weight: var(--w-semibold); white-space: nowrap; }
+.lm-codes { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-3); font-size: var(--t-micro); text-align: right; }
+.lm-mod { color: var(--text-2); font-size: var(--t-label); }
+.lm-del { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border: 0; background: transparent; color: var(--text-3); cursor: pointer; border-radius: var(--r-ctl); opacity: 0; }
+.lm-row:hover .lm-del, .lm-del:focus-visible { opacity: 1; }
+.lm-del:hover { background: var(--hover); color: var(--text); }
+.lm-empty { padding: 6px 10px; color: var(--text-3); font-size: var(--t-label); }
+.lm-act { display: flex; align-items: center; gap: 10px; padding: 0 8px; height: 30px; border: 0; background: transparent; color: var(--text); font: inherit; font-size: var(--t-data); text-align: left; cursor: pointer; border-radius: var(--r-2); }
+.lm-act:hover:not(:disabled) { background: var(--hover); }
+.lm-act:disabled { color: var(--text-3); cursor: default; }
+.lm-act span { flex: 1; }
+.lm-edit { display: flex; gap: 6px; padding: 4px 6px; }
+.lm-edit input { flex: 1; min-width: 0; height: var(--ctl-h); padding: 0 8px; background: var(--bg-inset); color: var(--text); border: 1px solid var(--line-strong); border-radius: var(--r-ctl); font: inherit; font-size: var(--t-data); }
+.lm-edit input:focus { outline: none; border-color: var(--accent); }
+.lm-ok { height: var(--ctl-h); padding: 0 10px; border: 0; border-radius: var(--r-ctl); background: var(--accent-fill-strong); color: var(--on-accent); font: inherit; font-size: var(--t-label); cursor: pointer; }
+.lm-ok:disabled { opacity: .5; cursor: default; }
+.lm-note { padding: 4px 10px; color: var(--text-2); font-size: var(--t-label); }
+
+/* command bar rows and the key sheet */
+.cmd-group { padding: 2px 0 4px; border-bottom: 1px solid var(--line); flex: 0 1 auto; min-height: 0; max-height: min(340px, 48vh); overflow-y: auto; overscroll-behavior: contain; }
+.search-drop { overflow: hidden; }
+.cmd-ghead { display: flex; justify-content: space-between; padding: 6px 12px 2px; color: var(--text-3); font-size: var(--t-micro); letter-spacing: var(--trk-caps); }
+.cmd-row { display: flex; align-items: center; gap: 10px; width: 100%; height: 28px; padding: 0 12px; border: 0; background: transparent; color: var(--text); font: inherit; font-size: var(--t-data); text-align: left; cursor: pointer; }
+.cmd-row--hot, .cmd-row:hover { background: var(--sel-fill); }
+.cmd-row .cmd-ico { color: var(--text-2); flex: none; }
+.cmd-row .cmd-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cmd-row .cmd-code { color: var(--text-3); font-family: var(--font-code); font-size: var(--t-micro); }
+.cmd-ghost { color: var(--text-3); }
+.keysheet { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 4px 24px; padding: 10px 14px 12px; }
+.keysheet h4 { margin: 6px 0 4px; font-size: var(--t-label); font-weight: var(--w-semibold); color: var(--text-2); }
+.keysheet .ks-row { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; font-size: var(--t-data); color: var(--text); }
+.keysheet .ks-keys { color: var(--text-3); font-family: var(--font-code); font-size: var(--t-micro); white-space: nowrap; }
+
+@media (max-width: 1680px) { .fcb-b:not(.on) .fcb-title { display: none; } }
+@media (max-width: 1280px) { .fcb-title { display: none; } }
+@media (max-width: 860px) { .fcb, .lnk-legend { display: none; } .wsbar-centre { flex: 1 1 100%; order: 5; } }

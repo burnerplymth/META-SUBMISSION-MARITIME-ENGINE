@@ -1,0 +1,199 @@
+/* Chrome and copy, loaded late (main.tsx). Sentence case and the type floor
+ * for the panels that still carry micro-type, the status bar that never clips a chip,
+ * and the phone chrome. Tokens only. The generated block at the end is derived
+ * from the panel stylesheets; those files are not edited. */
+
+/* ---- status bar: whole chips drop off the end, a `+n` opens Source health ---- */
+@media (min-width: 861px) {
+  .statusbar .src-dots { flex: 0 1 auto; min-width: 0; height: var(--status-h); flex-wrap: wrap; align-content: flex-start; overflow: hidden; gap: 0 10px; }
+  .statusbar .src-dots > span { display: inline-flex; align-items: center; height: var(--status-h); flex: none; }
+  .statusbar > :not(.src-dots) { flex: none; }
+}
+.statusbar .src-more { padding: 0 6px; height: 16px; border: 0; border-radius: var(--r-1); background: var(--hover); color: var(--text-2); font: inherit; font-size: var(--t-micro);
+  font-variant-numeric: tabular-nums; cursor: pointer; }
+.statusbar .src-more:hover { color: var(--text); }
+.statusbar .chip-w { font-weight: 500; }
+
+/* ---- source health: a table of feed, state, mode, last success ---- */
+.health-table td { height: var(--row-h); }
+.health-code { display: block; color: var(--text-3); font-size: var(--t-micro); }
+.health-table th { white-space: nowrap; }
+
+
+/* ---- phone chrome: one 48 px top bar (brand, mode, alerts, view) and one command bar.
+ * The history buttons, function codes, link legend and Layouts menu belong to the dock
+ * manager, which is not mounted here; the theme switch moves into the View menu. ---- */
+/* The Theme row is always shown in the View popover (the top-bar switch stays too). */
+@media (max-width: 860px) {
+  .topbar { flex-wrap: nowrap; height: 48px; min-height: 48px; padding: 0 8px; gap: 6px; overflow: visible; }
+  .topbar .brand { flex: none; }
+  .topbar .sw--theme, .topbar .user-chip, .topbar .tb-plus, .topbar .wtab, .topbar .chip-btn { display: none; }
+  /* the Tour entry lives in the View menu: the bar keeps View on screen at 390 px */
+  .topbar > .tour-entry { display: none; }
+  .topbar .seg--mode { height: 36px; min-height: 36px; flex: none; }
+  .topbar .seg--mode .seg-b { min-height: 0; padding: 0 10px; font-size: var(--t-micro); }
+  .topbar .meta-btn { display: inline-flex; align-items: center; min-height: 36px; padding: 0 8px; font-size: var(--t-micro); flex: none; }
+  .topbar .appear-wrap .tb-btn { min-height: 36px; min-width: 36px; }
+  .pop-row--theme { display: flex; }
+  .subbar.wsbar { flex-wrap: nowrap; height: 52px; padding: 4px 8px; gap: 0; }
+  .subbar.wsbar .nav-glyphs, .subbar.wsbar .layouts-wrap, .subbar.wsbar .lnk-legend, .subbar.wsbar .fcb { display: none; }
+  .subbar.wsbar .wsbar-centre { flex: 1 1 100%; order: 0; min-width: 0; }
+  .subbar.wsbar .cmd-input { height: 40px; max-width: none; }
+  .cmd-input .fn-chip { display: none; }
+  .cmd-input::after { content: none; }
+}
+
+/* ---- drawn marks that replaced typed glyphs ---- */
+.sec-t .sec-chev { vertical-align: -2px; margin-right: 2px; color: var(--text-3); }
+.sim-marker .sim-marker-shape { display: block; }
+.pv-prov { display: inline-flex; vertical-align: middle; }
+.pt-status { gap: 4px; }
+
+/* Generated block: micro-type from the panel stylesheets */
+h5 { font-size: var(--t-micro); text-transform: none; letter-spacing: 0; }
+.small { font-size: var(--t-micro); }
+.fineprint { font-size: var(--t-micro); }
+.utilbar { font-size: var(--t-micro); letter-spacing: 0; }
+.utilbar .util-act { font-size: var(--t-micro); letter-spacing: 0; }
+.utilbar .util-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.func-menu button { font-size: var(--t-micro); letter-spacing: 0; }
+.menubar .meta { font-size: var(--t-micro); letter-spacing: 0; }
+.layouts-btn { font-size: var(--t-micro); letter-spacing: 0; }
+.cmd-input .fn-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.btn { font-size: var(--t-micro); letter-spacing: 0; }
+.burn { font-size: var(--t-micro); }
+.user-chip { font-size: var(--t-micro); }
+.kpi .kl { font-size: var(--t-label); letter-spacing: 0; }
+.kpi .kv small { font-size: var(--t-micro); }
+.kpi .ks { font-size: var(--t-micro); }
+.errorbar { font-size: var(--t-micro); }
+.fn-rail button { font-size: var(--t-micro); letter-spacing: 0; }
+.code-chip { font-size: var(--t-label); letter-spacing: 0; }
+.panel-title { font-size: var(--t-label); letter-spacing: 0; }
+.panel-updated { font-size: var(--t-micro); letter-spacing: 0; }
+.menu button { font-size: var(--t-micro); }
+.menu-note { font-size: var(--t-micro); }
+.ntabs { font-size: var(--t-label); letter-spacing: 0; }
+.ntabs button { font-size: var(--t-label); letter-spacing: 0; }
+.news-meta { font-size: var(--t-micro); letter-spacing: 0; }
+.src-tag { font-size: var(--t-micro); text-transform: none; letter-spacing: 0; }
+.mode-tag { font-size: var(--t-micro); letter-spacing: 0; }
+.sev-tag { font-size: var(--t-micro); letter-spacing: 0; }
+.cite { font-size: var(--t-micro); }
+.cite-meta { font-size: var(--t-micro); }
+.news-areas { font-size: var(--t-micro); }
+.rank-row .rank-r { font-size: var(--t-micro); }
+.sec-sub { font-size: var(--t-label); letter-spacing: 0; }
+.sec-t { font-size: var(--t-label); letter-spacing: 0; }
+.form-grid label { font-size: var(--t-label); text-transform: none; letter-spacing: 0; }
+.offline-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.mapbar { font-size: var(--t-micro); letter-spacing: 0; }
+.mapbar .pill { font-size: var(--t-micro); letter-spacing: 0; }
+.mapbar .counts { font-size: var(--t-micro); letter-spacing: 0; }
+.map-stub-tag { font-size: var(--t-micro); }
+.ms-title { font-size: var(--t-label); letter-spacing: 0; }
+.ms-upd { font-size: var(--t-micro); letter-spacing: 0; }
+.ms-kv div { font-size: var(--t-micro); }
+.que-cap { font-size: var(--t-micro); letter-spacing: 0; }
+.rte-table th { font-size: var(--t-label); letter-spacing: 0; }
+.ms-empty { font-size: var(--t-micro); }
+.ms-note { font-size: var(--t-micro); }
+.exp-cite { font-size: var(--t-micro); }
+.snap-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.data-table th { font-size: var(--t-label); text-transform: none; letter-spacing: 0; }
+.trace-foot { font-size: var(--t-micro); letter-spacing: 0; }
+.order-badge { font-size: var(--t-micro); }
+.trace .order-badge { font-size: var(--t-micro); }
+.trace-main small { font-size: var(--t-micro); }
+.dag-node { font-size: var(--t-micro); }
+.chart-summary { font-size: var(--t-micro); letter-spacing: 0; }
+.chart-head { font-size: var(--t-micro); letter-spacing: 0; }
+.chart-head .ohlc b { font-size: var(--t-micro); letter-spacing: 0; }
+.chart-foot { font-size: var(--t-micro); }
+.axis-chip { font-size: var(--t-micro); }
+.chip-last-tx { font-size: var(--t-micro); }
+.chip-max-tx { font-size: var(--t-micro); }
+.chart-legend { font-size: var(--t-micro); }
+.backtest-banner { font-size: var(--t-micro); letter-spacing: 0; }
+.lens-bar { font-size: var(--t-micro); }
+.origin-tag { font-size: var(--t-micro); letter-spacing: 0; }
+.exposure-chip { font-size: var(--t-micro); }
+.sim-label { font-size: var(--t-micro); letter-spacing: 0; }
+.sat-crops figcaption { font-size: var(--t-micro); }
+.await-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.alr-err { font-size: var(--t-micro); }
+.alr-chip { font-size: var(--t-micro); }
+.alr-chip .icon-btn { font-size: var(--t-micro); }
+.statusbar { font-size: var(--t-micro); letter-spacing: 0; }
+.statusbar .theme-toggle { font-size: var(--t-micro); letter-spacing: 0; }
+.sim-entry-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.simulated-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.sim-transport { font-size: var(--t-micro); }
+.sim-transport button, .sim-tl-row button { font-size: var(--t-micro); letter-spacing: 0; }
+.link-toggle { font-size: var(--t-micro); letter-spacing: 0; }
+.frozen-stamp { font-size: var(--t-micro); letter-spacing: 0; }
+.divert-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.sim-timeline--empty { font-size: var(--t-micro); letter-spacing: 0; }
+.sim-tl-row { font-size: var(--t-micro); }
+.sim-clock { font-size: var(--t-micro); letter-spacing: 0; }
+.interp-tag { font-size: var(--t-micro); letter-spacing: 0; }
+.sim-ruler-labels { font-size: var(--t-micro); letter-spacing: 0; }
+.search-facet { font-size: var(--t-micro); letter-spacing: 0; }
+.search-ghead { font-size: var(--t-micro); letter-spacing: 0; }
+.search-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.search-sub { font-size: var(--t-micro); }
+.search-code { font-size: var(--t-micro); }
+.search-act { font-size: var(--t-micro); letter-spacing: 0; }
+.search-card-head { font-size: var(--t-micro); letter-spacing: 0; }
+.search-card-sub { font-size: var(--t-micro); }
+.search-card-foot { font-size: var(--t-micro); letter-spacing: 0; }
+.search-foot { font-size: var(--t-micro); letter-spacing: 0; }
+.search-hint-title { font-size: var(--t-micro); letter-spacing: 0; }
+.cell-sub { font-size: var(--t-micro); }
+.ens-chip { font-size: var(--t-micro); letter-spacing: 0; }
+.enx-levelhead { font-size: var(--t-micro); letter-spacing: 0; }
+.enx-member-sub { font-size: var(--t-micro); }
+.enx-state { font-size: var(--t-micro); letter-spacing: 0; }
+.fn-rail .rail-mark i { font-size: var(--t-micro); }
+.cx-title { text-transform: none; letter-spacing: 0; }
+.cx-sub { font-size: var(--t-micro); letter-spacing: 0; }
+.cx-btn { font-size: var(--t-micro); letter-spacing: 0; }
+.cx-key { font-size: var(--t-micro); }
+.cx-caption { font-size: var(--t-micro); text-transform: none; letter-spacing: 0; }
+.cx-status { font-size: var(--t-micro); letter-spacing: 0; }
+.hx-sec-h { text-transform: none; }
+.hx-ctl label { text-transform: none; }
+.hx-btn { text-transform: none; }
+.hx-tbl th { text-transform: none; }
+.hx-kv dt { text-transform: none; }
+.hx-card-h { text-transform: none; }
+.hx-svg text { font-size: var(--t-micro); }
+.hx-state { text-transform: none; }
+.hx details > summary { text-transform: none; }
+.scn-field { text-transform: none; }
+.rk-chip { font-size: var(--t-micro); text-transform: none; letter-spacing: 0; }
+.rk-chip i { font-size: var(--t-micro); }
+.rk-lbl { font-size: var(--t-label); text-transform: none; letter-spacing: 0; }
+.rk-count, .rk-code { font-size: var(--t-micro); letter-spacing: 0; }
+.rk-btn { font-size: var(--t-micro); letter-spacing: 0; }
+.rk-size { font-size: var(--t-micro); }
+.rk-tab { font-size: var(--t-micro); letter-spacing: 0; }
+.rk-table th { font-size: var(--t-label); letter-spacing: 0; }
+.xc-route { font-size: var(--t-micro); letter-spacing: 0; }
+.xc-upd { font-size: var(--t-micro); }
+.xc-nospark { font-size: var(--t-micro); letter-spacing: 0; }
+.xc-stages { font-size: var(--t-micro); letter-spacing: 0; }
+.xc-hash { font-size: var(--t-micro); }
+.xc-figh { text-transform: none; letter-spacing: 0; }
+.pv-chip i { font-size: var(--t-micro); }
+.pt-root h5 { font-size: var(--t-micro); letter-spacing: 0; }
+.pt-th { text-transform: none; letter-spacing: 0; }
+.pt-th i { font-size: var(--t-micro); }
+.pt-sub { font-size: var(--t-micro); }
+.pt-pager { font-size: var(--t-micro); letter-spacing: 0; }
+.pt-kv-label { text-transform: none; letter-spacing: 0; }
+.pt-group-title { font-size: var(--t-micro); letter-spacing: 0; }
+.pt-sev { font-size: var(--t-micro); }
+.lv-time { font-size: var(--t-micro); }
+.lp-tag { font-size: var(--t-micro); }
+/* END GENERATED */

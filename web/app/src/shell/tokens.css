@@ -1,0 +1,184 @@
+/* SupermAP UI design tokens:
+   graphite layering, SupermAP's own azure selection (#29a8d6 dark,
+   #0b79a3 light), amber-orange ranges (#f0902e / #d9710f), IBM Plex,
+   2 px radii, flat bars, role colours for timeline tracks.
+   Every semantic name below keeps working. Loaded AFTER styles.css
+   (main.tsx import order). Every colour is a plain hex so that
+   each block can be read and every text token gated at
+   4.5:1 on the surfaces it appears on. A block here holds no nested
+   braces and the first dark and light blocks of styles.css stay
+   untouched.
+
+   Skins: dark (graphite chrome around matte-black data wells, default),
+   light (neutral grey), paper (a light-only skin keyed on the data-skin
+   attribute, warm paper with a teal accent), and the two retro families
+   which keep their own legacy blocks and only receive the semantic names.
+
+   Layering rule (dark): each step up in elevation is one step lighter.
+   --bg-app (window gutters) < --bg-bar (toolbars, title bars, graphite)
+   < --bg-raised (menus, floating windows); --bg-panel is the darkest
+   content well (data surfaces stay matte black) and --bg-inset is a field
+   set into either. Hairlines are 1 px; nothing is dashed. */
+
+/* ---- scale tokens (skin independent) ----------------------------- */
+:root {
+  --font-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-code: var(--font-data);
+  --font-serif: "Iowan Old Style", Charter, Georgia, serif;
+  --num: tabular-nums;
+
+  /* type scale: floor 11 px for
+     everything except the map glyph chips. --fs-xs chips, tags, captions, units; --fs-sm labels, tab titles, KPI
+     captions; --fs-md body and table cells; --fs-lg titles; --fs-xl section heads; --fs-kpi / --fs-display
+     numbers. The --t-* names are the older aliases and follow it. Data and labels are sentence case; caps are
+     for function codes and status keywords only. */
+  --fs-xs: 11px; --fs-sm: 11.5px; --fs-md: 12px; --fs-lg: 13px; --fs-xl: 15px; --fs-kpi: 22px; --fs-display: 28px;
+  --lh-xs: 14px; --lh-md: 16px; --lh-lg: 17px; --lh-kpi: 28px;
+  --t-micro: var(--fs-xs); --t-label: var(--fs-sm); --t-data: var(--fs-md); --t-title: var(--fs-lg); --t-head: var(--fs-xl); --t-kpi: var(--fs-kpi); --t-display: var(--fs-display);
+  --trk-caps: .04em; --trk-0: 0;
+  --w-regular: 400; --w-medium: 500; --w-semibold: 600;
+
+  --s-0: 2px; --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px;
+  --r-0: 0; --r-1: 1px; --r-2: 2px; --r-3: 2px; --r-4: 2px;
+  --r-ctl: 2px; --r-panel: 2px; --r-kbd: 1px;
+
+  /* controls: three heights. Hit area grows to 44 px on touch (chrome.css). */
+  --ctl-h-sm: 24px; --ctl-h: 24px; --ctl-h-lg: 26px;
+  --icon-xs: 12px; --icon-sm: 14px; --icon-md: 16px; --icon-lg: 20px; --icon-stroke: 1.5px;
+
+  /* rows and panels (table cells 28, header row 26, ports rows 32, inspector rows 24, panel padding 12) */
+  --row-h: 28px; --row-h-lg: 32px; --th-h: 26px; --pad-cell: 8px; --pad-panel: 12px;
+  --head-h: 28px; --tab-h: 28px; --chip-h: 18px; --seg-h: var(--ctl-h);
+  --insp-row-h: 24px; --insp-label-w: 42%;
+  /* window chrome (window manager): title bar and tab heights, floating radius */
+  --win-title-h: 28px; --win-tab-h: var(--tab-h); --win-r: var(--r-panel); --win-gap: 2px;
+  --bar-top-h: 36px; --bar-sub-h: 32px; --kpi-h: 62px; --status-h: 24px; --transport-h: 40px; --transport-now-h: 22px;
+
+  --dur-1: 90ms; --dur-2: 150ms; --dur-3: 240ms;
+  --ease-out: cubic-bezier(.2, 0, 0, 1);
+  --ease-in: cubic-bezier(.4, 0, 1, 1);
+  --ease-spring: cubic-bezier(.32, .72, 0, 1);
+
+  /* interaction fills, derived from the skin: hover, pressed, selected */
+  --hover: color-mix(in srgb, var(--text) 6%, transparent);
+  --press: color-mix(in srgb, var(--text) 14%, transparent);
+  --sel-fill: color-mix(in srgb, var(--accent) 20%, transparent);
+  --ctl-bg: transparent;
+  --bar-bg: var(--bg-bar);
+
+  /* series / track role colours (the channel colours --bar-* of styles.css,
+     one per causal channel), playhead, markers and ranges for the
+     simulation transport and charts. Colour tokens only, no components. */
+  --tl-lane: var(--bg-inset); --tl-ruler: var(--bg-bar); --tl-grid: var(--line-soft);
+  --tl-playhead: var(--text); --tl-skim: var(--text-2); --tl-marker: var(--range); --tl-range: var(--range-fill);
+  --tl-queue: var(--bar-queue); --tl-reroute: var(--bar-reroute); --tl-congestion: var(--bar-congestion);
+  --tl-inventory: var(--bar-inventory); --tl-cost: var(--bar-cost); --tl-mode-shift: var(--bar-mode-shift);
+  --tl-event: var(--st-down); --tl-sim: var(--st-sim); --tl-model: var(--st-model);
+}
+html[data-density="comfortable"] {
+  --fs-xs: 11.5px; --fs-sm: 12px; --fs-md: 13px; --fs-lg: 14px; --fs-xl: 16px; --fs-kpi: 24px; --fs-display: 32px;
+  --lh-xs: 15px; --lh-md: 18px; --lh-lg: 19px; --lh-kpi: 30px;
+  --ctl-h-sm: 24px; --ctl-h: 28px; --ctl-h-lg: 30px;
+  --row-h: 32px; --row-h-lg: 36px; --th-h: 30px; --head-h: 34px; --tab-h: 32px; --chip-h: 20px; --insp-row-h: 28px; --pad-panel: 16px;
+}
+
+/* ---- dark: graphite chrome, matte-black data wells (default) ----- */
+:root, html[data-theme="dark"] {
+  --bg-app: #0e0f10; --bg-bar: #181a1d; --bg-bar-hi: #1e2023; --bg-panel: #111214; --bg-inset: #0f1011; --bg-raised: #26292d; --bg-win: #1a1c1f;
+  --line: #363a40; --line-soft: #26292d; --line-strong: #50565d;
+  --text: #e9ebed; --text-2: #b0b5bb; --text-3: #9399a0;
+  --accent: #29a8d6; --accent-text: #5fcaea; --accent-fill-strong: #0b7ba5; --on-accent: #ffffff; --focus: #4cc0e6; --sel-bar: #29a8d6;
+  --range: #f0902e; --range-text: #f6a853; --range-fill: rgba(240, 144, 46, .20);
+  --st-live: #53d18b; --st-snapshot: #d8a63f; --st-sim: #b69cff; --st-model: #7fb4e6;
+  --st-down: #ff6b5f; --st-notserved: #9aa0a6;
+  --up: #53d18b; --dn: #ff6b5f; --brand: #f0902e;
+  --win-title: #181a1d; --win-tab: #0f1011; --win-tab-active: #111214; --win-ring: #29a8d6;
+  --lnk-1: #4cc0e6; --lnk-2: #f0902e; --lnk-3: #b69cff; --lnk-4: #53d18b; --lnk-5: #f472b6; --lnk-6: #d6b34a;
+  --hair-hi: rgba(255, 255, 255, 0); --scrim: rgba(0, 0, 0, .55);
+  --shadow-1: 0 0 0 1px #50565d, 0 10px 24px rgba(0, 0, 0, .55);
+  --shadow-2: 0 0 0 1px #50565d, 0 16px 34px rgba(0, 0, 0, .6);
+  /* legacy names (styles.css), so every older panel rule follows the surfaces and text */
+  --shell: #0e0f10; --chrome: #181a1d; --panel: #111214; --panel2: #181a1d; --land: #181a1c; --ocean: #0a0b0c;
+  --border: #363a40; --line2: #26292d; --ink: #e9ebed; --dim: #b0b5bb; --faint: #9399a0;
+  --amber: #f0902e; --amber-ink: #0e0f10; --sel: #29a8d6; --red: #ff6b5f; --cyan: #5fcaea; --green: #53d18b;
+  --grat: #1c1e21; --landline: #3b4046; --codebg: #1d1f22; --codetx: #e9ebed; --tvgrid: #1f2225;
+  --bar-queue: #e0665c; --bar-reroute: #d6b34a; --bar-congestion: #f0902e; --bar-inventory: #5fae78; --bar-cost: #52b3d1; --bar-mode-shift: #9d92c8;
+}
+
+/* ---- light: neutral grey ----------------------------------------- */
+html[data-theme="light"] {
+  --bg-app: #dfe2e5; --bg-bar: #eceef0; --bg-bar-hi: #f6f7f8; --bg-panel: #ffffff; --bg-inset: #f5f6f7; --bg-raised: #ffffff; --bg-win: #f1f2f4;
+  --line: #c3c7cc; --line-soft: #dfe2e5; --line-strong: #8d939a;
+  --text: #1b1d1f; --text-2: #4a5158; --text-3: #565e66;
+  --accent: #0b79a3; --accent-text: #07607f; --accent-fill-strong: #0b79a3; --on-accent: #ffffff; --focus: #0b79a3; --sel-bar: #0b79a3;
+  --range: #d9710f; --range-text: #8f4600; --range-fill: rgba(217, 113, 15, .16);
+  --st-live: #136d3d; --st-snapshot: #7d5608; --st-sim: #6d3fd6; --st-model: #1f5f9a;
+  --st-down: #b23a37; --st-notserved: #5a6168;
+  --up: #136d3d; --dn: #b8292b; --brand: #a14a07;
+  --win-title: #eceef0; --win-tab: #f5f6f7; --win-tab-active: #ffffff; --win-ring: #0b79a3;
+  --lnk-1: #0b79a3; --lnk-2: #c2570c; --lnk-3: #6d3fd6; --lnk-4: #17794a; --lnk-5: #be185d; --lnk-6: #8a6a0c;
+  --hair-hi: rgba(255, 255, 255, 0); --scrim: rgba(20, 24, 30, .28);
+  --shadow-1: 0 0 0 1px #8d939a, 0 8px 20px rgba(20, 24, 30, .18);
+  --shadow-2: 0 0 0 1px #8d939a, 0 14px 30px rgba(20, 24, 30, .22);
+  --shell: #dfe2e5; --chrome: #eceef0; --panel: #ffffff; --panel2: #f5f6f7; --land: #fafbfb; --ocean: #d7dde2;
+  --border: #c3c7cc; --line2: #dfe2e5; --ink: #1b1d1f; --dim: #4a5158; --faint: #565e66;
+  --amber: #8f4600; --amber-ink: #ffffff; --sel: #0b79a3; --red: #b23a37; --cyan: #1f5f9a; --green: #136d3d;
+  --grat: #d3d9de; --landline: #aab3bb; --codebg: #e6e8ea; --codetx: #1b1d1f; --tvgrid: #e3e6e9;
+  --bar-queue: #c04a45; --bar-reroute: #8a6a0c; --bar-congestion: #c2570c; --bar-inventory: #3f8556; --bar-cost: #1f7d99; --bar-mode-shift: #7d70b0;
+}
+
+/* ---- paper: light-only skin (warm paper, ink, one teal accent) ---- */
+html[data-theme="light"][data-skin="paper"] {
+  --bg-app: #fff1e5; --bg-bar: #fff8f1; --bg-bar-hi: #fffbf7; --bg-panel: #fff8f1; --bg-inset: #f9e8d8; --bg-raised: #fffaf5;
+  --line: #ccc1b7; --line-soft: #f2dfce; --line-strong: #7a6f67;
+  --text: #33302e; --text-2: #4d4845; --text-3: #5e5853;
+  --accent: #0d7680; --accent-text: #0a5e66; --accent-fill-strong: #0a5e66; --on-accent: #ffffff; --focus: #0d7680; --sel-bar: #0d7680; --bg-win: #fff1e5;
+  --range: #d99a1e; --range-text: #7a4a00; --range-fill: rgba(217, 154, 30, .26);
+  --st-live: #14663a; --st-snapshot: #8f4300; --st-sim: #5a3a9a; --st-model: #0a6285;
+  --st-down: #b3002d; --st-notserved: #6b645f;
+  --up: #0b6b4f; --dn: #b3002d; --brand: #8f4300;
+  --win-title: #fff8f1; --win-tab: #f9e8d8; --win-tab-active: #fff8f1; --win-ring: #0d7680;
+  --lnk-1: #1d5fe0; --lnk-2: #0f766e; --lnk-3: #946800; --lnk-4: #c2410c; --lnk-5: #be185d; --lnk-6: #6d3fd6;
+  --hair-hi: rgba(255, 255, 255, .8); --scrim: rgba(51, 48, 46, .28);
+  /* legacy names, so every existing panel rule follows the skin */
+  --shell: #fff1e5; --chrome: #fff8f1; --panel: #fff8f1; --panel2: #f9e8d8; --land: #fff8f1; --ocean: #e9dccd;
+  --border: #ccc1b7; --line2: #f2dfce; --ink: #33302e; --dim: #4d4845; --faint: #5e5853;
+  --amber: #8f4300; --amber-ink: #ffffff; --sel: #0d7680; --red: #b3002d; --cyan: #0a6285; --green: #14663a;
+  --grat: #e7d6c4; --landline: #bfae9d; --codebg: #f2dfce; --codetx: #33302e; --tvgrid: #efddca;
+  --shadow-1: 0 1px 2px rgba(51, 48, 46, .08), 0 8px 24px rgba(51, 48, 46, .12);
+  --shadow-2: 0 1px 2px rgba(51, 48, 46, .10), 0 16px 48px rgba(51, 48, 46, .18);
+}
+
+/* ---- retro families: semantic names derived from their own blocks - */
+html[data-theme="retro-dark"] {
+  --bg-app: #030509; --bg-bar: #050a12; --bg-bar-hi: #050a12; --bg-panel: #070d18; --bg-inset: #0a1424; --bg-raised: #0a1424;
+  --line: #1b6f7d; --line-soft: #0d1b2a; --line-strong: #22e6ff;
+  --text: #e6fbff; --text-2: #8fd0dd; --text-3: #79b8c9;
+  --accent: #00d5e8; --accent-text: #ff9e2c; --accent-fill-strong: #ff9e2c; --on-accent: #140a00; --focus: #00d5e8; --sel-bar: #00d5e8; --bg-win: #070d18;
+  --range: #ff9e2c; --range-text: #ff9e2c; --range-fill: rgba(255, 158, 44, .22);
+  --st-live: #34f5a5; --st-snapshot: #ff9e2c; --st-sim: #c9b0ff; --st-model: #22e6ff;
+  --st-down: #ff7a6e; --st-notserved: #8fb0b8;
+  --up: #34f5a5; --dn: #ff7a6e; --brand: #ff9e2c;
+  --win-title: #050a12; --win-tab: #0a1424; --win-tab-active: #070d18; --win-ring: #00d5e8;
+  --lnk-1: #4f8cff; --lnk-2: #2dd4bf; --lnk-3: #f5c542; --lnk-4: #fb923c; --lnk-5: #f472b6; --lnk-6: #a78bfa;
+  --hair-hi: rgba(0, 0, 0, 0); --scrim: rgba(0, 0, 0, .6);
+  --shadow-1: 0 0 0 1px #1b6f7d; --shadow-2: 0 0 0 1px #22e6ff;
+}
+html[data-theme="retro-light"] {
+  --bg-app: #e9e7f2; --bg-bar: #f4f2fa; --bg-bar-hi: #f4f2fa; --bg-panel: #ffffff; --bg-inset: #f1eef8; --bg-raised: #ffffff;
+  --line: #c9c2d9; --line-soft: #e3def0; --line-strong: #d6336c;
+  --text: #14101f; --text-2: #4a4459; --text-3: #5d5670;
+  --accent: #e0218a; --accent-text: #aa1452; --accent-fill-strong: #c2185b; --on-accent: #ffffff; --focus: #e0218a; --sel-bar: #e0218a; --bg-win: #ffffff;
+  --range: #e0a800; --range-text: #7a4a00; --range-fill: rgba(224, 168, 0, .26);
+  --st-live: #126f36; --st-snapshot: #9a4b00; --st-sim: #6a2bbf; --st-model: #7b1fa2;
+  --st-down: #b91c1c; --st-notserved: #5d5670;
+  --up: #126f36; --dn: #b91c1c; --brand: #c2185b;
+  --win-title: #f4f2fa; --win-tab: #f1eef8; --win-tab-active: #ffffff; --win-ring: #e0218a;
+  --lnk-1: #1d5fe0; --lnk-2: #0f766e; --lnk-3: #946800; --lnk-4: #c2410c; --lnk-5: #be185d; --lnk-6: #6d3fd6;
+  --hair-hi: rgba(0, 0, 0, 0); --scrim: rgba(20, 16, 31, .3);
+  --shadow-1: 0 0 0 1px #c9c2d9; --shadow-2: 0 0 0 1px #d6336c;
+}
+
+/* retro keeps square geometry: the new radius tokens collapse to 0 */
+html[data-theme="retro-dark"], html[data-theme="retro-light"] { --r-ctl: 0; --r-panel: 0; --win-r: 0; }

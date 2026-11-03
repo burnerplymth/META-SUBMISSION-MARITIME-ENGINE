@@ -1,0 +1,14 @@
+/* Aerial SAM desk. Reuses the satellite desk's frame, tag and chip classes. */
+.sw2-av { margin-top: 8px; }
+.sw2-av-frame { max-width: 720px; }
+.sw2-av-badges { margin-bottom: 4px; }
+.sw2-av-ov .sw2-av-crane.sw2-sam-mask { fill: var(--cyan); stroke: var(--cyan); }
+.sw2-av-ov .sw2-av-crane.sw2-sam-bx { stroke: var(--cyan); }
+.sw2-av-ov .sw2-av-stack.sw2-sam-bx { stroke: var(--ink); stroke-dasharray: 3 2; }
+.sw2-av-ov .sw2-av-ship.sw2-sam-bx { stroke: var(--amber); }
+.sw2-av-size { position: absolute; right: 4px; bottom: 3px; padding: 0 4px; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: var(--fs-xs); line-height: 12px; color: var(--dim); background: var(--panel); border: 1px solid var(--border); }
+.sw2-found-chip { background: transparent; }
+.sw2-found-chip:not(.on) .sw2-found { opacity: .5; border-bottom-color: var(--border); }
+.sw2-av-table { width: 100%; }
+.sw2-av-table td, .sw2-av-table th { white-space: nowrap; }
+.sw2-av-actions a.rk-btn { text-decoration: none; display: inline-flex; align-items: center; }

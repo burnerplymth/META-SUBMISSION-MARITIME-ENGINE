@@ -1,0 +1,17 @@
+.src-dialog { position: fixed; top: var(--bar-top-h, 36px); right: 0; bottom: var(--status-h, 24px); z-index: 10001; width: min(440px, 100vw);
+  display: flex; flex-direction: column; background: var(--bg-raised); color: var(--text); border-left: 1px solid var(--line-strong); box-shadow: var(--shadow-1); }
+.src-dhead { display: flex; align-items: center; gap: var(--s-2); height: var(--head-h); padding: 0 var(--s-3); border-bottom: 1px solid var(--line); }
+.src-dhead .icon-btn { margin-left: auto; }
+.src-kicker { font-size: var(--t-label); letter-spacing: var(--trk-caps); text-transform: uppercase; color: var(--text-2); }
+.src-body { flex: 1; overflow: auto; padding: var(--s-3); }
+.src-list { display: flex; flex-direction: column; gap: var(--s-3); }
+.src-group h3 { margin: 0 0 var(--s-1); font-size: var(--t-label); letter-spacing: var(--trk-caps); text-transform: uppercase; color: var(--text-2); font-weight: var(--w-medium); }
+.src-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.src-row { padding: var(--s-1) 0; border-bottom: 1px solid var(--line-soft); }
+.src-head { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; font-size: var(--t-data); }
+.src-chip { font-size: var(--t-micro); padding: 0 var(--s-1); border: 1px solid var(--line); color: var(--text-2); }
+.src-chip--req { color: var(--text); border-color: var(--line-strong); }
+.src-line { margin: 2px 0; font-size: var(--t-data); overflow-wrap: anywhere; }
+.src-links { margin: 0; color: var(--text-2); }
+.src-foot { margin: 0; color: var(--text-2); font-size: var(--t-micro); overflow-wrap: anywhere; }
+@media (max-width: 480px) { .src-dialog { top: 0; bottom: 0; width: 100vw; } }

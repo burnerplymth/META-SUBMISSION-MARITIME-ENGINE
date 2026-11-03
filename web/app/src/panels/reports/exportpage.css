@@ -1,0 +1,76 @@
+/* Export Centre: semantic tokens from shell/tokens.css (every data word is --text or --text-2). */
+/* ── Export Centre (xc-) ─────────────────────────────────────── */
+.xc-panel .panel-body { max-height: min(88vh, 1000px); }
+.xc-root { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.xc-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; justify-content: space-between; }
+.xc-status { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.xc-route { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-ui); font-size: var(--fs-xs); letter-spacing: 0; color: var(--text-2); }
+.xc-bounds { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+.xc-search { min-width: 200px; flex: 1 1 220px; }
+.xc-pane { min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+
+.xc-list { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); }
+.xc-row, .xc-rrow { position: relative; display: grid; align-items: center; gap: 4px 10px; padding: 4px 8px; border-bottom: 1px solid var(--line-soft);
+  grid-template-columns: minmax(150px, 1.7fr) 92px 64px 92px 110px 92px 100px auto; }
+.xc-row--pick { grid-template-columns: 22px minmax(150px, 1.7fr) 92px 64px 92px 110px 92px 100px; }
+.xc-noupd { grid-template-columns: minmax(150px, 1.7fr) 92px 64px 92px 92px 100px auto; }
+.xc-noupd.xc-row--pick { grid-template-columns: 22px minmax(150px, 1.7fr) 92px 64px 92px 92px 100px; }
+.xc-row:last-child, .xc-rrow:last-child { border-bottom: none; }
+.xc-row:hover, .xc-row:focus-within { background: var(--bg-inset); }
+.xc-row.off { opacity: .8; }
+.xc-name { display: flex; flex-direction: column; min-width: 0; }
+.xc-title { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+.xc-rows, .xc-size { text-align: right; font-size: var(--fs-xs); }
+.xc-upd { font-size: var(--fs-xs); color: var(--text-2); }
+.xc-spark { min-height: 24px; display: flex; align-items: center; }
+.xc-nospark { font-size: var(--fs-xs); color: var(--text-2); letter-spacing: .06em; }
+.xc-acts { display: flex; flex-wrap: wrap; gap: 4px; justify-content: flex-end; }
+.xc-pick { display: flex; align-items: center; }
+.xc-pick input { accent-color: var(--accent); margin: 0; }
+.cx-spark { display: block; }
+.xc-card { display: none; position: absolute; left: 8px; top: calc(100% - 2px); z-index: 12; background: var(--bg-raised); border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-2, 0 8px 24px rgba(0,0,0,.5)); padding: 6px 8px; flex-direction: column; gap: 4px; pointer-events: none; }
+.xc-row:hover .xc-card, .xc-row:focus-within .xc-card { display: flex; }
+.xc-row:last-child .xc-card { top: auto; bottom: calc(100% - 2px); }
+
+.xc-packbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.xc-opts { display: flex; flex-direction: column; gap: 6px; border-top: 1px solid var(--line); padding-top: 8px; }
+.xc-stages { list-style: none; margin: 0; padding: 0; display: flex; gap: 14px; flex-wrap: wrap; font-family: var(--font-ui); font-size: var(--fs-xs); letter-spacing: 0; color: var(--text-2); }
+.xc-stage.now { color: var(--text); } .xc-stage.done { color: var(--text); } .xc-stage.failed { color: var(--text-2); }
+.xc-stage span[aria-hidden] { margin-right: 4px; }
+.xc-manifest { display: flex; flex-direction: column; gap: 7px; border-top: 1px solid var(--line); padding-top: 8px; }
+.xc-scroll { overflow-x: auto; }
+.xc-hash { font-size: var(--fs-xs); color: var(--text); border: 1px dashed var(--line); padding: 0 4px; margin-right: 4px; background: transparent; }
+.xc-hash:hover { border-color: var(--accent); }
+.xc-hash:focus-visible { outline: 1px solid var(--focus); outline-offset: 2px; }
+.xc-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.xc-snap { display: flex; flex-direction: column; gap: 8px; }
+.xc-snapbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.xc-charts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+@container (min-width: 1100px) { .xc-charts { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.xc-server { border-top: 1px solid var(--line); padding-top: 8px; display: flex; flex-direction: column; gap: 5px; }
+
+.xc-recent { display: flex; flex-direction: column; gap: 6px; }
+.xc-rrow { grid-template-columns: 62px minmax(160px, 1.6fr) 110px 70px 90px 130px auto auto; }
+
+@container (max-width: 820px) {
+  .xc-row, .xc-row--pick, .xc-rrow { grid-template-columns: 1fr auto; }
+  .xc-row--pick { grid-template-columns: 22px 1fr auto; }
+  .xc-rows, .xc-size { text-align: left; }
+  .xc-acts { grid-column: 1 / -1; justify-content: flex-start; }
+}
+@media print { .xc-card { display: none !important; } }
+
+.xc-chartlist { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.xc-chartlist li { display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-xs); color: var(--text); }
+.xc-figs { display: flex; flex-direction: column; gap: 10px; }
+.xc-figgroup { display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--line); padding-top: 6px; }
+.xc-figh { margin: 0; font-size: var(--fs-xs); letter-spacing: .06em; color: var(--text-2); font-weight: 600;  }
+.xc-figlist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 10px; }
+.xc-fig { display: flex; gap: 10px; border: 1px solid var(--line); padding: 6px; background: var(--bg-inset); min-width: 0; }
+.xc-thumb { flex: 0 0 140px; width: 140px; height: 96px; overflow: hidden; background: var(--bg-panel); border: 1px solid var(--line-soft); display: flex; align-items: center; justify-content: center; }
+.xc-thumb img { width: 100%; height: auto; display: block; }
+.xc-thumb-off { padding: 4px; }
+.xc-figbody { display: flex; flex-direction: column; gap: 5px; min-width: 0; flex: 1 1 auto; }
+@container (max-width: 560px) { .xc-figlist { grid-template-columns: minmax(0, 1fr); } .xc-thumb { flex-basis: 96px; width: 96px; } }
